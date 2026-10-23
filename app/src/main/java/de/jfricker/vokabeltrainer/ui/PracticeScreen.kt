@@ -53,16 +53,21 @@ import de.jfricker.vokabeltrainer.domain.CardItem
 import de.jfricker.vokabeltrainer.domain.ClozeItem
 import de.jfricker.vokabeltrainer.domain.PracticeMode
 
-/** Abfrage: Karteikarten und Satz-Uebungen. lessonId = null: alle Lektionen. */
+/**
+ * Abfrage: Karteikarten und Satz-Uebungen.
+ * lessonId = null: alle Lektionen. today = gemischte Tagesrunde ("Heute lernen").
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun PracticeScreen(vm: MainViewModel, lessonId: String?, onBack: () -> Unit) {
+fun PracticeScreen(vm: MainViewModel, lessonId: String?, today: Boolean, onBack: () -> Unit) {
     val state by vm.practice.collectAsStateWithLifecycle()
     val slow by vm.slow.collectAsStateWithLifecycle()
 
     // Nur beim Betreten vorbereiten, nicht z. B. nach dem Drehen des Handys mitten in der Runde
-    LaunchedEffect(lessonId) {
-        if (vm.practice.value == null) vm.preparePractice(lessonId)
+    LaunchedEffect(lessonId, today) {
+        if (vm.practice.value == null) {
+            if (today) vm.startToday() else vm.preparePractice(lessonId)
+        }
     }
 
     val close = {
@@ -103,7 +108,8 @@ fun PracticeScreen(vm: MainViewModel, lessonId: String?, onBack: () -> Unit) {
                 is PracticeState.Asking -> AskingContent(s, vm)
                 is PracticeState.Finished -> FinishedContent(
                     s,
-                    onRestart = { vm.preparePractice(lessonId) },
+                    onRestart = { if (today) vm.startToday() else vm.preparePractice(lessonId) },
+                    onMoreNew = { vm.startToday(extraNew = true) },
                     onClose = close,
                 )
             }
@@ -276,12 +282,12 @@ private fun ColumnScope.ClozeContent(s: PracticeState.Asking, item: ClozeItem, v
                 append(item.after)
             }
         }
-        Row(
-            verticalAlignment = Alignment.CenterVertically,
-            modifier = if (s.result != null) Modifier.clickable { vm.speak(item.sentence.text) } else Modifier,
-        ) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
             Text(sentence, style = MaterialTheme.typography.headlineSmall, modifier = Modifier.weight(1f, fill = false))
-            if (s.result != null) Text("  🔊", style = MaterialTheme.typography.headlineSmall)
+            if (s.result != null) {
+                Spacer(Modifier.width(12.dp))
+                SpeakButton(onClick = { vm.speak(item.sentence.text) })
+            }
         }
         Spacer(Modifier.height(8.dp))
         ChoiceList(item.options, item.correctIndex, s, vm::choose)
@@ -418,12 +424,12 @@ private fun ResultFooter(
             style = MaterialTheme.typography.titleLarge,
         )
         if (solution != null && !result) {
-            Row(
-                verticalAlignment = Alignment.CenterVertically,
-                modifier = if (onSpeak != null) Modifier.clickable(onClick = onSpeak) else Modifier,
-            ) {
-                Text("Richtig: $solution", style = MaterialTheme.typography.titleMedium)
-                if (onSpeak != null) Text("  🔊", style = MaterialTheme.typography.titleMedium)
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Text("Richtig: $solution", style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f, fill = false))
+                if (onSpeak != null) {
+                    Spacer(Modifier.width(12.dp))
+                    SpeakButton(onClick = onSpeak)
+                }
             }
         }
         Button(onClick = onContinue, modifier = Modifier.fillMaxWidth().height(56.dp)) { Text("Weiter") }
@@ -433,28 +439,48 @@ private fun ResultFooter(
 @Composable
 private fun SpeakableText(text: String, speakable: Boolean, onSpeak: () -> Unit, big: Boolean) {
     val style = if (big) MaterialTheme.typography.headlineMedium else MaterialTheme.typography.titleMedium
-    Row(
-        verticalAlignment = Alignment.CenterVertically,
-        modifier = if (speakable) Modifier.clickable(onClick = onSpeak) else Modifier,
-    ) {
-        Text(text, style = style, textAlign = TextAlign.Center)
-        if (speakable) Text("  🔊", style = style)
+    Row(verticalAlignment = Alignment.CenterVertically) {
+        Text(text, style = style, textAlign = TextAlign.Center, modifier = Modifier.weight(1f, fill = false))
+        if (speakable) {
+            Spacer(Modifier.width(12.dp))
+            SpeakButton(onClick = onSpeak, big = big)
+        }
     }
 }
 
 @Composable
-private fun FinishedContent(s: PracticeState.Finished, onRestart: () -> Unit, onClose: () -> Unit) {
+private fun FinishedContent(
+    s: PracticeState.Finished,
+    onRestart: () -> Unit,
+    onMoreNew: () -> Unit,
+    onClose: () -> Unit,
+) {
     Column(verticalArrangement = Arrangement.spacedBy(16.dp)) {
-        if (s.nothingToDo) {
-            Text("Hier ist im Moment nichts fällig. 🎉", style = MaterialTheme.typography.titleLarge)
-        } else {
-            Text("Runde geschafft! 🎉", style = MaterialTheme.typography.titleLarge)
-            Text(
-                "Beim ersten Versuch richtig: ${s.correct} von ${s.correct + s.wrong}",
-                style = MaterialTheme.typography.bodyLarge,
-            )
+        when {
+            s.today && s.nothingToDo ->
+                Text("Für heute ist alles erledigt. 🎉", style = MaterialTheme.typography.titleLarge)
+            s.nothingToDo ->
+                Text("Hier ist im Moment nichts fällig. 🎉", style = MaterialTheme.typography.titleLarge)
+            else -> {
+                Text("Runde geschafft! 🎉", style = MaterialTheme.typography.titleLarge)
+                Text(
+                    "Beim ersten Versuch richtig: ${s.correct} von ${s.correct + s.wrong}",
+                    style = MaterialTheme.typography.bodyLarge,
+                )
+            }
         }
-        Button(onClick = onRestart, modifier = Modifier.fillMaxWidth()) { Text("Weiter üben") }
+
+        if (s.today) {
+            if (s.moreToDo) {
+                Text("Für heute ist noch etwas offen.", style = MaterialTheme.typography.bodyMedium)
+                Button(onClick = onRestart, modifier = Modifier.fillMaxWidth()) { Text("Nächste Runde") }
+            } else {
+                Text("Tagesziel erreicht ✅", style = MaterialTheme.typography.titleMedium)
+                OutlinedButton(onClick = onMoreNew, modifier = Modifier.fillMaxWidth()) { Text("Trotzdem mehr Neues lernen") }
+            }
+        } else {
+            Button(onClick = onRestart, modifier = Modifier.fillMaxWidth()) { Text("Weiter üben") }
+        }
         OutlinedButton(onClick = onClose, modifier = Modifier.fillMaxWidth()) { Text("Zurück") }
     }
 }

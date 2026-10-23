@@ -99,3 +99,63 @@ data class ProgressEntity(
     val correctCount: Int,
     val wrongCount: Int,
 )
+
+/** Jede beantwortete Aufgabe, fuer die Statistik (seit DB-Version 4). */
+@Entity(tableName = "review_log", indices = [Index("reviewedAt")])
+data class ReviewLogEntity(
+    @PrimaryKey(autoGenerate = true) val id: Long = 0,
+    val itemKey: String,
+    val mode: String,
+    val correct: Boolean,
+    val reviewedAt: Long,
+)
+
+data class ReviewRow(val reviewedAt: Long, val correct: Boolean)
+
+/** Wortfortschritt einer Lektion (Richtung Portugiesisch -> Deutsch). */
+data class LessonStat(
+    val lessonId: String,
+    val title: String,
+    val sortOrder: Int,
+    val total: Int,
+    val started: Int,
+    val learned: Int,
+)
+
+// ---------------------------------------------------------------- Videos (seit DB-Version 5)
+
+@Entity(tableName = "video_playlist")
+data class PlaylistEntity(
+    @PrimaryKey val id: String,
+    val title: String,
+    val channelTitle: String?,
+    val addedAt: Long,
+    val lastSyncAt: Long,
+)
+
+/** status: siehe VideoStatus */
+@Entity(tableName = "video", indices = [Index("playlistId")])
+data class VideoEntity(
+    @PrimaryKey val videoId: String,
+    val playlistId: String,
+    val title: String,
+    val channelTitle: String?,
+    val thumbnailUrl: String?,
+    /** Position in der Playlist, ab 0 */
+    val position: Int,
+    val status: String,
+    val statusChangedAt: Long?,
+)
+
+object VideoStatus {
+    const val NEW = "new"
+    const val DONE = "done"
+    const val HIDDEN = "hidden"
+}
+
+data class PlaylistSummary(
+    @Embedded val playlist: PlaylistEntity,
+    /** ohne ausgeblendete */
+    val total: Int,
+    val done: Int,
+)

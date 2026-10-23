@@ -6,6 +6,10 @@ import de.jfricker.vokabeltrainer.data.GrammarItem
 import de.jfricker.vokabeltrainer.data.LessonRepository
 import de.jfricker.vokabeltrainer.data.PracticeCounts
 import de.jfricker.vokabeltrainer.data.PracticeRepository
+import de.jfricker.vokabeltrainer.data.Stats
+import de.jfricker.vokabeltrainer.data.StatsRepository
+import de.jfricker.vokabeltrainer.data.TodaySummary
+import java.time.LocalDate
 import de.jfricker.vokabeltrainer.data.local.LessonEntity
 import de.jfricker.vokabeltrainer.data.local.LessonSummary
 import de.jfricker.vokabeltrainer.data.local.SentenceEntity
@@ -24,11 +28,14 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.joinAll
 import kotlinx.coroutines.launch
 
 class MainViewModel(
     private val repository: LessonRepository,
     private val practiceRepository: PracticeRepository,
+    private val statsRepository: StatsRepository,
     private val speaker: Speaker,
 ) : ViewModel() {
 
@@ -76,10 +83,57 @@ class MainViewModel(
     private var correctFirst = 0
     private var wrongFirst = 0
     private var step = 0
+    private var todayRun = false
+    /** Noch laufende Speichervorgaenge von Antworten */
+    private val pendingWrites = mutableListOf<Job>()
+
+    // ---------------------------------------------------------------- Heute lernen
+
+    private val _today = MutableStateFlow<TodaySummary?>(null)
+    val today: StateFlow<TodaySummary?> = _today.asStateFlow()
+
+    fun refreshToday() {
+        viewModelScope.launch { _today.value = practiceRepository.todaySummary() }
+    }
+
+    /** Gemischte Tagesrunde. extraNew = trotz erreichtem Tagesziel weitere neue Aufgaben. */
+    fun startToday(extraNew: Boolean = false) {
+        todayRun = true
+        practiceLessonId = null
+        _practice.value = null
+        viewModelScope.launch {
+            val items = practiceRepository.todaySession(extraNew)
+            queue.clear()
+            items.forEach { (item, mode) -> queue.addLast(QueueEntry(item, mode)) }
+            total = items.size
+            finishedItems = 0
+            correctFirst = 0
+            wrongFirst = 0
+            showNext()
+        }
+    }
+
+    // ---------------------------------------------------------------- Statistik
+
+    private val _stats = MutableStateFlow<Stats?>(null)
+    val stats: StateFlow<Stats?> = _stats.asStateFlow()
+
+    fun loadStats() {
+        viewModelScope.launch { _stats.value = statsRepository.load() }
+    }
+
+    fun setTargetDate(date: LocalDate) {
+        practiceRepository.setTargetDate(date)
+        loadStats()
+        refreshToday()
+    }
+
+    // ---------------------------------------------------------------- Ablauf einer Runde
 
     /** Startbildschirm der Abfrage mit Anzahl faelliger und neuer Aufgaben. lessonId = null: alle Lektionen. */
     fun preparePractice(lessonId: String?) {
         practiceLessonId = lessonId
+        todayRun = false
         _practice.value = null
         viewModelScope.launch {
             val title = lessonId?.let { practiceRepository.lessonTitle(it) } ?: "Alle Lektionen"
@@ -90,10 +144,11 @@ class MainViewModel(
 
     fun startPractice(mode: PracticeMode) {
         practiceMode = mode
+        todayRun = false
         viewModelScope.launch {
             val items = practiceRepository.session(practiceLessonId, mode)
             queue.clear()
-            items.forEach { queue.addLast(QueueEntry(it)) }
+            items.forEach { queue.addLast(QueueEntry(it, mode)) }
             total = items.size
             finishedItems = 0
             correctFirst = 0
@@ -163,23 +218,40 @@ class MainViewModel(
         val entry = s.entry
         if (entry.firstAttempt) {
             if (correct) correctFirst++ else wrongFirst++
-            viewModelScope.launch { practiceRepository.recordAnswer(entry.item.key, s.mode, correct) }
+            pendingWrites.removeAll { it.isCompleted }
+            pendingWrites += viewModelScope.launch { practiceRepository.recordAnswer(entry.item.key, s.mode, correct) }
         }
         if (correct) finishedItems++ else queue.addLast(entry.copy(firstAttempt = false))
     }
 
     private fun showNext() {
         val next = queue.removeFirstOrNull()
-        _practice.value = if (next == null) {
-            PracticeState.Finished(correctFirst, wrongFirst, nothingToDo = total == 0)
-        } else {
+        if (next != null) {
             step++
-            PracticeState.Asking(practiceMode, next, done = finishedItems, total = total, step = step)
+            _practice.value = PracticeState.Asking(next.mode, next, done = finishedItems, total = total, step = step)
+            return
+        }
+        val correct = correctFirst
+        val wrong = wrongFirst
+        val nothing = total == 0
+        if (!todayRun) {
+            _practice.value = PracticeState.Finished(correct, wrong, nothingToDo = nothing)
+            return
+        }
+        // Bei "Heute lernen" pruefen, ob noch etwas offen ist (Antworten werden asynchron gespeichert)
+        viewModelScope.launch {
+            pendingWrites.toList().joinAll()
+            pendingWrites.clear()
+            val summary = practiceRepository.todaySummary()
+            _today.value = summary
+            _practice.value = PracticeState.Finished(
+                correct, wrong, nothingToDo = nothing, today = true, moreToDo = !summary.goalReached,
+            )
         }
     }
 }
 
-data class QueueEntry(val item: PracticeItem, val firstAttempt: Boolean = true)
+data class QueueEntry(val item: PracticeItem, val mode: PracticeMode, val firstAttempt: Boolean = true)
 
 sealed interface PracticeState {
     data class Setup(val title: String, val counts: Map<PracticeMode, PracticeCounts>) : PracticeState
@@ -201,5 +273,13 @@ sealed interface PracticeState {
         val item: PracticeItem get() = entry.item
     }
 
-    data class Finished(val correct: Int, val wrong: Int, val nothingToDo: Boolean) : PracticeState
+    data class Finished(
+        val correct: Int,
+        val wrong: Int,
+        val nothingToDo: Boolean,
+        /** Runde von "Heute lernen" */
+        val today: Boolean = false,
+        /** Heute noch Faelliges oder neue Woerter offen */
+        val moreToDo: Boolean = false,
+    ) : PracticeState
 }

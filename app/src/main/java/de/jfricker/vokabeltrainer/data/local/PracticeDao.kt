@@ -95,4 +95,66 @@ interface PracticeDao {
     /** Lernstand aller Eintraege einer Uebungsart (bei Satz-Uebungen ist wordKey der sentenceKey). */
     @Query("SELECT * FROM progress WHERE direction = :mode")
     suspend fun progressForMode(mode: String): List<ProgressEntity>
+
+    // ------------------------------------------------ "Heute lernen" und Statistik
+    // 'pt-de' / 'de-pt' entsprechen PracticeMode.CARD_PT_DE.code / CARD_DE_PT.code
+
+    @Query("SELECT * FROM progress WHERE dueAt <= :now AND direction IN (:modes) ORDER BY dueAt LIMIT :limit")
+    suspend fun dueAll(now: Long, modes: List<String>, limit: Int): List<ProgressEntity>
+
+    @Query("SELECT COUNT(*) FROM progress WHERE dueAt <= :now AND direction IN (:modes)")
+    suspend fun dueAllCount(now: Long, modes: List<String>): Int
+
+    @Query("SELECT COUNT(*) FROM progress WHERE dueAt < :before AND direction IN (:modes)")
+    suspend fun dueBeforeCount(before: Long, modes: List<String>): Int
+
+    @Query("SELECT * FROM word WHERE wordKey = :key")
+    suspend fun word(key: String): WordEntity?
+
+    @Query("SELECT COUNT(*) FROM word")
+    suspend fun wordCount(): Int
+
+    @Query("SELECT COUNT(*) FROM progress WHERE direction = :mode")
+    suspend fun startedCount(mode: String): Int
+
+    @Query("SELECT COUNT(*) FROM progress WHERE direction = :mode AND box >= :minBox")
+    suspend fun boxAtLeastCount(mode: String, minBox: Int): Int
+
+    @Query("SELECT wordKey FROM progress WHERE direction = 'pt-de'")
+    suspend fun startedWordKeys(): List<String>
+
+    /** Woerter, die in Richtung PT->DE schon sitzen, aber noch nie DE->PT abgefragt wurden. */
+    @Query(
+        """
+        SELECT w.* FROM word w
+        JOIN lesson l ON l.id = w.lessonId
+        JOIN progress p ON p.wordKey = w.wordKey AND p.direction = 'pt-de'
+        WHERE p.box >= :minBox
+          AND NOT EXISTS (SELECT 1 FROM progress q WHERE q.wordKey = w.wordKey AND q.direction = 'de-pt')
+        ORDER BY l.sortOrder, w.sortOrder
+        LIMIT :limit
+        """
+    )
+    suspend fun reverseCandidates(minBox: Int, limit: Int): List<WordEntity>
+
+    @Insert
+    suspend fun insertReview(review: ReviewLogEntity)
+
+    @Query("SELECT reviewedAt, correct FROM review_log WHERE reviewedAt >= :since")
+    suspend fun reviewsSince(since: Long): List<ReviewRow>
+
+    @Query(
+        """
+        SELECT l.id AS lessonId, l.title AS title, l.sortOrder AS sortOrder,
+            COUNT(w.wordKey) AS total,
+            COUNT(p.wordKey) AS started,
+            SUM(CASE WHEN p.box >= :minBox THEN 1 ELSE 0 END) AS learned
+        FROM lesson l
+        JOIN word w ON w.lessonId = l.id
+        LEFT JOIN progress p ON p.wordKey = w.wordKey AND p.direction = 'pt-de'
+        GROUP BY l.id
+        ORDER BY l.sortOrder
+        """
+    )
+    suspend fun lessonStats(minBox: Int): List<LessonStat>
 }

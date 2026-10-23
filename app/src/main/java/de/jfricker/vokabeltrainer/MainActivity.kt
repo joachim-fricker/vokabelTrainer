@@ -20,7 +20,12 @@ import de.jfricker.vokabeltrainer.ui.LessonListScreen
 import de.jfricker.vokabeltrainer.ui.LessonScreen
 import de.jfricker.vokabeltrainer.ui.MainViewModel
 import de.jfricker.vokabeltrainer.ui.PracticeScreen
+import de.jfricker.vokabeltrainer.ui.StatsScreen
 import de.jfricker.vokabeltrainer.ui.theme.VokabelTrainerTheme
+import de.jfricker.vokabeltrainer.video.PlaylistScreen
+import de.jfricker.vokabeltrainer.video.VideoPlayerScreen
+import de.jfricker.vokabeltrainer.video.VideoViewModel
+import de.jfricker.vokabeltrainer.video.VideosScreen
 
 class MainActivity : ComponentActivity() {
 
@@ -28,8 +33,14 @@ class MainActivity : ComponentActivity() {
         viewModelFactory {
             initializer {
                 val app = application as VokabelApp
-                MainViewModel(app.repository, app.practiceRepository, app.speaker)
+                MainViewModel(app.repository, app.practiceRepository, app.statsRepository, app.speaker)
             }
+        }
+    }
+
+    private val videoViewModel: VideoViewModel by viewModels {
+        viewModelFactory {
+            initializer { VideoViewModel((application as VokabelApp).videoRepository) }
         }
     }
 
@@ -39,29 +50,57 @@ class MainActivity : ComponentActivity() {
         setContent {
             VokabelTrainerTheme {
                 Surface(Modifier.fillMaxSize()) {
-                    AppContent(viewModel)
+                    AppContent(viewModel, videoViewModel)
                 }
             }
         }
     }
 }
 
-/** Platzhalter fuer "alle Lektionen" beim Ueben */
+/** Platzhalter beim Ueben: alle Lektionen bzw. gemischte Tagesrunde */
 private const val ALL_LESSONS = "*"
+private const val TODAY = "today"
 
 @Composable
-fun AppContent(vm: MainViewModel) {
+fun AppContent(vm: MainViewModel, videoVm: VideoViewModel) {
     var selectedLesson by rememberSaveable { mutableStateOf<String?>(null) }
     var practiceTarget by rememberSaveable { mutableStateOf<String?>(null) }
+    var showStats by rememberSaveable { mutableStateOf(false) }
+    var showVideos by rememberSaveable { mutableStateOf(false) }
+    var openPlaylist by rememberSaveable { mutableStateOf<String?>(null) }
+    var playingVideo by rememberSaveable { mutableStateOf<String?>(null) }
+    val playlistId = openPlaylist
+    val videoId = playingVideo
     val lessonId = selectedLesson
     val target = practiceTarget
 
     when {
         target != null -> PracticeScreen(
             vm,
-            lessonId = target.takeUnless { it == ALL_LESSONS },
+            lessonId = target.takeUnless { it == ALL_LESSONS || it == TODAY },
+            today = target == TODAY,
             onBack = { practiceTarget = null },
         )
+
+        videoId != null -> {
+            BackHandler { playingVideo = null }
+            VideoPlayerScreen(videoVm, videoId, onBack = { playingVideo = null }, onPlay = { playingVideo = it })
+        }
+
+        playlistId != null -> {
+            BackHandler { openPlaylist = null }
+            PlaylistScreen(videoVm, playlistId, onBack = { openPlaylist = null }, onPlay = { playingVideo = it })
+        }
+
+        showVideos -> {
+            BackHandler { showVideos = false }
+            VideosScreen(videoVm, onBack = { showVideos = false }, onOpenPlaylist = { openPlaylist = it })
+        }
+
+        showStats -> {
+            BackHandler { showStats = false }
+            StatsScreen(vm, onBack = { showStats = false })
+        }
 
         lessonId != null -> {
             BackHandler { selectedLesson = null }
@@ -76,6 +115,9 @@ fun AppContent(vm: MainViewModel) {
             vm,
             onOpen = { selectedLesson = it },
             onPracticeAll = { practiceTarget = ALL_LESSONS },
+            onToday = { practiceTarget = TODAY },
+            onStats = { showStats = true },
+            onVideos = { showVideos = true },
         )
     }
 }
