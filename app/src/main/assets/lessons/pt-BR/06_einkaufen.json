@@ -1,0 +1,1320 @@
+{
+  "id": "pt-BR-06",
+  "language": "pt-BR",
+  "order": 6,
+  "title": "Einkaufen",
+  "titleTarget": "Fazendo compras",
+  "words": [
+    {
+      "id": "loja",
+      "text": "a loja",
+      "de": "das Geschäft, der Laden",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Geschäfte"
+    },
+    {
+      "id": "mercado",
+      "text": "o mercado",
+      "de": "der Markt; der Lebensmittelladen",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Geschäfte"
+    },
+    {
+      "id": "supermercado",
+      "text": "o supermercado",
+      "de": "der Supermarkt",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Geschäfte"
+    },
+    {
+      "id": "feira",
+      "text": "a feira",
+      "de": "der Wochenmarkt",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Die „feira livre“ findet meist einmal pro Woche auf der Strasse statt.",
+      "category": "Geschäfte"
+    },
+    {
+      "id": "padaria",
+      "text": "a padaria",
+      "de": "die Bäckerei",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Dort gibt es auch Kaffee und kleine Snacks.",
+      "category": "Geschäfte"
+    },
+    {
+      "id": "acougue",
+      "text": "o açougue",
+      "de": "die Metzgerei",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Geschäfte"
+    },
+    {
+      "id": "shopping",
+      "text": "o shopping",
+      "de": "das Einkaufszentrum",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Geschäfte"
+    },
+    {
+      "id": "caixa",
+      "text": "o caixa",
+      "de": "die Kasse",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Auch: a caixa = die Kassiererin",
+      "category": "Geschäfte"
+    },
+    {
+      "id": "sacola",
+      "text": "a sacola",
+      "de": "die Tüte, die Tasche",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Geschäfte"
+    },
+    {
+      "id": "roupa",
+      "text": "a roupa",
+      "de": "die Kleidung",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Kleidung & Accessoires"
+    },
+    {
+      "id": "camisa",
+      "text": "a camisa",
+      "de": "das Hemd",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Kleidung & Accessoires"
+    },
+    {
+      "id": "camiseta",
+      "text": "a camiseta",
+      "de": "das T-Shirt",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Kleidung & Accessoires"
+    },
+    {
+      "id": "calca",
+      "text": "a calça",
+      "de": "die Hose",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Kleidung & Accessoires"
+    },
+    {
+      "id": "bermuda",
+      "text": "a bermuda",
+      "de": "die kurze Hose, die Shorts",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Kleidung & Accessoires"
+    },
+    {
+      "id": "vestido",
+      "text": "o vestido",
+      "de": "das Kleid",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Kleidung & Accessoires"
+    },
+    {
+      "id": "saia",
+      "text": "a saia",
+      "de": "der Rock",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Kleidung & Accessoires"
+    },
+    {
+      "id": "casaco",
+      "text": "o casaco",
+      "de": "die Jacke, der Mantel",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Kleidung & Accessoires"
+    },
+    {
+      "id": "sapato",
+      "text": "o sapato",
+      "de": "der Schuh",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Kleidung & Accessoires"
+    },
+    {
+      "id": "sandalia",
+      "text": "a sandália",
+      "de": "die Sandale",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Kleidung & Accessoires"
+    },
+    {
+      "id": "chinelo",
+      "text": "o chinelo",
+      "de": "der Flip-Flop, der Badelatschen",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Kleidung & Accessoires"
+    },
+    {
+      "id": "biquini",
+      "text": "o biquíni",
+      "de": "der Bikini",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Kleidung & Accessoires"
+    },
+    {
+      "id": "bone",
+      "text": "o boné",
+      "de": "die Schirmmütze",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Kleidung & Accessoires"
+    },
+    {
+      "id": "oculos",
+      "text": "os óculos de sol",
+      "de": "die Sonnenbrille",
+      "pos": "noun",
+      "gender": "m",
+      "note": "óculos ist immer Mehrzahl: os óculos",
+      "category": "Kleidung & Accessoires"
+    },
+    {
+      "id": "bolsa",
+      "text": "a bolsa",
+      "de": "die Handtasche",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Kleidung & Accessoires"
+    },
+    {
+      "id": "tamanho",
+      "text": "o tamanho",
+      "de": "die Grösse",
+      "pos": "noun",
+      "gender": "m",
+      "note": "P, M, G = klein, mittel, gross",
+      "category": "Kleidung & Accessoires"
+    },
+    {
+      "id": "provador",
+      "text": "o provador",
+      "de": "die Umkleidekabine",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Kleidung & Accessoires"
+    },
+    {
+      "id": "cor",
+      "text": "a cor",
+      "de": "die Farbe",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Farben"
+    },
+    {
+      "id": "branco",
+      "text": "branco",
+      "de": "weiss",
+      "pos": "adjective",
+      "category": "Farben"
+    },
+    {
+      "id": "preto",
+      "text": "preto",
+      "de": "schwarz",
+      "pos": "adjective",
+      "category": "Farben"
+    },
+    {
+      "id": "vermelho",
+      "text": "vermelho",
+      "de": "rot",
+      "pos": "adjective",
+      "category": "Farben"
+    },
+    {
+      "id": "azul",
+      "text": "azul",
+      "de": "blau",
+      "pos": "adjective",
+      "note": "Mehrzahl: azuis; gleich für m und f",
+      "category": "Farben"
+    },
+    {
+      "id": "verde",
+      "text": "verde",
+      "de": "grün",
+      "pos": "adjective",
+      "category": "Farben"
+    },
+    {
+      "id": "amarelo",
+      "text": "amarelo",
+      "de": "gelb",
+      "pos": "adjective",
+      "category": "Farben"
+    },
+    {
+      "id": "cinza",
+      "text": "cinza",
+      "de": "grau",
+      "pos": "adjective",
+      "note": "Unveränderlich: a camisa cinza",
+      "category": "Farben"
+    },
+    {
+      "id": "marrom",
+      "text": "marrom",
+      "de": "braun",
+      "pos": "adjective",
+      "category": "Farben"
+    },
+    {
+      "id": "rosa",
+      "text": "rosa",
+      "de": "rosa",
+      "pos": "adjective",
+      "note": "Unveränderlich",
+      "category": "Farben"
+    },
+    {
+      "id": "cor_laranja",
+      "text": "laranja",
+      "de": "orange",
+      "pos": "adjective",
+      "note": "Unveränderlich",
+      "category": "Farben"
+    },
+    {
+      "id": "banana",
+      "text": "a banana",
+      "de": "die Banane",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Obst & Gemüse auf dem Markt"
+    },
+    {
+      "id": "maca",
+      "text": "a maçã",
+      "de": "der Apfel",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Obst & Gemüse auf dem Markt"
+    },
+    {
+      "id": "laranja",
+      "text": "a laranja",
+      "de": "die Orange",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Obst & Gemüse auf dem Markt"
+    },
+    {
+      "id": "abacaxi",
+      "text": "o abacaxi",
+      "de": "die Ananas",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Obst & Gemüse auf dem Markt"
+    },
+    {
+      "id": "manga",
+      "text": "a manga",
+      "de": "die Mango",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Obst & Gemüse auf dem Markt"
+    },
+    {
+      "id": "mamao",
+      "text": "o mamão",
+      "de": "die Papaya",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Obst & Gemüse auf dem Markt"
+    },
+    {
+      "id": "uva",
+      "text": "a uva",
+      "de": "die Traube",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Obst & Gemüse auf dem Markt"
+    },
+    {
+      "id": "limao",
+      "text": "o limão",
+      "de": "die Limette, die Zitrone",
+      "pos": "noun",
+      "gender": "m",
+      "note": "In Brasilien meist die grüne Limette.",
+      "category": "Obst & Gemüse auf dem Markt"
+    },
+    {
+      "id": "melancia",
+      "text": "a melancia",
+      "de": "die Wassermelone",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Obst & Gemüse auf dem Markt"
+    },
+    {
+      "id": "maracuja",
+      "text": "o maracujá",
+      "de": "die Maracuja, die Passionsfrucht",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Obst & Gemüse auf dem Markt"
+    },
+    {
+      "id": "acai",
+      "text": "o açaí",
+      "de": "die Açaí-Beere",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Wird gefroren als Creme gegessen.",
+      "category": "Obst & Gemüse auf dem Markt"
+    },
+    {
+      "id": "alface",
+      "text": "a alface",
+      "de": "der Kopfsalat",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Obst & Gemüse auf dem Markt"
+    },
+    {
+      "id": "cenoura",
+      "text": "a cenoura",
+      "de": "die Karotte",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Obst & Gemüse auf dem Markt"
+    },
+    {
+      "id": "alho",
+      "text": "o alho",
+      "de": "der Knoblauch",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Obst & Gemüse auf dem Markt"
+    },
+    {
+      "id": "grama",
+      "text": "o grama",
+      "de": "das Gramm",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Achtung: männlich! duzentos gramas",
+      "category": "Mengen & Grössen"
+    },
+    {
+      "id": "litro",
+      "text": "o litro",
+      "de": "der Liter",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Mengen & Grössen"
+    },
+    {
+      "id": "duzia",
+      "text": "a dúzia",
+      "de": "das Dutzend",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Mengen & Grössen"
+    },
+    {
+      "id": "pacote",
+      "text": "o pacote",
+      "de": "die Packung",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Mengen & Grössen"
+    },
+    {
+      "id": "lata",
+      "text": "a lata",
+      "de": "die Dose",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Mengen & Grössen"
+    },
+    {
+      "id": "par",
+      "text": "o par",
+      "de": "das Paar",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Mengen & Grössen"
+    },
+    {
+      "id": "pequeno",
+      "text": "pequeno",
+      "de": "klein",
+      "pos": "adjective",
+      "category": "Mengen & Grössen"
+    },
+    {
+      "id": "grande",
+      "text": "grande",
+      "de": "gross",
+      "pos": "adjective",
+      "category": "Mengen & Grössen"
+    },
+    {
+      "id": "medio",
+      "text": "médio",
+      "de": "mittel",
+      "pos": "adjective",
+      "category": "Mengen & Grössen"
+    },
+    {
+      "id": "mais",
+      "text": "mais",
+      "de": "mehr",
+      "pos": "adverb",
+      "category": "Mengen & Grössen",
+      "grammar": [
+        "vergleich"
+      ]
+    },
+    {
+      "id": "menos",
+      "text": "menos",
+      "de": "weniger",
+      "pos": "adverb",
+      "category": "Mengen & Grössen",
+      "grammar": [
+        "vergleich"
+      ]
+    },
+    {
+      "id": "outro",
+      "text": "outro",
+      "de": "ein anderer, noch ein",
+      "pos": "pronoun",
+      "category": "Mengen & Grössen"
+    },
+    {
+      "id": "comprar",
+      "text": "comprar",
+      "de": "kaufen",
+      "pos": "verb",
+      "category": "Einkaufen: Verben & Wörter"
+    },
+    {
+      "id": "vender",
+      "text": "vender",
+      "de": "verkaufen",
+      "pos": "verb",
+      "category": "Einkaufen: Verben & Wörter"
+    },
+    {
+      "id": "custar",
+      "text": "custar",
+      "de": "kosten",
+      "pos": "verb",
+      "category": "Einkaufen: Verben & Wörter"
+    },
+    {
+      "id": "experimentar",
+      "text": "experimentar",
+      "de": "anprobieren; probieren",
+      "pos": "verb",
+      "category": "Einkaufen: Verben & Wörter"
+    },
+    {
+      "id": "olhar",
+      "text": "olhar",
+      "de": "schauen",
+      "pos": "verb",
+      "note": "Só estou olhando. = Ich schaue nur.",
+      "category": "Einkaufen: Verben & Wörter"
+    },
+    {
+      "id": "procurar",
+      "text": "procurar",
+      "de": "suchen",
+      "pos": "verb",
+      "category": "Einkaufen: Verben & Wörter"
+    },
+    {
+      "id": "promocao",
+      "text": "a promoção",
+      "de": "das Angebot, der Ausverkauf",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Einkaufen: Verben & Wörter"
+    },
+    {
+      "id": "aberto",
+      "text": "aberto",
+      "de": "offen, geöffnet",
+      "pos": "adjective",
+      "category": "Einkaufen: Verben & Wörter"
+    },
+    {
+      "id": "fechado",
+      "text": "fechado",
+      "de": "geschlossen",
+      "pos": "adjective",
+      "category": "Einkaufen: Verben & Wörter"
+    },
+    {
+      "id": "novo",
+      "text": "novo",
+      "de": "neu",
+      "pos": "adjective",
+      "category": "Einkaufen: Verben & Wörter"
+    },
+    {
+      "id": "este",
+      "text": "este, esta",
+      "de": "dieser, diese (hier)",
+      "pos": "pronoun",
+      "category": "Einkaufen: Verben & Wörter",
+      "grammar": [
+        "demonstrativ"
+      ]
+    },
+    {
+      "id": "esse",
+      "text": "esse, essa",
+      "de": "dieser, diese (da)",
+      "pos": "pronoun",
+      "category": "Einkaufen: Verben & Wörter",
+      "grammar": [
+        "demonstrativ"
+      ]
+    },
+    {
+      "id": "aquele",
+      "text": "aquele, aquela",
+      "de": "jener, jene (dort)",
+      "pos": "pronoun",
+      "category": "Einkaufen: Verben & Wörter",
+      "grammar": [
+        "demonstrativ"
+      ]
+    },
+    {
+      "id": "isso",
+      "text": "isso",
+      "de": "das (da)",
+      "pos": "pronoun",
+      "category": "Einkaufen: Verben & Wörter",
+      "grammar": [
+        "demonstrativ"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "A que horas a loja abre?",
+      "de": "Um wie viel Uhr öffnet der Laden?",
+      "words": [
+        "loja",
+        "hora"
+      ],
+      "grammar": [
+        "fragewoerter"
+      ]
+    },
+    {
+      "id": "s02",
+      "text": "O supermercado está aberto no domingo?",
+      "de": "Ist der Supermarkt am Sonntag geöffnet?",
+      "words": [
+        "supermercado",
+        "aberto"
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "A loja já está fechada.",
+      "de": "Der Laden ist schon geschlossen.",
+      "words": [
+        "loja",
+        "fechado"
+      ]
+    },
+    {
+      "id": "s04",
+      "text": "Vamos à feira no sábado?",
+      "de": "Gehen wir am Samstag auf den Markt?",
+      "words": [
+        "feira",
+        "ir"
+      ],
+      "grammar": [
+        "ir_futuro",
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s05",
+      "text": "Na feira as frutas são mais baratas.",
+      "de": "Auf dem Markt ist das Obst günstiger.",
+      "words": [
+        "feira",
+        "mais",
+        "barato"
+      ],
+      "grammar": [
+        "vergleich",
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s06",
+      "text": "Eu compro pão na padaria.",
+      "de": "Ich kaufe Brot in der Bäckerei.",
+      "words": [
+        "eu",
+        "comprar",
+        "pao",
+        "padaria"
+      ],
+      "grammar": [
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s07",
+      "text": "Meio quilo de carne moída, por favor.",
+      "de": "Ein halbes Kilo Hackfleisch, bitte.",
+      "words": [
+        "quilo",
+        "carne",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s08",
+      "text": "O açougue fica ao lado do mercado.",
+      "de": "Die Metzgerei ist neben dem Markt.",
+      "words": [
+        "acougue",
+        "mercado",
+        "ao_lado",
+        "ficar"
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "Vamos ao shopping comprar roupa.",
+      "de": "Wir gehen ins Einkaufszentrum, Kleider kaufen.",
+      "words": [
+        "shopping",
+        "comprar",
+        "roupa",
+        "ir"
+      ],
+      "grammar": [
+        "ir_futuro"
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Onde fica o caixa?",
+      "de": "Wo ist die Kasse?",
+      "words": [
+        "onde",
+        "caixa",
+        "ficar"
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Quer uma sacola?",
+      "de": "Möchten Sie eine Tüte?",
+      "words": [
+        "sacola"
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Só estou olhando, obrigado.",
+      "de": "Ich schaue nur, danke.",
+      "words": [
+        "olhar",
+        "obrigado"
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Estou procurando uma camiseta branca.",
+      "de": "Ich suche ein weisses T-Shirt.",
+      "words": [
+        "procurar",
+        "camiseta",
+        "branco"
+      ],
+      "grammar": [
+        "adjektive"
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Posso experimentar essa calça?",
+      "de": "Kann ich diese Hose anprobieren?",
+      "words": [
+        "experimentar",
+        "esse",
+        "calca"
+      ],
+      "grammar": [
+        "demonstrativ"
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Onde fica o provador?",
+      "de": "Wo ist die Umkleidekabine?",
+      "words": [
+        "onde",
+        "provador",
+        "ficar"
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Qual é o seu tamanho?",
+      "de": "Welche Grösse haben Sie?",
+      "words": [
+        "qual",
+        "tamanho"
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Tem um tamanho maior?",
+      "de": "Gibt es das eine Grösse grösser?",
+      "words": [
+        "tamanho"
+      ],
+      "grammar": [
+        "vergleich"
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Essa camisa é pequena demais.",
+      "de": "Dieses Hemd ist zu klein.",
+      "words": [
+        "esse",
+        "camisa",
+        "pequeno"
+      ],
+      "grammar": [
+        "demonstrativ"
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Tem em outra cor?",
+      "de": "Gibt es das in einer anderen Farbe?",
+      "words": [
+        "cor",
+        "outro"
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "Eu gosto desse vestido vermelho.",
+      "de": "Mir gefällt dieses rote Kleid.",
+      "words": [
+        "eu",
+        "vestido",
+        "vermelho"
+      ],
+      "grammar": [
+        "adjektive",
+        "demonstrativ"
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "A saia azul é mais bonita.",
+      "de": "Der blaue Rock ist schöner.",
+      "words": [
+        "saia",
+        "azul",
+        "mais"
+      ],
+      "grammar": [
+        "vergleich",
+        "adjektive"
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "Esse casaco preto custa quanto?",
+      "de": "Wie viel kostet diese schwarze Jacke?",
+      "words": [
+        "esse",
+        "casaco",
+        "preto"
+      ],
+      "grammar": [
+        "demonstrativ"
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "Quanto custa esse par de sapatos?",
+      "de": "Wie viel kostet dieses Paar Schuhe?",
+      "words": [
+        "quanto_custa",
+        "esse",
+        "par",
+        "sapato"
+      ],
+      "grammar": [
+        "demonstrativ"
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "Preciso de um chinelo para a praia.",
+      "de": "Ich brauche Flip-Flops für den Strand.",
+      "words": [
+        "chinelo"
+      ],
+      "grammar": [
+        "precisar_de"
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "Essas sandálias são muito confortáveis.",
+      "de": "Diese Sandalen sind sehr bequem.",
+      "words": [
+        "sandalia",
+        "muito"
+      ]
+    },
+    {
+      "id": "s26",
+      "text": "Comprei um biquíni verde.",
+      "de": "Ich habe einen grünen Bikini gekauft.",
+      "words": [
+        "biquini",
+        "verde"
+      ],
+      "grammar": [
+        "adjektive"
+      ]
+    },
+    {
+      "id": "s27",
+      "text": "Esse boné amarelo é do Brasil.",
+      "de": "Diese gelbe Mütze ist aus Brasilien.",
+      "words": [
+        "esse",
+        "bone",
+        "amarelo"
+      ],
+      "grammar": [
+        "adjektive"
+      ]
+    },
+    {
+      "id": "s28",
+      "text": "Perdi os meus óculos de sol.",
+      "de": "Ich habe meine Sonnenbrille verloren.",
+      "words": [
+        "perder",
+        "oculos"
+      ]
+    },
+    {
+      "id": "s29",
+      "text": "A bolsa marrom está em promoção.",
+      "de": "Die braune Handtasche ist im Angebot.",
+      "words": [
+        "bolsa",
+        "marrom",
+        "promocao"
+      ],
+      "grammar": [
+        "adjektive"
+      ]
+    },
+    {
+      "id": "s30",
+      "text": "Calças cinza e camisas rosa.",
+      "de": "Graue Hosen und rosa Hemden.",
+      "words": [
+        "calca",
+        "cinza",
+        "rosa"
+      ],
+      "grammar": [
+        "adjektive"
+      ]
+    },
+    {
+      "id": "s31",
+      "text": "Uma camiseta laranja, tamanho M.",
+      "de": "Ein orangefarbenes T-Shirt, Grösse M.",
+      "words": [
+        "camiseta",
+        "cor_laranja",
+        "tamanho"
+      ]
+    },
+    {
+      "id": "s32",
+      "text": "Uma bermuda média, por favor.",
+      "de": "Eine kurze Hose in M, bitte.",
+      "words": [
+        "bermuda",
+        "medio",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s33",
+      "text": "Uma dúzia de bananas, por favor.",
+      "de": "Ein Dutzend Bananen, bitte.",
+      "words": [
+        "duzia",
+        "banana",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s34",
+      "text": "Quanto custa o quilo da maçã?",
+      "de": "Was kostet das Kilo Äpfel?",
+      "words": [
+        "quanto_custa",
+        "quilo",
+        "maca"
+      ],
+      "grammar": [
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s35",
+      "text": "Duas laranjas e um abacaxi.",
+      "de": "Zwei Orangen und eine Ananas.",
+      "words": [
+        "num_2",
+        "laranja",
+        "abacaxi"
+      ],
+      "grammar": [
+        "zahlen_geschlecht"
+      ]
+    },
+    {
+      "id": "s36",
+      "text": "Essa manga está madura?",
+      "de": "Ist diese Mango reif?",
+      "words": [
+        "esse",
+        "manga"
+      ],
+      "grammar": [
+        "demonstrativ"
+      ]
+    },
+    {
+      "id": "s37",
+      "text": "Eu adoro mamão no café da manhã.",
+      "de": "Ich liebe Papaya zum Frühstück.",
+      "words": [
+        "eu",
+        "mamao",
+        "cafe_da_manha"
+      ]
+    },
+    {
+      "id": "s38",
+      "text": "Meio quilo de uva, por favor.",
+      "de": "Ein halbes Kilo Trauben, bitte.",
+      "words": [
+        "quilo",
+        "uva",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s39",
+      "text": "Um suco de limão sem açúcar.",
+      "de": "Einen Limettensaft ohne Zucker.",
+      "words": [
+        "suco",
+        "limao",
+        "sem",
+        "acucar"
+      ]
+    },
+    {
+      "id": "s40",
+      "text": "A melancia é grande demais para mim.",
+      "de": "Die Wassermelone ist zu gross für mich.",
+      "words": [
+        "melancia",
+        "grande"
+      ]
+    },
+    {
+      "id": "s41",
+      "text": "Suco de maracujá é o meu favorito.",
+      "de": "Maracujasaft ist mein Lieblingssaft.",
+      "words": [
+        "suco",
+        "maracuja"
+      ]
+    },
+    {
+      "id": "s42",
+      "text": "Um açaí pequeno com banana.",
+      "de": "Ein kleines Açaí mit Banane.",
+      "words": [
+        "acai",
+        "pequeno",
+        "banana",
+        "com"
+      ]
+    },
+    {
+      "id": "s43",
+      "text": "Alface, cenoura e alho, por favor.",
+      "de": "Salat, Karotten und Knoblauch, bitte.",
+      "words": [
+        "alface",
+        "cenoura",
+        "alho",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s44",
+      "text": "Duzentos gramas de queijo.",
+      "de": "Zweihundert Gramm Käse.",
+      "words": [
+        "num_200",
+        "grama",
+        "queijo"
+      ]
+    },
+    {
+      "id": "s45",
+      "text": "Um litro de leite e um pacote de café.",
+      "de": "Ein Liter Milch und eine Packung Kaffee.",
+      "words": [
+        "litro",
+        "leite",
+        "pacote",
+        "cafe"
+      ]
+    },
+    {
+      "id": "s46",
+      "text": "Uma lata de cerveja custa cinco reais.",
+      "de": "Eine Dose Bier kostet fünf Reais.",
+      "words": [
+        "lata",
+        "cerveja",
+        "custar",
+        "num_5",
+        "real"
+      ]
+    },
+    {
+      "id": "s47",
+      "text": "Você vende chip de celular aqui?",
+      "de": "Verkaufen Sie hier SIM-Karten?",
+      "words": [
+        "voce",
+        "vender",
+        "aqui"
+      ]
+    },
+    {
+      "id": "s48",
+      "text": "Esse é mais barato do que aquele.",
+      "de": "Dieses ist günstiger als jenes.",
+      "words": [
+        "esse",
+        "mais",
+        "barato",
+        "aquele"
+      ],
+      "grammar": [
+        "vergleich",
+        "demonstrativ"
+      ]
+    },
+    {
+      "id": "s49",
+      "text": "Este aqui custa menos.",
+      "de": "Dieses hier kostet weniger.",
+      "words": [
+        "este",
+        "aqui",
+        "menos"
+      ],
+      "grammar": [
+        "demonstrativ",
+        "vergleich"
+      ]
+    },
+    {
+      "id": "s50",
+      "text": "O que é isso?",
+      "de": "Was ist das?",
+      "words": [
+        "o_que",
+        "isso"
+      ],
+      "grammar": [
+        "demonstrativ"
+      ]
+    },
+    {
+      "id": "s51",
+      "text": "Aquela loja vende roupa nova.",
+      "de": "Jener Laden verkauft neue Kleidung.",
+      "words": [
+        "aquele",
+        "loja",
+        "vender",
+        "roupa",
+        "novo"
+      ],
+      "grammar": [
+        "demonstrativ"
+      ]
+    },
+    {
+      "id": "s52",
+      "text": "Pode me dar outro, por favor?",
+      "de": "Können Sie mir bitte einen anderen geben?",
+      "words": [
+        "outro",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s53",
+      "text": "Quanto custa tudo?",
+      "de": "Wie viel kostet alles zusammen?",
+      "words": [
+        "quanto_custa"
+      ]
+    },
+    {
+      "id": "s54",
+      "text": "Isso custa mais de cem reais.",
+      "de": "Das kostet mehr als hundert Reais.",
+      "words": [
+        "isso",
+        "custar",
+        "mais",
+        "num_100",
+        "real"
+      ]
+    },
+    {
+      "id": "s55",
+      "text": "Quero comprar alguma coisa para a minha família.",
+      "de": "Ich möchte etwas für meine Familie kaufen.",
+      "words": [
+        "comprar"
+      ]
+    },
+    {
+      "id": "s56",
+      "text": "Essa cor fica bem em você.",
+      "de": "Diese Farbe steht dir gut.",
+      "words": [
+        "esse",
+        "cor",
+        "bem",
+        "voce"
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "adjektive",
+      "title": "Adjektive: Endung und Stellung",
+      "explanation": "Adjektive stehen meist NACH dem Nomen und passen sich an Geschlecht und Zahl an:\n\n• o vestido vermelho – das rote Kleid\n• a camisa vermelha – das rote Hemd\n• os sapatos pretos, as calças pretas\n\nAdjektive auf -e oder Konsonant haben nur eine Form für m und f: verde, azul, grande → a saia verde, o casaco verde.\n\nEinige Farben ändern sich gar nicht: rosa, laranja, cinza.",
+      "examples": [
+        {
+          "text": "um carro branco",
+          "de": "ein weisses Auto"
+        },
+        {
+          "text": "uma casa branca",
+          "de": "ein weisses Haus"
+        },
+        {
+          "text": "as camisetas azuis",
+          "de": "die blauen T-Shirts"
+        }
+      ]
+    },
+    {
+      "id": "demonstrativ",
+      "title": "dieser, jener: este, esse, aquele",
+      "explanation": "• este/esta – dieser/diese hier (bei mir)\n• esse/essa – dieser/diese da (bei dir)\n• aquele/aquela – jener/jene dort (weiter weg)\n\nIm brasilianischen Alltag werden este und esse kaum unterschieden; meistens hört man esse/essa.\n\nFür „das“ ohne Nomen: isso (das da), isto (das hier), aquilo (das dort).\n\nMit de verschmelzen sie: de + esse = desse, em + essa = nessa.",
+      "examples": [
+        {
+          "text": "Essa camiseta é bonita.",
+          "de": "Dieses T-Shirt ist schön."
+        },
+        {
+          "text": "Aquele prédio é um hotel.",
+          "de": "Jenes Gebäude ist ein Hotel."
+        },
+        {
+          "text": "Quanto custa isso?",
+          "de": "Wie viel kostet das?"
+        }
+      ]
+    },
+    {
+      "id": "vergleich",
+      "title": "Vergleichen: mais … do que",
+      "explanation": "• mais … (do) que – mehr … als: mais barato do que – günstiger als\n• menos … (do) que – weniger … als\n• tão … quanto – so … wie\n\nUnregelmässig:\n• bom → melhor (besser)\n• ruim → pior (schlechter)\n• grande → maior (grösser)\n• pequeno → menor (kleiner)\n\n„zu“ (zu gross) heisst demais und steht hinten: grande demais.",
+      "examples": [
+        {
+          "text": "Aqui é mais barato do que lá.",
+          "de": "Hier ist es günstiger als dort."
+        },
+        {
+          "text": "Tem um tamanho maior?",
+          "de": "Gibt es eine grössere Grösse?"
+        },
+        {
+          "text": "É tão caro quanto em casa.",
+          "de": "Es ist so teuer wie zu Hause."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1077 @@
+{
+  "id": "pt-BR-04",
+  "language": "pt-BR",
+  "order": 4,
+  "title": "Hotel & Unterkunft",
+  "titleTarget": "Hotel e hospedagem",
+  "words": [
+    {
+      "id": "hotel",
+      "text": "o hotel",
+      "de": "das Hotel",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "pousada",
+      "text": "a pousada",
+      "de": "die Pension, das Gästehaus",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Typisch an der Küste und auf dem Land.",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "albergue",
+      "text": "o albergue",
+      "de": "das Hostel, die Jugendherberge",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "hospedagem",
+      "text": "a hospedagem",
+      "de": "die Unterkunft",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "recepcao",
+      "text": "a recepção",
+      "de": "die Rezeption",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "check_in",
+      "text": "o check-in",
+      "de": "der Check-in",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "check_out",
+      "text": "o check-out",
+      "de": "der Check-out",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "passaporte",
+      "text": "o passaporte",
+      "de": "der Reisepass",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "identidade",
+      "text": "a identidade",
+      "de": "der Ausweis",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Kurz für „carteira de identidade“.",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "hospede",
+      "text": "o hóspede",
+      "de": "der Gast (im Hotel)",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "noite",
+      "text": "a noite",
+      "de": "die Nacht; der Abend",
+      "pos": "noun",
+      "gender": "f",
+      "note": "à noite = abends, nachts",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "diaria",
+      "text": "a diária",
+      "de": "der Preis pro Nacht",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Wörtlich „Tagessatz“.",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "chave",
+      "text": "a chave",
+      "de": "der Schlüssel",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "confirmar",
+      "text": "confirmar",
+      "de": "bestätigen",
+      "pos": "verb",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "quarto",
+      "text": "o quarto",
+      "de": "das Zimmer",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "quarto_solteiro",
+      "text": "o quarto de solteiro",
+      "de": "das Einzelzimmer",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "quarto_casal",
+      "text": "o quarto de casal",
+      "de": "das Doppelzimmer (Doppelbett)",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Mit zwei Einzelbetten: quarto duplo.",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "cama",
+      "text": "a cama",
+      "de": "das Bett",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "travesseiro",
+      "text": "o travesseiro",
+      "de": "das Kopfkissen",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "cobertor",
+      "text": "o cobertor",
+      "de": "die Bettdecke",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "toalha",
+      "text": "a toalha",
+      "de": "das Handtuch",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "chuveiro",
+      "text": "o chuveiro",
+      "de": "die Dusche",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "pia",
+      "text": "a pia",
+      "de": "das Waschbecken",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "ar_condicionado",
+      "text": "o ar-condicionado",
+      "de": "die Klimaanlage",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "ventilador",
+      "text": "o ventilador",
+      "de": "der Ventilator",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "janela",
+      "text": "a janela",
+      "de": "das Fenster",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "porta",
+      "text": "a porta",
+      "de": "die Tür",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "varanda",
+      "text": "a varanda",
+      "de": "der Balkon",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "vista",
+      "text": "a vista",
+      "de": "die Aussicht",
+      "pos": "noun",
+      "gender": "f",
+      "note": "vista para o mar = Meerblick",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "andar",
+      "text": "o andar",
+      "de": "das Stockwerk",
+      "pos": "noun",
+      "gender": "m",
+      "note": "o térreo = das Erdgeschoss",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "elevador",
+      "text": "o elevador",
+      "de": "der Aufzug",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "escada",
+      "text": "a escada",
+      "de": "die Treppe",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "wifi",
+      "text": "o wi-fi",
+      "de": "das WLAN",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Service & Ausstattung"
+    },
+    {
+      "id": "senha",
+      "text": "a senha",
+      "de": "das Passwort",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Service & Ausstattung"
+    },
+    {
+      "id": "piscina",
+      "text": "a piscina",
+      "de": "das Schwimmbad, der Pool",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Service & Ausstattung"
+    },
+    {
+      "id": "estacionamento",
+      "text": "o estacionamento",
+      "de": "der Parkplatz",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Service & Ausstattung"
+    },
+    {
+      "id": "cofre",
+      "text": "o cofre",
+      "de": "der Safe",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Service & Ausstattung"
+    },
+    {
+      "id": "limpeza",
+      "text": "a limpeza",
+      "de": "die Reinigung, das Putzen",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Service & Ausstattung"
+    },
+    {
+      "id": "lavanderia",
+      "text": "a lavanderia",
+      "de": "die Wäscherei",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Service & Ausstattung"
+    },
+    {
+      "id": "tomada",
+      "text": "a tomada",
+      "de": "die Steckdose",
+      "pos": "noun",
+      "gender": "f",
+      "note": "In Brasilien meist Typ N; ein Adapter ist nützlich.",
+      "category": "Service & Ausstattung"
+    },
+    {
+      "id": "carregador",
+      "text": "o carregador",
+      "de": "das Ladegerät",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Service & Ausstattung"
+    },
+    {
+      "id": "problema",
+      "text": "o problema",
+      "de": "das Problem",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Männlich, obwohl auf -a!",
+      "category": "Probleme"
+    },
+    {
+      "id": "quebrado",
+      "text": "quebrado",
+      "de": "kaputt",
+      "pos": "adjective",
+      "category": "Probleme"
+    },
+    {
+      "id": "sujo",
+      "text": "sujo",
+      "de": "schmutzig",
+      "pos": "adjective",
+      "category": "Probleme"
+    },
+    {
+      "id": "limpo",
+      "text": "limpo",
+      "de": "sauber",
+      "pos": "adjective",
+      "category": "Probleme"
+    },
+    {
+      "id": "barulhento",
+      "text": "barulhento",
+      "de": "laut (lärmig)",
+      "pos": "adjective",
+      "category": "Probleme"
+    },
+    {
+      "id": "funcionar",
+      "text": "funcionar",
+      "de": "funktionieren",
+      "pos": "verb",
+      "category": "Probleme"
+    },
+    {
+      "id": "trocar",
+      "text": "trocar",
+      "de": "wechseln, tauschen",
+      "pos": "verb",
+      "category": "Probleme"
+    },
+    {
+      "id": "onde",
+      "text": "onde",
+      "de": "wo",
+      "pos": "adverb",
+      "category": "Fragewörter & Verben",
+      "grammar": [
+        "fragewoerter"
+      ]
+    },
+    {
+      "id": "quando",
+      "text": "quando",
+      "de": "wann",
+      "pos": "adverb",
+      "category": "Fragewörter & Verben",
+      "grammar": [
+        "fragewoerter"
+      ]
+    },
+    {
+      "id": "qual",
+      "text": "qual",
+      "de": "welche(r, s); was",
+      "pos": "pronoun",
+      "note": "Plural: quais",
+      "category": "Fragewörter & Verben",
+      "grammar": [
+        "fragewoerter"
+      ]
+    },
+    {
+      "id": "o_que",
+      "text": "o que",
+      "de": "was",
+      "pos": "pronoun",
+      "category": "Fragewörter & Verben",
+      "grammar": [
+        "fragewoerter"
+      ]
+    },
+    {
+      "id": "por_que",
+      "text": "por que",
+      "de": "warum",
+      "pos": "adverb",
+      "note": "Antwort: porque = weil",
+      "category": "Fragewörter & Verben",
+      "grammar": [
+        "fragewoerter"
+      ]
+    },
+    {
+      "id": "quem",
+      "text": "quem",
+      "de": "wer",
+      "pos": "pronoun",
+      "category": "Fragewörter & Verben",
+      "grammar": [
+        "fragewoerter"
+      ]
+    },
+    {
+      "id": "ter",
+      "text": "ter",
+      "de": "haben",
+      "pos": "verb",
+      "category": "Fragewörter & Verben",
+      "grammar": [
+        "ter_haben"
+      ]
+    },
+    {
+      "id": "precisar",
+      "text": "precisar de",
+      "de": "brauchen",
+      "pos": "verb",
+      "category": "Fragewörter & Verben",
+      "grammar": [
+        "precisar_de"
+      ]
+    },
+    {
+      "id": "ficar",
+      "text": "ficar",
+      "de": "bleiben; sich befinden",
+      "pos": "verb",
+      "note": "Onde fica …? = Wo ist …?",
+      "category": "Fragewörter & Verben"
+    },
+    {
+      "id": "chegar",
+      "text": "chegar",
+      "de": "ankommen",
+      "pos": "verb",
+      "category": "Fragewörter & Verben"
+    },
+    {
+      "id": "sair",
+      "text": "sair",
+      "de": "hinausgehen; abreisen",
+      "pos": "verb",
+      "category": "Fragewörter & Verben"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "Eu tenho uma reserva no nome de Müller.",
+      "de": "Ich habe eine Reservierung auf den Namen Müller.",
+      "words": [
+        "eu",
+        "reserva",
+        "ter"
+      ],
+      "grammar": [
+        "ter_haben"
+      ]
+    },
+    {
+      "id": "s02",
+      "text": "Vocês têm um quarto livre para hoje?",
+      "de": "Habt ihr ein freies Zimmer für heute?",
+      "words": [
+        "quarto",
+        "hoje",
+        "ter"
+      ],
+      "grammar": [
+        "ter_haben"
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "Quanto é a diária?",
+      "de": "Wie viel kostet eine Nacht?",
+      "words": [
+        "diaria"
+      ],
+      "grammar": [
+        "fragewoerter"
+      ]
+    },
+    {
+      "id": "s04",
+      "text": "A diária inclui o café da manhã?",
+      "de": "Ist das Frühstück im Preis inbegriffen?",
+      "words": [
+        "diaria",
+        "cafe_da_manha"
+      ]
+    },
+    {
+      "id": "s05",
+      "text": "Um quarto de casal para três noites, por favor.",
+      "de": "Ein Doppelzimmer für drei Nächte, bitte.",
+      "words": [
+        "quarto_casal",
+        "num_3",
+        "noite",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s06",
+      "text": "Eu prefiro um quarto de solteiro com vista para o mar.",
+      "de": "Ich hätte lieber ein Einzelzimmer mit Meerblick.",
+      "words": [
+        "eu",
+        "quarto_solteiro",
+        "vista",
+        "com"
+      ]
+    },
+    {
+      "id": "s07",
+      "text": "Posso ver o seu passaporte?",
+      "de": "Darf ich Ihren Pass sehen?",
+      "words": [
+        "passaporte"
+      ]
+    },
+    {
+      "id": "s08",
+      "text": "Aqui está a chave do quarto.",
+      "de": "Hier ist der Zimmerschlüssel.",
+      "words": [
+        "chave",
+        "quarto"
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "O quarto fica no terceiro andar.",
+      "de": "Das Zimmer ist im dritten Stock.",
+      "words": [
+        "quarto",
+        "ficar",
+        "andar"
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Onde fica o elevador?",
+      "de": "Wo ist der Aufzug?",
+      "words": [
+        "onde",
+        "ficar",
+        "elevador"
+      ],
+      "grammar": [
+        "fragewoerter"
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "A que horas é o check-out?",
+      "de": "Um wie viel Uhr ist der Check-out?",
+      "words": [
+        "check_out",
+        "hora"
+      ],
+      "grammar": [
+        "fragewoerter"
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "O check-in é a partir das duas da tarde.",
+      "de": "Der Check-in ist ab zwei Uhr nachmittags.",
+      "words": [
+        "check_in",
+        "num_2"
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Qual é a senha do wi-fi?",
+      "de": "Wie lautet das WLAN-Passwort?",
+      "words": [
+        "qual",
+        "senha",
+        "wifi"
+      ],
+      "grammar": [
+        "fragewoerter"
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "O wi-fi não funciona.",
+      "de": "Das WLAN funktioniert nicht.",
+      "words": [
+        "wifi",
+        "nao",
+        "funcionar"
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "O ar-condicionado está quebrado.",
+      "de": "Die Klimaanlage ist kaputt.",
+      "words": [
+        "ar_condicionado",
+        "quebrado"
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "O chuveiro não tem água quente.",
+      "de": "Die Dusche hat kein warmes Wasser.",
+      "words": [
+        "chuveiro",
+        "nao",
+        "agua",
+        "quente",
+        "ter"
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Pode trocar as toalhas, por favor?",
+      "de": "Können Sie bitte die Handtücher wechseln?",
+      "words": [
+        "trocar",
+        "toalha",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Preciso de mais um travesseiro.",
+      "de": "Ich brauche noch ein Kopfkissen.",
+      "words": [
+        "precisar",
+        "travesseiro"
+      ],
+      "grammar": [
+        "precisar_de"
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Tem um cobertor extra?",
+      "de": "Gibt es eine zusätzliche Decke?",
+      "words": [
+        "cobertor"
+      ],
+      "grammar": [
+        "ter_haben"
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "O quarto está sujo.",
+      "de": "Das Zimmer ist schmutzig.",
+      "words": [
+        "quarto",
+        "sujo"
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "O banheiro está muito limpo.",
+      "de": "Das Bad ist sehr sauber.",
+      "words": [
+        "banheiro",
+        "muito",
+        "limpo"
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "A rua é muito barulhenta à noite.",
+      "de": "Die Strasse ist nachts sehr laut.",
+      "words": [
+        "muito",
+        "barulhento",
+        "noite"
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "Posso trocar de quarto?",
+      "de": "Kann ich das Zimmer wechseln?",
+      "words": [
+        "trocar",
+        "quarto"
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "Tem piscina no hotel?",
+      "de": "Hat das Hotel einen Pool?",
+      "words": [
+        "piscina",
+        "hotel"
+      ],
+      "grammar": [
+        "ter_haben"
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "O estacionamento é gratuito?",
+      "de": "Ist der Parkplatz kostenlos?",
+      "words": [
+        "estacionamento"
+      ]
+    },
+    {
+      "id": "s26",
+      "text": "Tem cofre no quarto?",
+      "de": "Gibt es einen Safe im Zimmer?",
+      "words": [
+        "cofre",
+        "quarto"
+      ],
+      "grammar": [
+        "ter_haben"
+      ]
+    },
+    {
+      "id": "s27",
+      "text": "Onde tem uma tomada?",
+      "de": "Wo gibt es eine Steckdose?",
+      "words": [
+        "onde",
+        "tomada"
+      ],
+      "grammar": [
+        "fragewoerter"
+      ]
+    },
+    {
+      "id": "s28",
+      "text": "Esqueci meu carregador.",
+      "de": "Ich habe mein Ladegerät vergessen.",
+      "words": [
+        "carregador"
+      ]
+    },
+    {
+      "id": "s29",
+      "text": "Quando é a limpeza do quarto?",
+      "de": "Wann wird das Zimmer geputzt?",
+      "words": [
+        "quando",
+        "limpeza",
+        "quarto"
+      ],
+      "grammar": [
+        "fragewoerter"
+      ]
+    },
+    {
+      "id": "s30",
+      "text": "O hotel tem lavanderia?",
+      "de": "Hat das Hotel eine Wäscherei?",
+      "words": [
+        "hotel",
+        "lavanderia",
+        "ter"
+      ]
+    },
+    {
+      "id": "s31",
+      "text": "Quem fala inglês aqui?",
+      "de": "Wer spricht hier Englisch?",
+      "words": [
+        "quem",
+        "falar"
+      ],
+      "grammar": [
+        "fragewoerter"
+      ]
+    },
+    {
+      "id": "s32",
+      "text": "Por que a janela não abre?",
+      "de": "Warum geht das Fenster nicht auf?",
+      "words": [
+        "por_que",
+        "janela",
+        "nao"
+      ],
+      "grammar": [
+        "fragewoerter"
+      ]
+    },
+    {
+      "id": "s33",
+      "text": "Pode fechar a porta, por favor?",
+      "de": "Kannst du bitte die Tür schliessen?",
+      "words": [
+        "porta",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s34",
+      "text": "O quarto tem varanda?",
+      "de": "Hat das Zimmer einen Balkon?",
+      "words": [
+        "quarto",
+        "varanda",
+        "ter"
+      ]
+    },
+    {
+      "id": "s35",
+      "text": "A cama é muito confortável.",
+      "de": "Das Bett ist sehr bequem.",
+      "words": [
+        "cama",
+        "muito"
+      ]
+    },
+    {
+      "id": "s36",
+      "text": "O ventilador faz muito barulho.",
+      "de": "Der Ventilator macht viel Lärm.",
+      "words": [
+        "ventilador",
+        "muito"
+      ]
+    },
+    {
+      "id": "s37",
+      "text": "Eu vou sair amanhã cedo.",
+      "de": "Ich reise morgen früh ab.",
+      "words": [
+        "eu",
+        "sair",
+        "amanha"
+      ]
+    },
+    {
+      "id": "s38",
+      "text": "Nós vamos chegar tarde à noite.",
+      "de": "Wir kommen spät abends an.",
+      "words": [
+        "chegar",
+        "noite"
+      ]
+    },
+    {
+      "id": "s39",
+      "text": "Quero confirmar a minha reserva.",
+      "de": "Ich möchte meine Reservierung bestätigen.",
+      "words": [
+        "confirmar",
+        "reserva"
+      ]
+    },
+    {
+      "id": "s40",
+      "text": "É uma pousada pequena e simpática.",
+      "de": "Es ist eine kleine, sympathische Pension.",
+      "words": [
+        "pousada"
+      ]
+    },
+    {
+      "id": "s41",
+      "text": "O albergue é barato e fica perto da praia.",
+      "de": "Das Hostel ist günstig und liegt nahe am Strand.",
+      "words": [
+        "albergue",
+        "barato",
+        "ficar"
+      ]
+    },
+    {
+      "id": "s42",
+      "text": "O que tem perto do hotel?",
+      "de": "Was gibt es in der Nähe des Hotels?",
+      "words": [
+        "o_que",
+        "hotel"
+      ],
+      "grammar": [
+        "fragewoerter",
+        "ter_haben"
+      ]
+    },
+    {
+      "id": "s43",
+      "text": "Tem algum problema com o quarto?",
+      "de": "Gibt es ein Problem mit dem Zimmer?",
+      "words": [
+        "problema",
+        "quarto",
+        "com"
+      ]
+    },
+    {
+      "id": "s44",
+      "text": "A pia está entupida.",
+      "de": "Das Waschbecken ist verstopft.",
+      "words": [
+        "pia"
+      ]
+    },
+    {
+      "id": "s45",
+      "text": "A escada fica à direita.",
+      "de": "Die Treppe ist rechts.",
+      "words": [
+        "escada",
+        "ficar"
+      ]
+    },
+    {
+      "id": "s46",
+      "text": "Vou ficar duas noites.",
+      "de": "Ich bleibe zwei Nächte.",
+      "words": [
+        "ficar",
+        "num_2",
+        "noite"
+      ]
+    },
+    {
+      "id": "s47",
+      "text": "Preciso da identidade de todos os hóspedes.",
+      "de": "Ich brauche die Ausweise aller Gäste.",
+      "words": [
+        "identidade",
+        "hospede"
+      ],
+      "grammar": [
+        "precisar_de"
+      ]
+    },
+    {
+      "id": "s48",
+      "text": "Recepção, bom dia!",
+      "de": "Rezeption, guten Morgen!",
+      "words": [
+        "recepcao",
+        "bom_dia"
+      ]
+    },
+    {
+      "id": "s49",
+      "text": "Essa hospedagem é muito boa.",
+      "de": "Diese Unterkunft ist sehr gut.",
+      "words": [
+        "hospedagem",
+        "muito"
+      ]
+    },
+    {
+      "id": "s50",
+      "text": "O hóspede do quarto dez saiu.",
+      "de": "Der Gast aus Zimmer zehn ist abgereist.",
+      "words": [
+        "hospede",
+        "quarto",
+        "num_10"
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "fragewoerter",
+      "title": "Fragewörter",
+      "explanation": "• onde? – wo?  (Onde fica …? – Wo ist …?)\n• quando? – wann?\n• quanto/quanta? – wie viel?  quantos/quantas? – wie viele?\n• qual?/quais? – welche(r)? – auch für „was“ bei Auswahl: Qual é a senha?\n• o que? – was?\n• quem? – wer?\n• como? – wie?\n• por que? – warum?  Die Antwort beginnt mit porque (weil).\n\nOft hängt man „é que“ an, das klingt natürlich: Onde é que fica? O que é que você quer?",
+      "examples": [
+        {
+          "text": "Onde fica a recepção?",
+          "de": "Wo ist die Rezeption?"
+        },
+        {
+          "text": "Quantas noites?",
+          "de": "Wie viele Nächte?"
+        },
+        {
+          "text": "Por que não? Porque está quebrado.",
+          "de": "Warum nicht? Weil es kaputt ist."
+        }
+      ]
+    },
+    {
+      "id": "ter_haben",
+      "title": "ter – haben, und tem – es gibt",
+      "explanation": "ter (haben) im Präsens:\n• eu tenho – ich habe\n• você/ele/ela tem – du hast, er/sie hat\n• nós temos – wir haben\n• vocês/eles/elas têm – ihr habt, sie haben\n\nIn Brasilien sagt man für „es gibt“ meistens einfach tem (statt dem formelleren há):\nTem piscina? – Gibt es einen Pool?",
+      "examples": [
+        {
+          "text": "Eu tenho uma reserva.",
+          "de": "Ich habe eine Reservierung."
+        },
+        {
+          "text": "Vocês têm toalhas?",
+          "de": "Habt ihr Handtücher?"
+        },
+        {
+          "text": "Tem wi-fi no quarto?",
+          "de": "Gibt es WLAN im Zimmer?"
+        }
+      ]
+    },
+    {
+      "id": "precisar_de",
+      "title": "precisar de – brauchen",
+      "explanation": "Nach precisar steht vor einem Nomen immer de. Mit Artikel verschmilzt es:\nde + o = do, de + a = da\n\n• Preciso de uma toalha. – Ich brauche ein Handtuch.\n• Preciso do passaporte. – Ich brauche den Pass.\n\nVor einem Verb fällt de weg: Preciso sair. – Ich muss gehen.",
+      "examples": [
+        {
+          "text": "Preciso de ajuda.",
+          "de": "Ich brauche Hilfe."
+        },
+        {
+          "text": "Preciso da chave.",
+          "de": "Ich brauche den Schlüssel."
+        },
+        {
+          "text": "Preciso trocar de quarto.",
+          "de": "Ich muss das Zimmer wechseln."
+        }
+      ]
+    }
+  ]
+}

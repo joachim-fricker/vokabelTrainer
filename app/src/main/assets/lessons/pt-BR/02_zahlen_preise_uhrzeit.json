@@ -1,0 +1,1144 @@
+{
+  "id": "pt-BR-02",
+  "language": "pt-BR",
+  "order": 2,
+  "title": "Zahlen, Preise & Uhrzeit",
+  "titleTarget": "Números, preços e horas",
+  "words": [
+    {
+      "id": "num_0",
+      "text": "zero",
+      "de": "null",
+      "pos": "numeral",
+      "category": "Zahlen 0–20"
+    },
+    {
+      "id": "num_1",
+      "text": "um, uma",
+      "de": "eins, ein/eine",
+      "pos": "numeral",
+      "grammar": [
+        "zahlen_geschlecht"
+      ],
+      "note": "um vor männlichen, uma vor weiblichen Wörtern.",
+      "category": "Zahlen 0–20"
+    },
+    {
+      "id": "num_2",
+      "text": "dois, duas",
+      "de": "zwei",
+      "pos": "numeral",
+      "grammar": [
+        "zahlen_geschlecht"
+      ],
+      "category": "Zahlen 0–20"
+    },
+    {
+      "id": "num_3",
+      "text": "três",
+      "de": "drei",
+      "pos": "numeral",
+      "category": "Zahlen 0–20"
+    },
+    {
+      "id": "num_4",
+      "text": "quatro",
+      "de": "vier",
+      "pos": "numeral",
+      "category": "Zahlen 0–20"
+    },
+    {
+      "id": "num_5",
+      "text": "cinco",
+      "de": "fünf",
+      "pos": "numeral",
+      "category": "Zahlen 0–20"
+    },
+    {
+      "id": "num_6",
+      "text": "seis",
+      "de": "sechs",
+      "pos": "numeral",
+      "note": "Bei Telefonnummern sagt man oft „meia“ (halbes Dutzend).",
+      "category": "Zahlen 0–20"
+    },
+    {
+      "id": "num_7",
+      "text": "sete",
+      "de": "sieben",
+      "pos": "numeral",
+      "category": "Zahlen 0–20"
+    },
+    {
+      "id": "num_8",
+      "text": "oito",
+      "de": "acht",
+      "pos": "numeral",
+      "category": "Zahlen 0–20"
+    },
+    {
+      "id": "num_9",
+      "text": "nove",
+      "de": "neun",
+      "pos": "numeral",
+      "category": "Zahlen 0–20"
+    },
+    {
+      "id": "num_10",
+      "text": "dez",
+      "de": "zehn",
+      "pos": "numeral",
+      "category": "Zahlen 0–20"
+    },
+    {
+      "id": "num_11",
+      "text": "onze",
+      "de": "elf",
+      "pos": "numeral",
+      "category": "Zahlen 0–20"
+    },
+    {
+      "id": "num_12",
+      "text": "doze",
+      "de": "zwölf",
+      "pos": "numeral",
+      "category": "Zahlen 0–20"
+    },
+    {
+      "id": "num_13",
+      "text": "treze",
+      "de": "dreizehn",
+      "pos": "numeral",
+      "category": "Zahlen 0–20"
+    },
+    {
+      "id": "num_14",
+      "text": "catorze",
+      "de": "vierzehn",
+      "pos": "numeral",
+      "note": "Auch „quatorze“ geschrieben.",
+      "category": "Zahlen 0–20"
+    },
+    {
+      "id": "num_15",
+      "text": "quinze",
+      "de": "fünfzehn",
+      "pos": "numeral",
+      "category": "Zahlen 0–20"
+    },
+    {
+      "id": "num_16",
+      "text": "dezesseis",
+      "de": "sechzehn",
+      "pos": "numeral",
+      "category": "Zahlen 0–20"
+    },
+    {
+      "id": "num_17",
+      "text": "dezessete",
+      "de": "siebzehn",
+      "pos": "numeral",
+      "category": "Zahlen 0–20"
+    },
+    {
+      "id": "num_18",
+      "text": "dezoito",
+      "de": "achtzehn",
+      "pos": "numeral",
+      "category": "Zahlen 0–20"
+    },
+    {
+      "id": "num_19",
+      "text": "dezenove",
+      "de": "neunzehn",
+      "pos": "numeral",
+      "category": "Zahlen 0–20"
+    },
+    {
+      "id": "num_20",
+      "text": "vinte",
+      "de": "zwanzig",
+      "pos": "numeral",
+      "note": "21 = vinte e um",
+      "category": "Zehner"
+    },
+    {
+      "id": "num_30",
+      "text": "trinta",
+      "de": "dreissig",
+      "pos": "numeral",
+      "category": "Zehner"
+    },
+    {
+      "id": "num_40",
+      "text": "quarenta",
+      "de": "vierzig",
+      "pos": "numeral",
+      "category": "Zehner"
+    },
+    {
+      "id": "num_50",
+      "text": "cinquenta",
+      "de": "fünfzig",
+      "pos": "numeral",
+      "category": "Zehner"
+    },
+    {
+      "id": "num_60",
+      "text": "sessenta",
+      "de": "sechzig",
+      "pos": "numeral",
+      "category": "Zehner"
+    },
+    {
+      "id": "num_70",
+      "text": "setenta",
+      "de": "siebzig",
+      "pos": "numeral",
+      "category": "Zehner"
+    },
+    {
+      "id": "num_80",
+      "text": "oitenta",
+      "de": "achtzig",
+      "pos": "numeral",
+      "category": "Zehner"
+    },
+    {
+      "id": "num_90",
+      "text": "noventa",
+      "de": "neunzig",
+      "pos": "numeral",
+      "category": "Zehner"
+    },
+    {
+      "id": "num_100",
+      "text": "cem",
+      "de": "hundert",
+      "pos": "numeral",
+      "note": "Genau 100 = cem; ab 101 = cento e um.",
+      "category": "Hunderter, Tausender, Millionen"
+    },
+    {
+      "id": "num_cento",
+      "text": "cento",
+      "de": "hundert (in 101–199)",
+      "pos": "numeral",
+      "note": "cento e um = 101, cento e cinquenta = 150",
+      "grammar": [
+        "grosse_zahlen"
+      ],
+      "category": "Hunderter, Tausender, Millionen"
+    },
+    {
+      "id": "num_200",
+      "text": "duzentos, duzentas",
+      "de": "zweihundert",
+      "pos": "numeral",
+      "grammar": [
+        "grosse_zahlen"
+      ],
+      "category": "Hunderter, Tausender, Millionen"
+    },
+    {
+      "id": "num_300",
+      "text": "trezentos, trezentas",
+      "de": "dreihundert",
+      "pos": "numeral",
+      "category": "Hunderter, Tausender, Millionen"
+    },
+    {
+      "id": "num_400",
+      "text": "quatrocentos",
+      "de": "vierhundert",
+      "pos": "numeral",
+      "category": "Hunderter, Tausender, Millionen"
+    },
+    {
+      "id": "num_500",
+      "text": "quinhentos",
+      "de": "fünfhundert",
+      "pos": "numeral",
+      "note": "Unregelmässig – nicht „cincocentos“.",
+      "category": "Hunderter, Tausender, Millionen"
+    },
+    {
+      "id": "num_600",
+      "text": "seiscentos",
+      "de": "sechshundert",
+      "pos": "numeral",
+      "category": "Hunderter, Tausender, Millionen"
+    },
+    {
+      "id": "num_700",
+      "text": "setecentos",
+      "de": "siebenhundert",
+      "pos": "numeral",
+      "category": "Hunderter, Tausender, Millionen"
+    },
+    {
+      "id": "num_800",
+      "text": "oitocentos",
+      "de": "achthundert",
+      "pos": "numeral",
+      "category": "Hunderter, Tausender, Millionen"
+    },
+    {
+      "id": "num_900",
+      "text": "novecentos",
+      "de": "neunhundert",
+      "pos": "numeral",
+      "category": "Hunderter, Tausender, Millionen"
+    },
+    {
+      "id": "num_1000",
+      "text": "mil",
+      "de": "tausend",
+      "pos": "numeral",
+      "note": "Ohne „um“: mil = tausend, dois mil = zweitausend.",
+      "grammar": [
+        "grosse_zahlen"
+      ],
+      "category": "Hunderter, Tausender, Millionen"
+    },
+    {
+      "id": "num_milhao",
+      "text": "um milhão",
+      "de": "eine Million",
+      "pos": "numeral",
+      "note": "Plural: dois milhões",
+      "grammar": [
+        "grosse_zahlen"
+      ],
+      "category": "Hunderter, Tausender, Millionen"
+    },
+    {
+      "id": "num_bilhao",
+      "text": "um bilhão",
+      "de": "eine Milliarde",
+      "pos": "numeral",
+      "note": "Achtung: bilhão ist die deutsche Milliarde.",
+      "category": "Hunderter, Tausender, Millionen"
+    },
+    {
+      "id": "numero",
+      "text": "o número",
+      "de": "die Nummer, die Zahl",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Hunderter, Tausender, Millionen"
+    },
+    {
+      "id": "metade",
+      "text": "a metade",
+      "de": "die Hälfte",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Hunderter, Tausender, Millionen"
+    },
+    {
+      "id": "quanto_custa",
+      "text": "quanto custa?",
+      "de": "was kostet …?",
+      "pos": "phrase",
+      "category": "Preise & Bezahlen"
+    },
+    {
+      "id": "real",
+      "text": "o real",
+      "de": "der Real (Währung)",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Plural: os reais. Abkürzung R$.",
+      "category": "Preise & Bezahlen"
+    },
+    {
+      "id": "centavo",
+      "text": "o centavo",
+      "de": "der Centavo (1/100 Real)",
+      "pos": "noun",
+      "gender": "m",
+      "note": "R$ 12,50 = doze reais e cinquenta centavos",
+      "category": "Preise & Bezahlen"
+    },
+    {
+      "id": "preco",
+      "text": "o preço",
+      "de": "der Preis",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Preise & Bezahlen"
+    },
+    {
+      "id": "caro",
+      "text": "caro",
+      "de": "teuer",
+      "pos": "adjective",
+      "category": "Preise & Bezahlen"
+    },
+    {
+      "id": "barato",
+      "text": "barato",
+      "de": "günstig, billig",
+      "pos": "adjective",
+      "category": "Preise & Bezahlen"
+    },
+    {
+      "id": "dinheiro",
+      "text": "o dinheiro",
+      "de": "das Geld; bar",
+      "pos": "noun",
+      "gender": "m",
+      "note": "em dinheiro = bar",
+      "category": "Preise & Bezahlen"
+    },
+    {
+      "id": "cartao",
+      "text": "o cartão",
+      "de": "die Karte (Bank-/Kreditkarte)",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Preise & Bezahlen"
+    },
+    {
+      "id": "pagar",
+      "text": "pagar",
+      "de": "bezahlen",
+      "pos": "verb",
+      "category": "Preise & Bezahlen"
+    },
+    {
+      "id": "troco",
+      "text": "o troco",
+      "de": "das Wechselgeld",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Preise & Bezahlen"
+    },
+    {
+      "id": "desconto",
+      "text": "o desconto",
+      "de": "der Rabatt",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Preise & Bezahlen"
+    },
+    {
+      "id": "que_horas",
+      "text": "que horas são?",
+      "de": "wie spät ist es?",
+      "pos": "phrase",
+      "grammar": [
+        "uhrzeit"
+      ],
+      "category": "Uhrzeit & Tage"
+    },
+    {
+      "id": "hora",
+      "text": "a hora",
+      "de": "die Stunde, die Uhrzeit",
+      "pos": "noun",
+      "gender": "f",
+      "grammar": [
+        "uhrzeit"
+      ],
+      "category": "Uhrzeit & Tage"
+    },
+    {
+      "id": "minuto",
+      "text": "o minuto",
+      "de": "die Minute",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Uhrzeit & Tage"
+    },
+    {
+      "id": "e_meia",
+      "text": "e meia",
+      "de": "halb (… Uhr dreissig)",
+      "pos": "phrase",
+      "grammar": [
+        "uhrzeit"
+      ],
+      "note": "duas e meia = 2:30 Uhr",
+      "category": "Uhrzeit & Tage"
+    },
+    {
+      "id": "quinze_para",
+      "text": "quinze para as …",
+      "de": "Viertel vor …",
+      "pos": "phrase",
+      "grammar": [
+        "uhrzeit"
+      ],
+      "note": "quinze para as oito = 7:45 Uhr",
+      "category": "Uhrzeit & Tage"
+    },
+    {
+      "id": "meio_dia",
+      "text": "meio-dia",
+      "de": "Mittag (12 Uhr)",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Uhrzeit & Tage"
+    },
+    {
+      "id": "meia_noite",
+      "text": "meia-noite",
+      "de": "Mitternacht",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Uhrzeit & Tage"
+    },
+    {
+      "id": "hoje",
+      "text": "hoje",
+      "de": "heute",
+      "pos": "adverb",
+      "category": "Uhrzeit & Tage"
+    },
+    {
+      "id": "amanha",
+      "text": "amanhã",
+      "de": "morgen",
+      "pos": "adverb",
+      "category": "Uhrzeit & Tage"
+    },
+    {
+      "id": "ontem",
+      "text": "ontem",
+      "de": "gestern",
+      "pos": "adverb",
+      "category": "Uhrzeit & Tage"
+    },
+    {
+      "id": "ano",
+      "text": "o ano",
+      "de": "das Jahr",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Uhrzeit & Tage"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "Quanto custa isso?",
+      "de": "Was kostet das?",
+      "words": [
+        "quanto_custa"
+      ]
+    },
+    {
+      "id": "s02",
+      "text": "Custa vinte reais.",
+      "de": "Es kostet zwanzig Reais.",
+      "words": [
+        "quanto_custa",
+        "num_20",
+        "real"
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "Nossa, é muito caro!",
+      "de": "Wow, das ist sehr teuer!",
+      "words": [
+        "muito",
+        "caro"
+      ],
+      "grammar": []
+    },
+    {
+      "id": "s04",
+      "text": "Aqui é mais barato.",
+      "de": "Hier ist es günstiger.",
+      "words": [
+        "barato"
+      ]
+    },
+    {
+      "id": "s05",
+      "text": "Qual é o preço?",
+      "de": "Wie hoch ist der Preis?",
+      "words": [
+        "preco"
+      ]
+    },
+    {
+      "id": "s06",
+      "text": "Posso pagar com cartão?",
+      "de": "Kann ich mit Karte bezahlen?",
+      "words": [
+        "pagar",
+        "cartao"
+      ]
+    },
+    {
+      "id": "s07",
+      "text": "Eu pago em dinheiro.",
+      "de": "Ich bezahle bar.",
+      "words": [
+        "eu",
+        "pagar",
+        "dinheiro"
+      ]
+    },
+    {
+      "id": "s08",
+      "text": "Dois cafés, por favor.",
+      "de": "Zwei Kaffee, bitte.",
+      "words": [
+        "num_2",
+        "por_favor"
+      ],
+      "grammar": [
+        "zahlen_geschlecht"
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "Duas águas, por favor.",
+      "de": "Zwei Wasser, bitte.",
+      "words": [
+        "num_2",
+        "por_favor"
+      ],
+      "grammar": [
+        "zahlen_geschlecht"
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Que horas são?",
+      "de": "Wie spät ist es?",
+      "words": [
+        "que_horas"
+      ],
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "É uma hora.",
+      "de": "Es ist ein Uhr.",
+      "words": [
+        "num_1",
+        "hora"
+      ],
+      "grammar": [
+        "uhrzeit",
+        "zahlen_geschlecht"
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "São três e meia.",
+      "de": "Es ist halb vier. (3:30 Uhr)",
+      "words": [
+        "num_3",
+        "e_meia"
+      ],
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Já é meio-dia.",
+      "de": "Es ist schon Mittag.",
+      "words": [
+        "meio_dia"
+      ],
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "A loja abre às nove.",
+      "de": "Der Laden öffnet um neun.",
+      "words": [
+        "num_9"
+      ],
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Até amanhã às dez!",
+      "de": "Bis morgen um zehn!",
+      "words": [
+        "ate_amanha",
+        "num_10"
+      ],
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Hoje eu tenho cinquenta reais.",
+      "de": "Heute habe ich fünfzig Reais.",
+      "words": [
+        "hoje",
+        "eu",
+        "num_50",
+        "real"
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Ontem estava mais barato.",
+      "de": "Gestern war es günstiger.",
+      "words": [
+        "ontem",
+        "barato"
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Volto em cinco minutos.",
+      "de": "Ich bin in fünf Minuten zurück.",
+      "words": [
+        "num_5",
+        "minuto"
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "O hotel custa cem reais por noite.",
+      "de": "Das Hotel kostet hundert Reais pro Nacht.",
+      "words": [
+        "num_100",
+        "real"
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "O restaurante fecha à meia-noite.",
+      "de": "Das Restaurant schliesst um Mitternacht.",
+      "words": [
+        "meia_noite"
+      ],
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "O quarto custa trezentos e cinquenta reais.",
+      "de": "Das Zimmer kostet dreihundertfünfzig Reais.",
+      "words": [
+        "num_300",
+        "num_50",
+        "real"
+      ],
+      "grammar": [
+        "grosse_zahlen"
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "A passagem custa mil e duzentos reais.",
+      "de": "Das Ticket kostet tausendzweihundert Reais.",
+      "words": [
+        "num_1000",
+        "num_200",
+        "real"
+      ],
+      "grammar": [
+        "grosse_zahlen"
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "Custa noventa e nove reais.",
+      "de": "Es kostet neunundneunzig Reais.",
+      "words": [
+        "num_90",
+        "num_9",
+        "real"
+      ],
+      "grammar": [
+        "grosse_zahlen"
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "São dezoito reais e cinquenta centavos.",
+      "de": "Das macht achtzehn Reais fünfzig.",
+      "words": [
+        "num_18",
+        "real",
+        "num_50",
+        "centavo"
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "Eu nasci em mil novecentos e setenta.",
+      "de": "Ich bin neunzehnhundertsiebzig geboren.",
+      "words": [
+        "num_1000",
+        "num_900",
+        "num_70"
+      ],
+      "grammar": [
+        "grosse_zahlen"
+      ]
+    },
+    {
+      "id": "s26",
+      "text": "Pegue o ônibus quarenta e dois.",
+      "de": "Nimm den Bus zweiundvierzig.",
+      "words": [
+        "num_40",
+        "num_2"
+      ]
+    },
+    {
+      "id": "s27",
+      "text": "Ela tem sessenta anos.",
+      "de": "Sie ist sechzig Jahre alt.",
+      "words": [
+        "num_60",
+        "ano"
+      ]
+    },
+    {
+      "id": "s28",
+      "text": "Quinhentos gramas de queijo, por favor.",
+      "de": "Fünfhundert Gramm Käse, bitte.",
+      "words": [
+        "num_500",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s29",
+      "text": "São Paulo tem mais de doze milhões de habitantes.",
+      "de": "São Paulo hat über zwölf Millionen Einwohner.",
+      "words": [
+        "num_12",
+        "num_milhao"
+      ],
+      "grammar": [
+        "grosse_zahlen"
+      ]
+    },
+    {
+      "id": "s30",
+      "text": "São quinze para as oito.",
+      "de": "Es ist Viertel vor acht.",
+      "words": [
+        "quinze_para",
+        "num_8"
+      ],
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "s31",
+      "text": "O voo sai às dezesseis horas.",
+      "de": "Der Flug geht um sechzehn Uhr.",
+      "words": [
+        "num_16",
+        "hora"
+      ],
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "s32",
+      "text": "Qual é o seu número de telefone?",
+      "de": "Wie ist deine Telefonnummer?",
+      "words": [
+        "numero"
+      ]
+    },
+    {
+      "id": "s33",
+      "text": "Tem desconto se eu pagar em dinheiro?",
+      "de": "Gibt es Rabatt, wenn ich bar bezahle?",
+      "words": [
+        "desconto",
+        "pagar",
+        "dinheiro"
+      ]
+    },
+    {
+      "id": "s34",
+      "text": "Desculpa, não tenho troco.",
+      "de": "Entschuldigung, ich habe kein Wechselgeld.",
+      "words": [
+        "desculpa",
+        "nao",
+        "troco"
+      ]
+    },
+    {
+      "id": "s35",
+      "text": "Metade agora e metade amanhã.",
+      "de": "Die Hälfte jetzt und die Hälfte morgen.",
+      "words": [
+        "metade",
+        "amanha"
+      ]
+    },
+    {
+      "id": "s36",
+      "text": "O jogo terminou dois a zero.",
+      "de": "Das Spiel endete zwei zu null.",
+      "words": [
+        "num_2",
+        "num_0"
+      ]
+    },
+    {
+      "id": "s37",
+      "text": "Tenho catorze anos de experiência.",
+      "de": "Ich habe vierzehn Jahre Erfahrung.",
+      "words": [
+        "num_14",
+        "ano"
+      ]
+    },
+    {
+      "id": "s38",
+      "text": "A entrada custa quarenta e cinco reais.",
+      "de": "Der Eintritt kostet fünfundvierzig Reais.",
+      "words": [
+        "num_40",
+        "num_5",
+        "real"
+      ],
+      "grammar": [
+        "grosse_zahlen"
+      ]
+    },
+    {
+      "id": "s39",
+      "text": "A loja abre sete dias por semana.",
+      "de": "Der Laden ist sieben Tage die Woche offen.",
+      "words": [
+        "num_7"
+      ]
+    },
+    {
+      "id": "s40",
+      "text": "Meu quarto é o número seiscentos e onze.",
+      "de": "Mein Zimmer ist die Nummer sechshundertelf.",
+      "words": [
+        "numero",
+        "num_600",
+        "num_11"
+      ],
+      "grammar": [
+        "grosse_zahlen"
+      ]
+    },
+    {
+      "id": "s41",
+      "text": "O museu fecha às dezenove horas.",
+      "de": "Das Museum schliesst um neunzehn Uhr.",
+      "words": [
+        "num_19",
+        "hora"
+      ],
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "s42",
+      "text": "Custa treze reais o quilo.",
+      "de": "Es kostet dreizehn Reais das Kilo.",
+      "words": [
+        "num_13",
+        "real",
+        "quilo"
+      ]
+    },
+    {
+      "id": "s43",
+      "text": "O táxi chega em quinze minutos.",
+      "de": "Das Taxi kommt in fünfzehn Minuten.",
+      "words": [
+        "num_15",
+        "minuto"
+      ]
+    },
+    {
+      "id": "s44",
+      "text": "Meu filho tem dezessete anos.",
+      "de": "Mein Sohn ist siebzehn Jahre alt.",
+      "words": [
+        "num_17",
+        "ano"
+      ]
+    },
+    {
+      "id": "s45",
+      "text": "Seis cervejas, por favor.",
+      "de": "Sechs Bier, bitte.",
+      "words": [
+        "num_6",
+        "cerveja",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s46",
+      "text": "São quatro e meia.",
+      "de": "Es ist halb fünf. (4:30 Uhr)",
+      "words": [
+        "num_4",
+        "e_meia"
+      ],
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "s47",
+      "text": "Custa cento e trinta reais.",
+      "de": "Es kostet hundertdreissig Reais.",
+      "words": [
+        "num_cento",
+        "num_30",
+        "real"
+      ],
+      "grammar": [
+        "grosse_zahlen"
+      ]
+    },
+    {
+      "id": "s48",
+      "text": "O hotel tem quatrocentos quartos.",
+      "de": "Das Hotel hat vierhundert Zimmer.",
+      "words": [
+        "num_400"
+      ]
+    },
+    {
+      "id": "s49",
+      "text": "A viagem custa setecentos e oitenta reais.",
+      "de": "Die Reise kostet siebenhundertachtzig Reais.",
+      "words": [
+        "num_700",
+        "num_80",
+        "real"
+      ],
+      "grammar": [
+        "grosse_zahlen"
+      ]
+    },
+    {
+      "id": "s50",
+      "text": "Oitocentos gramas de carne, por favor.",
+      "de": "Achthundert Gramm Fleisch, bitte.",
+      "words": [
+        "num_800",
+        "carne",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s51",
+      "text": "Um bilhão são mil milhões.",
+      "de": "Eine Milliarde sind tausend Millionen.",
+      "words": [
+        "num_bilhao",
+        "num_1000",
+        "num_milhao"
+      ],
+      "grammar": [
+        "grosse_zahlen"
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "zahlen_geschlecht",
+      "title": "Zahlen mit Geschlecht: um/uma, dois/duas",
+      "explanation": "Die Zahlen 1 und 2 passen sich dem Geschlecht des Nomens an:\n\n• männlich: um real, dois reais\n• weiblich: uma hora, duas horas\n\nDas gilt auch für die Hunderter ab 200: duzentos reais, duzentas pessoas.\n\nAlle anderen Zahlen bleiben gleich: três reais, três horas.",
+      "examples": [
+        {
+          "text": "um café",
+          "de": "ein Kaffee"
+        },
+        {
+          "text": "uma cerveja",
+          "de": "ein Bier"
+        },
+        {
+          "text": "dois sucos",
+          "de": "zwei Säfte"
+        },
+        {
+          "text": "duas pessoas",
+          "de": "zwei Personen"
+        }
+      ]
+    },
+    {
+      "id": "uhrzeit",
+      "title": "Die Uhrzeit",
+      "explanation": "Frage: Que horas são? (Wie spät ist es?)\n\n• Für 1 Uhr, Mittag und Mitternacht steht é (Einzahl): É uma hora. É meio-dia.\n• Sonst steht são (Mehrzahl): São duas horas. São dez horas.\n• „e meia“ = halb, aber nach der Stunde gezählt: duas e meia = 2:30 Uhr.\n• „um … Uhr“ heisst às (bei 1 Uhr: à): às nove = um neun, à uma = um eins.\n• Viertel vor: quinze para as … (quinze para as oito = 7:45 Uhr).\n• Im Alltag und bei Fahrplänen oft 24 Stunden: às dezesseis horas = um 16 Uhr.",
+      "examples": [
+        {
+          "text": "São quatro horas.",
+          "de": "Es ist vier Uhr."
+        },
+        {
+          "text": "São oito e meia.",
+          "de": "Es ist halb neun. (8:30 Uhr)"
+        },
+        {
+          "text": "O ônibus sai às sete.",
+          "de": "Der Bus fährt um sieben ab."
+        },
+        {
+          "text": "São quinze para as nove.",
+          "de": "Es ist Viertel vor neun."
+        }
+      ]
+    },
+    {
+      "id": "grosse_zahlen",
+      "title": "Grosse Zahlen zusammensetzen",
+      "explanation": "Die Teile werden mit „e“ (und) verbunden, aber in der deutschen Reihenfolge von gross nach klein:\n\n• 25 = vinte e cinco\n• 150 = cento e cinquenta\n• 345 = trezentos e quarenta e cinco\n\nGenau 100 heisst cem, ab 101 cento: cento e um.\n\nTausend heisst nur mil (ohne „um“). Nach mil steht „e“ nur, wenn danach eine runde Hunderterzahl oder eine Zahl unter 100 kommt:\n• 1200 = mil e duzentos\n• 2050 = dois mil e cinquenta\n• 1970 = mil novecentos e setenta\n\nMillionen: um milhão, dois milhões – vor einem Nomen mit „de“: um milhão de reais.",
+      "examples": [
+        {
+          "text": "vinte e cinco",
+          "de": "25"
+        },
+        {
+          "text": "cento e cinquenta",
+          "de": "150"
+        },
+        {
+          "text": "trezentos e quarenta e cinco",
+          "de": "345"
+        },
+        {
+          "text": "mil e duzentos",
+          "de": "1200"
+        },
+        {
+          "text": "mil novecentos e setenta",
+          "de": "1970"
+        },
+        {
+          "text": "dois milhões de habitantes",
+          "de": "zwei Millionen Einwohner"
+        }
+      ]
+    }
+  ]
+}

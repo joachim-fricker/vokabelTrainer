@@ -1,0 +1,1327 @@
+{
+  "id": "pt-BR-10",
+  "language": "pt-BR",
+  "order": 10,
+  "title": "Alltag & Zeit",
+  "titleTarget": "Dia a dia e o tempo",
+  "words": [
+    {
+      "id": "segunda",
+      "text": "segunda-feira",
+      "de": "Montag",
+      "pos": "noun",
+      "note": "Kurz: segunda",
+      "category": "Wochentage",
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "terca",
+      "text": "terça-feira",
+      "de": "Dienstag",
+      "pos": "noun",
+      "note": "Kurz: terça",
+      "category": "Wochentage",
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "quarta",
+      "text": "quarta-feira",
+      "de": "Mittwoch",
+      "pos": "noun",
+      "note": "Kurz: quarta",
+      "category": "Wochentage",
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "quinta",
+      "text": "quinta-feira",
+      "de": "Donnerstag",
+      "pos": "noun",
+      "note": "Kurz: quinta",
+      "category": "Wochentage",
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "sexta",
+      "text": "sexta-feira",
+      "de": "Freitag",
+      "pos": "noun",
+      "note": "Kurz: sexta",
+      "category": "Wochentage",
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "sabado",
+      "text": "o sábado",
+      "de": "Samstag",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Wochentage",
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "domingo",
+      "text": "o domingo",
+      "de": "Sonntag",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Wochentage",
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "dia",
+      "text": "o dia",
+      "de": "der Tag",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Männlich, obwohl auf -a!",
+      "category": "Wochentage",
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "semana",
+      "text": "a semana",
+      "de": "die Woche",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Wochentage"
+    },
+    {
+      "id": "fim_de_semana",
+      "text": "o fim de semana",
+      "de": "das Wochenende",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Wochentage"
+    },
+    {
+      "id": "janeiro",
+      "text": "janeiro",
+      "de": "Januar",
+      "pos": "noun",
+      "category": "Monate & Jahreszeiten",
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "fevereiro",
+      "text": "fevereiro",
+      "de": "Februar",
+      "pos": "noun",
+      "category": "Monate & Jahreszeiten",
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "marco",
+      "text": "março",
+      "de": "März",
+      "pos": "noun",
+      "category": "Monate & Jahreszeiten",
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "abril",
+      "text": "abril",
+      "de": "April",
+      "pos": "noun",
+      "category": "Monate & Jahreszeiten",
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "maio",
+      "text": "maio",
+      "de": "Mai",
+      "pos": "noun",
+      "category": "Monate & Jahreszeiten",
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "junho",
+      "text": "junho",
+      "de": "Juni",
+      "pos": "noun",
+      "category": "Monate & Jahreszeiten",
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "julho",
+      "text": "julho",
+      "de": "Juli",
+      "pos": "noun",
+      "category": "Monate & Jahreszeiten",
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "agosto",
+      "text": "agosto",
+      "de": "August",
+      "pos": "noun",
+      "category": "Monate & Jahreszeiten",
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "setembro",
+      "text": "setembro",
+      "de": "September",
+      "pos": "noun",
+      "category": "Monate & Jahreszeiten",
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "outubro",
+      "text": "outubro",
+      "de": "Oktober",
+      "pos": "noun",
+      "category": "Monate & Jahreszeiten",
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "novembro",
+      "text": "novembro",
+      "de": "November",
+      "pos": "noun",
+      "category": "Monate & Jahreszeiten",
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "dezembro",
+      "text": "dezembro",
+      "de": "Dezember",
+      "pos": "noun",
+      "category": "Monate & Jahreszeiten",
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "mes",
+      "text": "o mês",
+      "de": "der Monat",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Monate & Jahreszeiten"
+    },
+    {
+      "id": "verao",
+      "text": "o verão",
+      "de": "der Sommer",
+      "pos": "noun",
+      "gender": "m",
+      "note": "In Brasilien von Dezember bis März!",
+      "category": "Monate & Jahreszeiten"
+    },
+    {
+      "id": "inverno",
+      "text": "o inverno",
+      "de": "der Winter",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Monate & Jahreszeiten"
+    },
+    {
+      "id": "primavera",
+      "text": "a primavera",
+      "de": "der Frühling",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Monate & Jahreszeiten"
+    },
+    {
+      "id": "outono",
+      "text": "o outono",
+      "de": "der Herbst",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Monate & Jahreszeiten"
+    },
+    {
+      "id": "manha",
+      "text": "a manhã",
+      "de": "der Morgen, der Vormittag",
+      "pos": "noun",
+      "gender": "f",
+      "note": "de manhã = morgens",
+      "category": "Tageszeiten",
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "tarde_noun",
+      "text": "a tarde",
+      "de": "der Nachmittag",
+      "pos": "noun",
+      "gender": "f",
+      "note": "à tarde = nachmittags",
+      "category": "Tageszeiten",
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "madrugada",
+      "text": "a madrugada",
+      "de": "die frühen Morgenstunden (ca. 0–5 Uhr)",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Tageszeiten"
+    },
+    {
+      "id": "cedo",
+      "text": "cedo",
+      "de": "früh",
+      "pos": "adverb",
+      "category": "Tageszeiten"
+    },
+    {
+      "id": "tarde_adv",
+      "text": "tarde",
+      "de": "spät",
+      "pos": "adverb",
+      "category": "Tageszeiten"
+    },
+    {
+      "id": "casa",
+      "text": "a casa",
+      "de": "das Haus; das Zuhause",
+      "pos": "noun",
+      "gender": "f",
+      "note": "em casa = zu Hause",
+      "category": "Zu Hause & Tagesablauf"
+    },
+    {
+      "id": "acordar",
+      "text": "acordar",
+      "de": "aufwachen",
+      "pos": "verb",
+      "category": "Zu Hause & Tagesablauf"
+    },
+    {
+      "id": "levantar",
+      "text": "levantar",
+      "de": "aufstehen",
+      "pos": "verb",
+      "note": "Meist: levantar-se / me levanto",
+      "category": "Zu Hause & Tagesablauf"
+    },
+    {
+      "id": "dormir",
+      "text": "dormir",
+      "de": "schlafen",
+      "pos": "verb",
+      "note": "eu durmo, você dorme",
+      "category": "Zu Hause & Tagesablauf",
+      "grammar": [
+        "unregelmaessig"
+      ]
+    },
+    {
+      "id": "tomar_banho",
+      "text": "tomar banho",
+      "de": "duschen, baden",
+      "pos": "phrase",
+      "note": "In Brasilien duscht man oft zweimal am Tag.",
+      "category": "Zu Hause & Tagesablauf"
+    },
+    {
+      "id": "cozinhar",
+      "text": "cozinhar",
+      "de": "kochen",
+      "pos": "verb",
+      "category": "Zu Hause & Tagesablauf"
+    },
+    {
+      "id": "limpar",
+      "text": "limpar",
+      "de": "putzen",
+      "pos": "verb",
+      "category": "Zu Hause & Tagesablauf"
+    },
+    {
+      "id": "lavar",
+      "text": "lavar",
+      "de": "waschen",
+      "pos": "verb",
+      "category": "Zu Hause & Tagesablauf"
+    },
+    {
+      "id": "ser",
+      "text": "ser",
+      "de": "sein (dauerhaft)",
+      "pos": "verb",
+      "category": "Wichtige Verben",
+      "grammar": [
+        "unregelmaessig"
+      ]
+    },
+    {
+      "id": "estar",
+      "text": "estar",
+      "de": "sein (vorübergehend)",
+      "pos": "verb",
+      "category": "Wichtige Verben",
+      "grammar": [
+        "unregelmaessig"
+      ]
+    },
+    {
+      "id": "poder",
+      "text": "poder",
+      "de": "können, dürfen",
+      "pos": "verb",
+      "category": "Wichtige Verben",
+      "grammar": [
+        "unregelmaessig"
+      ]
+    },
+    {
+      "id": "saber",
+      "text": "saber",
+      "de": "wissen; können (gelernt)",
+      "pos": "verb",
+      "category": "Wichtige Verben",
+      "grammar": [
+        "unregelmaessig"
+      ]
+    },
+    {
+      "id": "dizer",
+      "text": "dizer",
+      "de": "sagen",
+      "pos": "verb",
+      "category": "Wichtige Verben",
+      "grammar": [
+        "unregelmaessig"
+      ]
+    },
+    {
+      "id": "ver",
+      "text": "ver",
+      "de": "sehen",
+      "pos": "verb",
+      "category": "Wichtige Verben",
+      "grammar": [
+        "unregelmaessig"
+      ]
+    },
+    {
+      "id": "dar",
+      "text": "dar",
+      "de": "geben",
+      "pos": "verb",
+      "category": "Wichtige Verben",
+      "grammar": [
+        "unregelmaessig"
+      ]
+    },
+    {
+      "id": "sempre",
+      "text": "sempre",
+      "de": "immer",
+      "pos": "adverb",
+      "category": "Häufige Wörter"
+    },
+    {
+      "id": "nunca",
+      "text": "nunca",
+      "de": "nie",
+      "pos": "adverb",
+      "category": "Häufige Wörter"
+    },
+    {
+      "id": "as_vezes",
+      "text": "às vezes",
+      "de": "manchmal",
+      "pos": "adverb",
+      "category": "Häufige Wörter"
+    },
+    {
+      "id": "agora",
+      "text": "agora",
+      "de": "jetzt",
+      "pos": "adverb",
+      "category": "Häufige Wörter"
+    },
+    {
+      "id": "depois",
+      "text": "depois",
+      "de": "danach, später",
+      "pos": "adverb",
+      "note": "depois de = nach",
+      "category": "Häufige Wörter"
+    },
+    {
+      "id": "antes",
+      "text": "antes",
+      "de": "vorher",
+      "pos": "adverb",
+      "note": "antes de = vor",
+      "category": "Häufige Wörter"
+    },
+    {
+      "id": "ja",
+      "text": "já",
+      "de": "schon; gleich",
+      "pos": "adverb",
+      "note": "Já vou! = Ich komme gleich!",
+      "category": "Häufige Wörter"
+    },
+    {
+      "id": "ainda",
+      "text": "ainda",
+      "de": "noch",
+      "pos": "adverb",
+      "note": "ainda não = noch nicht",
+      "category": "Häufige Wörter"
+    },
+    {
+      "id": "tambem",
+      "text": "também",
+      "de": "auch",
+      "pos": "adverb",
+      "category": "Häufige Wörter"
+    },
+    {
+      "id": "mas",
+      "text": "mas",
+      "de": "aber",
+      "pos": "conjunction",
+      "category": "Häufige Wörter"
+    },
+    {
+      "id": "porque",
+      "text": "porque",
+      "de": "weil",
+      "pos": "conjunction",
+      "category": "Häufige Wörter"
+    },
+    {
+      "id": "ou",
+      "text": "ou",
+      "de": "oder",
+      "pos": "conjunction",
+      "category": "Häufige Wörter"
+    },
+    {
+      "id": "todo_dia",
+      "text": "todo dia",
+      "de": "jeden Tag",
+      "pos": "phrase",
+      "category": "Häufige Wörter"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "Hoje é segunda-feira.",
+      "de": "Heute ist Montag.",
+      "words": [
+        "hoje",
+        "segunda"
+      ],
+      "grammar": [
+        "datum",
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s02",
+      "text": "Na terça-feira eu trabalho até tarde.",
+      "de": "Am Dienstag arbeite ich bis spät.",
+      "words": [
+        "terca",
+        "eu",
+        "trabalhar",
+        "tarde_adv"
+      ],
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "A feira é toda quarta-feira.",
+      "de": "Der Markt ist jeden Mittwoch.",
+      "words": [
+        "feira",
+        "quarta"
+      ],
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "s04",
+      "text": "Quinta-feira é feriado.",
+      "de": "Donnerstag ist Feiertag.",
+      "words": [
+        "quinta"
+      ],
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "s05",
+      "text": "Sexta-feira à noite a gente sai.",
+      "de": "Freitagabend gehen wir aus.",
+      "words": [
+        "sexta",
+        "noite",
+        "a_gente",
+        "sair"
+      ],
+      "grammar": [
+        "datum",
+        "a_gente"
+      ]
+    },
+    {
+      "id": "s06",
+      "text": "No sábado eu durmo até tarde.",
+      "de": "Am Samstag schlafe ich lange.",
+      "words": [
+        "sabado",
+        "eu",
+        "dormir",
+        "tarde_adv"
+      ],
+      "grammar": [
+        "datum",
+        "unregelmaessig"
+      ]
+    },
+    {
+      "id": "s07",
+      "text": "O domingo é para a família.",
+      "de": "Der Sonntag ist für die Familie.",
+      "words": [
+        "domingo",
+        "familia"
+      ]
+    },
+    {
+      "id": "s08",
+      "text": "Que dia é hoje?",
+      "de": "Welcher Tag ist heute?",
+      "words": [
+        "dia",
+        "hoje"
+      ],
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "Hoje é dia cinco de maio.",
+      "de": "Heute ist der fünfte Mai.",
+      "words": [
+        "hoje",
+        "dia",
+        "num_5",
+        "maio"
+      ],
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Eu vou ficar uma semana.",
+      "de": "Ich bleibe eine Woche.",
+      "words": [
+        "eu",
+        "ficar",
+        "semana",
+        "ir"
+      ],
+      "grammar": [
+        "ir_futuro"
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "O que você vai fazer no fim de semana?",
+      "de": "Was machst du am Wochenende?",
+      "words": [
+        "o_que",
+        "voce",
+        "fim_de_semana",
+        "fazer"
+      ],
+      "grammar": [
+        "ir_futuro"
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Eu nasci em janeiro.",
+      "de": "Ich bin im Januar geboren.",
+      "words": [
+        "eu",
+        "janeiro"
+      ],
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Em fevereiro é carnaval.",
+      "de": "Im Februar ist Karneval.",
+      "words": [
+        "fevereiro",
+        "carnaval"
+      ],
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Em março ainda faz calor.",
+      "de": "Im März ist es noch heiss.",
+      "words": [
+        "marco",
+        "ainda",
+        "calor"
+      ],
+      "grammar": [
+        "datum",
+        "wetter"
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Abril é um mês bom para viajar.",
+      "de": "Der April ist ein guter Monat zum Reisen.",
+      "words": [
+        "abril",
+        "mes",
+        "viajar"
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "As férias são em julho.",
+      "de": "Die Ferien sind im Juli.",
+      "words": [
+        "ferias",
+        "julho"
+      ],
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Em junho tem festa junina.",
+      "de": "Im Juni gibt es die Junifeste.",
+      "words": [
+        "junho",
+        "festa"
+      ],
+      "grammar": [
+        "datum",
+        "ter_haben"
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Agosto é o mês do meu aniversário.",
+      "de": "Im August ist mein Geburtstag.",
+      "words": [
+        "agosto",
+        "mes"
+      ],
+      "grammar": [
+        "possessiv"
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Setembro e outubro são bons meses para ir ao Nordeste.",
+      "de": "September und Oktober sind gute Monate für den Nordosten.",
+      "words": [
+        "setembro",
+        "outubro",
+        "ir"
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "Em novembro começa o calor.",
+      "de": "Im November beginnt die Hitze.",
+      "words": [
+        "novembro",
+        "calor"
+      ],
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "O Natal é em dezembro, no verão.",
+      "de": "Weihnachten ist im Dezember, im Sommer.",
+      "words": [
+        "dezembro",
+        "verao"
+      ],
+      "grammar": [
+        "datum",
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "No inverno chove muito em São Paulo?",
+      "de": "Regnet es im Winter viel in São Paulo?",
+      "words": [
+        "inverno",
+        "chover",
+        "muito"
+      ],
+      "grammar": [
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "A primavera começa em setembro.",
+      "de": "Der Frühling beginnt im September.",
+      "words": [
+        "primavera",
+        "setembro"
+      ],
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "No outono as noites são frescas.",
+      "de": "Im Herbst sind die Nächte frisch.",
+      "words": [
+        "outono"
+      ],
+      "grammar": [
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "Eu acordo cedo todo dia.",
+      "de": "Ich wache jeden Tag früh auf.",
+      "words": [
+        "eu",
+        "acordar",
+        "cedo",
+        "todo_dia"
+      ],
+      "grammar": [
+        "praesens"
+      ]
+    },
+    {
+      "id": "s26",
+      "text": "Eu me levanto às sete da manhã.",
+      "de": "Ich stehe um sieben Uhr morgens auf.",
+      "words": [
+        "eu",
+        "levantar",
+        "num_7",
+        "manha"
+      ],
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "s27",
+      "text": "De manhã eu tomo café.",
+      "de": "Morgens trinke ich Kaffee.",
+      "words": [
+        "manha",
+        "eu",
+        "tomar",
+        "cafe"
+      ],
+      "grammar": [
+        "datum"
+      ]
+    },
+    {
+      "id": "s28",
+      "text": "À tarde eu vou à praia.",
+      "de": "Nachmittags gehe ich an den Strand.",
+      "words": [
+        "tarde_noun",
+        "eu",
+        "praia",
+        "ir"
+      ],
+      "grammar": [
+        "datum",
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s29",
+      "text": "Ele chegou de madrugada.",
+      "de": "Er ist mitten in der Nacht angekommen.",
+      "words": [
+        "ele",
+        "madrugada",
+        "chegar"
+      ]
+    },
+    {
+      "id": "s30",
+      "text": "É muito tarde, vamos dormir.",
+      "de": "Es ist sehr spät, lass uns schlafen gehen.",
+      "words": [
+        "muito",
+        "tarde_adv",
+        "dormir",
+        "ir"
+      ],
+      "grammar": [
+        "ir_futuro"
+      ]
+    },
+    {
+      "id": "s31",
+      "text": "Eu tomo banho antes de dormir.",
+      "de": "Ich dusche vor dem Schlafengehen.",
+      "words": [
+        "eu",
+        "tomar_banho",
+        "antes",
+        "dormir"
+      ]
+    },
+    {
+      "id": "s32",
+      "text": "Hoje eu vou cozinhar em casa.",
+      "de": "Heute koche ich zu Hause.",
+      "words": [
+        "hoje",
+        "eu",
+        "cozinhar",
+        "casa",
+        "ir"
+      ],
+      "grammar": [
+        "ir_futuro"
+      ]
+    },
+    {
+      "id": "s33",
+      "text": "Preciso limpar a casa.",
+      "de": "Ich muss das Haus putzen.",
+      "words": [
+        "limpar",
+        "casa",
+        "precisar"
+      ],
+      "grammar": [
+        "ter_que"
+      ]
+    },
+    {
+      "id": "s34",
+      "text": "Onde eu posso lavar roupa?",
+      "de": "Wo kann ich Wäsche waschen?",
+      "words": [
+        "onde",
+        "eu",
+        "lavar",
+        "roupa",
+        "poder"
+      ],
+      "grammar": [
+        "unregelmaessig"
+      ]
+    },
+    {
+      "id": "s35",
+      "text": "Eu sou alemão e estou no Brasil.",
+      "de": "Ich bin Deutscher und bin in Brasilien.",
+      "words": [
+        "eu",
+        "alemao",
+        "brasil",
+        "ser",
+        "estar"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s36",
+      "text": "Posso pagar com cartão?",
+      "de": "Kann ich mit Karte bezahlen?",
+      "words": [
+        "pagar",
+        "cartao",
+        "poder"
+      ],
+      "grammar": [
+        "unregelmaessig"
+      ]
+    },
+    {
+      "id": "s37",
+      "text": "Você pode me ajudar?",
+      "de": "Kannst du mir helfen?",
+      "words": [
+        "voce",
+        "poder",
+        "ajudar"
+      ],
+      "grammar": [
+        "unregelmaessig"
+      ]
+    },
+    {
+      "id": "s38",
+      "text": "Eu não sei.",
+      "de": "Ich weiss es nicht.",
+      "words": [
+        "eu",
+        "nao",
+        "saber"
+      ],
+      "grammar": [
+        "unregelmaessig"
+      ]
+    },
+    {
+      "id": "s39",
+      "text": "Você sabe onde fica o banco?",
+      "de": "Weisst du, wo die Bank ist?",
+      "words": [
+        "voce",
+        "saber",
+        "onde",
+        "ficar"
+      ],
+      "grammar": [
+        "unregelmaessig"
+      ]
+    },
+    {
+      "id": "s40",
+      "text": "Como se diz isso em português?",
+      "de": "Wie sagt man das auf Portugiesisch?",
+      "words": [
+        "como",
+        "dizer",
+        "isso",
+        "portugues"
+      ],
+      "grammar": [
+        "unregelmaessig"
+      ]
+    },
+    {
+      "id": "s41",
+      "text": "O que ele disse?",
+      "de": "Was hat er gesagt?",
+      "words": [
+        "o_que",
+        "ele",
+        "dizer"
+      ]
+    },
+    {
+      "id": "s42",
+      "text": "Eu não vejo nada sem óculos.",
+      "de": "Ohne Brille sehe ich nichts.",
+      "words": [
+        "eu",
+        "nao",
+        "ver",
+        "sem",
+        "oculos"
+      ],
+      "grammar": [
+        "unregelmaessig"
+      ]
+    },
+    {
+      "id": "s43",
+      "text": "Me dá uma água, por favor.",
+      "de": "Gib mir bitte ein Wasser.",
+      "words": [
+        "dar",
+        "agua",
+        "por_favor"
+      ],
+      "grammar": [
+        "bestellen"
+      ]
+    },
+    {
+      "id": "s44",
+      "text": "Eu sempre esqueço a chave.",
+      "de": "Ich vergesse immer den Schlüssel.",
+      "words": [
+        "eu",
+        "sempre",
+        "chave"
+      ],
+      "grammar": [
+        "praesens"
+      ]
+    },
+    {
+      "id": "s45",
+      "text": "Eu nunca como carne.",
+      "de": "Ich esse nie Fleisch.",
+      "words": [
+        "eu",
+        "nunca",
+        "comer",
+        "carne"
+      ],
+      "grammar": [
+        "praesens"
+      ]
+    },
+    {
+      "id": "s46",
+      "text": "Às vezes eu vou de ônibus.",
+      "de": "Manchmal fahre ich mit dem Bus.",
+      "words": [
+        "as_vezes",
+        "eu",
+        "onibus",
+        "ir"
+      ],
+      "grammar": [
+        "ir_futuro"
+      ]
+    },
+    {
+      "id": "s47",
+      "text": "Agora não posso, depois eu ligo.",
+      "de": "Jetzt kann ich nicht, ich rufe später an.",
+      "words": [
+        "agora",
+        "depois",
+        "poder"
+      ],
+      "grammar": [
+        "unregelmaessig"
+      ]
+    },
+    {
+      "id": "s48",
+      "text": "Antes do jantar, a gente toma uma caipirinha.",
+      "de": "Vor dem Abendessen trinken wir einen Caipirinha.",
+      "words": [
+        "antes",
+        "jantar",
+        "a_gente",
+        "tomar",
+        "caipirinha"
+      ],
+      "grammar": [
+        "a_gente",
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s49",
+      "text": "Você já comeu?",
+      "de": "Hast du schon gegessen?",
+      "words": [
+        "voce",
+        "ja"
+      ]
+    },
+    {
+      "id": "s50",
+      "text": "Ainda não, estou com fome.",
+      "de": "Noch nicht, ich habe Hunger.",
+      "words": [
+        "ainda",
+        "nao",
+        "fome"
+      ],
+      "grammar": [
+        "estar_com"
+      ]
+    },
+    {
+      "id": "s51",
+      "text": "Eu também gosto de praia.",
+      "de": "Ich mag auch den Strand.",
+      "words": [
+        "eu",
+        "tambem",
+        "gostar",
+        "praia"
+      ]
+    },
+    {
+      "id": "s52",
+      "text": "Eu gosto, mas é muito caro.",
+      "de": "Es gefällt mir, aber es ist sehr teuer.",
+      "words": [
+        "eu",
+        "gostar",
+        "mas",
+        "muito",
+        "caro"
+      ]
+    },
+    {
+      "id": "s53",
+      "text": "Não fui porque estava doente.",
+      "de": "Ich bin nicht gegangen, weil ich krank war.",
+      "words": [
+        "nao",
+        "porque",
+        "doente"
+      ]
+    },
+    {
+      "id": "s54",
+      "text": "Café ou chá?",
+      "de": "Kaffee oder Tee?",
+      "words": [
+        "cafe",
+        "ou",
+        "cha"
+      ]
+    },
+    {
+      "id": "s55",
+      "text": "Eu estudo português todo dia.",
+      "de": "Ich lerne jeden Tag Portugiesisch.",
+      "words": [
+        "eu",
+        "estudar",
+        "portugues",
+        "todo_dia"
+      ],
+      "grammar": [
+        "praesens"
+      ]
+    },
+    {
+      "id": "s56",
+      "text": "Ela faz tudo muito bem.",
+      "de": "Sie macht alles sehr gut.",
+      "words": [
+        "ela",
+        "fazer",
+        "muito",
+        "bem"
+      ],
+      "grammar": [
+        "unregelmaessig"
+      ]
+    },
+    {
+      "id": "s57",
+      "text": "Desculpa, eu não sei a resposta.",
+      "de": "Entschuldigung, ich weiss die Antwort nicht.",
+      "words": [
+        "desculpa",
+        "eu",
+        "nao",
+        "saber"
+      ],
+      "grammar": [
+        "unregelmaessig"
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "datum",
+      "title": "Wochentage, Monate und Datum",
+      "explanation": "Die Wochentage von Montag bis Freitag werden gezählt: segunda-feira (2. Tag), terça-feira, quarta-feira, quinta-feira, sexta-feira – im Alltag ohne „-feira“: na segunda, na sexta.\nSamstag und Sonntag: o sábado, o domingo.\n\n• am Montag: na segunda(-feira), am Samstag: no sábado\n• im Mai: em maio (Monate klein geschrieben, ohne Artikel)\n• Datum: dia cinco de maio (der 5. Mai); der Erste: primeiro de maio\n• Tageszeiten: de manhã (morgens), à tarde (nachmittags), à noite (abends)\n\nAchtung: In Brasilien ist von Dezember bis März Sommer.",
+      "examples": [
+        {
+          "text": "Na sexta eu vou viajar.",
+          "de": "Am Freitag verreise ich."
+        },
+        {
+          "text": "Hoje é dia vinte de março.",
+          "de": "Heute ist der zwanzigste März."
+        },
+        {
+          "text": "De manhã faz frio.",
+          "de": "Morgens ist es kalt."
+        }
+      ]
+    },
+    {
+      "id": "unregelmaessig",
+      "title": "Wichtige unregelmässige Verben",
+      "explanation": "Diese Verben braucht man ständig (eu / você, ele, a gente / nós / vocês, eles):\n\n• ser: sou / é / somos / são\n• estar: estou / está / estamos / estão\n• ter: tenho / tem / temos / têm\n• ir: vou / vai / vamos / vão\n• fazer: faço / faz / fazemos / fazem\n• poder: posso / pode / podemos / podem\n• querer: quero / quer / queremos / querem\n• saber: sei / sabe / sabemos / sabem\n• dizer: digo / diz / dizemos / dizem\n• ver: vejo / vê / vemos / veem\n• dar: dou / dá / damos / dão\n• dormir: durmo / dorme / dormimos / dormem",
+      "examples": [
+        {
+          "text": "Eu posso entrar?",
+          "de": "Darf ich hereinkommen?"
+        },
+        {
+          "text": "Eu não sei.",
+          "de": "Ich weiss nicht."
+        },
+        {
+          "text": "O que você faz?",
+          "de": "Was machst du?"
+        },
+        {
+          "text": "Eu faço o jantar.",
+          "de": "Ich mache das Abendessen."
+        }
+      ]
+    }
+  ]
+}

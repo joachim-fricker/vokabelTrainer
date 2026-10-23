@@ -1,0 +1,1204 @@
+{
+  "id": "pt-BR-08",
+  "language": "pt-BR",
+  "order": 8,
+  "title": "Smalltalk: Herkunft, Familie, Beruf",
+  "titleTarget": "Conversa: origem, família e trabalho",
+  "words": [
+    {
+      "id": "de_onde",
+      "text": "de onde",
+      "de": "woher",
+      "pos": "adverb",
+      "note": "De onde você é? = Woher kommst du?",
+      "category": "Herkunft & Wohnort",
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "pais_land",
+      "text": "o país",
+      "de": "das Land (Staat)",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "cidade",
+      "text": "a cidade",
+      "de": "die Stadt",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "alemanha",
+      "text": "a Alemanha",
+      "de": "Deutschland",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "suica",
+      "text": "a Suíça",
+      "de": "die Schweiz",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "austria",
+      "text": "a Áustria",
+      "de": "Österreich",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "brasil",
+      "text": "o Brasil",
+      "de": "Brasilien",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "brasileiro",
+      "text": "brasileiro",
+      "de": "brasilianisch; der Brasilianer",
+      "pos": "adjective",
+      "note": "Frau: brasileira",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "suico",
+      "text": "suíço",
+      "de": "schweizerisch; der Schweizer",
+      "pos": "adjective",
+      "note": "Frau: suíça",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "austriaco",
+      "text": "austríaco",
+      "de": "österreichisch; der Österreicher",
+      "pos": "adjective",
+      "note": "Frau: austríaca",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "estrangeiro",
+      "text": "estrangeiro",
+      "de": "ausländisch; der Ausländer",
+      "pos": "adjective",
+      "note": "no estrangeiro = im Ausland",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "morar",
+      "text": "morar",
+      "de": "wohnen",
+      "pos": "verb",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "familia",
+      "text": "a família",
+      "de": "die Familie",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Familie & Freunde"
+    },
+    {
+      "id": "pais_eltern",
+      "text": "os pais",
+      "de": "die Eltern",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Familie & Freunde"
+    },
+    {
+      "id": "pai",
+      "text": "o pai",
+      "de": "der Vater",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Familie & Freunde"
+    },
+    {
+      "id": "mae",
+      "text": "a mãe",
+      "de": "die Mutter",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Familie & Freunde"
+    },
+    {
+      "id": "filho",
+      "text": "o filho",
+      "de": "der Sohn",
+      "pos": "noun",
+      "gender": "m",
+      "note": "os filhos = die Kinder",
+      "category": "Familie & Freunde"
+    },
+    {
+      "id": "filha",
+      "text": "a filha",
+      "de": "die Tochter",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Familie & Freunde"
+    },
+    {
+      "id": "irmao",
+      "text": "o irmão",
+      "de": "der Bruder",
+      "pos": "noun",
+      "gender": "m",
+      "note": "os irmãos = die Geschwister",
+      "category": "Familie & Freunde"
+    },
+    {
+      "id": "irma",
+      "text": "a irmã",
+      "de": "die Schwester",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Familie & Freunde"
+    },
+    {
+      "id": "marido",
+      "text": "o marido",
+      "de": "der Ehemann",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Familie & Freunde"
+    },
+    {
+      "id": "esposa",
+      "text": "a esposa",
+      "de": "die Ehefrau",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Umgangssprachlich auch: a mulher",
+      "category": "Familie & Freunde"
+    },
+    {
+      "id": "namorado",
+      "text": "o namorado",
+      "de": "der feste Freund",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Familie & Freunde"
+    },
+    {
+      "id": "namorada",
+      "text": "a namorada",
+      "de": "die feste Freundin",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Familie & Freunde"
+    },
+    {
+      "id": "avo_m",
+      "text": "o avô",
+      "de": "der Grossvater",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Familie & Freunde"
+    },
+    {
+      "id": "avo_f",
+      "text": "a avó",
+      "de": "die Grossmutter",
+      "pos": "noun",
+      "gender": "f",
+      "note": "os avós = die Grosseltern",
+      "category": "Familie & Freunde"
+    },
+    {
+      "id": "amigo",
+      "text": "o amigo",
+      "de": "der Freund (Kumpel)",
+      "pos": "noun",
+      "gender": "m",
+      "note": "die Freundin: a amiga",
+      "category": "Familie & Freunde"
+    },
+    {
+      "id": "casado",
+      "text": "casado",
+      "de": "verheiratet",
+      "pos": "adjective",
+      "category": "Familie & Freunde"
+    },
+    {
+      "id": "solteiro",
+      "text": "solteiro",
+      "de": "ledig",
+      "pos": "adjective",
+      "category": "Familie & Freunde"
+    },
+    {
+      "id": "trabalho",
+      "text": "o trabalho",
+      "de": "die Arbeit",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Arbeit & Studium"
+    },
+    {
+      "id": "trabalhar",
+      "text": "trabalhar",
+      "de": "arbeiten",
+      "pos": "verb",
+      "category": "Arbeit & Studium"
+    },
+    {
+      "id": "profissao",
+      "text": "a profissão",
+      "de": "der Beruf",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Arbeit & Studium"
+    },
+    {
+      "id": "empresa",
+      "text": "a empresa",
+      "de": "die Firma",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Arbeit & Studium"
+    },
+    {
+      "id": "engenheiro",
+      "text": "o engenheiro",
+      "de": "der Ingenieur",
+      "pos": "noun",
+      "gender": "m",
+      "note": "a engenheira",
+      "category": "Arbeit & Studium"
+    },
+    {
+      "id": "professor",
+      "text": "o professor",
+      "de": "der Lehrer",
+      "pos": "noun",
+      "gender": "m",
+      "note": "a professora",
+      "category": "Arbeit & Studium"
+    },
+    {
+      "id": "aposentado",
+      "text": "aposentado",
+      "de": "pensioniert",
+      "pos": "adjective",
+      "category": "Arbeit & Studium"
+    },
+    {
+      "id": "estudar",
+      "text": "estudar",
+      "de": "studieren; lernen",
+      "pos": "verb",
+      "category": "Arbeit & Studium"
+    },
+    {
+      "id": "estudante",
+      "text": "o estudante",
+      "de": "der Student",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Auch: a estudante",
+      "category": "Arbeit & Studium"
+    },
+    {
+      "id": "gostar",
+      "text": "gostar de",
+      "de": "mögen, gern haben",
+      "pos": "verb",
+      "category": "Freizeit & Interessen"
+    },
+    {
+      "id": "ler",
+      "text": "ler",
+      "de": "lesen",
+      "pos": "verb",
+      "category": "Freizeit & Interessen"
+    },
+    {
+      "id": "musica",
+      "text": "a música",
+      "de": "die Musik",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Freizeit & Interessen"
+    },
+    {
+      "id": "esporte",
+      "text": "o esporte",
+      "de": "der Sport",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Freizeit & Interessen"
+    },
+    {
+      "id": "futebol",
+      "text": "o futebol",
+      "de": "der Fussball",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Freizeit & Interessen"
+    },
+    {
+      "id": "passatempo",
+      "text": "o passatempo",
+      "de": "das Hobby",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Freizeit & Interessen"
+    },
+    {
+      "id": "viagem",
+      "text": "a viagem",
+      "de": "die Reise",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Freizeit & Interessen"
+    },
+    {
+      "id": "ferias",
+      "text": "as férias",
+      "de": "die Ferien, der Urlaub",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Immer Mehrzahl.",
+      "category": "Freizeit & Interessen"
+    },
+    {
+      "id": "conhecer",
+      "text": "conhecer",
+      "de": "kennen; kennenlernen",
+      "pos": "verb",
+      "category": "Freizeit & Interessen"
+    },
+    {
+      "id": "legal",
+      "text": "legal",
+      "de": "toll, cool; nett",
+      "pos": "adjective",
+      "note": "Que legal! = Wie toll!",
+      "category": "Eindrücke & Eigenschaften"
+    },
+    {
+      "id": "simpatico",
+      "text": "simpático",
+      "de": "sympathisch, freundlich",
+      "pos": "adjective",
+      "category": "Eindrücke & Eigenschaften"
+    },
+    {
+      "id": "bonito",
+      "text": "bonito",
+      "de": "schön, hübsch",
+      "pos": "adjective",
+      "category": "Eindrücke & Eigenschaften"
+    },
+    {
+      "id": "interessante",
+      "text": "interessante",
+      "de": "interessant",
+      "pos": "adjective",
+      "category": "Eindrücke & Eigenschaften"
+    },
+    {
+      "id": "chato",
+      "text": "chato",
+      "de": "langweilig; nervig",
+      "pos": "adjective",
+      "category": "Eindrücke & Eigenschaften"
+    },
+    {
+      "id": "feliz",
+      "text": "feliz",
+      "de": "glücklich",
+      "pos": "adjective",
+      "category": "Eindrücke & Eigenschaften"
+    },
+    {
+      "id": "idade",
+      "text": "a idade",
+      "de": "das Alter",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Eindrücke & Eigenschaften"
+    },
+    {
+      "id": "ele",
+      "text": "ele",
+      "de": "er",
+      "pos": "pronoun",
+      "category": "Personen (Pronomen)"
+    },
+    {
+      "id": "ela",
+      "text": "ela",
+      "de": "sie (Einzahl)",
+      "pos": "pronoun",
+      "category": "Personen (Pronomen)"
+    },
+    {
+      "id": "nos",
+      "text": "nós",
+      "de": "wir",
+      "pos": "pronoun",
+      "category": "Personen (Pronomen)",
+      "grammar": [
+        "a_gente"
+      ]
+    },
+    {
+      "id": "a_gente",
+      "text": "a gente",
+      "de": "wir (umgangssprachlich)",
+      "pos": "pronoun",
+      "note": "Verb wie bei ele/ela: a gente vai",
+      "category": "Personen (Pronomen)",
+      "grammar": [
+        "a_gente"
+      ]
+    },
+    {
+      "id": "eles",
+      "text": "eles, elas",
+      "de": "sie (Mehrzahl)",
+      "pos": "pronoun",
+      "category": "Personen (Pronomen)"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "De onde você é?",
+      "de": "Woher kommst du?",
+      "words": [
+        "de_onde",
+        "voce"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s02",
+      "text": "Eu sou da Alemanha.",
+      "de": "Ich komme aus Deutschland.",
+      "words": [
+        "eu",
+        "alemanha"
+      ],
+      "grammar": [
+        "ser_estar",
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "Sou suíço, de Zurique.",
+      "de": "Ich bin Schweizer, aus Zürich.",
+      "words": [
+        "suico"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s04",
+      "text": "Ela é austríaca.",
+      "de": "Sie ist Österreicherin.",
+      "words": [
+        "ela",
+        "austriaco"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s05",
+      "text": "Ele é brasileiro, de Salvador.",
+      "de": "Er ist Brasilianer, aus Salvador.",
+      "words": [
+        "ele",
+        "brasileiro"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s06",
+      "text": "A Suíça é um país pequeno.",
+      "de": "Die Schweiz ist ein kleines Land.",
+      "words": [
+        "suica",
+        "pais_land",
+        "pequeno"
+      ]
+    },
+    {
+      "id": "s07",
+      "text": "O Brasil é muito grande.",
+      "de": "Brasilien ist sehr gross.",
+      "words": [
+        "brasil",
+        "muito",
+        "grande"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s08",
+      "text": "Faz tempo que você mora no Brasil?",
+      "de": "Wohnst du schon lange in Brasilien?",
+      "words": [
+        "voce",
+        "morar",
+        "brasil"
+      ],
+      "grammar": [
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "Eu moro numa cidade pequena perto de Munique.",
+      "de": "Ich wohne in einer kleinen Stadt bei München.",
+      "words": [
+        "eu",
+        "morar",
+        "cidade",
+        "pequeno",
+        "perto"
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "É a primeira vez que você vem ao Brasil?",
+      "de": "Bist du zum ersten Mal in Brasilien?",
+      "words": [
+        "voce",
+        "vir",
+        "brasil"
+      ],
+      "grammar": [
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Muitos estrangeiros moram aqui.",
+      "de": "Hier wohnen viele Ausländer.",
+      "words": [
+        "estrangeiro",
+        "morar",
+        "aqui"
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Você é casado?",
+      "de": "Bist du verheiratet?",
+      "words": [
+        "voce",
+        "casado"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Não, sou solteiro.",
+      "de": "Nein, ich bin ledig.",
+      "words": [
+        "nao",
+        "solteiro"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Esta é a minha esposa, Maria.",
+      "de": "Das ist meine Frau, Maria.",
+      "words": [
+        "esposa",
+        "este"
+      ],
+      "grammar": [
+        "possessiv",
+        "demonstrativ"
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Este é o meu marido.",
+      "de": "Das ist mein Mann.",
+      "words": [
+        "marido",
+        "este"
+      ],
+      "grammar": [
+        "possessiv",
+        "demonstrativ"
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Você tem filhos?",
+      "de": "Hast du Kinder?",
+      "words": [
+        "voce",
+        "filho",
+        "ter"
+      ],
+      "grammar": [
+        "ter_haben"
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Tenho um filho e uma filha.",
+      "de": "Ich habe einen Sohn und eine Tochter.",
+      "words": [
+        "filho",
+        "filha",
+        "ter"
+      ],
+      "grammar": [
+        "ter_haben"
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Meus pais moram na Áustria.",
+      "de": "Meine Eltern wohnen in Österreich.",
+      "words": [
+        "pais_eltern",
+        "morar",
+        "austria"
+      ],
+      "grammar": [
+        "possessiv",
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Meu pai é aposentado.",
+      "de": "Mein Vater ist pensioniert.",
+      "words": [
+        "pai",
+        "aposentado"
+      ],
+      "grammar": [
+        "possessiv",
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "Minha mãe está muito feliz.",
+      "de": "Meine Mutter ist sehr glücklich.",
+      "words": [
+        "mae",
+        "muito",
+        "feliz"
+      ],
+      "grammar": [
+        "possessiv",
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "Tenho dois irmãos e uma irmã.",
+      "de": "Ich habe zwei Brüder und eine Schwester.",
+      "words": [
+        "num_2",
+        "irma",
+        "ter"
+      ],
+      "grammar": [
+        "ter_haben"
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "Meu irmão mora em Berlim.",
+      "de": "Mein Bruder wohnt in Berlin.",
+      "words": [
+        "irmao",
+        "morar"
+      ],
+      "grammar": [
+        "possessiv"
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "A minha família é grande.",
+      "de": "Meine Familie ist gross.",
+      "words": [
+        "familia",
+        "grande"
+      ],
+      "grammar": [
+        "possessiv",
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "Ela é minha namorada.",
+      "de": "Sie ist meine Freundin.",
+      "words": [
+        "ela",
+        "namorada"
+      ],
+      "grammar": [
+        "possessiv"
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "O namorado dela é muito simpático.",
+      "de": "Ihr Freund ist sehr sympathisch.",
+      "words": [
+        "namorado",
+        "muito",
+        "simpatico"
+      ],
+      "grammar": [
+        "possessiv"
+      ]
+    },
+    {
+      "id": "s26",
+      "text": "Meu avô tem noventa anos.",
+      "de": "Mein Grossvater ist neunzig Jahre alt.",
+      "words": [
+        "avo_m",
+        "num_90",
+        "ano"
+      ],
+      "grammar": [
+        "possessiv"
+      ]
+    },
+    {
+      "id": "s27",
+      "text": "A minha avó cozinha muito bem.",
+      "de": "Meine Grossmutter kocht sehr gut.",
+      "words": [
+        "avo_f",
+        "muito",
+        "bem"
+      ],
+      "grammar": [
+        "possessiv"
+      ]
+    },
+    {
+      "id": "s28",
+      "text": "Ele é um bom amigo.",
+      "de": "Er ist ein guter Freund.",
+      "words": [
+        "ele",
+        "amigo"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s29",
+      "text": "O que você faz?",
+      "de": "Was machst du beruflich?",
+      "words": [
+        "o_que",
+        "voce"
+      ]
+    },
+    {
+      "id": "s30",
+      "text": "Qual é a sua profissão?",
+      "de": "Was ist Ihr Beruf?",
+      "words": [
+        "qual",
+        "profissao"
+      ],
+      "grammar": [
+        "possessiv"
+      ]
+    },
+    {
+      "id": "s31",
+      "text": "Eu sou engenheiro.",
+      "de": "Ich bin Ingenieur.",
+      "words": [
+        "eu",
+        "engenheiro"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s32",
+      "text": "Ela é professora de inglês.",
+      "de": "Sie ist Englischlehrerin.",
+      "words": [
+        "ela",
+        "professor"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s33",
+      "text": "Eu trabalho numa empresa de software.",
+      "de": "Ich arbeite in einer Softwarefirma.",
+      "words": [
+        "eu",
+        "trabalhar",
+        "empresa"
+      ]
+    },
+    {
+      "id": "s34",
+      "text": "O trabalho é interessante, mas cansativo.",
+      "de": "Die Arbeit ist interessant, aber anstrengend.",
+      "words": [
+        "trabalho",
+        "interessante"
+      ]
+    },
+    {
+      "id": "s35",
+      "text": "Eu já sou aposentado.",
+      "de": "Ich bin schon pensioniert.",
+      "words": [
+        "eu",
+        "aposentado"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s36",
+      "text": "Ele é estudante e estuda medicina.",
+      "de": "Er ist Student und studiert Medizin.",
+      "words": [
+        "ele",
+        "estudante",
+        "estudar"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s37",
+      "text": "Eu estou estudando português.",
+      "de": "Ich lerne Portugiesisch.",
+      "words": [
+        "eu",
+        "estudar",
+        "portugues"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s38",
+      "text": "Estou de férias.",
+      "de": "Ich bin im Urlaub.",
+      "words": [
+        "ferias"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s39",
+      "text": "A viagem foi ótima!",
+      "de": "Die Reise war toll!",
+      "words": [
+        "viagem"
+      ]
+    },
+    {
+      "id": "s40",
+      "text": "Quanto tempo você vai ficar?",
+      "de": "Wie lange bleibst du?",
+      "words": [
+        "voce",
+        "ficar",
+        "ir"
+      ],
+      "grammar": [
+        "fragewoerter",
+        "ir_futuro"
+      ]
+    },
+    {
+      "id": "s41",
+      "text": "Você gosta de futebol?",
+      "de": "Magst du Fussball?",
+      "words": [
+        "voce",
+        "gostar",
+        "futebol"
+      ]
+    },
+    {
+      "id": "s42",
+      "text": "Eu gosto muito de música brasileira.",
+      "de": "Ich mag brasilianische Musik sehr.",
+      "words": [
+        "eu",
+        "gostar",
+        "muito",
+        "musica",
+        "brasileiro"
+      ],
+      "grammar": [
+        "adjektive"
+      ]
+    },
+    {
+      "id": "s43",
+      "text": "Qual é o seu passatempo?",
+      "de": "Was ist dein Hobby?",
+      "words": [
+        "qual",
+        "passatempo"
+      ],
+      "grammar": [
+        "possessiv"
+      ]
+    },
+    {
+      "id": "s44",
+      "text": "Eu gosto de ler e de fazer esporte.",
+      "de": "Ich lese gern und mache gern Sport.",
+      "words": [
+        "eu",
+        "gostar",
+        "ler",
+        "esporte"
+      ]
+    },
+    {
+      "id": "s45",
+      "text": "Prazer em conhecer você!",
+      "de": "Schön, dich kennenzulernen!",
+      "words": [
+        "prazer",
+        "conhecer",
+        "voce"
+      ]
+    },
+    {
+      "id": "s46",
+      "text": "Você conhece o Rio?",
+      "de": "Kennst du Rio?",
+      "words": [
+        "voce",
+        "conhecer"
+      ]
+    },
+    {
+      "id": "s47",
+      "text": "Que legal!",
+      "de": "Wie toll!",
+      "words": [
+        "legal"
+      ]
+    },
+    {
+      "id": "s48",
+      "text": "A cidade é muito bonita.",
+      "de": "Die Stadt ist sehr schön.",
+      "words": [
+        "cidade",
+        "muito",
+        "bonito"
+      ]
+    },
+    {
+      "id": "s49",
+      "text": "O filme foi muito chato.",
+      "de": "Der Film war sehr langweilig.",
+      "words": [
+        "muito",
+        "chato"
+      ]
+    },
+    {
+      "id": "s50",
+      "text": "Quantos anos você tem?",
+      "de": "Wie alt bist du?",
+      "words": [
+        "voce",
+        "ano",
+        "ter"
+      ],
+      "grammar": [
+        "fragewoerter",
+        "ter_haben"
+      ]
+    },
+    {
+      "id": "s51",
+      "text": "A idade não importa.",
+      "de": "Das Alter spielt keine Rolle.",
+      "words": [
+        "idade",
+        "nao"
+      ]
+    },
+    {
+      "id": "s52",
+      "text": "A gente vai à praia amanhã.",
+      "de": "Wir gehen morgen an den Strand.",
+      "words": [
+        "a_gente",
+        "amanha",
+        "ir"
+      ],
+      "grammar": [
+        "a_gente",
+        "ir_futuro"
+      ]
+    },
+    {
+      "id": "s53",
+      "text": "A gente se vê!",
+      "de": "Wir sehen uns!",
+      "words": [
+        "a_gente"
+      ],
+      "grammar": [
+        "a_gente"
+      ]
+    },
+    {
+      "id": "s54",
+      "text": "Nós somos da Suíça.",
+      "de": "Wir sind aus der Schweiz.",
+      "words": [
+        "nos",
+        "suica"
+      ],
+      "grammar": [
+        "ser_estar",
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s55",
+      "text": "Eles são muito simpáticos.",
+      "de": "Sie sind sehr sympathisch.",
+      "words": [
+        "eles",
+        "muito"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s56",
+      "text": "Elas estão cansadas.",
+      "de": "Sie sind müde.",
+      "words": [
+        "eles"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "ser_estar",
+      "title": "ser und estar – zweimal „sein“",
+      "explanation": "ser – für Dauerhaftes: Herkunft, Beruf, Eigenschaften, Zeit\n• eu sou, você/ele/ela é, nós somos, vocês/eles são\n• Sou alemão. Ela é professora. O Brasil é grande.\n\nestar – für Vorübergehendes: Zustand, Befinden, Ort\n• eu estou, você/ele/ela está, nós estamos, vocês/eles estão\n• Estou cansado. Estou de férias. Estou no hotel.\n\nVergleich:\n• Ele é chato. – Er ist (ein) langweilig(er Mensch).\n• Ele está chato hoje. – Er nervt heute.\n\nIm Gespräch wird estar oft verkürzt: tô (estou), tá (está).",
+      "examples": [
+        {
+          "text": "Eu sou da Suíça.",
+          "de": "Ich bin aus der Schweiz."
+        },
+        {
+          "text": "Eu estou no Brasil.",
+          "de": "Ich bin (gerade) in Brasilien."
+        },
+        {
+          "text": "A sopa é boa, mas está fria.",
+          "de": "Die Suppe ist gut, aber (gerade) kalt."
+        }
+      ]
+    },
+    {
+      "id": "possessiv",
+      "title": "mein, dein, sein: meu, minha, seu …",
+      "explanation": "Das Possessivpronomen richtet sich nach dem Besitz, nicht nach dem Besitzer:\n\n• meu/minha – mein(e): meu pai, minha mãe\n• seu/sua – dein(e), Ihr(e): seu passaporte, sua mala\n• nosso/nossa – unser(e)\n\nMehrzahl: meus, minhas, seus, suas, nossos, nossas.\n\nOft steht der Artikel davor: o meu carro, a minha casa – beides ist richtig.\n\n„sein/ihr“ (von ihm/ihr) sagt man in Brasilien meist mit dele/dela, damit es nicht mit „dein“ verwechselt wird:\no carro dele – sein Auto, a casa dela – ihr Haus.",
+      "examples": [
+        {
+          "text": "Minha irmã mora aqui.",
+          "de": "Meine Schwester wohnt hier."
+        },
+        {
+          "text": "Qual é o seu nome?",
+          "de": "Wie ist dein/Ihr Name?"
+        },
+        {
+          "text": "O marido dela é brasileiro.",
+          "de": "Ihr Mann ist Brasilianer."
+        }
+      ]
+    },
+    {
+      "id": "a_gente",
+      "title": "a gente – „wir“ im Alltag",
+      "explanation": "Statt nós (wir) sagt man in Brasilien im Gespräch sehr oft a gente. Das Verb steht dann in der Form für ele/ela (3. Person Einzahl):\n\n• nós vamos = a gente vai – wir gehen\n• nós somos = a gente é – wir sind\n• nós temos = a gente tem – wir haben\n\nIm Schriftlichen und in formellen Situationen bleibt nós üblich.",
+      "examples": [
+        {
+          "text": "A gente vai jantar fora.",
+          "de": "Wir gehen auswärts essen."
+        },
+        {
+          "text": "A gente mora em Zurique.",
+          "de": "Wir wohnen in Zürich."
+        },
+        {
+          "text": "A gente se fala!",
+          "de": "Wir sprechen uns!"
+        }
+      ]
+    }
+  ]
+}

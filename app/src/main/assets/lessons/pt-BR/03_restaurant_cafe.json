@@ -1,0 +1,1484 @@
+{
+  "id": "pt-BR-03",
+  "language": "pt-BR",
+  "order": 3,
+  "title": "Im Restaurant & Café",
+  "titleTarget": "No restaurante e no café",
+  "words": [
+    {
+      "id": "restaurante",
+      "text": "o restaurante",
+      "de": "das Restaurant",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "mesa",
+      "text": "a mesa",
+      "de": "der Tisch",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "cardapio",
+      "text": "o cardápio",
+      "de": "die Speisekarte",
+      "pos": "noun",
+      "gender": "m",
+      "note": "In Portugal sagt man „a ementa“.",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "garcom",
+      "text": "o garçom",
+      "de": "der Kellner",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Gerufen wird oft einfach „Moço!“ bzw. „Moça!“.",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "conta",
+      "text": "a conta",
+      "de": "die Rechnung",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "gorjeta",
+      "text": "a gorjeta",
+      "de": "das Trinkgeld",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Meist sind 10 % Service (serviço) schon auf der Rechnung.",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "banheiro",
+      "text": "o banheiro",
+      "de": "die Toilette",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "reserva",
+      "text": "a reserva",
+      "de": "die Reservierung",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "pedido",
+      "text": "o pedido",
+      "de": "die Bestellung",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "prato_do_dia",
+      "text": "o prato do dia",
+      "de": "das Tagesgericht",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "porcao",
+      "text": "a porção",
+      "de": "die Portion (zum Teilen)",
+      "pos": "noun",
+      "gender": "f",
+      "note": "In Bars bestellt man oft „porções“ für den ganzen Tisch.",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "quilo",
+      "text": "o quilo",
+      "de": "das Kilo",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Im „restaurante a quilo“ zahlt man das Buffet nach Gewicht.",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "lanchonete",
+      "text": "a lanchonete",
+      "de": "der Imbiss, die Snackbar",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "cafe_da_manha",
+      "text": "o café da manhã",
+      "de": "das Frühstück",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Mahlzeiten"
+    },
+    {
+      "id": "almoco",
+      "text": "o almoço",
+      "de": "das Mittagessen",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Mahlzeiten"
+    },
+    {
+      "id": "jantar",
+      "text": "o jantar",
+      "de": "das Abendessen",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Mahlzeiten"
+    },
+    {
+      "id": "lanche",
+      "text": "o lanche",
+      "de": "der Snack, die Zwischenmahlzeit",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Mahlzeiten"
+    },
+    {
+      "id": "sobremesa",
+      "text": "a sobremesa",
+      "de": "der Nachtisch",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Mahlzeiten"
+    },
+    {
+      "id": "prato",
+      "text": "o prato",
+      "de": "der Teller; das Gericht",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Besteck & Geschirr"
+    },
+    {
+      "id": "copo",
+      "text": "o copo",
+      "de": "das Glas",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Besteck & Geschirr"
+    },
+    {
+      "id": "garfo",
+      "text": "o garfo",
+      "de": "die Gabel",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Besteck & Geschirr"
+    },
+    {
+      "id": "faca",
+      "text": "a faca",
+      "de": "das Messer",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Besteck & Geschirr"
+    },
+    {
+      "id": "colher",
+      "text": "a colher",
+      "de": "der Löffel",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Besteck & Geschirr"
+    },
+    {
+      "id": "guardanapo",
+      "text": "o guardanapo",
+      "de": "die Serviette",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Besteck & Geschirr"
+    },
+    {
+      "id": "xicara",
+      "text": "a xícara",
+      "de": "die Tasse",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Besteck & Geschirr"
+    },
+    {
+      "id": "garrafa",
+      "text": "a garrafa",
+      "de": "die Flasche",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Besteck & Geschirr"
+    },
+    {
+      "id": "agua",
+      "text": "a água",
+      "de": "das Wasser",
+      "pos": "noun",
+      "gender": "f",
+      "note": "com gás = mit Kohlensäure, sem gás = still",
+      "category": "Getränke"
+    },
+    {
+      "id": "cafe",
+      "text": "o café",
+      "de": "der Kaffee; das Café",
+      "pos": "noun",
+      "gender": "m",
+      "note": "café da manhã = Frühstück",
+      "category": "Getränke"
+    },
+    {
+      "id": "suco",
+      "text": "o suco",
+      "de": "der Saft",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Getränke"
+    },
+    {
+      "id": "cerveja",
+      "text": "a cerveja",
+      "de": "das Bier",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Getränke"
+    },
+    {
+      "id": "vinho",
+      "text": "o vinho",
+      "de": "der Wein",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Getränke"
+    },
+    {
+      "id": "refrigerante",
+      "text": "o refrigerante",
+      "de": "das Erfrischungsgetränk (Cola, Limo)",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Getränke"
+    },
+    {
+      "id": "leite",
+      "text": "o leite",
+      "de": "die Milch",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Getränke"
+    },
+    {
+      "id": "cha",
+      "text": "o chá",
+      "de": "der Tee",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Getränke"
+    },
+    {
+      "id": "gelo",
+      "text": "o gelo",
+      "de": "das Eis (Eiswürfel)",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Getränke"
+    },
+    {
+      "id": "caipirinha",
+      "text": "a caipirinha",
+      "de": "der Caipirinha",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Mit Cachaça, Limette und Zucker.",
+      "category": "Getränke"
+    },
+    {
+      "id": "agua_de_coco",
+      "text": "a água de coco",
+      "de": "das Kokoswasser",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Getränke"
+    },
+    {
+      "id": "carne",
+      "text": "a carne",
+      "de": "das Fleisch",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Fleisch, Fisch & Beilagen"
+    },
+    {
+      "id": "carne_de_boi",
+      "text": "a carne de boi",
+      "de": "das Rindfleisch",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Fleisch, Fisch & Beilagen"
+    },
+    {
+      "id": "carne_de_porco",
+      "text": "a carne de porco",
+      "de": "das Schweinefleisch",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Fleisch, Fisch & Beilagen"
+    },
+    {
+      "id": "frango",
+      "text": "o frango",
+      "de": "das Hähnchen",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Fleisch, Fisch & Beilagen"
+    },
+    {
+      "id": "peixe",
+      "text": "o peixe",
+      "de": "der Fisch",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Fleisch, Fisch & Beilagen"
+    },
+    {
+      "id": "camarao",
+      "text": "o camarão",
+      "de": "die Garnele",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Plural: os camarões",
+      "category": "Fleisch, Fisch & Beilagen"
+    },
+    {
+      "id": "frutos_do_mar",
+      "text": "os frutos do mar",
+      "de": "die Meeresfrüchte",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Fleisch, Fisch & Beilagen"
+    },
+    {
+      "id": "arroz",
+      "text": "o arroz",
+      "de": "der Reis",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Fleisch, Fisch & Beilagen"
+    },
+    {
+      "id": "feijao",
+      "text": "o feijão",
+      "de": "die Bohnen",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Arroz e feijão gibt es in Brasilien fast zu jedem Essen.",
+      "category": "Fleisch, Fisch & Beilagen"
+    },
+    {
+      "id": "batata",
+      "text": "a batata",
+      "de": "die Kartoffel",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Fleisch, Fisch & Beilagen"
+    },
+    {
+      "id": "batata_frita",
+      "text": "a batata frita",
+      "de": "die Pommes frites",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Fleisch, Fisch & Beilagen"
+    },
+    {
+      "id": "macarrao",
+      "text": "o macarrão",
+      "de": "die Nudeln",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Fleisch, Fisch & Beilagen"
+    },
+    {
+      "id": "ovo",
+      "text": "o ovo",
+      "de": "das Ei",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Fleisch, Fisch & Beilagen"
+    },
+    {
+      "id": "sopa",
+      "text": "a sopa",
+      "de": "die Suppe",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Fleisch, Fisch & Beilagen"
+    },
+    {
+      "id": "pao",
+      "text": "o pão",
+      "de": "das Brot",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Brot, Käse & Süsses"
+    },
+    {
+      "id": "pao_de_queijo",
+      "text": "o pão de queijo",
+      "de": "das Käsebrötchen",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Typisch brasilianisch, besonders aus Minas Gerais.",
+      "category": "Brot, Käse & Süsses"
+    },
+    {
+      "id": "queijo",
+      "text": "o queijo",
+      "de": "der Käse",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Brot, Käse & Süsses"
+    },
+    {
+      "id": "presunto",
+      "text": "o presunto",
+      "de": "der Schinken",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Brot, Käse & Süsses"
+    },
+    {
+      "id": "manteiga",
+      "text": "a manteiga",
+      "de": "die Butter",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Brot, Käse & Süsses"
+    },
+    {
+      "id": "bolo",
+      "text": "o bolo",
+      "de": "der Kuchen",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Brot, Käse & Süsses"
+    },
+    {
+      "id": "sorvete",
+      "text": "o sorvete",
+      "de": "das Glace, das Speiseeis",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Brot, Käse & Süsses"
+    },
+    {
+      "id": "salada",
+      "text": "a salada",
+      "de": "der Salat",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Gemüse, Obst & Würzen"
+    },
+    {
+      "id": "legumes",
+      "text": "os legumes",
+      "de": "das Gemüse",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Gemüse, Obst & Würzen"
+    },
+    {
+      "id": "tomate",
+      "text": "o tomate",
+      "de": "die Tomate",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Gemüse, Obst & Würzen"
+    },
+    {
+      "id": "cebola",
+      "text": "a cebola",
+      "de": "die Zwiebel",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Gemüse, Obst & Würzen"
+    },
+    {
+      "id": "fruta",
+      "text": "a fruta",
+      "de": "das Obst, die Frucht",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Gemüse, Obst & Würzen"
+    },
+    {
+      "id": "sal",
+      "text": "o sal",
+      "de": "das Salz",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Gemüse, Obst & Würzen"
+    },
+    {
+      "id": "pimenta",
+      "text": "a pimenta",
+      "de": "der Pfeffer; die Chili",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Gemüse, Obst & Würzen"
+    },
+    {
+      "id": "acucar",
+      "text": "o açúcar",
+      "de": "der Zucker",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Gemüse, Obst & Würzen"
+    },
+    {
+      "id": "azeite",
+      "text": "o azeite",
+      "de": "das Olivenöl",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Gemüse, Obst & Würzen"
+    },
+    {
+      "id": "gostoso",
+      "text": "gostoso",
+      "de": "lecker",
+      "pos": "adjective",
+      "category": "Geschmack & Zubereitung"
+    },
+    {
+      "id": "doce",
+      "text": "doce",
+      "de": "süss",
+      "pos": "adjective",
+      "category": "Geschmack & Zubereitung"
+    },
+    {
+      "id": "salgado",
+      "text": "salgado",
+      "de": "salzig",
+      "pos": "adjective",
+      "category": "Geschmack & Zubereitung"
+    },
+    {
+      "id": "picante",
+      "text": "picante",
+      "de": "scharf",
+      "pos": "adjective",
+      "category": "Geschmack & Zubereitung"
+    },
+    {
+      "id": "quente",
+      "text": "quente",
+      "de": "heiss, warm",
+      "pos": "adjective",
+      "category": "Geschmack & Zubereitung"
+    },
+    {
+      "id": "frio",
+      "text": "frio",
+      "de": "kalt",
+      "pos": "adjective",
+      "category": "Geschmack & Zubereitung"
+    },
+    {
+      "id": "gelado",
+      "text": "gelado",
+      "de": "eiskalt, gekühlt",
+      "pos": "adjective",
+      "category": "Geschmack & Zubereitung"
+    },
+    {
+      "id": "bem_passado",
+      "text": "bem passado",
+      "de": "gut durchgebraten",
+      "pos": "adjective",
+      "note": "ao ponto = medium, mal passado = blutig",
+      "category": "Geschmack & Zubereitung"
+    },
+    {
+      "id": "vegetariano",
+      "text": "vegetariano",
+      "de": "vegetarisch",
+      "pos": "adjective",
+      "category": "Geschmack & Zubereitung"
+    },
+    {
+      "id": "com",
+      "text": "com",
+      "de": "mit",
+      "pos": "preposition",
+      "category": "Wörter & Verben"
+    },
+    {
+      "id": "sem",
+      "text": "sem",
+      "de": "ohne",
+      "pos": "preposition",
+      "category": "Wörter & Verben"
+    },
+    {
+      "id": "comer",
+      "text": "comer",
+      "de": "essen",
+      "pos": "verb",
+      "category": "Wörter & Verben"
+    },
+    {
+      "id": "beber",
+      "text": "beber",
+      "de": "trinken",
+      "pos": "verb",
+      "note": "Umgangssprachlich auch „tomar“: tomar um café.",
+      "category": "Wörter & Verben"
+    },
+    {
+      "id": "querer",
+      "text": "querer",
+      "de": "wollen, möchten",
+      "pos": "verb",
+      "grammar": [
+        "bestellen"
+      ],
+      "category": "Wörter & Verben"
+    },
+    {
+      "id": "gostaria",
+      "text": "eu gostaria de",
+      "de": "ich hätte gern",
+      "pos": "phrase",
+      "grammar": [
+        "bestellen"
+      ],
+      "category": "Wörter & Verben"
+    },
+    {
+      "id": "fome",
+      "text": "a fome",
+      "de": "der Hunger",
+      "pos": "noun",
+      "gender": "f",
+      "grammar": [
+        "estar_com"
+      ],
+      "category": "Wörter & Verben"
+    },
+    {
+      "id": "sede",
+      "text": "a sede",
+      "de": "der Durst",
+      "pos": "noun",
+      "gender": "f",
+      "grammar": [
+        "estar_com"
+      ],
+      "category": "Wörter & Verben"
+    },
+    {
+      "id": "pedir",
+      "text": "pedir",
+      "de": "bestellen; bitten um",
+      "pos": "verb",
+      "category": "Wörter & Verben"
+    },
+    {
+      "id": "reservar",
+      "text": "reservar",
+      "de": "reservieren",
+      "pos": "verb",
+      "category": "Wörter & Verben"
+    },
+    {
+      "id": "provar",
+      "text": "provar",
+      "de": "probieren",
+      "pos": "verb",
+      "category": "Wörter & Verben"
+    },
+    {
+      "id": "recomendar",
+      "text": "recomendar",
+      "de": "empfehlen",
+      "pos": "verb",
+      "category": "Wörter & Verben"
+    },
+    {
+      "id": "trazer",
+      "text": "trazer",
+      "de": "bringen",
+      "pos": "verb",
+      "category": "Wörter & Verben"
+    },
+    {
+      "id": "dividir",
+      "text": "dividir",
+      "de": "teilen",
+      "pos": "verb",
+      "category": "Wörter & Verben"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "Uma mesa para dois, por favor.",
+      "de": "Einen Tisch für zwei, bitte.",
+      "words": [
+        "mesa",
+        "num_2",
+        "por_favor"
+      ],
+      "grammar": [
+        "artikel"
+      ]
+    },
+    {
+      "id": "s02",
+      "text": "O cardápio, por favor.",
+      "de": "Die Speisekarte, bitte.",
+      "words": [
+        "cardapio",
+        "por_favor"
+      ],
+      "grammar": [
+        "artikel"
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "Eu gostaria de um café.",
+      "de": "Ich hätte gern einen Kaffee.",
+      "words": [
+        "eu",
+        "gostaria",
+        "cafe"
+      ],
+      "grammar": [
+        "bestellen"
+      ]
+    },
+    {
+      "id": "s04",
+      "text": "Eu quero uma água sem gás.",
+      "de": "Ich möchte ein stilles Wasser.",
+      "words": [
+        "eu",
+        "querer",
+        "agua",
+        "sem"
+      ],
+      "grammar": [
+        "bestellen"
+      ]
+    },
+    {
+      "id": "s05",
+      "text": "Uma cerveja bem gelada, por favor.",
+      "de": "Ein schön kaltes Bier, bitte.",
+      "words": [
+        "cerveja",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s06",
+      "text": "Mais um copo de vinho, por favor.",
+      "de": "Noch ein Glas Wein, bitte.",
+      "words": [
+        "copo",
+        "vinho",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s07",
+      "text": "Um suco de laranja, por favor.",
+      "de": "Einen Orangensaft, bitte.",
+      "words": [
+        "suco",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s08",
+      "text": "O que você quer beber?",
+      "de": "Was möchtest du trinken?",
+      "words": [
+        "voce",
+        "querer",
+        "beber"
+      ],
+      "grammar": [
+        "bestellen"
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "Vocês têm prato vegetariano?",
+      "de": "Habt ihr ein vegetarisches Gericht?",
+      "words": [
+        "prato",
+        "vegetariano"
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Eu não como carne.",
+      "de": "Ich esse kein Fleisch.",
+      "words": [
+        "eu",
+        "nao",
+        "comer",
+        "carne"
+      ],
+      "grammar": [
+        "verneinung"
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Frango com arroz e feijão.",
+      "de": "Hähnchen mit Reis und Bohnen.",
+      "words": [
+        "frango",
+        "com",
+        "arroz",
+        "feijao"
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "O peixe está fresco?",
+      "de": "Ist der Fisch frisch?",
+      "words": [
+        "peixe"
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Uma salada sem cebola, por favor.",
+      "de": "Einen Salat ohne Zwiebeln, bitte.",
+      "words": [
+        "salada",
+        "sem",
+        "por_favor",
+        "cebola"
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Estou com fome.",
+      "de": "Ich habe Hunger.",
+      "words": [
+        "fome"
+      ],
+      "grammar": [
+        "estar_com"
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Você está com sede?",
+      "de": "Hast du Durst?",
+      "words": [
+        "voce",
+        "sede"
+      ],
+      "grammar": [
+        "estar_com"
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Tem sobremesa?",
+      "de": "Gibt es Nachtisch?",
+      "words": [
+        "sobremesa"
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Estava muito gostoso!",
+      "de": "Es war sehr lecker!",
+      "words": [
+        "muito",
+        "gostoso"
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "A conta, por favor.",
+      "de": "Die Rechnung, bitte.",
+      "words": [
+        "conta",
+        "por_favor"
+      ],
+      "grammar": [
+        "artikel"
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "A gorjeta está incluída?",
+      "de": "Ist das Trinkgeld inbegriffen?",
+      "words": [
+        "gorjeta"
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "Com licença, onde fica o banheiro?",
+      "de": "Entschuldigung, wo ist die Toilette?",
+      "words": [
+        "com_licenca",
+        "banheiro"
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "Moço, mais pão, por favor!",
+      "de": "Kellner, noch mehr Brot, bitte!",
+      "words": [
+        "garcom",
+        "pao",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "O restaurante é muito bom.",
+      "de": "Das Restaurant ist sehr gut.",
+      "words": [
+        "restaurante",
+        "muito"
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "Eu tenho uma reserva para as oito.",
+      "de": "Ich habe eine Reservierung für acht Uhr.",
+      "words": [
+        "eu",
+        "reserva",
+        "num_8"
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "Posso reservar uma mesa para quatro pessoas?",
+      "de": "Kann ich einen Tisch für vier Personen reservieren?",
+      "words": [
+        "reservar",
+        "mesa",
+        "num_4"
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "Qual é o prato do dia?",
+      "de": "Was ist das Tagesgericht?",
+      "words": [
+        "prato_do_dia"
+      ]
+    },
+    {
+      "id": "s26",
+      "text": "O que você recomenda?",
+      "de": "Was empfiehlst du?",
+      "words": [
+        "voce",
+        "recomendar"
+      ]
+    },
+    {
+      "id": "s27",
+      "text": "Posso provar o vinho?",
+      "de": "Darf ich den Wein probieren?",
+      "words": [
+        "provar",
+        "vinho"
+      ]
+    },
+    {
+      "id": "s28",
+      "text": "Pode trazer mais um garfo, por favor?",
+      "de": "Kannst du bitte noch eine Gabel bringen?",
+      "words": [
+        "trazer",
+        "garfo",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s29",
+      "text": "Está faltando uma faca.",
+      "de": "Es fehlt ein Messer.",
+      "words": [
+        "faca"
+      ]
+    },
+    {
+      "id": "s30",
+      "text": "Uma colher e um guardanapo, por favor.",
+      "de": "Einen Löffel und eine Serviette, bitte.",
+      "words": [
+        "colher",
+        "guardanapo",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s31",
+      "text": "Um café com leite e um pão de queijo.",
+      "de": "Einen Milchkaffee und ein Käsebrötchen.",
+      "words": [
+        "cafe",
+        "leite",
+        "pao_de_queijo",
+        "com"
+      ]
+    },
+    {
+      "id": "s32",
+      "text": "O café da manhã está incluído?",
+      "de": "Ist das Frühstück inbegriffen?",
+      "words": [
+        "cafe_da_manha"
+      ]
+    },
+    {
+      "id": "s33",
+      "text": "Uma garrafa de água, por favor.",
+      "de": "Eine Flasche Wasser, bitte.",
+      "words": [
+        "garrafa",
+        "agua",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s34",
+      "text": "Um refrigerante sem gelo.",
+      "de": "Ein Softdrink ohne Eis.",
+      "words": [
+        "refrigerante",
+        "sem",
+        "gelo"
+      ]
+    },
+    {
+      "id": "s35",
+      "text": "Uma caipirinha com pouco açúcar.",
+      "de": "Einen Caipirinha mit wenig Zucker.",
+      "words": [
+        "caipirinha",
+        "com",
+        "acucar"
+      ]
+    },
+    {
+      "id": "s36",
+      "text": "Eu quero a carne bem passada.",
+      "de": "Ich möchte das Fleisch gut durchgebraten.",
+      "words": [
+        "eu",
+        "carne",
+        "bem_passado"
+      ]
+    },
+    {
+      "id": "s37",
+      "text": "A sopa está fria.",
+      "de": "Die Suppe ist kalt.",
+      "words": [
+        "sopa",
+        "frio"
+      ]
+    },
+    {
+      "id": "s38",
+      "text": "Isso é muito picante?",
+      "de": "Ist das sehr scharf?",
+      "words": [
+        "muito",
+        "picante"
+      ]
+    },
+    {
+      "id": "s39",
+      "text": "Vamos dividir a conta?",
+      "de": "Sollen wir die Rechnung teilen?",
+      "words": [
+        "dividir",
+        "conta"
+      ]
+    },
+    {
+      "id": "s40",
+      "text": "Peixe com batata frita, por favor.",
+      "de": "Fisch mit Pommes, bitte.",
+      "words": [
+        "peixe",
+        "com",
+        "batata_frita",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s41",
+      "text": "Sorvete de chocolate é o meu favorito.",
+      "de": "Schokoladeneis ist mein Lieblingseis.",
+      "words": [
+        "sorvete"
+      ]
+    },
+    {
+      "id": "s42",
+      "text": "O camarão aqui é fresco e barato.",
+      "de": "Die Garnelen hier sind frisch und günstig.",
+      "words": [
+        "camarao",
+        "barato"
+      ]
+    },
+    {
+      "id": "s43",
+      "text": "Você gosta de frutos do mar?",
+      "de": "Magst du Meeresfrüchte?",
+      "words": [
+        "voce",
+        "frutos_do_mar"
+      ]
+    },
+    {
+      "id": "s44",
+      "text": "O jantar é às nove.",
+      "de": "Das Abendessen ist um neun.",
+      "words": [
+        "jantar",
+        "num_9"
+      ]
+    },
+    {
+      "id": "s45",
+      "text": "No almoço eu como arroz, feijão e salada.",
+      "de": "Zum Mittagessen esse ich Reis, Bohnen und Salat.",
+      "words": [
+        "almoco",
+        "eu",
+        "arroz",
+        "feijao",
+        "salada"
+      ]
+    },
+    {
+      "id": "s46",
+      "text": "Me dá um chá, por favor.",
+      "de": "Gib mir bitte einen Tee.",
+      "words": [
+        "cha",
+        "por_favor"
+      ],
+      "grammar": [
+        "bestellen"
+      ]
+    },
+    {
+      "id": "s47",
+      "text": "Um sanduíche de queijo e presunto.",
+      "de": "Ein Sandwich mit Käse und Schinken.",
+      "words": [
+        "queijo",
+        "presunto"
+      ]
+    },
+    {
+      "id": "s48",
+      "text": "O bolo está muito doce.",
+      "de": "Der Kuchen ist sehr süss.",
+      "words": [
+        "bolo",
+        "muito",
+        "doce"
+      ]
+    },
+    {
+      "id": "s49",
+      "text": "Pode trazer o sal e a pimenta?",
+      "de": "Kannst du das Salz und den Pfeffer bringen?",
+      "words": [
+        "trazer",
+        "sal",
+        "pimenta"
+      ]
+    },
+    {
+      "id": "s50",
+      "text": "Uma porção de batata frita para a mesa.",
+      "de": "Eine Portion Pommes für den Tisch.",
+      "words": [
+        "porcao",
+        "batata_frita",
+        "mesa"
+      ]
+    },
+    {
+      "id": "s51",
+      "text": "Eu gostaria de pedir agora.",
+      "de": "Ich würde gern jetzt bestellen.",
+      "words": [
+        "eu",
+        "gostaria",
+        "pedir"
+      ],
+      "grammar": [
+        "bestellen"
+      ]
+    },
+    {
+      "id": "s52",
+      "text": "Os legumes estão frios.",
+      "de": "Das Gemüse ist kalt.",
+      "words": [
+        "legumes"
+      ],
+      "grammar": [
+        "plural"
+      ]
+    },
+    {
+      "id": "s53",
+      "text": "Dois sucos e duas águas de coco.",
+      "de": "Zwei Säfte und zwei Kokoswasser.",
+      "words": [
+        "num_2",
+        "suco"
+      ],
+      "grammar": [
+        "plural"
+      ]
+    },
+    {
+      "id": "s54",
+      "text": "A comida está quente e muito gostosa.",
+      "de": "Das Essen ist heiss und sehr lecker.",
+      "words": [
+        "quente",
+        "muito"
+      ]
+    },
+    {
+      "id": "s55",
+      "text": "Uma xícara de café e um copo de leite.",
+      "de": "Eine Tasse Kaffee und ein Glas Milch.",
+      "words": [
+        "xicara",
+        "cafe",
+        "copo",
+        "leite"
+      ]
+    },
+    {
+      "id": "s56",
+      "text": "Esse restaurante a quilo é ótimo.",
+      "de": "Dieses Kilo-Restaurant ist super.",
+      "words": [
+        "restaurante",
+        "quilo"
+      ]
+    },
+    {
+      "id": "s57",
+      "text": "Eu como ovo com pão e manteiga.",
+      "de": "Ich esse Ei mit Brot und Butter.",
+      "words": [
+        "eu",
+        "ovo",
+        "pao",
+        "manteiga",
+        "com"
+      ]
+    },
+    {
+      "id": "s58",
+      "text": "A pizza tem tomate, cebola e azeite.",
+      "de": "Die Pizza hat Tomate, Zwiebel und Olivenöl.",
+      "words": [
+        "tomate",
+        "cebola",
+        "azeite"
+      ]
+    },
+    {
+      "id": "s59",
+      "text": "O pedido está demorando muito.",
+      "de": "Die Bestellung dauert sehr lange.",
+      "words": [
+        "pedido",
+        "muito"
+      ]
+    },
+    {
+      "id": "s60",
+      "text": "Vamos comer um lanche na lanchonete?",
+      "de": "Wollen wir an der Snackbar etwas essen?",
+      "words": [
+        "comer",
+        "lanche",
+        "lanchonete"
+      ]
+    },
+    {
+      "id": "s61",
+      "text": "A água de coco está bem gelada.",
+      "de": "Das Kokoswasser ist schön kalt.",
+      "words": [
+        "agua_de_coco",
+        "gelado"
+      ]
+    },
+    {
+      "id": "s62",
+      "text": "Você prefere carne de boi ou carne de porco?",
+      "de": "Magst du lieber Rind- oder Schweinefleisch?",
+      "words": [
+        "voce",
+        "carne_de_boi",
+        "carne_de_porco"
+      ]
+    },
+    {
+      "id": "s63",
+      "text": "Macarrão com molho de tomate.",
+      "de": "Nudeln mit Tomatensosse.",
+      "words": [
+        "macarrao",
+        "com",
+        "tomate"
+      ]
+    },
+    {
+      "id": "s64",
+      "text": "Batata cozida ou batata frita?",
+      "de": "Gekochte Kartoffeln oder Pommes?",
+      "words": [
+        "batata",
+        "batata_frita"
+      ]
+    },
+    {
+      "id": "s65",
+      "text": "Uma salada de fruta, por favor.",
+      "de": "Einen Fruchtsalat, bitte.",
+      "words": [
+        "salada",
+        "fruta",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s66",
+      "text": "Esse queijo é muito salgado.",
+      "de": "Dieser Käse ist sehr salzig.",
+      "words": [
+        "queijo",
+        "muito",
+        "salgado"
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "artikel",
+      "title": "Artikel: o, a, um, uma",
+      "explanation": "Jedes Nomen ist männlich oder weiblich. Ein Neutrum wie „das“ gibt es nicht.\n\n• bestimmt: o (männlich), a (weiblich) – Mehrzahl: os, as\n• unbestimmt: um (männlich), uma (weiblich)\n\nFaustregel: Wörter auf -o sind meist männlich, Wörter auf -a meist weiblich. Bei anderen Endungen (o café, a carne) einfach mit Artikel lernen.",
+      "examples": [
+        {
+          "text": "o prato – os pratos",
+          "de": "der Teller – die Teller"
+        },
+        {
+          "text": "a mesa – as mesas",
+          "de": "der Tisch – die Tische"
+        },
+        {
+          "text": "um café, uma cerveja",
+          "de": "ein Kaffee, ein Bier"
+        }
+      ]
+    },
+    {
+      "id": "bestellen",
+      "title": "Bestellen: quero und gostaria de",
+      "explanation": "• Eu quero … = Ich möchte / will … In Brasilien ganz normal und nicht unhöflich.\n• Eu gostaria de … = Ich hätte gern … (etwas höflicher).\n\nNach „gostaria de“ folgt ein Nomen oder ein Verb in der Grundform: Eu gostaria de pagar. (Ich würde gern bezahlen.)\n\nUmgangssprachlich hört man auch: Me vê um café, por favor!",
+      "examples": [
+        {
+          "text": "Eu quero um suco.",
+          "de": "Ich möchte einen Saft."
+        },
+        {
+          "text": "Eu gostaria de uma mesa.",
+          "de": "Ich hätte gern einen Tisch."
+        },
+        {
+          "text": "Eu gostaria de pagar.",
+          "de": "Ich würde gern bezahlen."
+        }
+      ]
+    },
+    {
+      "id": "estar_com",
+      "title": "Hunger und Durst: estar com …",
+      "explanation": "Hunger oder Durst „hat“ man im Portugiesischen nicht, man „ist mit“ Hunger: estar com fome.\n\nestar (sein) ändert sich nach der Person:\n• eu estou – ich bin\n• você está – du bist / Sie sind\n\nGenauso: estar com frio (frieren), estar com calor (es heiss haben), estar com pressa (in Eile sein).",
+      "examples": [
+        {
+          "text": "Estou com fome.",
+          "de": "Ich habe Hunger."
+        },
+        {
+          "text": "Estou com sede.",
+          "de": "Ich habe Durst."
+        },
+        {
+          "text": "Você está com pressa?",
+          "de": "Bist du in Eile?"
+        }
+      ]
+    },
+    {
+      "id": "plural",
+      "title": "Die Mehrzahl (Plural)",
+      "explanation": "Meist hängt man einfach -s an. Der Artikel wird zu os bzw. as:\no prato → os pratos, a mesa → as mesas\n\nBesondere Endungen:\n• -r, -z → -es: a colher → as colheres, o mar → os mares\n• -l → -is: o real → os reais\n• -m → -ns: o homem → os homens\n• -ão → meist -ões: o camarão → os camarões (seltener -ães oder -ãos: o pão → os pães)\n\nAuch Adjektive stehen in der Mehrzahl: os legumes frios.",
+      "examples": [
+        {
+          "text": "o copo – os copos",
+          "de": "das Glas – die Gläser"
+        },
+        {
+          "text": "a colher – as colheres",
+          "de": "der Löffel – die Löffel"
+        },
+        {
+          "text": "o real – os reais",
+          "de": "der Real – die Reais"
+        },
+        {
+          "text": "o pão – os pães",
+          "de": "das Brot – die Brote"
+        }
+      ]
+    }
+  ]
+}

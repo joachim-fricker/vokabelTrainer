@@ -1,0 +1,541 @@
+{
+  "id": "pt-BR-01",
+  "language": "pt-BR",
+  "order": 1,
+  "title": "Begrüssung & Höflichkeit",
+  "titleTarget": "Cumprimentos e cortesia",
+  "words": [
+    {
+      "id": "ola",
+      "text": "olá",
+      "de": "hallo",
+      "pos": "interjection",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "oi",
+      "text": "oi",
+      "de": "hi, hallo (locker)",
+      "pos": "interjection",
+      "note": "In Brasilien sehr gebräuchlich, auch gegenüber Fremden.",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "bom_dia",
+      "text": "bom dia",
+      "de": "guten Morgen",
+      "pos": "phrase",
+      "note": "Bis etwa 12 Uhr.",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "boa_tarde",
+      "text": "boa tarde",
+      "de": "guten Tag (nachmittags)",
+      "pos": "phrase",
+      "note": "Von Mittag bis etwa 18 Uhr.",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "boa_noite",
+      "text": "boa noite",
+      "de": "guten Abend, gute Nacht",
+      "pos": "phrase",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "tchau",
+      "text": "tchau",
+      "de": "tschüss",
+      "pos": "interjection",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "ate_logo",
+      "text": "até logo",
+      "de": "bis später, bis bald",
+      "pos": "phrase",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "ate_amanha",
+      "text": "até amanhã",
+      "de": "bis morgen",
+      "pos": "phrase",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "tudo_bem",
+      "text": "tudo bem?",
+      "de": "alles gut?, wie geht's?",
+      "pos": "phrase",
+      "note": "Antwort: tudo bem / tudo bom.",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "tudo_bom",
+      "text": "tudo bom",
+      "de": "alles gut",
+      "pos": "phrase",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "bem",
+      "text": "bem",
+      "de": "gut (Adverb)",
+      "pos": "adverb",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "prazer",
+      "text": "prazer",
+      "de": "freut mich",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Wörtlich: Vergnügen.",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "meu_nome_e",
+      "text": "meu nome é",
+      "de": "mein Name ist",
+      "pos": "phrase",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "obrigado",
+      "text": "obrigado",
+      "de": "danke (wenn ein Mann spricht)",
+      "pos": "interjection",
+      "grammar": [
+        "obrigado_obrigada"
+      ],
+      "category": "Höflichkeit"
+    },
+    {
+      "id": "obrigada",
+      "text": "obrigada",
+      "de": "danke (wenn eine Frau spricht)",
+      "pos": "interjection",
+      "grammar": [
+        "obrigado_obrigada"
+      ],
+      "category": "Höflichkeit"
+    },
+    {
+      "id": "por_favor",
+      "text": "por favor",
+      "de": "bitte (beim Bitten)",
+      "pos": "phrase",
+      "category": "Höflichkeit"
+    },
+    {
+      "id": "de_nada",
+      "text": "de nada",
+      "de": "gern geschehen, bitte",
+      "pos": "phrase",
+      "category": "Höflichkeit"
+    },
+    {
+      "id": "desculpa",
+      "text": "desculpa",
+      "de": "Entschuldigung, sorry",
+      "pos": "interjection",
+      "category": "Höflichkeit"
+    },
+    {
+      "id": "com_licenca",
+      "text": "com licença",
+      "de": "Entschuldigung, darf ich (vorbei)?",
+      "pos": "phrase",
+      "note": "Wenn man vorbei möchte oder jemanden anspricht.",
+      "category": "Höflichkeit"
+    },
+    {
+      "id": "sim",
+      "text": "sim",
+      "de": "ja",
+      "pos": "adverb",
+      "category": "Höflichkeit"
+    },
+    {
+      "id": "nao",
+      "text": "não",
+      "de": "nein, nicht",
+      "pos": "adverb",
+      "grammar": [
+        "verneinung"
+      ],
+      "category": "Höflichkeit"
+    },
+    {
+      "id": "como",
+      "text": "como",
+      "de": "wie",
+      "pos": "adverb",
+      "category": "Sich verständigen"
+    },
+    {
+      "id": "eu",
+      "text": "eu",
+      "de": "ich",
+      "pos": "pronoun",
+      "category": "Sich verständigen"
+    },
+    {
+      "id": "voce",
+      "text": "você",
+      "de": "du, Sie",
+      "pos": "pronoun",
+      "grammar": [
+        "voce"
+      ],
+      "category": "Sich verständigen"
+    },
+    {
+      "id": "senhor",
+      "text": "o senhor",
+      "de": "der Herr; Sie (höflich, zu einem Mann)",
+      "pos": "noun",
+      "gender": "m",
+      "grammar": [
+        "voce"
+      ],
+      "category": "Sich verständigen"
+    },
+    {
+      "id": "senhora",
+      "text": "a senhora",
+      "de": "die Dame; Sie (höflich, zu einer Frau)",
+      "pos": "noun",
+      "gender": "f",
+      "grammar": [
+        "voce"
+      ],
+      "category": "Sich verständigen"
+    },
+    {
+      "id": "muito",
+      "text": "muito",
+      "de": "sehr, viel",
+      "pos": "adverb",
+      "category": "Sich verständigen"
+    },
+    {
+      "id": "um_pouco",
+      "text": "um pouco",
+      "de": "ein bisschen",
+      "pos": "phrase",
+      "category": "Sich verständigen"
+    },
+    {
+      "id": "falar",
+      "text": "falar",
+      "de": "sprechen",
+      "pos": "verb",
+      "category": "Sich verständigen"
+    },
+    {
+      "id": "entender",
+      "text": "entender",
+      "de": "verstehen",
+      "pos": "verb",
+      "category": "Sich verständigen"
+    },
+    {
+      "id": "devagar",
+      "text": "devagar",
+      "de": "langsam",
+      "pos": "adverb",
+      "category": "Sich verständigen"
+    },
+    {
+      "id": "portugues",
+      "text": "português",
+      "de": "Portugiesisch (Sprache)",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Sich verständigen"
+    },
+    {
+      "id": "alemao",
+      "text": "alemão",
+      "de": "Deutsch (Sprache); Deutscher",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Sich verständigen"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "Oi, tudo bem?",
+      "de": "Hallo, wie geht's?",
+      "words": [
+        "oi",
+        "tudo_bem"
+      ]
+    },
+    {
+      "id": "s02",
+      "text": "Tudo bom, e você?",
+      "de": "Alles gut, und dir?",
+      "words": [
+        "tudo_bom",
+        "voce"
+      ],
+      "grammar": [
+        "voce"
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "Bom dia, senhor!",
+      "de": "Guten Morgen (mein Herr)!",
+      "words": [
+        "bom_dia",
+        "senhor"
+      ]
+    },
+    {
+      "id": "s04",
+      "text": "Boa tarde! Como você está?",
+      "de": "Guten Tag! Wie geht es dir?",
+      "words": [
+        "boa_tarde",
+        "como",
+        "voce"
+      ],
+      "grammar": [
+        "voce"
+      ]
+    },
+    {
+      "id": "s05",
+      "text": "Meu nome é Ana. Muito prazer!",
+      "de": "Ich heisse Ana. Sehr erfreut!",
+      "words": [
+        "meu_nome_e",
+        "muito",
+        "prazer"
+      ]
+    },
+    {
+      "id": "s06",
+      "text": "Muito obrigado pela ajuda!",
+      "de": "Vielen Dank für die Hilfe! (Mann spricht)",
+      "words": [
+        "muito",
+        "obrigado"
+      ],
+      "grammar": [
+        "obrigado_obrigada"
+      ]
+    },
+    {
+      "id": "s07",
+      "text": "Muito obrigada, você é muito gentil.",
+      "de": "Vielen Dank, du bist sehr nett. (Frau spricht)",
+      "words": [
+        "muito",
+        "obrigada",
+        "voce"
+      ],
+      "grammar": [
+        "obrigado_obrigada"
+      ]
+    },
+    {
+      "id": "s08",
+      "text": "De nada!",
+      "de": "Gern geschehen!",
+      "words": [
+        "de_nada"
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "Sim, por favor.",
+      "de": "Ja, bitte.",
+      "words": [
+        "sim",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Não, obrigado.",
+      "de": "Nein, danke.",
+      "words": [
+        "nao",
+        "obrigado"
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Desculpa, eu não entendo.",
+      "de": "Entschuldigung, ich verstehe nicht.",
+      "words": [
+        "desculpa",
+        "eu",
+        "nao",
+        "entender"
+      ],
+      "grammar": [
+        "verneinung"
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Você fala alemão?",
+      "de": "Sprichst du Deutsch?",
+      "words": [
+        "voce",
+        "falar",
+        "alemao"
+      ],
+      "grammar": [
+        "voce"
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Eu falo um pouco de português.",
+      "de": "Ich spreche ein bisschen Portugiesisch.",
+      "words": [
+        "eu",
+        "falar",
+        "um_pouco",
+        "portugues"
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "O senhor pode falar mais devagar, por favor?",
+      "de": "Können Sie bitte langsamer sprechen?",
+      "words": [
+        "senhor",
+        "falar",
+        "devagar",
+        "por_favor"
+      ],
+      "grammar": [
+        "voce"
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Com licença, senhora.",
+      "de": "Entschuldigung, darf ich (vorbei)?",
+      "words": [
+        "com_licenca",
+        "senhora"
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Olá! Tudo bem com você?",
+      "de": "Hallo! Geht es dir gut?",
+      "words": [
+        "ola",
+        "tudo_bem",
+        "voce"
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Eu estou bem, obrigada.",
+      "de": "Mir geht es gut, danke. (Frau spricht)",
+      "words": [
+        "eu",
+        "bem",
+        "obrigada"
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Tchau, até logo!",
+      "de": "Tschüss, bis bald!",
+      "words": [
+        "tchau",
+        "ate_logo"
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Boa noite e até amanhã!",
+      "de": "Gute Nacht und bis morgen!",
+      "words": [
+        "boa_noite",
+        "ate_amanha"
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "Eu não falo português muito bem.",
+      "de": "Ich spreche nicht sehr gut Portugiesisch.",
+      "words": [
+        "eu",
+        "nao",
+        "falar",
+        "portugues",
+        "muito",
+        "bem"
+      ],
+      "grammar": [
+        "verneinung"
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "obrigado_obrigada",
+      "title": "obrigado oder obrigada?",
+      "explanation": "„Obrigado“ heisst wörtlich „verpflichtet“. Die Form richtet sich deshalb nach der Person, die sich bedankt, nicht nach der Person, der man dankt.\n\n• Ein Mann sagt: obrigado\n• Eine Frau sagt: obrigada\n\nVerstärkt: muito obrigado / muito obrigada (vielen Dank).",
+      "examples": [
+        {
+          "text": "Obrigado! (sagt Peter)",
+          "de": "Danke!"
+        },
+        {
+          "text": "Obrigada! (sagt Maria)",
+          "de": "Danke!"
+        }
+      ]
+    },
+    {
+      "id": "voce",
+      "title": "você – die brasilianische Anrede",
+      "explanation": "In den meisten Regionen Brasiliens sagt man für „du“ und für ein lockeres „Sie“ einfach você.\n\nDas Verb steht dabei in derselben Form wie bei „er/sie“ (3. Person): você fala = du sprichst.\n\nBesonders höflich, etwa gegenüber älteren Menschen: o senhor (zu einem Mann) bzw. a senhora (zu einer Frau). Auch hier steht das Verb in der 3. Person.",
+      "examples": [
+        {
+          "text": "Você fala alemão?",
+          "de": "Sprichst du Deutsch?"
+        },
+        {
+          "text": "A senhora fala alemão?",
+          "de": "Sprechen Sie Deutsch? (zu einer Frau)"
+        }
+      ]
+    },
+    {
+      "id": "verneinung",
+      "title": "Verneinung mit não",
+      "explanation": "„Não“ bedeutet sowohl „nein“ als auch „nicht“.\n\nUm einen Satz zu verneinen, stellt man não einfach direkt vor das Verb.\n\nAuf eine Frage antwortet man oft doppelt: Não, não falo. (Nein, spreche ich nicht.)",
+      "examples": [
+        {
+          "text": "Eu entendo.",
+          "de": "Ich verstehe."
+        },
+        {
+          "text": "Eu não entendo.",
+          "de": "Ich verstehe nicht."
+        },
+        {
+          "text": "Não, não falo alemão.",
+          "de": "Nein, ich spreche kein Deutsch."
+        }
+      ]
+    }
+  ]
+}

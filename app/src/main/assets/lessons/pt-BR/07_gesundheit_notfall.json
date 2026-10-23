@@ -1,0 +1,1195 @@
+{
+  "id": "pt-BR-07",
+  "language": "pt-BR",
+  "order": 7,
+  "title": "Gesundheit & Notfall",
+  "titleTarget": "Saúde e emergências",
+  "words": [
+    {
+      "id": "corpo",
+      "text": "o corpo",
+      "de": "der Körper",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Der Körper"
+    },
+    {
+      "id": "cabeca",
+      "text": "a cabeça",
+      "de": "der Kopf",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Der Körper"
+    },
+    {
+      "id": "olho",
+      "text": "o olho",
+      "de": "das Auge",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Der Körper"
+    },
+    {
+      "id": "ouvido",
+      "text": "o ouvido",
+      "de": "das Ohr (innen)",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Die Ohrmuschel: a orelha",
+      "category": "Der Körper"
+    },
+    {
+      "id": "nariz",
+      "text": "o nariz",
+      "de": "die Nase",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Der Körper"
+    },
+    {
+      "id": "boca",
+      "text": "a boca",
+      "de": "der Mund",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Der Körper"
+    },
+    {
+      "id": "dente",
+      "text": "o dente",
+      "de": "der Zahn",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Der Körper"
+    },
+    {
+      "id": "garganta",
+      "text": "a garganta",
+      "de": "der Hals (innen), die Kehle",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Der Körper"
+    },
+    {
+      "id": "costas",
+      "text": "as costas",
+      "de": "der Rücken",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Immer Mehrzahl.",
+      "category": "Der Körper"
+    },
+    {
+      "id": "braco",
+      "text": "o braço",
+      "de": "der Arm",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Der Körper"
+    },
+    {
+      "id": "mao",
+      "text": "a mão",
+      "de": "die Hand",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Weiblich, obwohl auf -o! Mehrzahl: as mãos",
+      "category": "Der Körper"
+    },
+    {
+      "id": "perna",
+      "text": "a perna",
+      "de": "das Bein",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Der Körper"
+    },
+    {
+      "id": "pe",
+      "text": "o pé",
+      "de": "der Fuss",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Der Körper"
+    },
+    {
+      "id": "barriga",
+      "text": "a barriga",
+      "de": "der Bauch",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Der Körper"
+    },
+    {
+      "id": "estomago",
+      "text": "o estômago",
+      "de": "der Magen",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Der Körper"
+    },
+    {
+      "id": "coracao",
+      "text": "o coração",
+      "de": "das Herz",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Der Körper"
+    },
+    {
+      "id": "pele",
+      "text": "a pele",
+      "de": "die Haut",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Der Körper"
+    },
+    {
+      "id": "dor",
+      "text": "a dor",
+      "de": "der Schmerz",
+      "pos": "noun",
+      "gender": "f",
+      "note": "dor de cabeça = Kopfschmerzen",
+      "category": "Beschwerden",
+      "grammar": [
+        "doer"
+      ]
+    },
+    {
+      "id": "febre",
+      "text": "a febre",
+      "de": "das Fieber",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "tosse",
+      "text": "a tosse",
+      "de": "der Husten",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "gripe",
+      "text": "a gripe",
+      "de": "die Grippe",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "resfriado",
+      "text": "o resfriado",
+      "de": "die Erkältung",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "diarreia",
+      "text": "a diarreia",
+      "de": "der Durchfall",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "alergia",
+      "text": "a alergia",
+      "de": "die Allergie",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "picada",
+      "text": "a picada",
+      "de": "der Stich (Insekt)",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "queimadura",
+      "text": "a queimadura de sol",
+      "de": "der Sonnenbrand",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "doente",
+      "text": "doente",
+      "de": "krank",
+      "pos": "adjective",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "tonto",
+      "text": "tonto",
+      "de": "schwindlig",
+      "pos": "adjective",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "enjoado",
+      "text": "enjoado",
+      "de": "übel, seekrank",
+      "pos": "adjective",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "cansado",
+      "text": "cansado",
+      "de": "müde",
+      "pos": "adjective",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "machucado",
+      "text": "machucado",
+      "de": "verletzt",
+      "pos": "adjective",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "doer",
+      "text": "doer",
+      "de": "wehtun",
+      "pos": "verb",
+      "note": "Meist: dói (es tut weh), doem (sie tun weh)",
+      "category": "Beschwerden",
+      "grammar": [
+        "doer"
+      ]
+    },
+    {
+      "id": "medico",
+      "text": "o médico",
+      "de": "der Arzt",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Die Ärztin: a médica",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "hospital",
+      "text": "o hospital",
+      "de": "das Krankenhaus",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "pronto_socorro",
+      "text": "o pronto-socorro",
+      "de": "die Notaufnahme",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "farmacia",
+      "text": "a farmácia",
+      "de": "die Apotheke",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "remedio",
+      "text": "o remédio",
+      "de": "das Medikament",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "comprimido",
+      "text": "o comprimido",
+      "de": "die Tablette",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "receita",
+      "text": "a receita",
+      "de": "das Rezept",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "consulta",
+      "text": "a consulta",
+      "de": "der Arzttermin, die Sprechstunde",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "seguro",
+      "text": "o seguro de saúde",
+      "de": "die Krankenversicherung",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "protetor",
+      "text": "o protetor solar",
+      "de": "die Sonnencreme",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "repelente",
+      "text": "o repelente",
+      "de": "das Mückenschutzmittel",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Wichtig gegen Dengue-Mücken.",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "curativo",
+      "text": "o curativo",
+      "de": "das Pflaster; der Verband",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "socorro",
+      "text": "socorro!",
+      "de": "Hilfe!",
+      "pos": "interjection",
+      "category": "Notfall"
+    },
+    {
+      "id": "ajuda",
+      "text": "a ajuda",
+      "de": "die Hilfe",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Notfall"
+    },
+    {
+      "id": "emergencia",
+      "text": "a emergência",
+      "de": "der Notfall",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Notfall"
+    },
+    {
+      "id": "ambulancia",
+      "text": "a ambulância",
+      "de": "der Krankenwagen",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Notfall"
+    },
+    {
+      "id": "policia",
+      "text": "a polícia",
+      "de": "die Polizei",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Notfall"
+    },
+    {
+      "id": "ladrao",
+      "text": "o ladrão",
+      "de": "der Dieb",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Notfall"
+    },
+    {
+      "id": "roubar",
+      "text": "roubar",
+      "de": "stehlen, rauben",
+      "pos": "verb",
+      "category": "Notfall"
+    },
+    {
+      "id": "carteira",
+      "text": "a carteira",
+      "de": "das Portemonnaie",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Notfall"
+    },
+    {
+      "id": "perdido",
+      "text": "perdido",
+      "de": "verloren; verirrt",
+      "pos": "adjective",
+      "category": "Notfall"
+    },
+    {
+      "id": "consulado",
+      "text": "o consulado",
+      "de": "das Konsulat",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Notfall"
+    },
+    {
+      "id": "embaixada",
+      "text": "a embaixada",
+      "de": "die Botschaft",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Notfall"
+    },
+    {
+      "id": "perigoso",
+      "text": "perigoso",
+      "de": "gefährlich",
+      "pos": "adjective",
+      "category": "Notfall"
+    },
+    {
+      "id": "urgente",
+      "text": "urgente",
+      "de": "dringend",
+      "pos": "adjective",
+      "category": "Notfall"
+    },
+    {
+      "id": "saude",
+      "text": "a saúde",
+      "de": "die Gesundheit",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Saúde! = Gesundheit! (beim Niesen) und Prost!",
+      "category": "Wörter & Verben"
+    },
+    {
+      "id": "melhor",
+      "text": "melhor",
+      "de": "besser",
+      "pos": "adjective",
+      "category": "Wörter & Verben"
+    },
+    {
+      "id": "pior",
+      "text": "pior",
+      "de": "schlechter",
+      "pos": "adjective",
+      "category": "Wörter & Verben"
+    },
+    {
+      "id": "chamar",
+      "text": "chamar",
+      "de": "rufen",
+      "pos": "verb",
+      "category": "Wörter & Verben"
+    },
+    {
+      "id": "ajudar",
+      "text": "ajudar",
+      "de": "helfen",
+      "pos": "verb",
+      "category": "Wörter & Verben"
+    },
+    {
+      "id": "tomar",
+      "text": "tomar",
+      "de": "einnehmen (Medikament); trinken",
+      "pos": "verb",
+      "category": "Wörter & Verben"
+    },
+    {
+      "id": "sentir",
+      "text": "sentir",
+      "de": "fühlen",
+      "pos": "verb",
+      "note": "Sinto-me mal / Estou me sentindo mal = Mir geht es schlecht.",
+      "category": "Wörter & Verben"
+    },
+    {
+      "id": "ter_que",
+      "text": "ter que",
+      "de": "müssen",
+      "pos": "phrase",
+      "category": "Wörter & Verben",
+      "grammar": [
+        "ter_que"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "Socorro! Chame uma ambulância!",
+      "de": "Hilfe! Rufen Sie einen Krankenwagen!",
+      "words": [
+        "socorro",
+        "ambulancia",
+        "chamar"
+      ],
+      "grammar": [
+        "anweisungen"
+      ]
+    },
+    {
+      "id": "s02",
+      "text": "É uma emergência!",
+      "de": "Es ist ein Notfall!",
+      "words": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "Eu preciso de um médico.",
+      "de": "Ich brauche einen Arzt.",
+      "words": [
+        "eu",
+        "medico",
+        "precisar"
+      ],
+      "grammar": [
+        "precisar_de"
+      ]
+    },
+    {
+      "id": "s04",
+      "text": "Onde fica o hospital mais perto?",
+      "de": "Wo ist das nächste Krankenhaus?",
+      "words": [
+        "onde",
+        "hospital",
+        "perto",
+        "ficar"
+      ]
+    },
+    {
+      "id": "s05",
+      "text": "Leve ele ao pronto-socorro.",
+      "de": "Bring ihn in die Notaufnahme.",
+      "words": [
+        "pronto_socorro",
+        "levar"
+      ],
+      "grammar": [
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s06",
+      "text": "Tem uma farmácia aqui perto?",
+      "de": "Gibt es hier in der Nähe eine Apotheke?",
+      "words": [
+        "farmacia",
+        "aqui",
+        "perto"
+      ],
+      "grammar": [
+        "ter_haben"
+      ]
+    },
+    {
+      "id": "s07",
+      "text": "Estou com dor de cabeça.",
+      "de": "Ich habe Kopfschmerzen.",
+      "words": [
+        "dor",
+        "cabeca"
+      ],
+      "grammar": [
+        "doer",
+        "estar_com"
+      ]
+    },
+    {
+      "id": "s08",
+      "text": "Estou com dor de garganta e tosse.",
+      "de": "Ich habe Halsschmerzen und Husten.",
+      "words": [
+        "dor",
+        "garganta",
+        "tosse"
+      ],
+      "grammar": [
+        "doer",
+        "estar_com"
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "Minhas costas doem muito.",
+      "de": "Mein Rücken tut sehr weh.",
+      "words": [
+        "costas",
+        "doer",
+        "muito"
+      ],
+      "grammar": [
+        "doer"
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Dói aqui, na barriga.",
+      "de": "Es tut hier weh, am Bauch.",
+      "words": [
+        "doer",
+        "aqui",
+        "barriga"
+      ],
+      "grammar": [
+        "doer",
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Meu estômago não está bem.",
+      "de": "Mein Magen ist nicht in Ordnung.",
+      "words": [
+        "estomago",
+        "nao",
+        "bem"
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Acho que estou com febre.",
+      "de": "Ich glaube, ich habe Fieber.",
+      "words": [
+        "febre"
+      ],
+      "grammar": [
+        "estar_com"
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Eu acho que é gripe.",
+      "de": "Ich glaube, es ist eine Grippe.",
+      "words": [
+        "eu",
+        "gripe"
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "É só um resfriado.",
+      "de": "Es ist nur eine Erkältung.",
+      "words": [
+        "resfriado"
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Estou com diarreia desde ontem.",
+      "de": "Ich habe seit gestern Durchfall.",
+      "words": [
+        "diarreia",
+        "ontem"
+      ],
+      "grammar": [
+        "estar_com"
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Tenho alergia a amendoim.",
+      "de": "Ich habe eine Erdnussallergie.",
+      "words": [
+        "alergia",
+        "ter"
+      ],
+      "grammar": [
+        "ter_haben"
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Eu tenho alergia a penicilina.",
+      "de": "Ich bin allergisch gegen Penicillin.",
+      "words": [
+        "eu",
+        "alergia",
+        "ter"
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Tenho uma picada de mosquito no braço.",
+      "de": "Ich habe einen Mückenstich am Arm.",
+      "words": [
+        "picada",
+        "braco",
+        "ter"
+      ],
+      "grammar": [
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "A picada está muito vermelha.",
+      "de": "Der Stich ist sehr rot.",
+      "words": [
+        "picada",
+        "muito",
+        "vermelho"
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "Fiquei com queimadura de sol na praia.",
+      "de": "Ich habe am Strand einen Sonnenbrand bekommen.",
+      "words": [
+        "queimadura",
+        "praia"
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "Estou doente, não vou trabalhar hoje.",
+      "de": "Ich bin krank, ich gehe heute nicht arbeiten.",
+      "words": [
+        "doente",
+        "nao",
+        "hoje"
+      ],
+      "grammar": [
+        "ir_futuro"
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "Estou tonto e enjoado.",
+      "de": "Mir ist schwindlig und übel.",
+      "words": [
+        "tonto",
+        "enjoado"
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "Estou muito cansado.",
+      "de": "Ich bin sehr müde.",
+      "words": [
+        "muito",
+        "cansado"
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "Ele está machucado na perna.",
+      "de": "Er ist am Bein verletzt.",
+      "words": [
+        "machucado",
+        "perna"
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "Machuquei o pé.",
+      "de": "Ich habe mir den Fuss verletzt.",
+      "words": [
+        "pe"
+      ]
+    },
+    {
+      "id": "s26",
+      "text": "Quebrei o braço.",
+      "de": "Ich habe mir den Arm gebrochen.",
+      "words": [
+        "braco"
+      ]
+    },
+    {
+      "id": "s27",
+      "text": "Cortei a mão com a faca.",
+      "de": "Ich habe mich mit dem Messer in die Hand geschnitten.",
+      "words": [
+        "mao",
+        "faca",
+        "com"
+      ]
+    },
+    {
+      "id": "s28",
+      "text": "Meu olho está vermelho.",
+      "de": "Mein Auge ist rot.",
+      "words": [
+        "olho",
+        "vermelho"
+      ]
+    },
+    {
+      "id": "s29",
+      "text": "Estou com dor de ouvido.",
+      "de": "Ich habe Ohrenschmerzen.",
+      "words": [
+        "dor",
+        "ouvido"
+      ],
+      "grammar": [
+        "estar_com"
+      ]
+    },
+    {
+      "id": "s30",
+      "text": "O nariz está entupido.",
+      "de": "Die Nase ist verstopft.",
+      "words": [
+        "nariz"
+      ]
+    },
+    {
+      "id": "s31",
+      "text": "Estou com dor de dente.",
+      "de": "Ich habe Zahnschmerzen.",
+      "words": [
+        "dor",
+        "dente"
+      ],
+      "grammar": [
+        "estar_com"
+      ]
+    },
+    {
+      "id": "s32",
+      "text": "Abra a boca, por favor.",
+      "de": "Öffnen Sie bitte den Mund.",
+      "words": [
+        "boca",
+        "por_favor"
+      ],
+      "grammar": [
+        "anweisungen"
+      ]
+    },
+    {
+      "id": "s33",
+      "text": "A pele está muito seca.",
+      "de": "Die Haut ist sehr trocken.",
+      "words": [
+        "pele",
+        "muito"
+      ]
+    },
+    {
+      "id": "s34",
+      "text": "Tenho um problema no coração.",
+      "de": "Ich habe ein Problem mit dem Herzen.",
+      "words": [
+        "problema",
+        "coracao",
+        "ter"
+      ],
+      "grammar": [
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s35",
+      "text": "O corpo todo dói.",
+      "de": "Der ganze Körper tut weh.",
+      "words": [
+        "corpo",
+        "doer"
+      ],
+      "grammar": [
+        "doer"
+      ]
+    },
+    {
+      "id": "s36",
+      "text": "Preciso marcar uma consulta.",
+      "de": "Ich muss einen Arzttermin vereinbaren.",
+      "words": [
+        "consulta",
+        "precisar"
+      ]
+    },
+    {
+      "id": "s37",
+      "text": "Precisa de receita para esse remédio?",
+      "de": "Braucht man für dieses Medikament ein Rezept?",
+      "words": [
+        "receita",
+        "remedio",
+        "esse"
+      ],
+      "grammar": [
+        "precisar_de",
+        "demonstrativ"
+      ]
+    },
+    {
+      "id": "s38",
+      "text": "Tome um comprimido três vezes por dia.",
+      "de": "Nehmen Sie dreimal täglich eine Tablette.",
+      "words": [
+        "comprimido",
+        "num_3",
+        "tomar"
+      ],
+      "grammar": [
+        "anweisungen"
+      ]
+    },
+    {
+      "id": "s39",
+      "text": "Você tem que tomar muita água.",
+      "de": "Du musst viel Wasser trinken.",
+      "words": [
+        "voce",
+        "ter_que",
+        "tomar",
+        "agua"
+      ],
+      "grammar": [
+        "ter_que"
+      ]
+    },
+    {
+      "id": "s40",
+      "text": "Eu tenho que ir ao médico.",
+      "de": "Ich muss zum Arzt gehen.",
+      "words": [
+        "eu",
+        "ter_que",
+        "medico",
+        "ir"
+      ],
+      "grammar": [
+        "ter_que",
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s41",
+      "text": "O meu seguro de saúde paga isso?",
+      "de": "Bezahlt meine Krankenversicherung das?",
+      "words": [
+        "seguro",
+        "isso",
+        "pagar"
+      ]
+    },
+    {
+      "id": "s42",
+      "text": "Saúde é o mais importante.",
+      "de": "Gesundheit ist das Wichtigste.",
+      "words": [
+        "saude"
+      ]
+    },
+    {
+      "id": "s43",
+      "text": "Você tem protetor solar?",
+      "de": "Hast du Sonnencreme?",
+      "words": [
+        "voce",
+        "protetor",
+        "ter"
+      ]
+    },
+    {
+      "id": "s44",
+      "text": "Passe repelente à noite.",
+      "de": "Trag abends Mückenschutz auf.",
+      "words": [
+        "repelente",
+        "noite"
+      ],
+      "grammar": [
+        "anweisungen"
+      ]
+    },
+    {
+      "id": "s45",
+      "text": "Você tem um curativo?",
+      "de": "Hast du ein Pflaster?",
+      "words": [
+        "voce",
+        "curativo",
+        "ter"
+      ]
+    },
+    {
+      "id": "s46",
+      "text": "Hoje eu me sinto melhor.",
+      "de": "Heute fühle ich mich besser.",
+      "words": [
+        "hoje",
+        "eu",
+        "melhor",
+        "sentir"
+      ]
+    },
+    {
+      "id": "s47",
+      "text": "Ontem estava pior.",
+      "de": "Gestern war es schlimmer.",
+      "words": [
+        "ontem",
+        "pior"
+      ]
+    },
+    {
+      "id": "s48",
+      "text": "Pode me ajudar, por favor?",
+      "de": "Können Sie mir bitte helfen?",
+      "words": [
+        "ajudar",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s49",
+      "text": "Obrigado pela ajuda!",
+      "de": "Danke für die Hilfe!",
+      "words": [
+        "obrigado",
+        "ajuda"
+      ],
+      "grammar": [
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s50",
+      "text": "Chame a polícia!",
+      "de": "Rufen Sie die Polizei!",
+      "words": [
+        "chamar",
+        "policia"
+      ],
+      "grammar": [
+        "anweisungen"
+      ]
+    },
+    {
+      "id": "s51",
+      "text": "Pega ladrão!",
+      "de": "Haltet den Dieb!",
+      "words": [
+        "ladrao"
+      ]
+    },
+    {
+      "id": "s52",
+      "text": "Roubaram a minha carteira.",
+      "de": "Man hat mir mein Portemonnaie gestohlen.",
+      "words": [
+        "roubar",
+        "carteira"
+      ]
+    },
+    {
+      "id": "s53",
+      "text": "Eu estou perdido.",
+      "de": "Ich habe mich verirrt.",
+      "words": [
+        "eu",
+        "perdido"
+      ]
+    },
+    {
+      "id": "s54",
+      "text": "Perdi o meu passaporte.",
+      "de": "Ich habe meinen Pass verloren.",
+      "words": [
+        "perder",
+        "passaporte"
+      ]
+    },
+    {
+      "id": "s55",
+      "text": "Onde fica o consulado da Alemanha?",
+      "de": "Wo ist das deutsche Konsulat?",
+      "words": [
+        "onde",
+        "consulado",
+        "ficar"
+      ]
+    },
+    {
+      "id": "s56",
+      "text": "Preciso falar com a embaixada.",
+      "de": "Ich muss mit der Botschaft sprechen.",
+      "words": [
+        "precisar",
+        "falar",
+        "embaixada",
+        "com"
+      ]
+    },
+    {
+      "id": "s57",
+      "text": "Essa rua é perigosa à noite?",
+      "de": "Ist diese Strasse nachts gefährlich?",
+      "words": [
+        "esse",
+        "rua",
+        "perigoso",
+        "noite"
+      ]
+    },
+    {
+      "id": "s58",
+      "text": "É urgente!",
+      "de": "Es ist dringend!",
+      "words": [
+        "urgente"
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "doer",
+      "title": "Schmerzen: dói, doem und estar com dor de",
+      "explanation": "Im Portugiesischen ist der Körperteil das Subjekt – wie „es tut weh“:\n\n• Dói a cabeça. / A cabeça dói. – Der Kopf tut weh.\n• Doem as costas. – Der Rücken tut weh. (costas ist Mehrzahl)\n• Dói aqui. – Es tut hier weh.\n\nMeistens sagt man aber:\nestar com dor de … – Schmerzen haben in …\n• Estou com dor de cabeça. – Ich habe Kopfschmerzen.\n• Estou com dor de barriga. – Ich habe Bauchschmerzen.",
+      "examples": [
+        {
+          "text": "Minha perna dói.",
+          "de": "Mein Bein tut weh."
+        },
+        {
+          "text": "Estou com dor nas costas.",
+          "de": "Ich habe Rückenschmerzen."
+        },
+        {
+          "text": "Onde dói?",
+          "de": "Wo tut es weh?"
+        }
+      ]
+    },
+    {
+      "id": "ter_que",
+      "title": "müssen: ter que und precisar",
+      "explanation": "• ter que + Grundform – müssen (Pflicht)\n  Eu tenho que ir. – Ich muss gehen.\n  Você tem que descansar. – Du musst dich ausruhen.\n\n• precisar + Grundform – müssen, brauchen (Notwendigkeit)\n  Preciso dormir. – Ich muss schlafen.\n\n„nicht müssen“: não precisar – Você não precisa pagar. (Du musst nicht bezahlen.)\nAchtung: „não tem que“ klingt eher wie „du darfst nicht“.",
+      "examples": [
+        {
+          "text": "Tenho que tomar o remédio.",
+          "de": "Ich muss das Medikament nehmen."
+        },
+        {
+          "text": "Você precisa ir ao médico.",
+          "de": "Du musst zum Arzt."
+        },
+        {
+          "text": "Não precisa, obrigado.",
+          "de": "Nicht nötig, danke."
+        }
+      ]
+    }
+  ]
+}

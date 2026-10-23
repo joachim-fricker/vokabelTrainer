@@ -1,0 +1,1161 @@
+{
+  "id": "pt-BR-05",
+  "language": "pt-BR",
+  "order": 5,
+  "title": "Unterwegs",
+  "titleTarget": "Viajando pela cidade e pelo país",
+  "words": [
+    {
+      "id": "onibus",
+      "text": "o ônibus",
+      "de": "der Bus",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Plural ebenfalls: os ônibus",
+      "category": "Verkehrsmittel"
+    },
+    {
+      "id": "metro",
+      "text": "o metrô",
+      "de": "die U-Bahn",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Verkehrsmittel"
+    },
+    {
+      "id": "trem",
+      "text": "o trem",
+      "de": "der Zug",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Verkehrsmittel"
+    },
+    {
+      "id": "aviao",
+      "text": "o avião",
+      "de": "das Flugzeug",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Verkehrsmittel"
+    },
+    {
+      "id": "taxi",
+      "text": "o táxi",
+      "de": "das Taxi",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Verkehrsmittel"
+    },
+    {
+      "id": "carro",
+      "text": "o carro",
+      "de": "das Auto",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Verkehrsmittel"
+    },
+    {
+      "id": "moto",
+      "text": "a moto",
+      "de": "das Motorrad",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Verkehrsmittel"
+    },
+    {
+      "id": "bicicleta",
+      "text": "a bicicleta",
+      "de": "das Fahrrad",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Verkehrsmittel"
+    },
+    {
+      "id": "barco",
+      "text": "o barco",
+      "de": "das Boot",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Verkehrsmittel"
+    },
+    {
+      "id": "balsa",
+      "text": "a balsa",
+      "de": "die Fähre",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Verkehrsmittel"
+    },
+    {
+      "id": "aplicativo",
+      "text": "o aplicativo",
+      "de": "die App (z. B. für Fahrdienste)",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Umgangssprachlich: o app. „Chamar um Uber“ = einen Fahrdienst rufen.",
+      "category": "Verkehrsmittel"
+    },
+    {
+      "id": "aeroporto",
+      "text": "o aeroporto",
+      "de": "der Flughafen",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Flughafen, Bahnhof & Tickets"
+    },
+    {
+      "id": "rodoviaria",
+      "text": "a rodoviária",
+      "de": "der Busbahnhof",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Fernbusse sind in Brasilien das wichtigste Reisemittel über Land.",
+      "category": "Flughafen, Bahnhof & Tickets"
+    },
+    {
+      "id": "estacao",
+      "text": "a estação",
+      "de": "der Bahnhof, die Station",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Flughafen, Bahnhof & Tickets"
+    },
+    {
+      "id": "ponto_onibus",
+      "text": "o ponto de ônibus",
+      "de": "die Bushaltestelle",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Flughafen, Bahnhof & Tickets"
+    },
+    {
+      "id": "passagem",
+      "text": "a passagem",
+      "de": "die Fahrkarte, das Ticket",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Flughafen, Bahnhof & Tickets"
+    },
+    {
+      "id": "bilheteria",
+      "text": "a bilheteria",
+      "de": "der Ticketschalter",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Flughafen, Bahnhof & Tickets"
+    },
+    {
+      "id": "voo",
+      "text": "o voo",
+      "de": "der Flug",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Flughafen, Bahnhof & Tickets"
+    },
+    {
+      "id": "portao",
+      "text": "o portão",
+      "de": "das Gate; das Tor",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Flughafen, Bahnhof & Tickets"
+    },
+    {
+      "id": "embarque",
+      "text": "o embarque",
+      "de": "das Boarding, das Einsteigen",
+      "pos": "noun",
+      "gender": "m",
+      "note": "desembarque = Ankunft (am Flughafen)",
+      "category": "Flughafen, Bahnhof & Tickets"
+    },
+    {
+      "id": "bagagem",
+      "text": "a bagagem",
+      "de": "das Gepäck",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Flughafen, Bahnhof & Tickets"
+    },
+    {
+      "id": "mala",
+      "text": "a mala",
+      "de": "der Koffer",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Flughafen, Bahnhof & Tickets"
+    },
+    {
+      "id": "mochila",
+      "text": "a mochila",
+      "de": "der Rucksack",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Flughafen, Bahnhof & Tickets"
+    },
+    {
+      "id": "horario",
+      "text": "o horário",
+      "de": "der Fahrplan; die Uhrzeit",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Flughafen, Bahnhof & Tickets"
+    },
+    {
+      "id": "ida_e_volta",
+      "text": "ida e volta",
+      "de": "hin und zurück",
+      "pos": "phrase",
+      "note": "só ida = nur Hinfahrt",
+      "category": "Flughafen, Bahnhof & Tickets"
+    },
+    {
+      "id": "atrasado",
+      "text": "atrasado",
+      "de": "verspätet",
+      "pos": "adjective",
+      "category": "Flughafen, Bahnhof & Tickets"
+    },
+    {
+      "id": "rua",
+      "text": "a rua",
+      "de": "die Strasse",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Wegbeschreibung"
+    },
+    {
+      "id": "avenida",
+      "text": "a avenida",
+      "de": "die (grosse) Strasse, die Allee",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Wegbeschreibung"
+    },
+    {
+      "id": "praca",
+      "text": "a praça",
+      "de": "der Platz",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Wegbeschreibung"
+    },
+    {
+      "id": "centro",
+      "text": "o centro",
+      "de": "das Zentrum",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Wegbeschreibung"
+    },
+    {
+      "id": "mapa",
+      "text": "o mapa",
+      "de": "die Karte, der Stadtplan",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Männlich, obwohl auf -a!",
+      "category": "Wegbeschreibung"
+    },
+    {
+      "id": "esquina",
+      "text": "a esquina",
+      "de": "die Ecke (Strassenecke)",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Wegbeschreibung"
+    },
+    {
+      "id": "semaforo",
+      "text": "o semáforo",
+      "de": "die Ampel",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Umgangssprachlich auch: o sinal, in São Paulo: o farol",
+      "category": "Wegbeschreibung"
+    },
+    {
+      "id": "direita",
+      "text": "à direita",
+      "de": "rechts",
+      "pos": "adverb",
+      "category": "Wegbeschreibung",
+      "grammar": [
+        "anweisungen"
+      ]
+    },
+    {
+      "id": "esquerda",
+      "text": "à esquerda",
+      "de": "links",
+      "pos": "adverb",
+      "category": "Wegbeschreibung",
+      "grammar": [
+        "anweisungen"
+      ]
+    },
+    {
+      "id": "reto",
+      "text": "reto",
+      "de": "geradeaus",
+      "pos": "adverb",
+      "note": "Meist: sempre reto",
+      "category": "Wegbeschreibung",
+      "grammar": [
+        "anweisungen"
+      ]
+    },
+    {
+      "id": "perto",
+      "text": "perto",
+      "de": "nahe",
+      "pos": "adverb",
+      "note": "perto de = in der Nähe von",
+      "category": "Wegbeschreibung"
+    },
+    {
+      "id": "longe",
+      "text": "longe",
+      "de": "weit (weg)",
+      "pos": "adverb",
+      "category": "Wegbeschreibung"
+    },
+    {
+      "id": "aqui",
+      "text": "aqui",
+      "de": "hier",
+      "pos": "adverb",
+      "category": "Wegbeschreibung"
+    },
+    {
+      "id": "ali",
+      "text": "ali",
+      "de": "dort",
+      "pos": "adverb",
+      "category": "Wegbeschreibung"
+    },
+    {
+      "id": "atras",
+      "text": "atrás de",
+      "de": "hinter",
+      "pos": "preposition",
+      "category": "Wegbeschreibung"
+    },
+    {
+      "id": "ao_lado",
+      "text": "ao lado de",
+      "de": "neben",
+      "pos": "preposition",
+      "category": "Wegbeschreibung"
+    },
+    {
+      "id": "a_pe",
+      "text": "a pé",
+      "de": "zu Fuss",
+      "pos": "phrase",
+      "category": "Wegbeschreibung"
+    },
+    {
+      "id": "estrada",
+      "text": "a estrada",
+      "de": "die Landstrasse",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Mit dem Auto"
+    },
+    {
+      "id": "gasolina",
+      "text": "a gasolina",
+      "de": "das Benzin",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Mit dem Auto"
+    },
+    {
+      "id": "posto",
+      "text": "o posto de gasolina",
+      "de": "die Tankstelle",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Mit dem Auto"
+    },
+    {
+      "id": "carteira_motorista",
+      "text": "a carteira de motorista",
+      "de": "der Führerschein",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Mit dem Auto"
+    },
+    {
+      "id": "pedagio",
+      "text": "o pedágio",
+      "de": "die Maut, die Mautstelle",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Mit dem Auto"
+    },
+    {
+      "id": "alugar",
+      "text": "alugar",
+      "de": "mieten",
+      "pos": "verb",
+      "category": "Mit dem Auto"
+    },
+    {
+      "id": "museu",
+      "text": "o museu",
+      "de": "das Museum",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Orte in der Stadt"
+    },
+    {
+      "id": "igreja",
+      "text": "a igreja",
+      "de": "die Kirche",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Orte in der Stadt"
+    },
+    {
+      "id": "ponte",
+      "text": "a ponte",
+      "de": "die Brücke",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Orte in der Stadt"
+    },
+    {
+      "id": "ir",
+      "text": "ir",
+      "de": "gehen, fahren",
+      "pos": "verb",
+      "category": "Verben",
+      "grammar": [
+        "ir_futuro"
+      ]
+    },
+    {
+      "id": "vir",
+      "text": "vir",
+      "de": "kommen",
+      "pos": "verb",
+      "category": "Verben"
+    },
+    {
+      "id": "pegar",
+      "text": "pegar",
+      "de": "nehmen (ein Verkehrsmittel)",
+      "pos": "verb",
+      "note": "pegar o ônibus = den Bus nehmen",
+      "category": "Verben"
+    },
+    {
+      "id": "descer",
+      "text": "descer",
+      "de": "aussteigen; hinuntergehen",
+      "pos": "verb",
+      "category": "Verben"
+    },
+    {
+      "id": "subir",
+      "text": "subir",
+      "de": "einsteigen; hinaufgehen",
+      "pos": "verb",
+      "category": "Verben"
+    },
+    {
+      "id": "esperar",
+      "text": "esperar",
+      "de": "warten",
+      "pos": "verb",
+      "category": "Verben"
+    },
+    {
+      "id": "perder",
+      "text": "perder",
+      "de": "verpassen; verlieren",
+      "pos": "verb",
+      "category": "Verben"
+    },
+    {
+      "id": "viajar",
+      "text": "viajar",
+      "de": "reisen",
+      "pos": "verb",
+      "category": "Verben"
+    },
+    {
+      "id": "voltar",
+      "text": "voltar",
+      "de": "zurückkommen",
+      "pos": "verb",
+      "category": "Verben"
+    },
+    {
+      "id": "levar",
+      "text": "levar",
+      "de": "dauern; mitnehmen",
+      "pos": "verb",
+      "note": "Leva meia hora. = Es dauert eine halbe Stunde.",
+      "category": "Verben"
+    },
+    {
+      "id": "andar_verb",
+      "text": "andar",
+      "de": "gehen, laufen; fahren (mit)",
+      "pos": "verb",
+      "note": "andar de ônibus = Bus fahren",
+      "category": "Verben"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "Onde fica o ponto de ônibus?",
+      "de": "Wo ist die Bushaltestelle?",
+      "words": [
+        "onde",
+        "ponto_onibus",
+        "ficar"
+      ],
+      "grammar": [
+        "fragewoerter"
+      ]
+    },
+    {
+      "id": "s02",
+      "text": "Esse ônibus vai para o centro?",
+      "de": "Fährt dieser Bus ins Zentrum?",
+      "words": [
+        "onibus",
+        "ir",
+        "centro"
+      ],
+      "grammar": [
+        "ir_futuro"
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "Eu vou pegar o metrô.",
+      "de": "Ich nehme die U-Bahn.",
+      "words": [
+        "eu",
+        "pegar",
+        "metro",
+        "ir"
+      ],
+      "grammar": [
+        "ir_futuro"
+      ]
+    },
+    {
+      "id": "s04",
+      "text": "Uma passagem para o Rio, por favor.",
+      "de": "Eine Fahrkarte nach Rio, bitte.",
+      "words": [
+        "passagem",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s05",
+      "text": "Ida e volta, por favor.",
+      "de": "Hin und zurück, bitte.",
+      "words": [
+        "ida_e_volta",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s06",
+      "text": "A que horas sai o próximo ônibus?",
+      "de": "Wann fährt der nächste Bus?",
+      "words": [
+        "onibus",
+        "hora",
+        "sair"
+      ]
+    },
+    {
+      "id": "s07",
+      "text": "Onde é a bilheteria?",
+      "de": "Wo ist der Ticketschalter?",
+      "words": [
+        "onde",
+        "bilheteria"
+      ]
+    },
+    {
+      "id": "s08",
+      "text": "Quanto tempo leva até a rodoviária?",
+      "de": "Wie lange dauert es bis zum Busbahnhof?",
+      "words": [
+        "levar",
+        "rodoviaria"
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "Leva uns vinte minutos de táxi.",
+      "de": "Mit dem Taxi dauert es etwa zwanzig Minuten.",
+      "words": [
+        "levar",
+        "num_20",
+        "minuto",
+        "taxi"
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "O meu voo está atrasado.",
+      "de": "Mein Flug hat Verspätung.",
+      "words": [
+        "voo",
+        "atrasado"
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "O embarque é no portão doze.",
+      "de": "Das Boarding ist an Gate zwölf.",
+      "words": [
+        "embarque",
+        "portao",
+        "num_12"
+      ],
+      "grammar": [
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Perdi o meu voo!",
+      "de": "Ich habe meinen Flug verpasst!",
+      "words": [
+        "perder",
+        "voo"
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "A minha mala não chegou.",
+      "de": "Mein Koffer ist nicht angekommen.",
+      "words": [
+        "mala",
+        "nao",
+        "chegar"
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Quantas malas você tem?",
+      "de": "Wie viele Koffer hast du?",
+      "words": [
+        "mala",
+        "voce",
+        "ter"
+      ],
+      "grammar": [
+        "fragewoerter"
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Só tenho uma mochila e uma mala pequena.",
+      "de": "Ich habe nur einen Rucksack und einen kleinen Koffer.",
+      "words": [
+        "mochila",
+        "mala"
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "A bagagem de mão pode ter dez quilos.",
+      "de": "Das Handgepäck darf zehn Kilo haben.",
+      "words": [
+        "bagagem",
+        "num_10",
+        "ter"
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Como eu chego ao aeroporto?",
+      "de": "Wie komme ich zum Flughafen?",
+      "words": [
+        "como",
+        "chegar",
+        "aeroporto"
+      ],
+      "grammar": [
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Onde fica a estação de metrô?",
+      "de": "Wo ist die U-Bahn-Station?",
+      "words": [
+        "onde",
+        "estacao",
+        "metro",
+        "ficar"
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "O trem para São Paulo sai às oito.",
+      "de": "Der Zug nach São Paulo fährt um acht.",
+      "words": [
+        "trem",
+        "num_8",
+        "sair"
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "Qual é o horário do trem?",
+      "de": "Wie ist der Fahrplan des Zuges?",
+      "words": [
+        "qual",
+        "horario",
+        "trem"
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "Siga reto e vire à direita.",
+      "de": "Gehen Sie geradeaus und biegen Sie rechts ab.",
+      "words": [
+        "reto",
+        "direita"
+      ],
+      "grammar": [
+        "anweisungen"
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "Na esquina, vire à esquerda.",
+      "de": "An der Ecke biegen Sie links ab.",
+      "words": [
+        "esquina",
+        "esquerda"
+      ],
+      "grammar": [
+        "anweisungen",
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "Depois do semáforo, é a segunda rua.",
+      "de": "Nach der Ampel ist es die zweite Strasse.",
+      "words": [
+        "semaforo",
+        "rua"
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "O museu fica na avenida principal.",
+      "de": "Das Museum liegt an der Hauptstrasse.",
+      "words": [
+        "museu",
+        "avenida",
+        "ficar"
+      ],
+      "grammar": [
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "A igreja fica ao lado da praça.",
+      "de": "Die Kirche ist neben dem Platz.",
+      "words": [
+        "igreja",
+        "ao_lado",
+        "praca",
+        "ficar"
+      ],
+      "grammar": [
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s26",
+      "text": "O banco fica atrás do museu.",
+      "de": "Die Bank ist hinter dem Museum.",
+      "words": [
+        "atras",
+        "museu",
+        "ficar"
+      ],
+      "grammar": [
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s27",
+      "text": "É perto ou longe daqui?",
+      "de": "Ist es nah oder weit von hier?",
+      "words": [
+        "perto",
+        "longe"
+      ]
+    },
+    {
+      "id": "s28",
+      "text": "É bem perto, dá para ir a pé.",
+      "de": "Es ist ganz nah, man kann zu Fuss gehen.",
+      "words": [
+        "perto",
+        "ir",
+        "a_pe"
+      ]
+    },
+    {
+      "id": "s29",
+      "text": "O hotel é aqui ou ali?",
+      "de": "Ist das Hotel hier oder dort?",
+      "words": [
+        "hotel",
+        "aqui",
+        "ali"
+      ]
+    },
+    {
+      "id": "s30",
+      "text": "Pode me mostrar no mapa?",
+      "de": "Können Sie es mir auf der Karte zeigen?",
+      "words": [
+        "mapa"
+      ],
+      "grammar": [
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s31",
+      "text": "Desça no próximo ponto de ônibus.",
+      "de": "Steigen Sie an der nächsten Bushaltestelle aus.",
+      "words": [
+        "descer",
+        "ponto_onibus"
+      ],
+      "grammar": [
+        "anweisungen",
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s32",
+      "text": "Pegue o ônibus número cinco.",
+      "de": "Nehmen Sie den Bus Nummer fünf.",
+      "words": [
+        "pegar",
+        "onibus",
+        "numero",
+        "num_5"
+      ],
+      "grammar": [
+        "anweisungen"
+      ]
+    },
+    {
+      "id": "s33",
+      "text": "Eu quero alugar um carro.",
+      "de": "Ich möchte ein Auto mieten.",
+      "words": [
+        "eu",
+        "alugar",
+        "carro"
+      ]
+    },
+    {
+      "id": "s34",
+      "text": "Preciso da sua carteira de motorista.",
+      "de": "Ich brauche Ihren Führerschein.",
+      "words": [
+        "carteira_motorista"
+      ],
+      "grammar": [
+        "precisar_de"
+      ]
+    },
+    {
+      "id": "s35",
+      "text": "Onde tem um posto de gasolina?",
+      "de": "Wo gibt es eine Tankstelle?",
+      "words": [
+        "onde",
+        "posto"
+      ],
+      "grammar": [
+        "ter_haben"
+      ]
+    },
+    {
+      "id": "s36",
+      "text": "A gasolina está cara.",
+      "de": "Das Benzin ist teuer.",
+      "words": [
+        "gasolina",
+        "caro"
+      ]
+    },
+    {
+      "id": "s37",
+      "text": "Essa estrada tem muito pedágio.",
+      "de": "Diese Strasse hat viele Mautstellen.",
+      "words": [
+        "estrada",
+        "pedagio",
+        "muito"
+      ]
+    },
+    {
+      "id": "s38",
+      "text": "Vamos de bicicleta até a praia?",
+      "de": "Fahren wir mit dem Fahrrad zum Strand?",
+      "words": [
+        "bicicleta",
+        "ir"
+      ],
+      "grammar": [
+        "ir_futuro"
+      ]
+    },
+    {
+      "id": "s39",
+      "text": "Eu ando de moto todo dia.",
+      "de": "Ich fahre jeden Tag Motorrad.",
+      "words": [
+        "eu",
+        "andar_verb",
+        "moto"
+      ]
+    },
+    {
+      "id": "s40",
+      "text": "A balsa para a ilha sai de hora em hora.",
+      "de": "Die Fähre zur Insel fährt stündlich.",
+      "words": [
+        "balsa",
+        "hora",
+        "sair"
+      ]
+    },
+    {
+      "id": "s41",
+      "text": "Vamos fazer um passeio de barco.",
+      "de": "Wir machen eine Bootsfahrt.",
+      "words": [
+        "barco",
+        "ir"
+      ],
+      "grammar": [
+        "ir_futuro"
+      ]
+    },
+    {
+      "id": "s42",
+      "text": "Vou chamar um táxi pelo aplicativo.",
+      "de": "Ich rufe ein Taxi über die App.",
+      "words": [
+        "taxi",
+        "aplicativo",
+        "ir"
+      ],
+      "grammar": [
+        "ir_futuro",
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s43",
+      "text": "O avião vai pousar em dez minutos.",
+      "de": "Das Flugzeug landet in zehn Minuten.",
+      "words": [
+        "aviao",
+        "num_10",
+        "minuto",
+        "ir"
+      ],
+      "grammar": [
+        "ir_futuro"
+      ]
+    },
+    {
+      "id": "s44",
+      "text": "Espere aqui, por favor.",
+      "de": "Warten Sie bitte hier.",
+      "words": [
+        "esperar",
+        "aqui",
+        "por_favor"
+      ],
+      "grammar": [
+        "anweisungen"
+      ]
+    },
+    {
+      "id": "s45",
+      "text": "Eu volto amanhã de manhã.",
+      "de": "Ich komme morgen früh zurück.",
+      "words": [
+        "eu",
+        "voltar",
+        "amanha"
+      ]
+    },
+    {
+      "id": "s46",
+      "text": "Você vem com a gente?",
+      "de": "Kommst du mit uns?",
+      "words": [
+        "voce",
+        "vir",
+        "com"
+      ]
+    },
+    {
+      "id": "s47",
+      "text": "Nós vamos viajar para o Nordeste.",
+      "de": "Wir reisen in den Nordosten.",
+      "words": [
+        "viajar",
+        "ir"
+      ],
+      "grammar": [
+        "ir_futuro"
+      ]
+    },
+    {
+      "id": "s48",
+      "text": "Pode subir, o ônibus já vai sair.",
+      "de": "Steig ein, der Bus fährt gleich ab.",
+      "words": [
+        "subir",
+        "onibus",
+        "sair",
+        "ir"
+      ]
+    },
+    {
+      "id": "s49",
+      "text": "Posso levar a mochila no ônibus?",
+      "de": "Darf ich den Rucksack in den Bus mitnehmen?",
+      "words": [
+        "levar",
+        "mochila",
+        "onibus"
+      ],
+      "grammar": [
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s50",
+      "text": "A ponte fica no centro da cidade.",
+      "de": "Die Brücke ist im Stadtzentrum.",
+      "words": [
+        "ponte",
+        "centro",
+        "ficar"
+      ],
+      "grammar": [
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s51",
+      "text": "Você sabe chegar na praça?",
+      "de": "Weisst du, wie man zum Platz kommt?",
+      "words": [
+        "voce",
+        "chegar",
+        "praca"
+      ],
+      "grammar": [
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s52",
+      "text": "O trem está atrasado de novo.",
+      "de": "Der Zug hat schon wieder Verspätung.",
+      "words": [
+        "trem",
+        "atrasado"
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "praep_artikel",
+      "title": "Präposition + Artikel: no, na, do, da …",
+      "explanation": "Die Präpositionen em (in, an, auf), de (von, aus) und a (zu, nach) verschmelzen mit dem Artikel:\n\n• em + o = no, em + a = na  (no hotel, na rua)\n• de + o = do, de + a = da  (perto do hotel, ao lado da praça)\n• a + o = ao, a + a = à  (ao aeroporto, à direita)\n• por + o = pelo, por + a = pela  (pelo aplicativo)\n\nIn der Mehrzahl entsprechend: nos, nas, dos, das, aos, às.\n\nIm Alltag sagt man oft „chegar em“ statt „chegar a“: Cheguei no hotel.",
+      "examples": [
+        {
+          "text": "Estou no hotel.",
+          "de": "Ich bin im Hotel."
+        },
+        {
+          "text": "O museu fica na praça.",
+          "de": "Das Museum ist am Platz."
+        },
+        {
+          "text": "Vou ao centro.",
+          "de": "Ich gehe ins Zentrum."
+        },
+        {
+          "text": "perto da estação",
+          "de": "in der Nähe des Bahnhofs"
+        }
+      ]
+    },
+    {
+      "id": "ir_futuro",
+      "title": "ir – gehen, und die Zukunft mit ir",
+      "explanation": "ir (gehen, fahren) ist unregelmässig:\n• eu vou – ich gehe\n• você/ele/ela vai – du gehst, er/sie geht\n• nós vamos – wir gehen\n• vocês/eles/elas vão – ihr geht, sie gehen\n\nMit ir + Grundform drückt man die Zukunft aus – wie „werden“ im Deutschen. So spricht man in Brasilien fast immer:\nVou pegar o ônibus. – Ich werde den Bus nehmen.\n\nVamos! heisst auch „Los geht's!“ oder „Lass uns …“.\n\nMit welchem Verkehrsmittel: ir de ônibus, de carro, de táxi – aber: ir a pé (zu Fuss).",
+      "examples": [
+        {
+          "text": "Eu vou viajar amanhã.",
+          "de": "Ich werde morgen verreisen."
+        },
+        {
+          "text": "Vamos de metrô?",
+          "de": "Fahren wir mit der U-Bahn?"
+        },
+        {
+          "text": "O ônibus vai sair agora.",
+          "de": "Der Bus fährt jetzt gleich ab."
+        }
+      ]
+    },
+    {
+      "id": "anweisungen",
+      "title": "Wegbeschreibungen verstehen",
+      "explanation": "Bei Anweisungen hört man die Befehlsform (höflich, für você). Bei Verben auf -ar endet sie auf -e, bei -er/-ir auf -a:\n\n• virar → vire (biegen Sie ab)\n• pegar → pegue (nehmen Sie)\n• esperar → espere (warten Sie)\n• descer → desça (steigen Sie aus)\n• seguir → siga (gehen/fahren Sie weiter)\n\nTypisch: Siga reto, vire à esquerda na segunda rua. – Gehen Sie geradeaus und biegen Sie in die zweite Strasse links ab.",
+      "examples": [
+        {
+          "text": "Vire à direita.",
+          "de": "Biegen Sie rechts ab."
+        },
+        {
+          "text": "Siga sempre reto.",
+          "de": "Immer geradeaus."
+        },
+        {
+          "text": "Desça no ponto final.",
+          "de": "Steigen Sie an der Endstation aus."
+        }
+      ]
+    }
+  ]
+}

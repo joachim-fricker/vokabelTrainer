@@ -1,0 +1,1105 @@
+{
+  "id": "pt-BR-09",
+  "language": "pt-BR",
+  "order": 9,
+  "title": "Wetter, Strand & Freizeit",
+  "titleTarget": "Tempo, praia e lazer",
+  "words": [
+    {
+      "id": "tempo",
+      "text": "o tempo",
+      "de": "das Wetter; die Zeit",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Wetter",
+      "grammar": [
+        "wetter"
+      ]
+    },
+    {
+      "id": "sol",
+      "text": "o sol",
+      "de": "die Sonne",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Wetter"
+    },
+    {
+      "id": "chuva",
+      "text": "a chuva",
+      "de": "der Regen",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Wetter"
+    },
+    {
+      "id": "chover",
+      "text": "chover",
+      "de": "regnen",
+      "pos": "verb",
+      "note": "Está chovendo. = Es regnet.",
+      "category": "Wetter",
+      "grammar": [
+        "wetter"
+      ]
+    },
+    {
+      "id": "vento",
+      "text": "o vento",
+      "de": "der Wind",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Wetter"
+    },
+    {
+      "id": "nuvem",
+      "text": "a nuvem",
+      "de": "die Wolke",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Wetter"
+    },
+    {
+      "id": "nublado",
+      "text": "nublado",
+      "de": "bewölkt",
+      "pos": "adjective",
+      "category": "Wetter"
+    },
+    {
+      "id": "calor",
+      "text": "o calor",
+      "de": "die Hitze",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Faz calor. = Es ist heiss.",
+      "category": "Wetter",
+      "grammar": [
+        "wetter"
+      ]
+    },
+    {
+      "id": "temperatura",
+      "text": "a temperatura",
+      "de": "die Temperatur",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Wetter"
+    },
+    {
+      "id": "grau",
+      "text": "o grau",
+      "de": "das Grad",
+      "pos": "noun",
+      "gender": "m",
+      "note": "trinta graus = 30 Grad",
+      "category": "Wetter"
+    },
+    {
+      "id": "tempestade",
+      "text": "a tempestade",
+      "de": "das Gewitter, der Sturm",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Wetter"
+    },
+    {
+      "id": "umido",
+      "text": "úmido",
+      "de": "feucht, schwül",
+      "pos": "adjective",
+      "category": "Wetter"
+    },
+    {
+      "id": "praia",
+      "text": "a praia",
+      "de": "der Strand",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Am Strand"
+    },
+    {
+      "id": "mar",
+      "text": "o mar",
+      "de": "das Meer",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Am Strand"
+    },
+    {
+      "id": "areia",
+      "text": "a areia",
+      "de": "der Sand",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Am Strand"
+    },
+    {
+      "id": "onda",
+      "text": "a onda",
+      "de": "die Welle",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Am Strand"
+    },
+    {
+      "id": "ilha",
+      "text": "a ilha",
+      "de": "die Insel",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Am Strand"
+    },
+    {
+      "id": "guarda_sol",
+      "text": "o guarda-sol",
+      "de": "der Sonnenschirm",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Am Strand"
+    },
+    {
+      "id": "cadeira_praia",
+      "text": "a cadeira de praia",
+      "de": "der Strandstuhl",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Am Strand"
+    },
+    {
+      "id": "canga",
+      "text": "a canga",
+      "de": "das Strandtuch (Sarong)",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Typisch brasilianisch statt Badetuch.",
+      "category": "Am Strand"
+    },
+    {
+      "id": "salva_vidas",
+      "text": "o salva-vidas",
+      "de": "der Rettungsschwimmer",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Am Strand"
+    },
+    {
+      "id": "nadar",
+      "text": "nadar",
+      "de": "schwimmen",
+      "pos": "verb",
+      "category": "Am Strand"
+    },
+    {
+      "id": "mergulhar",
+      "text": "mergulhar",
+      "de": "tauchen",
+      "pos": "verb",
+      "category": "Am Strand"
+    },
+    {
+      "id": "surfar",
+      "text": "surfar",
+      "de": "surfen",
+      "pos": "verb",
+      "category": "Am Strand"
+    },
+    {
+      "id": "passeio",
+      "text": "o passeio",
+      "de": "der Ausflug, der Spaziergang",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Natur & Ausflüge"
+    },
+    {
+      "id": "montanha",
+      "text": "a montanha",
+      "de": "der Berg",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Natur & Ausflüge"
+    },
+    {
+      "id": "rio",
+      "text": "o rio",
+      "de": "der Fluss",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Natur & Ausflüge"
+    },
+    {
+      "id": "lago",
+      "text": "o lago",
+      "de": "der See",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Natur & Ausflüge"
+    },
+    {
+      "id": "cachoeira",
+      "text": "a cachoeira",
+      "de": "der Wasserfall",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Natur & Ausflüge"
+    },
+    {
+      "id": "floresta",
+      "text": "a floresta",
+      "de": "der Wald",
+      "pos": "noun",
+      "gender": "f",
+      "note": "a Floresta Amazônica = der Amazonas-Regenwald",
+      "category": "Natur & Ausflüge"
+    },
+    {
+      "id": "trilha",
+      "text": "a trilha",
+      "de": "der Wanderweg",
+      "pos": "noun",
+      "gender": "f",
+      "note": "fazer trilha = wandern",
+      "category": "Natur & Ausflüge"
+    },
+    {
+      "id": "parque",
+      "text": "o parque",
+      "de": "der Park",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Natur & Ausflüge"
+    },
+    {
+      "id": "por_do_sol",
+      "text": "o pôr do sol",
+      "de": "der Sonnenuntergang",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Natur & Ausflüge"
+    },
+    {
+      "id": "show",
+      "text": "o show",
+      "de": "das Konzert, die Show",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Ausgehen & Kultur"
+    },
+    {
+      "id": "ingresso",
+      "text": "o ingresso",
+      "de": "die Eintrittskarte",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Ausgehen & Kultur"
+    },
+    {
+      "id": "cinema",
+      "text": "o cinema",
+      "de": "das Kino",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Ausgehen & Kultur"
+    },
+    {
+      "id": "teatro",
+      "text": "o teatro",
+      "de": "das Theater",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Ausgehen & Kultur"
+    },
+    {
+      "id": "festa",
+      "text": "a festa",
+      "de": "das Fest, die Party",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Ausgehen & Kultur"
+    },
+    {
+      "id": "carnaval",
+      "text": "o carnaval",
+      "de": "der Karneval",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Ausgehen & Kultur"
+    },
+    {
+      "id": "samba",
+      "text": "o samba",
+      "de": "der Samba",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Ausgehen & Kultur"
+    },
+    {
+      "id": "barzinho",
+      "text": "o barzinho",
+      "de": "die (kleine) Bar",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Treffpunkt nach der Arbeit.",
+      "category": "Ausgehen & Kultur"
+    },
+    {
+      "id": "jogo",
+      "text": "o jogo",
+      "de": "das Spiel",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Ausgehen & Kultur"
+    },
+    {
+      "id": "estadio",
+      "text": "o estádio",
+      "de": "das Stadion",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Ausgehen & Kultur"
+    },
+    {
+      "id": "fazer",
+      "text": "fazer",
+      "de": "machen, tun",
+      "pos": "verb",
+      "note": "Unregelmässig: eu faço, você faz",
+      "category": "Verben",
+      "grammar": [
+        "wetter"
+      ]
+    },
+    {
+      "id": "descansar",
+      "text": "descansar",
+      "de": "sich ausruhen",
+      "pos": "verb",
+      "category": "Verben"
+    },
+    {
+      "id": "aproveitar",
+      "text": "aproveitar",
+      "de": "geniessen, nutzen",
+      "pos": "verb",
+      "note": "Aproveite! = Viel Spass! / Geniess es!",
+      "category": "Verben"
+    },
+    {
+      "id": "dancar",
+      "text": "dançar",
+      "de": "tanzen",
+      "pos": "verb",
+      "category": "Verben"
+    },
+    {
+      "id": "jogar",
+      "text": "jogar",
+      "de": "spielen (Spiel, Sport)",
+      "pos": "verb",
+      "category": "Verben"
+    },
+    {
+      "id": "assistir",
+      "text": "assistir",
+      "de": "anschauen, zuschauen",
+      "pos": "verb",
+      "note": "assistir a um jogo / um filme",
+      "category": "Verben"
+    },
+    {
+      "id": "abrir",
+      "text": "abrir",
+      "de": "öffnen",
+      "pos": "verb",
+      "category": "Verben"
+    },
+    {
+      "id": "fechar",
+      "text": "fechar",
+      "de": "schliessen",
+      "pos": "verb",
+      "category": "Verben"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "Como está o tempo hoje?",
+      "de": "Wie ist das Wetter heute?",
+      "words": [
+        "como",
+        "tempo",
+        "hoje"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s02",
+      "text": "Hoje faz sol e muito calor.",
+      "de": "Heute scheint die Sonne und es ist sehr heiss.",
+      "words": [
+        "hoje",
+        "sol",
+        "calor",
+        "muito"
+      ],
+      "grammar": [
+        "wetter"
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "Está chovendo desde hoje de manhã.",
+      "de": "Es regnet seit heute Morgen.",
+      "words": [
+        "chover",
+        "hoje"
+      ],
+      "grammar": [
+        "wetter"
+      ]
+    },
+    {
+      "id": "s04",
+      "text": "Vai chover amanhã?",
+      "de": "Wird es morgen regnen?",
+      "words": [
+        "chover",
+        "amanha",
+        "ir"
+      ],
+      "grammar": [
+        "ir_futuro",
+        "wetter"
+      ]
+    },
+    {
+      "id": "s05",
+      "text": "Leve um guarda-chuva, vai ter chuva.",
+      "de": "Nimm einen Regenschirm mit, es wird Regen geben.",
+      "words": [
+        "chuva",
+        "levar"
+      ],
+      "grammar": [
+        "ir_futuro"
+      ]
+    },
+    {
+      "id": "s06",
+      "text": "Hoje está nublado e úmido.",
+      "de": "Heute ist es bewölkt und schwül.",
+      "words": [
+        "hoje",
+        "nublado",
+        "umido"
+      ],
+      "grammar": [
+        "wetter"
+      ]
+    },
+    {
+      "id": "s07",
+      "text": "Tem uma nuvem preta no céu.",
+      "de": "Am Himmel ist eine schwarze Wolke.",
+      "words": [
+        "nuvem",
+        "preto"
+      ],
+      "grammar": [
+        "ter_haben"
+      ]
+    },
+    {
+      "id": "s08",
+      "text": "Está ventando muito na praia.",
+      "de": "Am Strand ist es sehr windig.",
+      "words": [
+        "muito",
+        "praia"
+      ],
+      "grammar": [
+        "wetter"
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "O vento está forte hoje.",
+      "de": "Der Wind ist heute stark.",
+      "words": [
+        "vento",
+        "hoje"
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Qual é a temperatura agora?",
+      "de": "Wie viel Grad hat es jetzt?",
+      "words": [
+        "qual",
+        "temperatura"
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Está fazendo trinta e cinco graus!",
+      "de": "Es hat fünfunddreissig Grad!",
+      "words": [
+        "num_30",
+        "num_5",
+        "grau"
+      ],
+      "grammar": [
+        "wetter"
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "No inverno faz frio no sul do Brasil.",
+      "de": "Im Winter ist es im Süden Brasiliens kalt.",
+      "words": [
+        "frio",
+        "brasil"
+      ],
+      "grammar": [
+        "wetter",
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Cuidado, vem uma tempestade.",
+      "de": "Vorsicht, ein Gewitter kommt.",
+      "words": [
+        "tempestade",
+        "vir"
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Vamos à praia hoje?",
+      "de": "Gehen wir heute an den Strand?",
+      "words": [
+        "praia",
+        "hoje",
+        "ir"
+      ],
+      "grammar": [
+        "ir_futuro",
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "A água do mar está quente.",
+      "de": "Das Meerwasser ist warm.",
+      "words": [
+        "agua",
+        "mar",
+        "quente"
+      ],
+      "grammar": [
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "A areia está muito quente.",
+      "de": "Der Sand ist sehr heiss.",
+      "words": [
+        "areia",
+        "muito",
+        "quente"
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "As ondas estão grandes hoje.",
+      "de": "Die Wellen sind heute hoch.",
+      "words": [
+        "onda",
+        "grande",
+        "hoje"
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "É perigoso nadar aqui?",
+      "de": "Ist es gefährlich, hier zu schwimmen?",
+      "words": [
+        "perigoso",
+        "nadar",
+        "aqui"
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Eu nado todo dia de manhã.",
+      "de": "Ich schwimme jeden Morgen.",
+      "words": [
+        "eu",
+        "nadar"
+      ],
+      "grammar": [
+        "praesens"
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "Nade perto do salva-vidas.",
+      "de": "Schwimm in der Nähe des Rettungsschwimmers.",
+      "words": [
+        "nadar",
+        "perto",
+        "salva_vidas"
+      ],
+      "grammar": [
+        "anweisungen"
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "Quanto custa alugar um guarda-sol e duas cadeiras de praia?",
+      "de": "Was kostet es, einen Sonnenschirm und zwei Strandstühle zu mieten?",
+      "words": [
+        "alugar",
+        "guarda_sol",
+        "cadeira_praia",
+        "num_2"
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "Esqueci a minha canga no hotel.",
+      "de": "Ich habe mein Strandtuch im Hotel vergessen.",
+      "words": [
+        "canga",
+        "hotel"
+      ],
+      "grammar": [
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "Você sabe surfar?",
+      "de": "Kannst du surfen?",
+      "words": [
+        "voce",
+        "surfar"
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "Eles surfam muito bem.",
+      "de": "Sie surfen sehr gut.",
+      "words": [
+        "eles",
+        "muito",
+        "bem"
+      ],
+      "grammar": [
+        "praesens"
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "Vamos mergulhar perto da ilha.",
+      "de": "Wir gehen in der Nähe der Insel tauchen.",
+      "words": [
+        "mergulhar",
+        "perto",
+        "ilha",
+        "ir"
+      ],
+      "grammar": [
+        "ir_futuro"
+      ]
+    },
+    {
+      "id": "s26",
+      "text": "O passeio de barco sai às nove.",
+      "de": "Der Bootsausflug fährt um neun ab.",
+      "words": [
+        "passeio",
+        "barco",
+        "num_9",
+        "sair"
+      ]
+    },
+    {
+      "id": "s27",
+      "text": "Vamos fazer uma trilha na montanha.",
+      "de": "Wir machen eine Wanderung in den Bergen.",
+      "words": [
+        "fazer",
+        "trilha",
+        "montanha",
+        "ir"
+      ],
+      "grammar": [
+        "ir_futuro"
+      ]
+    },
+    {
+      "id": "s28",
+      "text": "A trilha até a cachoeira leva duas horas.",
+      "de": "Der Weg zum Wasserfall dauert zwei Stunden.",
+      "words": [
+        "trilha",
+        "cachoeira",
+        "levar",
+        "num_2",
+        "hora"
+      ]
+    },
+    {
+      "id": "s29",
+      "text": "O rio é muito bonito e limpo.",
+      "de": "Der Fluss ist sehr schön und sauber.",
+      "words": [
+        "rio",
+        "muito",
+        "bonito",
+        "limpo"
+      ]
+    },
+    {
+      "id": "s30",
+      "text": "Dá para nadar no lago?",
+      "de": "Kann man im See schwimmen?",
+      "words": [
+        "nadar",
+        "lago"
+      ],
+      "grammar": [
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s31",
+      "text": "A floresta é cheia de animais.",
+      "de": "Der Wald ist voller Tiere.",
+      "words": [
+        "floresta"
+      ]
+    },
+    {
+      "id": "s32",
+      "text": "A gente vai ver o pôr do sol na praia.",
+      "de": "Wir schauen uns den Sonnenuntergang am Strand an.",
+      "words": [
+        "a_gente",
+        "por_do_sol",
+        "praia",
+        "ir"
+      ],
+      "grammar": [
+        "a_gente",
+        "ir_futuro"
+      ]
+    },
+    {
+      "id": "s33",
+      "text": "O parque fecha às seis.",
+      "de": "Der Park schliesst um sechs.",
+      "words": [
+        "parque",
+        "fechar",
+        "num_6"
+      ],
+      "grammar": [
+        "praesens"
+      ]
+    },
+    {
+      "id": "s34",
+      "text": "O museu abre às dez.",
+      "de": "Das Museum öffnet um zehn.",
+      "words": [
+        "museu",
+        "abrir",
+        "num_10"
+      ],
+      "grammar": [
+        "praesens"
+      ]
+    },
+    {
+      "id": "s35",
+      "text": "Tem show de samba hoje à noite.",
+      "de": "Heute Abend gibt es ein Samba-Konzert.",
+      "words": [
+        "show",
+        "samba",
+        "hoje",
+        "noite"
+      ],
+      "grammar": [
+        "ter_haben"
+      ]
+    },
+    {
+      "id": "s36",
+      "text": "Onde eu compro ingressos?",
+      "de": "Wo kaufe ich Eintrittskarten?",
+      "words": [
+        "onde",
+        "eu",
+        "comprar",
+        "ingresso"
+      ],
+      "grammar": [
+        "praesens"
+      ]
+    },
+    {
+      "id": "s37",
+      "text": "Dois ingressos para o show, por favor.",
+      "de": "Zwei Karten für das Konzert, bitte.",
+      "words": [
+        "num_2",
+        "ingresso",
+        "show",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s38",
+      "text": "Vamos ao cinema ou ao teatro?",
+      "de": "Gehen wir ins Kino oder ins Theater?",
+      "words": [
+        "cinema",
+        "teatro",
+        "ir"
+      ],
+      "grammar": [
+        "ir_futuro",
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s39",
+      "text": "Sábado tem uma festa na casa dele.",
+      "de": "Am Samstag ist eine Party bei ihm.",
+      "words": [
+        "festa"
+      ],
+      "grammar": [
+        "ter_haben"
+      ]
+    },
+    {
+      "id": "s40",
+      "text": "O carnaval é em fevereiro.",
+      "de": "Der Karneval ist im Februar.",
+      "words": [
+        "carnaval"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s41",
+      "text": "Você dança samba?",
+      "de": "Tanzt du Samba?",
+      "words": [
+        "voce",
+        "dancar",
+        "samba"
+      ],
+      "grammar": [
+        "praesens"
+      ]
+    },
+    {
+      "id": "s42",
+      "text": "Eu danço muito mal!",
+      "de": "Ich tanze sehr schlecht!",
+      "words": [
+        "eu",
+        "dancar",
+        "muito"
+      ],
+      "grammar": [
+        "praesens"
+      ]
+    },
+    {
+      "id": "s43",
+      "text": "Vamos tomar uma cerveja num barzinho?",
+      "de": "Trinken wir ein Bier in einer Bar?",
+      "words": [
+        "tomar",
+        "cerveja",
+        "barzinho",
+        "ir"
+      ],
+      "grammar": [
+        "ir_futuro"
+      ]
+    },
+    {
+      "id": "s44",
+      "text": "Você quer assistir ao jogo no estádio?",
+      "de": "Willst du dir das Spiel im Stadion anschauen?",
+      "words": [
+        "voce",
+        "assistir",
+        "jogo",
+        "estadio"
+      ],
+      "grammar": [
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s45",
+      "text": "Eu jogo futebol com os amigos.",
+      "de": "Ich spiele mit Freunden Fussball.",
+      "words": [
+        "eu",
+        "jogar",
+        "futebol",
+        "com"
+      ],
+      "grammar": [
+        "praesens"
+      ]
+    },
+    {
+      "id": "s46",
+      "text": "Hoje eu só quero descansar.",
+      "de": "Heute will ich mich nur ausruhen.",
+      "words": [
+        "hoje",
+        "eu",
+        "descansar"
+      ]
+    },
+    {
+      "id": "s47",
+      "text": "Aproveite as férias!",
+      "de": "Geniess den Urlaub!",
+      "words": [
+        "aproveitar",
+        "ferias"
+      ],
+      "grammar": [
+        "anweisungen"
+      ]
+    },
+    {
+      "id": "s48",
+      "text": "O que você vai fazer no fim de semana?",
+      "de": "Was machst du am Wochenende?",
+      "words": [
+        "o_que",
+        "voce",
+        "fazer",
+        "ir"
+      ],
+      "grammar": [
+        "ir_futuro"
+      ]
+    },
+    {
+      "id": "s49",
+      "text": "Eu leio um livro na praia.",
+      "de": "Ich lese am Strand ein Buch.",
+      "words": [
+        "eu",
+        "ler",
+        "praia"
+      ],
+      "grammar": [
+        "praesens"
+      ]
+    },
+    {
+      "id": "s50",
+      "text": "Vocês moram perto do mar?",
+      "de": "Wohnt ihr in der Nähe des Meeres?",
+      "words": [
+        "morar",
+        "perto",
+        "mar"
+      ],
+      "grammar": [
+        "praesens",
+        "praep_artikel"
+      ]
+    },
+    {
+      "id": "s51",
+      "text": "Nós aproveitamos muito o sol.",
+      "de": "Wir geniessen die Sonne sehr.",
+      "words": [
+        "nos",
+        "aproveitar",
+        "muito",
+        "sol"
+      ],
+      "grammar": [
+        "praesens"
+      ]
+    },
+    {
+      "id": "s52",
+      "text": "O tempo passa rápido nas férias.",
+      "de": "Im Urlaub vergeht die Zeit schnell.",
+      "words": [
+        "tempo",
+        "ferias"
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "praesens",
+      "title": "Regelmässige Verben im Präsens",
+      "explanation": "Man nimmt die Endung -ar, -er oder -ir weg und hängt an:\n\nfalar (sprechen):  eu falo, você/ele fala, nós falamos, vocês/eles falam\ncomer (essen):  eu como, você/ele come, nós comemos, vocês/eles comem\nabrir (öffnen):  eu abro, você/ele abre, nós abrimos, vocês/eles abrem\n\nDie eu-Form endet immer auf -o.\nDa você, ele, ela und a gente dieselbe Form haben, braucht man in Brasilien nur vier Formen.",
+      "examples": [
+        {
+          "text": "Eu nado no mar.",
+          "de": "Ich schwimme im Meer."
+        },
+        {
+          "text": "Você mora aqui?",
+          "de": "Wohnst du hier?"
+        },
+        {
+          "text": "Nós comemos peixe.",
+          "de": "Wir essen Fisch."
+        },
+        {
+          "text": "A loja abre às nove.",
+          "de": "Der Laden öffnet um neun."
+        }
+      ]
+    },
+    {
+      "id": "wetter",
+      "title": "Über das Wetter reden",
+      "explanation": "• fazer + Nomen: Faz sol. Faz calor. Faz frio. (Es ist sonnig/heiss/kalt.)\n• estar + Adjektiv: Está nublado. Está quente.\n• Was gerade passiert: estar + Verlaufsform (-ando, -endo, -indo)\n  chover → Está chovendo. (Es regnet gerade.)\n  ventar → Está ventando. (Es ist windig.)\n  fazer → Está fazendo calor.\n\nDiese Verlaufsform benutzt man in Brasilien für alles, was gerade geschieht: Estou estudando. (Ich lerne gerade.)",
+      "examples": [
+        {
+          "text": "Hoje faz muito calor.",
+          "de": "Heute ist es sehr heiss."
+        },
+        {
+          "text": "Está chovendo muito.",
+          "de": "Es regnet stark."
+        },
+        {
+          "text": "O que você está fazendo?",
+          "de": "Was machst du gerade?"
+        }
+      ]
+    }
+  ]
+}
