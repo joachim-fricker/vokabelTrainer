@@ -1,0 +1,1177 @@
+{
+  "id": "es-AR-08",
+  "language": "es-AR",
+  "order": 8,
+  "title": "Smalltalk: Herkunft, Familie, Beruf",
+  "titleTarget": "Charla: origen, familia, trabajo",
+  "words": [
+    {
+      "id": "ser",
+      "text": "ser",
+      "de": "sein (Herkunft, Eigenschaft, Beruf)",
+      "pos": "verb",
+      "note": "yo soy, vos sos, usted es, nosotros somos",
+      "category": "Herkunft & Wohnort",
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "estar",
+      "text": "estar",
+      "de": "sein (Zustand, Ort)",
+      "pos": "verb",
+      "note": "yo estoy, vos estás, usted está",
+      "category": "Herkunft & Wohnort",
+      "grammar": [
+        "ser_estar",
+        "estar_estado"
+      ]
+    },
+    {
+      "id": "de_donde",
+      "text": "¿de dónde?",
+      "de": "woher?",
+      "pos": "adverb",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "alemania",
+      "text": "Alemania",
+      "de": "Deutschland",
+      "pos": "noun",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "argentina",
+      "text": "Argentina",
+      "de": "Argentinien",
+      "pos": "noun",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "argentino",
+      "text": "argentino",
+      "de": "argentinisch; Argentinier",
+      "pos": "adjective",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "pais",
+      "text": "el país",
+      "de": "das Land",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "ciudad",
+      "text": "la ciudad",
+      "de": "die Stadt",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "pueblo",
+      "text": "el pueblo",
+      "de": "das Dorf, die Kleinstadt",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "barrio",
+      "text": "el barrio",
+      "de": "das Stadtviertel",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "vivir",
+      "text": "vivir",
+      "de": "wohnen, leben",
+      "pos": "verb",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "extranjero",
+      "text": "extranjero",
+      "de": "ausländisch; Ausländer",
+      "pos": "adjective",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "porteno",
+      "text": "porteño",
+      "de": "aus Buenos Aires",
+      "pos": "adjective",
+      "note": "So nennt man die Einwohner von Buenos Aires.",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "familia",
+      "text": "la familia",
+      "de": "die Familie",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Familie"
+    },
+    {
+      "id": "padre",
+      "text": "el padre",
+      "de": "der Vater",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Umgangssprachlich: papá.",
+      "category": "Familie"
+    },
+    {
+      "id": "madre",
+      "text": "la madre",
+      "de": "die Mutter",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Umgangssprachlich: mamá.",
+      "category": "Familie"
+    },
+    {
+      "id": "papas",
+      "text": "los papás",
+      "de": "die Eltern",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Auch: los padres.",
+      "category": "Familie"
+    },
+    {
+      "id": "hijo",
+      "text": "el hijo",
+      "de": "der Sohn",
+      "pos": "noun",
+      "gender": "m",
+      "note": "los hijos = die Kinder (Söhne und Töchter)",
+      "category": "Familie"
+    },
+    {
+      "id": "hija",
+      "text": "la hija",
+      "de": "die Tochter",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Familie"
+    },
+    {
+      "id": "hermano",
+      "text": "el hermano",
+      "de": "der Bruder",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Familie"
+    },
+    {
+      "id": "hermana",
+      "text": "la hermana",
+      "de": "die Schwester",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Familie"
+    },
+    {
+      "id": "esposo",
+      "text": "el esposo",
+      "de": "der Ehemann",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Ehefrau: la esposa; oft auch mi marido / mi mujer.",
+      "category": "Familie"
+    },
+    {
+      "id": "novio",
+      "text": "el novio",
+      "de": "der (feste) Freund",
+      "pos": "noun",
+      "gender": "m",
+      "note": "la novia = die Freundin",
+      "category": "Familie"
+    },
+    {
+      "id": "amigo",
+      "text": "el amigo",
+      "de": "der Freund (Kumpel)",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Familie"
+    },
+    {
+      "id": "abuelo",
+      "text": "el abuelo",
+      "de": "der Grossvater",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Familie"
+    },
+    {
+      "id": "nieto",
+      "text": "el nieto",
+      "de": "der Enkel",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Familie"
+    },
+    {
+      "id": "casado",
+      "text": "casado",
+      "de": "verheiratet",
+      "pos": "adjective",
+      "category": "Familie"
+    },
+    {
+      "id": "soltero",
+      "text": "soltero",
+      "de": "ledig",
+      "pos": "adjective",
+      "category": "Familie"
+    },
+    {
+      "id": "chicos",
+      "text": "los chicos",
+      "de": "die Kinder; die Jungs",
+      "pos": "noun",
+      "gender": "m",
+      "note": "In Argentinien auch: los nenes.",
+      "category": "Familie"
+    },
+    {
+      "id": "trabajo",
+      "text": "el trabajo",
+      "de": "die Arbeit",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Beruf & Studium"
+    },
+    {
+      "id": "laburo",
+      "text": "el laburo",
+      "de": "die Arbeit (umgangssprachlich)",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Typisch argentinisch: laburar = arbeiten.",
+      "category": "Beruf & Studium"
+    },
+    {
+      "id": "trabajar",
+      "text": "trabajar",
+      "de": "arbeiten",
+      "pos": "verb",
+      "category": "Beruf & Studium"
+    },
+    {
+      "id": "empresa",
+      "text": "la empresa",
+      "de": "die Firma",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Beruf & Studium"
+    },
+    {
+      "id": "ingeniero",
+      "text": "el ingeniero",
+      "de": "der Ingenieur",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Beruf & Studium"
+    },
+    {
+      "id": "profesor",
+      "text": "el profesor",
+      "de": "der Lehrer",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Lehrerin: la profesora.",
+      "category": "Beruf & Studium"
+    },
+    {
+      "id": "jubilado",
+      "text": "jubilado",
+      "de": "in Rente; Rentner",
+      "pos": "adjective",
+      "category": "Beruf & Studium"
+    },
+    {
+      "id": "estudiar",
+      "text": "estudiar",
+      "de": "studieren; lernen",
+      "pos": "verb",
+      "category": "Beruf & Studium"
+    },
+    {
+      "id": "estudiante",
+      "text": "el estudiante",
+      "de": "der Student",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Beruf & Studium"
+    },
+    {
+      "id": "informatico",
+      "text": "el informático",
+      "de": "der Informatiker",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Beruf & Studium"
+    },
+    {
+      "id": "vacaciones",
+      "text": "las vacaciones",
+      "de": "der Urlaub, die Ferien",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Beruf & Studium"
+    },
+    {
+      "id": "viaje",
+      "text": "el viaje",
+      "de": "die Reise",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Beruf & Studium"
+    },
+    {
+      "id": "ano",
+      "text": "el año",
+      "de": "das Jahr",
+      "pos": "noun",
+      "gender": "m",
+      "note": "¿Cuántos años tenés? = Wie alt bist du?",
+      "category": "Smalltalk"
+    },
+    {
+      "id": "nombre",
+      "text": "el nombre",
+      "de": "der Name",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Smalltalk"
+    },
+    {
+      "id": "gustar",
+      "text": "gustar",
+      "de": "gefallen",
+      "pos": "verb",
+      "note": "Me gusta … / Me gustan …",
+      "category": "Smalltalk",
+      "grammar": [
+        "gustar"
+      ]
+    },
+    {
+      "id": "encantar",
+      "text": "encantar",
+      "de": "sehr gefallen, lieben",
+      "pos": "verb",
+      "note": "Me encanta. = Ich liebe es.",
+      "category": "Smalltalk",
+      "grammar": [
+        "gustar"
+      ]
+    },
+    {
+      "id": "primera_vez",
+      "text": "la primera vez",
+      "de": "das erste Mal",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Smalltalk"
+    },
+    {
+      "id": "conocer",
+      "text": "conocer",
+      "de": "kennen; kennenlernen",
+      "pos": "verb",
+      "note": "yo conozco, vos conocés",
+      "category": "Smalltalk"
+    },
+    {
+      "id": "idioma",
+      "text": "el idioma",
+      "de": "die Sprache",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Männlich, obwohl auf -a!",
+      "category": "Smalltalk"
+    },
+    {
+      "id": "ingles",
+      "text": "inglés",
+      "de": "Englisch",
+      "pos": "noun",
+      "category": "Smalltalk"
+    },
+    {
+      "id": "che",
+      "text": "che",
+      "de": "he!, du (Anrede)",
+      "pos": "interjection",
+      "note": "Typisch argentinisch – daher der Spitzname von „Che“ Guevara.",
+      "category": "Smalltalk"
+    },
+    {
+      "id": "copado",
+      "text": "copado",
+      "de": "toll, cool",
+      "pos": "adjective",
+      "note": "Argentinisch.",
+      "category": "Smalltalk"
+    },
+    {
+      "id": "re",
+      "text": "re",
+      "de": "total, sehr",
+      "pos": "adverb",
+      "note": "Umgangssprachlich: re lindo, re bien.",
+      "category": "Smalltalk"
+    },
+    {
+      "id": "buena_onda",
+      "text": "buena onda",
+      "de": "nett, sympathisch",
+      "pos": "phrase",
+      "note": "Wörtlich „gute Welle“.",
+      "category": "Smalltalk"
+    },
+    {
+      "id": "contento",
+      "text": "contento",
+      "de": "froh, zufrieden",
+      "pos": "adjective",
+      "category": "Smalltalk"
+    },
+    {
+      "id": "simpatico",
+      "text": "simpático",
+      "de": "sympathisch, freundlich",
+      "pos": "adjective",
+      "category": "Smalltalk"
+    },
+    {
+      "id": "mi",
+      "text": "mi, mis",
+      "de": "mein(e)",
+      "pos": "pronoun",
+      "category": "Smalltalk",
+      "grammar": [
+        "posesivos"
+      ]
+    },
+    {
+      "id": "tu",
+      "text": "tu, tus",
+      "de": "dein(e)",
+      "pos": "pronoun",
+      "note": "Ohne Akzent! (tú mit Akzent = du, in Argentinien kaum benutzt)",
+      "category": "Smalltalk",
+      "grammar": [
+        "posesivos"
+      ]
+    },
+    {
+      "id": "su",
+      "text": "su, sus",
+      "de": "sein(e), ihr(e), Ihr(e)",
+      "pos": "pronoun",
+      "category": "Smalltalk",
+      "grammar": [
+        "posesivos"
+      ]
+    },
+    {
+      "id": "nuestro",
+      "text": "nuestro, nuestra",
+      "de": "unser(e)",
+      "pos": "pronoun",
+      "category": "Smalltalk",
+      "grammar": [
+        "posesivos"
+      ]
+    },
+    {
+      "id": "nosotros",
+      "text": "nosotros",
+      "de": "wir",
+      "pos": "pronoun",
+      "note": "Frauen unter sich: nosotras.",
+      "category": "Smalltalk"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "¿De dónde sos?",
+      "de": "Woher kommst du?",
+      "words": [
+        "de_donde",
+        "ser"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s02",
+      "text": "Soy de Alemania.",
+      "de": "Ich komme aus Deutschland.",
+      "words": [
+        "ser",
+        "alemania"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "Soy alemán, de Múnich.",
+      "de": "Ich bin Deutscher, aus München.",
+      "words": [
+        "aleman",
+        "ser"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s04",
+      "text": "¿Vos sos argentino?",
+      "de": "Bist du Argentinier?",
+      "words": [
+        "argentino",
+        "vos",
+        "ser"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s05",
+      "text": "Sí, soy porteño.",
+      "de": "Ja, ich bin aus Buenos Aires.",
+      "words": [
+        "porteno",
+        "si"
+      ]
+    },
+    {
+      "id": "s06",
+      "text": "Argentina es un país enorme.",
+      "de": "Argentinien ist ein riesiges Land.",
+      "words": [
+        "argentina",
+        "pais"
+      ]
+    },
+    {
+      "id": "s07",
+      "text": "¿En qué ciudad vivís?",
+      "de": "In welcher Stadt wohnst du?",
+      "words": [
+        "ciudad",
+        "vivir"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s08",
+      "text": "Vivo en un pueblo chico.",
+      "de": "Ich wohne in einem kleinen Dorf.",
+      "words": [
+        "pueblo",
+        "vivir",
+        "chico"
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "Mi barrio es muy tranquilo.",
+      "de": "Mein Viertel ist sehr ruhig.",
+      "words": [
+        "barrio",
+        "mi",
+        "muy"
+      ],
+      "grammar": [
+        "posesivos"
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "¿Sos extranjero?",
+      "de": "Bist du Ausländer?",
+      "words": [
+        "extranjero",
+        "ser"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Estoy de vacaciones.",
+      "de": "Ich bin im Urlaub.",
+      "words": [
+        "vacaciones",
+        "estar"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Estamos en Buenos Aires por dos semanas.",
+      "de": "Wir sind für zwei Wochen in Buenos Aires.",
+      "words": [
+        "estar",
+        "dos"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Es mi primera vez en Argentina.",
+      "de": "Ich bin zum ersten Mal in Argentinien.",
+      "words": [
+        "primera_vez",
+        "argentina",
+        "mi"
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Este es mi esposo.",
+      "de": "Das ist mein Mann.",
+      "words": [
+        "esposo",
+        "mi"
+      ],
+      "grammar": [
+        "posesivos"
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Tengo un hijo y una hija.",
+      "de": "Ich habe einen Sohn und eine Tochter.",
+      "words": [
+        "hijo",
+        "hija"
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "¿Estás casado?",
+      "de": "Bist du verheiratet?",
+      "words": [
+        "casado",
+        "estar"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "No, soy soltero.",
+      "de": "Nein, ich bin ledig.",
+      "words": [
+        "soltero",
+        "no",
+        "ser"
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Mi familia vive en Alemania.",
+      "de": "Meine Familie lebt in Deutschland.",
+      "words": [
+        "familia",
+        "mi",
+        "alemania",
+        "vivir"
+      ],
+      "grammar": [
+        "posesivos"
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Mi padre es ingeniero.",
+      "de": "Mein Vater ist Ingenieur.",
+      "words": [
+        "padre",
+        "ingeniero",
+        "mi"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "Mi madre está jubilada.",
+      "de": "Meine Mutter ist in Rente.",
+      "words": [
+        "madre",
+        "jubilado",
+        "mi"
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "Mis papás viven en el campo.",
+      "de": "Meine Eltern wohnen auf dem Land.",
+      "words": [
+        "papas",
+        "mi",
+        "vivir"
+      ],
+      "grammar": [
+        "posesivos"
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "Tengo dos hermanos y una hermana.",
+      "de": "Ich habe zwei Brüder und eine Schwester.",
+      "words": [
+        "hermano",
+        "hermana",
+        "dos"
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "Mi hermano vive en Berlín.",
+      "de": "Mein Bruder wohnt in Berlin.",
+      "words": [
+        "hermano",
+        "mi",
+        "vivir"
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "Ella es mi novia.",
+      "de": "Sie ist meine Freundin.",
+      "words": [
+        "novio",
+        "mi"
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "Es un amigo de la familia.",
+      "de": "Er ist ein Freund der Familie.",
+      "words": [
+        "amigo",
+        "familia"
+      ]
+    },
+    {
+      "id": "s26",
+      "text": "Mi abuelo tiene noventa años.",
+      "de": "Mein Grossvater ist neunzig Jahre alt.",
+      "words": [
+        "abuelo",
+        "ano",
+        "mi"
+      ]
+    },
+    {
+      "id": "s27",
+      "text": "Es mi nieto.",
+      "de": "Das ist mein Enkel.",
+      "words": [
+        "nieto",
+        "mi"
+      ]
+    },
+    {
+      "id": "s28",
+      "text": "Los chicos están en la escuela.",
+      "de": "Die Kinder sind in der Schule.",
+      "words": [
+        "chicos",
+        "estar"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s29",
+      "text": "Hace un año que estudio español.",
+      "de": "Ich lerne seit einem Jahr Spanisch.",
+      "words": [
+        "ano",
+        "estudiar",
+        "espanol"
+      ]
+    },
+    {
+      "id": "s30",
+      "text": "¿Cómo es tu nombre?",
+      "de": "Wie ist dein Name?",
+      "words": [
+        "nombre",
+        "tu",
+        "como"
+      ],
+      "grammar": [
+        "posesivos"
+      ]
+    },
+    {
+      "id": "s31",
+      "text": "¿A qué te dedicás?",
+      "de": "Was machst du beruflich?",
+      "words": [
+        "que"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s32",
+      "text": "Trabajo en una empresa de software.",
+      "de": "Ich arbeite in einer Softwarefirma.",
+      "words": [
+        "trabajar",
+        "empresa"
+      ]
+    },
+    {
+      "id": "s33",
+      "text": "Soy informático.",
+      "de": "Ich bin Informatiker.",
+      "words": [
+        "informatico",
+        "ser"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s34",
+      "text": "Mi trabajo es interesante.",
+      "de": "Meine Arbeit ist interessant.",
+      "words": [
+        "trabajo",
+        "mi"
+      ],
+      "grammar": [
+        "posesivos"
+      ]
+    },
+    {
+      "id": "s35",
+      "text": "Tengo mucho laburo esta semana.",
+      "de": "Ich habe diese Woche viel Arbeit.",
+      "words": [
+        "laburo",
+        "mucho"
+      ]
+    },
+    {
+      "id": "s36",
+      "text": "Ella es profesora de inglés.",
+      "de": "Sie ist Englischlehrerin.",
+      "words": [
+        "profesor",
+        "ingles"
+      ]
+    },
+    {
+      "id": "s37",
+      "text": "Estudio español para el viaje.",
+      "de": "Ich lerne Spanisch für die Reise.",
+      "words": [
+        "estudiar",
+        "espanol",
+        "viaje"
+      ]
+    },
+    {
+      "id": "s38",
+      "text": "Mi hija es estudiante.",
+      "de": "Meine Tochter ist Studentin.",
+      "words": [
+        "hija",
+        "estudiante",
+        "mi"
+      ]
+    },
+    {
+      "id": "s39",
+      "text": "Me gusta mucho Buenos Aires.",
+      "de": "Buenos Aires gefällt mir sehr.",
+      "words": [
+        "gustar",
+        "mucho"
+      ],
+      "grammar": [
+        "gustar"
+      ]
+    },
+    {
+      "id": "s40",
+      "text": "¿Te gusta el mate?",
+      "de": "Magst du Mate?",
+      "words": [
+        "gustar",
+        "mate"
+      ],
+      "grammar": [
+        "gustar"
+      ]
+    },
+    {
+      "id": "s41",
+      "text": "Me encanta el asado.",
+      "de": "Ich liebe Asado.",
+      "words": [
+        "encantar",
+        "asado"
+      ],
+      "grammar": [
+        "gustar"
+      ]
+    },
+    {
+      "id": "s42",
+      "text": "¡Qué viaje copado!",
+      "de": "Was für eine tolle Reise!",
+      "words": [
+        "viaje",
+        "copado"
+      ]
+    },
+    {
+      "id": "s43",
+      "text": "Che, ¿vamos a tomar algo?",
+      "de": "Du, gehen wir was trinken?",
+      "words": [
+        "che",
+        "tomar"
+      ],
+      "grammar": [
+        "ir_a"
+      ]
+    },
+    {
+      "id": "s44",
+      "text": "Es re lindo.",
+      "de": "Es ist total schön.",
+      "words": [
+        "re",
+        "lindo"
+      ]
+    },
+    {
+      "id": "s45",
+      "text": "Tu hermana es muy buena onda.",
+      "de": "Deine Schwester ist sehr nett.",
+      "words": [
+        "tu",
+        "hermana",
+        "buena_onda"
+      ],
+      "grammar": [
+        "posesivos"
+      ]
+    },
+    {
+      "id": "s46",
+      "text": "Estoy muy contento.",
+      "de": "Ich bin sehr froh.",
+      "words": [
+        "contento",
+        "estar"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s47",
+      "text": "Él es muy simpático.",
+      "de": "Er ist sehr sympathisch.",
+      "words": [
+        "simpatico",
+        "ser"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s48",
+      "text": "¿Querés conocer a mi familia?",
+      "de": "Willst du meine Familie kennenlernen?",
+      "words": [
+        "conocer",
+        "familia",
+        "mi"
+      ]
+    },
+    {
+      "id": "s49",
+      "text": "El español es un idioma lindo.",
+      "de": "Spanisch ist eine schöne Sprache.",
+      "words": [
+        "idioma",
+        "espanol"
+      ]
+    },
+    {
+      "id": "s50",
+      "text": "Hablo alemán e inglés.",
+      "de": "Ich spreche Deutsch und Englisch.",
+      "words": [
+        "aleman",
+        "ingles",
+        "hablar"
+      ]
+    },
+    {
+      "id": "s51",
+      "text": "Nosotros somos de Alemania.",
+      "de": "Wir sind aus Deutschland.",
+      "words": [
+        "nosotros",
+        "alemania",
+        "ser"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s52",
+      "text": "Nuestra casa está cerca del río.",
+      "de": "Unser Haus ist in der Nähe des Flusses.",
+      "words": [
+        "nuestro",
+        "estar",
+        "cerca"
+      ],
+      "grammar": [
+        "posesivos"
+      ]
+    },
+    {
+      "id": "s53",
+      "text": "¿Usted es el padre de Ana?",
+      "de": "Sind Sie der Vater von Ana?",
+      "words": [
+        "usted",
+        "padre"
+      ],
+      "grammar": [
+        "vos_usted"
+      ]
+    },
+    {
+      "id": "s54",
+      "text": "Su hijo habla muy bien español.",
+      "de": "Ihr Sohn spricht sehr gut Spanisch.",
+      "words": [
+        "su",
+        "hijo"
+      ],
+      "grammar": [
+        "posesivos"
+      ]
+    },
+    {
+      "id": "s55",
+      "text": "¿Dónde está tu hotel?",
+      "de": "Wo ist dein Hotel?",
+      "words": [
+        "tu",
+        "hotel",
+        "estar"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s56",
+      "text": "Mi esposa y yo estamos de viaje.",
+      "de": "Meine Frau und ich sind auf Reisen.",
+      "words": [
+        "esposo",
+        "viaje",
+        "mi"
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "ser_estar",
+      "title": "ser oder estar?",
+      "explanation": "Beide heissen „sein“.\n\nser – was jemand oder etwas IST (dauerhaft):\n• Herkunft: Soy de Alemania.\n• Beruf: Soy informático.\n• Eigenschaft: Es simpático.\n• Uhrzeit, Preis: Son las tres. Es caro.\n\nestar – WO und WIE etwas gerade ist:\n• Ort: Estoy en Buenos Aires. ¿Dónde está el hotel?\n• Zustand: Estoy cansado. Está cerrado.\n• Familienstand meist: Estoy casado.\n\nser: soy, sos, es, somos, son\nestar: estoy, estás, está, estamos, están",
+      "examples": [
+        {
+          "text": "Soy alemán, pero estoy en Argentina.",
+          "de": "Ich bin Deutscher, aber ich bin in Argentinien."
+        },
+        {
+          "text": "La sopa es rica, pero está fría.",
+          "de": "Die Suppe ist lecker, aber sie ist kalt."
+        }
+      ]
+    },
+    {
+      "id": "posesivos",
+      "title": "mi, tu, su – Possessivbegleiter",
+      "explanation": "• mi / mis – mein(e)\n• tu / tus – dein(e)  (zu vos ebenfalls tu!)\n• su / sus – sein(e), ihr(e), Ihr(e), euer/eure (ustedes)\n• nuestro / nuestra / nuestros / nuestras – unser(e)\n\nmi, tu, su ändern sich nur im Plural: mi hermano – mis hermanos.\nnuestro richtet sich auch nach dem Geschlecht: nuestra casa.\n\nWeil su vieldeutig ist, sagt man oft: la casa de él / de ella / de usted.",
+      "examples": [
+        {
+          "text": "Mis papás y mi hermana",
+          "de": "Meine Eltern und meine Schwester"
+        },
+        {
+          "text": "¿Es su valija?",
+          "de": "Ist das Ihr Koffer?"
+        }
+      ]
+    },
+    {
+      "id": "gustar",
+      "title": "me gusta – mir gefällt",
+      "explanation": "gustar funktioniert wie doler: Das, was gefällt, ist das Subjekt.\n• Me gusta el mate. – Ich mag Mate. (Singular)\n• Me gustan las empanadas. – Ich mag Empanadas. (Plural)\n• Me gusta viajar. – Ich reise gern. (mit Verb immer gusta)\n\nPronomen: me, te, le, nos, les.\nVerstärkt: Me gusta mucho. / Me encanta. (ich liebe es)\nVerneint: No me gusta.",
+      "examples": [
+        {
+          "text": "¿Te gusta Buenos Aires?",
+          "de": "Gefällt dir Buenos Aires?"
+        },
+        {
+          "text": "Nos encantan los alfajores.",
+          "de": "Wir lieben Alfajores."
+        }
+      ]
+    }
+  ]
+}

@@ -33,14 +33,17 @@ class MainActivity : ComponentActivity() {
         viewModelFactory {
             initializer {
                 val app = application as VokabelApp
-                MainViewModel(app.repository, app.practiceRepository, app.statsRepository, app.speaker)
+                MainViewModel(app.repository, app.practiceRepository, app.statsRepository, app.speaker, app.prefs)
             }
         }
     }
 
     private val videoViewModel: VideoViewModel by viewModels {
         viewModelFactory {
-            initializer { VideoViewModel((application as VokabelApp).videoRepository) }
+            initializer {
+                val app = application as VokabelApp
+                VideoViewModel(app.videoRepository, app.prefs)
+            }
         }
     }
 

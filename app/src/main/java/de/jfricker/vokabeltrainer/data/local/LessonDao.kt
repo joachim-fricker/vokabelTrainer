@@ -48,10 +48,11 @@ interface LessonDao {
             (SELECT COUNT(DISTINCT p.wordKey) FROM progress p JOIN word w ON w.wordKey = p.wordKey
                 WHERE w.lessonId = lesson.id) AS practicedCount
         FROM lesson
-        ORDER BY language, sortOrder
+        WHERE language = :lang
+        ORDER BY sortOrder
         """
     )
-    fun observeLessons(): Flow<List<LessonSummary>>
+    fun observeLessons(lang: String): Flow<List<LessonSummary>>
 
     @Query("SELECT * FROM lesson WHERE id = :id")
     fun observeLesson(id: String): Flow<LessonEntity?>

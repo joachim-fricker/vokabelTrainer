@@ -1,0 +1,1039 @@
+{
+  "id": "es-AR-09",
+  "language": "es-AR",
+  "order": 9,
+  "title": "Wetter, Strand & Freizeit",
+  "titleTarget": "Clima, playa y tiempo libre",
+  "words": [
+    {
+      "id": "clima",
+      "text": "el clima",
+      "de": "das Klima; das Wetter",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Männlich, obwohl auf -a!",
+      "category": "Wetter & Jahreszeiten"
+    },
+    {
+      "id": "tiempo",
+      "text": "el tiempo",
+      "de": "das Wetter; die Zeit",
+      "pos": "noun",
+      "gender": "m",
+      "note": "¿Qué tiempo hace? = Wie ist das Wetter?",
+      "category": "Wetter & Jahreszeiten"
+    },
+    {
+      "id": "sol",
+      "text": "el sol",
+      "de": "die Sonne",
+      "pos": "noun",
+      "gender": "m",
+      "note": "tomar sol = sich sonnen",
+      "category": "Wetter & Jahreszeiten"
+    },
+    {
+      "id": "lluvia",
+      "text": "la lluvia",
+      "de": "der Regen",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Wetter & Jahreszeiten"
+    },
+    {
+      "id": "llover",
+      "text": "llover",
+      "de": "regnen",
+      "pos": "verb",
+      "note": "llueve = es regnet",
+      "category": "Wetter & Jahreszeiten",
+      "grammar": [
+        "clima"
+      ]
+    },
+    {
+      "id": "viento",
+      "text": "el viento",
+      "de": "der Wind",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Wetter & Jahreszeiten"
+    },
+    {
+      "id": "nublado",
+      "text": "nublado",
+      "de": "bewölkt",
+      "pos": "adjective",
+      "category": "Wetter & Jahreszeiten"
+    },
+    {
+      "id": "calor",
+      "text": "el calor",
+      "de": "die Hitze",
+      "pos": "noun",
+      "gender": "m",
+      "note": "hace calor = es ist heiss",
+      "category": "Wetter & Jahreszeiten",
+      "grammar": [
+        "clima"
+      ]
+    },
+    {
+      "id": "humedad",
+      "text": "la humedad",
+      "de": "die Luftfeuchtigkeit",
+      "pos": "noun",
+      "gender": "f",
+      "note": "In Buenos Aires im Sommer sehr hoch.",
+      "category": "Wetter & Jahreszeiten"
+    },
+    {
+      "id": "tormenta",
+      "text": "la tormenta",
+      "de": "das Gewitter, der Sturm",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Wetter & Jahreszeiten"
+    },
+    {
+      "id": "grado",
+      "text": "el grado",
+      "de": "das Grad",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Wetter & Jahreszeiten"
+    },
+    {
+      "id": "pronostico",
+      "text": "el pronóstico",
+      "de": "die Wettervorhersage",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Wetter & Jahreszeiten"
+    },
+    {
+      "id": "verano",
+      "text": "el verano",
+      "de": "der Sommer",
+      "pos": "noun",
+      "gender": "m",
+      "note": "In Argentinien von Dezember bis März!",
+      "category": "Wetter & Jahreszeiten"
+    },
+    {
+      "id": "invierno",
+      "text": "el invierno",
+      "de": "der Winter",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Juni bis September.",
+      "category": "Wetter & Jahreszeiten"
+    },
+    {
+      "id": "playa",
+      "text": "la playa",
+      "de": "der Strand",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Strand & Natur"
+    },
+    {
+      "id": "mar",
+      "text": "el mar",
+      "de": "das Meer",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Strand & Natur"
+    },
+    {
+      "id": "rio",
+      "text": "el río",
+      "de": "der Fluss",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Der Río de la Plata ist so breit, dass er wie ein Meer aussieht.",
+      "category": "Strand & Natur"
+    },
+    {
+      "id": "arena",
+      "text": "la arena",
+      "de": "der Sand",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Strand & Natur"
+    },
+    {
+      "id": "ola",
+      "text": "la ola",
+      "de": "die Welle",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Strand & Natur"
+    },
+    {
+      "id": "malla",
+      "text": "la malla",
+      "de": "die Badehose, der Badeanzug",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Argentinisch; anderswo „traje de baño“.",
+      "category": "Strand & Natur"
+    },
+    {
+      "id": "sombrilla",
+      "text": "la sombrilla",
+      "de": "der Sonnenschirm",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Strand & Natur"
+    },
+    {
+      "id": "reposera",
+      "text": "la reposera",
+      "de": "der Liegestuhl",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Argentinisch.",
+      "category": "Strand & Natur"
+    },
+    {
+      "id": "nadar",
+      "text": "nadar",
+      "de": "schwimmen",
+      "pos": "verb",
+      "category": "Strand & Natur"
+    },
+    {
+      "id": "montana",
+      "text": "la montaña",
+      "de": "der Berg; das Gebirge",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Strand & Natur"
+    },
+    {
+      "id": "lago",
+      "text": "el lago",
+      "de": "der See",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Strand & Natur"
+    },
+    {
+      "id": "sombra",
+      "text": "la sombra",
+      "de": "der Schatten",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Strand & Natur"
+    },
+    {
+      "id": "futbol",
+      "text": "el fútbol",
+      "de": "der Fussball",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Freizeit"
+    },
+    {
+      "id": "partido",
+      "text": "el partido",
+      "de": "das Spiel (Sport)",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Freizeit"
+    },
+    {
+      "id": "cancha",
+      "text": "la cancha",
+      "de": "der Sportplatz; das Stadion",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Freizeit"
+    },
+    {
+      "id": "tango",
+      "text": "el tango",
+      "de": "der Tango",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Freizeit"
+    },
+    {
+      "id": "musica",
+      "text": "la música",
+      "de": "die Musik",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Freizeit"
+    },
+    {
+      "id": "museo",
+      "text": "el museo",
+      "de": "das Museum",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Freizeit"
+    },
+    {
+      "id": "teatro",
+      "text": "el teatro",
+      "de": "das Theater",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Freizeit"
+    },
+    {
+      "id": "cine",
+      "text": "el cine",
+      "de": "das Kino",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Freizeit"
+    },
+    {
+      "id": "excursion",
+      "text": "la excursión",
+      "de": "der Ausflug",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Freizeit"
+    },
+    {
+      "id": "entrada",
+      "text": "la entrada",
+      "de": "die Eintrittskarte; der Eingang",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Freizeit"
+    },
+    {
+      "id": "fin_de_semana",
+      "text": "el fin de semana",
+      "de": "das Wochenende",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Freizeit"
+    },
+    {
+      "id": "sacar_fotos",
+      "text": "sacar fotos",
+      "de": "Fotos machen",
+      "pos": "phrase",
+      "category": "Freizeit"
+    },
+    {
+      "id": "tranquilo",
+      "text": "tranquilo",
+      "de": "ruhig; entspannt",
+      "pos": "adjective",
+      "note": "¡Tranquilo! = Keine Sorge!",
+      "category": "Freizeit"
+    },
+    {
+      "id": "afuera",
+      "text": "afuera",
+      "de": "draussen",
+      "pos": "adverb",
+      "category": "Freizeit"
+    },
+    {
+      "id": "adentro",
+      "text": "adentro",
+      "de": "drinnen",
+      "pos": "adverb",
+      "category": "Freizeit"
+    },
+    {
+      "id": "hacer",
+      "text": "hacer",
+      "de": "machen, tun",
+      "pos": "verb",
+      "note": "yo hago, vos hacés; hace calor = es ist heiss",
+      "category": "Verben",
+      "grammar": [
+        "clima"
+      ]
+    },
+    {
+      "id": "caminar",
+      "text": "caminar",
+      "de": "zu Fuss gehen, spazieren",
+      "pos": "verb",
+      "category": "Verben",
+      "grammar": [
+        "presente"
+      ]
+    },
+    {
+      "id": "bailar",
+      "text": "bailar",
+      "de": "tanzen",
+      "pos": "verb",
+      "category": "Verben",
+      "grammar": [
+        "presente"
+      ]
+    },
+    {
+      "id": "jugar",
+      "text": "jugar",
+      "de": "spielen",
+      "pos": "verb",
+      "note": "yo juego, vos jugás; jugar al fútbol",
+      "category": "Verben"
+    },
+    {
+      "id": "descansar",
+      "text": "descansar",
+      "de": "sich ausruhen",
+      "pos": "verb",
+      "category": "Verben"
+    },
+    {
+      "id": "ver",
+      "text": "ver",
+      "de": "sehen, schauen",
+      "pos": "verb",
+      "note": "yo veo, vos ves",
+      "category": "Verben"
+    },
+    {
+      "id": "escuchar",
+      "text": "escuchar",
+      "de": "hören, zuhören",
+      "pos": "verb",
+      "category": "Verben"
+    },
+    {
+      "id": "leer",
+      "text": "leer",
+      "de": "lesen",
+      "pos": "verb",
+      "category": "Verben",
+      "grammar": [
+        "presente"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "¿Qué tiempo hace hoy?",
+      "de": "Wie ist das Wetter heute?",
+      "words": [
+        "tiempo",
+        "hacer"
+      ],
+      "grammar": [
+        "clima"
+      ]
+    },
+    {
+      "id": "s02",
+      "text": "Hace mucho calor.",
+      "de": "Es ist sehr heiss.",
+      "words": [
+        "calor",
+        "hacer",
+        "mucho"
+      ],
+      "grammar": [
+        "clima"
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "Hace frío a la noche.",
+      "de": "Nachts ist es kalt.",
+      "words": [
+        "frio",
+        "hacer",
+        "noche"
+      ],
+      "grammar": [
+        "clima"
+      ]
+    },
+    {
+      "id": "s04",
+      "text": "Hay mucho sol.",
+      "de": "Es ist sehr sonnig.",
+      "words": [
+        "sol",
+        "hay",
+        "mucho"
+      ],
+      "grammar": [
+        "clima"
+      ]
+    },
+    {
+      "id": "s05",
+      "text": "Está nublado.",
+      "de": "Es ist bewölkt.",
+      "words": [
+        "nublado"
+      ],
+      "grammar": [
+        "clima"
+      ]
+    },
+    {
+      "id": "s06",
+      "text": "Va a llover a la tarde.",
+      "de": "Am Nachmittag wird es regnen.",
+      "words": [
+        "llover",
+        "tarde_n"
+      ],
+      "grammar": [
+        "ir_a"
+      ]
+    },
+    {
+      "id": "s07",
+      "text": "Llueve mucho en invierno.",
+      "de": "Im Winter regnet es viel.",
+      "words": [
+        "llover",
+        "invierno",
+        "mucho"
+      ],
+      "grammar": [
+        "clima"
+      ]
+    },
+    {
+      "id": "s08",
+      "text": "Con lluvia no vamos a la playa.",
+      "de": "Bei Regen gehen wir nicht an den Strand.",
+      "words": [
+        "lluvia",
+        "playa"
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "Hay mucho viento en la costa.",
+      "de": "An der Küste ist viel Wind.",
+      "words": [
+        "viento",
+        "hay",
+        "mucho"
+      ],
+      "grammar": [
+        "clima"
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Hay mucha humedad en Buenos Aires.",
+      "de": "In Buenos Aires ist die Luftfeuchtigkeit hoch.",
+      "words": [
+        "humedad",
+        "mucho"
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Se viene una tormenta.",
+      "de": "Ein Gewitter zieht auf.",
+      "words": [
+        "tormenta"
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Hace treinta grados.",
+      "de": "Es sind dreissig Grad.",
+      "words": [
+        "grado",
+        "treinta",
+        "hacer"
+      ],
+      "grammar": [
+        "clima"
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "¿Viste el pronóstico?",
+      "de": "Hast du die Wettervorhersage gesehen?",
+      "words": [
+        "pronostico",
+        "ver"
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "El clima en Mendoza es seco.",
+      "de": "Das Klima in Mendoza ist trocken.",
+      "words": [
+        "clima"
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "En diciembre es verano en Argentina.",
+      "de": "Im Dezember ist in Argentinien Sommer.",
+      "words": [
+        "verano",
+        "argentina"
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "En invierno hace frío en el sur.",
+      "de": "Im Winter ist es im Süden kalt.",
+      "words": [
+        "invierno",
+        "frio",
+        "hacer"
+      ],
+      "grammar": [
+        "clima"
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Vamos a la playa.",
+      "de": "Gehen wir an den Strand.",
+      "words": [
+        "playa",
+        "ir"
+      ],
+      "grammar": [
+        "del_al"
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "El mar está frío hoy.",
+      "de": "Das Meer ist heute kalt.",
+      "words": [
+        "mar",
+        "frio"
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "¡Cuidado con la ola!",
+      "de": "Vorsicht vor der Welle!",
+      "words": [
+        "ola",
+        "cuidado"
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "La arena está muy caliente.",
+      "de": "Der Sand ist sehr heiss.",
+      "words": [
+        "arena",
+        "caliente",
+        "muy"
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "Me olvidé la malla.",
+      "de": "Ich habe die Badehose vergessen.",
+      "words": [
+        "malla"
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "¿Cuánto cuesta alquilar una sombrilla?",
+      "de": "Wie viel kostet es, einen Sonnenschirm zu mieten?",
+      "words": [
+        "sombrilla",
+        "alquilar",
+        "cuanto"
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "Estoy tomando sol en la reposera.",
+      "de": "Ich sonne mich im Liegestuhl.",
+      "words": [
+        "reposera",
+        "sol"
+      ],
+      "grammar": [
+        "estar_gerundio"
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "¿Se puede nadar acá?",
+      "de": "Kann man hier schwimmen?",
+      "words": [
+        "nadar",
+        "aca"
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "Prefiero la sombra.",
+      "de": "Ich bin lieber im Schatten.",
+      "words": [
+        "sombra"
+      ]
+    },
+    {
+      "id": "s26",
+      "text": "Hacemos una excursión a la montaña.",
+      "de": "Wir machen einen Ausflug in die Berge.",
+      "words": [
+        "excursion",
+        "montana",
+        "hacer"
+      ],
+      "grammar": [
+        "presente"
+      ]
+    },
+    {
+      "id": "s27",
+      "text": "El lago es hermoso.",
+      "de": "Der See ist wunderschön.",
+      "words": [
+        "lago"
+      ]
+    },
+    {
+      "id": "s28",
+      "text": "Caminamos por el río.",
+      "de": "Wir spazieren am Fluss entlang.",
+      "words": [
+        "rio",
+        "caminar"
+      ],
+      "grammar": [
+        "presente"
+      ]
+    },
+    {
+      "id": "s29",
+      "text": "¿Te gusta el fútbol?",
+      "de": "Magst du Fussball?",
+      "words": [
+        "futbol",
+        "gustar"
+      ],
+      "grammar": [
+        "gustar"
+      ]
+    },
+    {
+      "id": "s30",
+      "text": "El domingo hay partido de Boca.",
+      "de": "Am Sonntag spielt Boca.",
+      "words": [
+        "partido",
+        "hay"
+      ]
+    },
+    {
+      "id": "s31",
+      "text": "¿Dónde queda la cancha?",
+      "de": "Wo ist das Stadion?",
+      "words": [
+        "cancha",
+        "donde"
+      ]
+    },
+    {
+      "id": "s32",
+      "text": "Quiero ver un show de tango.",
+      "de": "Ich möchte eine Tangoshow sehen.",
+      "words": [
+        "tango",
+        "ver",
+        "querer"
+      ]
+    },
+    {
+      "id": "s33",
+      "text": "¿Bailás tango?",
+      "de": "Tanzt du Tango?",
+      "words": [
+        "bailar",
+        "tango"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s34",
+      "text": "Me gusta escuchar música.",
+      "de": "Ich höre gern Musik.",
+      "words": [
+        "escuchar",
+        "musica",
+        "gustar"
+      ],
+      "grammar": [
+        "gustar"
+      ]
+    },
+    {
+      "id": "s35",
+      "text": "¿El museo está abierto los lunes?",
+      "de": "Ist das Museum montags geöffnet?",
+      "words": [
+        "museo",
+        "abierto"
+      ]
+    },
+    {
+      "id": "s36",
+      "text": "Vamos al teatro esta noche.",
+      "de": "Wir gehen heute Abend ins Theater.",
+      "words": [
+        "teatro",
+        "noche"
+      ],
+      "grammar": [
+        "del_al"
+      ]
+    },
+    {
+      "id": "s37",
+      "text": "¿Vamos al cine?",
+      "de": "Gehen wir ins Kino?",
+      "words": [
+        "cine"
+      ],
+      "grammar": [
+        "del_al"
+      ]
+    },
+    {
+      "id": "s38",
+      "text": "Dos entradas, por favor.",
+      "de": "Zwei Eintrittskarten, bitte.",
+      "words": [
+        "entrada",
+        "dos"
+      ]
+    },
+    {
+      "id": "s39",
+      "text": "¿Puedo sacar fotos?",
+      "de": "Darf ich Fotos machen?",
+      "words": [
+        "sacar_fotos"
+      ]
+    },
+    {
+      "id": "s40",
+      "text": "Los chicos juegan en la plaza.",
+      "de": "Die Kinder spielen auf dem Platz.",
+      "words": [
+        "jugar",
+        "chicos",
+        "plaza"
+      ],
+      "grammar": [
+        "presente"
+      ]
+    },
+    {
+      "id": "s41",
+      "text": "¿Jugás al fútbol?",
+      "de": "Spielst du Fussball?",
+      "words": [
+        "jugar",
+        "futbol"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s42",
+      "text": "Hoy quiero descansar.",
+      "de": "Heute möchte ich mich ausruhen.",
+      "words": [
+        "descansar",
+        "querer"
+      ]
+    },
+    {
+      "id": "s43",
+      "text": "Leo un libro en la playa.",
+      "de": "Ich lese ein Buch am Strand.",
+      "words": [
+        "leer",
+        "playa"
+      ],
+      "grammar": [
+        "presente"
+      ]
+    },
+    {
+      "id": "s44",
+      "text": "¿Qué hacés el fin de semana?",
+      "de": "Was machst du am Wochenende?",
+      "words": [
+        "hacer",
+        "fin_de_semana"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s45",
+      "text": "El fin de semana vamos al río.",
+      "de": "Am Wochenende fahren wir an den Fluss.",
+      "words": [
+        "fin_de_semana",
+        "rio"
+      ]
+    },
+    {
+      "id": "s46",
+      "text": "Estamos mirando el partido.",
+      "de": "Wir schauen gerade das Spiel.",
+      "words": [
+        "mirar",
+        "partido"
+      ],
+      "grammar": [
+        "estar_gerundio"
+      ]
+    },
+    {
+      "id": "s47",
+      "text": "Está todo muy tranquilo.",
+      "de": "Es ist alles sehr ruhig.",
+      "words": [
+        "tranquilo",
+        "muy"
+      ]
+    },
+    {
+      "id": "s48",
+      "text": "Comemos afuera.",
+      "de": "Wir essen draussen.",
+      "words": [
+        "afuera",
+        "comer"
+      ],
+      "grammar": [
+        "presente"
+      ]
+    },
+    {
+      "id": "s49",
+      "text": "Mejor nos quedamos adentro.",
+      "de": "Wir bleiben lieber drinnen.",
+      "words": [
+        "adentro",
+        "mejor"
+      ]
+    },
+    {
+      "id": "s50",
+      "text": "¿Qué estás haciendo?",
+      "de": "Was machst du gerade?",
+      "words": [
+        "hacer",
+        "que"
+      ],
+      "grammar": [
+        "estar_gerundio"
+      ]
+    },
+    {
+      "id": "s51",
+      "text": "Hablamos, comemos y bailamos toda la noche.",
+      "de": "Wir reden, essen und tanzen die ganze Nacht.",
+      "words": [
+        "bailar",
+        "noche"
+      ],
+      "grammar": [
+        "presente"
+      ]
+    },
+    {
+      "id": "s52",
+      "text": "Vivo cerca del mar.",
+      "de": "Ich wohne in der Nähe des Meeres.",
+      "words": [
+        "mar",
+        "cerca",
+        "vivir"
+      ],
+      "grammar": [
+        "presente"
+      ]
+    },
+    {
+      "id": "s53",
+      "text": "Ella baila muy bien.",
+      "de": "Sie tanzt sehr gut.",
+      "words": [
+        "bailar",
+        "bien",
+        "muy"
+      ],
+      "grammar": [
+        "presente"
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "clima",
+      "title": "Über das Wetter reden",
+      "explanation": "• hace + Nomen: hace calor (heiss), hace frío (kalt), hace sol, hace viento, hace 30 grados\n• hay + Nomen: hay sol, hay viento, hay humedad\n• estar + Adjektiv: está nublado, está lindo (schönes Wetter), está feo\n• llueve – es regnet; va a llover – es wird regnen\n\nAchtung Südhalbkugel: Im Dezember ist Sommer, im Juli Winter.",
+      "examples": [
+        {
+          "text": "Hoy hace mucho calor.",
+          "de": "Heute ist es sehr heiss."
+        },
+        {
+          "text": "Está lindo para ir a la playa.",
+          "de": "Schönes Wetter für den Strand."
+        }
+      ]
+    },
+    {
+      "id": "presente",
+      "title": "Präsens der regelmässigen Verben",
+      "explanation": "Drei Gruppen: -ar, -er, -ir.\n\nhablar: hablo, hablás, habla, hablamos, hablan\ncomer: como, comés, come, comemos, comen\nvivir: vivo, vivís, vive, vivimos, viven\n\nReihenfolge: yo, vos, usted/él/ella, nosotros, ustedes/ellos.\nDie vos-Form ist immer auf der Endung betont: caminás, leés, escribís.\n\nViele Verben ändern den Stamm (aber nicht bei vos!): jugar → juego, aber vos jugás; querer → quiero, aber vos querés.",
+      "examples": [
+        {
+          "text": "¿Dónde vivís? – Vivo en Córdoba.",
+          "de": "Wo wohnst du? – Ich wohne in Córdoba."
+        },
+        {
+          "text": "Los sábados comemos asado.",
+          "de": "Samstags essen wir Asado."
+        }
+      ]
+    },
+    {
+      "id": "estar_gerundio",
+      "title": "estar + -ando / -iendo – gerade tun",
+      "explanation": "Was gerade jetzt passiert, drückt man mit estar + Gerundium aus:\n• -ar → -ando: hablar → hablando, mirar → mirando\n• -er/-ir → -iendo: comer → comiendo, escribir → escribiendo\n• Besonders: leer → leyendo, llover → lloviendo\n\n• Estoy comiendo. – Ich esse gerade.\n• Está lloviendo. – Es regnet gerade.",
+      "examples": [
+        {
+          "text": "¿Qué estás haciendo? – Estoy leyendo.",
+          "de": "Was machst du gerade? – Ich lese."
+        },
+        {
+          "text": "Estamos tomando mate.",
+          "de": "Wir trinken gerade Mate."
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 package de.jfricker.vokabeltrainer.data.local
 
+import androidx.room.ColumnInfo
 import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.Index
@@ -112,7 +113,7 @@ data class ReviewLogEntity(
 
 data class ReviewRow(val reviewedAt: Long, val correct: Boolean)
 
-/** Wortfortschritt einer Lektion (Richtung Portugiesisch -> Deutsch). */
+/** Wortfortschritt einer Lektion (Richtung Lernsprache -> Deutsch). */
 data class LessonStat(
     val lessonId: String,
     val title: String,
@@ -131,6 +132,8 @@ data class PlaylistEntity(
     val channelTitle: String?,
     val addedAt: Long,
     val lastSyncAt: Long,
+    /** Lernsprache (Language.code), seit DB-Version 6 */
+    @ColumnInfo(defaultValue = "pt-BR") val language: String = "pt-BR",
 )
 
 /** status: siehe VideoStatus */

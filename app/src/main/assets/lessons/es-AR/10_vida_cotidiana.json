@@ -1,0 +1,1129 @@
+{
+  "id": "es-AR-10",
+  "language": "es-AR",
+  "order": 10,
+  "title": "Alltag & Zeit",
+  "titleTarget": "Vida cotidiana y tiempo",
+  "words": [
+    {
+      "id": "lunes",
+      "text": "el lunes",
+      "de": "der Montag",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Wochentage",
+      "grammar": [
+        "fechas"
+      ]
+    },
+    {
+      "id": "martes",
+      "text": "el martes",
+      "de": "der Dienstag",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Wochentage"
+    },
+    {
+      "id": "miercoles",
+      "text": "el miércoles",
+      "de": "der Mittwoch",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Wochentage"
+    },
+    {
+      "id": "jueves",
+      "text": "el jueves",
+      "de": "der Donnerstag",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Wochentage"
+    },
+    {
+      "id": "viernes",
+      "text": "el viernes",
+      "de": "der Freitag",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Wochentage"
+    },
+    {
+      "id": "sabado",
+      "text": "el sábado",
+      "de": "der Samstag",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Wochentage"
+    },
+    {
+      "id": "domingo",
+      "text": "el domingo",
+      "de": "der Sonntag",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Wochentage"
+    },
+    {
+      "id": "semana",
+      "text": "la semana",
+      "de": "die Woche",
+      "pos": "noun",
+      "gender": "f",
+      "note": "la semana que viene = nächste Woche",
+      "category": "Wochentage"
+    },
+    {
+      "id": "dia",
+      "text": "el día",
+      "de": "der Tag",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Männlich, obwohl auf -a!",
+      "category": "Wochentage"
+    },
+    {
+      "id": "enero",
+      "text": "enero",
+      "de": "Januar",
+      "pos": "noun",
+      "category": "Monate",
+      "grammar": [
+        "fechas"
+      ]
+    },
+    {
+      "id": "febrero",
+      "text": "febrero",
+      "de": "Februar",
+      "pos": "noun",
+      "category": "Monate"
+    },
+    {
+      "id": "marzo",
+      "text": "marzo",
+      "de": "März",
+      "pos": "noun",
+      "category": "Monate"
+    },
+    {
+      "id": "abril",
+      "text": "abril",
+      "de": "April",
+      "pos": "noun",
+      "category": "Monate"
+    },
+    {
+      "id": "mayo",
+      "text": "mayo",
+      "de": "Mai",
+      "pos": "noun",
+      "category": "Monate"
+    },
+    {
+      "id": "junio",
+      "text": "junio",
+      "de": "Juni",
+      "pos": "noun",
+      "category": "Monate"
+    },
+    {
+      "id": "julio",
+      "text": "julio",
+      "de": "Juli",
+      "pos": "noun",
+      "category": "Monate"
+    },
+    {
+      "id": "agosto",
+      "text": "agosto",
+      "de": "August",
+      "pos": "noun",
+      "category": "Monate"
+    },
+    {
+      "id": "septiembre",
+      "text": "septiembre",
+      "de": "September",
+      "pos": "noun",
+      "category": "Monate"
+    },
+    {
+      "id": "octubre",
+      "text": "octubre",
+      "de": "Oktober",
+      "pos": "noun",
+      "category": "Monate"
+    },
+    {
+      "id": "noviembre",
+      "text": "noviembre",
+      "de": "November",
+      "pos": "noun",
+      "category": "Monate"
+    },
+    {
+      "id": "diciembre",
+      "text": "diciembre",
+      "de": "Dezember",
+      "pos": "noun",
+      "category": "Monate"
+    },
+    {
+      "id": "mes",
+      "text": "el mes",
+      "de": "der Monat",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Monate"
+    },
+    {
+      "id": "hoy",
+      "text": "hoy",
+      "de": "heute",
+      "pos": "adverb",
+      "category": "Zeitangaben"
+    },
+    {
+      "id": "manana_adv",
+      "text": "mañana",
+      "de": "morgen",
+      "pos": "adverb",
+      "note": "Mit Artikel: la mañana = der Morgen.",
+      "category": "Zeitangaben"
+    },
+    {
+      "id": "ayer",
+      "text": "ayer",
+      "de": "gestern",
+      "pos": "adverb",
+      "category": "Zeitangaben",
+      "grammar": [
+        "pasado"
+      ]
+    },
+    {
+      "id": "pasado_manana",
+      "text": "pasado mañana",
+      "de": "übermorgen",
+      "pos": "phrase",
+      "category": "Zeitangaben"
+    },
+    {
+      "id": "siempre",
+      "text": "siempre",
+      "de": "immer",
+      "pos": "adverb",
+      "category": "Zeitangaben"
+    },
+    {
+      "id": "nunca",
+      "text": "nunca",
+      "de": "nie",
+      "pos": "adverb",
+      "category": "Zeitangaben"
+    },
+    {
+      "id": "a_veces",
+      "text": "a veces",
+      "de": "manchmal",
+      "pos": "phrase",
+      "category": "Zeitangaben"
+    },
+    {
+      "id": "todos_los_dias",
+      "text": "todos los días",
+      "de": "jeden Tag",
+      "pos": "phrase",
+      "category": "Zeitangaben"
+    },
+    {
+      "id": "cada",
+      "text": "cada",
+      "de": "jede(r, s)",
+      "pos": "adjective",
+      "note": "Unveränderlich: cada día, cada semana.",
+      "category": "Zeitangaben"
+    },
+    {
+      "id": "despues",
+      "text": "después",
+      "de": "danach, später",
+      "pos": "adverb",
+      "category": "Zeitangaben"
+    },
+    {
+      "id": "antes",
+      "text": "antes",
+      "de": "vorher",
+      "pos": "adverb",
+      "note": "antes de = vor",
+      "category": "Zeitangaben"
+    },
+    {
+      "id": "ya",
+      "text": "ya",
+      "de": "schon; jetzt gleich",
+      "pos": "adverb",
+      "category": "Zeitangaben"
+    },
+    {
+      "id": "todavia",
+      "text": "todavía",
+      "de": "noch",
+      "pos": "adverb",
+      "note": "todavía no = noch nicht",
+      "category": "Zeitangaben"
+    },
+    {
+      "id": "fecha",
+      "text": "la fecha",
+      "de": "das Datum",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Zeitangaben",
+      "grammar": [
+        "fechas"
+      ]
+    },
+    {
+      "id": "cumpleanos",
+      "text": "el cumpleaños",
+      "de": "der Geburtstag",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Zeitangaben"
+    },
+    {
+      "id": "feriado",
+      "text": "el feriado",
+      "de": "der Feiertag",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Argentinien hat viele Feiertage, oft auf Montag verschoben.",
+      "category": "Zeitangaben"
+    },
+    {
+      "id": "levantarse",
+      "text": "levantarse",
+      "de": "aufstehen",
+      "pos": "verb",
+      "note": "me levanto, vos te levantás",
+      "category": "Alltag"
+    },
+    {
+      "id": "acostarse",
+      "text": "acostarse",
+      "de": "ins Bett gehen",
+      "pos": "verb",
+      "note": "me acuesto, vos te acostás",
+      "category": "Alltag"
+    },
+    {
+      "id": "dormir",
+      "text": "dormir",
+      "de": "schlafen",
+      "pos": "verb",
+      "note": "duermo, vos dormís",
+      "category": "Alltag",
+      "grammar": [
+        "verbos_irregulares"
+      ]
+    },
+    {
+      "id": "ducharse",
+      "text": "ducharse",
+      "de": "duschen",
+      "pos": "verb",
+      "category": "Alltag"
+    },
+    {
+      "id": "desayunar",
+      "text": "desayunar",
+      "de": "frühstücken",
+      "pos": "verb",
+      "category": "Alltag"
+    },
+    {
+      "id": "cocinar",
+      "text": "cocinar",
+      "de": "kochen",
+      "pos": "verb",
+      "category": "Alltag"
+    },
+    {
+      "id": "limpiar",
+      "text": "limpiar",
+      "de": "putzen",
+      "pos": "verb",
+      "category": "Alltag"
+    },
+    {
+      "id": "lavar",
+      "text": "lavar",
+      "de": "waschen",
+      "pos": "verb",
+      "category": "Alltag"
+    },
+    {
+      "id": "casa",
+      "text": "la casa",
+      "de": "das Haus",
+      "pos": "noun",
+      "gender": "f",
+      "note": "en casa = zu Hause",
+      "category": "Alltag"
+    },
+    {
+      "id": "siesta",
+      "text": "la siesta",
+      "de": "der Mittagsschlaf",
+      "pos": "noun",
+      "gender": "f",
+      "note": "dormir la siesta = Mittagsschlaf halten",
+      "category": "Alltag"
+    },
+    {
+      "id": "mensaje",
+      "text": "el mensaje",
+      "de": "die Nachricht",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Alltag"
+    },
+    {
+      "id": "poder",
+      "text": "poder",
+      "de": "können, dürfen",
+      "pos": "verb",
+      "note": "puedo, vos podés, puede",
+      "category": "Wichtige Verben",
+      "grammar": [
+        "verbos_irregulares"
+      ]
+    },
+    {
+      "id": "saber",
+      "text": "saber",
+      "de": "wissen; können (gelernt)",
+      "pos": "verb",
+      "note": "sé, vos sabés, sabe",
+      "category": "Wichtige Verben",
+      "grammar": [
+        "verbos_irregulares"
+      ]
+    },
+    {
+      "id": "decir",
+      "text": "decir",
+      "de": "sagen",
+      "pos": "verb",
+      "note": "digo, vos decís, dice",
+      "category": "Wichtige Verben",
+      "grammar": [
+        "verbos_irregulares"
+      ]
+    },
+    {
+      "id": "empezar",
+      "text": "empezar",
+      "de": "anfangen, beginnen",
+      "pos": "verb",
+      "note": "empiezo, vos empezás",
+      "category": "Wichtige Verben"
+    },
+    {
+      "id": "terminar",
+      "text": "terminar",
+      "de": "beenden, fertig sein",
+      "pos": "verb",
+      "category": "Wichtige Verben"
+    },
+    {
+      "id": "volver",
+      "text": "volver",
+      "de": "zurückkommen",
+      "pos": "verb",
+      "note": "vuelvo, vos volvés",
+      "category": "Wichtige Verben"
+    },
+    {
+      "id": "escribir",
+      "text": "escribir",
+      "de": "schreiben",
+      "pos": "verb",
+      "category": "Wichtige Verben"
+    },
+    {
+      "id": "mandar",
+      "text": "mandar",
+      "de": "schicken",
+      "pos": "verb",
+      "note": "Mandame un mensaje. = Schick mir eine Nachricht.",
+      "category": "Wichtige Verben"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "Hoy es lunes.",
+      "de": "Heute ist Montag.",
+      "words": [
+        "hoy",
+        "lunes"
+      ],
+      "grammar": [
+        "fechas"
+      ]
+    },
+    {
+      "id": "s02",
+      "text": "Mañana es martes.",
+      "de": "Morgen ist Dienstag.",
+      "words": [
+        "manana_adv",
+        "martes"
+      ],
+      "grammar": [
+        "fechas"
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "Ayer fue domingo.",
+      "de": "Gestern war Sonntag.",
+      "words": [
+        "ayer",
+        "domingo"
+      ],
+      "grammar": [
+        "pasado"
+      ]
+    },
+    {
+      "id": "s04",
+      "text": "El miércoles vamos al museo.",
+      "de": "Am Mittwoch gehen wir ins Museum.",
+      "words": [
+        "miercoles",
+        "museo"
+      ],
+      "grammar": [
+        "fechas"
+      ]
+    },
+    {
+      "id": "s05",
+      "text": "Los jueves hay feria.",
+      "de": "Donnerstags ist Markt.",
+      "words": [
+        "jueves",
+        "feria",
+        "hay"
+      ],
+      "grammar": [
+        "fechas"
+      ]
+    },
+    {
+      "id": "s06",
+      "text": "El viernes a la noche salimos.",
+      "de": "Freitagabend gehen wir aus.",
+      "words": [
+        "viernes",
+        "noche",
+        "salir"
+      ],
+      "grammar": [
+        "fechas"
+      ]
+    },
+    {
+      "id": "s07",
+      "text": "El sábado hacemos un asado.",
+      "de": "Am Samstag machen wir Asado.",
+      "words": [
+        "sabado",
+        "asado",
+        "hacer"
+      ],
+      "grammar": [
+        "fechas"
+      ]
+    },
+    {
+      "id": "s08",
+      "text": "Me quedo una semana.",
+      "de": "Ich bleibe eine Woche.",
+      "words": [
+        "semana",
+        "quedarse"
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "¿Qué día es hoy?",
+      "de": "Welcher Tag ist heute?",
+      "words": [
+        "dia",
+        "hoy",
+        "que"
+      ],
+      "grammar": [
+        "fechas"
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Llegamos el dos de enero.",
+      "de": "Wir kommen am zweiten Januar an.",
+      "words": [
+        "enero",
+        "dos",
+        "llegar"
+      ],
+      "grammar": [
+        "fechas"
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "En febrero hace mucho calor.",
+      "de": "Im Februar ist es sehr heiss.",
+      "words": [
+        "febrero",
+        "calor"
+      ],
+      "grammar": [
+        "clima"
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Marzo es el mes de la vendimia en Mendoza.",
+      "de": "Der März ist in Mendoza der Monat der Weinlese.",
+      "words": [
+        "marzo",
+        "mes"
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "En abril empieza el otoño.",
+      "de": "Im April beginnt der Herbst.",
+      "words": [
+        "abril",
+        "empezar"
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "El veinticinco de mayo es feriado.",
+      "de": "Der 25. Mai ist ein Feiertag.",
+      "words": [
+        "mayo",
+        "feriado"
+      ],
+      "grammar": [
+        "fechas"
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "En junio y julio es invierno.",
+      "de": "Im Juni und Juli ist Winter.",
+      "words": [
+        "junio",
+        "julio",
+        "invierno"
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "En agosto hace frío.",
+      "de": "Im August ist es kalt.",
+      "words": [
+        "agosto",
+        "frio"
+      ],
+      "grammar": [
+        "clima"
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Mi cumpleaños es en septiembre.",
+      "de": "Mein Geburtstag ist im September.",
+      "words": [
+        "cumpleanos",
+        "septiembre",
+        "mi"
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "En octubre vuelvo a Alemania.",
+      "de": "Im Oktober fahre ich nach Deutschland zurück.",
+      "words": [
+        "octubre",
+        "volver",
+        "alemania"
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Viajo en noviembre.",
+      "de": "Ich reise im November.",
+      "words": [
+        "noviembre"
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "En diciembre empieza el verano.",
+      "de": "Im Dezember beginnt der Sommer.",
+      "words": [
+        "diciembre",
+        "verano",
+        "empezar"
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "¿Qué fecha es hoy?",
+      "de": "Welches Datum ist heute?",
+      "words": [
+        "fecha",
+        "hoy"
+      ],
+      "grammar": [
+        "fechas"
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "Nos vemos pasado mañana.",
+      "de": "Wir sehen uns übermorgen.",
+      "words": [
+        "pasado_manana",
+        "nos_vemos"
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "Siempre tomo mate a la mañana.",
+      "de": "Ich trinke morgens immer Mate.",
+      "words": [
+        "siempre",
+        "mate",
+        "tomar"
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "Nunca como carne.",
+      "de": "Ich esse nie Fleisch.",
+      "words": [
+        "nunca",
+        "carne",
+        "comer"
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "A veces duermo la siesta.",
+      "de": "Manchmal mache ich Mittagsschlaf.",
+      "words": [
+        "a_veces",
+        "dormir",
+        "siesta"
+      ],
+      "grammar": [
+        "verbos_irregulares"
+      ]
+    },
+    {
+      "id": "s26",
+      "text": "Trabajo todos los días.",
+      "de": "Ich arbeite jeden Tag.",
+      "words": [
+        "todos_los_dias",
+        "trabajar"
+      ]
+    },
+    {
+      "id": "s27",
+      "text": "Primero desayuno y después me ducho.",
+      "de": "Zuerst frühstücke ich und danach dusche ich.",
+      "words": [
+        "desayunar",
+        "despues",
+        "ducharse"
+      ]
+    },
+    {
+      "id": "s28",
+      "text": "Antes de salir, cierro la puerta.",
+      "de": "Bevor ich gehe, schliesse ich die Tür.",
+      "words": [
+        "antes",
+        "salir",
+        "puerta"
+      ]
+    },
+    {
+      "id": "s29",
+      "text": "Ya terminé.",
+      "de": "Ich bin schon fertig.",
+      "words": [
+        "ya",
+        "terminar"
+      ],
+      "grammar": [
+        "pasado"
+      ]
+    },
+    {
+      "id": "s30",
+      "text": "Todavía no sé.",
+      "de": "Ich weiss es noch nicht.",
+      "words": [
+        "todavia",
+        "saber",
+        "no"
+      ],
+      "grammar": [
+        "verbos_irregulares"
+      ]
+    },
+    {
+      "id": "s31",
+      "text": "Me levanto a las siete.",
+      "de": "Ich stehe um sieben auf.",
+      "words": [
+        "levantarse",
+        "siete"
+      ]
+    },
+    {
+      "id": "s32",
+      "text": "¿A qué hora te levantás?",
+      "de": "Um wie viel Uhr stehst du auf?",
+      "words": [
+        "levantarse",
+        "a_que_hora"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s33",
+      "text": "Me acuesto tarde.",
+      "de": "Ich gehe spät ins Bett.",
+      "words": [
+        "acostarse",
+        "tarde"
+      ]
+    },
+    {
+      "id": "s34",
+      "text": "Dormí muy bien.",
+      "de": "Ich habe sehr gut geschlafen.",
+      "words": [
+        "dormir",
+        "bien",
+        "muy"
+      ],
+      "grammar": [
+        "pasado"
+      ]
+    },
+    {
+      "id": "s35",
+      "text": "¿Dormiste bien?",
+      "de": "Hast du gut geschlafen?",
+      "words": [
+        "dormir",
+        "bien"
+      ],
+      "grammar": [
+        "pasado"
+      ]
+    },
+    {
+      "id": "s36",
+      "text": "Hoy cocino yo.",
+      "de": "Heute koche ich.",
+      "words": [
+        "cocinar",
+        "hoy",
+        "yo"
+      ]
+    },
+    {
+      "id": "s37",
+      "text": "Tengo que limpiar la casa.",
+      "de": "Ich muss das Haus putzen.",
+      "words": [
+        "limpiar",
+        "casa",
+        "tener_que"
+      ],
+      "grammar": [
+        "tener_que"
+      ]
+    },
+    {
+      "id": "s38",
+      "text": "¿Dónde puedo lavar la ropa?",
+      "de": "Wo kann ich Wäsche waschen?",
+      "words": [
+        "lavar",
+        "ropa",
+        "poder"
+      ],
+      "grammar": [
+        "verbos_irregulares"
+      ]
+    },
+    {
+      "id": "s39",
+      "text": "No voy a poder ir.",
+      "de": "Ich werde nicht kommen können.",
+      "words": [
+        "poder",
+        "ir"
+      ],
+      "grammar": [
+        "ir_a"
+      ]
+    },
+    {
+      "id": "s40",
+      "text": "¿Sabés dónde queda?",
+      "de": "Weisst du, wo das ist?",
+      "words": [
+        "saber",
+        "donde"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s41",
+      "text": "¿Qué dijiste?",
+      "de": "Was hast du gesagt?",
+      "words": [
+        "decir",
+        "que"
+      ],
+      "grammar": [
+        "pasado"
+      ]
+    },
+    {
+      "id": "s42",
+      "text": "¿Cómo se dice en español?",
+      "de": "Wie sagt man das auf Spanisch?",
+      "words": [
+        "decir",
+        "como",
+        "espanol"
+      ]
+    },
+    {
+      "id": "s43",
+      "text": "La clase empieza a las nueve.",
+      "de": "Der Unterricht beginnt um neun.",
+      "words": [
+        "empezar",
+        "nueve"
+      ]
+    },
+    {
+      "id": "s44",
+      "text": "¿A qué hora termina?",
+      "de": "Um wie viel Uhr endet es?",
+      "words": [
+        "terminar",
+        "a_que_hora"
+      ]
+    },
+    {
+      "id": "s45",
+      "text": "Quiero volver a Argentina.",
+      "de": "Ich möchte nach Argentinien zurückkommen.",
+      "words": [
+        "volver",
+        "argentina",
+        "querer"
+      ]
+    },
+    {
+      "id": "s46",
+      "text": "Te escribo mañana.",
+      "de": "Ich schreibe dir morgen.",
+      "words": [
+        "escribir",
+        "manana_adv"
+      ]
+    },
+    {
+      "id": "s47",
+      "text": "Mandame un mensaje.",
+      "de": "Schick mir eine Nachricht.",
+      "words": [
+        "mandar",
+        "mensaje"
+      ],
+      "grammar": [
+        "imperativo"
+      ]
+    },
+    {
+      "id": "s48",
+      "text": "Estoy en casa.",
+      "de": "Ich bin zu Hause.",
+      "words": [
+        "casa",
+        "estar"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s49",
+      "text": "Ayer fuimos a la playa.",
+      "de": "Gestern waren wir am Strand.",
+      "words": [
+        "ayer",
+        "playa",
+        "ir"
+      ],
+      "grammar": [
+        "pasado"
+      ]
+    },
+    {
+      "id": "s50",
+      "text": "Cada día aprendo algo nuevo.",
+      "de": "Jeden Tag lerne ich etwas Neues.",
+      "words": [
+        "cada",
+        "dia",
+        "nuevo"
+      ]
+    },
+    {
+      "id": "s51",
+      "text": "Ya es tarde, me voy.",
+      "de": "Es ist schon spät, ich gehe.",
+      "words": [
+        "ya",
+        "tarde",
+        "ir"
+      ]
+    },
+    {
+      "id": "s52",
+      "text": "Todavía tengo tiempo.",
+      "de": "Ich habe noch Zeit.",
+      "words": [
+        "todavia",
+        "tiempo",
+        "tener"
+      ]
+    },
+    {
+      "id": "s53",
+      "text": "La semana que viene tengo vacaciones.",
+      "de": "Nächste Woche habe ich Urlaub.",
+      "words": [
+        "semana",
+        "vacaciones"
+      ]
+    },
+    {
+      "id": "s54",
+      "text": "¿Qué hiciste el fin de semana?",
+      "de": "Was hast du am Wochenende gemacht?",
+      "words": [
+        "hacer",
+        "fin_de_semana"
+      ],
+      "grammar": [
+        "pasado"
+      ]
+    },
+    {
+      "id": "s55",
+      "text": "El martes es mi cumpleaños.",
+      "de": "Am Dienstag ist mein Geburtstag.",
+      "words": [
+        "martes",
+        "cumpleanos",
+        "mi"
+      ]
+    },
+    {
+      "id": "s56",
+      "text": "El domingo es feriado y está todo cerrado.",
+      "de": "Sonntag ist Feiertag und alles ist zu.",
+      "words": [
+        "domingo",
+        "feriado",
+        "cerrado"
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "fechas",
+      "title": "Wochentage, Monate, Datum",
+      "explanation": "Wochentage und Monate schreibt man klein.\n\n• el lunes – am Montag\n• los lunes – montags (jeden Montag)\n• el fin de semana – am Wochenende\n\nDatum: el + Zahl + de + Monat\n• el 2 de enero – der 2. Januar (Grundzahl, nur der 1. auch: el primero)\n• ¿Qué día es hoy? – Hoy es martes.\n• ¿Qué fecha es hoy? – Hoy es 15 de diciembre.\n\nMonate ohne Artikel: en marzo – im März.",
+      "examples": [
+        {
+          "text": "Llego el viernes 5 de diciembre.",
+          "de": "Ich komme am Freitag, dem 5. Dezember, an."
+        },
+        {
+          "text": "Los domingos está todo cerrado.",
+          "de": "Sonntags ist alles zu."
+        }
+      ]
+    },
+    {
+      "id": "verbos_irregulares",
+      "title": "Wichtige unregelmässige Verben",
+      "explanation": "yo – vos – usted/él – nosotros – ustedes\n• poder: puedo, podés, puede, podemos, pueden\n• querer: quiero, querés, quiere, queremos, quieren\n• saber: sé, sabés, sabe, sabemos, saben\n• decir: digo, decís, dice, decimos, dicen\n• hacer: hago, hacés, hace, hacemos, hacen\n• dormir: duermo, dormís, duerme, dormimos, duermen\n• ir: voy, vas, va, vamos, van\n\nPraktisch beim vos: Der Stamm bleibt fast immer regelmässig (podés, querés, dormís) – nur yo, usted und ustedes ändern sich.\n\nsaber + Infinitiv = etwas können (gelernt): ¿Sabés nadar?",
+      "examples": [
+        {
+          "text": "¿Podés venir? – No puedo.",
+          "de": "Kannst du kommen? – Ich kann nicht."
+        },
+        {
+          "text": "No sé qué decir.",
+          "de": "Ich weiss nicht, was ich sagen soll."
+        }
+      ]
+    },
+    {
+      "id": "pasado",
+      "title": "Vergangenheit: Ayer fui …",
+      "explanation": "In Argentinien erzählt man Vergangenes fast immer mit dem einfachen Perfekt (pretérito), auch für „heute“ und „gerade eben“:\n\n-ar (terminar): terminé, terminaste, terminó, terminamos, terminaron\n-er/-ir (comer): comí, comiste, comió, comimos, comieron\n\nHäufige Ausnahmen:\n• ir und ser: fui, fuiste, fue, fuimos, fueron\n• hacer: hice, hiciste, hizo, hicimos, hicieron\n• decir: dije, dijiste, dijo, dijimos, dijeron\n• tener: tuve, tuviste, tuvo …\n\n„Ya terminé.“ – Ich bin schon fertig.",
+      "examples": [
+        {
+          "text": "Ayer comimos un asado.",
+          "de": "Gestern haben wir Asado gegessen."
+        },
+        {
+          "text": "¿Qué hiciste hoy?",
+          "de": "Was hast du heute gemacht?"
+        }
+      ]
+    }
+  ]
+}

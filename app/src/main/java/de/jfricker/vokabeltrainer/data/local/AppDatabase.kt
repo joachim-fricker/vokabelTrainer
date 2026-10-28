@@ -17,7 +17,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase
         PlaylistEntity::class,
         VideoEntity::class,
     ],
-    version = 5,
+    version = 6,
     exportSchema = false,
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -59,5 +59,12 @@ val MIGRATION_4_5 = object : Migration(4, 5) {
                 "`status` TEXT NOT NULL, `statusChangedAt` INTEGER, PRIMARY KEY(`videoId`))"
         )
         db.execSQL("CREATE INDEX IF NOT EXISTS `index_video_playlistId` ON `video` (`playlistId`)")
+    }
+}
+
+/** v6: Playlists gehoeren zu einer Lernsprache; vorhandene sind Portugiesisch. */
+val MIGRATION_5_6 = object : Migration(5, 6) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        db.execSQL("ALTER TABLE video_playlist ADD COLUMN language TEXT NOT NULL DEFAULT 'pt-BR'")
     }
 }

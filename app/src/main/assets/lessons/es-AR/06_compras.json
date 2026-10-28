@@ -1,0 +1,1237 @@
+{
+  "id": "es-AR-06",
+  "language": "es-AR",
+  "order": 6,
+  "title": "Einkaufen",
+  "titleTarget": "De compras",
+  "words": [
+    {
+      "id": "negocio",
+      "text": "el negocio",
+      "de": "das Geschäft, der Laden",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Geschäfte"
+    },
+    {
+      "id": "kiosco",
+      "text": "el kiosco",
+      "de": "der Kiosk",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Getränke, Süsses, SUBE aufladen – an fast jeder Ecke.",
+      "category": "Geschäfte"
+    },
+    {
+      "id": "almacen",
+      "text": "el almacén",
+      "de": "der kleine Lebensmittelladen",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Geschäfte"
+    },
+    {
+      "id": "supermercado",
+      "text": "el supermercado",
+      "de": "der Supermarkt",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Geschäfte"
+    },
+    {
+      "id": "verduleria",
+      "text": "la verdulería",
+      "de": "der Obst- und Gemüseladen",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Geschäfte"
+    },
+    {
+      "id": "panaderia",
+      "text": "la panadería",
+      "de": "die Bäckerei",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Geschäfte"
+    },
+    {
+      "id": "carniceria",
+      "text": "la carnicería",
+      "de": "die Metzgerei",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Geschäfte"
+    },
+    {
+      "id": "feria",
+      "text": "la feria",
+      "de": "der Markt (Wochen-, Kunsthandwerkermarkt)",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Geschäfte"
+    },
+    {
+      "id": "shopping",
+      "text": "el shopping",
+      "de": "das Einkaufszentrum",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Argentinisch.",
+      "category": "Geschäfte"
+    },
+    {
+      "id": "fruta",
+      "text": "la fruta",
+      "de": "das Obst",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Lebensmittel"
+    },
+    {
+      "id": "manzana",
+      "text": "la manzana",
+      "de": "der Apfel",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Bedeutet auch „Häuserblock“.",
+      "category": "Lebensmittel"
+    },
+    {
+      "id": "banana",
+      "text": "la banana",
+      "de": "die Banane",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Lebensmittel"
+    },
+    {
+      "id": "naranja",
+      "text": "la naranja",
+      "de": "die Orange",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Lebensmittel"
+    },
+    {
+      "id": "frutilla",
+      "text": "la frutilla",
+      "de": "die Erdbeere",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Anderswo „fresa“.",
+      "category": "Lebensmittel"
+    },
+    {
+      "id": "durazno",
+      "text": "el durazno",
+      "de": "der Pfirsich",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Anderswo „melocotón“.",
+      "category": "Lebensmittel"
+    },
+    {
+      "id": "palta",
+      "text": "la palta",
+      "de": "die Avocado",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Anderswo „aguacate“.",
+      "category": "Lebensmittel"
+    },
+    {
+      "id": "tomate",
+      "text": "el tomate",
+      "de": "die Tomate",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Lebensmittel"
+    },
+    {
+      "id": "papa",
+      "text": "la papa",
+      "de": "die Kartoffel",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Anderswo „patata“. Nicht verwechseln: el Papa = der Papst.",
+      "category": "Lebensmittel"
+    },
+    {
+      "id": "cebolla",
+      "text": "la cebolla",
+      "de": "die Zwiebel",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Lebensmittel"
+    },
+    {
+      "id": "manteca",
+      "text": "la manteca",
+      "de": "die Butter",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Anderswo „mantequilla“.",
+      "category": "Lebensmittel"
+    },
+    {
+      "id": "yerba",
+      "text": "la yerba",
+      "de": "der Mate-Tee (Kraut)",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Lebensmittel"
+    },
+    {
+      "id": "galletitas",
+      "text": "las galletitas",
+      "de": "die Kekse",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Lebensmittel"
+    },
+    {
+      "id": "kilo",
+      "text": "el kilo",
+      "de": "das Kilo",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Lebensmittel"
+    },
+    {
+      "id": "medio",
+      "text": "medio, media",
+      "de": "halb",
+      "pos": "adjective",
+      "note": "medio kilo, media hora",
+      "category": "Lebensmittel"
+    },
+    {
+      "id": "ropa",
+      "text": "la ropa",
+      "de": "die Kleidung",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Kleidung"
+    },
+    {
+      "id": "remera",
+      "text": "la remera",
+      "de": "das T-Shirt",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Anderswo „camiseta“.",
+      "category": "Kleidung"
+    },
+    {
+      "id": "pantalon",
+      "text": "el pantalón",
+      "de": "die Hose",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Kleidung"
+    },
+    {
+      "id": "pollera",
+      "text": "la pollera",
+      "de": "der Rock",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Anderswo „falda“.",
+      "category": "Kleidung"
+    },
+    {
+      "id": "campera",
+      "text": "la campera",
+      "de": "die Jacke",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Anderswo „chaqueta“.",
+      "category": "Kleidung"
+    },
+    {
+      "id": "buzo",
+      "text": "el buzo",
+      "de": "der Pullover, das Sweatshirt",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Kleidung"
+    },
+    {
+      "id": "zapatillas",
+      "text": "las zapatillas",
+      "de": "die Turnschuhe",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Kleidung"
+    },
+    {
+      "id": "zapatos",
+      "text": "los zapatos",
+      "de": "die Schuhe",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Kleidung"
+    },
+    {
+      "id": "anteojos_de_sol",
+      "text": "los anteojos de sol",
+      "de": "die Sonnenbrille",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Anderswo „gafas de sol“.",
+      "category": "Kleidung"
+    },
+    {
+      "id": "gorra",
+      "text": "la gorra",
+      "de": "die Schirmmütze",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Kleidung"
+    },
+    {
+      "id": "talle",
+      "text": "el talle",
+      "de": "die Grösse (Kleidung)",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Anderswo „talla“.",
+      "category": "Kleidung"
+    },
+    {
+      "id": "probador",
+      "text": "el probador",
+      "de": "die Umkleidekabine",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Kleidung"
+    },
+    {
+      "id": "color",
+      "text": "el color",
+      "de": "die Farbe",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Farben"
+    },
+    {
+      "id": "negro",
+      "text": "negro",
+      "de": "schwarz",
+      "pos": "adjective",
+      "category": "Farben",
+      "grammar": [
+        "adjetivos"
+      ]
+    },
+    {
+      "id": "blanco",
+      "text": "blanco",
+      "de": "weiss",
+      "pos": "adjective",
+      "category": "Farben"
+    },
+    {
+      "id": "rojo",
+      "text": "rojo",
+      "de": "rot",
+      "pos": "adjective",
+      "category": "Farben"
+    },
+    {
+      "id": "azul",
+      "text": "azul",
+      "de": "blau",
+      "pos": "adjective",
+      "category": "Farben"
+    },
+    {
+      "id": "verde",
+      "text": "verde",
+      "de": "grün",
+      "pos": "adjective",
+      "category": "Farben"
+    },
+    {
+      "id": "amarillo",
+      "text": "amarillo",
+      "de": "gelb",
+      "pos": "adjective",
+      "category": "Farben"
+    },
+    {
+      "id": "gris",
+      "text": "gris",
+      "de": "grau",
+      "pos": "adjective",
+      "category": "Farben"
+    },
+    {
+      "id": "grande",
+      "text": "grande",
+      "de": "gross",
+      "pos": "adjective",
+      "category": "Beschreiben & Vergleichen"
+    },
+    {
+      "id": "chico",
+      "text": "chico",
+      "de": "klein",
+      "pos": "adjective",
+      "note": "In Argentinien meist „chico“ statt „pequeño“.",
+      "category": "Beschreiben & Vergleichen"
+    },
+    {
+      "id": "lindo",
+      "text": "lindo",
+      "de": "schön, hübsch",
+      "pos": "adjective",
+      "note": "Sehr häufig: ¡Qué lindo!",
+      "category": "Beschreiben & Vergleichen",
+      "grammar": [
+        "adjetivos"
+      ]
+    },
+    {
+      "id": "feo",
+      "text": "feo",
+      "de": "hässlich",
+      "pos": "adjective",
+      "category": "Beschreiben & Vergleichen"
+    },
+    {
+      "id": "nuevo",
+      "text": "nuevo",
+      "de": "neu",
+      "pos": "adjective",
+      "category": "Beschreiben & Vergleichen"
+    },
+    {
+      "id": "viejo",
+      "text": "viejo",
+      "de": "alt",
+      "pos": "adjective",
+      "category": "Beschreiben & Vergleichen"
+    },
+    {
+      "id": "largo",
+      "text": "largo",
+      "de": "lang",
+      "pos": "adjective",
+      "note": "Achtung: nicht „large“ (gross)!",
+      "category": "Beschreiben & Vergleichen"
+    },
+    {
+      "id": "corto",
+      "text": "corto",
+      "de": "kurz",
+      "pos": "adjective",
+      "category": "Beschreiben & Vergleichen"
+    },
+    {
+      "id": "mas",
+      "text": "más",
+      "de": "mehr",
+      "pos": "adverb",
+      "category": "Beschreiben & Vergleichen",
+      "grammar": [
+        "comparativo"
+      ]
+    },
+    {
+      "id": "menos",
+      "text": "menos",
+      "de": "weniger",
+      "pos": "adverb",
+      "category": "Beschreiben & Vergleichen",
+      "grammar": [
+        "comparativo"
+      ]
+    },
+    {
+      "id": "mejor",
+      "text": "mejor",
+      "de": "besser",
+      "pos": "adjective",
+      "category": "Beschreiben & Vergleichen",
+      "grammar": [
+        "comparativo"
+      ]
+    },
+    {
+      "id": "peor",
+      "text": "peor",
+      "de": "schlechter",
+      "pos": "adjective",
+      "category": "Beschreiben & Vergleichen",
+      "grammar": [
+        "comparativo"
+      ]
+    },
+    {
+      "id": "mucho",
+      "text": "mucho, mucha",
+      "de": "viel",
+      "pos": "adjective",
+      "category": "Beschreiben & Vergleichen"
+    },
+    {
+      "id": "otro",
+      "text": "otro, otra",
+      "de": "ein anderer; noch ein",
+      "pos": "adjective",
+      "note": "Ohne „un“: otra remera.",
+      "category": "Beschreiben & Vergleichen"
+    },
+    {
+      "id": "este",
+      "text": "este, esta",
+      "de": "dieser, diese",
+      "pos": "pronoun",
+      "category": "Beschreiben & Vergleichen",
+      "grammar": [
+        "demostrativos"
+      ]
+    },
+    {
+      "id": "ese",
+      "text": "ese, esa",
+      "de": "der da, die da",
+      "pos": "pronoun",
+      "category": "Beschreiben & Vergleichen",
+      "grammar": [
+        "demostrativos"
+      ]
+    },
+    {
+      "id": "aquel",
+      "text": "aquel, aquella",
+      "de": "jener, jene (dort drüben)",
+      "pos": "pronoun",
+      "category": "Beschreiben & Vergleichen",
+      "grammar": [
+        "demostrativos"
+      ]
+    },
+    {
+      "id": "comprar",
+      "text": "comprar",
+      "de": "kaufen",
+      "pos": "verb",
+      "category": "Verben"
+    },
+    {
+      "id": "vender",
+      "text": "vender",
+      "de": "verkaufen",
+      "pos": "verb",
+      "category": "Verben"
+    },
+    {
+      "id": "buscar",
+      "text": "buscar",
+      "de": "suchen",
+      "pos": "verb",
+      "category": "Verben"
+    },
+    {
+      "id": "probar",
+      "text": "probar",
+      "de": "probieren; anprobieren",
+      "pos": "verb",
+      "note": "probarse = anprobieren; yo pruebo, vos probás",
+      "category": "Verben"
+    },
+    {
+      "id": "mirar",
+      "text": "mirar",
+      "de": "anschauen",
+      "pos": "verb",
+      "note": "Solo estoy mirando. = Ich schaue nur.",
+      "category": "Verben"
+    },
+    {
+      "id": "llevar",
+      "text": "llevar",
+      "de": "mitnehmen; nehmen (beim Kaufen)",
+      "pos": "verb",
+      "note": "Me lo llevo. = Ich nehme es.",
+      "category": "Verben"
+    },
+    {
+      "id": "bolsa",
+      "text": "la bolsa",
+      "de": "die Tüte",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Verben"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "¿Dónde hay un supermercado?",
+      "de": "Wo gibt es einen Supermarkt?",
+      "words": [
+        "supermercado",
+        "donde",
+        "hay"
+      ]
+    },
+    {
+      "id": "s02",
+      "text": "Voy al kiosco a comprar agua.",
+      "de": "Ich gehe zum Kiosk, Wasser kaufen.",
+      "words": [
+        "kiosco",
+        "comprar",
+        "agua"
+      ],
+      "grammar": [
+        "del_al"
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "El almacén de la esquina abre temprano.",
+      "de": "Der Laden an der Ecke macht früh auf.",
+      "words": [
+        "almacen",
+        "esquina",
+        "temprano"
+      ]
+    },
+    {
+      "id": "s04",
+      "text": "En la verdulería la fruta es más barata.",
+      "de": "Im Obstladen ist das Obst günstiger.",
+      "words": [
+        "verduleria",
+        "fruta",
+        "mas"
+      ],
+      "grammar": [
+        "comparativo"
+      ]
+    },
+    {
+      "id": "s05",
+      "text": "Compro pan en la panadería.",
+      "de": "Ich kaufe Brot in der Bäckerei.",
+      "words": [
+        "pan",
+        "panaderia",
+        "comprar"
+      ]
+    },
+    {
+      "id": "s06",
+      "text": "En la carnicería venden muy buena carne.",
+      "de": "In der Metzgerei verkaufen sie sehr gutes Fleisch.",
+      "words": [
+        "carniceria",
+        "carne",
+        "muy",
+        "vender"
+      ]
+    },
+    {
+      "id": "s07",
+      "text": "El domingo hay feria en la plaza.",
+      "de": "Am Sonntag ist Markt auf dem Platz.",
+      "words": [
+        "feria",
+        "plaza",
+        "hay"
+      ]
+    },
+    {
+      "id": "s08",
+      "text": "Vamos al shopping.",
+      "de": "Gehen wir ins Einkaufszentrum.",
+      "words": [
+        "shopping",
+        "ir"
+      ],
+      "grammar": [
+        "del_al"
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "Este negocio cierra a las ocho.",
+      "de": "Dieser Laden schliesst um acht.",
+      "words": [
+        "negocio",
+        "este",
+        "ocho"
+      ],
+      "grammar": [
+        "demostrativos"
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Un kilo de manzanas, por favor.",
+      "de": "Ein Kilo Äpfel, bitte.",
+      "words": [
+        "kilo",
+        "manzana",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Medio kilo de tomates.",
+      "de": "Ein halbes Kilo Tomaten.",
+      "words": [
+        "medio",
+        "kilo",
+        "tomate"
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Dos bananas y una naranja.",
+      "de": "Zwei Bananen und eine Orange.",
+      "words": [
+        "banana",
+        "naranja",
+        "dos"
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Un helado de frutilla.",
+      "de": "Ein Erdbeereis.",
+      "words": [
+        "frutilla",
+        "helado"
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Un jugo de durazno.",
+      "de": "Ein Pfirsichsaft.",
+      "words": [
+        "durazno",
+        "jugo"
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Una palta bien madura.",
+      "de": "Eine schön reife Avocado.",
+      "words": [
+        "palta"
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Un kilo de papa y una cebolla.",
+      "de": "Ein Kilo Kartoffeln und eine Zwiebel.",
+      "words": [
+        "papa",
+        "cebolla",
+        "kilo"
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Pan con manteca.",
+      "de": "Brot mit Butter.",
+      "words": [
+        "pan",
+        "manteca",
+        "con"
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Medio kilo de yerba, por favor.",
+      "de": "Ein halbes Kilo Yerba, bitte.",
+      "words": [
+        "yerba",
+        "medio",
+        "kilo"
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Un paquete de galletitas.",
+      "de": "Eine Packung Kekse.",
+      "words": [
+        "galletitas"
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "¿Me das una bolsa?",
+      "de": "Gibst du mir eine Tüte?",
+      "words": [
+        "bolsa"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "Busco una remera blanca.",
+      "de": "Ich suche ein weisses T-Shirt.",
+      "words": [
+        "buscar",
+        "remera",
+        "blanco"
+      ],
+      "grammar": [
+        "adjetivos"
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "¿Tenés este pantalón en negro?",
+      "de": "Hast du diese Hose in Schwarz?",
+      "words": [
+        "pantalon",
+        "este",
+        "negro"
+      ],
+      "grammar": [
+        "demostrativos"
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "Esa pollera es muy linda.",
+      "de": "Der Rock da ist sehr hübsch.",
+      "words": [
+        "pollera",
+        "ese",
+        "lindo",
+        "muy"
+      ],
+      "grammar": [
+        "demostrativos"
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "Necesito una campera para el frío.",
+      "de": "Ich brauche eine Jacke für die Kälte.",
+      "words": [
+        "campera",
+        "necesitar"
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "Un buzo gris, talle M.",
+      "de": "Ein grauer Pulli, Grösse M.",
+      "words": [
+        "buzo",
+        "gris",
+        "talle"
+      ]
+    },
+    {
+      "id": "s26",
+      "text": "¿Qué talle usás?",
+      "de": "Welche Grösse trägst du?",
+      "words": [
+        "talle",
+        "que"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s27",
+      "text": "¿Puedo probarme estas zapatillas?",
+      "de": "Kann ich diese Turnschuhe anprobieren?",
+      "words": [
+        "probar",
+        "zapatillas",
+        "este"
+      ],
+      "grammar": [
+        "demostrativos"
+      ]
+    },
+    {
+      "id": "s28",
+      "text": "¿Lo puedo probar?",
+      "de": "Kann ich es anprobieren?",
+      "words": [
+        "probar"
+      ]
+    },
+    {
+      "id": "s29",
+      "text": "¿Dónde está el probador?",
+      "de": "Wo ist die Umkleidekabine?",
+      "words": [
+        "probador",
+        "donde"
+      ]
+    },
+    {
+      "id": "s30",
+      "text": "Estos zapatos son muy chicos.",
+      "de": "Diese Schuhe sind zu klein.",
+      "words": [
+        "zapatos",
+        "chico",
+        "muy",
+        "este"
+      ],
+      "grammar": [
+        "adjetivos"
+      ]
+    },
+    {
+      "id": "s31",
+      "text": "¿Tiene un talle más grande?",
+      "de": "Haben Sie eine Nummer grösser?",
+      "words": [
+        "talle",
+        "mas",
+        "grande"
+      ],
+      "grammar": [
+        "comparativo"
+      ]
+    },
+    {
+      "id": "s32",
+      "text": "Necesito anteojos de sol.",
+      "de": "Ich brauche eine Sonnenbrille.",
+      "words": [
+        "anteojos_de_sol",
+        "necesitar"
+      ]
+    },
+    {
+      "id": "s33",
+      "text": "Una gorra azul.",
+      "de": "Eine blaue Mütze.",
+      "words": [
+        "gorra",
+        "azul"
+      ],
+      "grammar": [
+        "adjetivos"
+      ]
+    },
+    {
+      "id": "s34",
+      "text": "¿De qué color?",
+      "de": "In welcher Farbe?",
+      "words": [
+        "color",
+        "que"
+      ]
+    },
+    {
+      "id": "s35",
+      "text": "Me gusta el rojo.",
+      "de": "Mir gefällt das Rote.",
+      "words": [
+        "rojo"
+      ]
+    },
+    {
+      "id": "s36",
+      "text": "El verde es más lindo que el amarillo.",
+      "de": "Das Grüne ist schöner als das Gelbe.",
+      "words": [
+        "verde",
+        "amarillo",
+        "mas",
+        "lindo"
+      ],
+      "grammar": [
+        "comparativo"
+      ]
+    },
+    {
+      "id": "s37",
+      "text": "Esta ropa es nueva.",
+      "de": "Diese Kleidung ist neu.",
+      "words": [
+        "ropa",
+        "este",
+        "nuevo"
+      ],
+      "grammar": [
+        "adjetivos"
+      ]
+    },
+    {
+      "id": "s38",
+      "text": "Es un auto viejo, pero anda bien.",
+      "de": "Es ist ein altes Auto, aber es läuft gut.",
+      "words": [
+        "viejo",
+        "auto"
+      ]
+    },
+    {
+      "id": "s39",
+      "text": "Quiero algo nuevo.",
+      "de": "Ich möchte etwas Neues.",
+      "words": [
+        "nuevo",
+        "querer"
+      ]
+    },
+    {
+      "id": "s40",
+      "text": "Es muy feo.",
+      "de": "Es ist sehr hässlich.",
+      "words": [
+        "feo",
+        "muy"
+      ]
+    },
+    {
+      "id": "s41",
+      "text": "El pantalón es demasiado largo.",
+      "de": "Die Hose ist zu lang.",
+      "words": [
+        "pantalon",
+        "largo"
+      ]
+    },
+    {
+      "id": "s42",
+      "text": "Es un poco corto.",
+      "de": "Es ist ein bisschen kurz.",
+      "words": [
+        "corto",
+        "un_poco"
+      ]
+    },
+    {
+      "id": "s43",
+      "text": "¿Tenés otro color?",
+      "de": "Hast du eine andere Farbe?",
+      "words": [
+        "otro",
+        "color"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s44",
+      "text": "Esta es mejor que aquella.",
+      "de": "Diese ist besser als jene.",
+      "words": [
+        "este",
+        "mejor",
+        "aquel"
+      ],
+      "grammar": [
+        "comparativo"
+      ]
+    },
+    {
+      "id": "s45",
+      "text": "Este es peor.",
+      "de": "Dieser ist schlechter.",
+      "words": [
+        "este",
+        "peor"
+      ],
+      "grammar": [
+        "comparativo"
+      ]
+    },
+    {
+      "id": "s46",
+      "text": "Aquel negocio es más caro.",
+      "de": "Jener Laden ist teurer.",
+      "words": [
+        "aquel",
+        "negocio",
+        "mas",
+        "caro"
+      ],
+      "grammar": [
+        "comparativo"
+      ]
+    },
+    {
+      "id": "s47",
+      "text": "Cuesta menos en la feria.",
+      "de": "Auf dem Markt kostet es weniger.",
+      "words": [
+        "menos",
+        "feria",
+        "costar"
+      ],
+      "grammar": [
+        "comparativo"
+      ]
+    },
+    {
+      "id": "s48",
+      "text": "Hay mucha gente en el shopping.",
+      "de": "Im Einkaufszentrum sind viele Leute.",
+      "words": [
+        "mucho",
+        "shopping",
+        "hay"
+      ]
+    },
+    {
+      "id": "s49",
+      "text": "Solo estoy mirando, gracias.",
+      "de": "Ich schaue nur, danke.",
+      "words": [
+        "mirar",
+        "gracias"
+      ]
+    },
+    {
+      "id": "s50",
+      "text": "¿Puedo mirar?",
+      "de": "Darf ich schauen?",
+      "words": [
+        "mirar"
+      ]
+    },
+    {
+      "id": "s51",
+      "text": "Voy a llevar esta remera.",
+      "de": "Ich nehme dieses T-Shirt.",
+      "words": [
+        "llevar",
+        "remera",
+        "este"
+      ],
+      "grammar": [
+        "ir_a"
+      ]
+    },
+    {
+      "id": "s52",
+      "text": "¿Venden yerba acá?",
+      "de": "Verkauft ihr hier Yerba?",
+      "words": [
+        "vender",
+        "yerba",
+        "aca"
+      ]
+    },
+    {
+      "id": "s53",
+      "text": "¿Tiene uno más chico?",
+      "de": "Haben Sie eins in kleiner?",
+      "words": [
+        "chico",
+        "mas",
+        "uno"
+      ],
+      "grammar": [
+        "comparativo"
+      ]
+    },
+    {
+      "id": "s54",
+      "text": "Es lindo, pero muy caro.",
+      "de": "Es ist schön, aber sehr teuer.",
+      "words": [
+        "lindo",
+        "caro",
+        "muy"
+      ]
+    },
+    {
+      "id": "s55",
+      "text": "Quiero comprar un regalo.",
+      "de": "Ich möchte ein Geschenk kaufen.",
+      "words": [
+        "comprar",
+        "querer"
+      ]
+    },
+    {
+      "id": "s56",
+      "text": "Tengo que buscar un regalo.",
+      "de": "Ich muss ein Geschenk suchen.",
+      "words": [
+        "buscar"
+      ]
+    },
+    {
+      "id": "s57",
+      "text": "Un pantalón blanco.",
+      "de": "Eine weisse Hose.",
+      "words": [
+        "pantalon",
+        "blanco"
+      ]
+    },
+    {
+      "id": "s58",
+      "text": "Llevo una mochila grande.",
+      "de": "Ich habe einen grossen Rucksack dabei.",
+      "words": [
+        "mochila",
+        "grande",
+        "llevar"
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "adjetivos",
+      "title": "Adjektive",
+      "explanation": "Adjektive stehen meist nach dem Nomen und richten sich nach Geschlecht und Zahl:\n• un pantalón negro – una remera negra\n• los zapatos negros – las zapatillas negras\n\nAdjektive auf -e oder Konsonant haben keine weibliche Form: verde, grande, azul, gris.\nPlural: verdes, grandes, azules, grises.\n\n„Zu“ (zu gross) heisst demasiado oder in Argentinien oft einfach muy: muy chico.",
+      "examples": [
+        {
+          "text": "una campera roja",
+          "de": "eine rote Jacke"
+        },
+        {
+          "text": "dos remeras azules",
+          "de": "zwei blaue T-Shirts"
+        }
+      ]
+    },
+    {
+      "id": "demostrativos",
+      "title": "este, ese, aquel",
+      "explanation": "Drei Stufen der Entfernung:\n• este / esta / estos / estas – dieser hier (bei mir)\n• ese / esa / esos / esas – der da (bei dir)\n• aquel / aquella / aquellos / aquellas – jener dort drüben\n\nOhne Nomen bedeuten sie „dieser/diese“: Quiero este. – Ich will diesen.\nNeutral (das hier): esto, eso, aquello – ¿Qué es eso?",
+      "examples": [
+        {
+          "text": "Esta remera es linda.",
+          "de": "Dieses T-Shirt ist schön."
+        },
+        {
+          "text": "¿Cuánto cuesta aquella campera?",
+          "de": "Wie viel kostet die Jacke dort drüben?"
+        }
+      ]
+    },
+    {
+      "id": "comparativo",
+      "title": "Vergleichen",
+      "explanation": "• más … que – mehr … als: más barato que – günstiger als\n• menos … que – weniger … als: menos caro que\n• tan … como – so … wie: tan lindo como\n\nUnregelmässig:\n• bueno → mejor (besser)\n• malo → peor (schlechter)\n• grande → mayor (älter), chico → menor (jünger) – bei Grösse meist más grande / más chico.\n\nDer/die beste: el mejor, la mejor.",
+      "examples": [
+        {
+          "text": "La feria es más barata que el shopping.",
+          "de": "Der Markt ist günstiger als das Einkaufszentrum."
+        },
+        {
+          "text": "Este es el mejor.",
+          "de": "Das ist der beste."
+        }
+      ]
+    }
+  ]
+}

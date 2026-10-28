@@ -35,7 +35,9 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.setValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -51,6 +53,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import de.jfricker.vokabeltrainer.domain.BuildItem
 import de.jfricker.vokabeltrainer.domain.CardItem
 import de.jfricker.vokabeltrainer.domain.ClozeItem
+import de.jfricker.vokabeltrainer.domain.Language
 import de.jfricker.vokabeltrainer.domain.PracticeMode
 
 /**
@@ -62,6 +65,7 @@ import de.jfricker.vokabeltrainer.domain.PracticeMode
 fun PracticeScreen(vm: MainViewModel, lessonId: String?, today: Boolean, onBack: () -> Unit) {
     val state by vm.practice.collectAsStateWithLifecycle()
     val slow by vm.slow.collectAsStateWithLifecycle()
+    val language by vm.language.collectAsStateWithLifecycle()
 
     // Nur beim Betreten vorbereiten, nicht z. B. nach dem Drehen des Handys mitten in der Runde
     LaunchedEffect(lessonId, today) {
@@ -78,7 +82,7 @@ fun PracticeScreen(vm: MainViewModel, lessonId: String?, today: Boolean, onBack:
 
     val title = when (val s = state) {
         is PracticeState.Setup -> s.title
-        is PracticeState.Asking -> s.mode.label
+        is PracticeState.Asking -> s.mode.label(language)
         else -> "Üben"
     }
 
@@ -104,7 +108,7 @@ fun PracticeScreen(vm: MainViewModel, lessonId: String?, today: Boolean, onBack:
         ) {
             when (val s = state) {
                 null -> Text("Wird vorbereitet …")
-                is PracticeState.Setup -> SetupContent(s, vm::startPractice)
+                is PracticeState.Setup -> SetupContent(s, language, vm::startPractice)
                 is PracticeState.Asking -> AskingContent(s, vm)
                 is PracticeState.Finished -> FinishedContent(
                     s,
@@ -120,18 +124,19 @@ fun PracticeScreen(vm: MainViewModel, lessonId: String?, today: Boolean, onBack:
 // ------------------------------------------------------------------ Auswahl
 
 @Composable
-private fun SetupContent(s: PracticeState.Setup, onStart: (PracticeMode) -> Unit) {
+private fun SetupContent(s: PracticeState.Setup, language: Language, onStart: (PracticeMode) -> Unit) {
     Column(
         Modifier.verticalScroll(rememberScrollState()),
         verticalArrangement = Arrangement.spacedBy(10.dp),
     ) {
         Text("Wörter", style = MaterialTheme.typography.titleMedium)
-        PracticeMode.entries.filter { !it.sentenceBased }.forEach { ModeCard(it, s, onStart) }
+        PracticeMode.entries.filter { !it.sentenceBased }.forEach { ModeCard(it, s, language, onStart) }
         Spacer(Modifier.height(8.dp))
         Text("Sätze", style = MaterialTheme.typography.titleMedium)
-        PracticeMode.entries.filter { it.sentenceBased }.forEach { ModeCard(it, s, onStart) }
+        PracticeMode.entries.filter { it.sentenceBased }.forEach { ModeCard(it, s, language, onStart) }
         Text(
-            "Pro Runde höchstens 20 Aufgaben, davon bis zu 10 neue. Richtig Beantwortetes kommt nach " +
+            "Pro Runde höchstens 20 Aufgaben, davon bis zu 10 neue. Gleich beim ersten Mal richtig: " +
+                "kommt nach 8 Tagen noch einmal, danach nicht mehr. Sonst kommt Richtiges nach " +
                 "1, 2, 4, 8, 16 und 32 Tagen wieder, Falsches sofort.",
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
@@ -140,7 +145,7 @@ private fun SetupContent(s: PracticeState.Setup, onStart: (PracticeMode) -> Unit
 }
 
 @Composable
-private fun ModeCard(mode: PracticeMode, s: PracticeState.Setup, onStart: (PracticeMode) -> Unit) {
+private fun ModeCard(mode: PracticeMode, s: PracticeState.Setup, language: Language, onStart: (PracticeMode) -> Unit) {
     val c = s.counts[mode]
     val due = c?.due ?: 0
     val new = c?.new ?: 0
@@ -151,8 +156,8 @@ private fun ModeCard(mode: PracticeMode, s: PracticeState.Setup, onStart: (Pract
         modifier = Modifier.fillMaxWidth(),
     ) {
         Column(Modifier.padding(16.dp)) {
-            Text(mode.label, style = MaterialTheme.typography.titleMedium)
-            Text(mode.description, style = MaterialTheme.typography.bodySmall)
+            Text(mode.label(language), style = MaterialTheme.typography.titleMedium)
+            Text(mode.description(language), style = MaterialTheme.typography.bodySmall)
             Text(
                 if (hasItems) "$due fällig · $new neu" else "Heute nichts mehr fällig",
                 style = MaterialTheme.typography.bodyMedium,
@@ -189,10 +194,10 @@ private fun ColumnScope.CardContent(s: PracticeState.Asking, item: CardItem, vm:
     val word = item.word
     val ptText = displayText(word)
     val ptFirst = s.mode == PracticeMode.CARD_PT_DE
-    // Nach dem Umdrehen steht immer Portugiesisch oben, Deutsch darunter
+    // Nach dem Umdrehen steht immer die Lernsprache oben, Deutsch darunter
     val ptOnTop = ptFirst || s.revealed
 
-    // Bei Portugiesisch -> Deutsch die Frage gleich vorlesen
+    // Bei Lernsprache -> Deutsch die Frage gleich vorlesen
     LaunchedEffect(s.step) {
         if (ptFirst) vm.speak(word.text)
     }
@@ -302,9 +307,13 @@ private fun ColumnScope.BuildContent(s: PracticeState.Asking, item: BuildItem, v
     val placed = remember(s.step) { mutableStateListOf<Int>() }
     val answered = s.result != null
 
-    // Hoer-Diktat: Satz gleich vorlesen
+    // Hoer-Diktat: Satz gleich vorlesen; insgesamt hoechstens MAX_PLAYS Mal vor der Antwort
+    var plays by remember(s.step) { mutableIntStateOf(0) }
     LaunchedEffect(s.step) {
-        if (item.audioOnly) vm.speak(item.sentence.text)
+        if (item.audioOnly) {
+            vm.speak(item.sentence.text)
+            plays = 1
+        }
     }
 
     Column(
@@ -314,12 +323,26 @@ private fun ColumnScope.BuildContent(s: PracticeState.Asking, item: BuildItem, v
         verticalArrangement = Arrangement.spacedBy(12.dp),
     ) {
         if (item.audioOnly) {
-            OutlinedButton(
-                onClick = { vm.speak(item.sentence.text) },
-                modifier = Modifier.fillMaxWidth().height(64.dp),
-            ) { Text("🔊  Nochmals anhören", style = MaterialTheme.typography.titleMedium) }
+            if (!answered) {
+                val left = MAX_PLAYS - plays
+                OutlinedButton(
+                    onClick = {
+                        if (left > 0) {
+                            vm.speak(item.sentence.text)
+                            plays++
+                        }
+                    },
+                    enabled = left > 0,
+                    modifier = Modifier.fillMaxWidth().height(64.dp),
+                ) {
+                    Text(
+                        if (left > 0) "🔊  Nochmals anhören ($left×)" else "Schon $MAX_PLAYS× gehört",
+                        style = MaterialTheme.typography.titleMedium,
+                    )
+                }
+            }
             if (answered) {
-                // Loesung: Deutsch und direkt darunter Portugiesisch
+                // Loesung: Deutsch und direkt darunter die Lernsprache
                 Text(item.sentence.de, style = MaterialTheme.typography.bodyLarge, fontStyle = FontStyle.Italic)
                 SpeakableText(item.sentence.text, speakable = true, onSpeak = { vm.speak(item.sentence.text) }, big = false)
             } else {
@@ -409,6 +432,9 @@ private fun ChoiceList(options: List<String>, correctIndex: Int, s: PracticeStat
 }
 
 private val CORRECT_COLOR = Color(0x6643A047)
+
+/** Hoer-Diktat: so oft darf der Satz vor der Antwort gehoert werden (inkl. automatischem Vorlesen). */
+private const val MAX_PLAYS = 2
 
 @Composable
 private fun ResultFooter(

@@ -1,0 +1,1150 @@
+{
+  "id": "es-AR-07",
+  "language": "es-AR",
+  "order": 7,
+  "title": "Gesundheit & Notfall",
+  "titleTarget": "Salud y emergencias",
+  "words": [
+    {
+      "id": "cabeza",
+      "text": "la cabeza",
+      "de": "der Kopf",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Körper"
+    },
+    {
+      "id": "panza",
+      "text": "la panza",
+      "de": "der Bauch",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Umgangssprachlich; formell: el estómago.",
+      "category": "Körper"
+    },
+    {
+      "id": "garganta",
+      "text": "la garganta",
+      "de": "der Hals (innen)",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Körper"
+    },
+    {
+      "id": "espalda",
+      "text": "la espalda",
+      "de": "der Rücken",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Körper"
+    },
+    {
+      "id": "pie",
+      "text": "el pie",
+      "de": "der Fuss",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Körper"
+    },
+    {
+      "id": "pierna",
+      "text": "la pierna",
+      "de": "das Bein",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Körper"
+    },
+    {
+      "id": "brazo",
+      "text": "el brazo",
+      "de": "der Arm",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Körper"
+    },
+    {
+      "id": "mano",
+      "text": "la mano",
+      "de": "die Hand",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Weiblich, obwohl auf -o!",
+      "category": "Körper"
+    },
+    {
+      "id": "ojo",
+      "text": "el ojo",
+      "de": "das Auge",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Körper"
+    },
+    {
+      "id": "oido",
+      "text": "el oído",
+      "de": "das Ohr (innen)",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Körper"
+    },
+    {
+      "id": "diente",
+      "text": "el diente",
+      "de": "der Zahn",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Körper"
+    },
+    {
+      "id": "muela",
+      "text": "la muela",
+      "de": "der Backenzahn",
+      "pos": "noun",
+      "gender": "f",
+      "note": "dolor de muela = Zahnschmerzen",
+      "category": "Körper"
+    },
+    {
+      "id": "pecho",
+      "text": "el pecho",
+      "de": "die Brust",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Körper"
+    },
+    {
+      "id": "rodilla",
+      "text": "la rodilla",
+      "de": "das Knie",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Körper"
+    },
+    {
+      "id": "dolor",
+      "text": "el dolor",
+      "de": "der Schmerz",
+      "pos": "noun",
+      "gender": "m",
+      "note": "dolor de cabeza = Kopfschmerzen",
+      "category": "Beschwerden",
+      "grammar": [
+        "doler"
+      ]
+    },
+    {
+      "id": "fiebre",
+      "text": "la fiebre",
+      "de": "das Fieber",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "tos",
+      "text": "la tos",
+      "de": "der Husten",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "resfrio",
+      "text": "el resfrío",
+      "de": "die Erkältung",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Anderswo „resfriado“.",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "gripe",
+      "text": "la gripe",
+      "de": "die Grippe",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "diarrea",
+      "text": "la diarrea",
+      "de": "der Durchfall",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "nauseas",
+      "text": "las náuseas",
+      "de": "die Übelkeit",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "mareado",
+      "text": "mareado",
+      "de": "schwindlig",
+      "pos": "adjective",
+      "category": "Beschwerden",
+      "grammar": [
+        "estar_estado"
+      ]
+    },
+    {
+      "id": "herida",
+      "text": "la herida",
+      "de": "die Wunde",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "quemadura",
+      "text": "la quemadura",
+      "de": "die Verbrennung",
+      "pos": "noun",
+      "gender": "f",
+      "note": "quemadura de sol = Sonnenbrand",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "picadura",
+      "text": "la picadura",
+      "de": "der Stich (Insekt)",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "alergia",
+      "text": "la alergia",
+      "de": "die Allergie",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Soy alérgico a … = Ich bin allergisch gegen …",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "enfermo",
+      "text": "enfermo",
+      "de": "krank",
+      "pos": "adjective",
+      "category": "Beschwerden",
+      "grammar": [
+        "estar_estado"
+      ]
+    },
+    {
+      "id": "cansado",
+      "text": "cansado",
+      "de": "müde",
+      "pos": "adjective",
+      "category": "Beschwerden",
+      "grammar": [
+        "estar_estado"
+      ]
+    },
+    {
+      "id": "embarazada",
+      "text": "embarazada",
+      "de": "schwanger",
+      "pos": "adjective",
+      "note": "Achtung: heisst nicht „verlegen“!",
+      "category": "Beschwerden"
+    },
+    {
+      "id": "medico",
+      "text": "el médico",
+      "de": "der Arzt",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Ärztin: la médica.",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "hospital",
+      "text": "el hospital",
+      "de": "das Krankenhaus",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "guardia",
+      "text": "la guardia",
+      "de": "die Notaufnahme",
+      "pos": "noun",
+      "gender": "f",
+      "note": "ir a la guardia = in die Notaufnahme gehen",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "farmacia",
+      "text": "la farmacia",
+      "de": "die Apotheke",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "remedio",
+      "text": "el remedio",
+      "de": "das Medikament",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Auch: el medicamento.",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "pastilla",
+      "text": "la pastilla",
+      "de": "die Tablette",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "receta",
+      "text": "la receta",
+      "de": "das Rezept",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "turno",
+      "text": "el turno",
+      "de": "der Termin",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Anderswo „cita“.",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "seguro",
+      "text": "el seguro",
+      "de": "die Versicherung",
+      "pos": "noun",
+      "gender": "m",
+      "note": "seguro de viaje = Reiseversicherung",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "ambulancia",
+      "text": "la ambulancia",
+      "de": "der Krankenwagen",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Notruf in Argentinien: 107 (Notarzt), 911 (Polizei).",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "protector_solar",
+      "text": "el protector solar",
+      "de": "die Sonnencreme",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "repelente",
+      "text": "el repelente",
+      "de": "das Mückenschutzmittel",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Wichtig wegen Dengue.",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "curita",
+      "text": "la curita",
+      "de": "das Pflaster",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Argentinisch.",
+      "category": "Arzt & Apotheke"
+    },
+    {
+      "id": "ayuda",
+      "text": "la ayuda",
+      "de": "die Hilfe",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Notfall"
+    },
+    {
+      "id": "socorro",
+      "text": "¡socorro!",
+      "de": "Hilfe!",
+      "pos": "interjection",
+      "category": "Notfall"
+    },
+    {
+      "id": "emergencia",
+      "text": "la emergencia",
+      "de": "der Notfall",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Notfall"
+    },
+    {
+      "id": "policia",
+      "text": "la policía",
+      "de": "die Polizei",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Notfall"
+    },
+    {
+      "id": "robo",
+      "text": "el robo",
+      "de": "der Diebstahl, Raub",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Notfall"
+    },
+    {
+      "id": "accidente",
+      "text": "el accidente",
+      "de": "der Unfall",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Notfall"
+    },
+    {
+      "id": "perder",
+      "text": "perder",
+      "de": "verlieren; verpassen",
+      "pos": "verb",
+      "note": "yo pierdo, vos perdés; Perdí … = Ich habe … verloren.",
+      "category": "Notfall"
+    },
+    {
+      "id": "robar",
+      "text": "robar",
+      "de": "stehlen",
+      "pos": "verb",
+      "note": "Me robaron … = Man hat mir … gestohlen.",
+      "category": "Notfall"
+    },
+    {
+      "id": "denuncia",
+      "text": "la denuncia",
+      "de": "die Anzeige",
+      "pos": "noun",
+      "gender": "f",
+      "note": "hacer una denuncia = Anzeige erstatten",
+      "category": "Notfall"
+    },
+    {
+      "id": "celular",
+      "text": "el celular",
+      "de": "das Handy",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Notfall"
+    },
+    {
+      "id": "billetera",
+      "text": "la billetera",
+      "de": "die Geldbörse",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Notfall"
+    },
+    {
+      "id": "cuidado",
+      "text": "¡cuidado!",
+      "de": "Vorsicht!",
+      "pos": "interjection",
+      "category": "Notfall"
+    },
+    {
+      "id": "peligroso",
+      "text": "peligroso",
+      "de": "gefährlich",
+      "pos": "adjective",
+      "category": "Notfall"
+    },
+    {
+      "id": "llamar",
+      "text": "llamar",
+      "de": "anrufen; rufen",
+      "pos": "verb",
+      "category": "Notfall"
+    },
+    {
+      "id": "doler",
+      "text": "doler",
+      "de": "wehtun",
+      "pos": "verb",
+      "note": "me duele (Singular), me duelen (Plural)",
+      "category": "Verben & Wendungen",
+      "grammar": [
+        "doler"
+      ]
+    },
+    {
+      "id": "sentirse",
+      "text": "sentirse",
+      "de": "sich fühlen",
+      "pos": "verb",
+      "note": "Me siento mal. = Ich fühle mich schlecht.",
+      "category": "Verben & Wendungen"
+    },
+    {
+      "id": "tener_que",
+      "text": "tener que",
+      "de": "müssen",
+      "pos": "phrase",
+      "note": "Tengo que … = Ich muss …",
+      "category": "Verben & Wendungen",
+      "grammar": [
+        "tener_que"
+      ]
+    },
+    {
+      "id": "hay_que",
+      "text": "hay que",
+      "de": "man muss",
+      "pos": "phrase",
+      "category": "Verben & Wendungen",
+      "grammar": [
+        "tener_que"
+      ]
+    },
+    {
+      "id": "mal",
+      "text": "mal",
+      "de": "schlecht",
+      "pos": "adverb",
+      "category": "Verben & Wendungen"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "Me duele la cabeza.",
+      "de": "Ich habe Kopfschmerzen.",
+      "words": [
+        "doler",
+        "cabeza"
+      ],
+      "grammar": [
+        "doler"
+      ]
+    },
+    {
+      "id": "s02",
+      "text": "Me duele mucho la panza.",
+      "de": "Mir tut der Bauch sehr weh.",
+      "words": [
+        "doler",
+        "panza",
+        "mucho"
+      ],
+      "grammar": [
+        "doler"
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "Me duele la garganta.",
+      "de": "Ich habe Halsschmerzen.",
+      "words": [
+        "garganta",
+        "doler"
+      ],
+      "grammar": [
+        "doler"
+      ]
+    },
+    {
+      "id": "s04",
+      "text": "Me duele el pie derecho.",
+      "de": "Mir tut der rechte Fuss weh.",
+      "words": [
+        "pie",
+        "doler"
+      ],
+      "grammar": [
+        "doler"
+      ]
+    },
+    {
+      "id": "s05",
+      "text": "Me duele la pierna.",
+      "de": "Mir tut das Bein weh.",
+      "words": [
+        "pierna",
+        "doler"
+      ],
+      "grammar": [
+        "doler"
+      ]
+    },
+    {
+      "id": "s06",
+      "text": "Tengo dolor de espalda.",
+      "de": "Ich habe Rückenschmerzen.",
+      "words": [
+        "dolor",
+        "espalda"
+      ],
+      "grammar": [
+        "doler"
+      ]
+    },
+    {
+      "id": "s07",
+      "text": "Tengo dolor de muela.",
+      "de": "Ich habe Zahnschmerzen.",
+      "words": [
+        "dolor",
+        "muela"
+      ],
+      "grammar": [
+        "doler"
+      ]
+    },
+    {
+      "id": "s08",
+      "text": "Me lastimé la mano.",
+      "de": "Ich habe mich an der Hand verletzt.",
+      "words": [
+        "mano"
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "Me duele el brazo.",
+      "de": "Mir tut der Arm weh.",
+      "words": [
+        "brazo",
+        "doler"
+      ],
+      "grammar": [
+        "doler"
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Tengo algo en el ojo.",
+      "de": "Ich habe etwas im Auge.",
+      "words": [
+        "ojo"
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Me duele el oído.",
+      "de": "Ich habe Ohrenschmerzen.",
+      "words": [
+        "oido",
+        "doler"
+      ],
+      "grammar": [
+        "doler"
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Se me rompió un diente.",
+      "de": "Mir ist ein Zahn abgebrochen.",
+      "words": [
+        "diente"
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Tengo un dolor fuerte en el pecho.",
+      "de": "Ich habe starke Schmerzen in der Brust.",
+      "words": [
+        "dolor",
+        "pecho"
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Me caí y me duele la rodilla.",
+      "de": "Ich bin gestürzt und mir tut das Knie weh.",
+      "words": [
+        "rodilla",
+        "doler"
+      ],
+      "grammar": [
+        "doler"
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Tengo fiebre.",
+      "de": "Ich habe Fieber.",
+      "words": [
+        "fiebre"
+      ],
+      "grammar": [
+        "tener_hambre"
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Tengo tos y estoy resfriado.",
+      "de": "Ich habe Husten und bin erkältet.",
+      "words": [
+        "tos"
+      ],
+      "grammar": [
+        "estar_estado"
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Es solo un resfrío.",
+      "de": "Es ist nur eine Erkältung.",
+      "words": [
+        "resfrio"
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Creo que tengo gripe.",
+      "de": "Ich glaube, ich habe die Grippe.",
+      "words": [
+        "gripe"
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Tengo diarrea.",
+      "de": "Ich habe Durchfall.",
+      "words": [
+        "diarrea"
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "Tengo náuseas.",
+      "de": "Mir ist übel.",
+      "words": [
+        "nauseas"
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "Estoy mareado.",
+      "de": "Mir ist schwindlig.",
+      "words": [
+        "mareado"
+      ],
+      "grammar": [
+        "estar_estado"
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "Estoy enfermo.",
+      "de": "Ich bin krank.",
+      "words": [
+        "enfermo"
+      ],
+      "grammar": [
+        "estar_estado"
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "Estoy muy cansado.",
+      "de": "Ich bin sehr müde.",
+      "words": [
+        "cansado",
+        "muy"
+      ],
+      "grammar": [
+        "estar_estado"
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "Me siento mal.",
+      "de": "Ich fühle mich schlecht.",
+      "words": [
+        "sentirse",
+        "mal"
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "Mi mujer está embarazada.",
+      "de": "Meine Frau ist schwanger.",
+      "words": [
+        "embarazada"
+      ],
+      "grammar": [
+        "estar_estado"
+      ]
+    },
+    {
+      "id": "s26",
+      "text": "Es una herida pequeña.",
+      "de": "Es ist eine kleine Wunde.",
+      "words": [
+        "herida"
+      ]
+    },
+    {
+      "id": "s27",
+      "text": "Tengo una quemadura de sol.",
+      "de": "Ich habe einen Sonnenbrand.",
+      "words": [
+        "quemadura"
+      ]
+    },
+    {
+      "id": "s28",
+      "text": "Es una picadura de mosquito.",
+      "de": "Das ist ein Mückenstich.",
+      "words": [
+        "picadura"
+      ]
+    },
+    {
+      "id": "s29",
+      "text": "Tengo alergia a la penicilina.",
+      "de": "Ich bin gegen Penicillin allergisch.",
+      "words": [
+        "alergia"
+      ]
+    },
+    {
+      "id": "s30",
+      "text": "Necesito un médico.",
+      "de": "Ich brauche einen Arzt.",
+      "words": [
+        "medico",
+        "necesitar"
+      ]
+    },
+    {
+      "id": "s31",
+      "text": "¿Dónde está el hospital?",
+      "de": "Wo ist das Krankenhaus?",
+      "words": [
+        "hospital",
+        "donde"
+      ]
+    },
+    {
+      "id": "s32",
+      "text": "Tenemos que ir a la guardia.",
+      "de": "Wir müssen in die Notaufnahme.",
+      "words": [
+        "guardia",
+        "tener_que"
+      ],
+      "grammar": [
+        "tener_que"
+      ]
+    },
+    {
+      "id": "s33",
+      "text": "¿Hay una farmacia cerca?",
+      "de": "Gibt es eine Apotheke in der Nähe?",
+      "words": [
+        "farmacia",
+        "cerca",
+        "hay"
+      ]
+    },
+    {
+      "id": "s34",
+      "text": "¿Tiene algo para el dolor de cabeza?",
+      "de": "Haben Sie etwas gegen Kopfschmerzen?",
+      "words": [
+        "dolor",
+        "cabeza"
+      ]
+    },
+    {
+      "id": "s35",
+      "text": "Tomá este remedio dos veces por día.",
+      "de": "Nimm dieses Medikament zweimal am Tag.",
+      "words": [
+        "remedio",
+        "tomar",
+        "dos"
+      ],
+      "grammar": [
+        "imperativo"
+      ]
+    },
+    {
+      "id": "s36",
+      "text": "Una pastilla cada ocho horas.",
+      "de": "Eine Tablette alle acht Stunden.",
+      "words": [
+        "pastilla",
+        "ocho"
+      ]
+    },
+    {
+      "id": "s37",
+      "text": "¿Necesito receta?",
+      "de": "Brauche ich ein Rezept?",
+      "words": [
+        "receta",
+        "necesitar"
+      ]
+    },
+    {
+      "id": "s38",
+      "text": "Quiero sacar un turno.",
+      "de": "Ich möchte einen Termin vereinbaren.",
+      "words": [
+        "turno",
+        "querer"
+      ]
+    },
+    {
+      "id": "s39",
+      "text": "¿Tenés seguro de viaje?",
+      "de": "Hast du eine Reiseversicherung?",
+      "words": [
+        "seguro"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s40",
+      "text": "¡Llamen a una ambulancia!",
+      "de": "Ruft einen Krankenwagen!",
+      "words": [
+        "ambulancia",
+        "llamar"
+      ]
+    },
+    {
+      "id": "s41",
+      "text": "Necesito protector solar.",
+      "de": "Ich brauche Sonnencreme.",
+      "words": [
+        "protector_solar",
+        "necesitar"
+      ]
+    },
+    {
+      "id": "s42",
+      "text": "Hay que usar repelente por los mosquitos.",
+      "de": "Wegen der Mücken muss man Mückenschutz benutzen.",
+      "words": [
+        "repelente",
+        "hay_que"
+      ],
+      "grammar": [
+        "tener_que"
+      ]
+    },
+    {
+      "id": "s43",
+      "text": "¿Me das una curita?",
+      "de": "Gibst du mir ein Pflaster?",
+      "words": [
+        "curita"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s44",
+      "text": "¡Socorro! ¡Ayuda!",
+      "de": "Hilfe! Hilfe!",
+      "words": [
+        "socorro",
+        "ayuda"
+      ]
+    },
+    {
+      "id": "s45",
+      "text": "Necesito ayuda, por favor.",
+      "de": "Ich brauche Hilfe, bitte.",
+      "words": [
+        "ayuda",
+        "necesitar",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s46",
+      "text": "Es una emergencia.",
+      "de": "Es ist ein Notfall.",
+      "words": [
+        "emergencia"
+      ]
+    },
+    {
+      "id": "s47",
+      "text": "Llamá a la policía.",
+      "de": "Ruf die Polizei.",
+      "words": [
+        "policia",
+        "llamar"
+      ],
+      "grammar": [
+        "imperativo"
+      ]
+    },
+    {
+      "id": "s48",
+      "text": "Me robaron la billetera.",
+      "de": "Man hat mir die Geldbörse gestohlen.",
+      "words": [
+        "robar",
+        "billetera"
+      ]
+    },
+    {
+      "id": "s49",
+      "text": "Perdí mi celular.",
+      "de": "Ich habe mein Handy verloren.",
+      "words": [
+        "perder",
+        "celular"
+      ]
+    },
+    {
+      "id": "s50",
+      "text": "Quiero hacer una denuncia por robo.",
+      "de": "Ich möchte einen Diebstahl anzeigen.",
+      "words": [
+        "denuncia",
+        "robo"
+      ]
+    },
+    {
+      "id": "s51",
+      "text": "Hubo un accidente en la ruta.",
+      "de": "Es gab einen Unfall auf der Landstrasse.",
+      "words": [
+        "accidente"
+      ]
+    },
+    {
+      "id": "s52",
+      "text": "¡Cuidado con el auto!",
+      "de": "Vorsicht, das Auto!",
+      "words": [
+        "cuidado",
+        "auto"
+      ]
+    },
+    {
+      "id": "s53",
+      "text": "Ese barrio es peligroso de noche.",
+      "de": "Das Viertel ist nachts gefährlich.",
+      "words": [
+        "peligroso",
+        "ese",
+        "noche"
+      ]
+    },
+    {
+      "id": "s54",
+      "text": "Tengo que tomar la pastilla.",
+      "de": "Ich muss die Tablette nehmen.",
+      "words": [
+        "tener_que",
+        "pastilla",
+        "tomar"
+      ],
+      "grammar": [
+        "tener_que"
+      ]
+    },
+    {
+      "id": "s55",
+      "text": "Hay que llamar al médico.",
+      "de": "Man muss den Arzt rufen.",
+      "words": [
+        "hay_que",
+        "llamar",
+        "medico"
+      ],
+      "grammar": [
+        "tener_que"
+      ]
+    },
+    {
+      "id": "s56",
+      "text": "No me siento bien.",
+      "de": "Ich fühle mich nicht gut.",
+      "words": [
+        "sentirse",
+        "bien",
+        "no"
+      ]
+    },
+    {
+      "id": "s57",
+      "text": "Tengo que ir al médico mañana.",
+      "de": "Ich muss morgen zum Arzt.",
+      "words": [
+        "tener_que",
+        "medico"
+      ],
+      "grammar": [
+        "tener_que"
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "doler",
+      "title": "me duele – es tut mir weh",
+      "explanation": "doler funktioniert wie „gefallen“: Das, was wehtut, ist das Subjekt.\n• Me duele la cabeza. – Mir tut der Kopf weh. (Singular: duele)\n• Me duelen los pies. – Mir tun die Füsse weh. (Plural: duelen)\n\nWem es wehtut, zeigt das Pronomen davor:\nme (mir), te (dir), le (ihm/ihr/Ihnen), nos (uns), les (ihnen/euch)\n\nKörperteile mit Artikel, nicht mit „mein“: Me duele la espalda.\nAlternative: Tengo dolor de cabeza.",
+      "examples": [
+        {
+          "text": "¿Te duele mucho?",
+          "de": "Tut es dir sehr weh?"
+        },
+        {
+          "text": "A mi hijo le duele el oído.",
+          "de": "Mein Sohn hat Ohrenschmerzen."
+        }
+      ]
+    },
+    {
+      "id": "tener_que",
+      "title": "tener que, hay que – müssen",
+      "explanation": "• tener que + Infinitiv – müssen (persönlich)\n  Tengo que ir al médico. – Ich muss zum Arzt.\n  ¿Tenés que trabajar? – Musst du arbeiten?\n\n• hay que + Infinitiv – man muss (allgemein, ohne Person)\n  Hay que llamar a la policía. – Man muss die Polizei rufen.\n\n• necesitar + Infinitiv – brauchen, müssen\n  Necesito descansar. – Ich muss mich ausruhen.",
+      "examples": [
+        {
+          "text": "Tenemos que salir temprano.",
+          "de": "Wir müssen früh los."
+        },
+        {
+          "text": "Hay que tener cuidado.",
+          "de": "Man muss aufpassen."
+        }
+      ]
+    },
+    {
+      "id": "estar_estado",
+      "title": "estar für Zustände",
+      "explanation": "Vorübergehende Zustände und Befinden drückt man mit estar aus:\n• Estoy enfermo. – Ich bin krank.\n• Estoy cansada. – Ich bin müde. (Frau)\n• Está mareado. – Ihm ist schwindlig.\n\nestar: yo estoy, vos estás, usted/él está, nosotros estamos, ustedes están.\nDas Adjektiv richtet sich nach der Person: enfermo / enferma / enfermos.",
+      "examples": [
+        {
+          "text": "¿Estás bien?",
+          "de": "Geht es dir gut?"
+        },
+        {
+          "text": "Estamos muy cansados.",
+          "de": "Wir sind sehr müde."
+        }
+      ]
+    }
+  ]
+}

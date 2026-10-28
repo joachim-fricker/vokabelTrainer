@@ -2,6 +2,7 @@ package de.jfricker.vokabeltrainer.speech
 
 import android.content.Context
 import android.speech.tts.TextToSpeech
+import de.jfricker.vokabeltrainer.domain.Language
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -14,9 +15,10 @@ sealed interface SpeakerState {
 }
 
 /** Sprachausgabe ueber die Android-TextToSpeech-Engine (offline, kostenlos). */
-class Speaker(context: Context, locale: Locale = Locale.forLanguageTag("pt-BR")) : TextToSpeech.OnInitListener {
+class Speaker(context: Context, language: Language) : TextToSpeech.OnInitListener {
 
-    private val targetLocale = locale
+    private var language = language
+    private var initialized = false
     private val _state = MutableStateFlow<SpeakerState>(SpeakerState.Initializing)
     val state: StateFlow<SpeakerState> = _state.asStateFlow()
 
@@ -27,10 +29,29 @@ class Speaker(context: Context, locale: Locale = Locale.forLanguageTag("pt-BR"))
             _state.value = SpeakerState.Unavailable("Die Sprachausgabe konnte nicht gestartet werden.")
             return
         }
-        val result = tts.setLanguage(targetLocale)
+        initialized = true
+        applyLanguage()
+    }
+
+    /** Beim Wechsel der Lernsprache aufrufen. */
+    fun setLanguage(value: Language) {
+        if (value == language && _state.value != SpeakerState.Initializing) return
+        language = value
+        if (initialized) applyLanguage()
+    }
+
+    /**
+     * Erste Stimme aus Language.ttsLocales, die es fuer genau dieses Land gibt;
+     * sonst irgendeine Stimme der Sprache.
+     */
+    private fun applyLanguage() {
+        val locales = language.ttsLocales.map { Locale.forLanguageTag(it) }
+        val chosen = locales.firstOrNull { tts.isLanguageAvailable(it) >= TextToSpeech.LANG_COUNTRY_AVAILABLE }
+            ?: locales.firstOrNull { tts.isLanguageAvailable(it) >= TextToSpeech.LANG_AVAILABLE }
+        val result = chosen?.let { tts.setLanguage(it) } ?: TextToSpeech.LANG_NOT_SUPPORTED
         _state.value = if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
             SpeakerState.Unavailable(
-                "Keine Stimme für Portugiesisch (Brasilien) installiert. " +
+                "Keine Stimme für ${language.variantName} installiert. " +
                     "Bitte in den Android-Einstellungen unter Sprachausgabe nachladen."
             )
         } else {

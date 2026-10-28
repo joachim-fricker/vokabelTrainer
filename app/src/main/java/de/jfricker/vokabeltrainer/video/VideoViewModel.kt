@@ -5,7 +5,11 @@ import androidx.lifecycle.viewModelScope
 import de.jfricker.vokabeltrainer.data.local.PlaylistEntity
 import de.jfricker.vokabeltrainer.data.local.PlaylistSummary
 import de.jfricker.vokabeltrainer.data.local.VideoEntity
+import de.jfricker.vokabeltrainer.data.LearningPrefs
+import de.jfricker.vokabeltrainer.domain.Language
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
@@ -13,9 +17,14 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 
-class VideoViewModel(private val repository: VideoRepository) : ViewModel() {
+@OptIn(ExperimentalCoroutinesApi::class)
+class VideoViewModel(private val repository: VideoRepository, prefs: LearningPrefs) : ViewModel() {
 
-    val playlists: StateFlow<List<PlaylistSummary>> = repository.observePlaylists()
+    /** Gerade gewaehlte Lernsprache (Playlists und Untertitel) */
+    val language: StateFlow<Language> = prefs.languageFlow
+
+    val playlists: StateFlow<List<PlaylistSummary>> = prefs.languageFlow
+        .flatMapLatest { repository.observePlaylists(it.code) }
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), emptyList())
 
     private val _hasApiKey = MutableStateFlow(repository.apiKey != null)

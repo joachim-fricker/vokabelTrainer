@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Einfarbige Variante fuer "Designte Symbole" (Android 13+): Balken als Aussparung in der Sprechblase -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path android:fillColor="#FF000000" android:fillType="evenOdd" android:pathData="M38,30 H70 A10,10 0 0 1 80,40 V62 A10,10 0 0 1 70,72 H50 L37,82 L40,72 H38 A10,10 0 0 1 28,62 V40 A10,10 0 0 1 38,30 Z M40.0,47 a2.5,2.5 0 0 1 2.5,2.5 v3 a2.5,2.5 0 0 1 -5,0 v-3 a2.5,2.5 0 0 1 2.5,-2.5 Z M48.0,43 a2.5,2.5 0 0 1 2.5,2.5 v11 a2.5,2.5 0 0 1 -5,0 v-11 a2.5,2.5 0 0 1 2.5,-2.5 Z M56.0,39 a2.5,2.5 0 0 1 2.5,2.5 v19 a2.5,2.5 0 0 1 -5,0 v-19 a2.5,2.5 0 0 1 2.5,-2.5 Z M64.0,43 a2.5,2.5 0 0 1 2.5,2.5 v11 a2.5,2.5 0 0 1 -5,0 v-11 a2.5,2.5 0 0 1 2.5,-2.5 Z M72.0,47 a2.5,2.5 0 0 1 2.5,2.5 v3 a2.5,2.5 0 0 1 -5,0 v-3 a2.5,2.5 0 0 1 2.5,-2.5 Z" />
+</vector>

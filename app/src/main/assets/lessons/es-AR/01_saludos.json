@@ -1,0 +1,667 @@
+{
+  "id": "es-AR-01",
+  "language": "es-AR",
+  "order": 1,
+  "title": "Begrüssung & Höflichkeit",
+  "titleTarget": "Saludos y cortesía",
+  "words": [
+    {
+      "id": "hola",
+      "text": "hola",
+      "de": "hallo",
+      "pos": "interjection",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "buen_dia",
+      "text": "buen día",
+      "de": "guten Morgen",
+      "pos": "phrase",
+      "note": "In Argentinien sagt man meist „buen día“ (Singular).",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "buenas_tardes",
+      "text": "buenas tardes",
+      "de": "guten Tag (nachmittags)",
+      "pos": "phrase",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "buenas_noches",
+      "text": "buenas noches",
+      "de": "guten Abend; gute Nacht",
+      "pos": "phrase",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "buenas",
+      "text": "buenas",
+      "de": "Tag! (kurz, zu jeder Tageszeit)",
+      "pos": "interjection",
+      "note": "Sehr üblich beim Betreten eines Ladens.",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "chau",
+      "text": "chau",
+      "de": "tschüss",
+      "pos": "interjection",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "hasta_luego",
+      "text": "hasta luego",
+      "de": "bis später",
+      "pos": "phrase",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "hasta_manana",
+      "text": "hasta mañana",
+      "de": "bis morgen",
+      "pos": "phrase",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "nos_vemos",
+      "text": "nos vemos",
+      "de": "wir sehen uns",
+      "pos": "phrase",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "como_andas",
+      "text": "¿cómo andás?",
+      "de": "wie geht's? (zu vos)",
+      "pos": "phrase",
+      "note": "Typisch argentinisch; auch: ¿cómo estás?",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "que_tal",
+      "text": "¿qué tal?",
+      "de": "wie geht's?",
+      "pos": "phrase",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "todo_bien",
+      "text": "todo bien",
+      "de": "alles gut",
+      "pos": "phrase",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "bien",
+      "text": "bien",
+      "de": "gut",
+      "pos": "adverb",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "mucho_gusto",
+      "text": "mucho gusto",
+      "de": "freut mich",
+      "pos": "phrase",
+      "note": "Oder: encantado / encantada.",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "me_llamo",
+      "text": "me llamo",
+      "de": "ich heisse",
+      "pos": "phrase",
+      "category": "Begrüssen & Verabschieden"
+    },
+    {
+      "id": "gracias",
+      "text": "gracias",
+      "de": "danke",
+      "pos": "interjection",
+      "category": "Höflichkeit"
+    },
+    {
+      "id": "muchas_gracias",
+      "text": "muchas gracias",
+      "de": "vielen Dank",
+      "pos": "phrase",
+      "category": "Höflichkeit"
+    },
+    {
+      "id": "por_favor",
+      "text": "por favor",
+      "de": "bitte",
+      "pos": "phrase",
+      "category": "Höflichkeit"
+    },
+    {
+      "id": "de_nada",
+      "text": "de nada",
+      "de": "gern geschehen",
+      "pos": "phrase",
+      "category": "Höflichkeit"
+    },
+    {
+      "id": "perdon",
+      "text": "perdón",
+      "de": "Entschuldigung",
+      "pos": "interjection",
+      "category": "Höflichkeit"
+    },
+    {
+      "id": "disculpa",
+      "text": "disculpá",
+      "de": "entschuldige (zu vos)",
+      "pos": "phrase",
+      "note": "Zu usted: disculpe.",
+      "category": "Höflichkeit"
+    },
+    {
+      "id": "permiso",
+      "text": "permiso",
+      "de": "Darf ich mal? (zum Vorbeigehen)",
+      "pos": "interjection",
+      "category": "Höflichkeit"
+    },
+    {
+      "id": "si",
+      "text": "sí",
+      "de": "ja",
+      "pos": "adverb",
+      "note": "Mit Akzent! si ohne Akzent heisst „wenn, ob“.",
+      "category": "Höflichkeit"
+    },
+    {
+      "id": "no",
+      "text": "no",
+      "de": "nein; nicht",
+      "pos": "adverb",
+      "category": "Höflichkeit",
+      "grammar": [
+        "negacion"
+      ]
+    },
+    {
+      "id": "dale",
+      "text": "dale",
+      "de": "okay, einverstanden",
+      "pos": "interjection",
+      "note": "Argentinisch für „ok“ – hört man ständig.",
+      "category": "Höflichkeit"
+    },
+    {
+      "id": "como",
+      "text": "cómo",
+      "de": "wie",
+      "pos": "adverb",
+      "category": "Personen & Verständigung"
+    },
+    {
+      "id": "yo",
+      "text": "yo",
+      "de": "ich",
+      "pos": "pronoun",
+      "note": "In Argentinien oft wie „scho“ ausgesprochen.",
+      "category": "Personen & Verständigung"
+    },
+    {
+      "id": "vos",
+      "text": "vos",
+      "de": "du",
+      "pos": "pronoun",
+      "note": "In Argentinien statt tú: vos sos, vos tenés.",
+      "category": "Personen & Verständigung",
+      "grammar": [
+        "voseo",
+        "vos_usted"
+      ]
+    },
+    {
+      "id": "usted",
+      "text": "usted",
+      "de": "Sie (höflich)",
+      "pos": "pronoun",
+      "category": "Personen & Verständigung",
+      "grammar": [
+        "vos_usted"
+      ]
+    },
+    {
+      "id": "ustedes",
+      "text": "ustedes",
+      "de": "ihr; Sie (Plural)",
+      "pos": "pronoun",
+      "note": "In Argentinien gibt es kein vosotros.",
+      "category": "Personen & Verständigung",
+      "grammar": [
+        "vos_usted"
+      ]
+    },
+    {
+      "id": "un_poco",
+      "text": "un poco",
+      "de": "ein bisschen",
+      "pos": "phrase",
+      "category": "Personen & Verständigung"
+    },
+    {
+      "id": "hablar",
+      "text": "hablar",
+      "de": "sprechen",
+      "pos": "verb",
+      "category": "Personen & Verständigung"
+    },
+    {
+      "id": "entender",
+      "text": "entender",
+      "de": "verstehen",
+      "pos": "verb",
+      "note": "yo entiendo, vos entendés",
+      "category": "Personen & Verständigung"
+    },
+    {
+      "id": "despacio",
+      "text": "despacio",
+      "de": "langsam",
+      "pos": "adverb",
+      "category": "Personen & Verständigung"
+    },
+    {
+      "id": "espanol",
+      "text": "español",
+      "de": "Spanisch",
+      "pos": "noun",
+      "note": "Viele Argentinier sagen „castellano“.",
+      "category": "Personen & Verständigung"
+    },
+    {
+      "id": "aleman",
+      "text": "alemán",
+      "de": "Deutsch (Sprache); deutsch",
+      "pos": "noun",
+      "category": "Personen & Verständigung"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "¡Hola! ¿Cómo andás?",
+      "de": "Hallo! Wie geht's?",
+      "words": [
+        "hola",
+        "como_andas"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s02",
+      "text": "Buen día, ¿cómo está usted?",
+      "de": "Guten Morgen, wie geht es Ihnen?",
+      "words": [
+        "buen_dia",
+        "como",
+        "usted"
+      ],
+      "grammar": [
+        "vos_usted"
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "Buenas tardes, señora.",
+      "de": "Guten Tag, meine Dame.",
+      "words": [
+        "buenas_tardes"
+      ]
+    },
+    {
+      "id": "s04",
+      "text": "Buenas noches, hasta mañana.",
+      "de": "Gute Nacht, bis morgen.",
+      "words": [
+        "buenas_noches",
+        "hasta_manana"
+      ]
+    },
+    {
+      "id": "s05",
+      "text": "¡Buenas! ¿Todo bien?",
+      "de": "Tag! Alles gut?",
+      "words": [
+        "buenas",
+        "todo_bien"
+      ]
+    },
+    {
+      "id": "s06",
+      "text": "Todo bien, ¿y vos?",
+      "de": "Alles gut, und dir?",
+      "words": [
+        "todo_bien",
+        "vos"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s07",
+      "text": "Bien, gracias.",
+      "de": "Gut, danke.",
+      "words": [
+        "bien",
+        "gracias"
+      ]
+    },
+    {
+      "id": "s08",
+      "text": "¿Qué tal? Bien, ¿y usted?",
+      "de": "Wie geht's? Gut, und Ihnen?",
+      "words": [
+        "que_tal",
+        "bien",
+        "usted"
+      ],
+      "grammar": [
+        "vos_usted"
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "Me llamo Pedro. Mucho gusto.",
+      "de": "Ich heisse Pedro. Freut mich.",
+      "words": [
+        "me_llamo",
+        "mucho_gusto"
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "Mucho gusto, yo soy Ana.",
+      "de": "Freut mich, ich bin Ana.",
+      "words": [
+        "mucho_gusto",
+        "yo"
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Muchas gracias. – De nada.",
+      "de": "Vielen Dank. – Gern geschehen.",
+      "words": [
+        "muchas_gracias",
+        "de_nada"
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "Un café, por favor.",
+      "de": "Einen Kaffee, bitte.",
+      "words": [
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Perdón, no entiendo.",
+      "de": "Entschuldigung, ich verstehe nicht.",
+      "words": [
+        "perdon",
+        "no",
+        "entender"
+      ],
+      "grammar": [
+        "negacion"
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Disculpá, ¿hablás alemán?",
+      "de": "Entschuldige, sprichst du Deutsch?",
+      "words": [
+        "disculpa",
+        "hablar",
+        "aleman"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Disculpe, ¿habla usted español?",
+      "de": "Entschuldigen Sie, sprechen Sie Spanisch?",
+      "words": [
+        "usted",
+        "hablar",
+        "espanol"
+      ],
+      "grammar": [
+        "vos_usted"
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "Hablo un poco de español.",
+      "de": "Ich spreche ein bisschen Spanisch.",
+      "words": [
+        "hablar",
+        "un_poco",
+        "espanol"
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "No hablo bien español.",
+      "de": "Ich spreche nicht gut Spanisch.",
+      "words": [
+        "no",
+        "hablar",
+        "bien",
+        "espanol"
+      ],
+      "grammar": [
+        "negacion"
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "¿Podés hablar más despacio, por favor?",
+      "de": "Kannst du bitte langsamer sprechen?",
+      "words": [
+        "hablar",
+        "despacio",
+        "por_favor"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Más despacio, por favor.",
+      "de": "Langsamer, bitte.",
+      "words": [
+        "despacio",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "Permiso, ¿puedo pasar?",
+      "de": "Darf ich mal vorbei?",
+      "words": [
+        "permiso"
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "Sí, claro.",
+      "de": "Ja, klar.",
+      "words": [
+        "si"
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "No, gracias.",
+      "de": "Nein, danke.",
+      "words": [
+        "no",
+        "gracias"
+      ],
+      "grammar": [
+        "negacion"
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "¿Vamos? – ¡Dale!",
+      "de": "Gehen wir? – Okay!",
+      "words": [
+        "dale"
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "Chau, hasta luego.",
+      "de": "Tschüss, bis später.",
+      "words": [
+        "chau",
+        "hasta_luego"
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "Nos vemos mañana.",
+      "de": "Wir sehen uns morgen.",
+      "words": [
+        "nos_vemos"
+      ]
+    },
+    {
+      "id": "s26",
+      "text": "¿Ustedes hablan alemán?",
+      "de": "Sprecht ihr Deutsch?",
+      "words": [
+        "ustedes",
+        "hablar",
+        "aleman"
+      ],
+      "grammar": [
+        "vos_usted"
+      ]
+    },
+    {
+      "id": "s27",
+      "text": "Yo no entiendo nada.",
+      "de": "Ich verstehe gar nichts.",
+      "words": [
+        "yo",
+        "no",
+        "entender"
+      ],
+      "grammar": [
+        "negacion"
+      ]
+    },
+    {
+      "id": "s28",
+      "text": "¿Entendés? – Sí, entiendo.",
+      "de": "Verstehst du? – Ja, ich verstehe.",
+      "words": [
+        "entender",
+        "si"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s29",
+      "text": "¿Cómo se dice esto en español?",
+      "de": "Wie sagt man das auf Spanisch?",
+      "words": [
+        "como",
+        "espanol"
+      ]
+    },
+    {
+      "id": "s30",
+      "text": "Vos sos muy amable.",
+      "de": "Du bist sehr nett.",
+      "words": [
+        "vos"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s31",
+      "text": "Perdón, ¿cómo te llamás?",
+      "de": "Entschuldigung, wie heisst du?",
+      "words": [
+        "perdon",
+        "como"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "voseo",
+      "title": "vos – das argentinische Du",
+      "explanation": "In Argentinien sagt man vos statt tú. Die Verbformen sind auf der Endung betont und tragen dort einen Akzent:\n\n• hablar → vos hablás\n• tener → vos tenés\n• querer → vos querés\n• poder → vos podés\n• ser → vos sos (!)\n\nAuch die Befehlsform ist anders: hablá, vení, decime, disculpá.\nObjektpronomen bleibt te: ¿Cómo te llamás?\nNach Präpositionen: con vos, para vos.",
+      "examples": [
+        {
+          "text": "¿Vos sos de acá?",
+          "de": "Bist du von hier?"
+        },
+        {
+          "text": "¿Tenés tiempo?",
+          "de": "Hast du Zeit?"
+        },
+        {
+          "text": "Vení, por favor.",
+          "de": "Komm bitte."
+        }
+      ]
+    },
+    {
+      "id": "vos_usted",
+      "title": "vos, usted, ustedes",
+      "explanation": "• vos – du (Freunde, Gleichaltrige, im Alltag sehr üblich)\n• usted – Sie (Ältere, Behörden, formell). Das Verb steht wie bei er/sie: usted habla, usted tiene.\n• ustedes – ihr UND Sie (Plural). Das spanische vosotros gibt es in Argentinien nicht.\n\nIm Zweifel: Argentinier duzen schnell. Wer mit usted anfängt, hört oft „tratame de vos“ (sag du zu mir).",
+      "examples": [
+        {
+          "text": "¿Usted es el señor García?",
+          "de": "Sind Sie Herr García?"
+        },
+        {
+          "text": "¿Ustedes son de Alemania?",
+          "de": "Seid ihr / Sind Sie aus Deutschland?"
+        }
+      ]
+    },
+    {
+      "id": "negacion",
+      "title": "Verneinung mit no",
+      "explanation": "Man stellt einfach no vor das Verb:\n• Hablo español. → No hablo español.\n\nAnders als im Deutschen bleibt die Verneinung doppelt:\n• No entiendo nada. – Ich verstehe nichts.\n• No hay nadie. – Es ist niemand da.",
+      "examples": [
+        {
+          "text": "No entiendo.",
+          "de": "Ich verstehe nicht."
+        },
+        {
+          "text": "No tengo nada.",
+          "de": "Ich habe nichts."
+        }
+      ]
+    }
+  ]
+}

@@ -5,7 +5,10 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 
-/** lessonId = null bedeutet: alle Lektionen. */
+/**
+ * lessonId = null bedeutet: alle Lektionen der Sprache lang.
+ * prefix = Language.keyPrefix ("es-AR%"): filtert progress/review_log ueber den Schluessel.
+ */
 @Dao
 interface PracticeDao {
 
@@ -16,42 +19,42 @@ interface PracticeDao {
         """
         SELECT w.* FROM word w
         JOIN progress p ON p.wordKey = w.wordKey AND p.direction = :direction
-        WHERE (:lessonId IS NULL OR w.lessonId = :lessonId) AND p.dueAt <= :now
+        WHERE w.language = :lang AND (:lessonId IS NULL OR w.lessonId = :lessonId) AND p.dueAt <= :now
         ORDER BY p.dueAt
         LIMIT :limit
         """
     )
-    suspend fun dueWords(lessonId: String?, direction: String, now: Long, limit: Int): List<WordEntity>
+    suspend fun dueWords(lang: String, lessonId: String?, direction: String, now: Long, limit: Int): List<WordEntity>
 
     @Query(
         """
         SELECT COUNT(*) FROM word w
         JOIN progress p ON p.wordKey = w.wordKey AND p.direction = :direction
-        WHERE (:lessonId IS NULL OR w.lessonId = :lessonId) AND p.dueAt <= :now
+        WHERE w.language = :lang AND (:lessonId IS NULL OR w.lessonId = :lessonId) AND p.dueAt <= :now
         """
     )
-    suspend fun dueCount(lessonId: String?, direction: String, now: Long): Int
+    suspend fun dueCount(lang: String, lessonId: String?, direction: String, now: Long): Int
 
     @Query(
         """
         SELECT w.* FROM word w
         JOIN lesson l ON l.id = w.lessonId
-        WHERE (:lessonId IS NULL OR w.lessonId = :lessonId)
+        WHERE w.language = :lang AND (:lessonId IS NULL OR w.lessonId = :lessonId)
           AND NOT EXISTS (SELECT 1 FROM progress p WHERE p.wordKey = w.wordKey AND p.direction = :direction)
         ORDER BY l.sortOrder, w.sortOrder
         LIMIT :limit
         """
     )
-    suspend fun newWords(lessonId: String?, direction: String, limit: Int): List<WordEntity>
+    suspend fun newWords(lang: String, lessonId: String?, direction: String, limit: Int): List<WordEntity>
 
     @Query(
         """
         SELECT COUNT(*) FROM word w
-        WHERE (:lessonId IS NULL OR w.lessonId = :lessonId)
+        WHERE w.language = :lang AND (:lessonId IS NULL OR w.lessonId = :lessonId)
           AND NOT EXISTS (SELECT 1 FROM progress p WHERE p.wordKey = w.wordKey AND p.direction = :direction)
         """
     )
-    suspend fun newCount(lessonId: String?, direction: String): Int
+    suspend fun newCount(lang: String, lessonId: String?, direction: String): Int
 
     @Query("SELECT * FROM progress WHERE wordKey = :wordKey AND direction = :direction")
     suspend fun progress(wordKey: String, direction: String): ProgressEntity?
@@ -77,11 +80,11 @@ interface PracticeDao {
         """
         SELECT s.* FROM sentence s
         JOIN lesson l ON l.id = s.lessonId
-        WHERE (:lessonId IS NULL OR s.lessonId = :lessonId)
+        WHERE s.language = :lang AND (:lessonId IS NULL OR s.lessonId = :lessonId)
         ORDER BY l.sortOrder, s.sortOrder
         """
     )
-    suspend fun sentences(lessonId: String?): List<SentenceEntity>
+    suspend fun sentences(lang: String, lessonId: String?): List<SentenceEntity>
 
     @Query("SELECT * FROM sentence")
     suspend fun allSentences(): List<SentenceEntity>
@@ -99,26 +102,26 @@ interface PracticeDao {
     // ------------------------------------------------ "Heute lernen" und Statistik
     // 'pt-de' / 'de-pt' entsprechen PracticeMode.CARD_PT_DE.code / CARD_DE_PT.code
 
-    @Query("SELECT * FROM progress WHERE dueAt <= :now AND direction IN (:modes) ORDER BY dueAt LIMIT :limit")
-    suspend fun dueAll(now: Long, modes: List<String>, limit: Int): List<ProgressEntity>
+    @Query("SELECT * FROM progress WHERE wordKey LIKE :prefix AND dueAt <= :now AND direction IN (:modes) ORDER BY dueAt LIMIT :limit")
+    suspend fun dueAll(prefix: String, now: Long, modes: List<String>, limit: Int): List<ProgressEntity>
 
-    @Query("SELECT COUNT(*) FROM progress WHERE dueAt <= :now AND direction IN (:modes)")
-    suspend fun dueAllCount(now: Long, modes: List<String>): Int
+    @Query("SELECT COUNT(*) FROM progress WHERE wordKey LIKE :prefix AND dueAt <= :now AND direction IN (:modes)")
+    suspend fun dueAllCount(prefix: String, now: Long, modes: List<String>): Int
 
-    @Query("SELECT COUNT(*) FROM progress WHERE dueAt < :before AND direction IN (:modes)")
-    suspend fun dueBeforeCount(before: Long, modes: List<String>): Int
+    @Query("SELECT COUNT(*) FROM progress WHERE wordKey LIKE :prefix AND dueAt < :before AND direction IN (:modes)")
+    suspend fun dueBeforeCount(prefix: String, before: Long, modes: List<String>): Int
 
     @Query("SELECT * FROM word WHERE wordKey = :key")
     suspend fun word(key: String): WordEntity?
 
-    @Query("SELECT COUNT(*) FROM word")
-    suspend fun wordCount(): Int
+    @Query("SELECT COUNT(*) FROM word WHERE language = :lang")
+    suspend fun wordCount(lang: String): Int
 
-    @Query("SELECT COUNT(*) FROM progress WHERE direction = :mode")
-    suspend fun startedCount(mode: String): Int
+    @Query("SELECT COUNT(*) FROM progress WHERE wordKey LIKE :prefix AND direction = :mode")
+    suspend fun startedCount(prefix: String, mode: String): Int
 
-    @Query("SELECT COUNT(*) FROM progress WHERE direction = :mode AND box >= :minBox")
-    suspend fun boxAtLeastCount(mode: String, minBox: Int): Int
+    @Query("SELECT COUNT(*) FROM progress WHERE wordKey LIKE :prefix AND direction = :mode AND box >= :minBox")
+    suspend fun boxAtLeastCount(prefix: String, mode: String, minBox: Int): Int
 
     @Query("SELECT wordKey FROM progress WHERE direction = 'pt-de'")
     suspend fun startedWordKeys(): List<String>
@@ -129,19 +132,19 @@ interface PracticeDao {
         SELECT w.* FROM word w
         JOIN lesson l ON l.id = w.lessonId
         JOIN progress p ON p.wordKey = w.wordKey AND p.direction = 'pt-de'
-        WHERE p.box >= :minBox
+        WHERE w.language = :lang AND p.box >= :minBox
           AND NOT EXISTS (SELECT 1 FROM progress q WHERE q.wordKey = w.wordKey AND q.direction = 'de-pt')
         ORDER BY l.sortOrder, w.sortOrder
         LIMIT :limit
         """
     )
-    suspend fun reverseCandidates(minBox: Int, limit: Int): List<WordEntity>
+    suspend fun reverseCandidates(lang: String, minBox: Int, limit: Int): List<WordEntity>
 
     @Insert
     suspend fun insertReview(review: ReviewLogEntity)
 
-    @Query("SELECT reviewedAt, correct FROM review_log WHERE reviewedAt >= :since")
-    suspend fun reviewsSince(since: Long): List<ReviewRow>
+    @Query("SELECT reviewedAt, correct FROM review_log WHERE itemKey LIKE :prefix AND reviewedAt >= :since")
+    suspend fun reviewsSince(prefix: String, since: Long): List<ReviewRow>
 
     @Query(
         """
@@ -152,9 +155,10 @@ interface PracticeDao {
         FROM lesson l
         JOIN word w ON w.lessonId = l.id
         LEFT JOIN progress p ON p.wordKey = w.wordKey AND p.direction = 'pt-de'
+        WHERE l.language = :lang
         GROUP BY l.id
         ORDER BY l.sortOrder
         """
     )
-    suspend fun lessonStats(minBox: Int): List<LessonStat>
+    suspend fun lessonStats(lang: String, minBox: Int): List<LessonStat>
 }

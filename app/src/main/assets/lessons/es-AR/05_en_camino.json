@@ -1,0 +1,1115 @@
+{
+  "id": "es-AR-05",
+  "language": "es-AR",
+  "order": 5,
+  "title": "Unterwegs",
+  "titleTarget": "En camino",
+  "words": [
+    {
+      "id": "colectivo",
+      "text": "el colectivo",
+      "de": "der Stadtbus",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Argentinisch! Umgangssprachlich: el bondi.",
+      "category": "Verkehrsmittel"
+    },
+    {
+      "id": "micro",
+      "text": "el micro",
+      "de": "der Fernbus",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Lange Strecken fährt man in Argentinien meist mit dem Bus.",
+      "category": "Verkehrsmittel"
+    },
+    {
+      "id": "subte",
+      "text": "el subte",
+      "de": "die U-Bahn (Buenos Aires)",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Verkehrsmittel"
+    },
+    {
+      "id": "tren",
+      "text": "el tren",
+      "de": "der Zug",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Verkehrsmittel"
+    },
+    {
+      "id": "avion",
+      "text": "el avión",
+      "de": "das Flugzeug",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Verkehrsmittel"
+    },
+    {
+      "id": "taxi",
+      "text": "el taxi",
+      "de": "das Taxi",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Verkehrsmittel"
+    },
+    {
+      "id": "remis",
+      "text": "el remís",
+      "de": "das bestellte Auto mit Fahrer",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Wird vorab bestellt, Preis vorher fest.",
+      "category": "Verkehrsmittel"
+    },
+    {
+      "id": "auto",
+      "text": "el auto",
+      "de": "das Auto",
+      "pos": "noun",
+      "gender": "m",
+      "note": "In Argentinien nicht „coche“.",
+      "category": "Verkehrsmittel"
+    },
+    {
+      "id": "bicicleta",
+      "text": "la bicicleta",
+      "de": "das Fahrrad",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Verkehrsmittel"
+    },
+    {
+      "id": "barco",
+      "text": "el barco",
+      "de": "das Schiff",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Nach Uruguay (Colonia) fährt eine Fähre.",
+      "category": "Verkehrsmittel"
+    },
+    {
+      "id": "a_pie",
+      "text": "a pie",
+      "de": "zu Fuss",
+      "pos": "phrase",
+      "category": "Verkehrsmittel"
+    },
+    {
+      "id": "aeropuerto",
+      "text": "el aeropuerto",
+      "de": "der Flughafen",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Reisen & Fahrkarten"
+    },
+    {
+      "id": "terminal",
+      "text": "la terminal",
+      "de": "der Busbahnhof",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Ganz: la terminal de ómnibus.",
+      "category": "Reisen & Fahrkarten"
+    },
+    {
+      "id": "estacion",
+      "text": "la estación",
+      "de": "der Bahnhof; die Station",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Reisen & Fahrkarten"
+    },
+    {
+      "id": "parada",
+      "text": "la parada",
+      "de": "die Haltestelle",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Reisen & Fahrkarten"
+    },
+    {
+      "id": "pasaje",
+      "text": "el pasaje",
+      "de": "die Fahrkarte, das Ticket",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Für Fernbus und Flug.",
+      "category": "Reisen & Fahrkarten"
+    },
+    {
+      "id": "boleto",
+      "text": "el boleto",
+      "de": "der Fahrschein (Stadtverkehr)",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Reisen & Fahrkarten"
+    },
+    {
+      "id": "sube",
+      "text": "la SUBE",
+      "de": "die Karte für Bus und U-Bahn",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Aufladbare Karte; im Kiosk erhältlich.",
+      "category": "Reisen & Fahrkarten"
+    },
+    {
+      "id": "ida_y_vuelta",
+      "text": "ida y vuelta",
+      "de": "hin und zurück",
+      "pos": "phrase",
+      "category": "Reisen & Fahrkarten"
+    },
+    {
+      "id": "vuelo",
+      "text": "el vuelo",
+      "de": "der Flug",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Reisen & Fahrkarten"
+    },
+    {
+      "id": "valija",
+      "text": "la valija",
+      "de": "der Koffer",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Argentinisch; anderswo „maleta“.",
+      "category": "Reisen & Fahrkarten"
+    },
+    {
+      "id": "mochila",
+      "text": "la mochila",
+      "de": "der Rucksack",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Reisen & Fahrkarten"
+    },
+    {
+      "id": "equipaje",
+      "text": "el equipaje",
+      "de": "das Gepäck",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Reisen & Fahrkarten"
+    },
+    {
+      "id": "salida",
+      "text": "la salida",
+      "de": "die Abfahrt; der Ausgang",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Reisen & Fahrkarten"
+    },
+    {
+      "id": "llegada",
+      "text": "la llegada",
+      "de": "die Ankunft",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Reisen & Fahrkarten"
+    },
+    {
+      "id": "demora",
+      "text": "la demora",
+      "de": "die Verspätung",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Anderswo „retraso“.",
+      "category": "Reisen & Fahrkarten"
+    },
+    {
+      "id": "asiento",
+      "text": "el asiento",
+      "de": "der Sitzplatz",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Reisen & Fahrkarten"
+    },
+    {
+      "id": "calle",
+      "text": "la calle",
+      "de": "die Strasse",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Orientierung"
+    },
+    {
+      "id": "avenida",
+      "text": "la avenida",
+      "de": "die Hauptstrasse, Allee",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Orientierung"
+    },
+    {
+      "id": "cuadra",
+      "text": "la cuadra",
+      "de": "der Häuserblock (ca. 100 m)",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Entfernungen gibt man in cuadras an.",
+      "category": "Orientierung"
+    },
+    {
+      "id": "esquina",
+      "text": "la esquina",
+      "de": "die Ecke",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Orientierung"
+    },
+    {
+      "id": "vereda",
+      "text": "la vereda",
+      "de": "der Gehweg",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Anderswo „acera“.",
+      "category": "Orientierung"
+    },
+    {
+      "id": "semaforo",
+      "text": "el semáforo",
+      "de": "die Ampel",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Orientierung"
+    },
+    {
+      "id": "plaza",
+      "text": "la plaza",
+      "de": "der Platz",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Orientierung"
+    },
+    {
+      "id": "centro",
+      "text": "el centro",
+      "de": "das Zentrum",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Orientierung"
+    },
+    {
+      "id": "mapa",
+      "text": "el mapa",
+      "de": "die Landkarte, der Stadtplan",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Männlich, obwohl auf -a!",
+      "category": "Orientierung"
+    },
+    {
+      "id": "derecha",
+      "text": "a la derecha",
+      "de": "rechts",
+      "pos": "phrase",
+      "category": "Orientierung"
+    },
+    {
+      "id": "izquierda",
+      "text": "a la izquierda",
+      "de": "links",
+      "pos": "phrase",
+      "category": "Orientierung"
+    },
+    {
+      "id": "derecho",
+      "text": "derecho",
+      "de": "geradeaus",
+      "pos": "adverb",
+      "note": "Auch: todo derecho.",
+      "category": "Orientierung"
+    },
+    {
+      "id": "cerca",
+      "text": "cerca",
+      "de": "nah, in der Nähe",
+      "pos": "adverb",
+      "note": "cerca de = in der Nähe von",
+      "category": "Orientierung"
+    },
+    {
+      "id": "lejos",
+      "text": "lejos",
+      "de": "weit (weg)",
+      "pos": "adverb",
+      "category": "Orientierung"
+    },
+    {
+      "id": "aca",
+      "text": "acá",
+      "de": "hier",
+      "pos": "adverb",
+      "note": "In Argentinien meist „acá“ statt „aquí“.",
+      "category": "Orientierung"
+    },
+    {
+      "id": "alla",
+      "text": "allá",
+      "de": "dort",
+      "pos": "adverb",
+      "category": "Orientierung"
+    },
+    {
+      "id": "enfrente",
+      "text": "enfrente",
+      "de": "gegenüber",
+      "pos": "adverb",
+      "note": "enfrente de = gegenüber von",
+      "category": "Orientierung"
+    },
+    {
+      "id": "al_lado",
+      "text": "al lado de",
+      "de": "neben",
+      "pos": "phrase",
+      "category": "Orientierung"
+    },
+    {
+      "id": "entre",
+      "text": "entre",
+      "de": "zwischen",
+      "pos": "preposition",
+      "category": "Orientierung"
+    },
+    {
+      "id": "ir",
+      "text": "ir",
+      "de": "gehen, fahren",
+      "pos": "verb",
+      "note": "yo voy, vos vas, usted va, nosotros vamos",
+      "category": "Verben & Adjektive",
+      "grammar": [
+        "ir_a"
+      ]
+    },
+    {
+      "id": "venir",
+      "text": "venir",
+      "de": "kommen",
+      "pos": "verb",
+      "note": "yo vengo, vos venís",
+      "category": "Verben & Adjektive"
+    },
+    {
+      "id": "doblar",
+      "text": "doblar",
+      "de": "abbiegen",
+      "pos": "verb",
+      "note": "Doblá a la derecha. = Bieg rechts ab.",
+      "category": "Verben & Adjektive",
+      "grammar": [
+        "imperativo"
+      ]
+    },
+    {
+      "id": "seguir",
+      "text": "seguir",
+      "de": "weitergehen; folgen",
+      "pos": "verb",
+      "note": "Seguí derecho. = Geh geradeaus.",
+      "category": "Verben & Adjektive",
+      "grammar": [
+        "imperativo"
+      ]
+    },
+    {
+      "id": "bajar",
+      "text": "bajar",
+      "de": "aussteigen; hinuntergehen",
+      "pos": "verb",
+      "category": "Verben & Adjektive"
+    },
+    {
+      "id": "subir",
+      "text": "subir",
+      "de": "einsteigen; hinaufgehen",
+      "pos": "verb",
+      "category": "Verben & Adjektive"
+    },
+    {
+      "id": "esperar",
+      "text": "esperar",
+      "de": "warten",
+      "pos": "verb",
+      "category": "Verben & Adjektive",
+      "grammar": [
+        "imperativo"
+      ]
+    },
+    {
+      "id": "perderse",
+      "text": "perderse",
+      "de": "sich verirren",
+      "pos": "verb",
+      "note": "Me perdí. = Ich habe mich verirrt.",
+      "category": "Verben & Adjektive"
+    },
+    {
+      "id": "cruzar",
+      "text": "cruzar",
+      "de": "überqueren",
+      "pos": "verb",
+      "category": "Verben & Adjektive",
+      "grammar": [
+        "imperativo"
+      ]
+    },
+    {
+      "id": "manejar",
+      "text": "manejar",
+      "de": "Auto fahren",
+      "pos": "verb",
+      "note": "Anderswo „conducir“.",
+      "category": "Verben & Adjektive"
+    },
+    {
+      "id": "alquilar",
+      "text": "alquilar",
+      "de": "mieten",
+      "pos": "verb",
+      "category": "Verben & Adjektive"
+    },
+    {
+      "id": "lleno",
+      "text": "lleno",
+      "de": "voll",
+      "pos": "adjective",
+      "category": "Verben & Adjektive"
+    },
+    {
+      "id": "libre",
+      "text": "libre",
+      "de": "frei",
+      "pos": "adjective",
+      "category": "Verben & Adjektive"
+    },
+    {
+      "id": "directo",
+      "text": "directo",
+      "de": "direkt",
+      "pos": "adjective",
+      "category": "Verben & Adjektive"
+    },
+    {
+      "id": "proximo",
+      "text": "próximo",
+      "de": "nächste(r)",
+      "pos": "adjective",
+      "category": "Verben & Adjektive"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "¿Dónde está la parada del colectivo?",
+      "de": "Wo ist die Bushaltestelle?",
+      "words": [
+        "donde",
+        "parada",
+        "colectivo"
+      ],
+      "grammar": [
+        "del_al"
+      ]
+    },
+    {
+      "id": "s02",
+      "text": "¿Qué colectivo va al centro?",
+      "de": "Welcher Bus fährt ins Zentrum?",
+      "words": [
+        "colectivo",
+        "ir",
+        "centro"
+      ],
+      "grammar": [
+        "del_al"
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "Necesito cargar la SUBE.",
+      "de": "Ich muss die SUBE aufladen.",
+      "words": [
+        "sube",
+        "necesitar"
+      ]
+    },
+    {
+      "id": "s04",
+      "text": "¿Dónde compro la SUBE?",
+      "de": "Wo kaufe ich die SUBE?",
+      "words": [
+        "sube",
+        "donde"
+      ]
+    },
+    {
+      "id": "s05",
+      "text": "Vamos en subte.",
+      "de": "Wir fahren mit der U-Bahn.",
+      "words": [
+        "subte",
+        "ir"
+      ],
+      "grammar": [
+        "del_al"
+      ]
+    },
+    {
+      "id": "s06",
+      "text": "Voy a tomar un taxi.",
+      "de": "Ich nehme ein Taxi.",
+      "words": [
+        "taxi",
+        "tomar",
+        "ir"
+      ],
+      "grammar": [
+        "ir_a"
+      ]
+    },
+    {
+      "id": "s07",
+      "text": "¿Me pedís un remís para las seis?",
+      "de": "Bestellst du mir einen Remís für sechs Uhr?",
+      "words": [
+        "remis",
+        "seis",
+        "pedir"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s08",
+      "text": "El tren sale a las ocho.",
+      "de": "Der Zug fährt um acht.",
+      "words": [
+        "tren",
+        "ocho",
+        "salir"
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "Un pasaje a Córdoba, ida y vuelta.",
+      "de": "Eine Fahrkarte nach Córdoba, hin und zurück.",
+      "words": [
+        "pasaje",
+        "ida_y_vuelta"
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "¿A qué hora sale el micro?",
+      "de": "Wann fährt der Fernbus?",
+      "words": [
+        "micro",
+        "a_que_hora",
+        "salir"
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "¿De qué terminal sale?",
+      "de": "Von welchem Busbahnhof fährt er?",
+      "words": [
+        "terminal",
+        "que",
+        "salir"
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "El micro tiene una demora de una hora.",
+      "de": "Der Bus hat eine Stunde Verspätung.",
+      "words": [
+        "micro",
+        "demora",
+        "hora"
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "¿Este asiento está libre?",
+      "de": "Ist dieser Platz frei?",
+      "words": [
+        "asiento",
+        "libre"
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "El colectivo está lleno.",
+      "de": "Der Bus ist voll.",
+      "words": [
+        "colectivo",
+        "lleno"
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "¿Es un vuelo directo?",
+      "de": "Ist es ein Direktflug?",
+      "words": [
+        "vuelo",
+        "directo"
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "¿Cómo llego al aeropuerto?",
+      "de": "Wie komme ich zum Flughafen?",
+      "words": [
+        "como",
+        "aeropuerto",
+        "llegar"
+      ],
+      "grammar": [
+        "del_al"
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "El avión sale a las once.",
+      "de": "Das Flugzeug fliegt um elf.",
+      "words": [
+        "avion",
+        "once",
+        "salir"
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Mi valija no llegó.",
+      "de": "Mein Koffer ist nicht angekommen.",
+      "words": [
+        "valija",
+        "no",
+        "llegar"
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Llevo solo una mochila.",
+      "de": "Ich habe nur einen Rucksack dabei.",
+      "words": [
+        "mochila"
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "¿Dónde retiro el equipaje?",
+      "de": "Wo hole ich das Gepäck ab?",
+      "words": [
+        "equipaje",
+        "donde"
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "¿Dónde está la salida?",
+      "de": "Wo ist der Ausgang?",
+      "words": [
+        "salida",
+        "donde"
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "La llegada es a las tres.",
+      "de": "Die Ankunft ist um drei.",
+      "words": [
+        "llegada",
+        "tres"
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "¿Cuál es la próxima estación?",
+      "de": "Was ist die nächste Station?",
+      "words": [
+        "estacion",
+        "proximo",
+        "cual"
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "¿Dónde tengo que bajar?",
+      "de": "Wo muss ich aussteigen?",
+      "words": [
+        "bajar",
+        "donde"
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "Hay que subir por adelante.",
+      "de": "Man steigt vorne ein.",
+      "words": [
+        "subir"
+      ]
+    },
+    {
+      "id": "s26",
+      "text": "Esperá acá, por favor.",
+      "de": "Warte bitte hier.",
+      "words": [
+        "esperar",
+        "aca"
+      ],
+      "grammar": [
+        "imperativo"
+      ]
+    },
+    {
+      "id": "s27",
+      "text": "Es fácil perderse en el centro.",
+      "de": "Im Zentrum verirrt man sich leicht.",
+      "words": [
+        "perderse",
+        "centro"
+      ]
+    },
+    {
+      "id": "s28",
+      "text": "Seguí derecho dos cuadras.",
+      "de": "Geh zwei Blocks geradeaus.",
+      "words": [
+        "seguir",
+        "derecho",
+        "cuadra",
+        "dos"
+      ],
+      "grammar": [
+        "imperativo"
+      ]
+    },
+    {
+      "id": "s29",
+      "text": "Doblá a la derecha en la esquina.",
+      "de": "Bieg an der Ecke rechts ab.",
+      "words": [
+        "doblar",
+        "derecha",
+        "esquina"
+      ],
+      "grammar": [
+        "imperativo"
+      ]
+    },
+    {
+      "id": "s30",
+      "text": "Después doblá a la izquierda.",
+      "de": "Danach bieg links ab.",
+      "words": [
+        "doblar",
+        "izquierda"
+      ],
+      "grammar": [
+        "imperativo"
+      ]
+    },
+    {
+      "id": "s31",
+      "text": "Cruzá la calle en el semáforo.",
+      "de": "Überquer die Strasse an der Ampel.",
+      "words": [
+        "cruzar",
+        "calle",
+        "semaforo"
+      ],
+      "grammar": [
+        "imperativo"
+      ]
+    },
+    {
+      "id": "s32",
+      "text": "Está en la avenida, enfrente de la plaza.",
+      "de": "Es ist an der Hauptstrasse, gegenüber vom Platz.",
+      "words": [
+        "avenida",
+        "enfrente",
+        "plaza"
+      ]
+    },
+    {
+      "id": "s33",
+      "text": "El banco está al lado de la farmacia.",
+      "de": "Die Bank ist neben der Apotheke.",
+      "words": [
+        "al_lado"
+      ]
+    },
+    {
+      "id": "s34",
+      "text": "Está entre el hotel y la plaza.",
+      "de": "Es ist zwischen dem Hotel und dem Platz.",
+      "words": [
+        "entre",
+        "hotel",
+        "plaza"
+      ]
+    },
+    {
+      "id": "s35",
+      "text": "¿Está cerca o lejos?",
+      "de": "Ist es nah oder weit?",
+      "words": [
+        "cerca",
+        "lejos"
+      ]
+    },
+    {
+      "id": "s36",
+      "text": "Está muy cerca, a tres cuadras.",
+      "de": "Es ist ganz nah, drei Blocks entfernt.",
+      "words": [
+        "cerca",
+        "cuadra",
+        "tres",
+        "muy"
+      ]
+    },
+    {
+      "id": "s37",
+      "text": "La plaza está a una cuadra.",
+      "de": "Der Platz ist einen Block entfernt.",
+      "words": [
+        "cuadra",
+        "plaza"
+      ]
+    },
+    {
+      "id": "s38",
+      "text": "Es lejos, mejor tomá un taxi.",
+      "de": "Es ist weit, nimm lieber ein Taxi.",
+      "words": [
+        "lejos",
+        "taxi",
+        "tomar"
+      ],
+      "grammar": [
+        "imperativo"
+      ]
+    },
+    {
+      "id": "s39",
+      "text": "Caminá por la vereda.",
+      "de": "Geh auf dem Gehweg.",
+      "words": [
+        "vereda"
+      ],
+      "grammar": [
+        "imperativo"
+      ]
+    },
+    {
+      "id": "s40",
+      "text": "Vamos a pie.",
+      "de": "Wir gehen zu Fuss.",
+      "words": [
+        "a_pie",
+        "ir"
+      ],
+      "grammar": [
+        "del_al"
+      ]
+    },
+    {
+      "id": "s41",
+      "text": "¿Tenés un mapa?",
+      "de": "Hast du einen Stadtplan?",
+      "words": [
+        "mapa"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s42",
+      "text": "Acá está el centro, y allá el puerto.",
+      "de": "Hier ist das Zentrum, und dort der Hafen.",
+      "words": [
+        "aca",
+        "alla",
+        "centro"
+      ]
+    },
+    {
+      "id": "s43",
+      "text": "Quiero alquilar un auto.",
+      "de": "Ich möchte ein Auto mieten.",
+      "words": [
+        "alquilar",
+        "auto"
+      ]
+    },
+    {
+      "id": "s44",
+      "text": "¿Sabés manejar?",
+      "de": "Kannst du Auto fahren?",
+      "words": [
+        "manejar"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s45",
+      "text": "Vamos en bicicleta.",
+      "de": "Wir fahren mit dem Fahrrad.",
+      "words": [
+        "bicicleta",
+        "ir"
+      ],
+      "grammar": [
+        "del_al"
+      ]
+    },
+    {
+      "id": "s46",
+      "text": "El barco a Colonia sale temprano.",
+      "de": "Das Schiff nach Colonia fährt früh.",
+      "words": [
+        "barco",
+        "temprano",
+        "salir"
+      ]
+    },
+    {
+      "id": "s47",
+      "text": "¿Podés venir mañana?",
+      "de": "Kannst du morgen kommen?",
+      "words": [
+        "venir"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s48",
+      "text": "Mañana voy a ir a Mendoza.",
+      "de": "Morgen fahre ich nach Mendoza.",
+      "words": [
+        "ir"
+      ],
+      "grammar": [
+        "ir_a"
+      ]
+    },
+    {
+      "id": "s49",
+      "text": "¿Cuánto cuesta el boleto?",
+      "de": "Wie viel kostet der Fahrschein?",
+      "words": [
+        "boleto",
+        "cuanto"
+      ]
+    },
+    {
+      "id": "s50",
+      "text": "Hay que esperar media hora.",
+      "de": "Man muss eine halbe Stunde warten.",
+      "words": [
+        "esperar",
+        "hora"
+      ]
+    },
+    {
+      "id": "s51",
+      "text": "¿Este colectivo va directo al centro?",
+      "de": "Fährt dieser Bus direkt ins Zentrum?",
+      "words": [
+        "colectivo",
+        "directo",
+        "centro"
+      ],
+      "grammar": [
+        "del_al"
+      ]
+    },
+    {
+      "id": "s52",
+      "text": "El próximo tren sale en diez minutos.",
+      "de": "Der nächste Zug fährt in zehn Minuten.",
+      "words": [
+        "proximo",
+        "tren",
+        "diez"
+      ]
+    },
+    {
+      "id": "s53",
+      "text": "Voy de la terminal al hotel.",
+      "de": "Ich fahre vom Busbahnhof zum Hotel.",
+      "words": [
+        "terminal",
+        "hotel",
+        "ir"
+      ],
+      "grammar": [
+        "del_al"
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "del_al",
+      "title": "al, del, en colectivo, a pie",
+      "explanation": "a und de verschmelzen mit el:\n• a + el = al – Voy al centro.\n• de + el = del – la parada del colectivo\nMit la, los, las verschmilzt nichts: a la plaza, de la terminal.\n\nVerkehrsmittel mit en: en colectivo, en subte, en tren, en auto.\nAusnahme: a pie (zu Fuss).\n\nRichtung: a = nach/zu (Voy a Córdoba), de = von/aus.",
+      "examples": [
+        {
+          "text": "Voy al aeropuerto en taxi.",
+          "de": "Ich fahre mit dem Taxi zum Flughafen."
+        },
+        {
+          "text": "Salgo del hotel a las diez.",
+          "de": "Ich verlasse das Hotel um zehn."
+        }
+      ]
+    },
+    {
+      "id": "ir_a",
+      "title": "ir a + Infinitiv – die nahe Zukunft",
+      "explanation": "ir (gehen) ist unregelmässig:\n• yo voy, vos vas, usted/él va, nosotros vamos, ustedes/ellos van\n\nMit a + Infinitiv drückt man aus, was man vorhat – im Alltag die übliche Zukunft:\n• Voy a tomar un taxi. – Ich werde ein Taxi nehmen.\n• Vamos a comer. – Wir gehen essen / Lass uns essen.",
+      "examples": [
+        {
+          "text": "¿Qué vas a hacer mañana?",
+          "de": "Was machst du morgen?"
+        },
+        {
+          "text": "Vamos a ir en micro.",
+          "de": "Wir fahren mit dem Bus."
+        }
+      ]
+    },
+    {
+      "id": "imperativo",
+      "title": "Wegbeschreibung: der Imperativ mit vos",
+      "explanation": "Der vos-Imperativ ist leicht: Infinitiv ohne -r, Betonung auf der letzten Silbe:\n• doblar → doblá (bieg ab)\n• tomar → tomá (nimm)\n• esperar → esperá (warte)\n• cruzar → cruzá (überquere)\n• seguir → seguí (geh weiter)\n• venir → vení (komm)\nAusnahme: ir → andá (geh!).\n\nZu usted: doble, tome, espere, cruce, siga, venga.",
+      "examples": [
+        {
+          "text": "Seguí derecho y doblá a la izquierda.",
+          "de": "Geh geradeaus und bieg links ab."
+        },
+        {
+          "text": "Siga dos cuadras, por favor.",
+          "de": "Gehen Sie bitte zwei Blocks weiter."
+        }
+      ]
+    }
+  ]
+}

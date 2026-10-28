@@ -3,6 +3,10 @@ package de.jfricker.vokabeltrainer.ui
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import de.jfricker.vokabeltrainer.data.GrammarItem
+import de.jfricker.vokabeltrainer.data.LearningPrefs
+import de.jfricker.vokabeltrainer.domain.Language
+import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.flow.flatMapLatest
 import de.jfricker.vokabeltrainer.data.LessonRepository
 import de.jfricker.vokabeltrainer.data.PracticeCounts
 import de.jfricker.vokabeltrainer.data.PracticeRepository
@@ -32,15 +36,32 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.joinAll
 import kotlinx.coroutines.launch
 
+@OptIn(ExperimentalCoroutinesApi::class)
 class MainViewModel(
     private val repository: LessonRepository,
     private val practiceRepository: PracticeRepository,
     private val statsRepository: StatsRepository,
     private val speaker: Speaker,
+    private val prefs: LearningPrefs,
 ) : ViewModel() {
 
-    val lessons: StateFlow<List<LessonSummary>> = repository.observeLessons()
+    /** Gerade gewaehlte Lernsprache */
+    val language: StateFlow<Language> = prefs.languageFlow
+
+    val lessons: StateFlow<List<LessonSummary>> = prefs.languageFlow
+        .flatMapLatest { repository.observeLessons(it.code) }
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), emptyList())
+
+    /** Lernsprache wechseln: Lektionen, Tagesplan, Statistik, Videos und Stimme folgen. */
+    fun setLanguage(value: Language) {
+        if (value == prefs.language) return
+        endPractice()
+        prefs.language = value
+        speaker.setLanguage(value)
+        _today.value = null
+        _stats.value = null
+        refreshToday()
+    }
 
     val speakerState: StateFlow<SpeakerState> = speaker.state
 
@@ -163,7 +184,7 @@ class MainViewModel(
         val item = s.item as? CardItem ?: return
         if (s.revealed) return
         _practice.value = s.copy(revealed = true)
-        // Bei Deutsch -> Portugiesisch die Loesung vorlesen
+        // Bei Deutsch -> Lernsprache die Loesung vorlesen
         if (s.mode == PracticeMode.CARD_DE_PT) speak(item.word.text)
     }
 

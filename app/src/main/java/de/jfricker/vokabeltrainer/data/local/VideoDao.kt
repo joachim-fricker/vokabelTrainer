@@ -15,10 +15,11 @@ interface VideoDao {
             (SELECT COUNT(*) FROM video v WHERE v.playlistId = p.id AND v.status != 'hidden') AS total,
             (SELECT COUNT(*) FROM video v WHERE v.playlistId = p.id AND v.status = 'done') AS done
         FROM video_playlist p
+        WHERE p.language = :lang
         ORDER BY p.addedAt
         """
     )
-    fun observePlaylists(): Flow<List<PlaylistSummary>>
+    fun observePlaylists(lang: String): Flow<List<PlaylistSummary>>
 
     @Query("SELECT * FROM video_playlist WHERE id = :id")
     fun observePlaylist(id: String): Flow<PlaylistEntity?>

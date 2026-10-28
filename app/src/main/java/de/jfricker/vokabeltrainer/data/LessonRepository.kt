@@ -35,7 +35,7 @@ class LessonRepository(private val context: Context, private val db: AppDatabase
     private val json = Json { ignoreUnknownKeys = true }
     private val examplesSerializer = ListSerializer(ExampleDto.serializer())
 
-    fun observeLessons(): Flow<List<LessonSummary>> = dao.observeLessons()
+    fun observeLessons(lang: String): Flow<List<LessonSummary>> = dao.observeLessons(lang)
     fun observeLesson(id: String): Flow<LessonEntity?> = dao.observeLesson(id)
     fun observeWords(lessonId: String): Flow<List<WordEntity>> = dao.observeWords(lessonId)
     fun observeSentences(lessonId: String): Flow<List<SentenceEntity>> = dao.observeSentences(lessonId)

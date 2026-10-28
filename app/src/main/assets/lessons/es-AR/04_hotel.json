@@ -1,0 +1,1128 @@
+{
+  "id": "es-AR-04",
+  "language": "es-AR",
+  "order": 4,
+  "title": "Hotel & Unterkunft",
+  "titleTarget": "Hotel y alojamiento",
+  "words": [
+    {
+      "id": "hotel",
+      "text": "el hotel",
+      "de": "das Hotel",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "hostel",
+      "text": "el hostel",
+      "de": "das Hostel",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "hospedaje",
+      "text": "el hospedaje",
+      "de": "die Unterkunft",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "departamento",
+      "text": "el departamento",
+      "de": "die (Ferien-)Wohnung",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Kurz: el depto.",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "recepcion",
+      "text": "la recepción",
+      "de": "die Rezeption",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "check_in",
+      "text": "el check-in",
+      "de": "der Check-in",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "check_out",
+      "text": "el check-out",
+      "de": "der Check-out",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "pasaporte",
+      "text": "el pasaporte",
+      "de": "der Reisepass",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "documento",
+      "text": "el documento",
+      "de": "der Ausweis",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Der argentinische Personalausweis heisst DNI.",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "huesped",
+      "text": "el huésped",
+      "de": "der Gast (im Hotel)",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "llave",
+      "text": "la llave",
+      "de": "der Schlüssel",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "confirmar",
+      "text": "confirmar",
+      "de": "bestätigen",
+      "pos": "verb",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "reservar",
+      "text": "reservar",
+      "de": "reservieren",
+      "pos": "verb",
+      "category": "Ankommen & Einchecken"
+    },
+    {
+      "id": "habitacion",
+      "text": "la habitación",
+      "de": "das Zimmer",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Auch: el cuarto.",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "habitacion_simple",
+      "text": "la habitación simple",
+      "de": "das Einzelzimmer",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "habitacion_doble",
+      "text": "la habitación doble",
+      "de": "das Doppelzimmer",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Mit Doppelbett: cama matrimonial.",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "cama",
+      "text": "la cama",
+      "de": "das Bett",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "almohada",
+      "text": "la almohada",
+      "de": "das Kopfkissen",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "frazada",
+      "text": "la frazada",
+      "de": "die Wolldecke",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Argentinisch; anderswo „manta“.",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "toalla",
+      "text": "la toalla",
+      "de": "das Handtuch",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "ducha",
+      "text": "la ducha",
+      "de": "die Dusche",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "bano",
+      "text": "el baño",
+      "de": "das Bad; die Toilette",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "aire_acondicionado",
+      "text": "el aire acondicionado",
+      "de": "die Klimaanlage",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Kurz: el aire.",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "ventilador",
+      "text": "el ventilador",
+      "de": "der Ventilator",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "calefaccion",
+      "text": "la calefacción",
+      "de": "die Heizung",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "ventana",
+      "text": "la ventana",
+      "de": "das Fenster",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "puerta",
+      "text": "la puerta",
+      "de": "die Tür",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "balcon",
+      "text": "el balcón",
+      "de": "der Balkon",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "vista",
+      "text": "la vista",
+      "de": "die Aussicht",
+      "pos": "noun",
+      "gender": "f",
+      "note": "vista al mar = Meerblick",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "piso",
+      "text": "el piso",
+      "de": "das Stockwerk",
+      "pos": "noun",
+      "gender": "m",
+      "note": "planta baja = Erdgeschoss",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "ascensor",
+      "text": "el ascensor",
+      "de": "der Aufzug",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "escalera",
+      "text": "la escalera",
+      "de": "die Treppe",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Das Zimmer"
+    },
+    {
+      "id": "wifi",
+      "text": "el wifi",
+      "de": "das WLAN",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Ausgesprochen „uifi“.",
+      "category": "Service & Ausstattung"
+    },
+    {
+      "id": "contrasena",
+      "text": "la contraseña",
+      "de": "das Passwort",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Auch: la clave.",
+      "category": "Service & Ausstattung"
+    },
+    {
+      "id": "pileta",
+      "text": "la pileta",
+      "de": "das Schwimmbecken, der Pool",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Argentinisch; anderswo „piscina“.",
+      "category": "Service & Ausstattung"
+    },
+    {
+      "id": "estacionamiento",
+      "text": "el estacionamiento",
+      "de": "der Parkplatz",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Service & Ausstattung"
+    },
+    {
+      "id": "caja_fuerte",
+      "text": "la caja fuerte",
+      "de": "der Safe",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Service & Ausstattung"
+    },
+    {
+      "id": "limpieza",
+      "text": "la limpieza",
+      "de": "die Reinigung, das Putzen",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Service & Ausstattung"
+    },
+    {
+      "id": "lavadero",
+      "text": "el lavadero",
+      "de": "die Wäscherei",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Auch: la lavandería.",
+      "category": "Service & Ausstattung"
+    },
+    {
+      "id": "enchufe",
+      "text": "el enchufe",
+      "de": "die Steckdose; der Stecker",
+      "pos": "noun",
+      "gender": "m",
+      "note": "In Argentinien Typ I (schräge Stifte) – Adapter nötig.",
+      "category": "Service & Ausstattung"
+    },
+    {
+      "id": "cargador",
+      "text": "el cargador",
+      "de": "das Ladegerät",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Service & Ausstattung"
+    },
+    {
+      "id": "incluido",
+      "text": "incluido",
+      "de": "inbegriffen",
+      "pos": "adjective",
+      "category": "Service & Ausstattung"
+    },
+    {
+      "id": "problema",
+      "text": "el problema",
+      "de": "das Problem",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Männlich, obwohl auf -a!",
+      "category": "Probleme"
+    },
+    {
+      "id": "roto",
+      "text": "roto",
+      "de": "kaputt",
+      "pos": "adjective",
+      "category": "Probleme"
+    },
+    {
+      "id": "sucio",
+      "text": "sucio",
+      "de": "schmutzig",
+      "pos": "adjective",
+      "category": "Probleme"
+    },
+    {
+      "id": "limpio",
+      "text": "limpio",
+      "de": "sauber",
+      "pos": "adjective",
+      "category": "Probleme"
+    },
+    {
+      "id": "ruidoso",
+      "text": "ruidoso",
+      "de": "laut (lärmig)",
+      "pos": "adjective",
+      "category": "Probleme"
+    },
+    {
+      "id": "funcionar",
+      "text": "funcionar",
+      "de": "funktionieren",
+      "pos": "verb",
+      "category": "Probleme"
+    },
+    {
+      "id": "agua_caliente",
+      "text": "el agua caliente",
+      "de": "das warme Wasser",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Probleme"
+    },
+    {
+      "id": "donde",
+      "text": "¿dónde?",
+      "de": "wo?",
+      "pos": "adverb",
+      "category": "Fragewörter & Verben",
+      "grammar": [
+        "preguntas"
+      ]
+    },
+    {
+      "id": "cuando",
+      "text": "¿cuándo?",
+      "de": "wann?",
+      "pos": "adverb",
+      "category": "Fragewörter & Verben",
+      "grammar": [
+        "preguntas"
+      ]
+    },
+    {
+      "id": "cual",
+      "text": "¿cuál?",
+      "de": "welche(r)?; was? (Auswahl)",
+      "pos": "pronoun",
+      "category": "Fragewörter & Verben",
+      "grammar": [
+        "preguntas"
+      ]
+    },
+    {
+      "id": "que",
+      "text": "¿qué?",
+      "de": "was?",
+      "pos": "pronoun",
+      "category": "Fragewörter & Verben",
+      "grammar": [
+        "preguntas"
+      ]
+    },
+    {
+      "id": "quien",
+      "text": "¿quién?",
+      "de": "wer?",
+      "pos": "pronoun",
+      "category": "Fragewörter & Verben",
+      "grammar": [
+        "preguntas"
+      ]
+    },
+    {
+      "id": "por_que",
+      "text": "¿por qué?",
+      "de": "warum?",
+      "pos": "adverb",
+      "note": "Antwort: porque (weil) – zusammen und ohne Akzent.",
+      "category": "Fragewörter & Verben",
+      "grammar": [
+        "preguntas"
+      ]
+    },
+    {
+      "id": "hay",
+      "text": "hay",
+      "de": "es gibt",
+      "pos": "verb",
+      "category": "Fragewörter & Verben",
+      "grammar": [
+        "tener_hay"
+      ]
+    },
+    {
+      "id": "tener",
+      "text": "tener",
+      "de": "haben",
+      "pos": "verb",
+      "note": "yo tengo, vos tenés, usted tiene",
+      "category": "Fragewörter & Verben",
+      "grammar": [
+        "tener_hay"
+      ]
+    },
+    {
+      "id": "necesitar",
+      "text": "necesitar",
+      "de": "brauchen",
+      "pos": "verb",
+      "category": "Fragewörter & Verben",
+      "grammar": [
+        "necesitar"
+      ]
+    },
+    {
+      "id": "quedarse",
+      "text": "quedarse",
+      "de": "bleiben (übernachten)",
+      "pos": "verb",
+      "note": "Me quedo dos noches.",
+      "category": "Fragewörter & Verben"
+    },
+    {
+      "id": "llegar",
+      "text": "llegar",
+      "de": "ankommen",
+      "pos": "verb",
+      "category": "Fragewörter & Verben"
+    },
+    {
+      "id": "salir",
+      "text": "salir",
+      "de": "hinausgehen; abreisen, abfahren",
+      "pos": "verb",
+      "note": "yo salgo, vos salís",
+      "category": "Fragewörter & Verben"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "Tengo una reserva a nombre de Fricker.",
+      "de": "Ich habe eine Reservierung auf den Namen Fricker.",
+      "words": [
+        "tener",
+        "reserva"
+      ],
+      "grammar": [
+        "tener_hay"
+      ]
+    },
+    {
+      "id": "s02",
+      "text": "¿A qué hora es el check-in?",
+      "de": "Um wie viel Uhr ist der Check-in?",
+      "words": [
+        "check_in",
+        "a_que_hora"
+      ],
+      "grammar": [
+        "preguntas"
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "El check-out es a las diez.",
+      "de": "Der Check-out ist um zehn.",
+      "words": [
+        "check_out",
+        "diez"
+      ]
+    },
+    {
+      "id": "s04",
+      "text": "¿Me muestra su pasaporte, por favor?",
+      "de": "Zeigen Sie mir bitte Ihren Pass?",
+      "words": [
+        "pasaporte",
+        "por_favor"
+      ],
+      "grammar": [
+        "vos_usted"
+      ]
+    },
+    {
+      "id": "s05",
+      "text": "Necesito el documento de todos los huéspedes.",
+      "de": "Ich brauche den Ausweis aller Gäste.",
+      "words": [
+        "necesitar",
+        "documento",
+        "huesped"
+      ],
+      "grammar": [
+        "necesitar"
+      ]
+    },
+    {
+      "id": "s06",
+      "text": "¿Tienen una habitación doble?",
+      "de": "Habt ihr ein Doppelzimmer?",
+      "words": [
+        "habitacion_doble",
+        "tener"
+      ],
+      "grammar": [
+        "tener_hay"
+      ]
+    },
+    {
+      "id": "s07",
+      "text": "Quiero una habitación simple.",
+      "de": "Ich möchte ein Einzelzimmer.",
+      "words": [
+        "habitacion_simple",
+        "querer"
+      ]
+    },
+    {
+      "id": "s08",
+      "text": "Me quedo tres noches.",
+      "de": "Ich bleibe drei Nächte.",
+      "words": [
+        "quedarse",
+        "tres"
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "¿Cuánto cuesta la noche?",
+      "de": "Wie viel kostet die Nacht?",
+      "words": [
+        "cuanto",
+        "noche"
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "¿El desayuno está incluido?",
+      "de": "Ist das Frühstück inbegriffen?",
+      "words": [
+        "desayuno",
+        "incluido"
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Acá tiene la llave.",
+      "de": "Hier haben Sie den Schlüssel.",
+      "words": [
+        "llave"
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "La habitación está en el tercer piso.",
+      "de": "Das Zimmer ist im dritten Stock.",
+      "words": [
+        "habitacion",
+        "piso"
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "¿Dónde está el ascensor?",
+      "de": "Wo ist der Aufzug?",
+      "words": [
+        "donde",
+        "ascensor"
+      ],
+      "grammar": [
+        "preguntas"
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "La escalera está a la derecha.",
+      "de": "Die Treppe ist rechts.",
+      "words": [
+        "escalera"
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "¿Cuál es la contraseña del wifi?",
+      "de": "Wie lautet das WLAN-Passwort?",
+      "words": [
+        "cual",
+        "contrasena",
+        "wifi"
+      ],
+      "grammar": [
+        "preguntas"
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "¿Hay wifi en la habitación?",
+      "de": "Gibt es WLAN im Zimmer?",
+      "words": [
+        "hay",
+        "wifi",
+        "habitacion"
+      ],
+      "grammar": [
+        "tener_hay"
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "¿El hotel tiene pileta?",
+      "de": "Hat das Hotel einen Pool?",
+      "words": [
+        "hotel",
+        "pileta",
+        "tener"
+      ],
+      "grammar": [
+        "tener_hay"
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "¿Hay estacionamiento?",
+      "de": "Gibt es einen Parkplatz?",
+      "words": [
+        "hay",
+        "estacionamiento"
+      ],
+      "grammar": [
+        "tener_hay"
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "¿La habitación tiene caja fuerte?",
+      "de": "Hat das Zimmer einen Safe?",
+      "words": [
+        "caja_fuerte",
+        "habitacion"
+      ],
+      "grammar": [
+        "tener_hay"
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "¿A qué hora es la limpieza?",
+      "de": "Wann wird geputzt?",
+      "words": [
+        "limpieza",
+        "a_que_hora"
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "¿Hay un lavadero cerca?",
+      "de": "Gibt es eine Wäscherei in der Nähe?",
+      "words": [
+        "lavadero",
+        "hay"
+      ],
+      "grammar": [
+        "tener_hay"
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "¿Dónde hay un enchufe?",
+      "de": "Wo gibt es eine Steckdose?",
+      "words": [
+        "donde",
+        "enchufe",
+        "hay"
+      ],
+      "grammar": [
+        "preguntas"
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "Me olvidé el cargador.",
+      "de": "Ich habe das Ladegerät vergessen.",
+      "words": [
+        "cargador"
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "La ducha no funciona.",
+      "de": "Die Dusche funktioniert nicht.",
+      "words": [
+        "ducha",
+        "funcionar",
+        "no"
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "No hay agua caliente.",
+      "de": "Es gibt kein warmes Wasser.",
+      "words": [
+        "agua_caliente",
+        "hay",
+        "no"
+      ],
+      "grammar": [
+        "tener_hay"
+      ]
+    },
+    {
+      "id": "s26",
+      "text": "El aire acondicionado está roto.",
+      "de": "Die Klimaanlage ist kaputt.",
+      "words": [
+        "aire_acondicionado",
+        "roto"
+      ]
+    },
+    {
+      "id": "s27",
+      "text": "¿Funciona la calefacción?",
+      "de": "Funktioniert die Heizung?",
+      "words": [
+        "calefaccion",
+        "funcionar"
+      ]
+    },
+    {
+      "id": "s28",
+      "text": "El ventilador hace mucho ruido.",
+      "de": "Der Ventilator macht viel Lärm.",
+      "words": [
+        "ventilador"
+      ]
+    },
+    {
+      "id": "s29",
+      "text": "Es un barrio muy ruidoso.",
+      "de": "Es ist ein sehr lautes Viertel.",
+      "words": [
+        "ruidoso",
+        "muy"
+      ]
+    },
+    {
+      "id": "s30",
+      "text": "¿Me trae otra toalla, por favor?",
+      "de": "Bringen Sie mir bitte noch ein Handtuch?",
+      "words": [
+        "toalla",
+        "traer",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s31",
+      "text": "El baño está sucio.",
+      "de": "Das Bad ist schmutzig.",
+      "words": [
+        "bano",
+        "sucio"
+      ]
+    },
+    {
+      "id": "s32",
+      "text": "El baño ya está limpio.",
+      "de": "Das Bad ist jetzt sauber.",
+      "words": [
+        "bano",
+        "limpio"
+      ]
+    },
+    {
+      "id": "s33",
+      "text": "Necesito otra almohada.",
+      "de": "Ich brauche noch ein Kopfkissen.",
+      "words": [
+        "almohada",
+        "necesitar"
+      ],
+      "grammar": [
+        "necesitar"
+      ]
+    },
+    {
+      "id": "s34",
+      "text": "¿Me trae una frazada más?",
+      "de": "Bringen Sie mir noch eine Decke?",
+      "words": [
+        "frazada",
+        "traer"
+      ]
+    },
+    {
+      "id": "s35",
+      "text": "La cama es muy cómoda.",
+      "de": "Das Bett ist sehr bequem.",
+      "words": [
+        "cama",
+        "muy"
+      ]
+    },
+    {
+      "id": "s36",
+      "text": "¿Puedo cambiar de habitación?",
+      "de": "Kann ich das Zimmer wechseln?",
+      "words": [
+        "cambiar",
+        "habitacion"
+      ]
+    },
+    {
+      "id": "s37",
+      "text": "Tenemos un problema con la ventana.",
+      "de": "Wir haben ein Problem mit dem Fenster.",
+      "words": [
+        "problema",
+        "ventana",
+        "con",
+        "tener"
+      ],
+      "grammar": [
+        "tener_hay"
+      ]
+    },
+    {
+      "id": "s38",
+      "text": "La puerta no cierra.",
+      "de": "Die Tür schliesst nicht.",
+      "words": [
+        "puerta",
+        "no"
+      ]
+    },
+    {
+      "id": "s39",
+      "text": "¿La habitación tiene balcón?",
+      "de": "Hat das Zimmer einen Balkon?",
+      "words": [
+        "balcon",
+        "habitacion"
+      ]
+    },
+    {
+      "id": "s40",
+      "text": "¡Qué linda vista!",
+      "de": "Was für eine schöne Aussicht!",
+      "words": [
+        "vista"
+      ]
+    },
+    {
+      "id": "s41",
+      "text": "¿Cuándo llegan ustedes?",
+      "de": "Wann kommt ihr an?",
+      "words": [
+        "cuando",
+        "ustedes",
+        "llegar"
+      ],
+      "grammar": [
+        "preguntas"
+      ]
+    },
+    {
+      "id": "s42",
+      "text": "Llegamos tarde a la noche.",
+      "de": "Wir kommen spät abends an.",
+      "words": [
+        "llegar",
+        "tarde",
+        "noche"
+      ]
+    },
+    {
+      "id": "s43",
+      "text": "Mañana salgo temprano.",
+      "de": "Morgen reise ich früh ab.",
+      "words": [
+        "salir",
+        "temprano"
+      ]
+    },
+    {
+      "id": "s44",
+      "text": "¿Quién habla inglés acá?",
+      "de": "Wer spricht hier Englisch?",
+      "words": [
+        "quien",
+        "hablar"
+      ],
+      "grammar": [
+        "preguntas"
+      ]
+    },
+    {
+      "id": "s45",
+      "text": "¿Por qué no funciona la llave?",
+      "de": "Warum funktioniert der Schlüssel nicht?",
+      "words": [
+        "por_que",
+        "llave",
+        "funcionar"
+      ],
+      "grammar": [
+        "preguntas"
+      ]
+    },
+    {
+      "id": "s46",
+      "text": "¿Qué hay cerca del hotel?",
+      "de": "Was gibt es in der Nähe des Hotels?",
+      "words": [
+        "que",
+        "hay",
+        "hotel"
+      ],
+      "grammar": [
+        "preguntas"
+      ]
+    },
+    {
+      "id": "s47",
+      "text": "Quiero confirmar la reserva.",
+      "de": "Ich möchte die Reservierung bestätigen.",
+      "words": [
+        "confirmar",
+        "reserva"
+      ]
+    },
+    {
+      "id": "s48",
+      "text": "Quiero reservar un departamento.",
+      "de": "Ich möchte eine Ferienwohnung reservieren.",
+      "words": [
+        "reservar",
+        "departamento"
+      ]
+    },
+    {
+      "id": "s49",
+      "text": "El hostel es barato.",
+      "de": "Das Hostel ist günstig.",
+      "words": [
+        "hostel",
+        "barato"
+      ]
+    },
+    {
+      "id": "s50",
+      "text": "Es un hospedaje familiar.",
+      "de": "Es ist eine familiäre Unterkunft.",
+      "words": [
+        "hospedaje"
+      ]
+    },
+    {
+      "id": "s51",
+      "text": "La recepción está abierta las 24 horas.",
+      "de": "Die Rezeption ist rund um die Uhr geöffnet.",
+      "words": [
+        "recepcion"
+      ]
+    },
+    {
+      "id": "s52",
+      "text": "Necesito un adaptador para el enchufe.",
+      "de": "Ich brauche einen Adapter für die Steckdose.",
+      "words": [
+        "enchufe",
+        "necesitar"
+      ],
+      "grammar": [
+        "necesitar"
+      ]
+    },
+    {
+      "id": "s53",
+      "text": "El huésped de la habitación diez ya salió.",
+      "de": "Der Gast aus Zimmer zehn ist schon abgereist.",
+      "words": [
+        "huesped",
+        "habitacion",
+        "diez",
+        "salir"
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "preguntas",
+      "title": "Fragewörter",
+      "explanation": "Fragewörter tragen immer einen Akzent:\n• ¿dónde? – wo?  (¿Dónde está …? – Wo ist …?)\n• ¿cuándo? – wann?\n• ¿cuánto/cuánta? – wie viel?  ¿cuántos/cuántas? – wie viele?\n• ¿cuál? / ¿cuáles? – welche(r)? – auch „was“ bei Auswahl: ¿Cuál es la contraseña?\n• ¿qué? – was?\n• ¿quién? – wer?\n• ¿cómo? – wie?\n• ¿por qué? – warum?  Antwort: porque (weil).\n\nFragen beginnen mit ¿ und Ausrufe mit ¡.",
+      "examples": [
+        {
+          "text": "¿Dónde está la recepción?",
+          "de": "Wo ist die Rezeption?"
+        },
+        {
+          "text": "¿Cuántas noches?",
+          "de": "Wie viele Nächte?"
+        },
+        {
+          "text": "¿Por qué no? – Porque está roto.",
+          "de": "Warum nicht? – Weil es kaputt ist."
+        }
+      ]
+    },
+    {
+      "id": "tener_hay",
+      "title": "tener – haben, und hay – es gibt",
+      "explanation": "tener (haben) im Präsens:\n• yo tengo – ich habe\n• vos tenés – du hast\n• usted / él / ella tiene – Sie haben, er/sie hat\n• nosotros tenemos – wir haben\n• ustedes / ellos tienen – ihr habt, sie haben\n\n„Es gibt“ heisst hay – unveränderlich, auch im Plural:\n¿Hay wifi? – Gibt es WLAN?  Hay dos camas. – Es gibt zwei Betten.\n\nWo etwas Bestimmtes ist, fragt man mit estar: ¿Dónde está el baño?",
+      "examples": [
+        {
+          "text": "Tengo una reserva.",
+          "de": "Ich habe eine Reservierung."
+        },
+        {
+          "text": "¿Tienen toallas?",
+          "de": "Haben Sie Handtücher?"
+        },
+        {
+          "text": "No hay agua caliente.",
+          "de": "Es gibt kein warmes Wasser."
+        }
+      ]
+    },
+    {
+      "id": "necesitar",
+      "title": "necesitar – brauchen",
+      "explanation": "Anders als im Portugiesischen (precisar de) steht nach necesitar kein de:\n• Necesito una toalla. – Ich brauche ein Handtuch.\n• Necesito el pasaporte. – Ich brauche den Pass.\n\nMit Verb heisst es „müssen“:\n• Necesito salir temprano. – Ich muss früh los.\n\nyo necesito, vos necesitás, usted necesita.",
+      "examples": [
+        {
+          "text": "Necesito ayuda.",
+          "de": "Ich brauche Hilfe."
+        },
+        {
+          "text": "¿Necesitás algo?",
+          "de": "Brauchst du etwas?"
+        }
+      ]
+    }
+  ]
+}

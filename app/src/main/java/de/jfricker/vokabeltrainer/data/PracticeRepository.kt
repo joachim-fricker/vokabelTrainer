@@ -35,6 +35,10 @@ class PracticeRepository(db: AppDatabase, private val prefs: LearningPrefs) {
     private val dao = db.practiceDao()
     private val random = Random.Default
 
+    /** Gerade gewaehlte Lernsprache */
+    private val lang: String get() = prefs.language.code
+    private val prefix: String get() = prefs.language.keyPrefix
+
     /** Saetze einer Lektion (oder aller) samt verknuepfter Woerter. */
     private class SentenceScope(
         val sentences: List<SentenceEntity>,
@@ -52,8 +56,8 @@ class PracticeRepository(db: AppDatabase, private val prefs: LearningPrefs) {
         val now = System.currentTimeMillis()
         return if (!mode.sentenceBased) {
             PracticeCounts(
-                due = dao.dueCount(lessonId, mode.code, now),
-                new = dao.newCount(lessonId, mode.code),
+                due = dao.dueCount(lang, lessonId, mode.code, now),
+                new = dao.newCount(lang, lessonId, mode.code),
             )
         } else {
             val plan = plan(loadScope(lessonId), mode, now)
@@ -65,9 +69,9 @@ class PracticeRepository(db: AppDatabase, private val prefs: LearningPrefs) {
     suspend fun session(lessonId: String?, mode: PracticeMode): List<PracticeItem> {
         val now = System.currentTimeMillis()
         if (!mode.sentenceBased) {
-            val due = dao.dueWords(lessonId, mode.code, now, MAX_CARDS)
+            val due = dao.dueWords(lang, lessonId, mode.code, now, MAX_CARDS)
             val newLimit = minOf(MAX_NEW, MAX_CARDS - due.size)
-            val new = if (newLimit > 0) dao.newWords(lessonId, mode.code, newLimit) else emptyList()
+            val new = if (newLimit > 0) dao.newWords(lang, lessonId, mode.code, newLimit) else emptyList()
             return (due + new).shuffled(random).map { w -> CardItem(w, dao.exampleSentence(w.wordKey)) }
         }
 
@@ -114,12 +118,12 @@ class PracticeRepository(db: AppDatabase, private val prefs: LearningPrefs) {
     private val allCodes = PracticeMode.entries.map { it.code }
 
     suspend fun todaySummary(): TodaySummary {
-        val total = dao.wordCount()
-        val started = dao.startedCount(PracticeMode.CARD_PT_DE.code)
+        val total = dao.wordCount(lang)
+        val started = dao.startedCount(prefix, PracticeMode.CARD_PT_DE.code)
         val introduced = prefs.countToday(LearningPrefs.NEW_WORDS)
         val target = prefs.targetDate
         return TodaySummary(
-            due = dao.dueAllCount(System.currentTimeMillis(), allCodes),
+            due = dao.dueAllCount(prefix, System.currentTimeMillis(), allCodes),
             newWordsTarget = DailyPlan.newWordsPerDay(total, started, introduced, target),
             newWordsDone = introduced,
             daysLeft = DailyPlan.daysLeft(target),
@@ -163,7 +167,7 @@ class PracticeRepository(db: AppDatabase, private val prefs: LearningPrefs) {
         val result = mutableListOf<Pair<PracticeItem, PracticeMode>>()
 
         // 1. Faelliges
-        for (p in dao.dueAll(now, allCodes, TODAY_MAX)) {
+        for (p in dao.dueAll(prefix, now, allCodes, TODAY_MAX)) {
             val mode = PracticeMode.entries.firstOrNull { it.code == p.direction } ?: continue
             val item: PracticeItem? = if (!mode.sentenceBased) {
                 dao.word(p.wordKey)?.let { CardItem(it, dao.exampleSentence(it.wordKey)) }
@@ -178,14 +182,14 @@ class PracticeRepository(db: AppDatabase, private val prefs: LearningPrefs) {
         if (slots > 0) {
             val summary = todaySummary()
             val quota = if (extraNew) EXTRA_NEW_WORDS else summary.newWordsOpen
-            val words = dao.newWords(null, PracticeMode.CARD_PT_DE.code, minOf(quota, slots))
+            val words = dao.newWords(lang, null, PracticeMode.CARD_PT_DE.code, minOf(quota, slots))
             words.forEach { w -> result += CardItem(w, dao.exampleSentence(w.wordKey)) to PracticeMode.CARD_PT_DE }
             slots -= words.size
         }
 
         // 3. Umgekehrte Richtung fuer Woerter, die schon sitzen
         if (slots > 0) {
-            val words = dao.reverseCandidates(minBox = 2, limit = minOf(slots, MAX_REVERSE_NEW))
+            val words = dao.reverseCandidates(lang, minBox = 2, limit = minOf(slots, MAX_REVERSE_NEW))
             words.forEach { w -> result += CardItem(w, dao.exampleSentence(w.wordKey)) to PracticeMode.CARD_DE_PT }
             slots -= words.size
         }
@@ -241,7 +245,7 @@ class PracticeRepository(db: AppDatabase, private val prefs: LearningPrefs) {
         val links = dao.sentenceWords(lessonId)
             .groupBy({ it.sentenceKey }, { byKey[it.wordKey] })
             .mapValues { (_, list) -> list.filterNotNull() }
-        return SentenceScope(dao.sentences(lessonId), words, links)
+        return SentenceScope(dao.sentences(lang, lessonId), words, links)
     }
 
     private suspend fun plan(scope: SentenceScope, mode: PracticeMode, now: Long): Plan {

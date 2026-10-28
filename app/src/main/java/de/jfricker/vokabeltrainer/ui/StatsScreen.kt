@@ -56,6 +56,7 @@ private val DATE_DAY = DateTimeFormatter.ofPattern("EEEE, d. MMMM", Locale.GERMA
 @Composable
 fun StatsScreen(vm: MainViewModel, onBack: () -> Unit) {
     val stats by vm.stats.collectAsStateWithLifecycle()
+    val language by vm.language.collectAsStateWithLifecycle()
     var pickDate by rememberSaveable { mutableStateOf(false) }
 
     LaunchedEffect(Unit) { vm.loadStats() }
@@ -63,7 +64,7 @@ fun StatsScreen(vm: MainViewModel, onBack: () -> Unit) {
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Statistik") },
+                title = { Text("Statistik · ${language.displayName}") },
                 navigationIcon = {
                     IconButton(onClick = onBack) { Text("←", style = MaterialTheme.typography.titleLarge) }
                 },
@@ -106,7 +107,7 @@ fun StatsScreen(vm: MainViewModel, onBack: () -> Unit) {
             }
             item {
                 Text(
-                    "„Sicher“ heisst: Portugiesisch → Deutsch mindestens in Fach 3, " +
+                    "„Sicher“ heisst: ${language.displayName} → Deutsch mindestens in Fach 3, " +
                         "also an mehreren Tagen hintereinander gewusst.",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,

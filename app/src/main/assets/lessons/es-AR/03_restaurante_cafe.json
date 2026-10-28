@@ -1,0 +1,1401 @@
+{
+  "id": "es-AR-03",
+  "language": "es-AR",
+  "order": 3,
+  "title": "Restaurant & Café",
+  "titleTarget": "Restaurante y café",
+  "words": [
+    {
+      "id": "restaurante",
+      "text": "el restaurante",
+      "de": "das Restaurant",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "mesa",
+      "text": "la mesa",
+      "de": "der Tisch",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "mozo",
+      "text": "el mozo",
+      "de": "der Kellner",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Kellnerin: la moza.",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "carta",
+      "text": "la carta",
+      "de": "die Speisekarte",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "menu",
+      "text": "el menú",
+      "de": "das Tagesmenü",
+      "pos": "noun",
+      "gender": "m",
+      "note": "menú del día = Mittagsmenü",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "cuenta",
+      "text": "la cuenta",
+      "de": "die Rechnung",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "propina",
+      "text": "la propina",
+      "de": "das Trinkgeld",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Üblich sind etwa 10 %.",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "reserva",
+      "text": "la reserva",
+      "de": "die Reservierung",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "cubierto",
+      "text": "el cubierto",
+      "de": "das Gedeck",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Wird in Restaurants oft extra berechnet.",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "plato",
+      "text": "el plato",
+      "de": "der Teller; das Gericht",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "vaso",
+      "text": "el vaso",
+      "de": "das Glas (Trinkglas)",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "taza",
+      "text": "la taza",
+      "de": "die Tasse",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "tenedor",
+      "text": "el tenedor",
+      "de": "die Gabel",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "cuchillo",
+      "text": "el cuchillo",
+      "de": "das Messer",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "cuchara",
+      "text": "la cuchara",
+      "de": "der Löffel",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "servilleta",
+      "text": "la servilleta",
+      "de": "die Serviette",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "pedir",
+      "text": "pedir",
+      "de": "bestellen; bitten",
+      "pos": "verb",
+      "note": "yo pido, vos pedís",
+      "category": "Im Restaurant",
+      "grammar": [
+        "pedir_comida"
+      ]
+    },
+    {
+      "id": "querer",
+      "text": "querer",
+      "de": "wollen, möchten",
+      "pos": "verb",
+      "note": "yo quiero, vos querés",
+      "category": "Im Restaurant",
+      "grammar": [
+        "pedir_comida"
+      ]
+    },
+    {
+      "id": "traer",
+      "text": "traer",
+      "de": "bringen",
+      "pos": "verb",
+      "note": "¿Me traés …? = Bringst du mir …?",
+      "category": "Im Restaurant",
+      "grammar": [
+        "pedir_comida"
+      ]
+    },
+    {
+      "id": "recomendar",
+      "text": "recomendar",
+      "de": "empfehlen",
+      "pos": "verb",
+      "note": "yo recomiendo, vos recomendás",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "para_llevar",
+      "text": "para llevar",
+      "de": "zum Mitnehmen",
+      "pos": "phrase",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "para_comer_aca",
+      "text": "para comer acá",
+      "de": "zum Hieressen",
+      "pos": "phrase",
+      "category": "Im Restaurant"
+    },
+    {
+      "id": "asado",
+      "text": "el asado",
+      "de": "das Asado (Grillfest, Grillfleisch)",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Das argentinische Nationalgericht.",
+      "category": "Essen"
+    },
+    {
+      "id": "bife",
+      "text": "el bife",
+      "de": "das Steak",
+      "pos": "noun",
+      "gender": "m",
+      "note": "bife de chorizo = Rumpsteak, bife de lomo = Filet",
+      "category": "Essen"
+    },
+    {
+      "id": "carne",
+      "text": "la carne",
+      "de": "das Fleisch",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Essen"
+    },
+    {
+      "id": "pollo",
+      "text": "el pollo",
+      "de": "das Hähnchen",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Essen"
+    },
+    {
+      "id": "pescado",
+      "text": "el pescado",
+      "de": "der Fisch (als Essen)",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Lebender Fisch: el pez.",
+      "category": "Essen"
+    },
+    {
+      "id": "milanesa",
+      "text": "la milanesa",
+      "de": "das panierte Schnitzel",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Essen"
+    },
+    {
+      "id": "empanada",
+      "text": "la empanada",
+      "de": "die Empanada (gefüllte Teigtasche)",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Essen",
+      "grammar": [
+        "plural"
+      ]
+    },
+    {
+      "id": "choripan",
+      "text": "el choripán",
+      "de": "die Grillwurst im Brötchen",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Essen"
+    },
+    {
+      "id": "pizza",
+      "text": "la pizza",
+      "de": "die Pizza",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Essen"
+    },
+    {
+      "id": "ensalada",
+      "text": "la ensalada",
+      "de": "der Salat",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Essen"
+    },
+    {
+      "id": "papas_fritas",
+      "text": "las papas fritas",
+      "de": "die Pommes frites",
+      "pos": "noun",
+      "gender": "f",
+      "note": "la papa = die Kartoffel (nicht patata)",
+      "category": "Essen"
+    },
+    {
+      "id": "verdura",
+      "text": "la verdura",
+      "de": "das Gemüse",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Essen"
+    },
+    {
+      "id": "arroz",
+      "text": "el arroz",
+      "de": "der Reis",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Essen"
+    },
+    {
+      "id": "pan",
+      "text": "el pan",
+      "de": "das Brot",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Essen"
+    },
+    {
+      "id": "queso",
+      "text": "el queso",
+      "de": "der Käse",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Essen"
+    },
+    {
+      "id": "huevo",
+      "text": "el huevo",
+      "de": "das Ei",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Essen"
+    },
+    {
+      "id": "postre",
+      "text": "el postre",
+      "de": "der Nachtisch",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Essen"
+    },
+    {
+      "id": "helado",
+      "text": "el helado",
+      "de": "das Speiseeis",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Essen"
+    },
+    {
+      "id": "dulce_de_leche",
+      "text": "el dulce de leche",
+      "de": "die Milchkaramellcreme",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Essen"
+    },
+    {
+      "id": "medialuna",
+      "text": "la medialuna",
+      "de": "das Hörnchen (Croissant)",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Essen"
+    },
+    {
+      "id": "factura",
+      "text": "la factura",
+      "de": "das süsse Gebäck",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Bedeutet auch „Rechnung (Beleg)“.",
+      "category": "Essen"
+    },
+    {
+      "id": "vegetariano",
+      "text": "vegetariano",
+      "de": "vegetarisch; Vegetarier",
+      "pos": "adjective",
+      "category": "Essen"
+    },
+    {
+      "id": "agua",
+      "text": "el agua",
+      "de": "das Wasser",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Weiblich, aber mit „el“: el agua fría.",
+      "category": "Getränke",
+      "grammar": [
+        "articulos"
+      ]
+    },
+    {
+      "id": "agua_con_gas",
+      "text": "agua con gas",
+      "de": "das Sprudelwasser",
+      "pos": "phrase",
+      "category": "Getränke"
+    },
+    {
+      "id": "agua_sin_gas",
+      "text": "agua sin gas",
+      "de": "das stille Wasser",
+      "pos": "phrase",
+      "category": "Getränke"
+    },
+    {
+      "id": "cafe",
+      "text": "el café",
+      "de": "der Kaffee",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Getränke"
+    },
+    {
+      "id": "cortado",
+      "text": "el cortado",
+      "de": "Espresso mit etwas Milch",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Getränke"
+    },
+    {
+      "id": "cafe_con_leche",
+      "text": "el café con leche",
+      "de": "der Milchkaffee",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Getränke"
+    },
+    {
+      "id": "te",
+      "text": "el té",
+      "de": "der Tee",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Getränke"
+    },
+    {
+      "id": "mate",
+      "text": "el mate",
+      "de": "der Mate-Tee",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Wird in der Runde aus einem Gefäss getrunken.",
+      "category": "Getränke"
+    },
+    {
+      "id": "leche",
+      "text": "la leche",
+      "de": "die Milch",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Getränke"
+    },
+    {
+      "id": "jugo",
+      "text": "el jugo",
+      "de": "der Saft",
+      "pos": "noun",
+      "gender": "m",
+      "note": "jugo de naranja = Orangensaft",
+      "category": "Getränke"
+    },
+    {
+      "id": "gaseosa",
+      "text": "la gaseosa",
+      "de": "die Limonade, der Softdrink",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Getränke"
+    },
+    {
+      "id": "cerveza",
+      "text": "la cerveza",
+      "de": "das Bier",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Getränke"
+    },
+    {
+      "id": "vino",
+      "text": "el vino",
+      "de": "der Wein",
+      "pos": "noun",
+      "gender": "m",
+      "note": "vino tinto = Rotwein, vino blanco = Weisswein",
+      "category": "Getränke"
+    },
+    {
+      "id": "hielo",
+      "text": "el hielo",
+      "de": "das Eis (Würfel)",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Getränke"
+    },
+    {
+      "id": "azucar",
+      "text": "el azúcar",
+      "de": "der Zucker",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Getränke"
+    },
+    {
+      "id": "botella",
+      "text": "la botella",
+      "de": "die Flasche",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Getränke"
+    },
+    {
+      "id": "rico",
+      "text": "rico",
+      "de": "lecker",
+      "pos": "adjective",
+      "category": "Geschmack & Mahlzeiten"
+    },
+    {
+      "id": "caliente",
+      "text": "caliente",
+      "de": "heiss, warm",
+      "pos": "adjective",
+      "category": "Geschmack & Mahlzeiten"
+    },
+    {
+      "id": "frio",
+      "text": "frío",
+      "de": "kalt",
+      "pos": "adjective",
+      "category": "Geschmack & Mahlzeiten"
+    },
+    {
+      "id": "dulce",
+      "text": "dulce",
+      "de": "süss",
+      "pos": "adjective",
+      "category": "Geschmack & Mahlzeiten"
+    },
+    {
+      "id": "salado",
+      "text": "salado",
+      "de": "salzig",
+      "pos": "adjective",
+      "category": "Geschmack & Mahlzeiten"
+    },
+    {
+      "id": "picante",
+      "text": "picante",
+      "de": "scharf",
+      "pos": "adjective",
+      "category": "Geschmack & Mahlzeiten"
+    },
+    {
+      "id": "jugoso",
+      "text": "jugoso",
+      "de": "blutig, saftig (Fleisch)",
+      "pos": "adjective",
+      "category": "Geschmack & Mahlzeiten"
+    },
+    {
+      "id": "a_punto",
+      "text": "a punto",
+      "de": "medium (Fleisch)",
+      "pos": "phrase",
+      "category": "Geschmack & Mahlzeiten"
+    },
+    {
+      "id": "bien_cocido",
+      "text": "bien cocido",
+      "de": "durchgebraten",
+      "pos": "phrase",
+      "category": "Geschmack & Mahlzeiten"
+    },
+    {
+      "id": "sal",
+      "text": "la sal",
+      "de": "das Salz",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Geschmack & Mahlzeiten"
+    },
+    {
+      "id": "hambre",
+      "text": "el hambre",
+      "de": "der Hunger",
+      "pos": "noun",
+      "gender": "f",
+      "note": "tener hambre = Hunger haben",
+      "category": "Geschmack & Mahlzeiten",
+      "grammar": [
+        "articulos",
+        "tener_hambre"
+      ]
+    },
+    {
+      "id": "sed",
+      "text": "la sed",
+      "de": "der Durst",
+      "pos": "noun",
+      "gender": "f",
+      "note": "tener sed = Durst haben",
+      "category": "Geschmack & Mahlzeiten",
+      "grammar": [
+        "tener_hambre"
+      ]
+    },
+    {
+      "id": "comer",
+      "text": "comer",
+      "de": "essen",
+      "pos": "verb",
+      "category": "Geschmack & Mahlzeiten"
+    },
+    {
+      "id": "tomar",
+      "text": "tomar",
+      "de": "trinken; nehmen",
+      "pos": "verb",
+      "note": "Für „trinken“ sagt man in Argentinien meist tomar.",
+      "category": "Geschmack & Mahlzeiten"
+    },
+    {
+      "id": "desayuno",
+      "text": "el desayuno",
+      "de": "das Frühstück",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Geschmack & Mahlzeiten"
+    },
+    {
+      "id": "almuerzo",
+      "text": "el almuerzo",
+      "de": "das Mittagessen",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Geschmack & Mahlzeiten"
+    },
+    {
+      "id": "cena",
+      "text": "la cena",
+      "de": "das Abendessen",
+      "pos": "noun",
+      "gender": "f",
+      "note": "In Argentinien isst man oft erst ab 21 Uhr.",
+      "category": "Geschmack & Mahlzeiten"
+    },
+    {
+      "id": "merienda",
+      "text": "la merienda",
+      "de": "die Nachmittagsmahlzeit",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Gegen 17 Uhr: Mate oder Kaffee mit Gebäck.",
+      "category": "Geschmack & Mahlzeiten"
+    },
+    {
+      "id": "muy",
+      "text": "muy",
+      "de": "sehr",
+      "pos": "adverb",
+      "category": "Geschmack & Mahlzeiten"
+    },
+    {
+      "id": "con",
+      "text": "con",
+      "de": "mit",
+      "pos": "preposition",
+      "category": "Geschmack & Mahlzeiten"
+    },
+    {
+      "id": "sin",
+      "text": "sin",
+      "de": "ohne",
+      "pos": "preposition",
+      "category": "Geschmack & Mahlzeiten"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "Una mesa para dos, por favor.",
+      "de": "Einen Tisch für zwei, bitte.",
+      "words": [
+        "mesa",
+        "dos",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s02",
+      "text": "Tengo una reserva a las nueve.",
+      "de": "Ich habe eine Reservierung um neun.",
+      "words": [
+        "reserva",
+        "nueve"
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "¿Me traés la carta, por favor?",
+      "de": "Bringst du mir bitte die Speisekarte?",
+      "words": [
+        "carta",
+        "traer",
+        "por_favor"
+      ],
+      "grammar": [
+        "pedir_comida"
+      ]
+    },
+    {
+      "id": "s04",
+      "text": "¿Qué plato me recomendás?",
+      "de": "Welches Gericht empfiehlst du mir?",
+      "words": [
+        "plato",
+        "recomendar"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s05",
+      "text": "¿Tienen menú del día?",
+      "de": "Habt ihr ein Tagesmenü?",
+      "words": [
+        "menu"
+      ]
+    },
+    {
+      "id": "s06",
+      "text": "Quiero un bife de chorizo jugoso.",
+      "de": "Ich möchte ein Rumpsteak, blutig.",
+      "words": [
+        "querer",
+        "bife",
+        "jugoso"
+      ],
+      "grammar": [
+        "pedir_comida"
+      ]
+    },
+    {
+      "id": "s07",
+      "text": "Para mí, una milanesa con papas fritas.",
+      "de": "Für mich ein Schnitzel mit Pommes.",
+      "words": [
+        "milanesa",
+        "con",
+        "papas_fritas"
+      ],
+      "grammar": [
+        "pedir_comida"
+      ]
+    },
+    {
+      "id": "s08",
+      "text": "Dos empanadas de carne, por favor.",
+      "de": "Zwei Empanadas mit Fleisch, bitte.",
+      "words": [
+        "empanada",
+        "carne",
+        "dos"
+      ],
+      "grammar": [
+        "plural"
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "El bife bien cocido, por favor.",
+      "de": "Das Steak bitte durchgebraten.",
+      "words": [
+        "bife",
+        "bien_cocido"
+      ],
+      "grammar": [
+        "articulos"
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "A punto, por favor.",
+      "de": "Medium, bitte.",
+      "words": [
+        "a_punto"
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Soy vegetariano.",
+      "de": "Ich bin Vegetarier.",
+      "words": [
+        "vegetariano"
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "¿Tienen un plato vegetariano?",
+      "de": "Habt ihr ein vegetarisches Gericht?",
+      "words": [
+        "plato",
+        "vegetariano"
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Una ensalada sin cebolla.",
+      "de": "Einen Salat ohne Zwiebeln.",
+      "words": [
+        "ensalada",
+        "sin"
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Pollo con arroz.",
+      "de": "Hähnchen mit Reis.",
+      "words": [
+        "pollo",
+        "con",
+        "arroz"
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "El pescado está muy rico.",
+      "de": "Der Fisch ist sehr lecker.",
+      "words": [
+        "pescado",
+        "muy",
+        "rico"
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "¿Me traés un poco de pan?",
+      "de": "Bringst du mir etwas Brot?",
+      "words": [
+        "traer",
+        "pan",
+        "un_poco"
+      ],
+      "grammar": [
+        "pedir_comida"
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Un choripán y una gaseosa.",
+      "de": "Ein Choripán und eine Limo.",
+      "words": [
+        "choripan",
+        "gaseosa",
+        "uno"
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Una pizza para llevar.",
+      "de": "Eine Pizza zum Mitnehmen.",
+      "words": [
+        "pizza",
+        "para_llevar"
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "¿Para comer acá o para llevar?",
+      "de": "Zum Hieressen oder zum Mitnehmen?",
+      "words": [
+        "para_comer_aca",
+        "para_llevar"
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "El domingo hacemos un asado.",
+      "de": "Am Sonntag machen wir ein Asado.",
+      "words": [
+        "asado"
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "No como carne.",
+      "de": "Ich esse kein Fleisch.",
+      "words": [
+        "comer",
+        "carne",
+        "no"
+      ],
+      "grammar": [
+        "negacion"
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "Tengo mucha hambre.",
+      "de": "Ich habe grossen Hunger.",
+      "words": [
+        "hambre"
+      ],
+      "grammar": [
+        "tener_hambre"
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "Tengo sed.",
+      "de": "Ich habe Durst.",
+      "words": [
+        "sed"
+      ],
+      "grammar": [
+        "tener_hambre"
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "Un agua sin gas, por favor.",
+      "de": "Ein stilles Wasser, bitte.",
+      "words": [
+        "agua_sin_gas"
+      ],
+      "grammar": [
+        "articulos"
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "Una botella de agua con gas.",
+      "de": "Eine Flasche Sprudelwasser.",
+      "words": [
+        "botella",
+        "agua_con_gas"
+      ]
+    },
+    {
+      "id": "s26",
+      "text": "Un café con leche y dos medialunas.",
+      "de": "Einen Milchkaffee und zwei Hörnchen.",
+      "words": [
+        "cafe_con_leche",
+        "medialuna",
+        "dos"
+      ],
+      "grammar": [
+        "plural"
+      ]
+    },
+    {
+      "id": "s27",
+      "text": "Un cortado, por favor.",
+      "de": "Einen Cortado, bitte.",
+      "words": [
+        "cortado"
+      ]
+    },
+    {
+      "id": "s28",
+      "text": "¿Tomás mate?",
+      "de": "Trinkst du Mate?",
+      "words": [
+        "tomar",
+        "mate"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s29",
+      "text": "Un té con leche, sin azúcar.",
+      "de": "Einen Tee mit Milch, ohne Zucker.",
+      "words": [
+        "te",
+        "leche",
+        "sin",
+        "azucar"
+      ]
+    },
+    {
+      "id": "s30",
+      "text": "Un jugo de naranja.",
+      "de": "Einen Orangensaft.",
+      "words": [
+        "jugo"
+      ]
+    },
+    {
+      "id": "s31",
+      "text": "Una cerveza bien fría.",
+      "de": "Ein schön kaltes Bier.",
+      "words": [
+        "cerveza",
+        "frio"
+      ]
+    },
+    {
+      "id": "s32",
+      "text": "Una copa de vino tinto.",
+      "de": "Ein Glas Rotwein.",
+      "words": [
+        "vino"
+      ]
+    },
+    {
+      "id": "s33",
+      "text": "Con hielo, por favor.",
+      "de": "Mit Eis, bitte.",
+      "words": [
+        "con",
+        "hielo"
+      ]
+    },
+    {
+      "id": "s34",
+      "text": "¿Me das un vaso de agua?",
+      "de": "Gibst du mir ein Glas Wasser?",
+      "words": [
+        "vaso",
+        "agua"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s35",
+      "text": "Falta un tenedor.",
+      "de": "Es fehlt eine Gabel.",
+      "words": [
+        "tenedor"
+      ]
+    },
+    {
+      "id": "s36",
+      "text": "¿Me traés otro cuchillo?",
+      "de": "Bringst du mir ein anderes Messer?",
+      "words": [
+        "cuchillo",
+        "traer"
+      ],
+      "grammar": [
+        "pedir_comida"
+      ]
+    },
+    {
+      "id": "s37",
+      "text": "Necesito una cuchara.",
+      "de": "Ich brauche einen Löffel.",
+      "words": [
+        "cuchara"
+      ]
+    },
+    {
+      "id": "s38",
+      "text": "Una servilleta, por favor.",
+      "de": "Eine Serviette, bitte.",
+      "words": [
+        "servilleta",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s39",
+      "text": "Una taza de café.",
+      "de": "Eine Tasse Kaffee.",
+      "words": [
+        "taza",
+        "cafe"
+      ]
+    },
+    {
+      "id": "s40",
+      "text": "El café está frío.",
+      "de": "Der Kaffee ist kalt.",
+      "words": [
+        "cafe",
+        "frio"
+      ]
+    },
+    {
+      "id": "s41",
+      "text": "La comida está muy caliente.",
+      "de": "Das Essen ist sehr heiss.",
+      "words": [
+        "caliente",
+        "muy"
+      ]
+    },
+    {
+      "id": "s42",
+      "text": "¿Es picante?",
+      "de": "Ist das scharf?",
+      "words": [
+        "picante"
+      ]
+    },
+    {
+      "id": "s43",
+      "text": "Está un poco salado.",
+      "de": "Es ist ein bisschen salzig.",
+      "words": [
+        "salado",
+        "un_poco"
+      ]
+    },
+    {
+      "id": "s44",
+      "text": "¿Me pasás la sal?",
+      "de": "Gibst du mir das Salz?",
+      "words": [
+        "sal"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s45",
+      "text": "De postre, un helado de dulce de leche.",
+      "de": "Als Nachtisch ein Dulce-de-leche-Eis.",
+      "words": [
+        "postre",
+        "helado",
+        "dulce_de_leche"
+      ]
+    },
+    {
+      "id": "s46",
+      "text": "El flan es muy dulce.",
+      "de": "Der Pudding ist sehr süss.",
+      "words": [
+        "dulce",
+        "muy"
+      ]
+    },
+    {
+      "id": "s47",
+      "text": "Una factura con dulce de leche.",
+      "de": "Ein Gebäckstück mit Dulce de leche.",
+      "words": [
+        "factura",
+        "dulce_de_leche"
+      ]
+    },
+    {
+      "id": "s48",
+      "text": "Un huevo frito, por favor.",
+      "de": "Ein Spiegelei, bitte.",
+      "words": [
+        "huevo"
+      ]
+    },
+    {
+      "id": "s49",
+      "text": "Una pizza con mucho queso.",
+      "de": "Eine Pizza mit viel Käse.",
+      "words": [
+        "pizza",
+        "queso"
+      ]
+    },
+    {
+      "id": "s50",
+      "text": "Con verdura, sin carne.",
+      "de": "Mit Gemüse, ohne Fleisch.",
+      "words": [
+        "verdura",
+        "carne",
+        "con",
+        "sin"
+      ]
+    },
+    {
+      "id": "s51",
+      "text": "La cuenta, por favor.",
+      "de": "Die Rechnung, bitte.",
+      "words": [
+        "cuenta",
+        "por_favor"
+      ],
+      "grammar": [
+        "articulos"
+      ]
+    },
+    {
+      "id": "s52",
+      "text": "¿La propina está incluida?",
+      "de": "Ist das Trinkgeld inbegriffen?",
+      "words": [
+        "propina"
+      ]
+    },
+    {
+      "id": "s53",
+      "text": "¿Cuánto es el cubierto?",
+      "de": "Wie viel kostet das Gedeck?",
+      "words": [
+        "cubierto",
+        "cuanto"
+      ]
+    },
+    {
+      "id": "s54",
+      "text": "¡Mozo! ¿Me cobra, por favor?",
+      "de": "Herr Ober! Kann ich bitte zahlen?",
+      "words": [
+        "mozo"
+      ]
+    },
+    {
+      "id": "s55",
+      "text": "Queremos pedir.",
+      "de": "Wir möchten bestellen.",
+      "words": [
+        "pedir",
+        "querer"
+      ],
+      "grammar": [
+        "pedir_comida"
+      ]
+    },
+    {
+      "id": "s56",
+      "text": "¿Qué querés comer?",
+      "de": "Was willst du essen?",
+      "words": [
+        "querer",
+        "comer"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s57",
+      "text": "¿Qué vas a tomar?",
+      "de": "Was trinkst du?",
+      "words": [
+        "tomar"
+      ]
+    },
+    {
+      "id": "s58",
+      "text": "El desayuno es a las ocho.",
+      "de": "Das Frühstück ist um acht.",
+      "words": [
+        "desayuno",
+        "ocho"
+      ]
+    },
+    {
+      "id": "s59",
+      "text": "El almuerzo es al mediodía.",
+      "de": "Das Mittagessen ist mittags.",
+      "words": [
+        "almuerzo",
+        "mediodia"
+      ]
+    },
+    {
+      "id": "s60",
+      "text": "En Argentina la cena es muy tarde.",
+      "de": "In Argentinien ist das Abendessen sehr spät.",
+      "words": [
+        "cena",
+        "muy",
+        "tarde"
+      ]
+    },
+    {
+      "id": "s61",
+      "text": "A la tarde tomamos la merienda.",
+      "de": "Nachmittags gibt es die Merienda.",
+      "words": [
+        "merienda",
+        "tomar"
+      ]
+    },
+    {
+      "id": "s62",
+      "text": "Este restaurante es muy bueno.",
+      "de": "Dieses Restaurant ist sehr gut.",
+      "words": [
+        "restaurante",
+        "muy"
+      ]
+    },
+    {
+      "id": "s63",
+      "text": "El plato es enorme.",
+      "de": "Das Gericht ist riesig.",
+      "words": [
+        "plato"
+      ]
+    },
+    {
+      "id": "s64",
+      "text": "Las empanadas están muy ricas.",
+      "de": "Die Empanadas sind sehr lecker.",
+      "words": [
+        "empanada",
+        "muy",
+        "rico"
+      ],
+      "grammar": [
+        "plural"
+      ]
+    },
+    {
+      "id": "s65",
+      "text": "Dos cafés y tres cervezas.",
+      "de": "Zwei Kaffee und drei Bier.",
+      "words": [
+        "cafe",
+        "cerveza",
+        "dos",
+        "tres"
+      ],
+      "grammar": [
+        "plural"
+      ]
+    },
+    {
+      "id": "s66",
+      "text": "Quiero pescado, no pollo.",
+      "de": "Ich möchte Fisch, kein Hähnchen.",
+      "words": [
+        "pescado",
+        "pollo",
+        "querer"
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "articulos",
+      "title": "Artikel: el, la, los, las",
+      "explanation": "Bestimmter Artikel:\n• el (m) – el plato, el café\n• la (f) – la mesa, la cuenta\n• los / las (Plural) – los platos, las mesas\n\nUnbestimmt: un (m), una (f), unos/unas (einige).\n\nBesonderheit: Weibliche Wörter, die mit betontem a beginnen, nehmen el: el agua, el hambre – bleiben aber weiblich: el agua fría.\n\nde + el = del, a + el = al: el menú del día, al mediodía.",
+      "examples": [
+        {
+          "text": "el vino y la cerveza",
+          "de": "der Wein und das Bier"
+        },
+        {
+          "text": "el agua está fría",
+          "de": "das Wasser ist kalt"
+        }
+      ]
+    },
+    {
+      "id": "pedir_comida",
+      "title": "Bestellen",
+      "explanation": "Die üblichen Wendungen:\n• Quiero … – Ich möchte …\n• Para mí, … – Für mich …\n• ¿Me traés …? – Bringst du mir …? (zu usted: ¿Me trae …?)\n• ¿Me das …? – Gibst du mir …?\n• ¿Me cobrás? – Kann ich zahlen? (wörtl. Kassierst du bei mir?)\n\nquerer: yo quiero, vos querés, usted quiere, nosotros queremos.",
+      "examples": [
+        {
+          "text": "Para mí, un cortado.",
+          "de": "Für mich einen Cortado."
+        },
+        {
+          "text": "¿Me traés la cuenta?",
+          "de": "Bringst du mir die Rechnung?"
+        }
+      ]
+    },
+    {
+      "id": "tener_hambre",
+      "title": "tener hambre, tener sed …",
+      "explanation": "Viele Zustände drückt man mit tener (haben) + Nomen aus:\n• tener hambre – Hunger haben\n• tener sed – Durst haben\n• tener frío / calor – frieren / schwitzen\n• tener sueño – müde sein\n\ntener: yo tengo, vos tenés, usted tiene, nosotros tenemos, ustedes tienen.\n„Sehr“ heisst hier mucho/mucha: Tengo mucha hambre.",
+      "examples": [
+        {
+          "text": "¿Tenés hambre?",
+          "de": "Hast du Hunger?"
+        },
+        {
+          "text": "Tenemos mucho calor.",
+          "de": "Uns ist sehr heiss."
+        }
+      ]
+    },
+    {
+      "id": "plural",
+      "title": "Mehrzahl",
+      "explanation": "• Endet ein Wort auf Vokal: + s – la empanada → las empanadas, el café → los cafés\n• Endet es auf Konsonant: + es – el pan → los panes, el bife → los bifes, la ciudad → las ciudades\n• -z wird zu -ces: el lápiz → los lápices\n\nAdjektive passen sich an: las empanadas ricas.",
+      "examples": [
+        {
+          "text": "dos cervezas y tres empanadas",
+          "de": "zwei Bier und drei Empanadas"
+        },
+        {
+          "text": "los panes",
+          "de": "die Brote"
+        }
+      ]
+    }
+  ]
+}

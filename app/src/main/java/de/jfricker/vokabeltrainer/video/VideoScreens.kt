@@ -90,7 +90,7 @@ fun VideosScreen(vm: VideoViewModel, onBack: () -> Unit, onOpenPlaylist: (String
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Videos") },
+                title = { Text("Videos · ${vm.language.collectAsStateWithLifecycle().value.displayName}") },
                 navigationIcon = { BackButton(onBack) },
                 actions = { TextButton(onClick = { showKeyDialog = true }) { Text("🔑 Schlüssel") } },
             )
@@ -391,8 +391,10 @@ fun VideoPlayerScreen(vm: VideoViewModel, videoId: String, onBack: () -> Unit, o
         snackbarHost = { SnackbarHost(snackbar) },
     ) { padding ->
         Column(Modifier.fillMaxSize().padding(padding)) {
+            val language by vm.language.collectAsStateWithLifecycle()
             YouTubePlayer(
                 videoId,
+                language.captionCode,
                 Modifier
                     .fillMaxWidth()
                     .aspectRatio(16f / 9f),

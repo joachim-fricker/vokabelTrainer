@@ -32,12 +32,12 @@ import androidx.core.view.WindowInsetsControllerCompat
 
 /**
  * Eingebetteter YouTube-Player (WebView mit dem offiziellen Embed-Player).
- * Portugiesische Untertitel werden automatisch eingeschaltet (cc_load_policy, cc_lang_pref).
+ * Untertitel in der Lernsprache (captionLang, z. B. "pt", "es") werden automatisch eingeschaltet (cc_load_policy, cc_lang_pref).
  * Vollbild ueber den Knopf im Player: das Video wird dann ueber die ganze App gelegt.
  */
 @SuppressLint("SetJavaScriptEnabled")
 @Composable
-fun YouTubePlayer(videoId: String, modifier: Modifier = Modifier) {
+fun YouTubePlayer(videoId: String, captionLang: String, modifier: Modifier = Modifier) {
     val activity = LocalContext.current.findActivity()
     // Vollbild-Ansicht, die der Player liefert, und der Rueckruf zum Beenden
     var fullscreenView by remember { mutableStateOf<View?>(null) }
@@ -113,7 +113,7 @@ fun YouTubePlayer(videoId: String, modifier: Modifier = Modifier) {
                 webView.tag = videoId
                 // Eine https-Basis-URL sorgt fuer einen gueltigen Referer; ohne ihn verweigert YouTube
                 // in WebViews die Wiedergabe (Fehler 152/153).
-                webView.loadDataWithBaseURL(BASE_URL, playerHtml(videoId), "text/html", "utf-8", null)
+                webView.loadDataWithBaseURL(BASE_URL, playerHtml(videoId, captionLang), "text/html", "utf-8", null)
             }
         },
         onRelease = {
@@ -145,7 +145,7 @@ private fun openExternally(context: Context, uri: Uri) {
 
 private const val BASE_URL = "https://de.jfricker.vokabeltrainer/"
 
-private fun playerHtml(videoId: String): String = """
+private fun playerHtml(videoId: String, captionLang: String): String = """
 <!DOCTYPE html>
 <html>
 <head>
@@ -158,7 +158,7 @@ private fun playerHtml(videoId: String): String = """
 </head>
 <body>
 <iframe
-  src="https://www.youtube.com/embed/$videoId?playsinline=1&autoplay=1&rel=0&fs=1&cc_load_policy=1&cc_lang_pref=pt&hl=pt"
+  src="https://www.youtube.com/embed/$videoId?playsinline=1&autoplay=1&rel=0&fs=1&cc_load_policy=1&cc_lang_pref=$captionLang&hl=$captionLang"
   referrerpolicy="strict-origin-when-cross-origin"
   allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
   allowfullscreen></iframe>

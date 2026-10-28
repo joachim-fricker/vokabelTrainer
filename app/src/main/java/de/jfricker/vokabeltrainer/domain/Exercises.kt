@@ -41,20 +41,18 @@ data class BuildItem(
 /** Erzeugt Satz-Uebungen aus den Lektionsdaten. */
 object Exercises {
 
-    private val ARTICLES = listOf("os ", "as ", "o ", "a ")
-
     /**
      * Schreibweisen eines Wortes, wie sie in Saetzen vorkommen koennen:
-     * "um, uma" -> [um, uma]; "a mesa" -> [mesa]; "tudo bem?" -> [tudo bem]
+     * "um, uma" -> [um, uma]; "a mesa" -> [mesa]; "tudo bem?" -> [tudo bem]; "¿qué tal?" -> [qué tal]
      */
     fun forms(w: WordEntity): List<String> =
         w.text.split(",")
-            .map { it.trim().trimEnd('?', '!').trim() }
-            .map { stripArticle(it) }
+            .map { it.trim().trim('?', '!', '¿', '¡').trim() }
+            .map { stripArticle(it, Language.fromCode(w.language).articles) }
             .filter { it.isNotEmpty() }
 
-    private fun stripArticle(s: String): String {
-        for (a in ARTICLES) if (s.startsWith(a)) return s.removePrefix(a)
+    private fun stripArticle(s: String, articles: List<String>): String {
+        for (a in articles) if (s.startsWith(a)) return s.removePrefix(a)
         return s
     }
 
@@ -106,7 +104,7 @@ object Exercises {
     /** Satz in Bausteine zerlegen, Satzzeichen weglassen. */
     fun tokenize(text: String): List<String> =
         text.split(Regex("\\s+"))
-            .map { it.trim(',', '.', '!', '?', ';', ':', '"') }
+            .map { it.trim(',', '.', '!', '?', ';', ':', '"', '¿', '¡') }
             .filter { it.isNotEmpty() }
 
     fun canBuild(sentence: SentenceEntity, minTokens: Int = 3): Boolean = tokenize(sentence.text).size >= minTokens

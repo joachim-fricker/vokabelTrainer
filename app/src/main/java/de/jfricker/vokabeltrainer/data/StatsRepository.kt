@@ -15,7 +15,7 @@ data class Stats(
     val daysLeft: Long,
     val wordsTotal: Int,
     val wordsStarted: Int,
-    /** PT->DE mindestens in Fach 3 (also mehrmals an verschiedenen Tagen gewusst) */
+    /** Lernsprache->DE mindestens in Fach 3 (also mehrmals an verschiedenen Tagen gewusst) */
     val wordsLearned: Int,
     val newWordsPerDay: Int,
     val newWordsToday: Int,
@@ -37,7 +37,8 @@ class StatsRepository(db: AppDatabase, private val prefs: LearningPrefs) {
         val today = LocalDate.now()
         fun startOf(d: LocalDate) = d.atStartOfDay(zone).toInstant().toEpochMilli()
 
-        val rows = dao.reviewsSince(startOf(today.minusDays(400)))
+        val lang = prefs.language
+        val rows = dao.reviewsSince(lang.keyPrefix, startOf(today.minusDays(400)))
         val byDay = rows.groupBy { Instant.ofEpochMilli(it.reviewedAt).atZone(zone).toLocalDate() }
 
         // Serie: heute (oder, falls heute noch nichts, ab gestern) rueckwaerts zaehlen
@@ -49,8 +50,8 @@ class StatsRepository(db: AppDatabase, private val prefs: LearningPrefs) {
         }
 
         val todayRows = byDay[today].orEmpty()
-        val total = dao.wordCount()
-        val started = dao.startedCount(PracticeMode.CARD_PT_DE.code)
+        val total = dao.wordCount(lang.code)
+        val started = dao.startedCount(lang.keyPrefix, PracticeMode.CARD_PT_DE.code)
         val newToday = prefs.countToday(LearningPrefs.NEW_WORDS)
         val target = prefs.targetDate
 
@@ -59,15 +60,15 @@ class StatsRepository(db: AppDatabase, private val prefs: LearningPrefs) {
             daysLeft = DailyPlan.daysLeft(target, today),
             wordsTotal = total,
             wordsStarted = started,
-            wordsLearned = dao.boxAtLeastCount(PracticeMode.CARD_PT_DE.code, LEARNED_BOX),
+            wordsLearned = dao.boxAtLeastCount(lang.keyPrefix, PracticeMode.CARD_PT_DE.code, LEARNED_BOX),
             newWordsPerDay = DailyPlan.newWordsPerDay(total, started, newToday, target, today),
             newWordsToday = newToday,
             streak = streak,
             reviewsToday = todayRows.size,
             correctPercentToday = if (todayRows.isEmpty()) null else todayRows.count { it.correct } * 100 / todayRows.size,
-            dueUntilTomorrow = dao.dueBeforeCount(startOf(today.plusDays(2)), PracticeMode.entries.map { it.code }),
+            dueUntilTomorrow = dao.dueBeforeCount(lang.keyPrefix, startOf(today.plusDays(2)), PracticeMode.entries.map { it.code }),
             last14Days = (13 downTo 0).map { today.minusDays(it.toLong()) }.map { DayCount(it, byDay[it]?.size ?: 0) },
-            lessons = dao.lessonStats(LEARNED_BOX),
+            lessons = dao.lessonStats(lang.code, LEARNED_BOX),
         )
     }
 

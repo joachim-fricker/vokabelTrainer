@@ -3,6 +3,7 @@ package de.jfricker.vokabeltrainer.ui
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -13,6 +14,7 @@ import androidx.compose.material3.TextButton
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.FilterChip
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -25,6 +27,7 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import de.jfricker.vokabeltrainer.data.TodaySummary
+import de.jfricker.vokabeltrainer.domain.Language
 import de.jfricker.vokabeltrainer.speech.SpeakerState
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -41,9 +44,10 @@ fun LessonListScreen(
     val speakerState by vm.speakerState.collectAsStateWithLifecycle()
     val importMessage by vm.importMessage.collectAsStateWithLifecycle()
     val today by vm.today.collectAsStateWithLifecycle()
+    val language by vm.language.collectAsStateWithLifecycle()
 
     // Bei jedem Anzeigen neu berechnen (z. B. nach einer Uebungsrunde); lessons.size: nach dem Import
-    LaunchedEffect(lessons.size) { vm.refreshToday() }
+    LaunchedEffect(lessons.size, language) { vm.refreshToday() }
 
     Scaffold(
         topBar = {
@@ -61,6 +65,7 @@ fun LessonListScreen(
             contentPadding = PaddingValues(16.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp),
         ) {
+            item { LanguagePicker(language, vm::setLanguage) }
             (speakerState as? SpeakerState.Unavailable)?.let { s ->
                 item { InfoCard(s.message) }
             }
@@ -68,7 +73,7 @@ fun LessonListScreen(
                 item { InfoCard(msg) }
             }
             if (lessons.isEmpty()) {
-                item { Text("Lektionen werden geladen …") }
+                item { Text("Noch keine Lektionen für ${language.displayName} …") }
             } else {
                 item { TodayCard(today, onToday) }
                 item {
@@ -95,6 +100,20 @@ fun LessonListScreen(
                     }
                 }
             }
+        }
+    }
+}
+
+/** Umschalter zwischen den Lernsprachen */
+@Composable
+private fun LanguagePicker(selected: Language, onSelect: (Language) -> Unit) {
+    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        Language.entries.forEach { l ->
+            FilterChip(
+                selected = l == selected,
+                onClick = { onSelect(l) },
+                label = { Text("${l.flag}  ${l.displayName}", style = MaterialTheme.typography.titleSmall) },
+            )
         }
     }
 }

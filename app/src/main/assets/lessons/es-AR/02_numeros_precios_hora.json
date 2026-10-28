@@ -1,0 +1,1045 @@
+{
+  "id": "es-AR-02",
+  "language": "es-AR",
+  "order": 2,
+  "title": "Zahlen, Preise & Uhrzeit",
+  "titleTarget": "Números, precios y hora",
+  "words": [
+    {
+      "id": "cero",
+      "text": "cero",
+      "de": "null",
+      "pos": "numeral",
+      "category": "Zahlen"
+    },
+    {
+      "id": "uno",
+      "text": "uno, un, una",
+      "de": "eins; ein, eine",
+      "pos": "numeral",
+      "note": "Vor männlichen Nomen „un“: un peso, una hora.",
+      "category": "Zahlen",
+      "grammar": [
+        "zahlen_geschlecht"
+      ]
+    },
+    {
+      "id": "dos",
+      "text": "dos",
+      "de": "zwei",
+      "pos": "numeral",
+      "category": "Zahlen"
+    },
+    {
+      "id": "tres",
+      "text": "tres",
+      "de": "drei",
+      "pos": "numeral",
+      "category": "Zahlen"
+    },
+    {
+      "id": "cuatro",
+      "text": "cuatro",
+      "de": "vier",
+      "pos": "numeral",
+      "category": "Zahlen"
+    },
+    {
+      "id": "cinco",
+      "text": "cinco",
+      "de": "fünf",
+      "pos": "numeral",
+      "category": "Zahlen"
+    },
+    {
+      "id": "seis",
+      "text": "seis",
+      "de": "sechs",
+      "pos": "numeral",
+      "category": "Zahlen"
+    },
+    {
+      "id": "siete",
+      "text": "siete",
+      "de": "sieben",
+      "pos": "numeral",
+      "category": "Zahlen"
+    },
+    {
+      "id": "ocho",
+      "text": "ocho",
+      "de": "acht",
+      "pos": "numeral",
+      "category": "Zahlen"
+    },
+    {
+      "id": "nueve",
+      "text": "nueve",
+      "de": "neun",
+      "pos": "numeral",
+      "category": "Zahlen"
+    },
+    {
+      "id": "diez",
+      "text": "diez",
+      "de": "zehn",
+      "pos": "numeral",
+      "category": "Zahlen"
+    },
+    {
+      "id": "once",
+      "text": "once",
+      "de": "elf",
+      "pos": "numeral",
+      "category": "Zahlen"
+    },
+    {
+      "id": "doce",
+      "text": "doce",
+      "de": "zwölf",
+      "pos": "numeral",
+      "category": "Zahlen"
+    },
+    {
+      "id": "quince",
+      "text": "quince",
+      "de": "fünfzehn",
+      "pos": "numeral",
+      "category": "Zahlen"
+    },
+    {
+      "id": "veinte",
+      "text": "veinte",
+      "de": "zwanzig",
+      "pos": "numeral",
+      "category": "Zahlen"
+    },
+    {
+      "id": "treinta",
+      "text": "treinta",
+      "de": "dreissig",
+      "pos": "numeral",
+      "category": "Zahlen"
+    },
+    {
+      "id": "cuarenta",
+      "text": "cuarenta",
+      "de": "vierzig",
+      "pos": "numeral",
+      "category": "Zahlen"
+    },
+    {
+      "id": "cincuenta",
+      "text": "cincuenta",
+      "de": "fünfzig",
+      "pos": "numeral",
+      "category": "Zahlen"
+    },
+    {
+      "id": "cien",
+      "text": "cien",
+      "de": "hundert",
+      "pos": "numeral",
+      "note": "Ab 101: ciento uno, ciento cincuenta.",
+      "category": "Zahlen"
+    },
+    {
+      "id": "doscientos",
+      "text": "doscientos, doscientas",
+      "de": "zweihundert",
+      "pos": "numeral",
+      "note": "Richtet sich nach dem Nomen: doscientas personas.",
+      "category": "Zahlen",
+      "grammar": [
+        "zahlen_geschlecht"
+      ]
+    },
+    {
+      "id": "quinientos",
+      "text": "quinientos",
+      "de": "fünfhundert",
+      "pos": "numeral",
+      "note": "Unregelmässig (nicht „cincocientos“).",
+      "category": "Zahlen",
+      "grammar": [
+        "zahlen_geschlecht"
+      ]
+    },
+    {
+      "id": "mil",
+      "text": "mil",
+      "de": "tausend",
+      "pos": "numeral",
+      "category": "Zahlen",
+      "grammar": [
+        "grosse_zahlen"
+      ]
+    },
+    {
+      "id": "millon",
+      "text": "un millón",
+      "de": "eine Million",
+      "pos": "numeral",
+      "note": "Mit Nomen: un millón de pesos.",
+      "category": "Zahlen",
+      "grammar": [
+        "grosse_zahlen"
+      ]
+    },
+    {
+      "id": "plata",
+      "text": "la plata",
+      "de": "das Geld",
+      "pos": "noun",
+      "gender": "f",
+      "note": "Wörtlich „Silber“; „dinero“ versteht man auch.",
+      "category": "Geld & Bezahlen"
+    },
+    {
+      "id": "peso",
+      "text": "el peso",
+      "de": "der Peso",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Geld & Bezahlen"
+    },
+    {
+      "id": "dolar",
+      "text": "el dólar",
+      "de": "der Dollar",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Viele Preise (z. B. Unterkünfte) werden in Dollar genannt.",
+      "category": "Geld & Bezahlen"
+    },
+    {
+      "id": "precio",
+      "text": "el precio",
+      "de": "der Preis",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Geld & Bezahlen"
+    },
+    {
+      "id": "efectivo",
+      "text": "el efectivo",
+      "de": "das Bargeld",
+      "pos": "noun",
+      "gender": "m",
+      "note": "en efectivo = bar",
+      "category": "Geld & Bezahlen"
+    },
+    {
+      "id": "tarjeta",
+      "text": "la tarjeta",
+      "de": "die Karte (Bank-/Kreditkarte)",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Geld & Bezahlen"
+    },
+    {
+      "id": "billete",
+      "text": "el billete",
+      "de": "der Geldschein",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Geld & Bezahlen"
+    },
+    {
+      "id": "moneda",
+      "text": "la moneda",
+      "de": "die Münze",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Geld & Bezahlen"
+    },
+    {
+      "id": "vuelto",
+      "text": "el vuelto",
+      "de": "das Wechselgeld",
+      "pos": "noun",
+      "gender": "m",
+      "note": "Argentinisch; anderswo „el cambio“.",
+      "category": "Geld & Bezahlen"
+    },
+    {
+      "id": "cajero",
+      "text": "el cajero automático",
+      "de": "der Geldautomat",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Geld & Bezahlen"
+    },
+    {
+      "id": "caro",
+      "text": "caro",
+      "de": "teuer",
+      "pos": "adjective",
+      "category": "Geld & Bezahlen"
+    },
+    {
+      "id": "barato",
+      "text": "barato",
+      "de": "billig, günstig",
+      "pos": "adjective",
+      "category": "Geld & Bezahlen"
+    },
+    {
+      "id": "cuanto",
+      "text": "¿cuánto?",
+      "de": "wie viel?",
+      "pos": "adverb",
+      "category": "Geld & Bezahlen"
+    },
+    {
+      "id": "costar",
+      "text": "costar",
+      "de": "kosten",
+      "pos": "verb",
+      "note": "cuesta, cuestan",
+      "category": "Geld & Bezahlen"
+    },
+    {
+      "id": "pagar",
+      "text": "pagar",
+      "de": "bezahlen",
+      "pos": "verb",
+      "category": "Geld & Bezahlen"
+    },
+    {
+      "id": "cambiar",
+      "text": "cambiar",
+      "de": "wechseln, umtauschen",
+      "pos": "verb",
+      "category": "Geld & Bezahlen"
+    },
+    {
+      "id": "descuento",
+      "text": "el descuento",
+      "de": "der Rabatt",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Geld & Bezahlen"
+    },
+    {
+      "id": "hora",
+      "text": "la hora",
+      "de": "die Stunde; die Uhrzeit",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Uhrzeit & Tageszeiten",
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "que_hora",
+      "text": "¿qué hora es?",
+      "de": "wie spät ist es?",
+      "pos": "phrase",
+      "category": "Uhrzeit & Tageszeiten"
+    },
+    {
+      "id": "a_que_hora",
+      "text": "¿a qué hora?",
+      "de": "um wie viel Uhr?",
+      "pos": "phrase",
+      "category": "Uhrzeit & Tageszeiten"
+    },
+    {
+      "id": "en_punto",
+      "text": "en punto",
+      "de": "Punkt, genau (Uhrzeit)",
+      "pos": "phrase",
+      "category": "Uhrzeit & Tageszeiten"
+    },
+    {
+      "id": "y_media",
+      "text": "y media",
+      "de": "halb (nach der Stunde)",
+      "pos": "phrase",
+      "note": "las dos y media = halb drei",
+      "category": "Uhrzeit & Tageszeiten",
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "y_cuarto",
+      "text": "y cuarto",
+      "de": "Viertel nach",
+      "pos": "phrase",
+      "category": "Uhrzeit & Tageszeiten",
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "menos_cuarto",
+      "text": "menos cuarto",
+      "de": "Viertel vor",
+      "pos": "phrase",
+      "category": "Uhrzeit & Tageszeiten",
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "minuto",
+      "text": "el minuto",
+      "de": "die Minute",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Uhrzeit & Tageszeiten"
+    },
+    {
+      "id": "mediodia",
+      "text": "el mediodía",
+      "de": "der Mittag",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Uhrzeit & Tageszeiten"
+    },
+    {
+      "id": "medianoche",
+      "text": "la medianoche",
+      "de": "die Mitternacht",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Uhrzeit & Tageszeiten"
+    },
+    {
+      "id": "manana_m",
+      "text": "la mañana",
+      "de": "der Morgen, Vormittag",
+      "pos": "noun",
+      "gender": "f",
+      "note": "de la mañana = morgens; mañana ohne Artikel = morgen",
+      "category": "Uhrzeit & Tageszeiten"
+    },
+    {
+      "id": "tarde_n",
+      "text": "la tarde",
+      "de": "der Nachmittag",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Uhrzeit & Tageszeiten"
+    },
+    {
+      "id": "noche",
+      "text": "la noche",
+      "de": "die Nacht; der Abend",
+      "pos": "noun",
+      "gender": "f",
+      "category": "Uhrzeit & Tageszeiten"
+    },
+    {
+      "id": "temprano",
+      "text": "temprano",
+      "de": "früh",
+      "pos": "adverb",
+      "category": "Uhrzeit & Tageszeiten"
+    },
+    {
+      "id": "tarde",
+      "text": "tarde",
+      "de": "spät",
+      "pos": "adverb",
+      "category": "Uhrzeit & Tageszeiten"
+    },
+    {
+      "id": "ahora",
+      "text": "ahora",
+      "de": "jetzt",
+      "pos": "adverb",
+      "category": "Uhrzeit & Tageszeiten"
+    },
+    {
+      "id": "mas_o_menos",
+      "text": "más o menos",
+      "de": "ungefähr; mehr oder weniger",
+      "pos": "phrase",
+      "category": "Uhrzeit & Tageszeiten"
+    },
+    {
+      "id": "abierto",
+      "text": "abierto",
+      "de": "offen, geöffnet",
+      "pos": "adjective",
+      "category": "Uhrzeit & Tageszeiten"
+    },
+    {
+      "id": "cerrado",
+      "text": "cerrado",
+      "de": "geschlossen",
+      "pos": "adjective",
+      "category": "Uhrzeit & Tageszeiten"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "¿Cuánto cuesta?",
+      "de": "Wie viel kostet das?",
+      "words": [
+        "cuanto",
+        "costar"
+      ]
+    },
+    {
+      "id": "s02",
+      "text": "¿Cuánto es?",
+      "de": "Wie viel macht das?",
+      "words": [
+        "cuanto"
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "Son veinte pesos.",
+      "de": "Das macht zwanzig Pesos.",
+      "words": [
+        "veinte",
+        "peso"
+      ]
+    },
+    {
+      "id": "s04",
+      "text": "Es muy caro.",
+      "de": "Das ist sehr teuer.",
+      "words": [
+        "caro"
+      ]
+    },
+    {
+      "id": "s05",
+      "text": "Es barato.",
+      "de": "Das ist günstig.",
+      "words": [
+        "barato"
+      ]
+    },
+    {
+      "id": "s06",
+      "text": "¿Puedo pagar con tarjeta?",
+      "de": "Kann ich mit Karte bezahlen?",
+      "words": [
+        "pagar",
+        "tarjeta"
+      ]
+    },
+    {
+      "id": "s07",
+      "text": "Solo efectivo, por favor.",
+      "de": "Nur bar, bitte.",
+      "words": [
+        "efectivo",
+        "por_favor"
+      ]
+    },
+    {
+      "id": "s08",
+      "text": "¿Hay descuento en efectivo?",
+      "de": "Gibt es Rabatt bei Barzahlung?",
+      "words": [
+        "descuento",
+        "efectivo"
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "¿Dónde hay un cajero automático?",
+      "de": "Wo gibt es einen Geldautomaten?",
+      "words": [
+        "cajero",
+        "uno"
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "No tengo plata.",
+      "de": "Ich habe kein Geld.",
+      "words": [
+        "no",
+        "plata"
+      ],
+      "grammar": [
+        "negacion"
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "Necesito cambiar dólares.",
+      "de": "Ich muss Dollar wechseln.",
+      "words": [
+        "cambiar",
+        "dolar"
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "¿Tenés vuelto de mil?",
+      "de": "Hast du Wechselgeld für tausend?",
+      "words": [
+        "vuelto",
+        "mil"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Acá está el vuelto.",
+      "de": "Hier ist das Wechselgeld.",
+      "words": [
+        "vuelto"
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "Un billete de cien pesos.",
+      "de": "Ein Hundert-Peso-Schein.",
+      "words": [
+        "billete",
+        "cien",
+        "uno"
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "No tengo monedas.",
+      "de": "Ich habe keine Münzen.",
+      "words": [
+        "moneda",
+        "no"
+      ],
+      "grammar": [
+        "negacion"
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "El precio es de quinientos pesos.",
+      "de": "Der Preis beträgt fünfhundert Pesos.",
+      "words": [
+        "precio",
+        "quinientos"
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "Son doscientos pesos.",
+      "de": "Das macht zweihundert Pesos.",
+      "words": [
+        "doscientos"
+      ],
+      "grammar": [
+        "zahlen_geschlecht"
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "Cuesta un millón de pesos.",
+      "de": "Es kostet eine Million Pesos.",
+      "words": [
+        "costar",
+        "millon"
+      ],
+      "grammar": [
+        "grosse_zahlen"
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Tres mil quinientos.",
+      "de": "Dreitausendfünfhundert.",
+      "words": [
+        "tres",
+        "mil",
+        "quinientos"
+      ],
+      "grammar": [
+        "grosse_zahlen"
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "Una cerveza y dos empanadas.",
+      "de": "Ein Bier und zwei Empanadas.",
+      "words": [
+        "uno",
+        "dos"
+      ],
+      "grammar": [
+        "zahlen_geschlecht"
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "Uno, dos, tres, cuatro, cinco.",
+      "de": "Eins, zwei, drei, vier, fünf.",
+      "words": [
+        "uno",
+        "dos",
+        "tres",
+        "cuatro",
+        "cinco"
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "Seis, siete, ocho, nueve, diez.",
+      "de": "Sechs, sieben, acht, neun, zehn.",
+      "words": [
+        "seis",
+        "siete",
+        "ocho",
+        "nueve",
+        "diez"
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "Mi número es cero, once, doce.",
+      "de": "Meine Nummer ist null, elf, zwölf.",
+      "words": [
+        "cero",
+        "once",
+        "doce"
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "Quince minutos.",
+      "de": "Fünfzehn Minuten.",
+      "words": [
+        "quince",
+        "minuto"
+      ]
+    },
+    {
+      "id": "s25",
+      "text": "Treinta, cuarenta, cincuenta.",
+      "de": "Dreissig, vierzig, fünfzig.",
+      "words": [
+        "treinta",
+        "cuarenta",
+        "cincuenta"
+      ]
+    },
+    {
+      "id": "s26",
+      "text": "¿Qué hora es?",
+      "de": "Wie spät ist es?",
+      "words": [
+        "que_hora"
+      ],
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "s27",
+      "text": "Es la una.",
+      "de": "Es ist ein Uhr.",
+      "words": [
+        "uno"
+      ],
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "s28",
+      "text": "Son las dos en punto.",
+      "de": "Es ist genau zwei Uhr.",
+      "words": [
+        "dos",
+        "en_punto"
+      ],
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "s29",
+      "text": "Son las tres y media.",
+      "de": "Es ist halb vier.",
+      "words": [
+        "tres",
+        "y_media"
+      ],
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "s30",
+      "text": "Son las cuatro y cuarto.",
+      "de": "Es ist Viertel nach vier.",
+      "words": [
+        "cuatro",
+        "y_cuarto"
+      ],
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "s31",
+      "text": "Son las ocho menos cuarto.",
+      "de": "Es ist Viertel vor acht.",
+      "words": [
+        "ocho",
+        "menos_cuarto"
+      ],
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "s32",
+      "text": "¿A qué hora abre?",
+      "de": "Um wie viel Uhr macht es auf?",
+      "words": [
+        "a_que_hora"
+      ],
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "s33",
+      "text": "A las nueve de la mañana.",
+      "de": "Um neun Uhr morgens.",
+      "words": [
+        "nueve",
+        "manana_m"
+      ],
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "s34",
+      "text": "A las cinco de la tarde.",
+      "de": "Um fünf Uhr nachmittags.",
+      "words": [
+        "cinco",
+        "tarde_n"
+      ],
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "s35",
+      "text": "A las diez de la noche.",
+      "de": "Um zehn Uhr abends.",
+      "words": [
+        "diez",
+        "noche"
+      ],
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "s36",
+      "text": "Al mediodía está cerrado.",
+      "de": "Mittags ist geschlossen.",
+      "words": [
+        "mediodia",
+        "cerrado"
+      ]
+    },
+    {
+      "id": "s37",
+      "text": "Está abierto hasta la medianoche.",
+      "de": "Es ist bis Mitternacht geöffnet.",
+      "words": [
+        "abierto",
+        "medianoche"
+      ]
+    },
+    {
+      "id": "s38",
+      "text": "Ahora está cerrado.",
+      "de": "Jetzt ist geschlossen.",
+      "words": [
+        "ahora",
+        "cerrado"
+      ]
+    },
+    {
+      "id": "s39",
+      "text": "Es temprano.",
+      "de": "Es ist früh.",
+      "words": [
+        "temprano"
+      ]
+    },
+    {
+      "id": "s40",
+      "text": "Ya es muy tarde.",
+      "de": "Es ist schon sehr spät.",
+      "words": [
+        "tarde"
+      ]
+    },
+    {
+      "id": "s41",
+      "text": "Una hora, más o menos.",
+      "de": "Ungefähr eine Stunde.",
+      "words": [
+        "hora",
+        "mas_o_menos",
+        "uno"
+      ]
+    },
+    {
+      "id": "s42",
+      "text": "Llego en diez minutos.",
+      "de": "Ich komme in zehn Minuten.",
+      "words": [
+        "diez",
+        "minuto"
+      ]
+    },
+    {
+      "id": "s43",
+      "text": "¿Cuánto cuesta en dólares?",
+      "de": "Wie viel kostet es in Dollar?",
+      "words": [
+        "cuanto",
+        "costar"
+      ]
+    },
+    {
+      "id": "s44",
+      "text": "Pago yo.",
+      "de": "Ich zahle.",
+      "words": [
+        "pagar",
+        "yo"
+      ]
+    },
+    {
+      "id": "s45",
+      "text": "¿Me hacés un descuento?",
+      "de": "Machst du mir einen Rabatt?",
+      "words": [
+        "descuento"
+      ],
+      "grammar": [
+        "voseo"
+      ]
+    },
+    {
+      "id": "s46",
+      "text": "La tarjeta no funciona.",
+      "de": "Die Karte funktioniert nicht.",
+      "words": [
+        "tarjeta",
+        "no"
+      ]
+    },
+    {
+      "id": "s47",
+      "text": "Son las doce y media.",
+      "de": "Es ist halb eins.",
+      "words": [
+        "doce",
+        "y_media"
+      ],
+      "grammar": [
+        "uhrzeit"
+      ]
+    },
+    {
+      "id": "s48",
+      "text": "El precio está en dólares.",
+      "de": "Der Preis ist in Dollar angegeben.",
+      "words": [
+        "precio"
+      ]
+    },
+    {
+      "id": "s49",
+      "text": "Necesito una moneda de diez.",
+      "de": "Ich brauche eine Zehner-Münze.",
+      "words": [
+        "moneda",
+        "diez"
+      ]
+    },
+    {
+      "id": "s50",
+      "text": "¿A cuánto está el dólar hoy?",
+      "de": "Wie steht der Dollar heute?",
+      "words": [
+        "dolar"
+      ]
+    },
+    {
+      "id": "s51",
+      "text": "Veinte mil pesos.",
+      "de": "Zwanzigtausend Pesos.",
+      "words": [
+        "veinte",
+        "mil"
+      ],
+      "grammar": [
+        "grosse_zahlen"
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "zahlen_geschlecht",
+      "title": "Zahlen mit Geschlecht",
+      "explanation": "Die meisten Zahlen sind unveränderlich. Ausnahmen:\n\n• uno → vor männlichen Nomen un, vor weiblichen una: un peso, una hora\n• Hunderter ab 200 richten sich nach dem Nomen:\n  doscientos pesos – doscientas personas\n  trescientos, cuatrocientos, quinientos (!), seiscientos …\n\ncien steht allein oder direkt vor einem Nomen (cien pesos); ab 101 heisst es ciento: ciento veinte.",
+      "examples": [
+        {
+          "text": "un café y una medialuna",
+          "de": "ein Kaffee und ein Hörnchen"
+        },
+        {
+          "text": "doscientas cincuenta personas",
+          "de": "zweihundertfünfzig Personen"
+        }
+      ]
+    },
+    {
+      "id": "uhrzeit",
+      "title": "Die Uhrzeit",
+      "explanation": "• Es la una. – Es ist ein Uhr. (Singular!)\n• Son las dos / las tres … – ab zwei Uhr Plural.\n\nMinuten:\n• y cuarto – Viertel nach\n• y media – halb (las dos y media = halb drei!)\n• menos cuarto – Viertel vor\n• en punto – Punkt\n\n„Um“ heisst a: a las ocho. Tageszeit: de la mañana / de la tarde / de la noche.",
+      "examples": [
+        {
+          "text": "Son las siete y diez.",
+          "de": "Es ist zehn nach sieben."
+        },
+        {
+          "text": "¿A qué hora sale? – A las once.",
+          "de": "Wann fährt er ab? – Um elf."
+        }
+      ]
+    },
+    {
+      "id": "grosse_zahlen",
+      "title": "Grosse Zahlen und Preise",
+      "explanation": "• mil – tausend (ohne un!): mil pesos, dos mil, veinte mil\n• un millón – eine Million; vor einem Nomen mit de: un millón de pesos\n\nIn Argentinien sind Preise oft vierstellig oder höher. Statt Punkt schreibt man oft $ 3.500 (Tausenderpunkt).",
+      "examples": [
+        {
+          "text": "Son cuatro mil pesos.",
+          "de": "Das macht viertausend Pesos."
+        },
+        {
+          "text": "dos millones de personas",
+          "de": "zwei Millionen Menschen"
+        }
+      ]
+    }
+  ]
+}

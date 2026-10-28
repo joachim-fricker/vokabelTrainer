@@ -20,7 +20,7 @@ class VideoRepository(db: AppDatabase, private val prefs: LearningPrefs) {
             prefs.youtubeApiKey = value?.trim()?.takeIf { it.isNotEmpty() }
         }
 
-    fun observePlaylists(): Flow<List<PlaylistSummary>> = dao.observePlaylists()
+    fun observePlaylists(lang: String): Flow<List<PlaylistSummary>> = dao.observePlaylists(lang)
     fun observePlaylist(id: String): Flow<PlaylistEntity?> = dao.observePlaylist(id)
     fun observeVideos(playlistId: String): Flow<List<VideoEntity>> = dao.observeVideos(playlistId)
     fun observeVideo(videoId: String): Flow<VideoEntity?> = dao.observeVideo(videoId)
@@ -33,7 +33,9 @@ class VideoRepository(db: AppDatabase, private val prefs: LearningPrefs) {
         val info = YouTubeApi.playlistInfo(id, key)
         val now = System.currentTimeMillis()
         val existing = dao.playlist(id)
-        dao.savePlaylist(PlaylistEntity(id, info.title, info.channelTitle, existing?.addedAt ?: now, now))
+        // Neue Playlist gehoert zur gerade gewaehlten Sprache
+        val language = existing?.language ?: prefs.language.code
+        dao.savePlaylist(PlaylistEntity(id, info.title, info.channelTitle, existing?.addedAt ?: now, now, language))
         syncInternal(id, key)
     }
 
