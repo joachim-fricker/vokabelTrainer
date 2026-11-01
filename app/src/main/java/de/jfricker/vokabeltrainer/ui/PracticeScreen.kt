@@ -16,6 +16,21 @@ import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.text.KeyboardActions
+import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.ui.focus.FocusRequester
+import androidx.compose.ui.focus.focusRequester
+import androidx.compose.ui.text.TextRange
+import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.input.KeyboardCapitalization
+import androidx.compose.ui.text.input.TextFieldValue
+import de.jfricker.vokabeltrainer.domain.ConjItem
+import de.jfricker.vokabeltrainer.domain.GapItem
+import de.jfricker.vokabeltrainer.domain.NumberItem
+import androidx.compose.ui.text.input.KeyboardType
+import de.jfricker.vokabeltrainer.domain.ItemKind
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -35,7 +50,6 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.remember
@@ -62,15 +76,26 @@ import de.jfricker.vokabeltrainer.domain.PracticeMode
  */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun PracticeScreen(vm: MainViewModel, lessonId: String?, today: Boolean, onBack: () -> Unit) {
+fun PracticeScreen(
+    vm: MainViewModel,
+    lessonId: String?,
+    today: Boolean,
+    onBack: () -> Unit,
+    /** Runde mit den schwierigen Woertern aus der Statistik */
+    difficult: Boolean = false,
+) {
     val state by vm.practice.collectAsStateWithLifecycle()
     val slow by vm.slow.collectAsStateWithLifecycle()
     val language by vm.language.collectAsStateWithLifecycle()
 
     // Nur beim Betreten vorbereiten, nicht z. B. nach dem Drehen des Handys mitten in der Runde
-    LaunchedEffect(lessonId, today) {
+    LaunchedEffect(lessonId, today, difficult) {
         if (vm.practice.value == null) {
-            if (today) vm.startToday() else vm.preparePractice(lessonId)
+            when {
+                today -> vm.startToday()
+                difficult -> vm.startDifficult()
+                else -> vm.preparePractice(lessonId)
+            }
         }
     }
 
@@ -112,7 +137,13 @@ fun PracticeScreen(vm: MainViewModel, lessonId: String?, today: Boolean, onBack:
                 is PracticeState.Asking -> AskingContent(s, vm)
                 is PracticeState.Finished -> FinishedContent(
                     s,
-                    onRestart = { if (today) vm.startToday() else vm.preparePractice(lessonId) },
+                    onRestart = {
+                        when {
+                            today -> vm.startToday()
+                            difficult -> vm.startDifficult()
+                            else -> vm.preparePractice(lessonId)
+                        }
+                    },
                     onMoreNew = { vm.startToday(extraNew = true) },
                     onClose = close,
                 )
@@ -130,10 +161,16 @@ private fun SetupContent(s: PracticeState.Setup, language: Language, onStart: (P
         verticalArrangement = Arrangement.spacedBy(10.dp),
     ) {
         Text("Wörter", style = MaterialTheme.typography.titleMedium)
-        PracticeMode.entries.filter { !it.sentenceBased }.forEach { ModeCard(it, s, language, onStart) }
+        PracticeMode.entries.filter { it.kind == ItemKind.WORD }.forEach { ModeCard(it, s, language, onStart) }
         Spacer(Modifier.height(8.dp))
         Text("Sätze", style = MaterialTheme.typography.titleMedium)
-        PracticeMode.entries.filter { it.sentenceBased }.forEach { ModeCard(it, s, language, onStart) }
+        PracticeMode.entries.filter { it.kind == ItemKind.SENTENCE }.forEach { ModeCard(it, s, language, onStart) }
+        Spacer(Modifier.height(8.dp))
+        Text("Grammatik", style = MaterialTheme.typography.titleMedium)
+        // Nur Uebungsarten, die es in dieser Lektion gibt (z. B. "Zahlen hören" nur in der Zahlen-Lektion)
+        PracticeMode.entries
+            .filter { it.kind in GRAMMAR_KINDS && s.counts[it]?.exists != false }
+            .forEach { ModeCard(it, s, language, onStart) }
         Text(
             "Pro Runde höchstens 20 Aufgaben, davon bis zu 10 neue. Gleich beim ersten Mal richtig: " +
                 "kommt nach 8 Tagen noch einmal, danach nicht mehr. Sonst kommt Richtiges nach " +
@@ -149,7 +186,8 @@ private fun ModeCard(mode: PracticeMode, s: PracticeState.Setup, language: Langu
     val c = s.counts[mode]
     val due = c?.due ?: 0
     val new = c?.new ?: 0
-    val hasItems = due + new > 0
+    val extra = c?.extra ?: 0
+    val hasItems = due + new + extra > 0
     Card(
         onClick = { if (hasItems) onStart(mode) },
         enabled = hasItems,
@@ -159,7 +197,13 @@ private fun ModeCard(mode: PracticeMode, s: PracticeState.Setup, language: Langu
             Text(mode.label(language), style = MaterialTheme.typography.titleMedium)
             Text(mode.description(language), style = MaterialTheme.typography.bodySmall)
             Text(
-                if (hasItems) "$due fällig · $new neu" else "Heute nichts mehr fällig",
+                when {
+                    due + new > 0 -> "$due fällig · $new neu"
+                    mode == PracticeMode.DICTATION -> "Zufällige längere Sätze · ohne Karteikasten"
+                    mode == PracticeMode.NUMBERS -> "Zufällige Preise, Uhrzeiten und Zahlen · ohne Karteikasten"
+                    extra > 0 -> "Nichts fällig · freies Üben mit zufälligen regelmässigen Verben"
+                    else -> "Heute nichts mehr fällig"
+                },
                 style = MaterialTheme.typography.bodyMedium,
                 modifier = Modifier.padding(top = 4.dp),
             )
@@ -185,6 +229,9 @@ private fun AskingContent(s: PracticeState.Asking, vm: MainViewModel) {
             is CardItem -> CardContent(s, item, vm)
             is ClozeItem -> ClozeContent(s, item, vm)
             is BuildItem -> BuildContent(s, item, vm)
+            is ConjItem -> ConjContent(s, item, vm)
+            is GapItem -> GapContent(s, item, vm)
+            is NumberItem -> NumberContent(s, item, vm)
         }
     }
 }
@@ -307,13 +354,9 @@ private fun ColumnScope.BuildContent(s: PracticeState.Asking, item: BuildItem, v
     val placed = remember(s.step) { mutableStateListOf<Int>() }
     val answered = s.result != null
 
-    // Hoer-Diktat: Satz gleich vorlesen; insgesamt hoechstens MAX_PLAYS Mal vor der Antwort
-    var plays by remember(s.step) { mutableIntStateOf(0) }
+    // Hoer-Diktat: Satz gleich vorlesen; danach beliebig oft nochmals anhoeren
     LaunchedEffect(s.step) {
-        if (item.audioOnly) {
-            vm.speak(item.sentence.text)
-            plays = 1
-        }
+        if (item.audioOnly) vm.speak(item.sentence.text)
     }
 
     Column(
@@ -324,21 +367,11 @@ private fun ColumnScope.BuildContent(s: PracticeState.Asking, item: BuildItem, v
     ) {
         if (item.audioOnly) {
             if (!answered) {
-                val left = MAX_PLAYS - plays
                 OutlinedButton(
-                    onClick = {
-                        if (left > 0) {
-                            vm.speak(item.sentence.text)
-                            plays++
-                        }
-                    },
-                    enabled = left > 0,
+                    onClick = { vm.speak(item.sentence.text) },
                     modifier = Modifier.fillMaxWidth().height(64.dp),
                 ) {
-                    Text(
-                        if (left > 0) "🔊  Nochmals anhören ($left×)" else "Schon $MAX_PLAYS× gehört",
-                        style = MaterialTheme.typography.titleMedium,
-                    )
+                    Text("🔊  Nochmals anhören", style = MaterialTheme.typography.titleMedium)
                 }
             }
             if (answered) {
@@ -407,6 +440,327 @@ private fun ColumnScope.BuildContent(s: PracticeState.Asking, item: BuildItem, v
     }
 }
 
+/**
+ * Konjugation: Verb, Zeit und Pronomen werden gezeigt, die Form wird eingetippt oder ausgewählt.
+ * Nach der Antwort erscheint die ganze Tabelle der Zeit mit hervorgehobenen Endungen.
+ */
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun ColumnScope.ConjContent(s: PracticeState.Asking, item: ConjItem, vm: MainViewModel) {
+    val typing by vm.conjTyping.collectAsStateWithLifecycle()
+    val language = item.verb.language
+    val answered = s.result != null
+    var input by remember(s.step) { mutableStateOf(TextFieldValue("")) }
+    val focus = remember { FocusRequester() }
+    LaunchedEffect(s.step, typing) {
+        if (typing && !answered) runCatching { focus.requestFocus() }
+    }
+    fun insert(c: String) {
+        val sel = input.selection
+        val text = input.text.replaceRange(sel.min, sel.max, c)
+        input = TextFieldValue(text, TextRange(sel.min + c.length))
+    }
+
+    Column(
+        Modifier
+            .weight(1f)
+            .verticalScroll(rememberScrollState()),
+        verticalArrangement = Arrangement.spacedBy(12.dp),
+    ) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text(
+                "${item.tense.title} · ${item.tense.targetName(language)}",
+                style = MaterialTheme.typography.labelLarge,
+                color = MaterialTheme.colorScheme.primary,
+                modifier = Modifier.weight(1f),
+            )
+            FilterChip(selected = typing, onClick = { vm.setConjTyping(!typing) }, label = { Text("Tippen") })
+        }
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Column(Modifier.weight(1f)) {
+                Text(item.verb.infinitive, style = MaterialTheme.typography.headlineSmall)
+                Text(item.verb.de, style = MaterialTheme.typography.bodyLarge, fontStyle = FontStyle.Italic)
+            }
+            Spacer(Modifier.width(12.dp))
+            SpeakButton(onClick = { vm.speak(item.verb.infinitive) })
+        }
+
+        val highlight = MaterialTheme.colorScheme.primary
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text(
+                buildAnnotatedString {
+                    append(item.pronoun)
+                    append("  ")
+                    if (answered) {
+                        withStyle(SpanStyle(fontWeight = FontWeight.Bold, color = highlight)) { append(item.answer) }
+                    } else {
+                        append("_____")
+                    }
+                },
+                style = MaterialTheme.typography.headlineMedium,
+                modifier = Modifier.weight(1f, fill = false),
+            )
+            if (answered) {
+                Spacer(Modifier.width(12.dp))
+                SpeakButton(onClick = { vm.speak(item.spoken) })
+            }
+        }
+
+        if (typing && !answered) {
+            OutlinedTextField(
+                value = input,
+                onValueChange = { input = it },
+                singleLine = true,
+                label = { Text("Verbform") },
+                textStyle = MaterialTheme.typography.titleLarge,
+                keyboardOptions = KeyboardOptions(
+                    capitalization = KeyboardCapitalization.None,
+                    autoCorrectEnabled = false,
+                    imeAction = ImeAction.Done,
+                ),
+                keyboardActions = KeyboardActions(onDone = { vm.submitTyped(input.text) }),
+                modifier = Modifier.fillMaxWidth().focusRequester(focus),
+            )
+            FlowRow(
+                horizontalArrangement = Arrangement.spacedBy(6.dp),
+                verticalArrangement = Arrangement.spacedBy(2.dp),
+            ) {
+                language.specialChars.forEach { c ->
+                    SuggestionChip(onClick = { insert(c) }, label = { Text(c, style = MaterialTheme.typography.titleMedium) })
+                }
+            }
+        }
+        if (!typing && s.typed == null) {
+            ChoiceList(item.options, item.correctIndex, s, vm::choose)
+        }
+        if (answered) {
+            when {
+                s.accentHint -> Text(
+                    "Fast perfekt – achte auf die Akzente: ${item.answer} (du: ${s.typed})",
+                    style = MaterialTheme.typography.bodyLarge,
+                )
+                s.result == false && s.typed != null -> Text(
+                    "Deine Antwort: ${s.typed}",
+                    style = MaterialTheme.typography.bodyLarge,
+                )
+            }
+            Card(Modifier.fillMaxWidth()) {
+                ConjTable(
+                    item.verb,
+                    listOf(item.tense),
+                    highlight = item.tense to item.slot,
+                    onSpeak = vm::speak,
+                    modifier = Modifier.padding(8.dp),
+                )
+            }
+            item.verb.note?.let {
+                Text(it, style = MaterialTheme.typography.bodyMedium, fontStyle = FontStyle.Italic)
+            }
+        }
+    }
+
+    if (!answered && typing) {
+        Button(
+            onClick = { vm.submitTyped(input.text) },
+            enabled = input.text.isNotBlank(),
+            modifier = Modifier.fillMaxWidth().height(56.dp),
+        ) { Text("Prüfen") }
+    } else if (answered) {
+        ResultFooter(s, solution = item.spoken, onContinue = vm::continuePractice, onSpeak = { vm.speak(item.spoken) })
+    }
+}
+
+private val GRAMMAR_KINDS = setOf(ItemKind.VERB, ItemKind.EXERCISE, ItemKind.NUMBER)
+
+/**
+ * Grammatik-Uebung mit Luecke (Verb im Satz, ser/estar, Artikel, Praeposition + Artikel, Plural).
+ * Verbform und Plural koennen eingetippt werden (Schalter "Tippen" wie bei der Konjugation).
+ */
+@Composable
+private fun ColumnScope.GapContent(s: PracticeState.Asking, item: GapItem, vm: MainViewModel) {
+    val typingPref by vm.conjTyping.collectAsStateWithLifecycle()
+    val language by vm.language.collectAsStateWithLifecycle()
+    val ex = item.exercise
+    val typing = ex.typeable && typingPref
+    val answered = s.result != null
+    var input by remember(s.step) { mutableStateOf(TextFieldValue("")) }
+
+    Column(
+        Modifier
+            .weight(1f)
+            .verticalScroll(rememberScrollState()),
+        verticalArrangement = Arrangement.spacedBy(12.dp),
+    ) {
+        if (ex.typeable) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Spacer(Modifier.weight(1f))
+                FilterChip(selected = typingPref, onClick = { vm.setConjTyping(!typingPref) }, label = { Text("Tippen") })
+            }
+        }
+        if (ex.de.isNotEmpty()) {
+            Text(ex.de, style = MaterialTheme.typography.bodyLarge, fontStyle = FontStyle.Italic)
+        }
+        val highlight = MaterialTheme.colorScheme.primary
+        val muted = MaterialTheme.colorScheme.onSurfaceVariant
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text(
+                buildAnnotatedString {
+                    append(ex.before)
+                    if (answered) {
+                        withStyle(SpanStyle(fontWeight = FontWeight.Bold, color = highlight)) { append(ex.answer) }
+                    } else {
+                        append("_____")
+                        if (ex.hint.isNotEmpty()) {
+                            withStyle(SpanStyle(color = muted, fontStyle = FontStyle.Italic)) { append(" " + ex.hint) }
+                        }
+                    }
+                    append(ex.after)
+                },
+                style = MaterialTheme.typography.headlineSmall,
+                modifier = Modifier.weight(1f, fill = false),
+            )
+            if (answered) {
+                Spacer(Modifier.width(12.dp))
+                SpeakButton(onClick = { vm.speak(ex.speak) })
+            }
+        }
+
+        if (typing && !answered) {
+            AnswerField(
+                step = s.step, value = input, onValueChange = { input = it }, label = "Antwort",
+                specialChars = language.specialChars, numeric = false, onSubmit = { vm.submitTyped(input.text) },
+            )
+        }
+        if (!typing && s.typed == null) {
+            ChoiceList(item.options, item.correctIndex, s, vm::choose)
+        }
+        if (answered) {
+            when {
+                s.accentHint -> Text(
+                    "Fast perfekt – achte auf die Akzente: ${ex.answer} (du: ${s.typed})",
+                    style = MaterialTheme.typography.bodyLarge,
+                )
+                s.result == false && s.typed != null -> Text("Deine Antwort: ${s.typed}", style = MaterialTheme.typography.bodyLarge)
+            }
+            if (ex.note.isNotEmpty() && ex.type != PracticeMode.SER_ESTAR.code) {
+                Text(ex.note, style = MaterialTheme.typography.titleSmall)
+            }
+            item.rule?.let {
+                Card(Modifier.fillMaxWidth()) {
+                    Text(it, style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(12.dp))
+                }
+            }
+        }
+    }
+
+    if (!answered && typing) {
+        Button(
+            onClick = { vm.submitTyped(input.text) },
+            enabled = input.text.isNotBlank(),
+            modifier = Modifier.fillMaxWidth().height(56.dp),
+        ) { Text("Prüfen") }
+    } else if (answered) {
+        val solution = ex.before + ex.answer + ex.after
+        ResultFooter(s, solution = solution, onContinue = vm::continuePractice, onSpeak = { vm.speak(ex.speak) })
+    }
+}
+
+/** Zahlen hoeren: Preis, Uhrzeit oder Zahl wird vorgelesen und in Ziffern eingetippt (ohne Karteikasten). */
+@Composable
+private fun ColumnScope.NumberContent(s: PracticeState.Asking, item: NumberItem, vm: MainViewModel) {
+    val answered = s.result != null
+    var input by remember(s.step) { mutableStateOf(TextFieldValue("")) }
+    LaunchedEffect(s.step) { vm.speak(item.spoken) }
+
+    Column(
+        Modifier
+            .weight(1f)
+            .verticalScroll(rememberScrollState()),
+        verticalArrangement = Arrangement.spacedBy(12.dp),
+    ) {
+        Text("${item.kind.title} – hör genau hin", style = MaterialTheme.typography.titleMedium)
+        OutlinedButton(
+            onClick = { vm.speak(item.spoken) },
+            modifier = Modifier.fillMaxWidth().height(64.dp),
+        ) { Text("🔊  Nochmals anhören", style = MaterialTheme.typography.titleMedium) }
+        if (!answered) {
+            AnswerField(
+                step = s.step, value = input, onValueChange = { input = it }, label = item.kind.inputHint,
+                specialChars = emptyList(), numeric = true, onSubmit = { vm.submitTyped(input.text) },
+            )
+        } else {
+            Text(
+                item.display,
+                style = MaterialTheme.typography.headlineMedium,
+                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colorScheme.primary,
+            )
+            Text(item.spoken, style = MaterialTheme.typography.bodyLarge, fontStyle = FontStyle.Italic)
+            if (s.result == false) {
+                Text("Deine Antwort: ${s.typed}", style = MaterialTheme.typography.bodyLarge)
+            }
+        }
+    }
+
+    if (!answered) {
+        Button(
+            onClick = { vm.submitTyped(input.text) },
+            enabled = input.text.isNotBlank(),
+            modifier = Modifier.fillMaxWidth().height(56.dp),
+        ) { Text("Prüfen") }
+    } else {
+        ResultFooter(s, solution = null, onContinue = vm::continuePractice)
+    }
+}
+
+/** Eingabefeld mit Fokus beim Erscheinen und optionalen Sonderzeichen-Tasten. */
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun AnswerField(
+    step: Int,
+    value: TextFieldValue,
+    onValueChange: (TextFieldValue) -> Unit,
+    label: String,
+    specialChars: List<String>,
+    numeric: Boolean,
+    onSubmit: () -> Unit,
+) {
+    val focus = remember { FocusRequester() }
+    LaunchedEffect(step) { runCatching { focus.requestFocus() } }
+    OutlinedTextField(
+        value = value,
+        onValueChange = onValueChange,
+        singleLine = true,
+        label = { Text(label) },
+        textStyle = MaterialTheme.typography.titleLarge,
+        keyboardOptions = KeyboardOptions(
+            capitalization = KeyboardCapitalization.None,
+            autoCorrectEnabled = false,
+            keyboardType = if (numeric) KeyboardType.Decimal else KeyboardType.Text,
+            imeAction = ImeAction.Done,
+        ),
+        keyboardActions = KeyboardActions(onDone = { onSubmit() }),
+        modifier = Modifier.fillMaxWidth().focusRequester(focus),
+    )
+    if (specialChars.isNotEmpty()) {
+        FlowRow(
+            horizontalArrangement = Arrangement.spacedBy(6.dp),
+            verticalArrangement = Arrangement.spacedBy(2.dp),
+        ) {
+            specialChars.forEach { c ->
+                SuggestionChip(
+                    onClick = {
+                        val sel = value.selection
+                        val text = value.text.replaceRange(sel.min, sel.max, c)
+                        onValueChange(TextFieldValue(text, TextRange(sel.min + c.length)))
+                    },
+                    label = { Text(c, style = MaterialTheme.typography.titleMedium) },
+                )
+            }
+        }
+    }
+}
+
 // ------------------------------------------------------------------ Bausteine
 
 /** Antwortmoeglichkeiten; nach der Antwort richtig = gruen, falsch gewaehlt = rot. */
@@ -432,9 +786,6 @@ private fun ChoiceList(options: List<String>, correctIndex: Int, s: PracticeStat
 }
 
 private val CORRECT_COLOR = Color(0x6643A047)
-
-/** Hoer-Diktat: so oft darf der Satz vor der Antwort gehoert werden (inkl. automatischem Vorlesen). */
-private const val MAX_PLAYS = 2
 
 @Composable
 private fun ResultFooter(

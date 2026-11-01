@@ -89,6 +89,17 @@ interface PracticeDao {
     @Query("SELECT * FROM sentence")
     suspend fun allSentences(): List<SentenceEntity>
 
+    /** Verben in Lektionsreihenfolge (Konjugationstrainer). */
+    @Query(
+        """
+        SELECT v.* FROM verb v
+        JOIN lesson l ON l.id = v.lessonId
+        WHERE v.language = :lang AND (:lessonId IS NULL OR v.lessonId = :lessonId)
+        ORDER BY l.sortOrder, v.sortOrder
+        """
+    )
+    suspend fun verbs(lang: String, lessonId: String?): List<VerbEntity>
+
     @Query("SELECT * FROM word")
     suspend fun allWords(): List<WordEntity>
 
@@ -139,6 +150,19 @@ interface PracticeDao {
         """
     )
     suspend fun reverseCandidates(lang: String, minBox: Int, limit: Int): List<WordEntity>
+
+    /** Karteikarten (beide Richtungen), die mindestens einmal nicht gewusst wurden. */
+    @Query(
+        """
+        SELECT p.* FROM progress p
+        JOIN word w ON w.wordKey = p.wordKey
+        WHERE w.language = :lang AND p.direction IN ('pt-de', 'de-pt') AND p.wrongCount > 0
+        """
+    )
+    suspend fun troubleProgress(lang: String): List<ProgressEntity>
+
+    @Query("SELECT * FROM word WHERE wordKey IN (:keys)")
+    suspend fun wordsByKeys(keys: List<String>): List<WordEntity>
 
     @Insert
     suspend fun insertReview(review: ReviewLogEntity)

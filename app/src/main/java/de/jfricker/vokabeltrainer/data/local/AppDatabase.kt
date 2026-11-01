@@ -16,8 +16,9 @@ import androidx.sqlite.db.SupportSQLiteDatabase
         ReviewLogEntity::class,
         PlaylistEntity::class,
         VideoEntity::class,
+        VerbEntity::class,
     ],
-    version = 6,
+    version = 8,
     exportSchema = false,
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -59,6 +60,30 @@ val MIGRATION_4_5 = object : Migration(4, 5) {
                 "`status` TEXT NOT NULL, `statusChangedAt` INTEGER, PRIMARY KEY(`videoId`))"
         )
         db.execSQL("CREATE INDEX IF NOT EXISTS `index_video_playlistId` ON `video` (`playlistId`)")
+    }
+}
+
+/** v7: Verben fuer den Konjugationstrainer (werden bei jedem Start aus assets/verbs neu geladen). */
+val MIGRATION_6_7 = object : Migration(6, 7) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        db.execSQL(
+            "CREATE TABLE IF NOT EXISTS `verb` (`verbKey` TEXT NOT NULL, `id` TEXT NOT NULL, " +
+                "`language` TEXT NOT NULL, `lessonId` TEXT NOT NULL, `sortOrder` INTEGER NOT NULL, " +
+                "`infinitive` TEXT NOT NULL, `de` TEXT NOT NULL, `note` TEXT, `formsJson` TEXT NOT NULL, " +
+                "PRIMARY KEY(`verbKey`))"
+        )
+        db.execSQL("CREATE INDEX IF NOT EXISTS `index_verb_lessonId` ON `verb` (`lessonId`)")
+    }
+}
+
+/**
+ * v8: Verben unregelmaessig ja/nein. Regelmaessige Verben werden nur noch ueber ihre Endungen geuebt;
+ * der Konjugations-Lernstand aus v7 (Form fuer Form, nur wenige Stunden alt) wird verworfen.
+ */
+val MIGRATION_7_8 = object : Migration(7, 8) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        db.execSQL("ALTER TABLE verb ADD COLUMN irregular INTEGER NOT NULL DEFAULT 0")
+        db.execSQL("DELETE FROM progress WHERE direction = 'conj'")
     }
 }
 

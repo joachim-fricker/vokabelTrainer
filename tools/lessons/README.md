@@ -18,3 +18,22 @@ Die Prüfung (`check()`) meldet doppelte IDs, unbekannte Verweise, Sätze ohne m
 
 Die spanischen Lektionen liegen in `es-AR/` (`python3 e03.py` usw.) und schreiben nach
 `app/src/main/assets/lessons/es-AR/`. Gleiche Themen wie Portugiesisch, argentinisches Spanisch mit vos.
+
+## Verben (Konjugationstrainer)
+
+`tools/verbs/conj.py` erzeugt `app/src/main/assets/verbs/pt-BR.json` und `es-AR.json` aus allen Verben der Lektionen
+(Präsens und Vergangenheit). Regelmässige Verben nach Regeln, unregelmässige in `PT_IRREGULAR` / `ES_IRREGULAR`,
+Verben fast nur in der 3. Person (chover, doler, gustar …) in `PT_EXCLUDE` / `ES_EXCLUDE`.
+Nach neuen Verben in einer Lektion einfach erneut ausführen:
+
+    cd tools/verbs
+    python3 conj.py
+
+## Grammatik-Übungen
+
+`tools/grammar/exercises.py` erzeugt `app/src/main/assets/exercises/pt-BR.json` und `es-AR.json` aus den Lektionen
+und Verbtabellen: Verb im Satz, ser/estar, Artikel/Geschlecht, Präposition + Artikel, Plural. Nach Änderungen an
+Lektionen oder Verben (erst `conj.py`) erneut ausführen:
+
+    cd tools/grammar
+    python3 exercises.py

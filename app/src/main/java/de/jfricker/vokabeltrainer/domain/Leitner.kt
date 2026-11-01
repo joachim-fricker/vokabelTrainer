@@ -4,6 +4,9 @@ import de.jfricker.vokabeltrainer.data.local.ProgressEntity
 import java.time.LocalDate
 import java.time.ZoneId
 
+/** Worauf sich eine Uebungsart bezieht. */
+enum class ItemKind { WORD, SENTENCE, VERB, EXERCISE, NUMBER }
+
 /**
  * Uebungsarten. code wird in progress.direction gespeichert - nicht aendern,
  * sonst geht der Lernstand verloren. "pt-de"/"de-pt" stehen historisch fuer
@@ -14,18 +17,31 @@ enum class PracticeMode(
     val code: String,
     private val labelTemplate: String,
     private val descriptionTemplate: String,
-    val sentenceBased: Boolean,
+    val kind: ItemKind,
 ) {
-    CARD_PT_DE("pt-de", "{L} → Deutsch", "Karteikarte: Wort lesen und hören", false),
-    CARD_DE_PT("de-pt", "Deutsch → {L}", "Karteikarte: das {a} Wort finden", false),
-    CLOZE("cloze", "Lückentext", "Das fehlende Wort im Satz auswählen", true),
-    DICTATION("dictation", "Hörverstehen", "Satz nur anhören und aus Bausteinen zusammensetzen", true),
-    BUILD("build", "Satzbau", "Den Satz aus Bausteinen zusammensetzen", true);
+    CARD_PT_DE("pt-de", "{L} → Deutsch", "Karteikarte: Wort lesen und hören", ItemKind.WORD),
+    CARD_DE_PT("de-pt", "Deutsch → {L}", "Karteikarte: das {a} Wort finden", ItemKind.WORD),
+    CLOZE("cloze", "Lückentext", "Das fehlende Wort im Satz auswählen", ItemKind.SENTENCE),
+    DICTATION("dictation", "Hörverstehen", "Längere Sätze anhören und zusammensetzen – ohne Karteikasten", ItemKind.SENTENCE),
+    BUILD("build", "Satzbau", "Den Satz aus Bausteinen zusammensetzen", ItemKind.SENTENCE),
+    CONJUGATION("conj", "Konjugation", "Unregelmässige Verben Form für Form, regelmässige per Zufall", ItemKind.VERB),
+    VERBFORM("verbform", "Verb im Satz", "Die passende Verbform in den Satz einsetzen", ItemKind.EXERCISE),
+    SER_ESTAR("serestar", "ser oder estar", "Welches der beiden Verben passt in den Satz?", ItemKind.EXERCISE),
+    ARTICLE("article", "Artikel & Geschlecht", "Den richtigen Artikel vor das Nomen setzen", ItemKind.EXERCISE),
+    CONTRACTION("contraction", "Präposition + Artikel", "Zusammengezogene Formen: {c}", ItemKind.EXERCISE),
+    PLURAL("plural", "Plural bilden", "Die Mehrzahl eines Nomens bilden", ItemKind.EXERCISE),
+    NUMBERS("numbers", "Zahlen hören", "Preise, Uhrzeiten und Zahlen hören und eintippen – ohne Karteikasten", ItemKind.NUMBER);
+
+    val sentenceBased: Boolean get() = kind == ItemKind.SENTENCE
+
+    /** Mit Karteikasten (Lernstand, Faelligkeit). Nicht bei Hoerverstehen und Zahlen hoeren: nur ab und zu zum Ueben. */
+    val leitner: Boolean get() = this != DICTATION && this != NUMBERS
 
     fun label(language: Language): String = fill(labelTemplate, language)
     fun description(language: Language): String = fill(descriptionTemplate, language)
 
-    private fun fill(t: String, l: Language) = t.replace("{L}", l.displayName).replace("{a}", l.adjective)
+    private fun fill(t: String, l: Language) =
+        t.replace("{L}", l.displayName).replace("{a}", l.adjective).replace("{c}", l.contractionExample)
 }
 
 /**

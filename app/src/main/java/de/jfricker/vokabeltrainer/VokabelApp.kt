@@ -9,8 +9,11 @@ import de.jfricker.vokabeltrainer.data.local.MIGRATION_2_3
 import de.jfricker.vokabeltrainer.data.local.MIGRATION_3_4
 import de.jfricker.vokabeltrainer.data.local.MIGRATION_4_5
 import de.jfricker.vokabeltrainer.data.local.MIGRATION_5_6
+import de.jfricker.vokabeltrainer.data.local.MIGRATION_6_7
+import de.jfricker.vokabeltrainer.data.local.MIGRATION_7_8
 import de.jfricker.vokabeltrainer.video.VideoRepository
 import de.jfricker.vokabeltrainer.data.LearningPrefs
+import de.jfricker.vokabeltrainer.data.ExerciseStore
 import de.jfricker.vokabeltrainer.data.StatsRepository
 import de.jfricker.vokabeltrainer.speech.Speaker
 
@@ -18,12 +21,13 @@ class VokabelApp : Application() {
     private val database by lazy {
         Room.databaseBuilder(this, AppDatabase::class.java, "vokabeln.db")
             // Ab Version 2 steckt Lernfortschritt in der DB: jede Schemaaenderung braucht eine Migration
-            .addMigrations(MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6)
+            .addMigrations(MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8)
             .build()
     }
     val repository by lazy { LessonRepository(this, database) }
     val prefs by lazy { LearningPrefs(this) }
-    val practiceRepository by lazy { PracticeRepository(database, prefs) }
+    val exerciseStore by lazy { ExerciseStore(this) }
+    val practiceRepository by lazy { PracticeRepository(database, prefs, exerciseStore) }
     val statsRepository by lazy { StatsRepository(database, prefs) }
     val videoRepository by lazy { VideoRepository(database, prefs) }
     val speaker by lazy { Speaker(this, prefs.language) }

@@ -1,0 +1,1369 @@
+{
+  "language": "es-AR",
+  "verbs": [
+    {
+      "word": "hablar",
+      "forms": {
+        "pres": [
+          "hablo",
+          "hablás",
+          "habla",
+          "hablamos",
+          "hablan"
+        ],
+        "past": [
+          "hablé",
+          "hablaste",
+          "habló",
+          "hablamos",
+          "hablaron"
+        ]
+      }
+    },
+    {
+      "word": "entender",
+      "forms": {
+        "pres": [
+          "entiendo",
+          "entendés",
+          "entiende",
+          "entendemos",
+          "entienden"
+        ],
+        "past": [
+          "entendí",
+          "entendiste",
+          "entendió",
+          "entendimos",
+          "entendieron"
+        ]
+      },
+      "irregular": true,
+      "note": "Stammwechsel e → ie, aber nicht bei vos und nosotros"
+    },
+    {
+      "word": "pagar",
+      "forms": {
+        "pres": [
+          "pago",
+          "pagás",
+          "paga",
+          "pagamos",
+          "pagan"
+        ],
+        "past": [
+          "pagué",
+          "pagaste",
+          "pagó",
+          "pagamos",
+          "pagaron"
+        ]
+      },
+      "note": "yo pagué (g → gu vor e)"
+    },
+    {
+      "word": "cambiar",
+      "forms": {
+        "pres": [
+          "cambio",
+          "cambiás",
+          "cambia",
+          "cambiamos",
+          "cambian"
+        ],
+        "past": [
+          "cambié",
+          "cambiaste",
+          "cambió",
+          "cambiamos",
+          "cambiaron"
+        ]
+      }
+    },
+    {
+      "word": "pedir",
+      "forms": {
+        "pres": [
+          "pido",
+          "pedís",
+          "pide",
+          "pedimos",
+          "piden"
+        ],
+        "past": [
+          "pedí",
+          "pediste",
+          "pidió",
+          "pedimos",
+          "pidieron"
+        ]
+      },
+      "irregular": true,
+      "note": "Stammwechsel e → i, auch in der Vergangenheit (pidió)"
+    },
+    {
+      "word": "querer",
+      "forms": {
+        "pres": [
+          "quiero",
+          "querés",
+          "quiere",
+          "queremos",
+          "quieren"
+        ],
+        "past": [
+          "quise",
+          "quisiste",
+          "quiso",
+          "quisimos",
+          "quisieron"
+        ]
+      },
+      "irregular": true,
+      "note": "Stammwechsel e → ie, aber nicht bei vos: querés"
+    },
+    {
+      "word": "traer",
+      "forms": {
+        "pres": [
+          "traigo",
+          "traés",
+          "trae",
+          "traemos",
+          "traen"
+        ],
+        "past": [
+          "traje",
+          "trajiste",
+          "trajo",
+          "trajimos",
+          "trajeron"
+        ]
+      },
+      "irregular": true
+    },
+    {
+      "word": "recomendar",
+      "forms": {
+        "pres": [
+          "recomiendo",
+          "recomendás",
+          "recomienda",
+          "recomendamos",
+          "recomiendan"
+        ],
+        "past": [
+          "recomendé",
+          "recomendaste",
+          "recomendó",
+          "recomendamos",
+          "recomendaron"
+        ]
+      },
+      "irregular": true,
+      "note": "Stammwechsel e → ie, aber nicht bei vos und nosotros"
+    },
+    {
+      "word": "comer",
+      "forms": {
+        "pres": [
+          "como",
+          "comés",
+          "come",
+          "comemos",
+          "comen"
+        ],
+        "past": [
+          "comí",
+          "comiste",
+          "comió",
+          "comimos",
+          "comieron"
+        ]
+      }
+    },
+    {
+      "word": "tomar",
+      "forms": {
+        "pres": [
+          "tomo",
+          "tomás",
+          "toma",
+          "tomamos",
+          "toman"
+        ],
+        "past": [
+          "tomé",
+          "tomaste",
+          "tomó",
+          "tomamos",
+          "tomaron"
+        ]
+      }
+    },
+    {
+      "word": "confirmar",
+      "forms": {
+        "pres": [
+          "confirmo",
+          "confirmás",
+          "confirma",
+          "confirmamos",
+          "confirman"
+        ],
+        "past": [
+          "confirmé",
+          "confirmaste",
+          "confirmó",
+          "confirmamos",
+          "confirmaron"
+        ]
+      }
+    },
+    {
+      "word": "reservar",
+      "forms": {
+        "pres": [
+          "reservo",
+          "reservás",
+          "reserva",
+          "reservamos",
+          "reservan"
+        ],
+        "past": [
+          "reservé",
+          "reservaste",
+          "reservó",
+          "reservamos",
+          "reservaron"
+        ]
+      }
+    },
+    {
+      "word": "tener",
+      "forms": {
+        "pres": [
+          "tengo",
+          "tenés",
+          "tiene",
+          "tenemos",
+          "tienen"
+        ],
+        "past": [
+          "tuve",
+          "tuviste",
+          "tuvo",
+          "tuvimos",
+          "tuvieron"
+        ]
+      },
+      "irregular": true,
+      "note": "vos tenés (nicht tienes)"
+    },
+    {
+      "word": "necesitar",
+      "forms": {
+        "pres": [
+          "necesito",
+          "necesitás",
+          "necesita",
+          "necesitamos",
+          "necesitan"
+        ],
+        "past": [
+          "necesité",
+          "necesitaste",
+          "necesitó",
+          "necesitamos",
+          "necesitaron"
+        ]
+      }
+    },
+    {
+      "word": "quedarse",
+      "forms": {
+        "pres": [
+          "me quedo",
+          "te quedás",
+          "se queda",
+          "nos quedamos",
+          "se quedan"
+        ],
+        "past": [
+          "me quedé",
+          "te quedaste",
+          "se quedó",
+          "nos quedamos",
+          "se quedaron"
+        ]
+      }
+    },
+    {
+      "word": "llegar",
+      "forms": {
+        "pres": [
+          "llego",
+          "llegás",
+          "llega",
+          "llegamos",
+          "llegan"
+        ],
+        "past": [
+          "llegué",
+          "llegaste",
+          "llegó",
+          "llegamos",
+          "llegaron"
+        ]
+      },
+      "note": "yo llegué (g → gu vor e)"
+    },
+    {
+      "word": "salir",
+      "forms": {
+        "pres": [
+          "salgo",
+          "salís",
+          "sale",
+          "salimos",
+          "salen"
+        ],
+        "past": [
+          "salí",
+          "saliste",
+          "salió",
+          "salimos",
+          "salieron"
+        ]
+      },
+      "irregular": true,
+      "note": "yo salgo"
+    },
+    {
+      "word": "ir",
+      "forms": {
+        "pres": [
+          "voy",
+          "vas",
+          "va",
+          "vamos",
+          "van"
+        ],
+        "past": [
+          "fui",
+          "fuiste",
+          "fue",
+          "fuimos",
+          "fueron"
+        ]
+      },
+      "irregular": true,
+      "note": "Vergangenheit gleich wie bei ser. Zukunft: voy a + Infinitiv (voy a viajar)"
+    },
+    {
+      "word": "venir",
+      "forms": {
+        "pres": [
+          "vengo",
+          "venís",
+          "viene",
+          "venimos",
+          "vienen"
+        ],
+        "past": [
+          "vine",
+          "viniste",
+          "vino",
+          "vinimos",
+          "vinieron"
+        ]
+      },
+      "irregular": true
+    },
+    {
+      "word": "doblar",
+      "forms": {
+        "pres": [
+          "doblo",
+          "doblás",
+          "dobla",
+          "doblamos",
+          "doblan"
+        ],
+        "past": [
+          "doblé",
+          "doblaste",
+          "dobló",
+          "doblamos",
+          "doblaron"
+        ]
+      }
+    },
+    {
+      "word": "seguir",
+      "forms": {
+        "pres": [
+          "sigo",
+          "seguís",
+          "sigue",
+          "seguimos",
+          "siguen"
+        ],
+        "past": [
+          "seguí",
+          "seguiste",
+          "siguió",
+          "seguimos",
+          "siguieron"
+        ]
+      },
+      "irregular": true,
+      "note": "Stammwechsel e → i, auch in der Vergangenheit (siguió)"
+    },
+    {
+      "word": "bajar",
+      "forms": {
+        "pres": [
+          "bajo",
+          "bajás",
+          "baja",
+          "bajamos",
+          "bajan"
+        ],
+        "past": [
+          "bajé",
+          "bajaste",
+          "bajó",
+          "bajamos",
+          "bajaron"
+        ]
+      }
+    },
+    {
+      "word": "subir",
+      "forms": {
+        "pres": [
+          "subo",
+          "subís",
+          "sube",
+          "subimos",
+          "suben"
+        ],
+        "past": [
+          "subí",
+          "subiste",
+          "subió",
+          "subimos",
+          "subieron"
+        ]
+      }
+    },
+    {
+      "word": "esperar",
+      "forms": {
+        "pres": [
+          "espero",
+          "esperás",
+          "espera",
+          "esperamos",
+          "esperan"
+        ],
+        "past": [
+          "esperé",
+          "esperaste",
+          "esperó",
+          "esperamos",
+          "esperaron"
+        ]
+      }
+    },
+    {
+      "word": "perderse",
+      "forms": {
+        "pres": [
+          "me pierdo",
+          "te perdés",
+          "se pierde",
+          "nos perdemos",
+          "se pierden"
+        ],
+        "past": [
+          "me perdí",
+          "te perdiste",
+          "se perdió",
+          "nos perdimos",
+          "se perdieron"
+        ]
+      },
+      "irregular": true,
+      "note": "Stammwechsel e → ie, aber nicht bei vos und nosotros"
+    },
+    {
+      "word": "cruzar",
+      "forms": {
+        "pres": [
+          "cruzo",
+          "cruzás",
+          "cruza",
+          "cruzamos",
+          "cruzan"
+        ],
+        "past": [
+          "crucé",
+          "cruzaste",
+          "cruzó",
+          "cruzamos",
+          "cruzaron"
+        ]
+      },
+      "note": "yo crucé (z → c vor e)"
+    },
+    {
+      "word": "manejar",
+      "forms": {
+        "pres": [
+          "manejo",
+          "manejás",
+          "maneja",
+          "manejamos",
+          "manejan"
+        ],
+        "past": [
+          "manejé",
+          "manejaste",
+          "manejó",
+          "manejamos",
+          "manejaron"
+        ]
+      }
+    },
+    {
+      "word": "alquilar",
+      "forms": {
+        "pres": [
+          "alquilo",
+          "alquilás",
+          "alquila",
+          "alquilamos",
+          "alquilan"
+        ],
+        "past": [
+          "alquilé",
+          "alquilaste",
+          "alquiló",
+          "alquilamos",
+          "alquilaron"
+        ]
+      }
+    },
+    {
+      "word": "comprar",
+      "forms": {
+        "pres": [
+          "compro",
+          "comprás",
+          "compra",
+          "compramos",
+          "compran"
+        ],
+        "past": [
+          "compré",
+          "compraste",
+          "compró",
+          "compramos",
+          "compraron"
+        ]
+      }
+    },
+    {
+      "word": "vender",
+      "forms": {
+        "pres": [
+          "vendo",
+          "vendés",
+          "vende",
+          "vendemos",
+          "venden"
+        ],
+        "past": [
+          "vendí",
+          "vendiste",
+          "vendió",
+          "vendimos",
+          "vendieron"
+        ]
+      }
+    },
+    {
+      "word": "buscar",
+      "forms": {
+        "pres": [
+          "busco",
+          "buscás",
+          "busca",
+          "buscamos",
+          "buscan"
+        ],
+        "past": [
+          "busqué",
+          "buscaste",
+          "buscó",
+          "buscamos",
+          "buscaron"
+        ]
+      },
+      "note": "yo busqué (c → qu vor e)"
+    },
+    {
+      "word": "probar",
+      "forms": {
+        "pres": [
+          "pruebo",
+          "probás",
+          "prueba",
+          "probamos",
+          "prueban"
+        ],
+        "past": [
+          "probé",
+          "probaste",
+          "probó",
+          "probamos",
+          "probaron"
+        ]
+      },
+      "irregular": true,
+      "note": "Stammwechsel o → ue, aber nicht bei vos und nosotros"
+    },
+    {
+      "word": "mirar",
+      "forms": {
+        "pres": [
+          "miro",
+          "mirás",
+          "mira",
+          "miramos",
+          "miran"
+        ],
+        "past": [
+          "miré",
+          "miraste",
+          "miró",
+          "miramos",
+          "miraron"
+        ]
+      }
+    },
+    {
+      "word": "llevar",
+      "forms": {
+        "pres": [
+          "llevo",
+          "llevás",
+          "lleva",
+          "llevamos",
+          "llevan"
+        ],
+        "past": [
+          "llevé",
+          "llevaste",
+          "llevó",
+          "llevamos",
+          "llevaron"
+        ]
+      }
+    },
+    {
+      "word": "perder",
+      "forms": {
+        "pres": [
+          "pierdo",
+          "perdés",
+          "pierde",
+          "perdemos",
+          "pierden"
+        ],
+        "past": [
+          "perdí",
+          "perdiste",
+          "perdió",
+          "perdimos",
+          "perdieron"
+        ]
+      },
+      "irregular": true,
+      "note": "Stammwechsel e → ie, aber nicht bei vos und nosotros"
+    },
+    {
+      "word": "robar",
+      "forms": {
+        "pres": [
+          "robo",
+          "robás",
+          "roba",
+          "robamos",
+          "roban"
+        ],
+        "past": [
+          "robé",
+          "robaste",
+          "robó",
+          "robamos",
+          "robaron"
+        ]
+      }
+    },
+    {
+      "word": "llamar",
+      "forms": {
+        "pres": [
+          "llamo",
+          "llamás",
+          "llama",
+          "llamamos",
+          "llaman"
+        ],
+        "past": [
+          "llamé",
+          "llamaste",
+          "llamó",
+          "llamamos",
+          "llamaron"
+        ]
+      }
+    },
+    {
+      "word": "sentirse",
+      "forms": {
+        "pres": [
+          "me siento",
+          "te sentís",
+          "se siente",
+          "nos sentimos",
+          "se sienten"
+        ],
+        "past": [
+          "me sentí",
+          "te sentiste",
+          "se sintió",
+          "nos sentimos",
+          "se sintieron"
+        ]
+      },
+      "irregular": true,
+      "note": "Stammwechsel e → ie, Vergangenheit se sintió"
+    },
+    {
+      "word": "ser",
+      "forms": {
+        "pres": [
+          "soy",
+          "sos",
+          "es",
+          "somos",
+          "son"
+        ],
+        "past": [
+          "fui",
+          "fuiste",
+          "fue",
+          "fuimos",
+          "fueron"
+        ]
+      },
+      "irregular": true,
+      "note": "Vergangenheit gleich wie bei ir: fui, fue …"
+    },
+    {
+      "word": "estar",
+      "forms": {
+        "pres": [
+          "estoy",
+          "estás",
+          "está",
+          "estamos",
+          "están"
+        ],
+        "past": [
+          "estuve",
+          "estuviste",
+          "estuvo",
+          "estuvimos",
+          "estuvieron"
+        ]
+      },
+      "irregular": true
+    },
+    {
+      "word": "vivir",
+      "forms": {
+        "pres": [
+          "vivo",
+          "vivís",
+          "vive",
+          "vivimos",
+          "viven"
+        ],
+        "past": [
+          "viví",
+          "viviste",
+          "vivió",
+          "vivimos",
+          "vivieron"
+        ]
+      }
+    },
+    {
+      "word": "trabajar",
+      "forms": {
+        "pres": [
+          "trabajo",
+          "trabajás",
+          "trabaja",
+          "trabajamos",
+          "trabajan"
+        ],
+        "past": [
+          "trabajé",
+          "trabajaste",
+          "trabajó",
+          "trabajamos",
+          "trabajaron"
+        ]
+      }
+    },
+    {
+      "word": "estudiar",
+      "forms": {
+        "pres": [
+          "estudio",
+          "estudiás",
+          "estudia",
+          "estudiamos",
+          "estudian"
+        ],
+        "past": [
+          "estudié",
+          "estudiaste",
+          "estudió",
+          "estudiamos",
+          "estudiaron"
+        ]
+      }
+    },
+    {
+      "word": "conocer",
+      "forms": {
+        "pres": [
+          "conozco",
+          "conocés",
+          "conoce",
+          "conocemos",
+          "conocen"
+        ],
+        "past": [
+          "conocí",
+          "conociste",
+          "conoció",
+          "conocimos",
+          "conocieron"
+        ]
+      },
+      "irregular": true,
+      "note": "yo conozco"
+    },
+    {
+      "word": "nadar",
+      "forms": {
+        "pres": [
+          "nado",
+          "nadás",
+          "nada",
+          "nadamos",
+          "nadan"
+        ],
+        "past": [
+          "nadé",
+          "nadaste",
+          "nadó",
+          "nadamos",
+          "nadaron"
+        ]
+      }
+    },
+    {
+      "word": "hacer",
+      "forms": {
+        "pres": [
+          "hago",
+          "hacés",
+          "hace",
+          "hacemos",
+          "hacen"
+        ],
+        "past": [
+          "hice",
+          "hiciste",
+          "hizo",
+          "hicimos",
+          "hicieron"
+        ]
+      },
+      "irregular": true
+    },
+    {
+      "word": "caminar",
+      "forms": {
+        "pres": [
+          "camino",
+          "caminás",
+          "camina",
+          "caminamos",
+          "caminan"
+        ],
+        "past": [
+          "caminé",
+          "caminaste",
+          "caminó",
+          "caminamos",
+          "caminaron"
+        ]
+      }
+    },
+    {
+      "word": "bailar",
+      "forms": {
+        "pres": [
+          "bailo",
+          "bailás",
+          "baila",
+          "bailamos",
+          "bailan"
+        ],
+        "past": [
+          "bailé",
+          "bailaste",
+          "bailó",
+          "bailamos",
+          "bailaron"
+        ]
+      }
+    },
+    {
+      "word": "jugar",
+      "forms": {
+        "pres": [
+          "juego",
+          "jugás",
+          "juega",
+          "jugamos",
+          "juegan"
+        ],
+        "past": [
+          "jugué",
+          "jugaste",
+          "jugó",
+          "jugamos",
+          "jugaron"
+        ]
+      },
+      "irregular": true,
+      "note": "Stammwechsel u → ue; yo jugué"
+    },
+    {
+      "word": "descansar",
+      "forms": {
+        "pres": [
+          "descanso",
+          "descansás",
+          "descansa",
+          "descansamos",
+          "descansan"
+        ],
+        "past": [
+          "descansé",
+          "descansaste",
+          "descansó",
+          "descansamos",
+          "descansaron"
+        ]
+      }
+    },
+    {
+      "word": "ver",
+      "forms": {
+        "pres": [
+          "veo",
+          "ves",
+          "ve",
+          "vemos",
+          "ven"
+        ],
+        "past": [
+          "vi",
+          "viste",
+          "vio",
+          "vimos",
+          "vieron"
+        ]
+      },
+      "irregular": true
+    },
+    {
+      "word": "escuchar",
+      "forms": {
+        "pres": [
+          "escucho",
+          "escuchás",
+          "escucha",
+          "escuchamos",
+          "escuchan"
+        ],
+        "past": [
+          "escuché",
+          "escuchaste",
+          "escuchó",
+          "escuchamos",
+          "escucharon"
+        ]
+      }
+    },
+    {
+      "word": "leer",
+      "forms": {
+        "pres": [
+          "leo",
+          "leés",
+          "lee",
+          "leemos",
+          "leen"
+        ],
+        "past": [
+          "leí",
+          "leíste",
+          "leyó",
+          "leímos",
+          "leyeron"
+        ]
+      },
+      "irregular": true,
+      "note": "Vergangenheit leyó, leyeron"
+    },
+    {
+      "word": "levantarse",
+      "forms": {
+        "pres": [
+          "me levanto",
+          "te levantás",
+          "se levanta",
+          "nos levantamos",
+          "se levantan"
+        ],
+        "past": [
+          "me levanté",
+          "te levantaste",
+          "se levantó",
+          "nos levantamos",
+          "se levantaron"
+        ]
+      }
+    },
+    {
+      "word": "acostarse",
+      "forms": {
+        "pres": [
+          "me acuesto",
+          "te acostás",
+          "se acuesta",
+          "nos acostamos",
+          "se acuestan"
+        ],
+        "past": [
+          "me acosté",
+          "te acostaste",
+          "se acostó",
+          "nos acostamos",
+          "se acostaron"
+        ]
+      },
+      "irregular": true,
+      "note": "Stammwechsel o → ue, aber nicht bei vos und nosotros"
+    },
+    {
+      "word": "dormir",
+      "forms": {
+        "pres": [
+          "duermo",
+          "dormís",
+          "duerme",
+          "dormimos",
+          "duermen"
+        ],
+        "past": [
+          "dormí",
+          "dormiste",
+          "durmió",
+          "dormimos",
+          "durmieron"
+        ]
+      },
+      "irregular": true,
+      "note": "Stammwechsel o → ue, Vergangenheit durmió"
+    },
+    {
+      "word": "ducharse",
+      "forms": {
+        "pres": [
+          "me ducho",
+          "te duchás",
+          "se ducha",
+          "nos duchamos",
+          "se duchan"
+        ],
+        "past": [
+          "me duché",
+          "te duchaste",
+          "se duchó",
+          "nos duchamos",
+          "se ducharon"
+        ]
+      }
+    },
+    {
+      "word": "desayunar",
+      "forms": {
+        "pres": [
+          "desayuno",
+          "desayunás",
+          "desayuna",
+          "desayunamos",
+          "desayunan"
+        ],
+        "past": [
+          "desayuné",
+          "desayunaste",
+          "desayunó",
+          "desayunamos",
+          "desayunaron"
+        ]
+      }
+    },
+    {
+      "word": "cocinar",
+      "forms": {
+        "pres": [
+          "cocino",
+          "cocinás",
+          "cocina",
+          "cocinamos",
+          "cocinan"
+        ],
+        "past": [
+          "cociné",
+          "cocinaste",
+          "cocinó",
+          "cocinamos",
+          "cocinaron"
+        ]
+      }
+    },
+    {
+      "word": "limpiar",
+      "forms": {
+        "pres": [
+          "limpio",
+          "limpiás",
+          "limpia",
+          "limpiamos",
+          "limpian"
+        ],
+        "past": [
+          "limpié",
+          "limpiaste",
+          "limpió",
+          "limpiamos",
+          "limpiaron"
+        ]
+      }
+    },
+    {
+      "word": "lavar",
+      "forms": {
+        "pres": [
+          "lavo",
+          "lavás",
+          "lava",
+          "lavamos",
+          "lavan"
+        ],
+        "past": [
+          "lavé",
+          "lavaste",
+          "lavó",
+          "lavamos",
+          "lavaron"
+        ]
+      }
+    },
+    {
+      "word": "poder",
+      "forms": {
+        "pres": [
+          "puedo",
+          "podés",
+          "puede",
+          "podemos",
+          "pueden"
+        ],
+        "past": [
+          "pude",
+          "pudiste",
+          "pudo",
+          "pudimos",
+          "pudieron"
+        ]
+      },
+      "irregular": true,
+      "note": "Stammwechsel o → ue, aber nicht bei vos: podés"
+    },
+    {
+      "word": "saber",
+      "forms": {
+        "pres": [
+          "sé",
+          "sabés",
+          "sabe",
+          "sabemos",
+          "saben"
+        ],
+        "past": [
+          "supe",
+          "supiste",
+          "supo",
+          "supimos",
+          "supieron"
+        ]
+      },
+      "irregular": true
+    },
+    {
+      "word": "decir",
+      "forms": {
+        "pres": [
+          "digo",
+          "decís",
+          "dice",
+          "decimos",
+          "dicen"
+        ],
+        "past": [
+          "dije",
+          "dijiste",
+          "dijo",
+          "dijimos",
+          "dijeron"
+        ]
+      },
+      "irregular": true
+    },
+    {
+      "word": "empezar",
+      "forms": {
+        "pres": [
+          "empiezo",
+          "empezás",
+          "empieza",
+          "empezamos",
+          "empiezan"
+        ],
+        "past": [
+          "empecé",
+          "empezaste",
+          "empezó",
+          "empezamos",
+          "empezaron"
+        ]
+      },
+      "irregular": true,
+      "note": "Stammwechsel e → ie; yo empecé (z → c vor e)"
+    },
+    {
+      "word": "terminar",
+      "forms": {
+        "pres": [
+          "termino",
+          "terminás",
+          "termina",
+          "terminamos",
+          "terminan"
+        ],
+        "past": [
+          "terminé",
+          "terminaste",
+          "terminó",
+          "terminamos",
+          "terminaron"
+        ]
+      }
+    },
+    {
+      "word": "volver",
+      "forms": {
+        "pres": [
+          "vuelvo",
+          "volvés",
+          "vuelve",
+          "volvemos",
+          "vuelven"
+        ],
+        "past": [
+          "volví",
+          "volviste",
+          "volvió",
+          "volvimos",
+          "volvieron"
+        ]
+      },
+      "irregular": true,
+      "note": "Stammwechsel o → ue, aber nicht bei vos und nosotros"
+    },
+    {
+      "word": "escribir",
+      "forms": {
+        "pres": [
+          "escribo",
+          "escribís",
+          "escribe",
+          "escribimos",
+          "escriben"
+        ],
+        "past": [
+          "escribí",
+          "escribiste",
+          "escribió",
+          "escribimos",
+          "escribieron"
+        ]
+      }
+    },
+    {
+      "word": "mandar",
+      "forms": {
+        "pres": [
+          "mando",
+          "mandás",
+          "manda",
+          "mandamos",
+          "mandan"
+        ],
+        "past": [
+          "mandé",
+          "mandaste",
+          "mandó",
+          "mandamos",
+          "mandaron"
+        ]
+      }
+    }
+  ]
+}

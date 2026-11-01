@@ -63,6 +63,7 @@ class MainActivity : ComponentActivity() {
 /** Platzhalter beim Ueben: alle Lektionen bzw. gemischte Tagesrunde */
 private const val ALL_LESSONS = "*"
 private const val TODAY = "today"
+private const val DIFFICULT = "difficult"
 
 @Composable
 fun AppContent(vm: MainViewModel, videoVm: VideoViewModel) {
@@ -80,8 +81,9 @@ fun AppContent(vm: MainViewModel, videoVm: VideoViewModel) {
     when {
         target != null -> PracticeScreen(
             vm,
-            lessonId = target.takeUnless { it == ALL_LESSONS || it == TODAY },
+            lessonId = target.takeUnless { it == ALL_LESSONS || it == TODAY || it == DIFFICULT },
             today = target == TODAY,
+            difficult = target == DIFFICULT,
             onBack = { practiceTarget = null },
         )
 
@@ -102,7 +104,7 @@ fun AppContent(vm: MainViewModel, videoVm: VideoViewModel) {
 
         showStats -> {
             BackHandler { showStats = false }
-            StatsScreen(vm, onBack = { showStats = false })
+            StatsScreen(vm, onBack = { showStats = false }, onPracticeDifficult = { practiceTarget = DIFFICULT })
         }
 
         lessonId != null -> {

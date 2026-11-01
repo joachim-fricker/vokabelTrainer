@@ -41,7 +41,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.width
+import androidx.compose.material3.Button
+import androidx.compose.ui.text.font.FontStyle
 import de.jfricker.vokabeltrainer.data.DayCount
+import de.jfricker.vokabeltrainer.data.DifficultWord
 import de.jfricker.vokabeltrainer.data.Stats
 import java.time.Instant
 import java.time.LocalDate
@@ -54,8 +59,10 @@ private val DATE_DAY = DateTimeFormatter.ofPattern("EEEE, d. MMMM", Locale.GERMA
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun StatsScreen(vm: MainViewModel, onBack: () -> Unit) {
+fun StatsScreen(vm: MainViewModel, onBack: () -> Unit, onPracticeDifficult: () -> Unit) {
     val stats by vm.stats.collectAsStateWithLifecycle()
+    val difficult by vm.difficult.collectAsStateWithLifecycle()
+    var showAllDifficult by rememberSaveable { mutableStateOf(false) }
     val language by vm.language.collectAsStateWithLifecycle()
     var pickDate by rememberSaveable { mutableStateOf(false) }
 
@@ -84,6 +91,23 @@ fun StatsScreen(vm: MainViewModel, onBack: () -> Unit) {
             item { GoalCard(s, onChangeDate = { pickDate = true }) }
             item { TodayStatsCard(s) }
             item { ActivityCard(s.last14Days) }
+            item {
+                DifficultHeader(
+                    difficult,
+                    onPractice = onPracticeDifficult,
+                )
+            }
+            val shown = if (showAllDifficult) difficult else difficult.take(DIFFICULT_PREVIEW)
+            items(shown, key = { "difficult-" + it.word.wordKey }) { d ->
+                DifficultRow(d, onSpeak = { vm.speak(d.word.text) })
+            }
+            if (difficult.size > DIFFICULT_PREVIEW) {
+                item {
+                    TextButton(onClick = { showAllDifficult = !showAllDifficult }) {
+                        Text(if (showAllDifficult) "Weniger zeigen" else "Alle ${difficult.size} zeigen")
+                    }
+                }
+            }
             item {
                 Text(
                     "Lektionen",
@@ -135,6 +159,59 @@ fun StatsScreen(vm: MainViewModel, onBack: () -> Unit) {
             dismissButton = { TextButton(onClick = { pickDate = false }) { Text("Abbrechen") } },
         ) {
             DatePicker(state = state)
+        }
+    }
+}
+
+private const val DIFFICULT_PREVIEW = 15
+
+@Composable
+private fun DifficultHeader(words: List<DifficultWord>, onPractice: () -> Unit) {
+    val open = words.count { !it.settled }
+    Column(Modifier.padding(top = 8.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+        Text("Schwierige Wörter", style = MaterialTheme.typography.titleMedium)
+        Text(
+            if (words.isEmpty()) "Bisher hast du bei den Karteikarten noch kein Wort falsch gehabt. 👍"
+            else "Wörter, die du bei den Karteikarten mindestens einmal nicht gewusst hast – " +
+                "die häufigsten Fehler oben. Antippen spielt das Wort ab.",
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
+        if (words.isNotEmpty()) {
+            Button(onClick = onPractice, modifier = Modifier.fillMaxWidth()) {
+                Text(if (open > 0) "🃏  Diese Wörter üben ($open offen)" else "🃏  Nochmals alle üben")
+            }
+        }
+    }
+}
+
+@Composable
+private fun DifficultRow(d: DifficultWord, onSpeak: () -> Unit) {
+    Card(Modifier.fillMaxWidth().clickable(onClick = onSpeak)) {
+        Row(Modifier.padding(horizontal = 16.dp, vertical = 10.dp), verticalAlignment = Alignment.CenterVertically) {
+            Column(Modifier.weight(1f)) {
+                Text(displayText(d.word), style = MaterialTheme.typography.titleMedium)
+                Text(d.word.de, style = MaterialTheme.typography.bodyMedium)
+                d.word.note?.let {
+                    Text(
+                        it,
+                        style = MaterialTheme.typography.bodySmall,
+                        fontStyle = FontStyle.Italic,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
+            }
+            Spacer(Modifier.width(12.dp))
+            Column(horizontalAlignment = Alignment.End) {
+                Text(
+                    "${d.wrong}× falsch",
+                    style = MaterialTheme.typography.labelLarge,
+                    color = if (d.settled) MaterialTheme.colorScheme.onSurfaceVariant else MaterialTheme.colorScheme.error,
+                )
+                if (d.settled) {
+                    Text("sitzt inzwischen ✓", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                }
+            }
         }
     }
 }

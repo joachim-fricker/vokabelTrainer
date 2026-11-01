@@ -65,4 +65,18 @@ interface LessonDao {
 
     @Query("SELECT * FROM grammar WHERE lessonId = :lessonId ORDER BY sortOrder")
     fun observeGrammar(lessonId: String): Flow<List<GrammarEntity>>
+
+    // ------------------------------------------------ Verben (Konjugationstrainer)
+
+    @Query("SELECT * FROM word WHERE language = :lang")
+    suspend fun wordsOf(lang: String): List<WordEntity>
+
+    @Query("DELETE FROM verb WHERE language = :lang")
+    suspend fun deleteVerbs(lang: String)
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertVerbs(verbs: List<VerbEntity>)
+
+    @Query("SELECT * FROM verb WHERE lessonId = :lessonId ORDER BY sortOrder")
+    fun observeVerbs(lessonId: String): Flow<List<VerbEntity>>
 }

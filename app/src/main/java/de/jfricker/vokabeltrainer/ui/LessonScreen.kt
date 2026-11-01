@@ -55,6 +55,7 @@ fun LessonScreen(vm: MainViewModel, lessonId: String, onBack: () -> Unit, onPrac
     val words by remember(lessonId) { vm.words(lessonId) }.collectAsStateWithLifecycle(emptyList())
     val sentences by remember(lessonId) { vm.sentences(lessonId) }.collectAsStateWithLifecycle(emptyList())
     val grammar by remember(lessonId) { vm.grammar(lessonId) }.collectAsStateWithLifecycle(emptyList())
+    val verbs by remember(lessonId) { vm.verbs(lessonId) }.collectAsStateWithLifecycle(emptyList())
     val slow by vm.slow.collectAsStateWithLifecycle()
     var tab by rememberSaveable { mutableIntStateOf(0) }
     // Aufgeklappte Wortgruppen; hier gehalten, damit sie beim Wechsel der Reiter erhalten bleiben
@@ -87,8 +88,10 @@ fun LessonScreen(vm: MainViewModel, lessonId: String, onBack: () -> Unit, onPrac
         },
     ) { padding ->
         Column(Modifier.fillMaxSize().padding(padding)) {
-            val titles = listOf("Wörter (${words.size})", "Sätze (${sentences.size})", "Grammatik")
-            PrimaryTabRow(selectedTabIndex = tab) {
+            val titles = listOf("Wörter (${words.size})", "Sätze (${sentences.size})", "Grammatik") +
+                if (verbs.isNotEmpty()) listOf("Verben") else emptyList()
+            // Bis die Verben geladen sind, kann der gespeicherte Reiter noch fehlen
+            PrimaryTabRow(selectedTabIndex = tab.coerceAtMost(titles.lastIndex)) {
                 titles.forEachIndexed { i, t ->
                     Tab(selected = tab == i, onClick = { tab = i }, text = { Text(t) })
                 }
@@ -102,7 +105,8 @@ fun LessonScreen(vm: MainViewModel, lessonId: String, onBack: () -> Unit, onPrac
                     onSpeak = vm::speak,
                 )
                 1 -> SentenceList(sentences, vm::speak)
-                else -> GrammarList(grammar, vm::speak)
+                2 -> GrammarList(grammar, vm::speak)
+                else -> VerbList(verbs, vm::speak, bottomSpace = FAB_SPACE)
             }
         }
     }

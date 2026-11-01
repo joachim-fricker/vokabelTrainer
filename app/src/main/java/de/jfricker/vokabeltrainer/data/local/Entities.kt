@@ -75,6 +75,26 @@ data class GrammarEntity(
     val examplesJson: String,
 )
 
+/**
+ * Verb fuer den Konjugationstrainer (seit DB-Version 7). verbKey = wordKey des Verbs ("pt-BR:falar");
+ * Lektion, Infinitiv und Uebersetzung kommen vom Wort.
+ */
+@Entity(tableName = "verb", indices = [Index("lessonId")])
+data class VerbEntity(
+    @PrimaryKey val verbKey: String,
+    val id: String,
+    val language: String,
+    val lessonId: String,
+    val sortOrder: Int,
+    val infinitive: String,
+    val de: String,
+    val note: String?,
+    /** Formen je Zeit als JSON: {"pres": [...], "past": [...]} */
+    val formsJson: String,
+    /** Unregelmaessig: jede Form wird einzeln geuebt; sonst nur die Endungen (seit DB-Version 8) */
+    @ColumnInfo(defaultValue = "0") val irregular: Boolean = false,
+)
+
 /** Lektion mit Anzahl der Inhalte fuer die Uebersicht. */
 data class LessonSummary(
     @Embedded val lesson: LessonEntity,

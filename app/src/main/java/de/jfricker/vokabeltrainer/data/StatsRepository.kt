@@ -66,7 +66,7 @@ class StatsRepository(db: AppDatabase, private val prefs: LearningPrefs) {
             streak = streak,
             reviewsToday = todayRows.size,
             correctPercentToday = if (todayRows.isEmpty()) null else todayRows.count { it.correct } * 100 / todayRows.size,
-            dueUntilTomorrow = dao.dueBeforeCount(lang.keyPrefix, startOf(today.plusDays(2)), PracticeMode.entries.map { it.code }),
+            dueUntilTomorrow = dao.dueBeforeCount(lang.keyPrefix, startOf(today.plusDays(2)), PracticeMode.entries.filter { it.leitner }.map { it.code }),
             last14Days = (13 downTo 0).map { today.minusDays(it.toLong()) }.map { DayCount(it, byDay[it]?.size ?: 0) },
             lessons = dao.lessonStats(lang.code, LEARNED_BOX),
         )

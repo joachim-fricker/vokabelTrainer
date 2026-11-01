@@ -1,0 +1,1246 @@
+{
+  "language": "pt-BR",
+  "verbs": [
+    {
+      "word": "falar",
+      "forms": {
+        "pres": [
+          "falo",
+          "fala",
+          "falamos",
+          "falam"
+        ],
+        "past": [
+          "falei",
+          "falou",
+          "falamos",
+          "falaram"
+        ]
+      }
+    },
+    {
+      "word": "entender",
+      "forms": {
+        "pres": [
+          "entendo",
+          "entende",
+          "entendemos",
+          "entendem"
+        ],
+        "past": [
+          "entendi",
+          "entendeu",
+          "entendemos",
+          "entenderam"
+        ]
+      }
+    },
+    {
+      "word": "pagar",
+      "forms": {
+        "pres": [
+          "pago",
+          "paga",
+          "pagamos",
+          "pagam"
+        ],
+        "past": [
+          "paguei",
+          "pagou",
+          "pagamos",
+          "pagaram"
+        ]
+      }
+    },
+    {
+      "word": "comer",
+      "forms": {
+        "pres": [
+          "como",
+          "come",
+          "comemos",
+          "comem"
+        ],
+        "past": [
+          "comi",
+          "comeu",
+          "comemos",
+          "comeram"
+        ]
+      }
+    },
+    {
+      "word": "beber",
+      "forms": {
+        "pres": [
+          "bebo",
+          "bebe",
+          "bebemos",
+          "bebem"
+        ],
+        "past": [
+          "bebi",
+          "bebeu",
+          "bebemos",
+          "beberam"
+        ]
+      }
+    },
+    {
+      "word": "querer",
+      "forms": {
+        "pres": [
+          "quero",
+          "quer",
+          "queremos",
+          "querem"
+        ],
+        "past": [
+          "quis",
+          "quis",
+          "quisemos",
+          "quiseram"
+        ]
+      },
+      "irregular": true
+    },
+    {
+      "word": "pedir",
+      "forms": {
+        "pres": [
+          "peço",
+          "pede",
+          "pedimos",
+          "pedem"
+        ],
+        "past": [
+          "pedi",
+          "pediu",
+          "pedimos",
+          "pediram"
+        ]
+      },
+      "irregular": true,
+      "note": "eu peço"
+    },
+    {
+      "word": "reservar",
+      "forms": {
+        "pres": [
+          "reservo",
+          "reserva",
+          "reservamos",
+          "reservam"
+        ],
+        "past": [
+          "reservei",
+          "reservou",
+          "reservamos",
+          "reservaram"
+        ]
+      }
+    },
+    {
+      "word": "provar",
+      "forms": {
+        "pres": [
+          "provo",
+          "prova",
+          "provamos",
+          "provam"
+        ],
+        "past": [
+          "provei",
+          "provou",
+          "provamos",
+          "provaram"
+        ]
+      }
+    },
+    {
+      "word": "recomendar",
+      "forms": {
+        "pres": [
+          "recomendo",
+          "recomenda",
+          "recomendamos",
+          "recomendam"
+        ],
+        "past": [
+          "recomendei",
+          "recomendou",
+          "recomendamos",
+          "recomendaram"
+        ]
+      }
+    },
+    {
+      "word": "trazer",
+      "forms": {
+        "pres": [
+          "trago",
+          "traz",
+          "trazemos",
+          "trazem"
+        ],
+        "past": [
+          "trouxe",
+          "trouxe",
+          "trouxemos",
+          "trouxeram"
+        ]
+      },
+      "irregular": true
+    },
+    {
+      "word": "dividir",
+      "forms": {
+        "pres": [
+          "divido",
+          "divide",
+          "dividimos",
+          "dividem"
+        ],
+        "past": [
+          "dividi",
+          "dividiu",
+          "dividimos",
+          "dividiram"
+        ]
+      }
+    },
+    {
+      "word": "confirmar",
+      "forms": {
+        "pres": [
+          "confirmo",
+          "confirma",
+          "confirmamos",
+          "confirmam"
+        ],
+        "past": [
+          "confirmei",
+          "confirmou",
+          "confirmamos",
+          "confirmaram"
+        ]
+      }
+    },
+    {
+      "word": "trocar",
+      "forms": {
+        "pres": [
+          "troco",
+          "troca",
+          "trocamos",
+          "trocam"
+        ],
+        "past": [
+          "troquei",
+          "trocou",
+          "trocamos",
+          "trocaram"
+        ]
+      }
+    },
+    {
+      "word": "ter",
+      "forms": {
+        "pres": [
+          "tenho",
+          "tem",
+          "temos",
+          "têm"
+        ],
+        "past": [
+          "tive",
+          "teve",
+          "tivemos",
+          "tiveram"
+        ]
+      },
+      "irregular": true,
+      "note": "têm (Plural) mit Zirkumflex, gesprochen wie tem"
+    },
+    {
+      "word": "precisar",
+      "forms": {
+        "pres": [
+          "preciso",
+          "precisa",
+          "precisamos",
+          "precisam"
+        ],
+        "past": [
+          "precisei",
+          "precisou",
+          "precisamos",
+          "precisaram"
+        ]
+      },
+      "note": "immer mit de: preciso de um táxi"
+    },
+    {
+      "word": "ficar",
+      "forms": {
+        "pres": [
+          "fico",
+          "fica",
+          "ficamos",
+          "ficam"
+        ],
+        "past": [
+          "fiquei",
+          "ficou",
+          "ficamos",
+          "ficaram"
+        ]
+      }
+    },
+    {
+      "word": "chegar",
+      "forms": {
+        "pres": [
+          "chego",
+          "chega",
+          "chegamos",
+          "chegam"
+        ],
+        "past": [
+          "cheguei",
+          "chegou",
+          "chegamos",
+          "chegaram"
+        ]
+      }
+    },
+    {
+      "word": "sair",
+      "forms": {
+        "pres": [
+          "saio",
+          "sai",
+          "saímos",
+          "saem"
+        ],
+        "past": [
+          "saí",
+          "saiu",
+          "saímos",
+          "saíram"
+        ]
+      },
+      "irregular": true
+    },
+    {
+      "word": "alugar",
+      "forms": {
+        "pres": [
+          "alugo",
+          "aluga",
+          "alugamos",
+          "alugam"
+        ],
+        "past": [
+          "aluguei",
+          "alugou",
+          "alugamos",
+          "alugaram"
+        ]
+      }
+    },
+    {
+      "word": "ir",
+      "forms": {
+        "pres": [
+          "vou",
+          "vai",
+          "vamos",
+          "vão"
+        ],
+        "past": [
+          "fui",
+          "foi",
+          "fomos",
+          "foram"
+        ]
+      },
+      "irregular": true,
+      "note": "Vergangenheit gleich wie bei ser. Zukunft: vou + Infinitiv (vou viajar)"
+    },
+    {
+      "word": "vir",
+      "forms": {
+        "pres": [
+          "venho",
+          "vem",
+          "vimos",
+          "vêm"
+        ],
+        "past": [
+          "vim",
+          "veio",
+          "viemos",
+          "vieram"
+        ]
+      },
+      "irregular": true,
+      "note": "Achtung: vimos = wir kommen, viemos = wir kamen"
+    },
+    {
+      "word": "pegar",
+      "forms": {
+        "pres": [
+          "pego",
+          "pega",
+          "pegamos",
+          "pegam"
+        ],
+        "past": [
+          "peguei",
+          "pegou",
+          "pegamos",
+          "pegaram"
+        ]
+      }
+    },
+    {
+      "word": "descer",
+      "forms": {
+        "pres": [
+          "desço",
+          "desce",
+          "descemos",
+          "descem"
+        ],
+        "past": [
+          "desci",
+          "desceu",
+          "descemos",
+          "desceram"
+        ]
+      },
+      "note": "eu desço (ç vor o)"
+    },
+    {
+      "word": "subir",
+      "forms": {
+        "pres": [
+          "subo",
+          "sobe",
+          "subimos",
+          "sobem"
+        ],
+        "past": [
+          "subi",
+          "subiu",
+          "subimos",
+          "subiram"
+        ]
+      },
+      "irregular": true,
+      "note": "ele sobe, eles sobem"
+    },
+    {
+      "word": "esperar",
+      "forms": {
+        "pres": [
+          "espero",
+          "espera",
+          "esperamos",
+          "esperam"
+        ],
+        "past": [
+          "esperei",
+          "esperou",
+          "esperamos",
+          "esperaram"
+        ]
+      }
+    },
+    {
+      "word": "perder",
+      "forms": {
+        "pres": [
+          "perco",
+          "perde",
+          "perdemos",
+          "perdem"
+        ],
+        "past": [
+          "perdi",
+          "perdeu",
+          "perdemos",
+          "perderam"
+        ]
+      },
+      "irregular": true,
+      "note": "eu perco"
+    },
+    {
+      "word": "viajar",
+      "forms": {
+        "pres": [
+          "viajo",
+          "viaja",
+          "viajamos",
+          "viajam"
+        ],
+        "past": [
+          "viajei",
+          "viajou",
+          "viajamos",
+          "viajaram"
+        ]
+      }
+    },
+    {
+      "word": "voltar",
+      "forms": {
+        "pres": [
+          "volto",
+          "volta",
+          "voltamos",
+          "voltam"
+        ],
+        "past": [
+          "voltei",
+          "voltou",
+          "voltamos",
+          "voltaram"
+        ]
+      }
+    },
+    {
+      "word": "levar",
+      "forms": {
+        "pres": [
+          "levo",
+          "leva",
+          "levamos",
+          "levam"
+        ],
+        "past": [
+          "levei",
+          "levou",
+          "levamos",
+          "levaram"
+        ]
+      }
+    },
+    {
+      "word": "andar_verb",
+      "forms": {
+        "pres": [
+          "ando",
+          "anda",
+          "andamos",
+          "andam"
+        ],
+        "past": [
+          "andei",
+          "andou",
+          "andamos",
+          "andaram"
+        ]
+      }
+    },
+    {
+      "word": "comprar",
+      "forms": {
+        "pres": [
+          "compro",
+          "compra",
+          "compramos",
+          "compram"
+        ],
+        "past": [
+          "comprei",
+          "comprou",
+          "compramos",
+          "compraram"
+        ]
+      }
+    },
+    {
+      "word": "vender",
+      "forms": {
+        "pres": [
+          "vendo",
+          "vende",
+          "vendemos",
+          "vendem"
+        ],
+        "past": [
+          "vendi",
+          "vendeu",
+          "vendemos",
+          "venderam"
+        ]
+      }
+    },
+    {
+      "word": "experimentar",
+      "forms": {
+        "pres": [
+          "experimento",
+          "experimenta",
+          "experimentamos",
+          "experimentam"
+        ],
+        "past": [
+          "experimentei",
+          "experimentou",
+          "experimentamos",
+          "experimentaram"
+        ]
+      }
+    },
+    {
+      "word": "olhar",
+      "forms": {
+        "pres": [
+          "olho",
+          "olha",
+          "olhamos",
+          "olham"
+        ],
+        "past": [
+          "olhei",
+          "olhou",
+          "olhamos",
+          "olharam"
+        ]
+      }
+    },
+    {
+      "word": "procurar",
+      "forms": {
+        "pres": [
+          "procuro",
+          "procura",
+          "procuramos",
+          "procuram"
+        ],
+        "past": [
+          "procurei",
+          "procurou",
+          "procuramos",
+          "procuraram"
+        ]
+      }
+    },
+    {
+      "word": "roubar",
+      "forms": {
+        "pres": [
+          "roubo",
+          "rouba",
+          "roubamos",
+          "roubam"
+        ],
+        "past": [
+          "roubei",
+          "roubou",
+          "roubamos",
+          "roubaram"
+        ]
+      }
+    },
+    {
+      "word": "chamar",
+      "forms": {
+        "pres": [
+          "chamo",
+          "chama",
+          "chamamos",
+          "chamam"
+        ],
+        "past": [
+          "chamei",
+          "chamou",
+          "chamamos",
+          "chamaram"
+        ]
+      }
+    },
+    {
+      "word": "ajudar",
+      "forms": {
+        "pres": [
+          "ajudo",
+          "ajuda",
+          "ajudamos",
+          "ajudam"
+        ],
+        "past": [
+          "ajudei",
+          "ajudou",
+          "ajudamos",
+          "ajudaram"
+        ]
+      }
+    },
+    {
+      "word": "tomar",
+      "forms": {
+        "pres": [
+          "tomo",
+          "toma",
+          "tomamos",
+          "tomam"
+        ],
+        "past": [
+          "tomei",
+          "tomou",
+          "tomamos",
+          "tomaram"
+        ]
+      }
+    },
+    {
+      "word": "sentir",
+      "forms": {
+        "pres": [
+          "sinto",
+          "sente",
+          "sentimos",
+          "sentem"
+        ],
+        "past": [
+          "senti",
+          "sentiu",
+          "sentimos",
+          "sentiram"
+        ]
+      },
+      "irregular": true,
+      "note": "eu sinto"
+    },
+    {
+      "word": "morar",
+      "forms": {
+        "pres": [
+          "moro",
+          "mora",
+          "moramos",
+          "moram"
+        ],
+        "past": [
+          "morei",
+          "morou",
+          "moramos",
+          "moraram"
+        ]
+      }
+    },
+    {
+      "word": "trabalhar",
+      "forms": {
+        "pres": [
+          "trabalho",
+          "trabalha",
+          "trabalhamos",
+          "trabalham"
+        ],
+        "past": [
+          "trabalhei",
+          "trabalhou",
+          "trabalhamos",
+          "trabalharam"
+        ]
+      }
+    },
+    {
+      "word": "estudar",
+      "forms": {
+        "pres": [
+          "estudo",
+          "estuda",
+          "estudamos",
+          "estudam"
+        ],
+        "past": [
+          "estudei",
+          "estudou",
+          "estudamos",
+          "estudaram"
+        ]
+      }
+    },
+    {
+      "word": "gostar",
+      "forms": {
+        "pres": [
+          "gosto",
+          "gosta",
+          "gostamos",
+          "gostam"
+        ],
+        "past": [
+          "gostei",
+          "gostou",
+          "gostamos",
+          "gostaram"
+        ]
+      },
+      "note": "immer mit de: gosto de café"
+    },
+    {
+      "word": "ler",
+      "forms": {
+        "pres": [
+          "leio",
+          "lê",
+          "lemos",
+          "leem"
+        ],
+        "past": [
+          "li",
+          "leu",
+          "lemos",
+          "leram"
+        ]
+      },
+      "irregular": true
+    },
+    {
+      "word": "conhecer",
+      "forms": {
+        "pres": [
+          "conheço",
+          "conhece",
+          "conhecemos",
+          "conhecem"
+        ],
+        "past": [
+          "conheci",
+          "conheceu",
+          "conhecemos",
+          "conheceram"
+        ]
+      },
+      "note": "eu conheço (ç vor o)"
+    },
+    {
+      "word": "nadar",
+      "forms": {
+        "pres": [
+          "nado",
+          "nada",
+          "nadamos",
+          "nadam"
+        ],
+        "past": [
+          "nadei",
+          "nadou",
+          "nadamos",
+          "nadaram"
+        ]
+      }
+    },
+    {
+      "word": "mergulhar",
+      "forms": {
+        "pres": [
+          "mergulho",
+          "mergulha",
+          "mergulhamos",
+          "mergulham"
+        ],
+        "past": [
+          "mergulhei",
+          "mergulhou",
+          "mergulhamos",
+          "mergulharam"
+        ]
+      }
+    },
+    {
+      "word": "surfar",
+      "forms": {
+        "pres": [
+          "surfo",
+          "surfa",
+          "surfamos",
+          "surfam"
+        ],
+        "past": [
+          "surfei",
+          "surfou",
+          "surfamos",
+          "surfaram"
+        ]
+      }
+    },
+    {
+      "word": "fazer",
+      "forms": {
+        "pres": [
+          "faço",
+          "faz",
+          "fazemos",
+          "fazem"
+        ],
+        "past": [
+          "fiz",
+          "fez",
+          "fizemos",
+          "fizeram"
+        ]
+      },
+      "irregular": true
+    },
+    {
+      "word": "descansar",
+      "forms": {
+        "pres": [
+          "descanso",
+          "descansa",
+          "descansamos",
+          "descansam"
+        ],
+        "past": [
+          "descansei",
+          "descansou",
+          "descansamos",
+          "descansaram"
+        ]
+      }
+    },
+    {
+      "word": "aproveitar",
+      "forms": {
+        "pres": [
+          "aproveito",
+          "aproveita",
+          "aproveitamos",
+          "aproveitam"
+        ],
+        "past": [
+          "aproveitei",
+          "aproveitou",
+          "aproveitamos",
+          "aproveitaram"
+        ]
+      }
+    },
+    {
+      "word": "dancar",
+      "forms": {
+        "pres": [
+          "danço",
+          "dança",
+          "dançamos",
+          "dançam"
+        ],
+        "past": [
+          "dancei",
+          "dançou",
+          "dançamos",
+          "dançaram"
+        ]
+      }
+    },
+    {
+      "word": "jogar",
+      "forms": {
+        "pres": [
+          "jogo",
+          "joga",
+          "jogamos",
+          "jogam"
+        ],
+        "past": [
+          "joguei",
+          "jogou",
+          "jogamos",
+          "jogaram"
+        ]
+      }
+    },
+    {
+      "word": "assistir",
+      "forms": {
+        "pres": [
+          "assisto",
+          "assiste",
+          "assistimos",
+          "assistem"
+        ],
+        "past": [
+          "assisti",
+          "assistiu",
+          "assistimos",
+          "assistiram"
+        ]
+      }
+    },
+    {
+      "word": "abrir",
+      "forms": {
+        "pres": [
+          "abro",
+          "abre",
+          "abrimos",
+          "abrem"
+        ],
+        "past": [
+          "abri",
+          "abriu",
+          "abrimos",
+          "abriram"
+        ]
+      }
+    },
+    {
+      "word": "fechar",
+      "forms": {
+        "pres": [
+          "fecho",
+          "fecha",
+          "fechamos",
+          "fecham"
+        ],
+        "past": [
+          "fechei",
+          "fechou",
+          "fechamos",
+          "fecharam"
+        ]
+      }
+    },
+    {
+      "word": "acordar",
+      "forms": {
+        "pres": [
+          "acordo",
+          "acorda",
+          "acordamos",
+          "acordam"
+        ],
+        "past": [
+          "acordei",
+          "acordou",
+          "acordamos",
+          "acordaram"
+        ]
+      }
+    },
+    {
+      "word": "levantar",
+      "forms": {
+        "pres": [
+          "levanto",
+          "levanta",
+          "levantamos",
+          "levantam"
+        ],
+        "past": [
+          "levantei",
+          "levantou",
+          "levantamos",
+          "levantaram"
+        ]
+      }
+    },
+    {
+      "word": "dormir",
+      "forms": {
+        "pres": [
+          "durmo",
+          "dorme",
+          "dormimos",
+          "dormem"
+        ],
+        "past": [
+          "dormi",
+          "dormiu",
+          "dormimos",
+          "dormiram"
+        ]
+      },
+      "irregular": true,
+      "note": "eu durmo"
+    },
+    {
+      "word": "cozinhar",
+      "forms": {
+        "pres": [
+          "cozinho",
+          "cozinha",
+          "cozinhamos",
+          "cozinham"
+        ],
+        "past": [
+          "cozinhei",
+          "cozinhou",
+          "cozinhamos",
+          "cozinharam"
+        ]
+      }
+    },
+    {
+      "word": "limpar",
+      "forms": {
+        "pres": [
+          "limpo",
+          "limpa",
+          "limpamos",
+          "limpam"
+        ],
+        "past": [
+          "limpei",
+          "limpou",
+          "limpamos",
+          "limparam"
+        ]
+      }
+    },
+    {
+      "word": "lavar",
+      "forms": {
+        "pres": [
+          "lavo",
+          "lava",
+          "lavamos",
+          "lavam"
+        ],
+        "past": [
+          "lavei",
+          "lavou",
+          "lavamos",
+          "lavaram"
+        ]
+      }
+    },
+    {
+      "word": "ser",
+      "forms": {
+        "pres": [
+          "sou",
+          "é",
+          "somos",
+          "são"
+        ],
+        "past": [
+          "fui",
+          "foi",
+          "fomos",
+          "foram"
+        ]
+      },
+      "irregular": true,
+      "note": "Vergangenheit gleich wie bei ir: fui, foi …"
+    },
+    {
+      "word": "estar",
+      "forms": {
+        "pres": [
+          "estou",
+          "está",
+          "estamos",
+          "estão"
+        ],
+        "past": [
+          "estive",
+          "esteve",
+          "estivemos",
+          "estiveram"
+        ]
+      },
+      "irregular": true,
+      "note": "Vorübergehender Zustand / Ort (estou cansado, está no hotel)"
+    },
+    {
+      "word": "poder",
+      "forms": {
+        "pres": [
+          "posso",
+          "pode",
+          "podemos",
+          "podem"
+        ],
+        "past": [
+          "pude",
+          "pôde",
+          "pudemos",
+          "puderam"
+        ]
+      },
+      "irregular": true
+    },
+    {
+      "word": "saber",
+      "forms": {
+        "pres": [
+          "sei",
+          "sabe",
+          "sabemos",
+          "sabem"
+        ],
+        "past": [
+          "soube",
+          "soube",
+          "soubemos",
+          "souberam"
+        ]
+      },
+      "irregular": true
+    },
+    {
+      "word": "dizer",
+      "forms": {
+        "pres": [
+          "digo",
+          "diz",
+          "dizemos",
+          "dizem"
+        ],
+        "past": [
+          "disse",
+          "disse",
+          "dissemos",
+          "disseram"
+        ]
+      },
+      "irregular": true
+    },
+    {
+      "word": "ver",
+      "forms": {
+        "pres": [
+          "vejo",
+          "vê",
+          "vemos",
+          "veem"
+        ],
+        "past": [
+          "vi",
+          "viu",
+          "vimos",
+          "viram"
+        ]
+      },
+      "irregular": true
+    },
+    {
+      "word": "dar",
+      "forms": {
+        "pres": [
+          "dou",
+          "dá",
+          "damos",
+          "dão"
+        ],
+        "past": [
+          "dei",
+          "deu",
+          "demos",
+          "deram"
+        ]
+      },
+      "irregular": true
+    }
+  ]
+}

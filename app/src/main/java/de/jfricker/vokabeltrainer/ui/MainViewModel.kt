@@ -2,6 +2,7 @@ package de.jfricker.vokabeltrainer.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import de.jfricker.vokabeltrainer.data.DifficultWord
 import de.jfricker.vokabeltrainer.data.GrammarItem
 import de.jfricker.vokabeltrainer.data.LearningPrefs
 import de.jfricker.vokabeltrainer.domain.Language
@@ -20,7 +21,14 @@ import de.jfricker.vokabeltrainer.data.local.SentenceEntity
 import de.jfricker.vokabeltrainer.data.local.WordEntity
 import de.jfricker.vokabeltrainer.domain.BuildItem
 import de.jfricker.vokabeltrainer.domain.CardItem
+import de.jfricker.vokabeltrainer.domain.AnswerCheck
 import de.jfricker.vokabeltrainer.domain.ClozeItem
+import de.jfricker.vokabeltrainer.domain.ConjItem
+import de.jfricker.vokabeltrainer.domain.Conjugation
+import de.jfricker.vokabeltrainer.domain.GapItem
+import de.jfricker.vokabeltrainer.domain.NumberDrill
+import de.jfricker.vokabeltrainer.domain.NumberItem
+import de.jfricker.vokabeltrainer.domain.Verb
 import de.jfricker.vokabeltrainer.domain.Exercises
 import de.jfricker.vokabeltrainer.domain.PracticeItem
 import de.jfricker.vokabeltrainer.domain.PracticeMode
@@ -84,6 +92,16 @@ class MainViewModel(
     fun words(lessonId: String): Flow<List<WordEntity>> = repository.observeWords(lessonId)
     fun sentences(lessonId: String): Flow<List<SentenceEntity>> = repository.observeSentences(lessonId)
     fun grammar(lessonId: String): Flow<List<GrammarItem>> = repository.observeGrammar(lessonId)
+    fun verbs(lessonId: String): Flow<List<Verb>> = repository.observeVerbs(lessonId)
+
+    /** Konjugation: eintippen (true) oder auswaehlen */
+    private val _conjTyping = MutableStateFlow(prefs.conjTyping)
+    val conjTyping: StateFlow<Boolean> = _conjTyping.asStateFlow()
+
+    fun setConjTyping(value: Boolean) {
+        prefs.conjTyping = value
+        _conjTyping.value = value
+    }
 
     fun setSlow(value: Boolean) {
         _slow.value = value
@@ -139,8 +157,32 @@ class MainViewModel(
     private val _stats = MutableStateFlow<Stats?>(null)
     val stats: StateFlow<Stats?> = _stats.asStateFlow()
 
+    /** Woerter, die bei den Karteikarten schon mal nicht gewusst wurden (fuer die Statistik) */
+    private val _difficult = MutableStateFlow<List<DifficultWord>>(emptyList())
+    val difficult: StateFlow<List<DifficultWord>> = _difficult.asStateFlow()
+
     fun loadStats() {
-        viewModelScope.launch { _stats.value = statsRepository.load() }
+        viewModelScope.launch {
+            _stats.value = statsRepository.load()
+            _difficult.value = practiceRepository.difficultWords()
+        }
+    }
+
+    /** Runde mit den schwierigen Woertern, die noch nicht sitzen. */
+    fun startDifficult() {
+        todayRun = false
+        practiceLessonId = null
+        _practice.value = null
+        viewModelScope.launch {
+            val items = practiceRepository.difficultSession()
+            queue.clear()
+            items.forEach { (item, mode) -> queue.addLast(QueueEntry(item, mode)) }
+            total = items.size
+            finishedItems = 0
+            correctFirst = 0
+            wrongFirst = 0
+            showNext()
+        }
     }
 
     fun setTargetDate(date: LocalDate) {
@@ -196,12 +238,14 @@ class MainViewModel(
         showNext()
     }
 
-    /** Antwort beim Lueckentext. */
+    /** Antwort beim Lueckentext und bei der Konjugation (Auswählen). */
     fun choose(index: Int) {
         val s = asking() ?: return
         if (s.result != null) return
         val (correct, sentence) = when (val item = s.item) {
             is ClozeItem -> (index == item.correctIndex) to item.sentence.text
+            is ConjItem -> (index == item.correctIndex) to item.spoken
+            is GapItem -> (index == item.correctIndex) to item.exercise.speak
             else -> return
         }
         grade(s, correct)
@@ -220,7 +264,31 @@ class MainViewModel(
         speak(item.sentence.text)
     }
 
-    /** Nach Lueckentext, Hoerverstehen oder Satzbau zur naechsten Aufgabe. */
+    /**
+     * Eingetippte Antwort pruefen (Konjugation, Verb im Satz, Plural, Zahlen hoeren).
+     * Fehlen nur Akzente, zaehlt es als richtig (mit Hinweis).
+     */
+    fun submitTyped(typed: String) {
+        val s = asking() ?: return
+        if (s.result != null || typed.isBlank()) return
+        val (check, spoken) = when (val item = s.item) {
+            is ConjItem -> Conjugation.check(item, typed) to item.spoken
+            is GapItem -> Conjugation.checkText(item.exercise.answer, typed) to item.exercise.speak
+            is NumberItem -> (if (NumberDrill.isCorrect(item, typed)) AnswerCheck.CORRECT else AnswerCheck.WRONG) to null
+            else -> return
+        }
+        val correct = check != AnswerCheck.WRONG
+        grade(s, correct)
+        _practice.value = s.copy(
+            result = correct,
+            revealed = true,
+            typed = typed.trim(),
+            accentHint = check == AnswerCheck.ACCENTS_MISSING,
+        )
+        spoken?.let { speak(it) }
+    }
+
+    /** Nach Lueckentext, Hoerverstehen, Satzbau oder Konjugation zur naechsten Aufgabe. */
     fun continuePractice() {
         val s = asking() ?: return
         if (s.result == null) return
@@ -290,6 +358,10 @@ sealed interface PracticeState {
         val chosen: Int? = null,
         /** null = noch nicht beantwortet */
         val result: Boolean? = null,
+        /** Konjugation: eingetippte Antwort */
+        val typed: String? = null,
+        /** Konjugation: richtig, aber ohne Akzente getippt */
+        val accentHint: Boolean = false,
     ) : PracticeState {
         val item: PracticeItem get() = entry.item
     }

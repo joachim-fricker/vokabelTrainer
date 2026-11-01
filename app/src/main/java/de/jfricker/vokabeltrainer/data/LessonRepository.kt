@@ -9,6 +9,9 @@ import de.jfricker.vokabeltrainer.data.local.LessonEntity
 import de.jfricker.vokabeltrainer.data.local.LessonSummary
 import de.jfricker.vokabeltrainer.data.local.SentenceEntity
 import de.jfricker.vokabeltrainer.data.local.SentenceWordEntity
+import de.jfricker.vokabeltrainer.data.local.VerbEntity
+import de.jfricker.vokabeltrainer.domain.Language
+import de.jfricker.vokabeltrainer.domain.Verb
 import de.jfricker.vokabeltrainer.data.local.WordEntity
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
@@ -39,6 +42,9 @@ class LessonRepository(private val context: Context, private val db: AppDatabase
     fun observeLesson(id: String): Flow<LessonEntity?> = dao.observeLesson(id)
     fun observeWords(lessonId: String): Flow<List<WordEntity>> = dao.observeWords(lessonId)
     fun observeSentences(lessonId: String): Flow<List<SentenceEntity>> = dao.observeSentences(lessonId)
+
+    fun observeVerbs(lessonId: String): Flow<List<Verb>> =
+        dao.observeVerbs(lessonId).map { list -> list.map(VerbJson::toVerb) }
 
     fun observeGrammar(lessonId: String): Flow<List<GrammarItem>> =
         dao.observeGrammar(lessonId).map { list ->
@@ -77,6 +83,20 @@ class LessonRepository(private val context: Context, private val db: AppDatabase
                     Log.e(TAG, "Import von $file fehlgeschlagen", e)
                     errors += "$language/$file: ${e.message}"
                 }
+            }
+        }
+        // Verben nach den Lektionen, weil Lektion und Uebersetzung vom Wort kommen.
+        // Wenige Zeilen: bei jedem Start komplett neu laden (Lernstand liegt in progress).
+        for (file in assets.list(VERB_DIR).orEmpty().filter { it.endsWith(".json") }.sorted()) {
+            try {
+                val content = assets.open("$VERB_DIR/$file").bufferedReader(Charsets.UTF_8).use { it.readText() }
+                val verbs = json.decodeFromString(VerbFileDto.serializer(), content)
+                errors += db.withTransaction { storeVerbs(verbs) }
+            } catch (e: CancellationException) {
+                throw e
+            } catch (e: Exception) {
+                Log.e(TAG, "Import von $VERB_DIR/$file fehlgeschlagen", e)
+                errors += "$VERB_DIR/$file: ${e.message}"
             }
         }
         Log.i(TAG, "Import: $imported neu/geaendert, $unchanged unveraendert, ${errors.size} Fehler")
@@ -121,6 +141,36 @@ class LessonRepository(private val context: Context, private val db: AppDatabase
         })
     }
 
+    /** Schreibt die Verben einer Sprache neu; liefert Probleme (unbekanntes Wort, falsche Anzahl Formen). */
+    private suspend fun storeVerbs(f: VerbFileDto): List<String> {
+        val lang = f.language
+        val persons = Language.fromCode(lang).persons.size
+        val words = dao.wordsOf(lang).associateBy { it.id }
+        val problems = mutableListOf<String>()
+        val entities = f.verbs.mapIndexedNotNull { i, v ->
+            val w = words[v.word]
+            val bad = v.forms.filterValues { it.size != persons }.keys
+            when {
+                w == null -> {
+                    problems += "$VERB_DIR/$lang: unbekanntes Wort ${v.word}"
+                    null
+                }
+                bad.isNotEmpty() -> {
+                    problems += "$VERB_DIR/$lang: ${v.word} braucht $persons Formen ($bad)"
+                    null
+                }
+                else -> VerbEntity(
+                    verbKey = wordKey(lang, v.word), id = v.word, language = lang, lessonId = w.lessonId,
+                    sortOrder = i, infinitive = w.text, de = w.de, note = v.note,
+                    formsJson = VerbJson.encodeForms(v.forms), irregular = v.irregular,
+                )
+            }
+        }
+        dao.deleteVerbs(lang)
+        dao.insertVerbs(entities)
+        return problems
+    }
+
     private fun wordKey(language: String, id: String) = "$language:$id"
 
     private fun sha1(text: String): String =
@@ -130,5 +180,6 @@ class LessonRepository(private val context: Context, private val db: AppDatabase
     companion object {
         private const val TAG = "LessonRepository"
         private const val LESSON_DIR = "lessons"
+        private const val VERB_DIR = "verbs"
     }
 }

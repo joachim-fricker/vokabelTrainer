@@ -42,6 +42,13 @@ class LearningPrefs(context: Context) {
             prefs.edit().putString(KEY_YOUTUBE, value).apply()
         }
 
+    /** Konjugation: Form eintippen (true) oder aus vier Moeglichkeiten auswaehlen. Gilt fuer alle Sprachen. */
+    var conjTyping: Boolean
+        get() = prefs.getBoolean(KEY_CONJ_TYPING, true)
+        set(value) {
+            prefs.edit().putBoolean(KEY_CONJ_TYPING, value).apply()
+        }
+
     /** Wie viele neue Woerter/Saetze heute in der aktuellen Sprache schon dazugekommen sind. */
     fun countToday(kind: String): Int {
         val today = LocalDate.now().toEpochDay()
@@ -60,6 +67,11 @@ class LearningPrefs(context: Context) {
         val DEFAULT_TARGET: LocalDate = LocalDate.of(2026, 12, 1)
         const val NEW_WORDS = "newWords"
         const val NEW_SENTENCES = "newSentences"
+        const val NEW_CONJ = "newConj"
+        const val DICTATIONS = "dictations"
+        const val NUMBERS = "numbers"
+        const val NEW_GRAMMAR = "newGrammar"
+        private const val KEY_CONJ_TYPING = "conjTyping"
         private const val KEY_TARGET = "targetDate"
         private const val KEY_YOUTUBE = "youtubeApiKey"
         private const val KEY_LANGUAGE = "language"
