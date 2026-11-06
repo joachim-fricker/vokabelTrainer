@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Einfarbige Variante fuer "Designte Symbole" (Android 13+): Balken als Aussparung in der Sprechblase -->
+<!-- Einfarbige Variante fuer "Designte Symbole" (Android 13+): Sprechblase als Umriss, JF und Klangbalken -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <path android:fillColor="#FF000000" android:fillType="evenOdd" android:pathData="M38,30 H70 A10,10 0 0 1 80,40 V62 A10,10 0 0 1 70,72 H50 L37,82 L40,72 H38 A10,10 0 0 1 28,62 V40 A10,10 0 0 1 38,30 Z M40.0,47 a2.5,2.5 0 0 1 2.5,2.5 v3 a2.5,2.5 0 0 1 -5,0 v-3 a2.5,2.5 0 0 1 2.5,-2.5 Z M48.0,43 a2.5,2.5 0 0 1 2.5,2.5 v11 a2.5,2.5 0 0 1 -5,0 v-11 a2.5,2.5 0 0 1 2.5,-2.5 Z M56.0,39 a2.5,2.5 0 0 1 2.5,2.5 v19 a2.5,2.5 0 0 1 -5,0 v-19 a2.5,2.5 0 0 1 2.5,-2.5 Z M64.0,43 a2.5,2.5 0 0 1 2.5,2.5 v11 a2.5,2.5 0 0 1 -5,0 v-11 a2.5,2.5 0 0 1 2.5,-2.5 Z M72.0,47 a2.5,2.5 0 0 1 2.5,2.5 v3 a2.5,2.5 0 0 1 -5,0 v-3 a2.5,2.5 0 0 1 2.5,-2.5 Z" />
+    <path
+        android:pathData="M38,30 H70 A10,10 0 0 1 80,40 V62 A10,10 0 0 1 70,72 H50 L37,82 L40,72 H38 A10,10 0 0 1 28,62 V40 A10,10 0 0 1 38,30 Z"
+        android:strokeWidth="3.5"
+        android:strokeColor="#FF000000"
+        android:strokeLineJoin="round" />
+    <path android:fillColor="#FF000000" android:pathData="M40,58 a2,2 0 0 1 2,2 v3 a2,2 0 0 1 -4,0 v-3 a2,2 0 0 1 2,-2 Z M47,56 a2,2 0 0 1 2,2 v7 a2,2 0 0 1 -4,0 v-7 a2,2 0 0 1 2,-2 Z M54,54 a2,2 0 0 1 2,2 v11 a2,2 0 0 1 -4,0 v-11 a2,2 0 0 1 2,-2 Z M61,56 a2,2 0 0 1 2,2 v7 a2,2 0 0 1 -4,0 v-7 a2,2 0 0 1 2,-2 Z M68,58 a2,2 0 0 1 2,2 v3 a2,2 0 0 1 -4,0 v-3 a2,2 0 0 1 2,-2 Z" />
+    <!-- J -->
+    <path
+        android:pathData="M42.8,36 H50.8 M48.4,36 V46.4 Q48.4,52 43.2,52 Q39.6,52 38.8,48.8"
+        android:strokeWidth="4"
+        android:strokeColor="#FF000000"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <!-- F -->
+    <path
+        android:pathData="M68.4,36 H58 V52 M58,43.6 H66.8"
+        android:strokeWidth="4"
+        android:strokeColor="#FF000000"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
 </vector>
