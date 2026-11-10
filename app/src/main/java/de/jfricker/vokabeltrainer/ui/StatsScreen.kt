@@ -124,7 +124,7 @@ fun StatsScreen(vm: MainViewModel, onBack: () -> Unit, onPracticeDifficult: () -
                 }
             }
             item {
-                Text(
+                ExplanationText(
                     "„Sicher“ heisst: ${language.displayName} → Deutsch mindestens in Fach 3, " +
                         "also an mehreren Tagen hintereinander gewusst.",
                     style = MaterialTheme.typography.bodySmall,
@@ -142,7 +142,7 @@ private fun DifficultHeader(words: List<DifficultWord>, onPractice: () -> Unit) 
     val open = words.count { !it.settled }
     Column(Modifier.padding(top = 8.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
         Text("Schwierige Wörter", style = MaterialTheme.typography.titleMedium)
-        Text(
+        ExplanationText(
             if (words.isEmpty()) "Bisher hast du bei den Karteikarten noch kein Wort falsch gehabt. 👍"
             else "Wörter, die du bei den Karteikarten mindestens einmal nicht gewusst hast – " +
                 "die häufigsten Fehler oben. Antippen spielt das Wort ab.",
@@ -165,7 +165,7 @@ private fun DifficultRow(d: DifficultWord, onSpeak: () -> Unit) {
                 Text(displayText(d.word), style = MaterialTheme.typography.titleMedium)
                 Text(d.word.de, style = MaterialTheme.typography.bodyMedium)
                 d.word.note?.let {
-                    Text(
+                    ExplanationText(
                         it,
                         style = MaterialTheme.typography.bodySmall,
                         fontStyle = FontStyle.Italic,

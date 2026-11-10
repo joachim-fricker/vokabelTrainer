@@ -301,7 +301,7 @@ private fun RolePlayPrompt(vm: DialogueViewModel, line: DialogueLine, s: RolePla
                     Button(onClick = { vm.reveal() }, modifier = Modifier.fillMaxWidth()) { Text("Lösung zeigen") }
                 } else {
                     Text(line.text, style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.primary)
-                    if (line.note.isNotEmpty()) Text("💡 ${line.note}", style = MaterialTheme.typography.bodySmall)
+                    if (line.note.isNotEmpty()) ExplanationText("💡 ${line.note}", style = MaterialTheme.typography.bodySmall)
                     Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                         OutlinedButton(onClick = { vm.selfGrade(false) }, modifier = Modifier.weight(1f)) { Text("✗ Nicht gewusst") }
                         Button(onClick = { vm.selfGrade(true) }, modifier = Modifier.weight(1f)) { Text("✓ Gewusst") }
@@ -330,7 +330,7 @@ private fun RolePlayPrompt(vm: DialogueViewModel, line: DialogueLine, s: RolePla
                     }
                 }
                 if (answered) {
-                    if (line.note.isNotEmpty()) Text("💡 ${line.note}", style = MaterialTheme.typography.bodySmall)
+                    if (line.note.isNotEmpty()) ExplanationText("💡 ${line.note}", style = MaterialTheme.typography.bodySmall)
                     Button(onClick = { vm.next() }, modifier = Modifier.fillMaxWidth()) { Text("Weiter") }
                 }
             }
@@ -385,7 +385,7 @@ private fun LineBubble(
                 Text(line.text, style = MaterialTheme.typography.bodyLarge)
                 if (showDe) {
                     Text(line.de, style = MaterialTheme.typography.bodyMedium, fontStyle = FontStyle.Italic)
-                    if (line.note.isNotEmpty()) Text("💡 ${line.note}", style = MaterialTheme.typography.bodySmall)
+                    if (line.note.isNotEmpty()) ExplanationText("💡 ${line.note}", style = MaterialTheme.typography.bodySmall)
                 }
             }
         }

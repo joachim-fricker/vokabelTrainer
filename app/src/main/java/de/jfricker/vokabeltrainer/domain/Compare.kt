@@ -1,5 +1,7 @@
 package de.jfricker.vokabeltrainer.domain
 
+import kotlin.random.Random
+
 /** Gruppen im Sprachvergleich Portugiesisch <-> Spanisch (assets/compare/pairs.json). */
 enum class PairKind(val code: String, val title: String, val description: String) {
     DIFFERENT(
@@ -37,6 +39,56 @@ data class SoundPattern(val id: String, val title: String, val explanation: Stri
 
 /** Gleiches (oder fast gleiches) Wort mit verschiedener Bedeutung; key "f:<pt>" */
 data class FalseFriend(val key: String, val pt: String, val ptDe: String, val es: String, val esDe: String, val note: String)
+
+// ---------------------------------------------------------------- Konjugation regelmaessiger Verben
+
+/** Zeile der Konjugationstabelle nach deutscher Person; Index = Position der Form in den Verbtabellen */
+data class VerbPerson(val de: String, val pt: String, val ptIndex: Int, val es: String, val esIndex: Int)
+
+data class VerbTense(val id: String, val title: String, val pt: String, val es: String)
+
+/** Regelmaessiges Verb in beiden Sprachen (gleiche Klasse), Formen je Zeit ("pres", "past") */
+data class VerbPair(
+    val de: String,
+    val pt: String,
+    val es: String,
+    val ptForms: Map<String, List<String>>,
+    val esForms: Map<String, List<String>>,
+) {
+    fun ptForm(tense: String, p: VerbPerson): String? = ptForms[tense]?.getOrNull(p.ptIndex)?.let { "${p.pt} $it" }
+    fun esForm(tense: String, p: VerbPerson): String? = esForms[tense]?.getOrNull(p.esIndex)?.let { "${p.es} $it" }
+}
+
+/** -ar / -er / -ir; das erste Verb ist das Beispiel */
+data class VerbClass(val id: String, val title: String, val verbs: List<VerbPair>)
+
+data class VerbSection(
+    val persons: List<VerbPerson>,
+    val tenses: List<VerbTense>,
+    val notes: List<String>,
+    val classes: List<VerbClass>,
+) {
+    /**
+     * Karten "beide konjugieren": eine pro Klasse x Zeit x Person (Lernstand pro Endung wie im
+     * Konjugationstrainer), jedes Mal mit einem zufaelligen Verb der Klasse.
+     */
+    fun cards(random: Random = Random): List<CompareCard> = classes.flatMap { cls ->
+        tenses.flatMap { tense ->
+            persons.mapIndexedNotNull { i, person ->
+                val verb = cls.verbs.randomOrNull(random) ?: return@mapIndexedNotNull null
+                val pt = verb.ptForm(tense.id, person) ?: return@mapIndexedNotNull null
+                val es = verb.esForm(tense.id, person) ?: return@mapIndexedNotNull null
+                CompareCard(
+                    key = "v:${cls.id}:${tense.id}:$i",
+                    question = "Konjugiere auf Portugiesisch und auf Spanisch – ${tense.title}:",
+                    prompt = "${person.de} · ${verb.de}",
+                    answers = listOf(CardAnswer(Language.PT_BR, pt, pt), CardAnswer(Language.ES_AR, es, es)),
+                    note = "${verb.pt} / ${verb.es} · regelmässig ${cls.title}",
+                )
+            }
+        }
+    }
+}
 
 /** Eine Antwort auf der Karte: Text (fuer die Anzeige) und was in welcher Sprache vorgelesen wird. */
 data class CardAnswer(val language: Language, val text: String, val speak: String)

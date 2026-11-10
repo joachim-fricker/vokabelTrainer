@@ -5221,5 +5221,1136 @@
    "esDe": "die Tasse",
    "note": "Tasse auf Portugiesisch: a xícara"
   }
- ]
+ ],
+ "verbs": {
+  "persons": [
+   {
+    "de": "ich",
+    "pt": "eu",
+    "ptIndex": 0,
+    "es": "yo",
+    "esIndex": 0
+   },
+   {
+    "de": "du",
+    "pt": "você",
+    "ptIndex": 1,
+    "es": "vos",
+    "esIndex": 1
+   },
+   {
+    "de": "er / sie / Sie",
+    "pt": "ele",
+    "ptIndex": 1,
+    "es": "él",
+    "esIndex": 2
+   },
+   {
+    "de": "wir",
+    "pt": "nós",
+    "ptIndex": 2,
+    "es": "nosotros",
+    "esIndex": 3
+   },
+   {
+    "de": "ihr / sie",
+    "pt": "vocês",
+    "ptIndex": 3,
+    "es": "ustedes",
+    "esIndex": 4
+   }
+  ],
+  "tenses": [
+   {
+    "id": "pres",
+    "title": "Präsens",
+    "pt": "presente",
+    "es": "presente"
+   },
+   {
+    "id": "past",
+    "title": "Vergangenheit",
+    "pt": "pretérito perfeito",
+    "es": "pretérito indefinido"
+   }
+  ],
+  "notes": [
+   "du: Portugiesisch (Brasilien) nimmt für você die Form von ele (você fala). Spanisch (Argentinien) hat für vos eine eigene, betonte Form (vos hablás, comés, abrís).",
+   "ihr / sie: Portugiesisch -am / -em (falam, comem), Spanisch -an / -en (hablan, comen).",
+   "Vergangenheit ich: Portugiesisch -ei / -i (falei, comi), Spanisch mit Akzent -é / -í (hablé, comí).",
+   "Vergangenheit er / sie: Portugiesisch -ou / -eu / -iu (falou, comeu, abriu), Spanisch -ó / -ió (habló, comió, abrió).",
+   "Vergangenheit du: você falou, aber vos hablaste (wie tú).",
+   "wir: In beiden Sprachen sind Präsens und Vergangenheit meist gleich (falamos / hablamos) – nur Spanisch -er: comemos / comimos."
+  ],
+  "classes": [
+   {
+    "id": "ar",
+    "title": "-ar",
+    "verbs": [
+     {
+      "de": "sprechen",
+      "pt": "falar",
+      "es": "hablar",
+      "ptForms": {
+       "pres": [
+        "falo",
+        "fala",
+        "falamos",
+        "falam"
+       ],
+       "past": [
+        "falei",
+        "falou",
+        "falamos",
+        "falaram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "hablo",
+        "hablás",
+        "habla",
+        "hablamos",
+        "hablan"
+       ],
+       "past": [
+        "hablé",
+        "hablaste",
+        "habló",
+        "hablamos",
+        "hablaron"
+       ]
+      }
+     },
+     {
+      "de": "bezahlen",
+      "pt": "pagar",
+      "es": "pagar",
+      "ptForms": {
+       "pres": [
+        "pago",
+        "paga",
+        "pagamos",
+        "pagam"
+       ],
+       "past": [
+        "paguei",
+        "pagou",
+        "pagamos",
+        "pagaram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "pago",
+        "pagás",
+        "paga",
+        "pagamos",
+        "pagan"
+       ],
+       "past": [
+        "pagué",
+        "pagaste",
+        "pagó",
+        "pagamos",
+        "pagaron"
+       ]
+      }
+     },
+     {
+      "de": "reservieren",
+      "pt": "reservar",
+      "es": "reservar",
+      "ptForms": {
+       "pres": [
+        "reservo",
+        "reserva",
+        "reservamos",
+        "reservam"
+       ],
+       "past": [
+        "reservei",
+        "reservou",
+        "reservamos",
+        "reservaram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "reservo",
+        "reservás",
+        "reserva",
+        "reservamos",
+        "reservan"
+       ],
+       "past": [
+        "reservé",
+        "reservaste",
+        "reservó",
+        "reservamos",
+        "reservaron"
+       ]
+      }
+     },
+     {
+      "de": "bestätigen",
+      "pt": "confirmar",
+      "es": "confirmar",
+      "ptForms": {
+       "pres": [
+        "confirmo",
+        "confirma",
+        "confirmamos",
+        "confirmam"
+       ],
+       "past": [
+        "confirmei",
+        "confirmou",
+        "confirmamos",
+        "confirmaram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "confirmo",
+        "confirmás",
+        "confirma",
+        "confirmamos",
+        "confirman"
+       ],
+       "past": [
+        "confirmé",
+        "confirmaste",
+        "confirmó",
+        "confirmamos",
+        "confirmaron"
+       ]
+      }
+     },
+     {
+      "de": "wechseln",
+      "pt": "trocar",
+      "es": "cambiar",
+      "ptForms": {
+       "pres": [
+        "troco",
+        "troca",
+        "trocamos",
+        "trocam"
+       ],
+       "past": [
+        "troquei",
+        "trocou",
+        "trocamos",
+        "trocaram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "cambio",
+        "cambiás",
+        "cambia",
+        "cambiamos",
+        "cambian"
+       ],
+       "past": [
+        "cambié",
+        "cambiaste",
+        "cambió",
+        "cambiamos",
+        "cambiaron"
+       ]
+      }
+     },
+     {
+      "de": "brauchen",
+      "pt": "precisar",
+      "es": "necesitar",
+      "ptForms": {
+       "pres": [
+        "preciso",
+        "precisa",
+        "precisamos",
+        "precisam"
+       ],
+       "past": [
+        "precisei",
+        "precisou",
+        "precisamos",
+        "precisaram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "necesito",
+        "necesitás",
+        "necesita",
+        "necesitamos",
+        "necesitan"
+       ],
+       "past": [
+        "necesité",
+        "necesitaste",
+        "necesitó",
+        "necesitamos",
+        "necesitaron"
+       ]
+      }
+     },
+     {
+      "de": "ankommen",
+      "pt": "chegar",
+      "es": "llegar",
+      "ptForms": {
+       "pres": [
+        "chego",
+        "chega",
+        "chegamos",
+        "chegam"
+       ],
+       "past": [
+        "cheguei",
+        "chegou",
+        "chegamos",
+        "chegaram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "llego",
+        "llegás",
+        "llega",
+        "llegamos",
+        "llegan"
+       ],
+       "past": [
+        "llegué",
+        "llegaste",
+        "llegó",
+        "llegamos",
+        "llegaron"
+       ]
+      }
+     },
+     {
+      "de": "mieten",
+      "pt": "alugar",
+      "es": "alquilar",
+      "ptForms": {
+       "pres": [
+        "alugo",
+        "aluga",
+        "alugamos",
+        "alugam"
+       ],
+       "past": [
+        "aluguei",
+        "alugou",
+        "alugamos",
+        "alugaram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "alquilo",
+        "alquilás",
+        "alquila",
+        "alquilamos",
+        "alquilan"
+       ],
+       "past": [
+        "alquilé",
+        "alquilaste",
+        "alquiló",
+        "alquilamos",
+        "alquilaron"
+       ]
+      }
+     },
+     {
+      "de": "nehmen",
+      "pt": "pegar",
+      "es": "llevar",
+      "ptForms": {
+       "pres": [
+        "pego",
+        "pega",
+        "pegamos",
+        "pegam"
+       ],
+       "past": [
+        "peguei",
+        "pegou",
+        "pegamos",
+        "pegaram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "llevo",
+        "llevás",
+        "lleva",
+        "llevamos",
+        "llevan"
+       ],
+       "past": [
+        "llevé",
+        "llevaste",
+        "llevó",
+        "llevamos",
+        "llevaron"
+       ]
+      }
+     },
+     {
+      "de": "warten",
+      "pt": "esperar",
+      "es": "esperar",
+      "ptForms": {
+       "pres": [
+        "espero",
+        "espera",
+        "esperamos",
+        "esperam"
+       ],
+       "past": [
+        "esperei",
+        "esperou",
+        "esperamos",
+        "esperaram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "espero",
+        "esperás",
+        "espera",
+        "esperamos",
+        "esperan"
+       ],
+       "past": [
+        "esperé",
+        "esperaste",
+        "esperó",
+        "esperamos",
+        "esperaron"
+       ]
+      }
+     },
+     {
+      "de": "kaufen",
+      "pt": "comprar",
+      "es": "comprar",
+      "ptForms": {
+       "pres": [
+        "compro",
+        "compra",
+        "compramos",
+        "compram"
+       ],
+       "past": [
+        "comprei",
+        "comprou",
+        "compramos",
+        "compraram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "compro",
+        "comprás",
+        "compra",
+        "compramos",
+        "compran"
+       ],
+       "past": [
+        "compré",
+        "compraste",
+        "compró",
+        "compramos",
+        "compraron"
+       ]
+      }
+     },
+     {
+      "de": "suchen",
+      "pt": "procurar",
+      "es": "buscar",
+      "ptForms": {
+       "pres": [
+        "procuro",
+        "procura",
+        "procuramos",
+        "procuram"
+       ],
+       "past": [
+        "procurei",
+        "procurou",
+        "procuramos",
+        "procuraram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "busco",
+        "buscás",
+        "busca",
+        "buscamos",
+        "buscan"
+       ],
+       "past": [
+        "busqué",
+        "buscaste",
+        "buscó",
+        "buscamos",
+        "buscaron"
+       ]
+      }
+     },
+     {
+      "de": "stehlen",
+      "pt": "roubar",
+      "es": "robar",
+      "ptForms": {
+       "pres": [
+        "roubo",
+        "rouba",
+        "roubamos",
+        "roubam"
+       ],
+       "past": [
+        "roubei",
+        "roubou",
+        "roubamos",
+        "roubaram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "robo",
+        "robás",
+        "roba",
+        "robamos",
+        "roban"
+       ],
+       "past": [
+        "robé",
+        "robaste",
+        "robó",
+        "robamos",
+        "robaron"
+       ]
+      }
+     },
+     {
+      "de": "rufen",
+      "pt": "chamar",
+      "es": "llamar",
+      "ptForms": {
+       "pres": [
+        "chamo",
+        "chama",
+        "chamamos",
+        "chamam"
+       ],
+       "past": [
+        "chamei",
+        "chamou",
+        "chamamos",
+        "chamaram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "llamo",
+        "llamás",
+        "llama",
+        "llamamos",
+        "llaman"
+       ],
+       "past": [
+        "llamé",
+        "llamaste",
+        "llamó",
+        "llamamos",
+        "llamaron"
+       ]
+      }
+     },
+     {
+      "de": "arbeiten",
+      "pt": "trabalhar",
+      "es": "trabajar",
+      "ptForms": {
+       "pres": [
+        "trabalho",
+        "trabalha",
+        "trabalhamos",
+        "trabalham"
+       ],
+       "past": [
+        "trabalhei",
+        "trabalhou",
+        "trabalhamos",
+        "trabalharam"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "trabajo",
+        "trabajás",
+        "trabaja",
+        "trabajamos",
+        "trabajan"
+       ],
+       "past": [
+        "trabajé",
+        "trabajaste",
+        "trabajó",
+        "trabajamos",
+        "trabajaron"
+       ]
+      }
+     },
+     {
+      "de": "studieren; lernen",
+      "pt": "estudar",
+      "es": "estudiar",
+      "ptForms": {
+       "pres": [
+        "estudo",
+        "estuda",
+        "estudamos",
+        "estudam"
+       ],
+       "past": [
+        "estudei",
+        "estudou",
+        "estudamos",
+        "estudaram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "estudio",
+        "estudiás",
+        "estudia",
+        "estudiamos",
+        "estudian"
+       ],
+       "past": [
+        "estudié",
+        "estudiaste",
+        "estudió",
+        "estudiamos",
+        "estudiaron"
+       ]
+      }
+     },
+     {
+      "de": "schwimmen",
+      "pt": "nadar",
+      "es": "nadar",
+      "ptForms": {
+       "pres": [
+        "nado",
+        "nada",
+        "nadamos",
+        "nadam"
+       ],
+       "past": [
+        "nadei",
+        "nadou",
+        "nadamos",
+        "nadaram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "nado",
+        "nadás",
+        "nada",
+        "nadamos",
+        "nadan"
+       ],
+       "past": [
+        "nadé",
+        "nadaste",
+        "nadó",
+        "nadamos",
+        "nadaron"
+       ]
+      }
+     },
+     {
+      "de": "sich ausruhen",
+      "pt": "descansar",
+      "es": "descansar",
+      "ptForms": {
+       "pres": [
+        "descanso",
+        "descansa",
+        "descansamos",
+        "descansam"
+       ],
+       "past": [
+        "descansei",
+        "descansou",
+        "descansamos",
+        "descansaram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "descanso",
+        "descansás",
+        "descansa",
+        "descansamos",
+        "descansan"
+       ],
+       "past": [
+        "descansé",
+        "descansaste",
+        "descansó",
+        "descansamos",
+        "descansaron"
+       ]
+      }
+     },
+     {
+      "de": "tanzen",
+      "pt": "dançar",
+      "es": "bailar",
+      "ptForms": {
+       "pres": [
+        "danço",
+        "dança",
+        "dançamos",
+        "dançam"
+       ],
+       "past": [
+        "dancei",
+        "dançou",
+        "dançamos",
+        "dançaram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "bailo",
+        "bailás",
+        "baila",
+        "bailamos",
+        "bailan"
+       ],
+       "past": [
+        "bailé",
+        "bailaste",
+        "bailó",
+        "bailamos",
+        "bailaron"
+       ]
+      }
+     },
+     {
+      "de": "kochen",
+      "pt": "cozinhar",
+      "es": "cocinar",
+      "ptForms": {
+       "pres": [
+        "cozinho",
+        "cozinha",
+        "cozinhamos",
+        "cozinham"
+       ],
+       "past": [
+        "cozinhei",
+        "cozinhou",
+        "cozinhamos",
+        "cozinharam"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "cocino",
+        "cocinás",
+        "cocina",
+        "cocinamos",
+        "cocinan"
+       ],
+       "past": [
+        "cociné",
+        "cocinaste",
+        "cocinó",
+        "cocinamos",
+        "cocinaron"
+       ]
+      }
+     },
+     {
+      "de": "putzen",
+      "pt": "limpar",
+      "es": "limpiar",
+      "ptForms": {
+       "pres": [
+        "limpo",
+        "limpa",
+        "limpamos",
+        "limpam"
+       ],
+       "past": [
+        "limpei",
+        "limpou",
+        "limpamos",
+        "limparam"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "limpio",
+        "limpiás",
+        "limpia",
+        "limpiamos",
+        "limpian"
+       ],
+       "past": [
+        "limpié",
+        "limpiaste",
+        "limpió",
+        "limpiamos",
+        "limpiaron"
+       ]
+      }
+     },
+     {
+      "de": "waschen",
+      "pt": "lavar",
+      "es": "lavar",
+      "ptForms": {
+       "pres": [
+        "lavo",
+        "lava",
+        "lavamos",
+        "lavam"
+       ],
+       "past": [
+        "lavei",
+        "lavou",
+        "lavamos",
+        "lavaram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "lavo",
+        "lavás",
+        "lava",
+        "lavamos",
+        "lavan"
+       ],
+       "past": [
+        "lavé",
+        "lavaste",
+        "lavó",
+        "lavamos",
+        "lavaron"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "er",
+    "title": "-er",
+    "verbs": [
+     {
+      "de": "essen",
+      "pt": "comer",
+      "es": "comer",
+      "ptForms": {
+       "pres": [
+        "como",
+        "come",
+        "comemos",
+        "comem"
+       ],
+       "past": [
+        "comi",
+        "comeu",
+        "comemos",
+        "comeram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "como",
+        "comés",
+        "come",
+        "comemos",
+        "comen"
+       ],
+       "past": [
+        "comí",
+        "comiste",
+        "comió",
+        "comimos",
+        "comieron"
+       ]
+      }
+     },
+     {
+      "de": "verkaufen",
+      "pt": "vender",
+      "es": "vender",
+      "ptForms": {
+       "pres": [
+        "vendo",
+        "vende",
+        "vendemos",
+        "vendem"
+       ],
+       "past": [
+        "vendi",
+        "vendeu",
+        "vendemos",
+        "venderam"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "vendo",
+        "vendés",
+        "vende",
+        "vendemos",
+        "venden"
+       ],
+       "past": [
+        "vendí",
+        "vendiste",
+        "vendió",
+        "vendimos",
+        "vendieron"
+       ]
+      }
+     },
+     {
+      "de": "lernen",
+      "pt": "aprender",
+      "es": "aprender",
+      "ptForms": {
+       "pres": [
+        "aprendo",
+        "aprende",
+        "aprendemos",
+        "aprendem"
+       ],
+       "past": [
+        "aprendi",
+        "aprendeu",
+        "aprendemos",
+        "aprenderam"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "aprendo",
+        "aprendés",
+        "aprende",
+        "aprendemos",
+        "aprenden"
+       ],
+       "past": [
+        "aprendí",
+        "aprendiste",
+        "aprendió",
+        "aprendimos",
+        "aprendieron"
+       ]
+      }
+     },
+     {
+      "de": "rennen",
+      "pt": "correr",
+      "es": "correr",
+      "ptForms": {
+       "pres": [
+        "corro",
+        "corre",
+        "corremos",
+        "correm"
+       ],
+       "past": [
+        "corri",
+        "correu",
+        "corremos",
+        "correram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "corro",
+        "corrés",
+        "corre",
+        "corremos",
+        "corren"
+       ],
+       "past": [
+        "corrí",
+        "corriste",
+        "corrió",
+        "corrimos",
+        "corrieron"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "ir",
+    "title": "-ir",
+    "verbs": [
+     {
+      "de": "öffnen",
+      "pt": "abrir",
+      "es": "abrir",
+      "ptForms": {
+       "pres": [
+        "abro",
+        "abre",
+        "abrimos",
+        "abrem"
+       ],
+       "past": [
+        "abri",
+        "abriu",
+        "abrimos",
+        "abriram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "abro",
+        "abrís",
+        "abre",
+        "abrimos",
+        "abren"
+       ],
+       "past": [
+        "abrí",
+        "abriste",
+        "abrió",
+        "abrimos",
+        "abrieron"
+       ]
+      }
+     },
+     {
+      "de": "abfahren",
+      "pt": "partir",
+      "es": "partir",
+      "ptForms": {
+       "pres": [
+        "parto",
+        "parte",
+        "partimos",
+        "partem"
+       ],
+       "past": [
+        "parti",
+        "partiu",
+        "partimos",
+        "partiram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "parto",
+        "partís",
+        "parte",
+        "partimos",
+        "parten"
+       ],
+       "past": [
+        "partí",
+        "partiste",
+        "partió",
+        "partimos",
+        "partieron"
+       ]
+      }
+     },
+     {
+      "de": "entscheiden",
+      "pt": "decidir",
+      "es": "decidir",
+      "ptForms": {
+       "pres": [
+        "decido",
+        "decide",
+        "decidimos",
+        "decidem"
+       ],
+       "past": [
+        "decidi",
+        "decidiu",
+        "decidimos",
+        "decidiram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "decido",
+        "decidís",
+        "decide",
+        "decidimos",
+        "deciden"
+       ],
+       "past": [
+        "decidí",
+        "decidiste",
+        "decidió",
+        "decidimos",
+        "decidieron"
+       ]
+      }
+     },
+     {
+      "de": "diskutieren",
+      "pt": "discutir",
+      "es": "discutir",
+      "ptForms": {
+       "pres": [
+        "discuto",
+        "discute",
+        "discutimos",
+        "discutem"
+       ],
+       "past": [
+        "discuti",
+        "discutiu",
+        "discutimos",
+        "discutiram"
+       ]
+      },
+      "esForms": {
+       "pres": [
+        "discuto",
+        "discutís",
+        "discute",
+        "discutimos",
+        "discuten"
+       ],
+       "past": [
+        "discutí",
+        "discutiste",
+        "discutió",
+        "discutimos",
+        "discutieron"
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ }
 }

@@ -19,9 +19,13 @@ import unicodedata
 
 from false_friends import FALSE_FRIENDS
 
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "verbs"))
+import conj  # noqa: E402  (Regeln fuer regelmaessige Verben)
+
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 LESSONS = os.path.join(ROOT, "app", "src", "main", "assets", "lessons")
 OUT = os.path.join(ROOT, "app", "src", "main", "assets", "compare", "pairs.json")
+VERBS = os.path.join(ROOT, "app", "src", "main", "assets", "verbs")
 
 # (pt-Wort-ID, es-Wort-ID) -> Gruppe
 OVERRIDES = {
@@ -54,6 +58,77 @@ PATTERNS = [
     ("mn", "-m → -n", "Portugiesisch endet oft auf -m (Nasal), Spanisch auf -n."),
     ("nl", "n/l fällt weg", "Zwischen Vokalen fällt im Portugiesischen oft ein n oder l weg, das das Spanische behalten hat."),
 ]
+
+# ------------------------------------------------------------ Konjugation regelmaessiger Verben
+
+# Zeilen nach deutscher Person; Index = Position der Form in den Verbtabellen
+VERB_PERSONS = [
+    {"de": "ich", "pt": "eu", "ptIndex": 0, "es": "yo", "esIndex": 0},
+    {"de": "du", "pt": "você", "ptIndex": 1, "es": "vos", "esIndex": 1},
+    {"de": "er / sie / Sie", "pt": "ele", "ptIndex": 1, "es": "él", "esIndex": 2},
+    {"de": "wir", "pt": "nós", "ptIndex": 2, "es": "nosotros", "esIndex": 3},
+    {"de": "ihr / sie", "pt": "vocês", "ptIndex": 3, "es": "ustedes", "esIndex": 4},
+]
+VERB_TENSES = [
+    {"id": "pres", "title": "Präsens", "pt": "presente", "es": "presente"},
+    {"id": "past", "title": "Vergangenheit", "pt": "pretérito perfeito", "es": "pretérito indefinido"},
+]
+# Beispiele, die (noch) nicht in den Lektionen stehen, damit jede Klasse genug Verben hat (Formen nach Regeln)
+EXTRA_VERBS = [
+    ("aprender", "aprender", "lernen"),
+    ("correr", "correr", "rennen"),
+    ("abrir", "abrir", "öffnen"),
+    ("partir", "partir", "abfahren"),
+    ("decidir", "decidir", "entscheiden"),
+    ("discutir", "discutir", "diskutieren"),
+]
+# Beispielverb je Klasse (erstes in der Liste)
+VERB_EXAMPLES = {"ar": "falar", "er": "comer", "ir": "abrir"}
+VERB_NOTES = [
+    "du: Portugiesisch (Brasilien) nimmt für você die Form von ele (você fala). "
+    "Spanisch (Argentinien) hat für vos eine eigene, betonte Form (vos hablás, comés, abrís).",
+    "ihr / sie: Portugiesisch -am / -em (falam, comem), Spanisch -an / -en (hablan, comen).",
+    "Vergangenheit ich: Portugiesisch -ei / -i (falei, comi), Spanisch mit Akzent -é / -í (hablé, comí).",
+    "Vergangenheit er / sie: Portugiesisch -ou / -eu / -iu (falou, comeu, abriu), Spanisch -ó / -ió (habló, comió, abrió).",
+    "Vergangenheit du: você falou, aber vos hablaste (wie tú).",
+    "wir: In beiden Sprachen sind Präsens und Vergangenheit meist gleich (falamos / hablamos) – nur Spanisch -er: comemos / comimos.",
+]
+
+
+def verb_section(pairs):
+    def load_forms(lang):
+        with open(os.path.join(VERBS, f"{lang}.json"), encoding="utf-8") as fh:
+            return {v["word"]: v for v in json.load(fh)["verbs"]}
+
+    ptv, esv = load_forms("pt-BR"), load_forms("es-AR")
+    classes = {"ar": [], "er": [], "ir": []}
+    seen = set()
+    for p in pairs:
+        a, b = ptv.get(p["pt"]), esv.get(p["es"])
+        if not a or not b or a.get("irregular") or b.get("irregular"):
+            continue
+        pt_inf = p["ptText"].split(" ")[0]
+        es_inf = p["esText"].split(" ")[0]
+        if pt_inf[-2:] != es_inf[-2:] or pt_inf[-2:] not in classes:
+            continue  # nur gleiche Klasse (morar/vivir passt nicht zum Vergleich der Endungen)
+        if any(" " in f for f in b["forms"]["pres"] + b["forms"]["past"]):
+            continue  # reflexiv (me quedo)
+        seen.add(pt_inf)
+        classes[pt_inf[-2:]].append({"de": p["de"], "pt": pt_inf, "es": es_inf,
+                                     "ptForms": a["forms"], "esForms": b["forms"]})
+    for pt_inf, es_inf, de in EXTRA_VERBS:
+        if pt_inf in seen:
+            continue
+        pp, ppast = conj.pt_regular(pt_inf)
+        ep, epast = conj.es_regular(es_inf)
+        classes[pt_inf[-2:]].append({"de": de, "pt": pt_inf, "es": es_inf,
+                                     "ptForms": {"pres": pp, "past": ppast}, "esForms": {"pres": ep, "past": epast}})
+    out = []
+    for cid, verbs in classes.items():
+        verbs.sort(key=lambda v: v["pt"] != VERB_EXAMPLES[cid])
+        out.append({"id": cid, "title": f"-{cid}", "verbs": verbs})
+    return {"persons": VERB_PERSONS, "tenses": VERB_TENSES, "notes": VERB_NOTES, "classes": out}
+
 
 KIND_ORDER = {"different": 0, "similar": 1, "same": 2}
 
@@ -212,6 +287,7 @@ def main():
         "pairs": pairs,
         "patterns": [{"id": i, "title": t, "explanation": x} for i, t, x in PATTERNS if i in used],
         "falseFriends": ff,
+        "verbs": verb_section(pairs),
     }
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as fh:
@@ -221,6 +297,7 @@ def main():
     count = {k: sum(1 for x in pairs if x["kind"] == k) for k in KIND_ORDER}
     print(f"{len(pairs)} Paare: {count}; Muster: " +
           ", ".join(f"{i} {sum(1 for x in pairs if i in x['patterns'])}" for i, _, _ in PATTERNS))
+    print("Verben: " + ", ".join(f"{c['title']} {len(c['verbs'])} ({', '.join(v['pt'] for v in c['verbs'][:4])} …)" for c in data["verbs"]["classes"]))
     print(f"{len(ff)} falsche Freunde; ohne Partner: pt {len(pt) - len(used_p)}, es {len(es) - len(used_e)}")
     if "--list" in sys.argv:
         for k in KIND_ORDER:

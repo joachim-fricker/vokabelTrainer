@@ -145,7 +145,7 @@ fun VerbList(verbs: List<Verb>, onSpeak: (String) -> Unit, bottomSpace: androidx
                         SpeakButton(onClick = { onSpeak(verb.infinitive) })
                     }
                     verb.note?.let {
-                        Text(
+                        ExplanationText(
                             it,
                             style = MaterialTheme.typography.bodySmall,
                             fontStyle = FontStyle.Italic,

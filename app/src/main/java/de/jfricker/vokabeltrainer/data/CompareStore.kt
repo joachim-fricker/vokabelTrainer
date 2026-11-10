@@ -6,6 +6,11 @@ import de.jfricker.vokabeltrainer.domain.CardProgress
 import de.jfricker.vokabeltrainer.domain.FalseFriend
 import de.jfricker.vokabeltrainer.domain.PairKind
 import de.jfricker.vokabeltrainer.domain.SoundPattern
+import de.jfricker.vokabeltrainer.domain.VerbClass
+import de.jfricker.vokabeltrainer.domain.VerbPair
+import de.jfricker.vokabeltrainer.domain.VerbPerson
+import de.jfricker.vokabeltrainer.domain.VerbSection
+import de.jfricker.vokabeltrainer.domain.VerbTense
 import de.jfricker.vokabeltrainer.domain.WordPair
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.sync.Mutex
@@ -20,6 +25,33 @@ data class CompareFileDto(
     val pairs: List<PairDto> = emptyList(),
     val patterns: List<PatternDto> = emptyList(),
     val falseFriends: List<FalseFriendDto> = emptyList(),
+    val verbs: VerbSectionDto? = null,
+)
+
+@Serializable
+data class VerbSectionDto(
+    val persons: List<VerbPersonDto> = emptyList(),
+    val tenses: List<VerbTenseDto> = emptyList(),
+    val notes: List<String> = emptyList(),
+    val classes: List<VerbClassDto> = emptyList(),
+)
+
+@Serializable
+data class VerbPersonDto(val de: String, val pt: String, val ptIndex: Int, val es: String, val esIndex: Int)
+
+@Serializable
+data class VerbTenseDto(val id: String, val title: String, val pt: String = "", val es: String = "")
+
+@Serializable
+data class VerbClassDto(val id: String, val title: String, val verbs: List<VerbPairDto> = emptyList())
+
+@Serializable
+data class VerbPairDto(
+    val de: String,
+    val pt: String,
+    val es: String,
+    val ptForms: Map<String, List<String>> = emptyMap(),
+    val esForms: Map<String, List<String>> = emptyMap(),
 )
 
 @Serializable
@@ -43,6 +75,8 @@ class CompareData(
     val pairs: List<WordPair>,
     val patterns: List<SoundPattern>,
     val falseFriends: List<FalseFriend>,
+    /** Konjugation regelmaessiger Verben im Vergleich (null = keine Daten) */
+    val verbs: VerbSection?,
 ) {
     val patternById: Map<String, SoundPattern> = patterns.associateBy { it.id }
 }
@@ -74,10 +108,20 @@ class CompareStore(context: Context) {
                 },
                 patterns = file.patterns.map { SoundPattern(it.id, it.title, it.explanation) },
                 falseFriends = file.falseFriends.map { FalseFriend("f:${it.pt}", it.pt, it.ptDe, it.es, it.esDe, it.note) },
+                verbs = file.verbs?.let { v ->
+                    VerbSection(
+                        persons = v.persons.map { VerbPerson(it.de, it.pt, it.ptIndex, it.es, it.esIndex) },
+                        tenses = v.tenses.map { VerbTense(it.id, it.title, it.pt, it.es) },
+                        notes = v.notes,
+                        classes = v.classes.map { c ->
+                            VerbClass(c.id, c.title, c.verbs.map { VerbPair(it.de, it.pt, it.es, it.ptForms, it.esForms) })
+                        },
+                    )
+                }?.takeIf { it.classes.any { c -> c.verbs.isNotEmpty() } },
             )
         } catch (e: Exception) {
             Log.e("CompareStore", "Sprachvergleich nicht lesbar", e)
-            CompareData(emptyList(), emptyList(), emptyList())
+            CompareData(emptyList(), emptyList(), emptyList(), null)
         }
     }
 

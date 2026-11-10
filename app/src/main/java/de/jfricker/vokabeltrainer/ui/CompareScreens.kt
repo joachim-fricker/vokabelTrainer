@@ -15,6 +15,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -38,7 +39,11 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.SpanStyle
+import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -47,10 +52,14 @@ import de.jfricker.vokabeltrainer.domain.CompareCard
 import de.jfricker.vokabeltrainer.domain.FalseFriend
 import de.jfricker.vokabeltrainer.domain.Language
 import de.jfricker.vokabeltrainer.domain.PairKind
+import de.jfricker.vokabeltrainer.domain.VerbPair
+import de.jfricker.vokabeltrainer.domain.VerbSection
+import de.jfricker.vokabeltrainer.domain.VerbTense
 import de.jfricker.vokabeltrainer.domain.WordPair
 
-/** Reiter: die drei Gruppen, dann falsche Freunde */
-private const val TAB_FALSE_FRIENDS = 3
+/** Reiter: die drei Gruppen, dann Verben und falsche Freunde */
+private const val TAB_VERBS = 3
+private const val TAB_FALSE_FRIENDS = 4
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -93,6 +102,11 @@ fun CompareScreen(vm: CompareViewModel, onBack: () -> Unit) {
                         )
                     }
                     Tab(
+                        selected = tab == TAB_VERBS,
+                        onClick = { tab = TAB_VERBS },
+                        text = { Text("Verben (regelmässig)") },
+                    )
+                    Tab(
                         selected = tab == TAB_FALSE_FRIENDS,
                         onClick = { tab = TAB_FALSE_FRIENDS },
                         text = { Text("Falsche Freunde (${d.falseFriends.size})") },
@@ -100,6 +114,8 @@ fun CompareScreen(vm: CompareViewModel, onBack: () -> Unit) {
                 }
                 if (tab == TAB_FALSE_FRIENDS) {
                     FalseFriendsTab(vm, d)
+                } else if (tab == TAB_VERBS) {
+                    VerbsTab(vm, d.verbs)
                 } else {
                     PairsTab(vm, d, kinds[tab], pattern, onPattern = { pattern = it })
                 }
@@ -145,7 +161,7 @@ private fun PairsTab(vm: CompareViewModel, d: CompareData, kind: PairKind, patte
             }
             selected?.let { d.patternById[it] }?.let { pt ->
                 item {
-                    Text("💡 ${pt.explanation}", style = MaterialTheme.typography.bodyMedium)
+                    ExplanationText("💡 ${pt.explanation}", style = MaterialTheme.typography.bodyMedium, title = pt.title)
                 }
             }
         }
@@ -189,7 +205,7 @@ private fun OverviewCard(description: String, counts: CompareCounts, onPractice:
         modifier = Modifier.fillMaxWidth(),
     ) {
         Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-            Text(description, style = MaterialTheme.typography.bodyMedium)
+            ExplanationText(description, style = MaterialTheme.typography.bodyMedium)
             LinearProgressIndicator(
                 progress = { if (counts.total == 0) 0f else counts.sits.toFloat() / counts.total },
                 modifier = Modifier.fillMaxWidth().padding(top = 4.dp),
@@ -262,10 +278,140 @@ private fun FalseFriendRow(f: FalseFriend, onSpeak: (String, Language) -> Unit) 
                 }
             }
             if (f.note.isNotEmpty()) {
-                Text("💡 ${f.note}", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                ExplanationText("💡 ${f.note}", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
         }
     }
+}
+
+// ---------------------------------------------------------------- Konjugation regelmaessiger Verben
+
+@Composable
+private fun VerbsTab(vm: CompareViewModel, section: VerbSection?) {
+    if (section == null) {
+        Text("Keine Verbdaten vorhanden.", Modifier.padding(16.dp))
+        return
+    }
+    val version by vm.version.collectAsStateWithLifecycle()
+    var classIndex by rememberSaveable { mutableIntStateOf(0) }
+    var verbIndex by rememberSaveable { mutableIntStateOf(0) }
+    val cls = section.classes.getOrNull(classIndex) ?: section.classes.first()
+    val verb = cls.verbs.getOrNull(verbIndex) ?: cls.verbs.firstOrNull()
+    // Inhalt der Karten zufaellig, Schluessel fest: fuer die Anzahl reicht eine Ziehung
+    val counts = remember(section, version) { vm.counts(section.cards()) }
+
+    LazyColumn(
+        modifier = Modifier.fillMaxSize(),
+        contentPadding = PaddingValues(16.dp),
+        verticalArrangement = Arrangement.spacedBy(8.dp),
+    ) {
+        item {
+            OverviewCard(
+                description = "Endungen der regelmässigen Verben im Vergleich. Geübt wird pro Endung, Zeit und Person – " +
+                    "jedes Mal mit einem anderen Verb.",
+                counts = counts,
+                onPractice = { vm.startPractice(section.cards()) },
+            )
+        }
+        item {
+            Card(Modifier.fillMaxWidth()) {
+                Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                    Text("Die wichtigsten Unterschiede", style = MaterialTheme.typography.titleSmall)
+                    section.notes.forEach { ExplanationText("• $it", style = MaterialTheme.typography.bodySmall, title = "Unterschied") }
+                }
+            }
+        }
+        item {
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                section.classes.forEachIndexed { i, c ->
+                    FilterChip(
+                        selected = c.id == cls.id,
+                        onClick = { classIndex = i; verbIndex = 0 },
+                        label = { Text("${c.title} (${c.verbs.size})") },
+                    )
+                }
+            }
+        }
+        item {
+            LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                itemsIndexed(cls.verbs, key = { _, v -> v.pt + "|" + v.es }) { i, v ->
+                    FilterChip(
+                        selected = v == verb,
+                        onClick = { verbIndex = i },
+                        label = { Text(if (v.pt == v.es) v.pt else "${v.pt} / ${v.es}") },
+                    )
+                }
+            }
+        }
+        if (verb != null) {
+            item {
+                Text(
+                    "${verb.de}: ${Language.PT_BR.flag} ${verb.pt} · ${Language.ES_AR.flag} ${verb.es}",
+                    style = MaterialTheme.typography.titleMedium,
+                )
+            }
+            items(section.tenses, key = { it.id }) { tense ->
+                ConjugationCompareTable(section, tense, verb, onSpeak = vm::speak)
+            }
+        }
+    }
+}
+
+/** Tabelle Person | Portugiesisch | Spanisch, Endungen hervorgehoben; antippen = vorlesen */
+@Composable
+private fun ConjugationCompareTable(section: VerbSection, tense: VerbTense, verb: VerbPair, onSpeak: (String, Language) -> Unit) {
+    val highlight = SpanStyle(color = MaterialTheme.colorScheme.primary, fontWeight = FontWeight.Bold)
+    Card(Modifier.fillMaxWidth()) {
+        Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+            Text(tense.title, style = MaterialTheme.typography.titleSmall)
+            Text(
+                "${Language.PT_BR.flag} ${tense.pt} · ${Language.ES_AR.flag} ${tense.es}",
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+            section.persons.forEach { person ->
+                val pt = verb.ptForm(tense.id, person)
+                val es = verb.esForm(tense.id, person)
+                Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+                    Text(
+                        person.de,
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        modifier = Modifier.weight(0.8f),
+                    )
+                    FormCell(pt, verb.pt, highlight, Modifier.weight(1.1f)) { pt?.let { onSpeak(it, Language.PT_BR) } }
+                    FormCell(es, verb.es, highlight, Modifier.weight(1.1f)) { es?.let { onSpeak(it, Language.ES_AR) } }
+                }
+            }
+        }
+    }
+}
+
+/** "nós falamos": Pronomen und Stamm normal, Endung farbig (ohne gemeinsamen Stamm: ganze Form farbig) */
+@Composable
+private fun FormCell(form: String?, infinitive: String, highlight: SpanStyle, modifier: Modifier, onClick: () -> Unit) {
+    val text = buildAnnotatedString {
+        if (form == null) {
+            append("–")
+            return@buildAnnotatedString
+        }
+        val space = form.indexOf(' ')
+        val pronoun = if (space >= 0) form.substring(0, space + 1) else ""
+        val verbForm = form.substring(pronoun.length)
+        val stem = infinitive.dropLast(2)
+        append(pronoun)
+        if (stem.isNotEmpty() && verbForm.startsWith(stem)) {
+            append(stem)
+            withStyle(highlight) { append(verbForm.substring(stem.length)) }
+        } else {
+            withStyle(highlight) { append(verbForm) }
+        }
+    }
+    Text(
+        text,
+        style = MaterialTheme.typography.bodyLarge,
+        modifier = modifier.clickable(onClickLabel = "Vorlesen", onClick = onClick).padding(vertical = 6.dp),
+    )
 }
 
 // ---------------------------------------------------------------- Uebung "Beide Woerter"
@@ -329,7 +475,7 @@ private fun AskingCard(vm: CompareViewModel, s: ComparePractice.Asking) {
                         SpeakButton(onClick = { vm.speak(a.speak, a.language) })
                     }
                 }
-                if (card.note.isNotEmpty()) Text("💡 ${card.note}", style = MaterialTheme.typography.bodyMedium)
+                if (card.note.isNotEmpty()) ExplanationText("💡 ${card.note}", style = MaterialTheme.typography.bodyMedium)
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     OutlinedButton(onClick = { vm.grade(false) }, modifier = Modifier.weight(1f)) {
                         Text("✗ Nicht beide", textAlign = TextAlign.Center)

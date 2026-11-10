@@ -53,7 +53,10 @@ Die Prüfung meldet doppelte IDs, unbekannte Lektionen und Rollen mit weniger al
 `tools/compare/gen.py` erzeugt `app/src/main/assets/compare/pairs.json`: Wortpaare über die gemeinsame deutsche
 Übersetzung (Gross-/Kleinschreibung zählt: sie ≠ Sie), eingeteilt in *ganz verschieden*, *ähnlich* (mit typischen Mustern
 wie -ção → -ción, nh → ñ, o → ue) und *gleich*. Von Hand korrigieren über `OVERRIDES`, `EXCLUDE`, `EXTRA_PAIRS` in `gen.py`.
-Falsche Freunde stehen in `false_friends.py`. Nach Änderungen an den Lektionen erneut ausführen:
+Falsche Freunde stehen in `false_friends.py`.
+Dazu kommt der Abschnitt `verbs`: regelmässige Verben mit gleicher Klasse (-ar/-er/-ir) in beiden Sprachen
+(Formen aus `assets/verbs/*.json`, Zusatzverben in `EXTRA_VERBS` nach den Regeln aus `tools/verbs/conj.py`).
+Deshalb nach `conj.py` laufen lassen. Nach Änderungen an den Lektionen erneut ausführen:
 
     cd tools/compare
     python3 gen.py            # Übersicht

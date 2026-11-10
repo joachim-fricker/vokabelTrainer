@@ -202,8 +202,9 @@ private fun GrammarList(rules: List<GrammarItem>, onSpeak: (String) -> Unit) {
             Card(Modifier.fillMaxWidth()) {
                 Column(Modifier.padding(16.dp)) {
                     Text(rule.title, style = MaterialTheme.typography.titleMedium)
-                    Text(
+                    ExplanationText(
                         rule.explanation,
+                        title = rule.title,
                         style = MaterialTheme.typography.bodyMedium,
                         modifier = Modifier.padding(top = 8.dp, bottom = 8.dp),
                     )
@@ -247,7 +248,7 @@ private fun SpeakRow(
             Text(primary, style = MaterialTheme.typography.titleMedium)
             Text(secondary, style = MaterialTheme.typography.bodyMedium)
             note?.let {
-                Text(
+                ExplanationText(
                     it,
                     style = MaterialTheme.typography.bodySmall,
                     fontStyle = FontStyle.Italic,

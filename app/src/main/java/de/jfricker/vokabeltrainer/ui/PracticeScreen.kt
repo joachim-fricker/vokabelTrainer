@@ -195,7 +195,7 @@ private fun ModeCard(mode: PracticeMode, s: PracticeState.Setup, language: Langu
     ) {
         Column(Modifier.padding(16.dp)) {
             Text(mode.label(language), style = MaterialTheme.typography.titleMedium)
-            Text(mode.description(language), style = MaterialTheme.typography.bodySmall)
+            ExplanationText(mode.description(language), style = MaterialTheme.typography.bodySmall, title = mode.label(language))
             Text(
                 when {
                     due + new > 0 -> "$due fällig · $new neu"
@@ -272,7 +272,7 @@ private fun ColumnScope.CardContent(s: PracticeState.Asking, item: CardItem, vm:
                 HorizontalDivider(Modifier.padding(vertical = 20.dp))
                 SpeakableText(word.de, speakable = false, onSpeak = {}, big = true)
                 word.note?.let {
-                    Text(
+                    ExplanationText(
                         it,
                         style = MaterialTheme.typography.bodyMedium,
                         fontStyle = FontStyle.Italic,
@@ -554,7 +554,7 @@ private fun ColumnScope.ConjContent(s: PracticeState.Asking, item: ConjItem, vm:
                 )
             }
             item.verb.note?.let {
-                Text(it, style = MaterialTheme.typography.bodyMedium, fontStyle = FontStyle.Italic)
+                ExplanationText(it, style = MaterialTheme.typography.bodyMedium, fontStyle = FontStyle.Italic)
             }
         }
     }
@@ -643,11 +643,11 @@ private fun ColumnScope.GapContent(s: PracticeState.Asking, item: GapItem, vm: M
                 s.result == false && s.typed != null -> Text("Deine Antwort: ${s.typed}", style = MaterialTheme.typography.bodyLarge)
             }
             if (ex.note.isNotEmpty() && ex.type != PracticeMode.SER_ESTAR.code) {
-                Text(ex.note, style = MaterialTheme.typography.titleSmall)
+                ExplanationText(ex.note, style = MaterialTheme.typography.titleSmall)
             }
             item.rule?.let {
                 Card(Modifier.fillMaxWidth()) {
-                    Text(it, style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(12.dp))
+                    ExplanationText(it, style = MaterialTheme.typography.bodySmall, modifier = Modifier.padding(12.dp), title = "Regel")
                 }
             }
         }
