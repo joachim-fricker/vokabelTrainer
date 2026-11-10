@@ -11,13 +11,14 @@ import java.time.ZoneId
 data class DayCount(val date: LocalDate, val count: Int)
 
 data class Stats(
-    val targetDate: LocalDate,
-    val daysLeft: Long,
     val wordsTotal: Int,
     val wordsStarted: Int,
     /** Lernsprache->DE mindestens in Fach 3 (also mehrmals an verschiedenen Tagen gewusst) */
     val wordsLearned: Int,
+    /** Heutiges Ziel (hoechstens so viele, wie noch offen sind) */
     val newWordsPerDay: Int,
+    /** Eingestelltes Tagesziel */
+    val newWordsGoal: Int,
     val newWordsToday: Int,
     /** Tage in Folge mit mindestens einer Antwort */
     val streak: Int,
@@ -53,15 +54,13 @@ class StatsRepository(db: AppDatabase, private val prefs: LearningPrefs) {
         val total = dao.wordCount(lang.code)
         val started = dao.startedCount(lang.keyPrefix, PracticeMode.CARD_PT_DE.code)
         val newToday = prefs.countToday(LearningPrefs.NEW_WORDS)
-        val target = prefs.targetDate
 
         return Stats(
-            targetDate = target,
-            daysLeft = DailyPlan.daysLeft(target, today),
             wordsTotal = total,
             wordsStarted = started,
             wordsLearned = dao.boxAtLeastCount(lang.keyPrefix, PracticeMode.CARD_PT_DE.code, LEARNED_BOX),
-            newWordsPerDay = DailyPlan.newWordsPerDay(total, started, newToday, target, today),
+            newWordsPerDay = DailyPlan.newWordsPerDay(total, started, newToday, prefs.newWordsPerDay),
+            newWordsGoal = prefs.newWordsPerDay,
             newWordsToday = newToday,
             streak = streak,
             reviewsToday = todayRows.size,

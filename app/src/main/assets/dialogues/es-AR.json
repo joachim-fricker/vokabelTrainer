@@ -1,0 +1,897 @@
+{
+ "language": "es-AR",
+ "dialogues": [
+  {
+   "id": "d01",
+   "title": "Begrüssung & Kennenlernen",
+   "titleTarget": "Saludos",
+   "situation": "Du lernst im Hostel eine Argentinierin kennen.",
+   "lesson": "es-AR-01",
+   "roles": [
+    "Lucía",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 0,
+     "text": "¡Hola! ¿Cómo andás?",
+     "de": "Hallo! Wie geht's?",
+     "note": "andás = vos-Form von andar"
+    },
+    {
+     "role": 1,
+     "text": "Bien, ¿y vos?",
+     "de": "Gut, und dir?"
+    },
+    {
+     "role": 0,
+     "text": "¡Todo bien! ¿Cómo te llamás?",
+     "de": "Alles gut! Wie heisst du?"
+    },
+    {
+     "role": 1,
+     "text": "Me llamo Jeff. ¿Y vos?",
+     "de": "Ich heisse Jeff. Und du?"
+    },
+    {
+     "role": 0,
+     "text": "Soy Lucía. ¡Mucho gusto!",
+     "de": "Ich bin Lucía. Freut mich!"
+    },
+    {
+     "role": 1,
+     "text": "Igualmente.",
+     "de": "Gleichfalls."
+    },
+    {
+     "role": 0,
+     "text": "¿De dónde sos?",
+     "de": "Woher kommst du?",
+     "note": "sos = vos-Form von ser"
+    },
+    {
+     "role": 1,
+     "text": "Soy de Alemania.",
+     "de": "Ich komme aus Deutschland.",
+     "note": "Suiza = Schweiz, Austria = Österreich"
+    },
+    {
+     "role": 0,
+     "text": "¡Qué bueno! Hablás muy bien español.",
+     "de": "Wie toll! Du sprichst sehr gut Spanisch."
+    },
+    {
+     "role": 1,
+     "text": "¡Gracias! Estoy aprendiendo.",
+     "de": "Danke! Ich lerne gerade."
+    },
+    {
+     "role": 0,
+     "text": "Bueno, me voy. ¡Chau, buen viaje!",
+     "de": "Gut, ich gehe. Tschüss, gute Reise!"
+    },
+    {
+     "role": 1,
+     "text": "¡Chau, nos vemos!",
+     "de": "Tschüss, bis bald!"
+    }
+   ]
+  },
+  {
+   "id": "d02",
+   "title": "Im Café",
+   "titleTarget": "En el café",
+   "situation": "Frühstück in einem Café in Buenos Aires.",
+   "lesson": "es-AR-03",
+   "roles": [
+    "Kellner",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 0,
+     "text": "¡Buen día! ¿Qué te traigo?",
+     "de": "Guten Morgen! Was darf ich dir bringen?",
+     "note": "In Argentinien wird oft geduzt"
+    },
+    {
+     "role": 1,
+     "text": "Buen día. Quería un café con leche, por favor.",
+     "de": "Guten Morgen. Ich hätte gern einen Milchkaffee, bitte.",
+     "note": "quería = höflich: ich hätte gern"
+    },
+    {
+     "role": 0,
+     "text": "¿Algo para comer?",
+     "de": "Etwas zu essen?"
+    },
+    {
+     "role": 1,
+     "text": "Sí, dos medialunas.",
+     "de": "Ja, zwei Medialunas.",
+     "note": "medialuna = kleines Croissant"
+    },
+    {
+     "role": 0,
+     "text": "¿De manteca o de grasa?",
+     "de": "Mit Butter oder mit Fett?",
+     "note": "de manteca = süss, de grasa = salzig"
+    },
+    {
+     "role": 1,
+     "text": "De manteca, por favor.",
+     "de": "Mit Butter, bitte."
+    },
+    {
+     "role": 0,
+     "text": "¿Algo más?",
+     "de": "Sonst noch etwas?"
+    },
+    {
+     "role": 1,
+     "text": "No, nada más. ¿Cuánto es?",
+     "de": "Nein, nichts weiter. Wie viel macht das?"
+    },
+    {
+     "role": 0,
+     "text": "Son cuatro mil quinientos pesos.",
+     "de": "Das macht viertausendfünfhundert Pesos."
+    },
+    {
+     "role": 1,
+     "text": "¿Puedo pagar con tarjeta?",
+     "de": "Kann ich mit Karte zahlen?"
+    },
+    {
+     "role": 0,
+     "text": "Sí, claro. ¿Débito o crédito?",
+     "de": "Ja, klar. Debit- oder Kreditkarte?"
+    },
+    {
+     "role": 1,
+     "text": "Débito. ¡Gracias!",
+     "de": "Debitkarte. Danke!"
+    }
+   ]
+  },
+  {
+   "id": "d03",
+   "title": "Im Restaurant",
+   "titleTarget": "En el restaurante",
+   "situation": "Abendessen: Tisch, Bestellung und Rechnung.",
+   "lesson": "es-AR-03",
+   "roles": [
+    "Kellnerin",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 0,
+     "text": "¡Buenas noches! ¿Mesa para cuántos?",
+     "de": "Guten Abend! Ein Tisch für wie viele?"
+    },
+    {
+     "role": 1,
+     "text": "Para dos, por favor.",
+     "de": "Für zwei, bitte."
+    },
+    {
+     "role": 0,
+     "text": "Por acá. Acá tienen la carta.",
+     "de": "Hier entlang. Hier ist die Speisekarte.",
+     "note": "acá = hier (in Argentinien statt aquí)"
+    },
+    {
+     "role": 1,
+     "text": "Gracias. ¿Qué me recomendás?",
+     "de": "Danke. Was empfiehlst du mir?"
+    },
+    {
+     "role": 0,
+     "text": "El bife de chorizo está buenísimo.",
+     "de": "Das Bife de chorizo ist super.",
+     "note": "bife de chorizo = Rumpsteak"
+    },
+    {
+     "role": 1,
+     "text": "Entonces quiero el bife de chorizo, a punto.",
+     "de": "Dann nehme ich das Bife de chorizo, medium."
+    },
+    {
+     "role": 0,
+     "text": "¿Y para tomar?",
+     "de": "Und zu trinken?",
+     "note": "tomar = trinken"
+    },
+    {
+     "role": 1,
+     "text": "Un agua sin gas y una copa de malbec, por favor.",
+     "de": "Ein stilles Wasser und ein Glas Malbec, bitte."
+    },
+    {
+     "role": 0,
+     "text": "(más tarde) ¿Estaba todo bien?",
+     "de": "(später) War alles in Ordnung?"
+    },
+    {
+     "role": 1,
+     "text": "¡Riquísimo! La cuenta, por favor.",
+     "de": "Sehr lecker! Die Rechnung, bitte."
+    },
+    {
+     "role": 0,
+     "text": "Acá está.",
+     "de": "Bitte sehr."
+    },
+    {
+     "role": 1,
+     "text": "Gracias. ¿La propina se deja en efectivo?",
+     "de": "Danke. Lässt man das Trinkgeld bar da?",
+     "note": "Trinkgeld etwa 10 %, meist in bar"
+    },
+    {
+     "role": 0,
+     "text": "Sí, mejor en efectivo. ¡Gracias!",
+     "de": "Ja, besser bar. Danke!"
+    }
+   ]
+  },
+  {
+   "id": "d04",
+   "title": "Am Flughafen",
+   "titleTarget": "En el aeropuerto",
+   "situation": "Check-in am Schalter.",
+   "lesson": "es-AR-05",
+   "roles": [
+    "Angestellte",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 0,
+     "text": "Buenas tardes. Su pasaporte, por favor.",
+     "de": "Guten Tag. Ihren Pass, bitte.",
+     "note": "su / usted = höflich"
+    },
+    {
+     "role": 1,
+     "text": "Acá tiene.",
+     "de": "Hier, bitte."
+    },
+    {
+     "role": 0,
+     "text": "¿A dónde viaja?",
+     "de": "Wohin reisen Sie?"
+    },
+    {
+     "role": 1,
+     "text": "A Buenos Aires.",
+     "de": "Nach Buenos Aires."
+    },
+    {
+     "role": 0,
+     "text": "¿Cuántas valijas va a despachar?",
+     "de": "Wie viele Koffer geben Sie auf?",
+     "note": "valija = Koffer (in Spanien: maleta)"
+    },
+    {
+     "role": 1,
+     "text": "Solo una. La mochila la llevo conmigo.",
+     "de": "Nur einen. Den Rucksack nehme ich mit."
+    },
+    {
+     "role": 0,
+     "text": "¿Prefiere ventanilla o pasillo?",
+     "de": "Möchten Sie lieber Fenster oder Gang?"
+    },
+    {
+     "role": 1,
+     "text": "Ventanilla, por favor.",
+     "de": "Fenster, bitte."
+    },
+    {
+     "role": 0,
+     "text": "Acá tiene su tarjeta de embarque. La puerta es la doce.",
+     "de": "Hier ist Ihre Bordkarte. Das Gate ist die Zwölf."
+    },
+    {
+     "role": 1,
+     "text": "¿A qué hora empieza el embarque?",
+     "de": "Um wie viel Uhr beginnt das Boarding?"
+    },
+    {
+     "role": 0,
+     "text": "A las nueve y media. ¡Buen viaje!",
+     "de": "Um halb zehn. Gute Reise!"
+    },
+    {
+     "role": 1,
+     "text": "¡Muchas gracias!",
+     "de": "Vielen Dank!"
+    }
+   ]
+  },
+  {
+   "id": "d05",
+   "title": "Nach dem Weg fragen",
+   "titleTarget": "Pidiendo indicaciones",
+   "situation": "Du suchst die U-Bahn und eine Apotheke.",
+   "lesson": "es-AR-05",
+   "roles": [
+    "Passant",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 1,
+     "text": "Disculpe, ¿dónde queda la estación de subte?",
+     "de": "Entschuldigung, wo ist die U-Bahn-Station?",
+     "note": "subte = U-Bahn in Buenos Aires"
+    },
+    {
+     "role": 0,
+     "text": "Seguí derecho y doblá a la derecha en la segunda cuadra.",
+     "de": "Geh geradeaus und bieg nach dem zweiten Block rechts ab.",
+     "note": "seguí, doblá = vos-Imperativ; cuadra = Häuserblock"
+    },
+    {
+     "role": 1,
+     "text": "¿Queda lejos?",
+     "de": "Ist es weit?"
+    },
+    {
+     "role": 0,
+     "text": "No, está cerca. Unos cinco minutos caminando.",
+     "de": "Nein, es ist nah. Etwa fünf Minuten zu Fuss."
+    },
+    {
+     "role": 1,
+     "text": "¿Y hay una farmacia por acá?",
+     "de": "Und gibt es hier in der Nähe eine Apotheke?",
+     "note": "hay = es gibt"
+    },
+    {
+     "role": 0,
+     "text": "Sí, está al lado del banco, enfrente de la plaza.",
+     "de": "Ja, sie ist neben der Bank, gegenüber vom Platz."
+    },
+    {
+     "role": 1,
+     "text": "Perdón, ¿me lo podés repetir más despacio?",
+     "de": "Entschuldigung, kannst du das langsamer wiederholen?"
+    },
+    {
+     "role": 0,
+     "text": "¡Claro! Al lado del banco, enfrente de la plaza.",
+     "de": "Klar! Neben der Bank, gegenüber vom Platz."
+    },
+    {
+     "role": 1,
+     "text": "Entendí. ¡Muchas gracias!",
+     "de": "Verstanden. Vielen Dank!"
+    },
+    {
+     "role": 0,
+     "text": "¡De nada!",
+     "de": "Gern geschehen!"
+    }
+   ]
+  },
+  {
+   "id": "d06",
+   "title": "Im Hotel einchecken",
+   "titleTarget": "En el hotel",
+   "situation": "Ankunft an der Rezeption.",
+   "lesson": "es-AR-04",
+   "roles": [
+    "Rezeptionist",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 0,
+     "text": "Buenas noches, bienvenido. ¿En qué lo puedo ayudar?",
+     "de": "Guten Abend, willkommen. Wie kann ich Ihnen helfen?"
+    },
+    {
+     "role": 1,
+     "text": "Buenas noches. Tengo una reserva a nombre de Jeff.",
+     "de": "Guten Abend. Ich habe eine Reservierung auf den Namen Jeff."
+    },
+    {
+     "role": 0,
+     "text": "Un momento... Sí, una habitación doble por tres noches.",
+     "de": "Einen Moment … Ja, ein Doppelzimmer für drei Nächte."
+    },
+    {
+     "role": 1,
+     "text": "Exacto. ¿El desayuno está incluido?",
+     "de": "Genau. Ist das Frühstück inbegriffen?"
+    },
+    {
+     "role": 0,
+     "text": "Sí, se sirve de seis a diez.",
+     "de": "Ja, es wird von sechs bis zehn serviert."
+    },
+    {
+     "role": 1,
+     "text": "¿Cuál es la clave del wifi?",
+     "de": "Wie lautet das WLAN-Passwort?"
+    },
+    {
+     "role": 0,
+     "text": "Está en esta tarjeta. Su habitación es la trescientos dos, en el tercer piso.",
+     "de": "Es steht auf dieser Karte. Ihr Zimmer ist die 302 im dritten Stock."
+    },
+    {
+     "role": 1,
+     "text": "¿Hay ascensor?",
+     "de": "Gibt es einen Aufzug?"
+    },
+    {
+     "role": 0,
+     "text": "Sí, ahí a la izquierda.",
+     "de": "Ja, dort links."
+    },
+    {
+     "role": 1,
+     "text": "¿A qué hora es el check-out?",
+     "de": "Um wie viel Uhr ist der Check-out?"
+    },
+    {
+     "role": 0,
+     "text": "A las doce. ¡Que disfrute su estadía!",
+     "de": "Um zwölf. Einen schönen Aufenthalt!"
+    },
+    {
+     "role": 1,
+     "text": "¡Gracias, buenas noches!",
+     "de": "Danke, gute Nacht!"
+    }
+   ]
+  },
+  {
+   "id": "d07",
+   "title": "Im Taxi",
+   "titleTarget": "En el taxi",
+   "situation": "Fahrt mit dem Taxi oder Uber.",
+   "lesson": "es-AR-05",
+   "roles": [
+    "Fahrer",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 0,
+     "text": "Buenas tardes. ¿A dónde vamos?",
+     "de": "Guten Tag. Wohin fahren wir?"
+    },
+    {
+     "role": 1,
+     "text": "Buenas tardes. A esta dirección, por favor.",
+     "de": "Guten Tag. Zu dieser Adresse, bitte."
+    },
+    {
+     "role": 0,
+     "text": "Perfecto. ¿Está apurado?",
+     "de": "Gut. Haben Sie es eilig?",
+     "note": "apurado = in Eile (Lateinamerika)"
+    },
+    {
+     "role": 1,
+     "text": "Un poco. ¿Cuánto se tarda?",
+     "de": "Ein bisschen. Wie lange dauert es?"
+    },
+    {
+     "role": 0,
+     "text": "Con este tránsito, unos veinte minutos.",
+     "de": "Bei diesem Verkehr etwa zwanzig Minuten."
+    },
+    {
+     "role": 1,
+     "text": "¿Puede prender el aire acondicionado, por favor?",
+     "de": "Können Sie bitte die Klimaanlage einschalten?",
+     "note": "prender = einschalten"
+    },
+    {
+     "role": 0,
+     "text": "Claro. ¿Así está bien?",
+     "de": "Klar. Ist es so gut?"
+    },
+    {
+     "role": 1,
+     "text": "Perfecto, gracias.",
+     "de": "Perfekt, danke."
+    },
+    {
+     "role": 0,
+     "text": "(más tarde) Llegamos.",
+     "de": "(später) Wir sind da."
+    },
+    {
+     "role": 1,
+     "text": "Pare acá nomás. ¿Cuánto es?",
+     "de": "Halten Sie einfach hier. Wie viel macht es?",
+     "note": "nomás = einfach, gleich (typisch argentinisch)"
+    },
+    {
+     "role": 0,
+     "text": "Son once mil ochocientos pesos.",
+     "de": "Elftausendachthundert Pesos."
+    },
+    {
+     "role": 1,
+     "text": "Acá tiene doce mil. Quédese con el vuelto.",
+     "de": "Hier sind zwölftausend. Stimmt so.",
+     "note": "vuelto = Wechselgeld"
+    }
+   ]
+  },
+  {
+   "id": "d08",
+   "title": "Auf dem Markt",
+   "titleTarget": "En la verdulería",
+   "situation": "Gemüse und Obst kaufen.",
+   "lesson": "es-AR-06",
+   "roles": [
+    "Verkäufer",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 1,
+     "text": "Buen día. ¿A cuánto está el kilo de tomates?",
+     "de": "Guten Morgen. Wie viel kostet das Kilo Tomaten?"
+    },
+    {
+     "role": 0,
+     "text": "A dos mil pesos el kilo. ¡Están muy buenos hoy!",
+     "de": "Zweitausend Pesos das Kilo. Sie sind heute sehr gut!"
+    },
+    {
+     "role": 1,
+     "text": "¿Puedo probar una frutilla?",
+     "de": "Darf ich eine Erdbeere probieren?",
+     "note": "frutilla = Erdbeere (in Spanien: fresa)"
+    },
+    {
+     "role": 0,
+     "text": "Sí, dale, probá.",
+     "de": "Ja, klar, probier.",
+     "note": "dale = okay, los"
+    },
+    {
+     "role": 1,
+     "text": "¡Qué rica! Dame un kilo de tomates, por favor.",
+     "de": "Lecker! Gib mir ein Kilo Tomaten, bitte."
+    },
+    {
+     "role": 0,
+     "text": "¿Algo más?",
+     "de": "Sonst noch etwas?"
+    },
+    {
+     "role": 1,
+     "text": "¿Cuánto salen las paltas?",
+     "de": "Was kosten die Avocados?",
+     "note": "palta = Avocado; salir = kosten"
+    },
+    {
+     "role": 0,
+     "text": "Mil quinientos cada una, o dos por dos mil quinientos.",
+     "de": "Tausendfünfhundert das Stück, oder zwei für zweitausendfünfhundert."
+    },
+    {
+     "role": 1,
+     "text": "Entonces llevo dos.",
+     "de": "Dann nehme ich zwei."
+    },
+    {
+     "role": 0,
+     "text": "Son cuatro mil quinientos en total.",
+     "de": "Das macht insgesamt viertausendfünfhundert."
+    },
+    {
+     "role": 1,
+     "text": "¿Tenés cambio de diez mil?",
+     "de": "Hast du Wechselgeld für zehntausend?"
+    },
+    {
+     "role": 0,
+     "text": "Sí. Acá está tu vuelto: cinco mil quinientos.",
+     "de": "Ja. Hier ist dein Wechselgeld: fünftausendfünfhundert."
+    }
+   ]
+  },
+  {
+   "id": "d09",
+   "title": "In der Apotheke",
+   "titleTarget": "En la farmacia",
+   "situation": "Du hast Kopfweh und etwas Fieber.",
+   "lesson": "es-AR-07",
+   "roles": [
+    "Apothekerin",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 0,
+     "text": "Buenas tardes, ¿en qué te puedo ayudar?",
+     "de": "Guten Tag, wie kann ich dir helfen?"
+    },
+    {
+     "role": 1,
+     "text": "Buenas tardes. Me duele la cabeza y tengo un poco de fiebre.",
+     "de": "Guten Tag. Ich habe Kopfweh und etwas Fieber.",
+     "note": "me duele = mir tut weh"
+    },
+    {
+     "role": 0,
+     "text": "¿Desde cuándo?",
+     "de": "Seit wann?"
+    },
+    {
+     "role": 1,
+     "text": "Desde anoche.",
+     "de": "Seit gestern Abend."
+    },
+    {
+     "role": 0,
+     "text": "¿Sos alérgico a algún medicamento?",
+     "de": "Bist du gegen ein Medikament allergisch?"
+    },
+    {
+     "role": 1,
+     "text": "No, no soy alérgico.",
+     "de": "Nein, ich bin nicht allergisch."
+    },
+    {
+     "role": 0,
+     "text": "Entonces tomá esta pastilla cada ocho horas.",
+     "de": "Dann nimm diese Tablette alle acht Stunden."
+    },
+    {
+     "role": 1,
+     "text": "¿La puedo tomar con el estómago vacío?",
+     "de": "Kann ich sie auf nüchternen Magen nehmen?"
+    },
+    {
+     "role": 0,
+     "text": "Mejor después de comer. Si no mejorás en dos días, andá al médico.",
+     "de": "Besser nach dem Essen. Wenn es dir in zwei Tagen nicht besser geht, geh zum Arzt."
+    },
+    {
+     "role": 1,
+     "text": "Bueno. También necesito protector solar.",
+     "de": "Gut. Ich brauche auch Sonnencreme."
+    },
+    {
+     "role": 0,
+     "text": "Está ahí, en el segundo estante.",
+     "de": "Die ist dort, im zweiten Regal."
+    },
+    {
+     "role": 1,
+     "text": "Gracias, ¡chau!",
+     "de": "Danke, tschüss!"
+    }
+   ]
+  },
+  {
+   "id": "d10",
+   "title": "Im Bus",
+   "titleTarget": "En el colectivo",
+   "situation": "Mit dem Stadtbus nach Palermo.",
+   "lesson": "es-AR-05",
+   "roles": [
+    "Fahrer",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 1,
+     "text": "Disculpe, ¿este colectivo va a Palermo?",
+     "de": "Entschuldigung, fährt dieser Bus nach Palermo?",
+     "note": "colectivo = Stadtbus"
+    },
+    {
+     "role": 0,
+     "text": "Sí, subí.",
+     "de": "Ja, steig ein."
+    },
+    {
+     "role": 1,
+     "text": "¿Cuánto sale el boleto?",
+     "de": "Was kostet die Fahrkarte?"
+    },
+    {
+     "role": 0,
+     "text": "Se paga con la tarjeta SUBE.",
+     "de": "Man bezahlt mit der SUBE-Karte.",
+     "note": "SUBE = aufladbare Karte für Bus und U-Bahn"
+    },
+    {
+     "role": 1,
+     "text": "Sí, tengo la SUBE. ¿Me avisás cuando lleguemos al parque?",
+     "de": "Ja, ich habe die SUBE. Sagst du mir Bescheid, wenn wir beim Park ankommen?",
+     "note": "lleguemos = Subjunktiv von llegar"
+    },
+    {
+     "role": 0,
+     "text": "Dale. Son unas ocho paradas.",
+     "de": "Mach ich. Es sind etwa acht Haltestellen."
+    },
+    {
+     "role": 1,
+     "text": "Muchas gracias.",
+     "de": "Vielen Dank."
+    },
+    {
+     "role": 0,
+     "text": "(más tarde) Che, la próxima es la tuya.",
+     "de": "(später) He, die nächste ist deine.",
+     "note": "che = he, du (typisch argentinisch)"
+    },
+    {
+     "role": 1,
+     "text": "¡Ah, gracias! ¿Cómo pido bajar?",
+     "de": "Ah, danke! Wie gebe ich Bescheid, dass ich aussteigen will?"
+    },
+    {
+     "role": 0,
+     "text": "Tocá el timbre, ese botón rojo.",
+     "de": "Drück die Klingel, den roten Knopf da."
+    },
+    {
+     "role": 1,
+     "text": "¡Genial, gracias!",
+     "de": "Super, danke!"
+    }
+   ]
+  },
+  {
+   "id": "d11",
+   "title": "Smalltalk im Park",
+   "titleTarget": "Charla en la plaza",
+   "situation": "Jemand spricht dich in einem Park an.",
+   "lesson": "es-AR-08",
+   "roles": [
+    "Sofía",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 0,
+     "text": "¡Hola! No sos de acá, ¿no?",
+     "de": "Hallo! Du bist nicht von hier, oder?"
+    },
+    {
+     "role": 1,
+     "text": "No, soy turista. Llegué la semana pasada.",
+     "de": "Nein, ich bin Tourist. Ich bin letzte Woche angekommen."
+    },
+    {
+     "role": 0,
+     "text": "¿Y te gusta Argentina?",
+     "de": "Und gefällt dir Argentinien?"
+    },
+    {
+     "role": 1,
+     "text": "¡Me encanta! La gente es muy amable.",
+     "de": "Ich liebe es! Die Leute sind sehr freundlich."
+    },
+    {
+     "role": 0,
+     "text": "¿Viajás solo?",
+     "de": "Reist du allein?"
+    },
+    {
+     "role": 1,
+     "text": "No, viajo con un amigo.",
+     "de": "Nein, ich reise mit einem Freund."
+    },
+    {
+     "role": 0,
+     "text": "¿Cuánto tiempo se quedan?",
+     "de": "Wie lange bleibt ihr?",
+     "note": "ustedes statt vosotros"
+    },
+    {
+     "role": 1,
+     "text": "Tres semanas. Después vamos a Mendoza.",
+     "de": "Drei Wochen. Danach fahren wir nach Mendoza."
+    },
+    {
+     "role": 0,
+     "text": "¡Qué lindo! ¿A qué te dedicás?",
+     "de": "Wie schön! Was machst du beruflich?"
+    },
+    {
+     "role": 1,
+     "text": "Trabajo en informática. ¿Y vos?",
+     "de": "Ich arbeite in der Informatik. Und du?"
+    },
+    {
+     "role": 0,
+     "text": "Soy profesora. Che, ¿querés tomar unos mates?",
+     "de": "Ich bin Lehrerin. He, willst du ein paar Mate trinken?",
+     "note": "Mate wird in der Runde geteilt"
+    },
+    {
+     "role": 1,
+     "text": "¡Dale, buenísimo!",
+     "de": "Klar, super!"
+    }
+   ]
+  },
+  {
+   "id": "d12",
+   "title": "Problem im Hotelzimmer",
+   "titleTarget": "Un problema en la habitación",
+   "situation": "Du rufst die Rezeption an.",
+   "lesson": "es-AR-04",
+   "roles": [
+    "Rezeption",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 0,
+     "text": "Recepción, buenas noches.",
+     "de": "Rezeption, guten Abend."
+    },
+    {
+     "role": 1,
+     "text": "Buenas noches. El aire acondicionado de mi habitación no funciona.",
+     "de": "Guten Abend. Die Klimaanlage in meinem Zimmer funktioniert nicht."
+    },
+    {
+     "role": 0,
+     "text": "¿Qué número de habitación es?",
+     "de": "Welche Zimmernummer ist es?"
+    },
+    {
+     "role": 1,
+     "text": "La trescientos dos.",
+     "de": "Die Dreihundertzwei."
+    },
+    {
+     "role": 0,
+     "text": "¡Disculpe! Ya le mando a alguien.",
+     "de": "Entschuldigung! Ich schicke Ihnen sofort jemanden."
+    },
+    {
+     "role": 1,
+     "text": "Y tampoco hay toallas en el baño.",
+     "de": "Und im Bad gibt es auch keine Handtücher."
+    },
+    {
+     "role": 0,
+     "text": "También le mandamos toallas.",
+     "de": "Wir schicken Ihnen auch Handtücher."
+    },
+    {
+     "role": 1,
+     "text": "Gracias. Una pregunta más: ¿a qué hora cierra la pileta?",
+     "de": "Danke. Noch eine Frage: Um wie viel Uhr schliesst der Pool?",
+     "note": "pileta = Pool (sonst piscina)"
+    },
+    {
+     "role": 0,
+     "text": "A las diez de la noche.",
+     "de": "Um zehn Uhr abends."
+    },
+    {
+     "role": 1,
+     "text": "Perfecto, gracias por la ayuda.",
+     "de": "Perfekt, danke für die Hilfe."
+    },
+    {
+     "role": 0,
+     "text": "No hay por qué. ¡Buenas noches!",
+     "de": "Keine Ursache. Gute Nacht!"
+    }
+   ]
+  }
+ ]
+}

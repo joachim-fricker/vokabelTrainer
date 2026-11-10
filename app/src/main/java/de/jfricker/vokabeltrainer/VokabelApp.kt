@@ -14,6 +14,8 @@ import de.jfricker.vokabeltrainer.data.local.MIGRATION_7_8
 import de.jfricker.vokabeltrainer.video.VideoRepository
 import de.jfricker.vokabeltrainer.data.LearningPrefs
 import de.jfricker.vokabeltrainer.data.ExerciseStore
+import de.jfricker.vokabeltrainer.data.DialogueStore
+import de.jfricker.vokabeltrainer.data.CompareStore
 import de.jfricker.vokabeltrainer.data.StatsRepository
 import de.jfricker.vokabeltrainer.speech.Speaker
 
@@ -31,4 +33,6 @@ class VokabelApp : Application() {
     val statsRepository by lazy { StatsRepository(database, prefs) }
     val videoRepository by lazy { VideoRepository(database, prefs) }
     val speaker by lazy { Speaker(this, prefs.language) }
+    val dialogueStore by lazy { DialogueStore(this) }
+    val compareStore by lazy { CompareStore(this) }
 }

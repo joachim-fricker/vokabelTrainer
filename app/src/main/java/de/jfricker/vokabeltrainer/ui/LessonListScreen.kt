@@ -39,6 +39,8 @@ fun LessonListScreen(
     onToday: () -> Unit,
     onStats: () -> Unit,
     onVideos: () -> Unit,
+    onDialogues: () -> Unit,
+    onCompare: () -> Unit,
 ) {
     val lessons by vm.lessons.collectAsStateWithLifecycle()
     val speakerState by vm.speakerState.collectAsStateWithLifecycle()
@@ -79,6 +81,16 @@ fun LessonListScreen(
                 item {
                     OutlinedButton(onClick = onPracticeAll, modifier = Modifier.fillMaxWidth()) {
                         Text("🃏  Alle Lektionen gezielt üben")
+                    }
+                }
+                item {
+                    OutlinedButton(onClick = onDialogues, modifier = Modifier.fillMaxWidth()) {
+                        Text("💬  Typische Dialoge")
+                    }
+                }
+                item {
+                    OutlinedButton(onClick = onCompare, modifier = Modifier.fillMaxWidth()) {
+                        Text("🔀  Portugiesisch ↔ Spanisch vergleichen")
                     }
                 }
             }
@@ -151,13 +163,8 @@ private fun TodayCard(summary: TodaySummary?, onClick: () -> Unit) {
                 if (summary.goalReached) {
                     Text("Tagesziel erreicht ✅", style = MaterialTheme.typography.bodyMedium)
                 }
-                val left = summary.daysLeft
                 Text(
-                    when {
-                        left > 1 -> "Noch $left Tage bis zum Ziel · ${summary.wordsStarted} von ${summary.wordsTotal} Wörtern begonnen"
-                        left == 1L -> "Morgen ist es so weit! · ${summary.wordsStarted} von ${summary.wordsTotal} Wörtern begonnen"
-                        else -> "${summary.wordsStarted} von ${summary.wordsTotal} Wörtern begonnen"
-                    },
+                    "${summary.wordsStarted} von ${summary.wordsTotal} Wörtern begonnen",
                     style = MaterialTheme.typography.bodySmall,
                 )
             }

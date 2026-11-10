@@ -1,6 +1,7 @@
 package de.jfricker.vokabeltrainer.data
 
 import android.content.Context
+import de.jfricker.vokabeltrainer.domain.DailyPlan
 import de.jfricker.vokabeltrainer.domain.Language
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -28,11 +29,11 @@ class LearningPrefs(context: Context) {
     private fun key(base: String): String =
         if (language == Language.PT_BR) base else "$base.${language.code}"
 
-    /** Bis wann alle Woerter der aktuellen Sprache einmal gelernt sein sollen (z. B. Reisebeginn). */
-    var targetDate: LocalDate
-        get() = LocalDate.ofEpochDay(prefs.getLong(key(KEY_TARGET), DEFAULT_TARGET.toEpochDay()))
+    /** Tagesziel: so viele neue Woerter pro Tag in der aktuellen Sprache. */
+    var newWordsPerDay: Int
+        get() = prefs.getInt(key(KEY_NEW_PER_DAY), DailyPlan.DEFAULT_NEW_PER_DAY)
         set(value) {
-            prefs.edit().putLong(key(KEY_TARGET), value.toEpochDay()).apply()
+            prefs.edit().putInt(key(KEY_NEW_PER_DAY), value.coerceIn(0, DailyPlan.MAX_NEW_PER_DAY)).apply()
         }
 
     /** Schluessel fuer die YouTube Data API (nur lokal auf dem Handy gespeichert). */
@@ -64,7 +65,6 @@ class LearningPrefs(context: Context) {
     }
 
     companion object {
-        val DEFAULT_TARGET: LocalDate = LocalDate.of(2026, 12, 1)
         const val NEW_WORDS = "newWords"
         const val NEW_SENTENCES = "newSentences"
         const val NEW_CONJ = "newConj"
@@ -72,7 +72,7 @@ class LearningPrefs(context: Context) {
         const val NUMBERS = "numbers"
         const val NEW_GRAMMAR = "newGrammar"
         private const val KEY_CONJ_TYPING = "conjTyping"
-        private const val KEY_TARGET = "targetDate"
+        private const val KEY_NEW_PER_DAY = "newWordsPerDay"
         private const val KEY_YOUTUBE = "youtubeApiKey"
         private const val KEY_LANGUAGE = "language"
     }

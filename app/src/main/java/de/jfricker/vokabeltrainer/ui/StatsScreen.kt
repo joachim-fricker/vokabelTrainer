@@ -17,8 +17,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
-import androidx.compose.material3.DatePicker
-import androidx.compose.material3.DatePickerDialog
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.IconButton
@@ -28,7 +27,6 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
-import androidx.compose.material3.rememberDatePickerState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -48,13 +46,10 @@ import androidx.compose.ui.text.font.FontStyle
 import de.jfricker.vokabeltrainer.data.DayCount
 import de.jfricker.vokabeltrainer.data.DifficultWord
 import de.jfricker.vokabeltrainer.data.Stats
-import java.time.Instant
-import java.time.LocalDate
-import java.time.ZoneOffset
+import de.jfricker.vokabeltrainer.domain.DailyPlan
 import java.time.format.DateTimeFormatter
 import java.util.Locale
 
-private val DATE_LONG = DateTimeFormatter.ofPattern("d. MMMM yyyy", Locale.GERMAN)
 private val DATE_DAY = DateTimeFormatter.ofPattern("EEEE, d. MMMM", Locale.GERMAN)
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -64,7 +59,6 @@ fun StatsScreen(vm: MainViewModel, onBack: () -> Unit, onPracticeDifficult: () -
     val difficult by vm.difficult.collectAsStateWithLifecycle()
     var showAllDifficult by rememberSaveable { mutableStateOf(false) }
     val language by vm.language.collectAsStateWithLifecycle()
-    var pickDate by rememberSaveable { mutableStateOf(false) }
 
     LaunchedEffect(Unit) { vm.loadStats() }
 
@@ -88,7 +82,7 @@ fun StatsScreen(vm: MainViewModel, onBack: () -> Unit, onPracticeDifficult: () -
             contentPadding = PaddingValues(16.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp),
         ) {
-            item { GoalCard(s, onChangeDate = { pickDate = true }) }
+            item { GoalCard(s, onChange = vm::setNewWordsPerDay) }
             item { TodayStatsCard(s) }
             item { ActivityCard(s.last14Days) }
             item {
@@ -137,28 +131,6 @@ fun StatsScreen(vm: MainViewModel, onBack: () -> Unit, onPracticeDifficult: () -
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
             }
-        }
-    }
-
-    if (pickDate) {
-        val initial = stats?.targetDate ?: LocalDate.now()
-        val state = rememberDatePickerState(
-            initialSelectedDateMillis = initial.atStartOfDay(ZoneOffset.UTC).toInstant().toEpochMilli(),
-        )
-        DatePickerDialog(
-            onDismissRequest = { pickDate = false },
-            confirmButton = {
-                TextButton(onClick = {
-                    state.selectedDateMillis?.let { ms ->
-                        // DatePicker liefert UTC-Mitternacht
-                        vm.setTargetDate(Instant.ofEpochMilli(ms).atZone(ZoneOffset.UTC).toLocalDate())
-                    }
-                    pickDate = false
-                }) { Text("OK") }
-            },
-            dismissButton = { TextButton(onClick = { pickDate = false }) { Text("Abbrechen") } },
-        ) {
-            DatePicker(state = state)
         }
     }
 }
@@ -232,20 +204,14 @@ private fun BigNumber(value: String, label: String, modifier: Modifier = Modifie
 }
 
 @Composable
-private fun GoalCard(s: Stats, onChangeDate: () -> Unit) {
+private fun GoalCard(s: Stats, onChange: (Int) -> Unit) {
     StatCard {
-        Text("Ziel", style = MaterialTheme.typography.titleMedium)
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            Text(
-                "Alle Wörter bis ${s.targetDate.format(DATE_LONG)}",
-                style = MaterialTheme.typography.bodyMedium,
-                modifier = Modifier.weight(1f),
-            )
-            TextButton(onClick = onChangeDate) { Text("Ändern") }
-        }
-        Row(Modifier.fillMaxWidth().padding(vertical = 8.dp)) {
-            BigNumber(if (s.daysLeft > 0) "${s.daysLeft}" else "–", "Tage übrig", Modifier.weight(1f))
-            BigNumber("${s.newWordsPerDay}", "neue Wörter pro Tag", Modifier.weight(1f))
+        Text("Tagesziel", style = MaterialTheme.typography.titleMedium)
+        Row(Modifier.fillMaxWidth().padding(vertical = 8.dp), verticalAlignment = Alignment.CenterVertically) {
+            BigNumber("${s.newWordsGoal}", "neue Wörter pro Tag", Modifier.weight(1f))
+            OutlinedButton(onClick = { onChange(s.newWordsGoal - 1) }, enabled = s.newWordsGoal > 0) { Text("−") }
+            Spacer(Modifier.width(8.dp))
+            OutlinedButton(onClick = { onChange(s.newWordsGoal + 1) }, enabled = s.newWordsGoal < DailyPlan.MAX_NEW_PER_DAY) { Text("+") }
         }
         LinearProgressIndicator(
             progress = { if (s.wordsTotal == 0) 0f else s.wordsStarted.toFloat() / s.wordsTotal },

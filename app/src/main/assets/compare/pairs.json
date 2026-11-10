@@ -1,0 +1,5225 @@
+{
+ "pairs": [
+  {
+   "pt": "ola",
+   "ptText": "olá",
+   "ptLesson": "pt-BR-01",
+   "es": "hola",
+   "esText": "hola",
+   "esLesson": "es-AR-01",
+   "de": "hallo",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "bom_dia",
+   "ptText": "bom dia",
+   "ptLesson": "pt-BR-01",
+   "es": "buen_dia",
+   "esText": "buen día",
+   "esLesson": "es-AR-01",
+   "de": "guten Morgen",
+   "kind": "similar",
+   "patterns": [
+    "ue",
+    "mn"
+   ]
+  },
+  {
+   "pt": "boa_tarde",
+   "ptText": "boa tarde",
+   "ptLesson": "pt-BR-01",
+   "es": "buenas_tardes",
+   "esText": "buenas tardes",
+   "esLesson": "es-AR-01",
+   "de": "guten Tag (nachmittags)",
+   "kind": "similar",
+   "patterns": [
+    "ue"
+   ]
+  },
+  {
+   "pt": "boa_noite",
+   "ptText": "boa noite",
+   "ptLesson": "pt-BR-01",
+   "es": "buenas_noches",
+   "esText": "buenas noches",
+   "esLesson": "es-AR-01",
+   "de": "guten Abend",
+   "kind": "similar",
+   "patterns": [
+    "ue"
+   ]
+  },
+  {
+   "pt": "tchau",
+   "ptText": "tchau",
+   "ptLesson": "pt-BR-01",
+   "es": "chau",
+   "esText": "chau",
+   "esLesson": "es-AR-01",
+   "de": "tschüss",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "ate_logo",
+   "ptText": "até logo",
+   "ptLesson": "pt-BR-01",
+   "es": "hasta_luego",
+   "esText": "hasta luego",
+   "esLesson": "es-AR-01",
+   "de": "bis später",
+   "kind": "similar",
+   "patterns": [
+    "ue"
+   ]
+  },
+  {
+   "pt": "ate_amanha",
+   "ptText": "até amanhã",
+   "ptLesson": "pt-BR-01",
+   "es": "hasta_manana",
+   "esText": "hasta mañana",
+   "esLesson": "es-AR-01",
+   "de": "bis morgen",
+   "kind": "similar",
+   "patterns": [
+    "nh"
+   ]
+  },
+  {
+   "pt": "tudo_bem",
+   "ptText": "tudo bem?",
+   "ptLesson": "pt-BR-01",
+   "es": "como_andas",
+   "esText": "¿cómo andás?",
+   "esLesson": "es-AR-01",
+   "de": "wie geht's",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "tudo_bom",
+   "ptText": "tudo bom",
+   "ptLesson": "pt-BR-01",
+   "es": "todo_bien",
+   "esText": "todo bien",
+   "esLesson": "es-AR-01",
+   "de": "alles gut",
+   "kind": "similar",
+   "patterns": [
+    "mn"
+   ]
+  },
+  {
+   "pt": "bem",
+   "ptText": "bem",
+   "ptLesson": "pt-BR-01",
+   "es": "bien",
+   "esText": "bien",
+   "esLesson": "es-AR-01",
+   "de": "gut",
+   "kind": "similar",
+   "patterns": [
+    "ie",
+    "mn"
+   ]
+  },
+  {
+   "pt": "prazer",
+   "ptText": "prazer",
+   "ptLesson": "pt-BR-01",
+   "es": "mucho_gusto",
+   "esText": "mucho gusto",
+   "esLesson": "es-AR-01",
+   "de": "freut mich",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "obrigado",
+   "ptText": "obrigado",
+   "ptLesson": "pt-BR-01",
+   "es": "gracias",
+   "esText": "gracias",
+   "esLesson": "es-AR-01",
+   "de": "danke",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "por_favor",
+   "ptText": "por favor",
+   "ptLesson": "pt-BR-01",
+   "es": "por_favor",
+   "esText": "por favor",
+   "esLesson": "es-AR-01",
+   "de": "bitte",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "de_nada",
+   "ptText": "de nada",
+   "ptLesson": "pt-BR-01",
+   "es": "de_nada",
+   "esText": "de nada",
+   "esLesson": "es-AR-01",
+   "de": "gern geschehen",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "desculpa",
+   "ptText": "desculpa",
+   "ptLesson": "pt-BR-01",
+   "es": "perdon",
+   "esText": "perdón",
+   "esLesson": "es-AR-01",
+   "de": "Entschuldigung",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "sim",
+   "ptText": "sim",
+   "ptLesson": "pt-BR-01",
+   "es": "si",
+   "esText": "sí",
+   "esLesson": "es-AR-01",
+   "de": "ja",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "nao",
+   "ptText": "não",
+   "ptLesson": "pt-BR-01",
+   "es": "no",
+   "esText": "no",
+   "esLesson": "es-AR-01",
+   "de": "nein",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "como",
+   "ptText": "como",
+   "ptLesson": "pt-BR-01",
+   "es": "como",
+   "esText": "cómo",
+   "esLesson": "es-AR-01",
+   "de": "wie",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "eu",
+   "ptText": "eu",
+   "ptLesson": "pt-BR-01",
+   "es": "yo",
+   "esText": "yo",
+   "esLesson": "es-AR-01",
+   "de": "ich",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "voce",
+   "ptText": "você",
+   "ptLesson": "pt-BR-01",
+   "es": "vos",
+   "esText": "vos",
+   "esLesson": "es-AR-01",
+   "de": "du",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "senhor",
+   "ptText": "o senhor",
+   "ptLesson": "pt-BR-01",
+   "es": "usted",
+   "esText": "usted",
+   "esLesson": "es-AR-01",
+   "de": "Sie",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "muito",
+   "ptText": "muito",
+   "ptLesson": "pt-BR-01",
+   "es": "muy",
+   "esText": "muy",
+   "esLesson": "es-AR-03",
+   "de": "sehr",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "um_pouco",
+   "ptText": "um pouco",
+   "ptLesson": "pt-BR-01",
+   "es": "un_poco",
+   "esText": "un poco",
+   "esLesson": "es-AR-01",
+   "de": "ein bisschen",
+   "kind": "similar",
+   "patterns": [
+    "ou",
+    "mn"
+   ]
+  },
+  {
+   "pt": "falar",
+   "ptText": "falar",
+   "ptLesson": "pt-BR-01",
+   "es": "hablar",
+   "esText": "hablar",
+   "esLesson": "es-AR-01",
+   "de": "sprechen",
+   "kind": "similar",
+   "patterns": [
+    "fh"
+   ]
+  },
+  {
+   "pt": "entender",
+   "ptText": "entender",
+   "ptLesson": "pt-BR-01",
+   "es": "entender",
+   "esText": "entender",
+   "esLesson": "es-AR-01",
+   "de": "verstehen",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "devagar",
+   "ptText": "devagar",
+   "ptLesson": "pt-BR-01",
+   "es": "despacio",
+   "esText": "despacio",
+   "esLesson": "es-AR-01",
+   "de": "langsam",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "alemao",
+   "ptText": "alemão",
+   "ptLesson": "pt-BR-01",
+   "es": "aleman",
+   "esText": "alemán",
+   "esLesson": "es-AR-01",
+   "de": "Deutsch",
+   "kind": "similar",
+   "patterns": [
+    "ao"
+   ]
+  },
+  {
+   "pt": "num_0",
+   "ptText": "zero",
+   "ptLesson": "pt-BR-02",
+   "es": "cero",
+   "esText": "cero",
+   "esLesson": "es-AR-02",
+   "de": "null",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "num_1",
+   "ptText": "um, uma",
+   "ptLesson": "pt-BR-02",
+   "es": "uno",
+   "esText": "uno, un, una",
+   "esLesson": "es-AR-02",
+   "de": "eins",
+   "kind": "similar",
+   "patterns": [
+    "mn"
+   ]
+  },
+  {
+   "pt": "num_2",
+   "ptText": "dois, duas",
+   "ptLesson": "pt-BR-02",
+   "es": "dos",
+   "esText": "dos",
+   "esLesson": "es-AR-02",
+   "de": "zwei",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "num_3",
+   "ptText": "três",
+   "ptLesson": "pt-BR-02",
+   "es": "tres",
+   "esText": "tres",
+   "esLesson": "es-AR-02",
+   "de": "drei",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "num_4",
+   "ptText": "quatro",
+   "ptLesson": "pt-BR-02",
+   "es": "cuatro",
+   "esText": "cuatro",
+   "esLesson": "es-AR-02",
+   "de": "vier",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "num_5",
+   "ptText": "cinco",
+   "ptLesson": "pt-BR-02",
+   "es": "cinco",
+   "esText": "cinco",
+   "esLesson": "es-AR-02",
+   "de": "fünf",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "num_6",
+   "ptText": "seis",
+   "ptLesson": "pt-BR-02",
+   "es": "seis",
+   "esText": "seis",
+   "esLesson": "es-AR-02",
+   "de": "sechs",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "num_7",
+   "ptText": "sete",
+   "ptLesson": "pt-BR-02",
+   "es": "siete",
+   "esText": "siete",
+   "esLesson": "es-AR-02",
+   "de": "sieben",
+   "kind": "similar",
+   "patterns": [
+    "ie"
+   ]
+  },
+  {
+   "pt": "num_8",
+   "ptText": "oito",
+   "ptLesson": "pt-BR-02",
+   "es": "ocho",
+   "esText": "ocho",
+   "esLesson": "es-AR-02",
+   "de": "acht",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "num_9",
+   "ptText": "nove",
+   "ptLesson": "pt-BR-02",
+   "es": "nueve",
+   "esText": "nueve",
+   "esLesson": "es-AR-02",
+   "de": "neun",
+   "kind": "similar",
+   "patterns": [
+    "ue"
+   ]
+  },
+  {
+   "pt": "num_10",
+   "ptText": "dez",
+   "ptLesson": "pt-BR-02",
+   "es": "diez",
+   "esText": "diez",
+   "esLesson": "es-AR-02",
+   "de": "zehn",
+   "kind": "similar",
+   "patterns": [
+    "ie"
+   ]
+  },
+  {
+   "pt": "num_11",
+   "ptText": "onze",
+   "ptLesson": "pt-BR-02",
+   "es": "once",
+   "esText": "once",
+   "esLesson": "es-AR-02",
+   "de": "elf",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "num_12",
+   "ptText": "doze",
+   "ptLesson": "pt-BR-02",
+   "es": "doce",
+   "esText": "doce",
+   "esLesson": "es-AR-02",
+   "de": "zwölf",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "num_15",
+   "ptText": "quinze",
+   "ptLesson": "pt-BR-02",
+   "es": "quince",
+   "esText": "quince",
+   "esLesson": "es-AR-02",
+   "de": "fünfzehn",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "num_20",
+   "ptText": "vinte",
+   "ptLesson": "pt-BR-02",
+   "es": "veinte",
+   "esText": "veinte",
+   "esLesson": "es-AR-02",
+   "de": "zwanzig",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "num_30",
+   "ptText": "trinta",
+   "ptLesson": "pt-BR-02",
+   "es": "treinta",
+   "esText": "treinta",
+   "esLesson": "es-AR-02",
+   "de": "dreissig",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "num_40",
+   "ptText": "quarenta",
+   "ptLesson": "pt-BR-02",
+   "es": "cuarenta",
+   "esText": "cuarenta",
+   "esLesson": "es-AR-02",
+   "de": "vierzig",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "num_50",
+   "ptText": "cinquenta",
+   "ptLesson": "pt-BR-02",
+   "es": "cincuenta",
+   "esText": "cincuenta",
+   "esLesson": "es-AR-02",
+   "de": "fünfzig",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "num_100",
+   "ptText": "cem",
+   "ptLesson": "pt-BR-02",
+   "es": "cien",
+   "esText": "cien",
+   "esLesson": "es-AR-02",
+   "de": "hundert",
+   "kind": "similar",
+   "patterns": [
+    "ie",
+    "mn"
+   ]
+  },
+  {
+   "pt": "num_200",
+   "ptText": "duzentos, duzentas",
+   "ptLesson": "pt-BR-02",
+   "es": "doscientos",
+   "esText": "doscientos, doscientas",
+   "esLesson": "es-AR-02",
+   "de": "zweihundert",
+   "kind": "similar",
+   "patterns": [
+    "ie"
+   ]
+  },
+  {
+   "pt": "num_500",
+   "ptText": "quinhentos",
+   "ptLesson": "pt-BR-02",
+   "es": "quinientos",
+   "esText": "quinientos",
+   "esLesson": "es-AR-02",
+   "de": "fünfhundert",
+   "kind": "similar",
+   "patterns": [
+    "ie"
+   ]
+  },
+  {
+   "pt": "num_1000",
+   "ptText": "mil",
+   "ptLesson": "pt-BR-02",
+   "es": "mil",
+   "esText": "mil",
+   "esLesson": "es-AR-02",
+   "de": "tausend",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "num_milhao",
+   "ptText": "um milhão",
+   "ptLesson": "pt-BR-02",
+   "es": "millon",
+   "esText": "un millón",
+   "esLesson": "es-AR-02",
+   "de": "eine Million",
+   "kind": "similar",
+   "patterns": [
+    "ao",
+    "lh",
+    "mn"
+   ]
+  },
+  {
+   "pt": "preco",
+   "ptText": "o preço",
+   "ptLesson": "pt-BR-02",
+   "es": "precio",
+   "esText": "el precio",
+   "esLesson": "es-AR-02",
+   "de": "der Preis",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "caro",
+   "ptText": "caro",
+   "ptLesson": "pt-BR-02",
+   "es": "caro",
+   "esText": "caro",
+   "esLesson": "es-AR-02",
+   "de": "teuer",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "barato",
+   "ptText": "barato",
+   "ptLesson": "pt-BR-02",
+   "es": "barato",
+   "esText": "barato",
+   "esLesson": "es-AR-02",
+   "de": "günstig",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "dinheiro",
+   "ptText": "o dinheiro",
+   "ptLesson": "pt-BR-02",
+   "es": "plata",
+   "esText": "la plata",
+   "esLesson": "es-AR-02",
+   "de": "das Geld",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "cartao",
+   "ptText": "o cartão",
+   "ptLesson": "pt-BR-02",
+   "es": "tarjeta",
+   "esText": "la tarjeta",
+   "esLesson": "es-AR-02",
+   "de": "die Karte (Bank-/Kreditkarte)",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "pagar",
+   "ptText": "pagar",
+   "ptLesson": "pt-BR-02",
+   "es": "pagar",
+   "esText": "pagar",
+   "esLesson": "es-AR-02",
+   "de": "bezahlen",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "troco",
+   "ptText": "o troco",
+   "ptLesson": "pt-BR-02",
+   "es": "vuelto",
+   "esText": "el vuelto",
+   "esLesson": "es-AR-02",
+   "de": "das Wechselgeld",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "desconto",
+   "ptText": "o desconto",
+   "ptLesson": "pt-BR-02",
+   "es": "descuento",
+   "esText": "el descuento",
+   "esLesson": "es-AR-02",
+   "de": "der Rabatt",
+   "kind": "similar",
+   "patterns": [
+    "ue"
+   ]
+  },
+  {
+   "pt": "que_horas",
+   "ptText": "que horas são?",
+   "ptLesson": "pt-BR-02",
+   "es": "que_hora",
+   "esText": "¿qué hora es?",
+   "esLesson": "es-AR-02",
+   "de": "wie spät ist es?",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "hora",
+   "ptText": "a hora",
+   "ptLesson": "pt-BR-02",
+   "es": "hora",
+   "esText": "la hora",
+   "esLesson": "es-AR-02",
+   "de": "die Stunde",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "minuto",
+   "ptText": "o minuto",
+   "ptLesson": "pt-BR-02",
+   "es": "minuto",
+   "esText": "el minuto",
+   "esLesson": "es-AR-02",
+   "de": "die Minute",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "e_meia",
+   "ptText": "e meia",
+   "ptLesson": "pt-BR-02",
+   "es": "y_media",
+   "esText": "y media",
+   "esLesson": "es-AR-02",
+   "de": "halb",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "meio_dia",
+   "ptText": "meio-dia",
+   "ptLesson": "pt-BR-02",
+   "es": "mediodia",
+   "esText": "el mediodía",
+   "esLesson": "es-AR-02",
+   "de": "Mittag",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "meia_noite",
+   "ptText": "meia-noite",
+   "ptLesson": "pt-BR-02",
+   "es": "medianoche",
+   "esText": "la medianoche",
+   "esLesson": "es-AR-02",
+   "de": "Mitternacht",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "hoje",
+   "ptText": "hoje",
+   "ptLesson": "pt-BR-02",
+   "es": "hoy",
+   "esText": "hoy",
+   "esLesson": "es-AR-10",
+   "de": "heute",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "amanha",
+   "ptText": "amanhã",
+   "ptLesson": "pt-BR-02",
+   "es": "manana_adv",
+   "esText": "mañana",
+   "esLesson": "es-AR-10",
+   "de": "morgen",
+   "kind": "similar",
+   "patterns": [
+    "nh"
+   ]
+  },
+  {
+   "pt": "ontem",
+   "ptText": "ontem",
+   "ptLesson": "pt-BR-02",
+   "es": "ayer",
+   "esText": "ayer",
+   "esLesson": "es-AR-10",
+   "de": "gestern",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "ano",
+   "ptText": "o ano",
+   "ptLesson": "pt-BR-02",
+   "es": "ano",
+   "esText": "el año",
+   "esLesson": "es-AR-08",
+   "de": "das Jahr",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "restaurante",
+   "ptText": "o restaurante",
+   "ptLesson": "pt-BR-03",
+   "es": "restaurante",
+   "esText": "el restaurante",
+   "esLesson": "es-AR-03",
+   "de": "das Restaurant",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "mesa",
+   "ptText": "a mesa",
+   "ptLesson": "pt-BR-03",
+   "es": "mesa",
+   "esText": "la mesa",
+   "esLesson": "es-AR-03",
+   "de": "der Tisch",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "cardapio",
+   "ptText": "o cardápio",
+   "ptLesson": "pt-BR-03",
+   "es": "carta",
+   "esText": "la carta",
+   "esLesson": "es-AR-03",
+   "de": "die Speisekarte",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "garcom",
+   "ptText": "o garçom",
+   "ptLesson": "pt-BR-03",
+   "es": "mozo",
+   "esText": "el mozo",
+   "esLesson": "es-AR-03",
+   "de": "der Kellner",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "conta",
+   "ptText": "a conta",
+   "ptLesson": "pt-BR-03",
+   "es": "cuenta",
+   "esText": "la cuenta",
+   "esLesson": "es-AR-03",
+   "de": "die Rechnung",
+   "kind": "similar",
+   "patterns": [
+    "ue"
+   ]
+  },
+  {
+   "pt": "gorjeta",
+   "ptText": "a gorjeta",
+   "ptLesson": "pt-BR-03",
+   "es": "propina",
+   "esText": "la propina",
+   "esLesson": "es-AR-03",
+   "de": "das Trinkgeld",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "banheiro",
+   "ptText": "o banheiro",
+   "ptLesson": "pt-BR-03",
+   "es": "bano",
+   "esText": "el baño",
+   "esLesson": "es-AR-04",
+   "de": "die Toilette",
+   "kind": "similar",
+   "patterns": [
+    "nh"
+   ]
+  },
+  {
+   "pt": "reserva",
+   "ptText": "a reserva",
+   "ptLesson": "pt-BR-03",
+   "es": "reserva",
+   "esText": "la reserva",
+   "esLesson": "es-AR-03",
+   "de": "die Reservierung",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "quilo",
+   "ptText": "o quilo",
+   "ptLesson": "pt-BR-03",
+   "es": "kilo",
+   "esText": "el kilo",
+   "esLesson": "es-AR-06",
+   "de": "das Kilo",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "cafe_da_manha",
+   "ptText": "o café da manhã",
+   "ptLesson": "pt-BR-03",
+   "es": "desayuno",
+   "esText": "el desayuno",
+   "esLesson": "es-AR-03",
+   "de": "das Frühstück",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "almoco",
+   "ptText": "o almoço",
+   "ptLesson": "pt-BR-03",
+   "es": "almuerzo",
+   "esText": "el almuerzo",
+   "esLesson": "es-AR-03",
+   "de": "das Mittagessen",
+   "kind": "similar",
+   "patterns": [
+    "ue"
+   ]
+  },
+  {
+   "pt": "jantar",
+   "ptText": "o jantar",
+   "ptLesson": "pt-BR-03",
+   "es": "cena",
+   "esText": "la cena",
+   "esLesson": "es-AR-03",
+   "de": "das Abendessen",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "sobremesa",
+   "ptText": "a sobremesa",
+   "ptLesson": "pt-BR-03",
+   "es": "postre",
+   "esText": "el postre",
+   "esLesson": "es-AR-03",
+   "de": "der Nachtisch",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "prato",
+   "ptText": "o prato",
+   "ptLesson": "pt-BR-03",
+   "es": "plato",
+   "esText": "el plato",
+   "esLesson": "es-AR-03",
+   "de": "der Teller; das Gericht",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "copo",
+   "ptText": "o copo",
+   "ptLesson": "pt-BR-03",
+   "es": "vaso",
+   "esText": "el vaso",
+   "esLesson": "es-AR-03",
+   "de": "das Glas",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "garfo",
+   "ptText": "o garfo",
+   "ptLesson": "pt-BR-03",
+   "es": "tenedor",
+   "esText": "el tenedor",
+   "esLesson": "es-AR-03",
+   "de": "die Gabel",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "faca",
+   "ptText": "a faca",
+   "ptLesson": "pt-BR-03",
+   "es": "cuchillo",
+   "esText": "el cuchillo",
+   "esLesson": "es-AR-03",
+   "de": "das Messer",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "colher",
+   "ptText": "a colher",
+   "ptLesson": "pt-BR-03",
+   "es": "cuchara",
+   "esText": "la cuchara",
+   "esLesson": "es-AR-03",
+   "de": "der Löffel",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "guardanapo",
+   "ptText": "o guardanapo",
+   "ptLesson": "pt-BR-03",
+   "es": "servilleta",
+   "esText": "la servilleta",
+   "esLesson": "es-AR-03",
+   "de": "die Serviette",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "xicara",
+   "ptText": "a xícara",
+   "ptLesson": "pt-BR-03",
+   "es": "taza",
+   "esText": "la taza",
+   "esLesson": "es-AR-03",
+   "de": "die Tasse",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "garrafa",
+   "ptText": "a garrafa",
+   "ptLesson": "pt-BR-03",
+   "es": "botella",
+   "esText": "la botella",
+   "esLesson": "es-AR-03",
+   "de": "die Flasche",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "agua",
+   "ptText": "a água",
+   "ptLesson": "pt-BR-03",
+   "es": "agua",
+   "esText": "el agua",
+   "esLesson": "es-AR-03",
+   "de": "das Wasser",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "cafe",
+   "ptText": "o café",
+   "ptLesson": "pt-BR-03",
+   "es": "cafe",
+   "esText": "el café",
+   "esLesson": "es-AR-03",
+   "de": "der Kaffee",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "suco",
+   "ptText": "o suco",
+   "ptLesson": "pt-BR-03",
+   "es": "jugo",
+   "esText": "el jugo",
+   "esLesson": "es-AR-03",
+   "de": "der Saft",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "cerveja",
+   "ptText": "a cerveja",
+   "ptLesson": "pt-BR-03",
+   "es": "cerveza",
+   "esText": "la cerveza",
+   "esLesson": "es-AR-03",
+   "de": "das Bier",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "vinho",
+   "ptText": "o vinho",
+   "ptLesson": "pt-BR-03",
+   "es": "vino",
+   "esText": "el vino",
+   "esLesson": "es-AR-03",
+   "de": "der Wein",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "leite",
+   "ptText": "o leite",
+   "ptLesson": "pt-BR-03",
+   "es": "leche",
+   "esText": "la leche",
+   "esLesson": "es-AR-03",
+   "de": "die Milch",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "cha",
+   "ptText": "o chá",
+   "ptLesson": "pt-BR-03",
+   "es": "te",
+   "esText": "el té",
+   "esLesson": "es-AR-03",
+   "de": "der Tee",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "gelo",
+   "ptText": "o gelo",
+   "ptLesson": "pt-BR-03",
+   "es": "hielo",
+   "esText": "el hielo",
+   "esLesson": "es-AR-03",
+   "de": "das Eis",
+   "kind": "similar",
+   "patterns": [
+    "ie"
+   ]
+  },
+  {
+   "pt": "carne",
+   "ptText": "a carne",
+   "ptLesson": "pt-BR-03",
+   "es": "carne",
+   "esText": "la carne",
+   "esLesson": "es-AR-03",
+   "de": "das Fleisch",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "frango",
+   "ptText": "o frango",
+   "ptLesson": "pt-BR-03",
+   "es": "pollo",
+   "esText": "el pollo",
+   "esLesson": "es-AR-03",
+   "de": "das Hähnchen",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "peixe",
+   "ptText": "o peixe",
+   "ptLesson": "pt-BR-03",
+   "es": "pescado",
+   "esText": "el pescado",
+   "esLesson": "es-AR-03",
+   "de": "der Fisch",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "arroz",
+   "ptText": "o arroz",
+   "ptLesson": "pt-BR-03",
+   "es": "arroz",
+   "esText": "el arroz",
+   "esLesson": "es-AR-03",
+   "de": "der Reis",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "batata",
+   "ptText": "a batata",
+   "ptLesson": "pt-BR-03",
+   "es": "papa",
+   "esText": "la papa",
+   "esLesson": "es-AR-06",
+   "de": "die Kartoffel",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "batata_frita",
+   "ptText": "a batata frita",
+   "ptLesson": "pt-BR-03",
+   "es": "papas_fritas",
+   "esText": "las papas fritas",
+   "esLesson": "es-AR-03",
+   "de": "die Pommes frites",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "ovo",
+   "ptText": "o ovo",
+   "ptLesson": "pt-BR-03",
+   "es": "huevo",
+   "esText": "el huevo",
+   "esLesson": "es-AR-03",
+   "de": "das Ei",
+   "kind": "similar",
+   "patterns": [
+    "ue"
+   ]
+  },
+  {
+   "pt": "pao",
+   "ptText": "o pão",
+   "ptLesson": "pt-BR-03",
+   "es": "pan",
+   "esText": "el pan",
+   "esLesson": "es-AR-03",
+   "de": "das Brot",
+   "kind": "similar",
+   "patterns": [
+    "ao"
+   ]
+  },
+  {
+   "pt": "queijo",
+   "ptText": "o queijo",
+   "ptLesson": "pt-BR-03",
+   "es": "queso",
+   "esText": "el queso",
+   "esLesson": "es-AR-03",
+   "de": "der Käse",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "manteiga",
+   "ptText": "a manteiga",
+   "ptLesson": "pt-BR-03",
+   "es": "manteca",
+   "esText": "la manteca",
+   "esLesson": "es-AR-06",
+   "de": "die Butter",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "sorvete",
+   "ptText": "o sorvete",
+   "ptLesson": "pt-BR-03",
+   "es": "helado",
+   "esText": "el helado",
+   "esLesson": "es-AR-03",
+   "de": "das Speiseeis",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "salada",
+   "ptText": "a salada",
+   "ptLesson": "pt-BR-03",
+   "es": "ensalada",
+   "esText": "la ensalada",
+   "esLesson": "es-AR-03",
+   "de": "der Salat",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "legumes",
+   "ptText": "os legumes",
+   "ptLesson": "pt-BR-03",
+   "es": "verdura",
+   "esText": "la verdura",
+   "esLesson": "es-AR-03",
+   "de": "das Gemüse",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "tomate",
+   "ptText": "o tomate",
+   "ptLesson": "pt-BR-03",
+   "es": "tomate",
+   "esText": "el tomate",
+   "esLesson": "es-AR-06",
+   "de": "die Tomate",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "cebola",
+   "ptText": "a cebola",
+   "ptLesson": "pt-BR-03",
+   "es": "cebolla",
+   "esText": "la cebolla",
+   "esLesson": "es-AR-06",
+   "de": "die Zwiebel",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "fruta",
+   "ptText": "a fruta",
+   "ptLesson": "pt-BR-03",
+   "es": "fruta",
+   "esText": "la fruta",
+   "esLesson": "es-AR-06",
+   "de": "das Obst",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "sal",
+   "ptText": "o sal",
+   "ptLesson": "pt-BR-03",
+   "es": "sal",
+   "esText": "la sal",
+   "esLesson": "es-AR-03",
+   "de": "das Salz",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "acucar",
+   "ptText": "o açúcar",
+   "ptLesson": "pt-BR-03",
+   "es": "azucar",
+   "esText": "el azúcar",
+   "esLesson": "es-AR-03",
+   "de": "der Zucker",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "gostoso",
+   "ptText": "gostoso",
+   "ptLesson": "pt-BR-03",
+   "es": "rico",
+   "esText": "rico",
+   "esLesson": "es-AR-03",
+   "de": "lecker",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "doce",
+   "ptText": "doce",
+   "ptLesson": "pt-BR-03",
+   "es": "dulce",
+   "esText": "dulce",
+   "esLesson": "es-AR-03",
+   "de": "süss",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "salgado",
+   "ptText": "salgado",
+   "ptLesson": "pt-BR-03",
+   "es": "salado",
+   "esText": "salado",
+   "esLesson": "es-AR-03",
+   "de": "salzig",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "picante",
+   "ptText": "picante",
+   "ptLesson": "pt-BR-03",
+   "es": "picante",
+   "esText": "picante",
+   "esLesson": "es-AR-03",
+   "de": "scharf",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "quente",
+   "ptText": "quente",
+   "ptLesson": "pt-BR-03",
+   "es": "caliente",
+   "esText": "caliente",
+   "esLesson": "es-AR-03",
+   "de": "heiss, warm",
+   "kind": "similar",
+   "patterns": [
+    "ie"
+   ]
+  },
+  {
+   "pt": "frio",
+   "ptText": "frio",
+   "ptLesson": "pt-BR-03",
+   "es": "frio",
+   "esText": "frío",
+   "esLesson": "es-AR-03",
+   "de": "kalt",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "vegetariano",
+   "ptText": "vegetariano",
+   "ptLesson": "pt-BR-03",
+   "es": "vegetariano",
+   "esText": "vegetariano",
+   "esLesson": "es-AR-03",
+   "de": "vegetarisch",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "com",
+   "ptText": "com",
+   "ptLesson": "pt-BR-03",
+   "es": "con",
+   "esText": "con",
+   "esLesson": "es-AR-03",
+   "de": "mit",
+   "kind": "similar",
+   "patterns": [
+    "mn"
+   ]
+  },
+  {
+   "pt": "sem",
+   "ptText": "sem",
+   "ptLesson": "pt-BR-03",
+   "es": "sin",
+   "esText": "sin",
+   "esLesson": "es-AR-03",
+   "de": "ohne",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "comer",
+   "ptText": "comer",
+   "ptLesson": "pt-BR-03",
+   "es": "comer",
+   "esText": "comer",
+   "esLesson": "es-AR-03",
+   "de": "essen",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "beber",
+   "ptText": "beber",
+   "ptLesson": "pt-BR-03",
+   "es": "tomar",
+   "esText": "tomar",
+   "esLesson": "es-AR-03",
+   "de": "trinken",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "querer",
+   "ptText": "querer",
+   "ptLesson": "pt-BR-03",
+   "es": "querer",
+   "esText": "querer",
+   "esLesson": "es-AR-03",
+   "de": "wollen, möchten",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "fome",
+   "ptText": "a fome",
+   "ptLesson": "pt-BR-03",
+   "es": "hambre",
+   "esText": "el hambre",
+   "esLesson": "es-AR-03",
+   "de": "der Hunger",
+   "kind": "similar",
+   "patterns": [
+    "fh"
+   ]
+  },
+  {
+   "pt": "sede",
+   "ptText": "a sede",
+   "ptLesson": "pt-BR-03",
+   "es": "sed",
+   "esText": "la sed",
+   "esLesson": "es-AR-03",
+   "de": "der Durst",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "pedir",
+   "ptText": "pedir",
+   "ptLesson": "pt-BR-03",
+   "es": "pedir",
+   "esText": "pedir",
+   "esLesson": "es-AR-03",
+   "de": "bestellen",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "reservar",
+   "ptText": "reservar",
+   "ptLesson": "pt-BR-03",
+   "es": "reservar",
+   "esText": "reservar",
+   "esLesson": "es-AR-04",
+   "de": "reservieren",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "recomendar",
+   "ptText": "recomendar",
+   "ptLesson": "pt-BR-03",
+   "es": "recomendar",
+   "esText": "recomendar",
+   "esLesson": "es-AR-03",
+   "de": "empfehlen",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "trazer",
+   "ptText": "trazer",
+   "ptLesson": "pt-BR-03",
+   "es": "traer",
+   "esText": "traer",
+   "esLesson": "es-AR-03",
+   "de": "bringen",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "hotel",
+   "ptText": "o hotel",
+   "ptLesson": "pt-BR-04",
+   "es": "hotel",
+   "esText": "el hotel",
+   "esLesson": "es-AR-04",
+   "de": "das Hotel",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "albergue",
+   "ptText": "o albergue",
+   "ptLesson": "pt-BR-04",
+   "es": "hostel",
+   "esText": "el hostel",
+   "esLesson": "es-AR-04",
+   "de": "das Hostel",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "hospedagem",
+   "ptText": "a hospedagem",
+   "ptLesson": "pt-BR-04",
+   "es": "hospedaje",
+   "esText": "el hospedaje",
+   "esLesson": "es-AR-04",
+   "de": "die Unterkunft",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "recepcao",
+   "ptText": "a recepção",
+   "ptLesson": "pt-BR-04",
+   "es": "recepcion",
+   "esText": "la recepción",
+   "esLesson": "es-AR-04",
+   "de": "die Rezeption",
+   "kind": "similar",
+   "patterns": [
+    "cao"
+   ]
+  },
+  {
+   "pt": "check_in",
+   "ptText": "o check-in",
+   "ptLesson": "pt-BR-04",
+   "es": "check_in",
+   "esText": "el check-in",
+   "esLesson": "es-AR-04",
+   "de": "der Check-in",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "check_out",
+   "ptText": "o check-out",
+   "ptLesson": "pt-BR-04",
+   "es": "check_out",
+   "esText": "el check-out",
+   "esLesson": "es-AR-04",
+   "de": "der Check-out",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "passaporte",
+   "ptText": "o passaporte",
+   "ptLesson": "pt-BR-04",
+   "es": "pasaporte",
+   "esText": "el pasaporte",
+   "esLesson": "es-AR-04",
+   "de": "der Reisepass",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "identidade",
+   "ptText": "a identidade",
+   "ptLesson": "pt-BR-04",
+   "es": "documento",
+   "esText": "el documento",
+   "esLesson": "es-AR-04",
+   "de": "der Ausweis",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "hospede",
+   "ptText": "o hóspede",
+   "ptLesson": "pt-BR-04",
+   "es": "huesped",
+   "esText": "el huésped",
+   "esLesson": "es-AR-04",
+   "de": "der Gast (im Hotel)",
+   "kind": "similar",
+   "patterns": [
+    "ue"
+   ]
+  },
+  {
+   "pt": "noite",
+   "ptText": "a noite",
+   "ptLesson": "pt-BR-04",
+   "es": "noche",
+   "esText": "la noche",
+   "esLesson": "es-AR-02",
+   "de": "die Nacht; der Abend",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "chave",
+   "ptText": "a chave",
+   "ptLesson": "pt-BR-04",
+   "es": "llave",
+   "esText": "la llave",
+   "esLesson": "es-AR-04",
+   "de": "der Schlüssel",
+   "kind": "similar",
+   "patterns": [
+    "ch"
+   ]
+  },
+  {
+   "pt": "confirmar",
+   "ptText": "confirmar",
+   "ptLesson": "pt-BR-04",
+   "es": "confirmar",
+   "esText": "confirmar",
+   "esLesson": "es-AR-04",
+   "de": "bestätigen",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "quarto",
+   "ptText": "o quarto",
+   "ptLesson": "pt-BR-04",
+   "es": "habitacion",
+   "esText": "la habitación",
+   "esLesson": "es-AR-04",
+   "de": "das Zimmer",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "quarto_solteiro",
+   "ptText": "o quarto de solteiro",
+   "ptLesson": "pt-BR-04",
+   "es": "habitacion_simple",
+   "esText": "la habitación simple",
+   "esLesson": "es-AR-04",
+   "de": "das Einzelzimmer",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "quarto_casal",
+   "ptText": "o quarto de casal",
+   "ptLesson": "pt-BR-04",
+   "es": "habitacion_doble",
+   "esText": "la habitación doble",
+   "esLesson": "es-AR-04",
+   "de": "das Doppelzimmer",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "cama",
+   "ptText": "a cama",
+   "ptLesson": "pt-BR-04",
+   "es": "cama",
+   "esText": "la cama",
+   "esLesson": "es-AR-04",
+   "de": "das Bett",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "travesseiro",
+   "ptText": "o travesseiro",
+   "ptLesson": "pt-BR-04",
+   "es": "almohada",
+   "esText": "la almohada",
+   "esLesson": "es-AR-04",
+   "de": "das Kopfkissen",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "toalha",
+   "ptText": "a toalha",
+   "ptLesson": "pt-BR-04",
+   "es": "toalla",
+   "esText": "la toalla",
+   "esLesson": "es-AR-04",
+   "de": "das Handtuch",
+   "kind": "similar",
+   "patterns": [
+    "lh"
+   ]
+  },
+  {
+   "pt": "chuveiro",
+   "ptText": "o chuveiro",
+   "ptLesson": "pt-BR-04",
+   "es": "ducha",
+   "esText": "la ducha",
+   "esLesson": "es-AR-04",
+   "de": "die Dusche",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "ar_condicionado",
+   "ptText": "o ar-condicionado",
+   "ptLesson": "pt-BR-04",
+   "es": "aire_acondicionado",
+   "esText": "el aire acondicionado",
+   "esLesson": "es-AR-04",
+   "de": "die Klimaanlage",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "ventilador",
+   "ptText": "o ventilador",
+   "ptLesson": "pt-BR-04",
+   "es": "ventilador",
+   "esText": "el ventilador",
+   "esLesson": "es-AR-04",
+   "de": "der Ventilator",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "janela",
+   "ptText": "a janela",
+   "ptLesson": "pt-BR-04",
+   "es": "ventana",
+   "esText": "la ventana",
+   "esLesson": "es-AR-04",
+   "de": "das Fenster",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "porta",
+   "ptText": "a porta",
+   "ptLesson": "pt-BR-04",
+   "es": "puerta",
+   "esText": "la puerta",
+   "esLesson": "es-AR-04",
+   "de": "die Tür",
+   "kind": "similar",
+   "patterns": [
+    "ue"
+   ]
+  },
+  {
+   "pt": "varanda",
+   "ptText": "a varanda",
+   "ptLesson": "pt-BR-04",
+   "es": "balcon",
+   "esText": "el balcón",
+   "esLesson": "es-AR-04",
+   "de": "der Balkon",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "vista",
+   "ptText": "a vista",
+   "ptLesson": "pt-BR-04",
+   "es": "vista",
+   "esText": "la vista",
+   "esLesson": "es-AR-04",
+   "de": "die Aussicht",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "andar",
+   "ptText": "o andar",
+   "ptLesson": "pt-BR-04",
+   "es": "piso",
+   "esText": "el piso",
+   "esLesson": "es-AR-04",
+   "de": "das Stockwerk",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "elevador",
+   "ptText": "o elevador",
+   "ptLesson": "pt-BR-04",
+   "es": "ascensor",
+   "esText": "el ascensor",
+   "esLesson": "es-AR-04",
+   "de": "der Aufzug",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "escada",
+   "ptText": "a escada",
+   "ptLesson": "pt-BR-04",
+   "es": "escalera",
+   "esText": "la escalera",
+   "esLesson": "es-AR-04",
+   "de": "die Treppe",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "wifi",
+   "ptText": "o wi-fi",
+   "ptLesson": "pt-BR-04",
+   "es": "wifi",
+   "esText": "el wifi",
+   "esLesson": "es-AR-04",
+   "de": "das WLAN",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "senha",
+   "ptText": "a senha",
+   "ptLesson": "pt-BR-04",
+   "es": "contrasena",
+   "esText": "la contraseña",
+   "esLesson": "es-AR-04",
+   "de": "das Passwort",
+   "kind": "similar",
+   "patterns": [
+    "nh"
+   ]
+  },
+  {
+   "pt": "piscina",
+   "ptText": "a piscina",
+   "ptLesson": "pt-BR-04",
+   "es": "pileta",
+   "esText": "la pileta",
+   "esLesson": "es-AR-04",
+   "de": "der Pool",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "estacionamento",
+   "ptText": "o estacionamento",
+   "ptLesson": "pt-BR-04",
+   "es": "estacionamiento",
+   "esText": "el estacionamiento",
+   "esLesson": "es-AR-04",
+   "de": "der Parkplatz",
+   "kind": "similar",
+   "patterns": [
+    "ie"
+   ]
+  },
+  {
+   "pt": "cofre",
+   "ptText": "o cofre",
+   "ptLesson": "pt-BR-04",
+   "es": "caja_fuerte",
+   "esText": "la caja fuerte",
+   "esLesson": "es-AR-04",
+   "de": "der Safe",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "limpeza",
+   "ptText": "a limpeza",
+   "ptLesson": "pt-BR-04",
+   "es": "limpieza",
+   "esText": "la limpieza",
+   "esLesson": "es-AR-04",
+   "de": "die Reinigung, das Putzen",
+   "kind": "similar",
+   "patterns": [
+    "ie"
+   ]
+  },
+  {
+   "pt": "lavanderia",
+   "ptText": "a lavanderia",
+   "ptLesson": "pt-BR-04",
+   "es": "lavadero",
+   "esText": "el lavadero",
+   "esLesson": "es-AR-04",
+   "de": "die Wäscherei",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "tomada",
+   "ptText": "a tomada",
+   "ptLesson": "pt-BR-04",
+   "es": "enchufe",
+   "esText": "el enchufe",
+   "esLesson": "es-AR-04",
+   "de": "die Steckdose",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "carregador",
+   "ptText": "o carregador",
+   "ptLesson": "pt-BR-04",
+   "es": "cargador",
+   "esText": "el cargador",
+   "esLesson": "es-AR-04",
+   "de": "das Ladegerät",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "problema",
+   "ptText": "o problema",
+   "ptLesson": "pt-BR-04",
+   "es": "problema",
+   "esText": "el problema",
+   "esLesson": "es-AR-04",
+   "de": "das Problem",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "quebrado",
+   "ptText": "quebrado",
+   "ptLesson": "pt-BR-04",
+   "es": "roto",
+   "esText": "roto",
+   "esLesson": "es-AR-04",
+   "de": "kaputt",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "sujo",
+   "ptText": "sujo",
+   "ptLesson": "pt-BR-04",
+   "es": "sucio",
+   "esText": "sucio",
+   "esLesson": "es-AR-04",
+   "de": "schmutzig",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "limpo",
+   "ptText": "limpo",
+   "ptLesson": "pt-BR-04",
+   "es": "limpio",
+   "esText": "limpio",
+   "esLesson": "es-AR-04",
+   "de": "sauber",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "barulhento",
+   "ptText": "barulhento",
+   "ptLesson": "pt-BR-04",
+   "es": "ruidoso",
+   "esText": "ruidoso",
+   "esLesson": "es-AR-04",
+   "de": "laut (lärmig)",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "funcionar",
+   "ptText": "funcionar",
+   "ptLesson": "pt-BR-04",
+   "es": "funcionar",
+   "esText": "funcionar",
+   "esLesson": "es-AR-04",
+   "de": "funktionieren",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "trocar",
+   "ptText": "trocar",
+   "ptLesson": "pt-BR-04",
+   "es": "cambiar",
+   "esText": "cambiar",
+   "esLesson": "es-AR-02",
+   "de": "wechseln",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "onde",
+   "ptText": "onde",
+   "ptLesson": "pt-BR-04",
+   "es": "donde",
+   "esText": "¿dónde?",
+   "esLesson": "es-AR-04",
+   "de": "wo",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "quando",
+   "ptText": "quando",
+   "ptLesson": "pt-BR-04",
+   "es": "cuando",
+   "esText": "¿cuándo?",
+   "esLesson": "es-AR-04",
+   "de": "wann",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "qual",
+   "ptText": "qual",
+   "ptLesson": "pt-BR-04",
+   "es": "cual",
+   "esText": "¿cuál?",
+   "esLesson": "es-AR-04",
+   "de": "welche",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "o_que",
+   "ptText": "o que",
+   "ptLesson": "pt-BR-04",
+   "es": "que",
+   "esText": "¿qué?",
+   "esLesson": "es-AR-04",
+   "de": "was",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "por_que",
+   "ptText": "por que",
+   "ptLesson": "pt-BR-04",
+   "es": "por_que",
+   "esText": "¿por qué?",
+   "esLesson": "es-AR-04",
+   "de": "warum",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "quem",
+   "ptText": "quem",
+   "ptLesson": "pt-BR-04",
+   "es": "quien",
+   "esText": "¿quién?",
+   "esLesson": "es-AR-04",
+   "de": "wer",
+   "kind": "similar",
+   "patterns": [
+    "ie",
+    "mn"
+   ]
+  },
+  {
+   "pt": "ter",
+   "ptText": "ter",
+   "ptLesson": "pt-BR-04",
+   "es": "tener",
+   "esText": "tener",
+   "esLesson": "es-AR-04",
+   "de": "haben",
+   "kind": "similar",
+   "patterns": [
+    "nl"
+   ]
+  },
+  {
+   "pt": "precisar",
+   "ptText": "precisar de",
+   "ptLesson": "pt-BR-04",
+   "es": "necesitar",
+   "esText": "necesitar",
+   "esLesson": "es-AR-04",
+   "de": "brauchen",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "ficar",
+   "ptText": "ficar",
+   "ptLesson": "pt-BR-04",
+   "es": "quedarse",
+   "esText": "quedarse",
+   "esLesson": "es-AR-04",
+   "de": "bleiben",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "chegar",
+   "ptText": "chegar",
+   "ptLesson": "pt-BR-04",
+   "es": "llegar",
+   "esText": "llegar",
+   "esLesson": "es-AR-04",
+   "de": "ankommen",
+   "kind": "similar",
+   "patterns": [
+    "ch"
+   ]
+  },
+  {
+   "pt": "sair",
+   "ptText": "sair",
+   "ptLesson": "pt-BR-04",
+   "es": "salir",
+   "esText": "salir",
+   "esLesson": "es-AR-04",
+   "de": "hinausgehen",
+   "kind": "similar",
+   "patterns": [
+    "nl"
+   ]
+  },
+  {
+   "pt": "metro",
+   "ptText": "o metrô",
+   "ptLesson": "pt-BR-05",
+   "es": "subte",
+   "esText": "el subte",
+   "esLesson": "es-AR-05",
+   "de": "die U-Bahn",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "trem",
+   "ptText": "o trem",
+   "ptLesson": "pt-BR-05",
+   "es": "tren",
+   "esText": "el tren",
+   "esLesson": "es-AR-05",
+   "de": "der Zug",
+   "kind": "similar",
+   "patterns": [
+    "mn"
+   ]
+  },
+  {
+   "pt": "aviao",
+   "ptText": "o avião",
+   "ptLesson": "pt-BR-05",
+   "es": "avion",
+   "esText": "el avión",
+   "esLesson": "es-AR-05",
+   "de": "das Flugzeug",
+   "kind": "similar",
+   "patterns": [
+    "ao"
+   ]
+  },
+  {
+   "pt": "taxi",
+   "ptText": "o táxi",
+   "ptLesson": "pt-BR-05",
+   "es": "taxi",
+   "esText": "el taxi",
+   "esLesson": "es-AR-05",
+   "de": "das Taxi",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "carro",
+   "ptText": "o carro",
+   "ptLesson": "pt-BR-05",
+   "es": "auto",
+   "esText": "el auto",
+   "esLesson": "es-AR-05",
+   "de": "das Auto",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "bicicleta",
+   "ptText": "a bicicleta",
+   "ptLesson": "pt-BR-05",
+   "es": "bicicleta",
+   "esText": "la bicicleta",
+   "esLesson": "es-AR-05",
+   "de": "das Fahrrad",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "aeroporto",
+   "ptText": "o aeroporto",
+   "ptLesson": "pt-BR-05",
+   "es": "aeropuerto",
+   "esText": "el aeropuerto",
+   "esLesson": "es-AR-05",
+   "de": "der Flughafen",
+   "kind": "similar",
+   "patterns": [
+    "ue"
+   ]
+  },
+  {
+   "pt": "rodoviaria",
+   "ptText": "a rodoviária",
+   "ptLesson": "pt-BR-05",
+   "es": "terminal",
+   "esText": "la terminal",
+   "esLesson": "es-AR-05",
+   "de": "der Busbahnhof",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "estacao",
+   "ptText": "a estação",
+   "ptLesson": "pt-BR-05",
+   "es": "estacion",
+   "esText": "la estación",
+   "esLesson": "es-AR-05",
+   "de": "der Bahnhof",
+   "kind": "similar",
+   "patterns": [
+    "cao"
+   ]
+  },
+  {
+   "pt": "passagem",
+   "ptText": "a passagem",
+   "ptLesson": "pt-BR-05",
+   "es": "pasaje",
+   "esText": "el pasaje",
+   "esLesson": "es-AR-05",
+   "de": "die Fahrkarte, das Ticket",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "voo",
+   "ptText": "o voo",
+   "ptLesson": "pt-BR-05",
+   "es": "vuelo",
+   "esText": "el vuelo",
+   "esLesson": "es-AR-05",
+   "de": "der Flug",
+   "kind": "similar",
+   "patterns": [
+    "ue"
+   ]
+  },
+  {
+   "pt": "bagagem",
+   "ptText": "a bagagem",
+   "ptLesson": "pt-BR-05",
+   "es": "equipaje",
+   "esText": "el equipaje",
+   "esLesson": "es-AR-05",
+   "de": "das Gepäck",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "mala",
+   "ptText": "a mala",
+   "ptLesson": "pt-BR-05",
+   "es": "valija",
+   "esText": "la valija",
+   "esLesson": "es-AR-05",
+   "de": "der Koffer",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "mochila",
+   "ptText": "a mochila",
+   "ptLesson": "pt-BR-05",
+   "es": "mochila",
+   "esText": "la mochila",
+   "esLesson": "es-AR-05",
+   "de": "der Rucksack",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "ida_e_volta",
+   "ptText": "ida e volta",
+   "ptLesson": "pt-BR-05",
+   "es": "ida_y_vuelta",
+   "esText": "ida y vuelta",
+   "esLesson": "es-AR-05",
+   "de": "hin und zurück",
+   "kind": "similar",
+   "patterns": [
+    "ue"
+   ]
+  },
+  {
+   "pt": "rua",
+   "ptText": "a rua",
+   "ptLesson": "pt-BR-05",
+   "es": "calle",
+   "esText": "la calle",
+   "esLesson": "es-AR-05",
+   "de": "die Strasse",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "avenida",
+   "ptText": "a avenida",
+   "ptLesson": "pt-BR-05",
+   "es": "avenida",
+   "esText": "la avenida",
+   "esLesson": "es-AR-05",
+   "de": "die Allee",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "praca",
+   "ptText": "a praça",
+   "ptLesson": "pt-BR-05",
+   "es": "plaza",
+   "esText": "la plaza",
+   "esLesson": "es-AR-05",
+   "de": "der Platz",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "centro",
+   "ptText": "o centro",
+   "ptLesson": "pt-BR-05",
+   "es": "centro",
+   "esText": "el centro",
+   "esLesson": "es-AR-05",
+   "de": "das Zentrum",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "mapa",
+   "ptText": "o mapa",
+   "ptLesson": "pt-BR-05",
+   "es": "mapa",
+   "esText": "el mapa",
+   "esLesson": "es-AR-05",
+   "de": "der Stadtplan",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "esquina",
+   "ptText": "a esquina",
+   "ptLesson": "pt-BR-05",
+   "es": "esquina",
+   "esText": "la esquina",
+   "esLesson": "es-AR-05",
+   "de": "die Ecke",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "semaforo",
+   "ptText": "o semáforo",
+   "ptLesson": "pt-BR-05",
+   "es": "semaforo",
+   "esText": "el semáforo",
+   "esLesson": "es-AR-05",
+   "de": "die Ampel",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "direita",
+   "ptText": "à direita",
+   "ptLesson": "pt-BR-05",
+   "es": "derecha",
+   "esText": "a la derecha",
+   "esLesson": "es-AR-05",
+   "de": "rechts",
+   "kind": "similar",
+   "patterns": [
+    "eiro"
+   ]
+  },
+  {
+   "pt": "esquerda",
+   "ptText": "à esquerda",
+   "ptLesson": "pt-BR-05",
+   "es": "izquierda",
+   "esText": "a la izquierda",
+   "esLesson": "es-AR-05",
+   "de": "links",
+   "kind": "similar",
+   "patterns": [
+    "ie"
+   ]
+  },
+  {
+   "pt": "reto",
+   "ptText": "reto",
+   "ptLesson": "pt-BR-05",
+   "es": "derecho",
+   "esText": "derecho",
+   "esLesson": "es-AR-05",
+   "de": "geradeaus",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "longe",
+   "ptText": "longe",
+   "ptLesson": "pt-BR-05",
+   "es": "lejos",
+   "esText": "lejos",
+   "esLesson": "es-AR-05",
+   "de": "weit (weg)",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "aqui",
+   "ptText": "aqui",
+   "ptLesson": "pt-BR-05",
+   "es": "aca",
+   "esText": "acá",
+   "esLesson": "es-AR-05",
+   "de": "hier",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "ali",
+   "ptText": "ali",
+   "ptLesson": "pt-BR-05",
+   "es": "alla",
+   "esText": "allá",
+   "esLesson": "es-AR-05",
+   "de": "dort",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "ao_lado",
+   "ptText": "ao lado de",
+   "ptLesson": "pt-BR-05",
+   "es": "al_lado",
+   "esText": "al lado de",
+   "esLesson": "es-AR-05",
+   "de": "neben",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "a_pe",
+   "ptText": "a pé",
+   "ptLesson": "pt-BR-05",
+   "es": "a_pie",
+   "esText": "a pie",
+   "esLesson": "es-AR-05",
+   "de": "zu Fuss",
+   "kind": "similar",
+   "patterns": [
+    "ie"
+   ]
+  },
+  {
+   "pt": "alugar",
+   "ptText": "alugar",
+   "ptLesson": "pt-BR-05",
+   "es": "alquilar",
+   "esText": "alquilar",
+   "esLesson": "es-AR-05",
+   "de": "mieten",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "museu",
+   "ptText": "o museu",
+   "ptLesson": "pt-BR-05",
+   "es": "museo",
+   "esText": "el museo",
+   "esLesson": "es-AR-09",
+   "de": "das Museum",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "ir",
+   "ptText": "ir",
+   "ptLesson": "pt-BR-05",
+   "es": "ir",
+   "esText": "ir",
+   "esLesson": "es-AR-05",
+   "de": "gehen, fahren",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "vir",
+   "ptText": "vir",
+   "ptLesson": "pt-BR-05",
+   "es": "venir",
+   "esText": "venir",
+   "esLesson": "es-AR-05",
+   "de": "kommen",
+   "kind": "similar",
+   "patterns": [
+    "nl"
+   ]
+  },
+  {
+   "pt": "pegar",
+   "ptText": "pegar",
+   "ptLesson": "pt-BR-05",
+   "es": "llevar",
+   "esText": "llevar",
+   "esLesson": "es-AR-06",
+   "de": "nehmen",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "descer",
+   "ptText": "descer",
+   "ptLesson": "pt-BR-05",
+   "es": "bajar",
+   "esText": "bajar",
+   "esLesson": "es-AR-05",
+   "de": "aussteigen; hinuntergehen",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "subir",
+   "ptText": "subir",
+   "ptLesson": "pt-BR-05",
+   "es": "subir",
+   "esText": "subir",
+   "esLesson": "es-AR-05",
+   "de": "einsteigen; hinaufgehen",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "esperar",
+   "ptText": "esperar",
+   "ptLesson": "pt-BR-05",
+   "es": "esperar",
+   "esText": "esperar",
+   "esLesson": "es-AR-05",
+   "de": "warten",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "perder",
+   "ptText": "perder",
+   "ptLesson": "pt-BR-05",
+   "es": "perder",
+   "esText": "perder",
+   "esLesson": "es-AR-07",
+   "de": "verpassen",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "voltar",
+   "ptText": "voltar",
+   "ptLesson": "pt-BR-05",
+   "es": "volver",
+   "esText": "volver",
+   "esLesson": "es-AR-10",
+   "de": "zurückkommen",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "loja",
+   "ptText": "a loja",
+   "ptLesson": "pt-BR-06",
+   "es": "negocio",
+   "esText": "el negocio",
+   "esLesson": "es-AR-06",
+   "de": "das Geschäft, der Laden",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "mercado",
+   "ptText": "o mercado",
+   "ptLesson": "pt-BR-06",
+   "es": "feria",
+   "esText": "la feria",
+   "esLesson": "es-AR-06",
+   "de": "der Markt",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "supermercado",
+   "ptText": "o supermercado",
+   "ptLesson": "pt-BR-06",
+   "es": "supermercado",
+   "esText": "el supermercado",
+   "esLesson": "es-AR-06",
+   "de": "der Supermarkt",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "padaria",
+   "ptText": "a padaria",
+   "ptLesson": "pt-BR-06",
+   "es": "panaderia",
+   "esText": "la panadería",
+   "esLesson": "es-AR-06",
+   "de": "die Bäckerei",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "acougue",
+   "ptText": "o açougue",
+   "ptLesson": "pt-BR-06",
+   "es": "carniceria",
+   "esText": "la carnicería",
+   "esLesson": "es-AR-06",
+   "de": "die Metzgerei",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "shopping",
+   "ptText": "o shopping",
+   "ptLesson": "pt-BR-06",
+   "es": "shopping",
+   "esText": "el shopping",
+   "esLesson": "es-AR-06",
+   "de": "das Einkaufszentrum",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "sacola",
+   "ptText": "a sacola",
+   "ptLesson": "pt-BR-06",
+   "es": "bolsa",
+   "esText": "la bolsa",
+   "esLesson": "es-AR-06",
+   "de": "die Tüte",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "roupa",
+   "ptText": "a roupa",
+   "ptLesson": "pt-BR-06",
+   "es": "ropa",
+   "esText": "la ropa",
+   "esLesson": "es-AR-06",
+   "de": "die Kleidung",
+   "kind": "similar",
+   "patterns": [
+    "ou"
+   ]
+  },
+  {
+   "pt": "camiseta",
+   "ptText": "a camiseta",
+   "ptLesson": "pt-BR-06",
+   "es": "remera",
+   "esText": "la remera",
+   "esLesson": "es-AR-06",
+   "de": "das T-Shirt",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "calca",
+   "ptText": "a calça",
+   "ptLesson": "pt-BR-06",
+   "es": "pantalon",
+   "esText": "el pantalón",
+   "esLesson": "es-AR-06",
+   "de": "die Hose",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "saia",
+   "ptText": "a saia",
+   "ptLesson": "pt-BR-06",
+   "es": "pollera",
+   "esText": "la pollera",
+   "esLesson": "es-AR-06",
+   "de": "der Rock",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "casaco",
+   "ptText": "o casaco",
+   "ptLesson": "pt-BR-06",
+   "es": "campera",
+   "esText": "la campera",
+   "esLesson": "es-AR-06",
+   "de": "die Jacke",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "bone",
+   "ptText": "o boné",
+   "ptLesson": "pt-BR-06",
+   "es": "gorra",
+   "esText": "la gorra",
+   "esLesson": "es-AR-06",
+   "de": "die Schirmmütze",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "oculos",
+   "ptText": "os óculos de sol",
+   "ptLesson": "pt-BR-06",
+   "es": "anteojos_de_sol",
+   "esText": "los anteojos de sol",
+   "esLesson": "es-AR-06",
+   "de": "die Sonnenbrille",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "tamanho",
+   "ptText": "o tamanho",
+   "ptLesson": "pt-BR-06",
+   "es": "talle",
+   "esText": "el talle",
+   "esLesson": "es-AR-06",
+   "de": "die Grösse",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "provador",
+   "ptText": "o provador",
+   "ptLesson": "pt-BR-06",
+   "es": "probador",
+   "esText": "el probador",
+   "esLesson": "es-AR-06",
+   "de": "die Umkleidekabine",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "cor",
+   "ptText": "a cor",
+   "ptLesson": "pt-BR-06",
+   "es": "color",
+   "esText": "el color",
+   "esLesson": "es-AR-06",
+   "de": "die Farbe",
+   "kind": "similar",
+   "patterns": [
+    "nl"
+   ]
+  },
+  {
+   "pt": "branco",
+   "ptText": "branco",
+   "ptLesson": "pt-BR-06",
+   "es": "blanco",
+   "esText": "blanco",
+   "esLesson": "es-AR-06",
+   "de": "weiss",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "preto",
+   "ptText": "preto",
+   "ptLesson": "pt-BR-06",
+   "es": "negro",
+   "esText": "negro",
+   "esLesson": "es-AR-06",
+   "de": "schwarz",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "vermelho",
+   "ptText": "vermelho",
+   "ptLesson": "pt-BR-06",
+   "es": "rojo",
+   "esText": "rojo",
+   "esLesson": "es-AR-06",
+   "de": "rot",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "azul",
+   "ptText": "azul",
+   "ptLesson": "pt-BR-06",
+   "es": "azul",
+   "esText": "azul",
+   "esLesson": "es-AR-06",
+   "de": "blau",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "verde",
+   "ptText": "verde",
+   "ptLesson": "pt-BR-06",
+   "es": "verde",
+   "esText": "verde",
+   "esLesson": "es-AR-06",
+   "de": "grün",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "amarelo",
+   "ptText": "amarelo",
+   "ptLesson": "pt-BR-06",
+   "es": "amarillo",
+   "esText": "amarillo",
+   "esLesson": "es-AR-06",
+   "de": "gelb",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "cinza",
+   "ptText": "cinza",
+   "ptLesson": "pt-BR-06",
+   "es": "gris",
+   "esText": "gris",
+   "esLesson": "es-AR-06",
+   "de": "grau",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "banana",
+   "ptText": "a banana",
+   "ptLesson": "pt-BR-06",
+   "es": "banana",
+   "esText": "la banana",
+   "esLesson": "es-AR-06",
+   "de": "die Banane",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "maca",
+   "ptText": "a maçã",
+   "ptLesson": "pt-BR-06",
+   "es": "manzana",
+   "esText": "la manzana",
+   "esLesson": "es-AR-06",
+   "de": "der Apfel",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "laranja",
+   "ptText": "a laranja",
+   "ptLesson": "pt-BR-06",
+   "es": "naranja",
+   "esText": "la naranja",
+   "esLesson": "es-AR-06",
+   "de": "die Orange",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "pequeno",
+   "ptText": "pequeno",
+   "ptLesson": "pt-BR-06",
+   "es": "chico",
+   "esText": "chico",
+   "esLesson": "es-AR-06",
+   "de": "klein",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "grande",
+   "ptText": "grande",
+   "ptLesson": "pt-BR-06",
+   "es": "grande",
+   "esText": "grande",
+   "esLesson": "es-AR-06",
+   "de": "gross",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "mais",
+   "ptText": "mais",
+   "ptLesson": "pt-BR-06",
+   "es": "mas",
+   "esText": "más",
+   "esLesson": "es-AR-06",
+   "de": "mehr",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "menos",
+   "ptText": "menos",
+   "ptLesson": "pt-BR-06",
+   "es": "menos",
+   "esText": "menos",
+   "esLesson": "es-AR-06",
+   "de": "weniger",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "outro",
+   "ptText": "outro",
+   "ptLesson": "pt-BR-06",
+   "es": "otro",
+   "esText": "otro, otra",
+   "esLesson": "es-AR-06",
+   "de": "ein anderer",
+   "kind": "similar",
+   "patterns": [
+    "ou"
+   ]
+  },
+  {
+   "pt": "comprar",
+   "ptText": "comprar",
+   "ptLesson": "pt-BR-06",
+   "es": "comprar",
+   "esText": "comprar",
+   "esLesson": "es-AR-06",
+   "de": "kaufen",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "vender",
+   "ptText": "vender",
+   "ptLesson": "pt-BR-06",
+   "es": "vender",
+   "esText": "vender",
+   "esLesson": "es-AR-06",
+   "de": "verkaufen",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "custar",
+   "ptText": "custar",
+   "ptLesson": "pt-BR-06",
+   "es": "costar",
+   "esText": "costar",
+   "esLesson": "es-AR-02",
+   "de": "kosten",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "experimentar",
+   "ptText": "experimentar",
+   "ptLesson": "pt-BR-06",
+   "es": "probar",
+   "esText": "probar",
+   "esLesson": "es-AR-06",
+   "de": "anprobieren",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "olhar",
+   "ptText": "olhar",
+   "ptLesson": "pt-BR-06",
+   "es": "ver",
+   "esText": "ver",
+   "esLesson": "es-AR-09",
+   "de": "schauen",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "procurar",
+   "ptText": "procurar",
+   "ptLesson": "pt-BR-06",
+   "es": "buscar",
+   "esText": "buscar",
+   "esLesson": "es-AR-06",
+   "de": "suchen",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "aberto",
+   "ptText": "aberto",
+   "ptLesson": "pt-BR-06",
+   "es": "abierto",
+   "esText": "abierto",
+   "esLesson": "es-AR-02",
+   "de": "offen, geöffnet",
+   "kind": "similar",
+   "patterns": [
+    "ie"
+   ]
+  },
+  {
+   "pt": "fechado",
+   "ptText": "fechado",
+   "ptLesson": "pt-BR-06",
+   "es": "cerrado",
+   "esText": "cerrado",
+   "esLesson": "es-AR-02",
+   "de": "geschlossen",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "novo",
+   "ptText": "novo",
+   "ptLesson": "pt-BR-06",
+   "es": "nuevo",
+   "esText": "nuevo",
+   "esLesson": "es-AR-06",
+   "de": "neu",
+   "kind": "similar",
+   "patterns": [
+    "ue"
+   ]
+  },
+  {
+   "pt": "este",
+   "ptText": "este, esta",
+   "ptLesson": "pt-BR-06",
+   "es": "este",
+   "esText": "este, esta",
+   "esLesson": "es-AR-06",
+   "de": "dieser",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "aquele",
+   "ptText": "aquele, aquela",
+   "ptLesson": "pt-BR-06",
+   "es": "aquel",
+   "esText": "aquel, aquella",
+   "esLesson": "es-AR-06",
+   "de": "jener",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "cabeca",
+   "ptText": "a cabeça",
+   "ptLesson": "pt-BR-07",
+   "es": "cabeza",
+   "esText": "la cabeza",
+   "esLesson": "es-AR-07",
+   "de": "der Kopf",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "olho",
+   "ptText": "o olho",
+   "ptLesson": "pt-BR-07",
+   "es": "ojo",
+   "esText": "el ojo",
+   "esLesson": "es-AR-07",
+   "de": "das Auge",
+   "kind": "similar",
+   "patterns": [
+    "lh"
+   ]
+  },
+  {
+   "pt": "ouvido",
+   "ptText": "o ouvido",
+   "ptLesson": "pt-BR-07",
+   "es": "oido",
+   "esText": "el oído",
+   "esLesson": "es-AR-07",
+   "de": "das Ohr (innen)",
+   "kind": "similar",
+   "patterns": [
+    "ou"
+   ]
+  },
+  {
+   "pt": "dente",
+   "ptText": "o dente",
+   "ptLesson": "pt-BR-07",
+   "es": "diente",
+   "esText": "el diente",
+   "esLesson": "es-AR-07",
+   "de": "der Zahn",
+   "kind": "similar",
+   "patterns": [
+    "ie"
+   ]
+  },
+  {
+   "pt": "garganta",
+   "ptText": "a garganta",
+   "ptLesson": "pt-BR-07",
+   "es": "garganta",
+   "esText": "la garganta",
+   "esLesson": "es-AR-07",
+   "de": "der Hals",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "costas",
+   "ptText": "as costas",
+   "ptLesson": "pt-BR-07",
+   "es": "espalda",
+   "esText": "la espalda",
+   "esLesson": "es-AR-07",
+   "de": "der Rücken",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "braco",
+   "ptText": "o braço",
+   "ptLesson": "pt-BR-07",
+   "es": "brazo",
+   "esText": "el brazo",
+   "esLesson": "es-AR-07",
+   "de": "der Arm",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "mao",
+   "ptText": "a mão",
+   "ptLesson": "pt-BR-07",
+   "es": "mano",
+   "esText": "la mano",
+   "esLesson": "es-AR-07",
+   "de": "die Hand",
+   "kind": "similar",
+   "patterns": [
+    "ao",
+    "nl"
+   ]
+  },
+  {
+   "pt": "perna",
+   "ptText": "a perna",
+   "ptLesson": "pt-BR-07",
+   "es": "pierna",
+   "esText": "la pierna",
+   "esLesson": "es-AR-07",
+   "de": "das Bein",
+   "kind": "similar",
+   "patterns": [
+    "ie"
+   ]
+  },
+  {
+   "pt": "pe",
+   "ptText": "o pé",
+   "ptLesson": "pt-BR-07",
+   "es": "pie",
+   "esText": "el pie",
+   "esLesson": "es-AR-07",
+   "de": "der Fuss",
+   "kind": "similar",
+   "patterns": [
+    "ie"
+   ]
+  },
+  {
+   "pt": "barriga",
+   "ptText": "a barriga",
+   "ptLesson": "pt-BR-07",
+   "es": "panza",
+   "esText": "la panza",
+   "esLesson": "es-AR-07",
+   "de": "der Bauch",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "dor",
+   "ptText": "a dor",
+   "ptLesson": "pt-BR-07",
+   "es": "dolor",
+   "esText": "el dolor",
+   "esLesson": "es-AR-07",
+   "de": "der Schmerz",
+   "kind": "similar",
+   "patterns": [
+    "nl"
+   ]
+  },
+  {
+   "pt": "febre",
+   "ptText": "a febre",
+   "ptLesson": "pt-BR-07",
+   "es": "fiebre",
+   "esText": "la fiebre",
+   "esLesson": "es-AR-07",
+   "de": "das Fieber",
+   "kind": "similar",
+   "patterns": [
+    "ie"
+   ]
+  },
+  {
+   "pt": "tosse",
+   "ptText": "a tosse",
+   "ptLesson": "pt-BR-07",
+   "es": "tos",
+   "esText": "la tos",
+   "esLesson": "es-AR-07",
+   "de": "der Husten",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "gripe",
+   "ptText": "a gripe",
+   "ptLesson": "pt-BR-07",
+   "es": "gripe",
+   "esText": "la gripe",
+   "esLesson": "es-AR-07",
+   "de": "die Grippe",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "resfriado",
+   "ptText": "o resfriado",
+   "ptLesson": "pt-BR-07",
+   "es": "resfrio",
+   "esText": "el resfrío",
+   "esLesson": "es-AR-07",
+   "de": "die Erkältung",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "diarreia",
+   "ptText": "a diarreia",
+   "ptLesson": "pt-BR-07",
+   "es": "diarrea",
+   "esText": "la diarrea",
+   "esLesson": "es-AR-07",
+   "de": "der Durchfall",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "alergia",
+   "ptText": "a alergia",
+   "ptLesson": "pt-BR-07",
+   "es": "alergia",
+   "esText": "la alergia",
+   "esLesson": "es-AR-07",
+   "de": "die Allergie",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "picada",
+   "ptText": "a picada",
+   "ptLesson": "pt-BR-07",
+   "es": "picadura",
+   "esText": "la picadura",
+   "esLesson": "es-AR-07",
+   "de": "der Stich (Insekt)",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "doente",
+   "ptText": "doente",
+   "ptLesson": "pt-BR-07",
+   "es": "enfermo",
+   "esText": "enfermo",
+   "esLesson": "es-AR-07",
+   "de": "krank",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "tonto",
+   "ptText": "tonto",
+   "ptLesson": "pt-BR-07",
+   "es": "mareado",
+   "esText": "mareado",
+   "esLesson": "es-AR-07",
+   "de": "schwindlig",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "cansado",
+   "ptText": "cansado",
+   "ptLesson": "pt-BR-07",
+   "es": "cansado",
+   "esText": "cansado",
+   "esLesson": "es-AR-07",
+   "de": "müde",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "doer",
+   "ptText": "doer",
+   "ptLesson": "pt-BR-07",
+   "es": "doler",
+   "esText": "doler",
+   "esLesson": "es-AR-07",
+   "de": "wehtun",
+   "kind": "similar",
+   "patterns": [
+    "nl"
+   ]
+  },
+  {
+   "pt": "medico",
+   "ptText": "o médico",
+   "ptLesson": "pt-BR-07",
+   "es": "medico",
+   "esText": "el médico",
+   "esLesson": "es-AR-07",
+   "de": "der Arzt",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "hospital",
+   "ptText": "o hospital",
+   "ptLesson": "pt-BR-07",
+   "es": "hospital",
+   "esText": "el hospital",
+   "esLesson": "es-AR-07",
+   "de": "das Krankenhaus",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "pronto_socorro",
+   "ptText": "o pronto-socorro",
+   "ptLesson": "pt-BR-07",
+   "es": "guardia",
+   "esText": "la guardia",
+   "esLesson": "es-AR-07",
+   "de": "die Notaufnahme",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "farmacia",
+   "ptText": "a farmácia",
+   "ptLesson": "pt-BR-07",
+   "es": "farmacia",
+   "esText": "la farmacia",
+   "esLesson": "es-AR-07",
+   "de": "die Apotheke",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "remedio",
+   "ptText": "o remédio",
+   "ptLesson": "pt-BR-07",
+   "es": "remedio",
+   "esText": "el remedio",
+   "esLesson": "es-AR-07",
+   "de": "das Medikament",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "comprimido",
+   "ptText": "o comprimido",
+   "ptLesson": "pt-BR-07",
+   "es": "pastilla",
+   "esText": "la pastilla",
+   "esLesson": "es-AR-07",
+   "de": "die Tablette",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "receita",
+   "ptText": "a receita",
+   "ptLesson": "pt-BR-07",
+   "es": "receta",
+   "esText": "la receta",
+   "esLesson": "es-AR-07",
+   "de": "das Rezept",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "protetor",
+   "ptText": "o protetor solar",
+   "ptLesson": "pt-BR-07",
+   "es": "protector_solar",
+   "esText": "el protector solar",
+   "esLesson": "es-AR-07",
+   "de": "die Sonnencreme",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "repelente",
+   "ptText": "o repelente",
+   "ptLesson": "pt-BR-07",
+   "es": "repelente",
+   "esText": "el repelente",
+   "esLesson": "es-AR-07",
+   "de": "das Mückenschutzmittel",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "curativo",
+   "ptText": "o curativo",
+   "ptLesson": "pt-BR-07",
+   "es": "curita",
+   "esText": "la curita",
+   "esLesson": "es-AR-07",
+   "de": "das Pflaster",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "socorro",
+   "ptText": "socorro!",
+   "ptLesson": "pt-BR-07",
+   "es": "socorro",
+   "esText": "¡socorro!",
+   "esLesson": "es-AR-07",
+   "de": "Hilfe!",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "ajuda",
+   "ptText": "a ajuda",
+   "ptLesson": "pt-BR-07",
+   "es": "ayuda",
+   "esText": "la ayuda",
+   "esLesson": "es-AR-07",
+   "de": "die Hilfe",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "emergencia",
+   "ptText": "a emergência",
+   "ptLesson": "pt-BR-07",
+   "es": "emergencia",
+   "esText": "la emergencia",
+   "esLesson": "es-AR-07",
+   "de": "der Notfall",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "ambulancia",
+   "ptText": "a ambulância",
+   "ptLesson": "pt-BR-07",
+   "es": "ambulancia",
+   "esText": "la ambulancia",
+   "esLesson": "es-AR-07",
+   "de": "der Krankenwagen",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "policia",
+   "ptText": "a polícia",
+   "ptLesson": "pt-BR-07",
+   "es": "policia",
+   "esText": "la policía",
+   "esLesson": "es-AR-07",
+   "de": "die Polizei",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "roubar",
+   "ptText": "roubar",
+   "ptLesson": "pt-BR-07",
+   "es": "robar",
+   "esText": "robar",
+   "esLesson": "es-AR-07",
+   "de": "stehlen",
+   "kind": "similar",
+   "patterns": [
+    "ou"
+   ]
+  },
+  {
+   "pt": "perigoso",
+   "ptText": "perigoso",
+   "ptLesson": "pt-BR-07",
+   "es": "peligroso",
+   "esText": "peligroso",
+   "esLesson": "es-AR-07",
+   "de": "gefährlich",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "melhor",
+   "ptText": "melhor",
+   "ptLesson": "pt-BR-07",
+   "es": "mejor",
+   "esText": "mejor",
+   "esLesson": "es-AR-06",
+   "de": "besser",
+   "kind": "similar",
+   "patterns": [
+    "lh"
+   ]
+  },
+  {
+   "pt": "pior",
+   "ptText": "pior",
+   "ptLesson": "pt-BR-07",
+   "es": "peor",
+   "esText": "peor",
+   "esLesson": "es-AR-06",
+   "de": "schlechter",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "chamar",
+   "ptText": "chamar",
+   "ptLesson": "pt-BR-07",
+   "es": "llamar",
+   "esText": "llamar",
+   "esLesson": "es-AR-07",
+   "de": "rufen",
+   "kind": "similar",
+   "patterns": [
+    "ch"
+   ]
+  },
+  {
+   "pt": "ter_que",
+   "ptText": "ter que",
+   "ptLesson": "pt-BR-07",
+   "es": "tener_que",
+   "esText": "tener que",
+   "esLesson": "es-AR-07",
+   "de": "müssen",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "de_onde",
+   "ptText": "de onde",
+   "ptLesson": "pt-BR-08",
+   "es": "de_donde",
+   "esText": "¿de dónde?",
+   "esLesson": "es-AR-08",
+   "de": "woher",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "pais_land",
+   "ptText": "o país",
+   "ptLesson": "pt-BR-08",
+   "es": "pais",
+   "esText": "el país",
+   "esLesson": "es-AR-08",
+   "de": "das Land",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "cidade",
+   "ptText": "a cidade",
+   "ptLesson": "pt-BR-08",
+   "es": "ciudad",
+   "esText": "la ciudad",
+   "esLesson": "es-AR-08",
+   "de": "die Stadt",
+   "kind": "similar",
+   "patterns": [
+    "dade"
+   ]
+  },
+  {
+   "pt": "alemanha",
+   "ptText": "a Alemanha",
+   "ptLesson": "pt-BR-08",
+   "es": "alemania",
+   "esText": "Alemania",
+   "esLesson": "es-AR-08",
+   "de": "Deutschland",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "estrangeiro",
+   "ptText": "estrangeiro",
+   "ptLesson": "pt-BR-08",
+   "es": "extranjero",
+   "esText": "extranjero",
+   "esLesson": "es-AR-08",
+   "de": "ausländisch",
+   "kind": "similar",
+   "patterns": [
+    "eiro"
+   ]
+  },
+  {
+   "pt": "morar",
+   "ptText": "morar",
+   "ptLesson": "pt-BR-08",
+   "es": "vivir",
+   "esText": "vivir",
+   "esLesson": "es-AR-08",
+   "de": "wohnen",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "familia",
+   "ptText": "a família",
+   "ptLesson": "pt-BR-08",
+   "es": "familia",
+   "esText": "la familia",
+   "esLesson": "es-AR-08",
+   "de": "die Familie",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "pais_eltern",
+   "ptText": "os pais",
+   "ptLesson": "pt-BR-08",
+   "es": "papas",
+   "esText": "los papás",
+   "esLesson": "es-AR-08",
+   "de": "die Eltern",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "pai",
+   "ptText": "o pai",
+   "ptLesson": "pt-BR-08",
+   "es": "padre",
+   "esText": "el padre",
+   "esLesson": "es-AR-08",
+   "de": "der Vater",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "mae",
+   "ptText": "a mãe",
+   "ptLesson": "pt-BR-08",
+   "es": "madre",
+   "esText": "la madre",
+   "esLesson": "es-AR-08",
+   "de": "die Mutter",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "filho",
+   "ptText": "o filho",
+   "ptLesson": "pt-BR-08",
+   "es": "hijo",
+   "esText": "el hijo",
+   "esLesson": "es-AR-08",
+   "de": "der Sohn",
+   "kind": "similar",
+   "patterns": [
+    "lh",
+    "fh"
+   ]
+  },
+  {
+   "pt": "filha",
+   "ptText": "a filha",
+   "ptLesson": "pt-BR-08",
+   "es": "hija",
+   "esText": "la hija",
+   "esLesson": "es-AR-08",
+   "de": "die Tochter",
+   "kind": "similar",
+   "patterns": [
+    "lh",
+    "fh"
+   ]
+  },
+  {
+   "pt": "irmao",
+   "ptText": "o irmão",
+   "ptLesson": "pt-BR-08",
+   "es": "hermano",
+   "esText": "el hermano",
+   "esLesson": "es-AR-08",
+   "de": "der Bruder",
+   "kind": "similar",
+   "patterns": [
+    "ao"
+   ]
+  },
+  {
+   "pt": "irma",
+   "ptText": "a irmã",
+   "ptLesson": "pt-BR-08",
+   "es": "hermana",
+   "esText": "la hermana",
+   "esLesson": "es-AR-08",
+   "de": "die Schwester",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "marido",
+   "ptText": "o marido",
+   "ptLesson": "pt-BR-08",
+   "es": "esposo",
+   "esText": "el esposo",
+   "esLesson": "es-AR-08",
+   "de": "der Ehemann",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "avo_m",
+   "ptText": "o avô",
+   "ptLesson": "pt-BR-08",
+   "es": "abuelo",
+   "esText": "el abuelo",
+   "esLesson": "es-AR-08",
+   "de": "der Grossvater",
+   "kind": "similar",
+   "patterns": [
+    "ue"
+   ]
+  },
+  {
+   "pt": "amigo",
+   "ptText": "o amigo",
+   "ptLesson": "pt-BR-08",
+   "es": "amigo",
+   "esText": "el amigo",
+   "esLesson": "es-AR-08",
+   "de": "der Freund (Kumpel)",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "casado",
+   "ptText": "casado",
+   "ptLesson": "pt-BR-08",
+   "es": "casado",
+   "esText": "casado",
+   "esLesson": "es-AR-08",
+   "de": "verheiratet",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "solteiro",
+   "ptText": "solteiro",
+   "ptLesson": "pt-BR-08",
+   "es": "soltero",
+   "esText": "soltero",
+   "esLesson": "es-AR-08",
+   "de": "ledig",
+   "kind": "similar",
+   "patterns": [
+    "eiro"
+   ]
+  },
+  {
+   "pt": "trabalho",
+   "ptText": "o trabalho",
+   "ptLesson": "pt-BR-08",
+   "es": "trabajo",
+   "esText": "el trabajo",
+   "esLesson": "es-AR-08",
+   "de": "die Arbeit",
+   "kind": "similar",
+   "patterns": [
+    "lh"
+   ]
+  },
+  {
+   "pt": "trabalhar",
+   "ptText": "trabalhar",
+   "ptLesson": "pt-BR-08",
+   "es": "trabajar",
+   "esText": "trabajar",
+   "esLesson": "es-AR-08",
+   "de": "arbeiten",
+   "kind": "similar",
+   "patterns": [
+    "lh"
+   ]
+  },
+  {
+   "pt": "empresa",
+   "ptText": "a empresa",
+   "ptLesson": "pt-BR-08",
+   "es": "empresa",
+   "esText": "la empresa",
+   "esLesson": "es-AR-08",
+   "de": "die Firma",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "engenheiro",
+   "ptText": "o engenheiro",
+   "ptLesson": "pt-BR-08",
+   "es": "ingeniero",
+   "esText": "el ingeniero",
+   "esLesson": "es-AR-08",
+   "de": "der Ingenieur",
+   "kind": "similar",
+   "patterns": [
+    "eiro",
+    "ie"
+   ]
+  },
+  {
+   "pt": "professor",
+   "ptText": "o professor",
+   "ptLesson": "pt-BR-08",
+   "es": "profesor",
+   "esText": "el profesor",
+   "esLesson": "es-AR-08",
+   "de": "der Lehrer",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "estudar",
+   "ptText": "estudar",
+   "ptLesson": "pt-BR-08",
+   "es": "estudiar",
+   "esText": "estudiar",
+   "esLesson": "es-AR-08",
+   "de": "studieren; lernen",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "estudante",
+   "ptText": "o estudante",
+   "ptLesson": "pt-BR-08",
+   "es": "estudiante",
+   "esText": "el estudiante",
+   "esLesson": "es-AR-08",
+   "de": "der Student",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "ler",
+   "ptText": "ler",
+   "ptLesson": "pt-BR-08",
+   "es": "leer",
+   "esText": "leer",
+   "esLesson": "es-AR-09",
+   "de": "lesen",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "musica",
+   "ptText": "a música",
+   "ptLesson": "pt-BR-08",
+   "es": "musica",
+   "esText": "la música",
+   "esLesson": "es-AR-09",
+   "de": "die Musik",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "futebol",
+   "ptText": "o futebol",
+   "ptLesson": "pt-BR-08",
+   "es": "futbol",
+   "esText": "el fútbol",
+   "esLesson": "es-AR-09",
+   "de": "der Fussball",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "viagem",
+   "ptText": "a viagem",
+   "ptLesson": "pt-BR-08",
+   "es": "viaje",
+   "esText": "el viaje",
+   "esLesson": "es-AR-08",
+   "de": "die Reise",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "ferias",
+   "ptText": "as férias",
+   "ptLesson": "pt-BR-08",
+   "es": "vacaciones",
+   "esText": "las vacaciones",
+   "esLesson": "es-AR-08",
+   "de": "die Ferien",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "conhecer",
+   "ptText": "conhecer",
+   "ptLesson": "pt-BR-08",
+   "es": "conocer",
+   "esText": "conocer",
+   "esLesson": "es-AR-08",
+   "de": "kennen; kennenlernen",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "legal",
+   "ptText": "legal",
+   "ptLesson": "pt-BR-08",
+   "es": "copado",
+   "esText": "copado",
+   "esLesson": "es-AR-08",
+   "de": "toll",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "simpatico",
+   "ptText": "simpático",
+   "ptLesson": "pt-BR-08",
+   "es": "simpatico",
+   "esText": "simpático",
+   "esLesson": "es-AR-08",
+   "de": "sympathisch, freundlich",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "bonito",
+   "ptText": "bonito",
+   "ptLesson": "pt-BR-08",
+   "es": "lindo",
+   "esText": "lindo",
+   "esLesson": "es-AR-06",
+   "de": "schön, hübsch",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "nos",
+   "ptText": "nós",
+   "ptLesson": "pt-BR-08",
+   "es": "nosotros",
+   "esText": "nosotros",
+   "esLesson": "es-AR-08",
+   "de": "wir",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "tempo",
+   "ptText": "o tempo",
+   "ptLesson": "pt-BR-09",
+   "es": "tiempo",
+   "esText": "el tiempo",
+   "esLesson": "es-AR-09",
+   "de": "das Wetter; die Zeit",
+   "kind": "similar",
+   "patterns": [
+    "ie"
+   ]
+  },
+  {
+   "pt": "sol",
+   "ptText": "o sol",
+   "ptLesson": "pt-BR-09",
+   "es": "sol",
+   "esText": "el sol",
+   "esLesson": "es-AR-09",
+   "de": "die Sonne",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "chuva",
+   "ptText": "a chuva",
+   "ptLesson": "pt-BR-09",
+   "es": "lluvia",
+   "esText": "la lluvia",
+   "esLesson": "es-AR-09",
+   "de": "der Regen",
+   "kind": "similar",
+   "patterns": [
+    "ch"
+   ]
+  },
+  {
+   "pt": "chover",
+   "ptText": "chover",
+   "ptLesson": "pt-BR-09",
+   "es": "llover",
+   "esText": "llover",
+   "esLesson": "es-AR-09",
+   "de": "regnen",
+   "kind": "similar",
+   "patterns": [
+    "ch"
+   ]
+  },
+  {
+   "pt": "vento",
+   "ptText": "o vento",
+   "ptLesson": "pt-BR-09",
+   "es": "viento",
+   "esText": "el viento",
+   "esLesson": "es-AR-09",
+   "de": "der Wind",
+   "kind": "similar",
+   "patterns": [
+    "ie"
+   ]
+  },
+  {
+   "pt": "nublado",
+   "ptText": "nublado",
+   "ptLesson": "pt-BR-09",
+   "es": "nublado",
+   "esText": "nublado",
+   "esLesson": "es-AR-09",
+   "de": "bewölkt",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "calor",
+   "ptText": "o calor",
+   "ptLesson": "pt-BR-09",
+   "es": "calor",
+   "esText": "el calor",
+   "esLesson": "es-AR-09",
+   "de": "die Hitze",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "grau",
+   "ptText": "o grau",
+   "ptLesson": "pt-BR-09",
+   "es": "grado",
+   "esText": "el grado",
+   "esLesson": "es-AR-09",
+   "de": "das Grad",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "tempestade",
+   "ptText": "a tempestade",
+   "ptLesson": "pt-BR-09",
+   "es": "tormenta",
+   "esText": "la tormenta",
+   "esLesson": "es-AR-09",
+   "de": "das Gewitter, der Sturm",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "praia",
+   "ptText": "a praia",
+   "ptLesson": "pt-BR-09",
+   "es": "playa",
+   "esText": "la playa",
+   "esLesson": "es-AR-09",
+   "de": "der Strand",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "mar",
+   "ptText": "o mar",
+   "ptLesson": "pt-BR-09",
+   "es": "mar",
+   "esText": "el mar",
+   "esLesson": "es-AR-09",
+   "de": "das Meer",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "areia",
+   "ptText": "a areia",
+   "ptLesson": "pt-BR-09",
+   "es": "arena",
+   "esText": "la arena",
+   "esLesson": "es-AR-09",
+   "de": "der Sand",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "onda",
+   "ptText": "a onda",
+   "ptLesson": "pt-BR-09",
+   "es": "ola",
+   "esText": "la ola",
+   "esLesson": "es-AR-09",
+   "de": "die Welle",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "guarda_sol",
+   "ptText": "o guarda-sol",
+   "ptLesson": "pt-BR-09",
+   "es": "sombrilla",
+   "esText": "la sombrilla",
+   "esLesson": "es-AR-09",
+   "de": "der Sonnenschirm",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "nadar",
+   "ptText": "nadar",
+   "ptLesson": "pt-BR-09",
+   "es": "nadar",
+   "esText": "nadar",
+   "esLesson": "es-AR-09",
+   "de": "schwimmen",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "passeio",
+   "ptText": "o passeio",
+   "ptLesson": "pt-BR-09",
+   "es": "excursion",
+   "esText": "la excursión",
+   "esLesson": "es-AR-09",
+   "de": "der Ausflug",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "montanha",
+   "ptText": "a montanha",
+   "ptLesson": "pt-BR-09",
+   "es": "montana",
+   "esText": "la montaña",
+   "esLesson": "es-AR-09",
+   "de": "der Berg",
+   "kind": "similar",
+   "patterns": [
+    "nh"
+   ]
+  },
+  {
+   "pt": "rio",
+   "ptText": "o rio",
+   "ptLesson": "pt-BR-09",
+   "es": "rio",
+   "esText": "el río",
+   "esLesson": "es-AR-09",
+   "de": "der Fluss",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "lago",
+   "ptText": "o lago",
+   "ptLesson": "pt-BR-09",
+   "es": "lago",
+   "esText": "el lago",
+   "esLesson": "es-AR-09",
+   "de": "der See",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "ingresso",
+   "ptText": "o ingresso",
+   "ptLesson": "pt-BR-09",
+   "es": "entrada",
+   "esText": "la entrada",
+   "esLesson": "es-AR-09",
+   "de": "die Eintrittskarte",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "cinema",
+   "ptText": "o cinema",
+   "ptLesson": "pt-BR-09",
+   "es": "cine",
+   "esText": "el cine",
+   "esLesson": "es-AR-09",
+   "de": "das Kino",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "teatro",
+   "ptText": "o teatro",
+   "ptLesson": "pt-BR-09",
+   "es": "teatro",
+   "esText": "el teatro",
+   "esLesson": "es-AR-09",
+   "de": "das Theater",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "jogo",
+   "ptText": "o jogo",
+   "ptLesson": "pt-BR-09",
+   "es": "partido",
+   "esText": "el partido",
+   "esLesson": "es-AR-09",
+   "de": "das Spiel",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "estadio",
+   "ptText": "o estádio",
+   "ptLesson": "pt-BR-09",
+   "es": "cancha",
+   "esText": "la cancha",
+   "esLesson": "es-AR-09",
+   "de": "das Stadion",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "fazer",
+   "ptText": "fazer",
+   "ptLesson": "pt-BR-09",
+   "es": "hacer",
+   "esText": "hacer",
+   "esLesson": "es-AR-09",
+   "de": "machen, tun",
+   "kind": "similar",
+   "patterns": [
+    "fh"
+   ]
+  },
+  {
+   "pt": "descansar",
+   "ptText": "descansar",
+   "ptLesson": "pt-BR-09",
+   "es": "descansar",
+   "esText": "descansar",
+   "esLesson": "es-AR-09",
+   "de": "sich ausruhen",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "dancar",
+   "ptText": "dançar",
+   "ptLesson": "pt-BR-09",
+   "es": "bailar",
+   "esText": "bailar",
+   "esLesson": "es-AR-09",
+   "de": "tanzen",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "jogar",
+   "ptText": "jogar",
+   "ptLesson": "pt-BR-09",
+   "es": "jugar",
+   "esText": "jugar",
+   "esLesson": "es-AR-09",
+   "de": "spielen",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "assistir",
+   "ptText": "assistir",
+   "ptLesson": "pt-BR-09",
+   "es": "mirar",
+   "esText": "mirar",
+   "esLesson": "es-AR-06",
+   "de": "anschauen",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "segunda",
+   "ptText": "segunda-feira",
+   "ptLesson": "pt-BR-10",
+   "es": "lunes",
+   "esText": "el lunes",
+   "esLesson": "es-AR-10",
+   "de": "Montag",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "terca",
+   "ptText": "terça-feira",
+   "ptLesson": "pt-BR-10",
+   "es": "martes",
+   "esText": "el martes",
+   "esLesson": "es-AR-10",
+   "de": "Dienstag",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "quarta",
+   "ptText": "quarta-feira",
+   "ptLesson": "pt-BR-10",
+   "es": "miercoles",
+   "esText": "el miércoles",
+   "esLesson": "es-AR-10",
+   "de": "Mittwoch",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "quinta",
+   "ptText": "quinta-feira",
+   "ptLesson": "pt-BR-10",
+   "es": "jueves",
+   "esText": "el jueves",
+   "esLesson": "es-AR-10",
+   "de": "Donnerstag",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "sexta",
+   "ptText": "sexta-feira",
+   "ptLesson": "pt-BR-10",
+   "es": "viernes",
+   "esText": "el viernes",
+   "esLesson": "es-AR-10",
+   "de": "Freitag",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "sabado",
+   "ptText": "o sábado",
+   "ptLesson": "pt-BR-10",
+   "es": "sabado",
+   "esText": "el sábado",
+   "esLesson": "es-AR-10",
+   "de": "Samstag",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "domingo",
+   "ptText": "o domingo",
+   "ptLesson": "pt-BR-10",
+   "es": "domingo",
+   "esText": "el domingo",
+   "esLesson": "es-AR-10",
+   "de": "Sonntag",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "dia",
+   "ptText": "o dia",
+   "ptLesson": "pt-BR-10",
+   "es": "dia",
+   "esText": "el día",
+   "esLesson": "es-AR-10",
+   "de": "der Tag",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "semana",
+   "ptText": "a semana",
+   "ptLesson": "pt-BR-10",
+   "es": "semana",
+   "esText": "la semana",
+   "esLesson": "es-AR-10",
+   "de": "die Woche",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "fim_de_semana",
+   "ptText": "o fim de semana",
+   "ptLesson": "pt-BR-10",
+   "es": "fin_de_semana",
+   "esText": "el fin de semana",
+   "esLesson": "es-AR-09",
+   "de": "das Wochenende",
+   "kind": "similar",
+   "patterns": [
+    "mn"
+   ]
+  },
+  {
+   "pt": "janeiro",
+   "ptText": "janeiro",
+   "ptLesson": "pt-BR-10",
+   "es": "enero",
+   "esText": "enero",
+   "esLesson": "es-AR-10",
+   "de": "Januar",
+   "kind": "similar",
+   "patterns": [
+    "eiro"
+   ]
+  },
+  {
+   "pt": "fevereiro",
+   "ptText": "fevereiro",
+   "ptLesson": "pt-BR-10",
+   "es": "febrero",
+   "esText": "febrero",
+   "esLesson": "es-AR-10",
+   "de": "Februar",
+   "kind": "similar",
+   "patterns": [
+    "eiro"
+   ]
+  },
+  {
+   "pt": "marco",
+   "ptText": "março",
+   "ptLesson": "pt-BR-10",
+   "es": "marzo",
+   "esText": "marzo",
+   "esLesson": "es-AR-10",
+   "de": "März",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "abril",
+   "ptText": "abril",
+   "ptLesson": "pt-BR-10",
+   "es": "abril",
+   "esText": "abril",
+   "esLesson": "es-AR-10",
+   "de": "April",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "maio",
+   "ptText": "maio",
+   "ptLesson": "pt-BR-10",
+   "es": "mayo",
+   "esText": "mayo",
+   "esLesson": "es-AR-10",
+   "de": "Mai",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "junho",
+   "ptText": "junho",
+   "ptLesson": "pt-BR-10",
+   "es": "junio",
+   "esText": "junio",
+   "esLesson": "es-AR-10",
+   "de": "Juni",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "julho",
+   "ptText": "julho",
+   "ptLesson": "pt-BR-10",
+   "es": "julio",
+   "esText": "julio",
+   "esLesson": "es-AR-10",
+   "de": "Juli",
+   "kind": "similar",
+   "patterns": [
+    "lh"
+   ]
+  },
+  {
+   "pt": "agosto",
+   "ptText": "agosto",
+   "ptLesson": "pt-BR-10",
+   "es": "agosto",
+   "esText": "agosto",
+   "esLesson": "es-AR-10",
+   "de": "August",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "setembro",
+   "ptText": "setembro",
+   "ptLesson": "pt-BR-10",
+   "es": "septiembre",
+   "esText": "septiembre",
+   "esLesson": "es-AR-10",
+   "de": "September",
+   "kind": "similar",
+   "patterns": [
+    "ie"
+   ]
+  },
+  {
+   "pt": "outubro",
+   "ptText": "outubro",
+   "ptLesson": "pt-BR-10",
+   "es": "octubre",
+   "esText": "octubre",
+   "esLesson": "es-AR-10",
+   "de": "Oktober",
+   "kind": "similar",
+   "patterns": [
+    "ou"
+   ]
+  },
+  {
+   "pt": "novembro",
+   "ptText": "novembro",
+   "ptLesson": "pt-BR-10",
+   "es": "noviembre",
+   "esText": "noviembre",
+   "esLesson": "es-AR-10",
+   "de": "November",
+   "kind": "similar",
+   "patterns": [
+    "ie"
+   ]
+  },
+  {
+   "pt": "dezembro",
+   "ptText": "dezembro",
+   "ptLesson": "pt-BR-10",
+   "es": "diciembre",
+   "esText": "diciembre",
+   "esLesson": "es-AR-10",
+   "de": "Dezember",
+   "kind": "similar",
+   "patterns": [
+    "ie"
+   ]
+  },
+  {
+   "pt": "mes",
+   "ptText": "o mês",
+   "ptLesson": "pt-BR-10",
+   "es": "mes",
+   "esText": "el mes",
+   "esLesson": "es-AR-10",
+   "de": "der Monat",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "verao",
+   "ptText": "o verão",
+   "ptLesson": "pt-BR-10",
+   "es": "verano",
+   "esText": "el verano",
+   "esLesson": "es-AR-09",
+   "de": "der Sommer",
+   "kind": "similar",
+   "patterns": [
+    "ao"
+   ]
+  },
+  {
+   "pt": "inverno",
+   "ptText": "o inverno",
+   "ptLesson": "pt-BR-10",
+   "es": "invierno",
+   "esText": "el invierno",
+   "esLesson": "es-AR-09",
+   "de": "der Winter",
+   "kind": "similar",
+   "patterns": [
+    "ie"
+   ]
+  },
+  {
+   "pt": "manha",
+   "ptText": "a manhã",
+   "ptLesson": "pt-BR-10",
+   "es": "manana_m",
+   "esText": "la mañana",
+   "esLesson": "es-AR-02",
+   "de": "der Morgen",
+   "kind": "similar",
+   "patterns": [
+    "nh"
+   ]
+  },
+  {
+   "pt": "tarde_noun",
+   "ptText": "a tarde",
+   "ptLesson": "pt-BR-10",
+   "es": "tarde_n",
+   "esText": "la tarde",
+   "esLesson": "es-AR-02",
+   "de": "der Nachmittag",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "cedo",
+   "ptText": "cedo",
+   "ptLesson": "pt-BR-10",
+   "es": "temprano",
+   "esText": "temprano",
+   "esLesson": "es-AR-02",
+   "de": "früh",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "tarde_adv",
+   "ptText": "tarde",
+   "ptLesson": "pt-BR-10",
+   "es": "tarde",
+   "esText": "tarde",
+   "esLesson": "es-AR-02",
+   "de": "spät",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "casa",
+   "ptText": "a casa",
+   "ptLesson": "pt-BR-10",
+   "es": "casa",
+   "esText": "la casa",
+   "esLesson": "es-AR-10",
+   "de": "das Haus",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "levantar",
+   "ptText": "levantar",
+   "ptLesson": "pt-BR-10",
+   "es": "levantarse",
+   "esText": "levantarse",
+   "esLesson": "es-AR-10",
+   "de": "aufstehen",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "dormir",
+   "ptText": "dormir",
+   "ptLesson": "pt-BR-10",
+   "es": "dormir",
+   "esText": "dormir",
+   "esLesson": "es-AR-10",
+   "de": "schlafen",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "tomar_banho",
+   "ptText": "tomar banho",
+   "ptLesson": "pt-BR-10",
+   "es": "ducharse",
+   "esText": "ducharse",
+   "esLesson": "es-AR-10",
+   "de": "duschen",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "cozinhar",
+   "ptText": "cozinhar",
+   "ptLesson": "pt-BR-10",
+   "es": "cocinar",
+   "esText": "cocinar",
+   "esLesson": "es-AR-10",
+   "de": "kochen",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "limpar",
+   "ptText": "limpar",
+   "ptLesson": "pt-BR-10",
+   "es": "limpiar",
+   "esText": "limpiar",
+   "esLesson": "es-AR-10",
+   "de": "putzen",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "lavar",
+   "ptText": "lavar",
+   "ptLesson": "pt-BR-10",
+   "es": "lavar",
+   "esText": "lavar",
+   "esLesson": "es-AR-10",
+   "de": "waschen",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "ser",
+   "ptText": "ser",
+   "ptLesson": "pt-BR-10",
+   "es": "ser",
+   "esText": "ser",
+   "esLesson": "es-AR-08",
+   "de": "sein",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "estar",
+   "ptText": "estar",
+   "ptLesson": "pt-BR-10",
+   "es": "estar",
+   "esText": "estar",
+   "esLesson": "es-AR-08",
+   "de": "sein",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "poder",
+   "ptText": "poder",
+   "ptLesson": "pt-BR-10",
+   "es": "poder",
+   "esText": "poder",
+   "esLesson": "es-AR-10",
+   "de": "können, dürfen",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "saber",
+   "ptText": "saber",
+   "ptLesson": "pt-BR-10",
+   "es": "saber",
+   "esText": "saber",
+   "esLesson": "es-AR-10",
+   "de": "wissen; können (gelernt)",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "dizer",
+   "ptText": "dizer",
+   "ptLesson": "pt-BR-10",
+   "es": "decir",
+   "esText": "decir",
+   "esLesson": "es-AR-10",
+   "de": "sagen",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "sempre",
+   "ptText": "sempre",
+   "ptLesson": "pt-BR-10",
+   "es": "siempre",
+   "esText": "siempre",
+   "esLesson": "es-AR-10",
+   "de": "immer",
+   "kind": "similar",
+   "patterns": [
+    "ie"
+   ]
+  },
+  {
+   "pt": "nunca",
+   "ptText": "nunca",
+   "ptLesson": "pt-BR-10",
+   "es": "nunca",
+   "esText": "nunca",
+   "esLesson": "es-AR-10",
+   "de": "nie",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "as_vezes",
+   "ptText": "às vezes",
+   "ptLesson": "pt-BR-10",
+   "es": "a_veces",
+   "esText": "a veces",
+   "esLesson": "es-AR-10",
+   "de": "manchmal",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "agora",
+   "ptText": "agora",
+   "ptLesson": "pt-BR-10",
+   "es": "ahora",
+   "esText": "ahora",
+   "esLesson": "es-AR-02",
+   "de": "jetzt",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "depois",
+   "ptText": "depois",
+   "ptLesson": "pt-BR-10",
+   "es": "despues",
+   "esText": "después",
+   "esLesson": "es-AR-10",
+   "de": "danach, später",
+   "kind": "similar",
+   "patterns": [
+    "ue"
+   ]
+  },
+  {
+   "pt": "antes",
+   "ptText": "antes",
+   "ptLesson": "pt-BR-10",
+   "es": "antes",
+   "esText": "antes",
+   "esLesson": "es-AR-10",
+   "de": "vorher",
+   "kind": "same",
+   "patterns": []
+  },
+  {
+   "pt": "ja",
+   "ptText": "já",
+   "ptLesson": "pt-BR-10",
+   "es": "ya",
+   "esText": "ya",
+   "esLesson": "es-AR-10",
+   "de": "schon",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "ainda",
+   "ptText": "ainda",
+   "ptLesson": "pt-BR-10",
+   "es": "todavia",
+   "esText": "todavía",
+   "esLesson": "es-AR-10",
+   "de": "noch",
+   "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "todo_dia",
+   "ptText": "todo dia",
+   "ptLesson": "pt-BR-10",
+   "es": "todos_los_dias",
+   "esText": "todos los días",
+   "esLesson": "es-AR-10",
+   "de": "jeden Tag",
+   "kind": "similar",
+   "patterns": []
+  }
+ ],
+ "patterns": [
+  {
+   "id": "cao",
+   "title": "-ção → -ción",
+   "explanation": "Portugiesisch -ção (Mehrzahl -ções) wird im Spanischen zu -ción (-ciones)."
+  },
+  {
+   "id": "dade",
+   "title": "-dade → -dad",
+   "explanation": "Portugiesisch -dade wird im Spanischen zu -dad."
+  },
+  {
+   "id": "ao",
+   "title": "-ão → -ón, -án, -ano",
+   "explanation": "Portugiesisch -ão (ohne -ção) endet im Spanischen meist auf -ón, -án oder -ano."
+  },
+  {
+   "id": "eiro",
+   "title": "-ei- → -e-",
+   "explanation": "Portugiesisch -ei- (oft -eiro/-eira) ist im Spanischen meist nur -e- (-ero/-era)."
+  },
+  {
+   "id": "ou",
+   "title": "ou → o",
+   "explanation": "Portugiesisch ou ist im Spanischen meist nur o."
+  },
+  {
+   "id": "nh",
+   "title": "nh → ñ",
+   "explanation": "Portugiesisch nh schreibt man im Spanischen ñ – gleicher Laut."
+  },
+  {
+   "id": "lh",
+   "title": "lh → j / ll",
+   "explanation": "Portugiesisch lh wird im Spanischen meist zu j oder ll."
+  },
+  {
+   "id": "ch",
+   "title": "ch- → ll-",
+   "explanation": "Am Wortanfang wird portugiesisch ch- im Spanischen oft zu ll-."
+  },
+  {
+   "id": "fh",
+   "title": "f- → h-",
+   "explanation": "Am Wortanfang wird portugiesisch f- im Spanischen oft zu h- (stumm)."
+  },
+  {
+   "id": "ue",
+   "title": "o → ue",
+   "explanation": "Betontes o im Portugiesischen wird im Spanischen oft zu ue."
+  },
+  {
+   "id": "ie",
+   "title": "e → ie",
+   "explanation": "Betontes e im Portugiesischen wird im Spanischen oft zu ie."
+  },
+  {
+   "id": "mn",
+   "title": "-m → -n",
+   "explanation": "Portugiesisch endet oft auf -m (Nasal), Spanisch auf -n."
+  },
+  {
+   "id": "nl",
+   "title": "n/l fällt weg",
+   "explanation": "Zwischen Vokalen fällt im Portugiesischen oft ein n oder l weg, das das Spanische behalten hat."
+  }
+ ],
+ "falseFriends": [
+  {
+   "pt": "esquisito",
+   "ptDe": "seltsam, komisch",
+   "es": "exquisito",
+   "esDe": "köstlich, edel",
+   "note": ""
+  },
+  {
+   "pt": "polvo",
+   "ptDe": "der Tintenfisch, die Krake",
+   "es": "el polvo",
+   "esDe": "der Staub",
+   "note": ""
+  },
+  {
+   "pt": "borracha",
+   "ptDe": "das Radiergummi, der Gummi",
+   "es": "borracha",
+   "esDe": "betrunken (Frau)",
+   "note": ""
+  },
+  {
+   "pt": "apelido",
+   "ptDe": "der Spitzname",
+   "es": "el apellido",
+   "esDe": "der Nachname",
+   "note": "Nachname auf Portugiesisch: sobrenome; Spitzname auf Spanisch: apodo"
+  },
+  {
+   "pt": "a cena",
+   "ptDe": "die Szene",
+   "es": "la cena",
+   "esDe": "das Abendessen",
+   "note": "Abendessen auf Portugiesisch: o jantar"
+  },
+  {
+   "pt": "embaraçada",
+   "ptDe": "verlegen, peinlich berührt",
+   "es": "embarazada",
+   "esDe": "schwanger",
+   "note": "schwanger auf Portugiesisch: grávida; verlegen auf Spanisch: avergonzado"
+  },
+  {
+   "pt": "o rato",
+   "ptDe": "die Ratte",
+   "es": "el rato",
+   "esDe": "die Weile, der Moment",
+   "note": "un rato = ein Weilchen"
+  },
+  {
+   "pt": "o copo",
+   "ptDe": "das Trinkglas",
+   "es": "el copo",
+   "esDe": "die Flocke",
+   "note": "Trinkglas auf Spanisch: el vaso"
+  },
+  {
+   "pt": "o vaso",
+   "ptDe": "die Vase, der Blumentopf",
+   "es": "el vaso",
+   "esDe": "das Trinkglas",
+   "note": "o vaso sanitário = die Toilettenschüssel"
+  },
+  {
+   "pt": "a salsa",
+   "ptDe": "die Petersilie",
+   "es": "la salsa",
+   "esDe": "die Sosse",
+   "note": "Sosse auf Portugiesisch: o molho"
+  },
+  {
+   "pt": "a oficina",
+   "ptDe": "die Werkstatt",
+   "es": "la oficina",
+   "esDe": "das Büro",
+   "note": "Büro auf Portugiesisch: o escritório"
+  },
+  {
+   "pt": "o escritório",
+   "ptDe": "das Büro",
+   "es": "el escritorio",
+   "esDe": "der Schreibtisch",
+   "note": ""
+  },
+  {
+   "pt": "largo",
+   "ptDe": "breit",
+   "es": "largo",
+   "esDe": "lang",
+   "note": "lang auf Portugiesisch: comprido; breit auf Spanisch: ancho"
+  },
+  {
+   "pt": "a propina",
+   "ptDe": "das Bestechungsgeld",
+   "es": "la propina",
+   "esDe": "das Trinkgeld",
+   "note": "Trinkgeld auf Portugiesisch: a gorjeta"
+  },
+  {
+   "pt": "tirar",
+   "ptDe": "wegnehmen; (Foto) machen; ausziehen",
+   "es": "tirar",
+   "esDe": "werfen, wegwerfen",
+   "note": "tirar uma foto = ein Foto machen"
+  },
+  {
+   "pt": "pegar",
+   "ptDe": "nehmen, greifen; (Bus) nehmen",
+   "es": "pegar",
+   "esDe": "schlagen; kleben",
+   "note": "Bus nehmen auf Spanisch: tomar el colectivo"
+  },
+  {
+   "pt": "contestar",
+   "ptDe": "bestreiten, widersprechen",
+   "es": "contestar",
+   "esDe": "antworten",
+   "note": "antworten auf Portugiesisch: responder"
+  },
+  {
+   "pt": "a firma",
+   "ptDe": "die Firma",
+   "es": "la firma",
+   "esDe": "die Unterschrift",
+   "note": "Unterschrift auf Portugiesisch: a assinatura"
+  },
+  {
+   "pt": "o presunto",
+   "ptDe": "der Schinken",
+   "es": "presunto",
+   "esDe": "mutmasslich",
+   "note": "Schinken auf Spanisch: el jamón"
+  },
+  {
+   "pt": "a sobremesa",
+   "ptDe": "der Nachtisch",
+   "es": "la sobremesa",
+   "esDe": "das gemütliche Sitzenbleiben nach dem Essen",
+   "note": "Nachtisch auf Spanisch: el postre"
+  },
+  {
+   "pt": "acordar",
+   "ptDe": "aufwachen",
+   "es": "acordar",
+   "esDe": "vereinbaren (acordarse = sich erinnern)",
+   "note": "aufwachen auf Spanisch: despertarse"
+  },
+  {
+   "pt": "todavia",
+   "ptDe": "jedoch, aber",
+   "es": "todavía",
+   "esDe": "noch",
+   "note": "noch auf Portugiesisch: ainda"
+  },
+  {
+   "pt": "brincar",
+   "ptDe": "spielen (Kinder); scherzen",
+   "es": "brincar",
+   "esDe": "springen",
+   "note": "springen auf Portugiesisch: pular"
+  },
+  {
+   "pt": "fechar",
+   "ptDe": "schliessen",
+   "es": "fechar",
+   "esDe": "datieren",
+   "note": "schliessen auf Spanisch: cerrar"
+  },
+  {
+   "pt": "engraçado",
+   "ptDe": "lustig",
+   "es": "engrasado",
+   "esDe": "eingefettet",
+   "note": "lustig auf Spanisch: gracioso, divertido"
+  },
+  {
+   "pt": "a criança",
+   "ptDe": "das Kind",
+   "es": "la crianza",
+   "esDe": "die Erziehung, die Aufzucht",
+   "note": "Kind auf Spanisch: el niño, la niña"
+  },
+  {
+   "pt": "pronto",
+   "ptDe": "fertig, bereit",
+   "es": "pronto",
+   "esDe": "bald",
+   "note": "fertig auf Spanisch: listo"
+  },
+  {
+   "pt": "ruivo",
+   "ptDe": "rothaarig",
+   "es": "rubio",
+   "esDe": "blond",
+   "note": "blond auf Portugiesisch: loiro"
+  },
+  {
+   "pt": "o ano",
+   "ptDe": "das Jahr",
+   "es": "el ano",
+   "esDe": "der After",
+   "note": "Jahr auf Spanisch: el año – die Tilde nie vergessen!"
+  },
+  {
+   "pt": "olá",
+   "ptDe": "hallo",
+   "es": "la ola",
+   "esDe": "die Welle",
+   "note": "Welle auf Portugiesisch: a onda"
+  },
+  {
+   "pt": "a taça",
+   "ptDe": "das Weinglas, der Pokal",
+   "es": "la taza",
+   "esDe": "die Tasse",
+   "note": "Tasse auf Portugiesisch: a xícara"
+  }
+ ]
+}

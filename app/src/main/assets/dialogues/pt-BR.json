@@ -1,0 +1,874 @@
+{
+ "language": "pt-BR",
+ "dialogues": [
+  {
+   "id": "d01",
+   "title": "Begrüssung & Kennenlernen",
+   "titleTarget": "Cumprimentos",
+   "situation": "Du lernst in einer Pousada eine Brasilianerin kennen.",
+   "lesson": "pt-BR-01",
+   "roles": [
+    "Ana",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 0,
+     "text": "Oi, tudo bem?",
+     "de": "Hallo, alles gut?"
+    },
+    {
+     "role": 1,
+     "text": "Tudo bem, e você?",
+     "de": "Alles gut, und dir?"
+    },
+    {
+     "role": 0,
+     "text": "Tudo ótimo! Como você se chama?",
+     "de": "Bestens! Wie heisst du?"
+    },
+    {
+     "role": 1,
+     "text": "Eu me chamo Jeff. E você?",
+     "de": "Ich heisse Jeff. Und du?"
+    },
+    {
+     "role": 0,
+     "text": "Eu sou a Ana. Prazer!",
+     "de": "Ich bin Ana. Freut mich!"
+    },
+    {
+     "role": 1,
+     "text": "O prazer é meu.",
+     "de": "Ganz meinerseits.",
+     "note": "wörtlich: Das Vergnügen ist meins"
+    },
+    {
+     "role": 0,
+     "text": "De onde você é?",
+     "de": "Woher kommst du?"
+    },
+    {
+     "role": 1,
+     "text": "Eu sou da Alemanha.",
+     "de": "Ich komme aus Deutschland.",
+     "note": "Suíça = Schweiz, Áustria = Österreich"
+    },
+    {
+     "role": 0,
+     "text": "Que legal! Você fala português muito bem.",
+     "de": "Wie toll! Du sprichst sehr gut Portugiesisch."
+    },
+    {
+     "role": 1,
+     "text": "Obrigado! Estou aprendendo.",
+     "de": "Danke! Ich lerne gerade.",
+     "note": "Frauen sagen obrigada"
+    },
+    {
+     "role": 0,
+     "text": "Tchau, boa viagem!",
+     "de": "Tschüss, gute Reise!"
+    },
+    {
+     "role": 1,
+     "text": "Tchau, até logo!",
+     "de": "Tschüss, bis später!"
+    }
+   ]
+  },
+  {
+   "id": "d02",
+   "title": "Im Café",
+   "titleTarget": "Na padaria",
+   "situation": "Frühstück in einer Padaria (Bäckerei mit Café).",
+   "lesson": "pt-BR-03",
+   "roles": [
+    "Kellner",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 0,
+     "text": "Bom dia! O que vai ser?",
+     "de": "Guten Morgen! Was darf es sein?"
+    },
+    {
+     "role": 1,
+     "text": "Bom dia! Eu queria um café com leite, por favor.",
+     "de": "Guten Morgen! Ich hätte gern einen Milchkaffee, bitte.",
+     "note": "queria = höflich: ich hätte gern"
+    },
+    {
+     "role": 0,
+     "text": "Grande ou pequeno?",
+     "de": "Gross oder klein?"
+    },
+    {
+     "role": 1,
+     "text": "Pequeno. E um pão de queijo também.",
+     "de": "Klein. Und auch ein Pão de queijo.",
+     "note": "pão de queijo = Käsebrötchen aus Maniokmehl"
+    },
+    {
+     "role": 0,
+     "text": "Mais alguma coisa?",
+     "de": "Sonst noch etwas?"
+    },
+    {
+     "role": 1,
+     "text": "Não, só isso. Quanto é?",
+     "de": "Nein, das ist alles. Wie viel macht das?"
+    },
+    {
+     "role": 0,
+     "text": "São doze reais.",
+     "de": "Das macht zwölf Reais."
+    },
+    {
+     "role": 1,
+     "text": "Posso pagar com cartão?",
+     "de": "Kann ich mit Karte zahlen?"
+    },
+    {
+     "role": 0,
+     "text": "Pode, sim. Crédito ou débito?",
+     "de": "Ja, klar. Kredit- oder Debitkarte?",
+     "note": "Ja = das Verb wiederholen: pode, sim"
+    },
+    {
+     "role": 1,
+     "text": "Crédito, por favor. Obrigado!",
+     "de": "Kreditkarte, bitte. Danke!"
+    }
+   ]
+  },
+  {
+   "id": "d03",
+   "title": "Im Restaurant",
+   "titleTarget": "No restaurante",
+   "situation": "Abendessen: Tisch, Bestellung und Rechnung.",
+   "lesson": "pt-BR-03",
+   "roles": [
+    "Kellnerin",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 0,
+     "text": "Boa noite! Mesa para quantas pessoas?",
+     "de": "Guten Abend! Ein Tisch für wie viele Personen?"
+    },
+    {
+     "role": 1,
+     "text": "Para duas pessoas, por favor.",
+     "de": "Für zwei Personen, bitte."
+    },
+    {
+     "role": 0,
+     "text": "Por aqui. Aqui está o cardápio.",
+     "de": "Hier entlang. Hier ist die Speisekarte."
+    },
+    {
+     "role": 1,
+     "text": "Obrigado. O que você recomenda?",
+     "de": "Danke. Was empfehlen Sie?"
+    },
+    {
+     "role": 0,
+     "text": "A moqueca de peixe está muito boa hoje.",
+     "de": "Die Fisch-Moqueca ist heute sehr gut.",
+     "note": "moqueca = Fischeintopf mit Kokosmilch"
+    },
+    {
+     "role": 1,
+     "text": "Então eu vou querer a moqueca.",
+     "de": "Dann nehme ich die Moqueca."
+    },
+    {
+     "role": 0,
+     "text": "E para beber?",
+     "de": "Und zu trinken?"
+    },
+    {
+     "role": 1,
+     "text": "Uma água sem gás e uma cerveja, por favor.",
+     "de": "Ein stilles Wasser und ein Bier, bitte."
+    },
+    {
+     "role": 0,
+     "text": "(mais tarde) Estava tudo bem?",
+     "de": "(später) War alles in Ordnung?"
+    },
+    {
+     "role": 1,
+     "text": "Estava ótimo! A conta, por favor.",
+     "de": "Es war ausgezeichnet! Die Rechnung, bitte."
+    },
+    {
+     "role": 0,
+     "text": "Aqui está. Os dez por cento do serviço já estão incluídos.",
+     "de": "Bitte sehr. Die zehn Prozent Service sind schon inbegriffen.",
+     "note": "Das Trinkgeld (10 %) steht meist schon auf der Rechnung"
+    },
+    {
+     "role": 1,
+     "text": "Perfeito, obrigado.",
+     "de": "Perfekt, danke."
+    }
+   ]
+  },
+  {
+   "id": "d04",
+   "title": "Am Flughafen",
+   "titleTarget": "No aeroporto",
+   "situation": "Check-in am Schalter.",
+   "lesson": "pt-BR-05",
+   "roles": [
+    "Angestellte",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 0,
+     "text": "Boa tarde! Seu passaporte, por favor.",
+     "de": "Guten Tag! Ihren Pass, bitte."
+    },
+    {
+     "role": 1,
+     "text": "Aqui está.",
+     "de": "Hier, bitte."
+    },
+    {
+     "role": 0,
+     "text": "Para onde o senhor vai?",
+     "de": "Wohin fliegen Sie?",
+     "note": "o senhor / a senhora = höfliches Sie"
+    },
+    {
+     "role": 1,
+     "text": "Vou para o Rio de Janeiro.",
+     "de": "Ich fliege nach Rio de Janeiro."
+    },
+    {
+     "role": 0,
+     "text": "Quantas malas o senhor vai despachar?",
+     "de": "Wie viele Koffer geben Sie auf?"
+    },
+    {
+     "role": 1,
+     "text": "Só uma mala. A mochila vai comigo.",
+     "de": "Nur einen Koffer. Den Rucksack nehme ich mit."
+    },
+    {
+     "role": 0,
+     "text": "Prefere janela ou corredor?",
+     "de": "Möchten Sie lieber Fenster oder Gang?"
+    },
+    {
+     "role": 1,
+     "text": "Janela, por favor.",
+     "de": "Fenster, bitte."
+    },
+    {
+     "role": 0,
+     "text": "Aqui está o seu cartão de embarque. O portão é o doze.",
+     "de": "Hier ist Ihre Bordkarte. Das Gate ist die Zwölf."
+    },
+    {
+     "role": 1,
+     "text": "A que horas começa o embarque?",
+     "de": "Um wie viel Uhr beginnt das Boarding?"
+    },
+    {
+     "role": 0,
+     "text": "Às nove e meia. Boa viagem!",
+     "de": "Um halb zehn. Gute Reise!"
+    },
+    {
+     "role": 1,
+     "text": "Muito obrigado!",
+     "de": "Vielen Dank!"
+    }
+   ]
+  },
+  {
+   "id": "d05",
+   "title": "Nach dem Weg fragen",
+   "titleTarget": "Pedindo informação",
+   "situation": "Du suchst die Metro-Station und eine Apotheke.",
+   "lesson": "pt-BR-05",
+   "roles": [
+    "Passant",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 1,
+     "text": "Com licença, onde fica a estação de metrô?",
+     "de": "Entschuldigung, wo ist die Metro-Station?",
+     "note": "com licença = Entschuldigung (um jemanden anzusprechen)"
+    },
+    {
+     "role": 0,
+     "text": "Siga em frente e vire à direita na segunda rua.",
+     "de": "Gehen Sie geradeaus und biegen Sie in die zweite Strasse rechts ab."
+    },
+    {
+     "role": 1,
+     "text": "É longe daqui?",
+     "de": "Ist es weit von hier?"
+    },
+    {
+     "role": 0,
+     "text": "Não, é perto. Uns cinco minutos a pé.",
+     "de": "Nein, es ist nah. Etwa fünf Minuten zu Fuss."
+    },
+    {
+     "role": 1,
+     "text": "E tem uma farmácia por aqui?",
+     "de": "Und gibt es hier in der Nähe eine Apotheke?",
+     "note": "tem = es gibt"
+    },
+    {
+     "role": 0,
+     "text": "Tem, sim. Fica ao lado do banco, em frente à praça.",
+     "de": "Ja. Sie ist neben der Bank, gegenüber vom Platz."
+    },
+    {
+     "role": 1,
+     "text": "Desculpe, pode repetir mais devagar?",
+     "de": "Entschuldigung, können Sie das langsamer wiederholen?"
+    },
+    {
+     "role": 0,
+     "text": "Claro! Ao lado do banco, em frente à praça.",
+     "de": "Klar! Neben der Bank, gegenüber vom Platz."
+    },
+    {
+     "role": 1,
+     "text": "Entendi. Muito obrigado!",
+     "de": "Verstanden. Vielen Dank!"
+    },
+    {
+     "role": 0,
+     "text": "De nada!",
+     "de": "Gern geschehen!"
+    }
+   ]
+  },
+  {
+   "id": "d06",
+   "title": "Im Hotel einchecken",
+   "titleTarget": "No hotel",
+   "situation": "Ankunft an der Rezeption.",
+   "lesson": "pt-BR-04",
+   "roles": [
+    "Rezeptionist",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 0,
+     "text": "Boa noite, seja bem-vindo! Posso ajudar?",
+     "de": "Guten Abend, willkommen! Kann ich helfen?"
+    },
+    {
+     "role": 1,
+     "text": "Boa noite! Eu tenho uma reserva em nome de Jeff.",
+     "de": "Guten Abend! Ich habe eine Reservierung auf den Namen Jeff."
+    },
+    {
+     "role": 0,
+     "text": "Um momento... Sim, um quarto de casal para três noites.",
+     "de": "Einen Moment … Ja, ein Doppelzimmer für drei Nächte."
+    },
+    {
+     "role": 1,
+     "text": "Isso mesmo. O café da manhã está incluído?",
+     "de": "Genau. Ist das Frühstück inbegriffen?"
+    },
+    {
+     "role": 0,
+     "text": "Está, sim. É servido das seis às dez.",
+     "de": "Ja. Es wird von sechs bis zehn serviert."
+    },
+    {
+     "role": 1,
+     "text": "Qual é a senha do wi-fi?",
+     "de": "Wie lautet das WLAN-Passwort?"
+    },
+    {
+     "role": 0,
+     "text": "Está neste cartão. Seu quarto é o trezentos e dois, no terceiro andar.",
+     "de": "Es steht auf dieser Karte. Ihr Zimmer ist die 302 im dritten Stock."
+    },
+    {
+     "role": 1,
+     "text": "Tem elevador?",
+     "de": "Gibt es einen Aufzug?"
+    },
+    {
+     "role": 0,
+     "text": "Tem, sim. Ali à esquerda.",
+     "de": "Ja. Dort links."
+    },
+    {
+     "role": 1,
+     "text": "A que horas é o check-out?",
+     "de": "Um wie viel Uhr ist der Check-out?"
+    },
+    {
+     "role": 0,
+     "text": "Ao meio-dia. Boa estadia!",
+     "de": "Um zwölf Uhr mittags. Einen schönen Aufenthalt!"
+    },
+    {
+     "role": 1,
+     "text": "Obrigado, boa noite!",
+     "de": "Danke, gute Nacht!"
+    }
+   ]
+  },
+  {
+   "id": "d07",
+   "title": "Im Taxi",
+   "titleTarget": "No táxi",
+   "situation": "Fahrt mit dem Taxi oder Uber.",
+   "lesson": "pt-BR-05",
+   "roles": [
+    "Fahrer",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 0,
+     "text": "Boa tarde! Para onde?",
+     "de": "Guten Tag! Wohin?"
+    },
+    {
+     "role": 1,
+     "text": "Boa tarde! Para este endereço, por favor.",
+     "de": "Guten Tag! Zu dieser Adresse, bitte."
+    },
+    {
+     "role": 0,
+     "text": "Tudo bem. O senhor está com pressa?",
+     "de": "In Ordnung. Haben Sie es eilig?",
+     "note": "estar com pressa = es eilig haben"
+    },
+    {
+     "role": 1,
+     "text": "Um pouco. Quanto tempo leva?",
+     "de": "Ein bisschen. Wie lange dauert es?"
+    },
+    {
+     "role": 0,
+     "text": "Com esse trânsito, uns vinte minutos.",
+     "de": "Bei diesem Verkehr etwa zwanzig Minuten."
+    },
+    {
+     "role": 1,
+     "text": "Pode ligar o ar-condicionado, por favor?",
+     "de": "Können Sie bitte die Klimaanlage einschalten?",
+     "note": "ligar = einschalten (und anrufen)"
+    },
+    {
+     "role": 0,
+     "text": "Claro. Está bom assim?",
+     "de": "Klar. Ist es so gut?"
+    },
+    {
+     "role": 1,
+     "text": "Está ótimo, obrigado.",
+     "de": "Bestens, danke."
+    },
+    {
+     "role": 0,
+     "text": "(mais tarde) Chegamos!",
+     "de": "(später) Wir sind da!"
+    },
+    {
+     "role": 1,
+     "text": "Pode parar aqui mesmo. Quanto deu?",
+     "de": "Halten Sie gleich hier. Wie viel macht es?",
+     "note": "Quanto deu? = umgangssprachlich: Was macht es?"
+    },
+    {
+     "role": 0,
+     "text": "Deu trinta e oito reais.",
+     "de": "Achtunddreissig Reais."
+    },
+    {
+     "role": 1,
+     "text": "Aqui estão quarenta. Pode ficar com o troco.",
+     "de": "Hier sind vierzig. Stimmt so.",
+     "note": "troco = Wechselgeld"
+    }
+   ]
+  },
+  {
+   "id": "d08",
+   "title": "Auf dem Markt",
+   "titleTarget": "Na feira",
+   "situation": "Obst kaufen auf dem Wochenmarkt.",
+   "lesson": "pt-BR-06",
+   "roles": [
+    "Verkäufer",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 1,
+     "text": "Bom dia! Quanto custa o quilo da manga?",
+     "de": "Guten Morgen! Wie viel kostet das Kilo Mangos?"
+    },
+    {
+     "role": 0,
+     "text": "Oito reais o quilo. Está bem docinha hoje!",
+     "de": "Acht Reais das Kilo. Sie ist heute schön süss!"
+    },
+    {
+     "role": 1,
+     "text": "Posso provar?",
+     "de": "Darf ich probieren?"
+    },
+    {
+     "role": 0,
+     "text": "Pode, sim. Prova!",
+     "de": "Ja, klar. Probier!"
+    },
+    {
+     "role": 1,
+     "text": "Hum, que delícia! Me dá um quilo, por favor.",
+     "de": "Mmh, köstlich! Geben Sie mir ein Kilo, bitte.",
+     "note": "Me dá … = umgangssprachlich und ganz normal"
+    },
+    {
+     "role": 0,
+     "text": "Mais alguma coisa?",
+     "de": "Sonst noch etwas?"
+    },
+    {
+     "role": 1,
+     "text": "Quanto custam os abacaxis?",
+     "de": "Wie viel kosten die Ananas?"
+    },
+    {
+     "role": 0,
+     "text": "Cinco reais cada um, ou dois por oito.",
+     "de": "Fünf Reais das Stück, oder zwei für acht."
+    },
+    {
+     "role": 1,
+     "text": "Então vou levar dois.",
+     "de": "Dann nehme ich zwei."
+    },
+    {
+     "role": 0,
+     "text": "São dezesseis reais no total.",
+     "de": "Das macht insgesamt sechzehn Reais."
+    },
+    {
+     "role": 1,
+     "text": "Tem troco para cinquenta?",
+     "de": "Haben Sie Wechselgeld für fünfzig?"
+    },
+    {
+     "role": 0,
+     "text": "Tenho, sim. Aqui está o seu troco: trinta e quatro reais.",
+     "de": "Ja. Hier ist Ihr Wechselgeld: vierunddreissig Reais."
+    }
+   ]
+  },
+  {
+   "id": "d09",
+   "title": "In der Apotheke",
+   "titleTarget": "Na farmácia",
+   "situation": "Du hast Kopfweh und etwas Fieber.",
+   "lesson": "pt-BR-07",
+   "roles": [
+    "Apothekerin",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 0,
+     "text": "Boa tarde, posso ajudar?",
+     "de": "Guten Tag, kann ich helfen?"
+    },
+    {
+     "role": 1,
+     "text": "Boa tarde. Eu estou com dor de cabeça e um pouco de febre.",
+     "de": "Guten Tag. Ich habe Kopfweh und etwas Fieber.",
+     "note": "estar com dor de … = Schmerzen haben"
+    },
+    {
+     "role": 0,
+     "text": "Desde quando?",
+     "de": "Seit wann?"
+    },
+    {
+     "role": 1,
+     "text": "Desde ontem à noite.",
+     "de": "Seit gestern Abend."
+    },
+    {
+     "role": 0,
+     "text": "O senhor tem alergia a algum remédio?",
+     "de": "Sind Sie gegen ein Medikament allergisch?"
+    },
+    {
+     "role": 1,
+     "text": "Não, não tenho alergia.",
+     "de": "Nein, ich habe keine Allergie."
+    },
+    {
+     "role": 0,
+     "text": "Então tome este comprimido de oito em oito horas.",
+     "de": "Dann nehmen Sie diese Tablette alle acht Stunden."
+    },
+    {
+     "role": 1,
+     "text": "Posso tomar com o estômago vazio?",
+     "de": "Kann ich sie auf nüchternen Magen nehmen?"
+    },
+    {
+     "role": 0,
+     "text": "Melhor depois de comer. Se não melhorar em dois dias, procure um médico.",
+     "de": "Besser nach dem Essen. Wenn es in zwei Tagen nicht besser ist, gehen Sie zum Arzt."
+    },
+    {
+     "role": 1,
+     "text": "Tudo bem. Também preciso de protetor solar.",
+     "de": "In Ordnung. Ich brauche auch Sonnencreme."
+    },
+    {
+     "role": 0,
+     "text": "Está ali, na segunda prateleira.",
+     "de": "Die ist dort, im zweiten Regal."
+    },
+    {
+     "role": 1,
+     "text": "Obrigado, até logo!",
+     "de": "Danke, auf Wiedersehen!"
+    }
+   ]
+  },
+  {
+   "id": "d10",
+   "title": "Im Bus",
+   "titleTarget": "No ônibus",
+   "situation": "Mit dem Stadtbus an den Strand.",
+   "lesson": "pt-BR-05",
+   "roles": [
+    "Fahrer",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 1,
+     "text": "Com licença, esse ônibus vai para Copacabana?",
+     "de": "Entschuldigung, fährt dieser Bus nach Copacabana?"
+    },
+    {
+     "role": 0,
+     "text": "Vai, sim. Pode subir.",
+     "de": "Ja. Steigen Sie ein."
+    },
+    {
+     "role": 1,
+     "text": "Quanto é a passagem?",
+     "de": "Wie viel kostet die Fahrt?"
+    },
+    {
+     "role": 0,
+     "text": "Quatro e setenta. Pode pagar com cartão por aproximação.",
+     "de": "Vier Reais siebzig. Sie können kontaktlos mit Karte zahlen."
+    },
+    {
+     "role": 1,
+     "text": "Pode me avisar quando a gente chegar na praia?",
+     "de": "Können Sie mir Bescheid sagen, wenn wir am Strand ankommen?",
+     "note": "a gente = wir (umgangssprachlich)"
+    },
+    {
+     "role": 0,
+     "text": "Posso. São umas oito paradas.",
+     "de": "Mach ich. Es sind etwa acht Haltestellen."
+    },
+    {
+     "role": 1,
+     "text": "Muito obrigado.",
+     "de": "Vielen Dank."
+    },
+    {
+     "role": 0,
+     "text": "(mais tarde) Moço, a próxima parada é a sua!",
+     "de": "(später) Junger Mann, die nächste Haltestelle ist Ihre!",
+     "note": "moço / moça = übliche Anrede, auch für Ältere"
+    },
+    {
+     "role": 1,
+     "text": "Ah, obrigado! Como eu peço para descer?",
+     "de": "Ah, danke! Wie gebe ich Bescheid, dass ich aussteigen will?"
+    },
+    {
+     "role": 0,
+     "text": "É só apertar o botão.",
+     "de": "Einfach den Knopf drücken."
+    },
+    {
+     "role": 1,
+     "text": "Valeu!",
+     "de": "Danke!",
+     "note": "valeu = lockeres Danke"
+    }
+   ]
+  },
+  {
+   "id": "d11",
+   "title": "Smalltalk am Strand",
+   "titleTarget": "Conversa na praia",
+   "situation": "Jemand spricht dich am Strand an.",
+   "lesson": "pt-BR-08",
+   "roles": [
+    "Carla",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 0,
+     "text": "Oi! Você não é daqui, né?",
+     "de": "Hallo! Du bist nicht von hier, oder?",
+     "note": "né = nicht wahr? (aus não é)"
+    },
+    {
+     "role": 1,
+     "text": "Não, sou turista. Cheguei semana passada.",
+     "de": "Nein, ich bin Tourist. Ich bin letzte Woche angekommen."
+    },
+    {
+     "role": 0,
+     "text": "E está gostando do Brasil?",
+     "de": "Und gefällt dir Brasilien?"
+    },
+    {
+     "role": 1,
+     "text": "Estou adorando! As praias são lindas.",
+     "de": "Ich liebe es! Die Strände sind wunderschön."
+    },
+    {
+     "role": 0,
+     "text": "Você está viajando sozinho?",
+     "de": "Reist du allein?"
+    },
+    {
+     "role": 1,
+     "text": "Não, estou viajando com um amigo.",
+     "de": "Nein, ich reise mit einem Freund."
+    },
+    {
+     "role": 0,
+     "text": "Quanto tempo vocês vão ficar?",
+     "de": "Wie lange bleibt ihr?"
+    },
+    {
+     "role": 1,
+     "text": "Três semanas. Depois vamos para Salvador.",
+     "de": "Drei Wochen. Danach fahren wir nach Salvador."
+    },
+    {
+     "role": 0,
+     "text": "Que legal! Você trabalha com o quê?",
+     "de": "Wie toll! Was arbeitest du?"
+    },
+    {
+     "role": 1,
+     "text": "Eu trabalho com informática. E você?",
+     "de": "Ich arbeite in der Informatik. Und du?"
+    },
+    {
+     "role": 0,
+     "text": "Eu sou professora. Quer tomar uma água de coco?",
+     "de": "Ich bin Lehrerin. Willst du ein Kokoswasser trinken?"
+    },
+    {
+     "role": 1,
+     "text": "Quero, sim! Boa ideia.",
+     "de": "Ja, gern! Gute Idee.",
+     "note": "Ja = das Verb wiederholen: quero"
+    }
+   ]
+  },
+  {
+   "id": "d12",
+   "title": "Problem im Hotelzimmer",
+   "titleTarget": "Um problema no quarto",
+   "situation": "Du rufst die Rezeption an.",
+   "lesson": "pt-BR-04",
+   "roles": [
+    "Rezeption",
+    "Du"
+   ],
+   "lines": [
+    {
+     "role": 0,
+     "text": "Recepção, boa noite.",
+     "de": "Rezeption, guten Abend."
+    },
+    {
+     "role": 1,
+     "text": "Boa noite. O ar-condicionado do meu quarto não funciona.",
+     "de": "Guten Abend. Die Klimaanlage in meinem Zimmer funktioniert nicht."
+    },
+    {
+     "role": 0,
+     "text": "Qual é o número do quarto?",
+     "de": "Welche Zimmernummer haben Sie?"
+    },
+    {
+     "role": 1,
+     "text": "Trezentos e dois.",
+     "de": "Dreihundertzwei."
+    },
+    {
+     "role": 0,
+     "text": "Desculpe! Vou mandar alguém agora mesmo.",
+     "de": "Entschuldigung! Ich schicke sofort jemanden."
+    },
+    {
+     "role": 1,
+     "text": "E também não tem toalha no banheiro.",
+     "de": "Und im Bad gibt es auch kein Handtuch."
+    },
+    {
+     "role": 0,
+     "text": "Vou pedir para levarem toalhas também.",
+     "de": "Ich lasse auch Handtücher bringen."
+    },
+    {
+     "role": 1,
+     "text": "Obrigado. Mais uma pergunta: a que horas fecha a piscina?",
+     "de": "Danke. Noch eine Frage: Um wie viel Uhr schliesst der Pool?"
+    },
+    {
+     "role": 0,
+     "text": "Às dez da noite.",
+     "de": "Um zehn Uhr abends."
+    },
+    {
+     "role": 1,
+     "text": "Perfeito, obrigado pela ajuda.",
+     "de": "Perfekt, danke für die Hilfe."
+    },
+    {
+     "role": 0,
+     "text": "Imagina! Boa noite.",
+     "de": "Keine Ursache! Gute Nacht.",
+     "note": "imagina = keine Ursache"
+    }
+   ]
+  }
+ ]
+}

@@ -13,3 +13,6 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Testkopien (kann geloescht werden)
+tools/compare/.tmp/

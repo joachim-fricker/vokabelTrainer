@@ -14,7 +14,6 @@ import de.jfricker.vokabeltrainer.data.PracticeRepository
 import de.jfricker.vokabeltrainer.data.Stats
 import de.jfricker.vokabeltrainer.data.StatsRepository
 import de.jfricker.vokabeltrainer.data.TodaySummary
-import java.time.LocalDate
 import de.jfricker.vokabeltrainer.data.local.LessonEntity
 import de.jfricker.vokabeltrainer.data.local.LessonSummary
 import de.jfricker.vokabeltrainer.data.local.SentenceEntity
@@ -185,8 +184,9 @@ class MainViewModel(
         }
     }
 
-    fun setTargetDate(date: LocalDate) {
-        practiceRepository.setTargetDate(date)
+    /** Tagesziel neue Woerter aendern (aktuelle Sprache) */
+    fun setNewWordsPerDay(value: Int) {
+        practiceRepository.setNewWordsPerDay(value)
         loadStats()
         refreshToday()
     }

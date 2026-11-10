@@ -37,3 +37,24 @@ Lektionen oder Verben (erst `conj.py`) erneut ausführen:
 
     cd tools/grammar
     python3 exercises.py
+
+## Dialoge
+
+`tools/dialogues/gen.py` erzeugt `app/src/main/assets/dialogues/pt-BR.json` und `es-AR.json` aus `pt_br.py` / `es_ar.py`
+(je 12 typische Situationen: Begrüssung, Café, Restaurant, Flughafen, Weg fragen, Hotel, Taxi, Markt, Apotheke, Bus,
+Smalltalk, Problem im Hotelzimmer). Zeile: `("a"|"b", Text, Deutsch[, Hinweis])`, a = Gegenüber, b = Du.
+Die Prüfung meldet doppelte IDs, unbekannte Lektionen und Rollen mit weniger als 3 verschiedenen Sätzen.
+
+    cd tools/dialogues
+    python3 gen.py
+
+## Sprachvergleich (Portugiesisch ↔ Spanisch)
+
+`tools/compare/gen.py` erzeugt `app/src/main/assets/compare/pairs.json`: Wortpaare über die gemeinsame deutsche
+Übersetzung (Gross-/Kleinschreibung zählt: sie ≠ Sie), eingeteilt in *ganz verschieden*, *ähnlich* (mit typischen Mustern
+wie -ção → -ción, nh → ñ, o → ue) und *gleich*. Von Hand korrigieren über `OVERRIDES`, `EXCLUDE`, `EXTRA_PAIRS` in `gen.py`.
+Falsche Freunde stehen in `false_friends.py`. Nach Änderungen an den Lektionen erneut ausführen:
+
+    cd tools/compare
+    python3 gen.py            # Übersicht
+    python3 gen.py --list     # alle Paare je Gruppe

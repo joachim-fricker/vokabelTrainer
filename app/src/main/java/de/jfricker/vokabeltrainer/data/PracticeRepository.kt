@@ -18,7 +18,6 @@ import de.jfricker.vokabeltrainer.domain.NumberDrill
 import de.jfricker.vokabeltrainer.domain.Leitner
 import de.jfricker.vokabeltrainer.domain.PracticeItem
 import de.jfricker.vokabeltrainer.domain.PracticeMode
-import java.time.LocalDate
 import kotlin.random.Random
 
 /**
@@ -39,8 +38,6 @@ data class TodaySummary(
     val due: Int,
     val newWordsTarget: Int,
     val newWordsDone: Int,
-    val daysLeft: Long,
-    val targetDate: LocalDate,
     val wordsTotal: Int,
     val wordsStarted: Int,
 ) {
@@ -246,20 +243,17 @@ class PracticeRepository(
         val total = dao.wordCount(lang)
         val started = dao.startedCount(prefix, PracticeMode.CARD_PT_DE.code)
         val introduced = prefs.countToday(LearningPrefs.NEW_WORDS)
-        val target = prefs.targetDate
         return TodaySummary(
             due = dao.dueAllCount(prefix, System.currentTimeMillis(), allCodes),
-            newWordsTarget = DailyPlan.newWordsPerDay(total, started, introduced, target),
+            newWordsTarget = DailyPlan.newWordsPerDay(total, started, introduced, prefs.newWordsPerDay),
             newWordsDone = introduced,
-            daysLeft = DailyPlan.daysLeft(target),
-            targetDate = target,
             wordsTotal = total,
             wordsStarted = started,
         )
     }
 
-    fun setTargetDate(date: LocalDate) {
-        prefs.targetDate = date
+    fun setNewWordsPerDay(value: Int) {
+        prefs.newWordsPerDay = value
     }
 
     /**

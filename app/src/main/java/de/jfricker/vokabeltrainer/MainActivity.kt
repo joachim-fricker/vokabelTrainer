@@ -16,6 +16,11 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
+import de.jfricker.vokabeltrainer.ui.CompareScreen
+import de.jfricker.vokabeltrainer.ui.CompareViewModel
+import de.jfricker.vokabeltrainer.ui.DialogueListScreen
+import de.jfricker.vokabeltrainer.ui.DialogueScreen
+import de.jfricker.vokabeltrainer.ui.DialogueViewModel
 import de.jfricker.vokabeltrainer.ui.LessonListScreen
 import de.jfricker.vokabeltrainer.ui.LessonScreen
 import de.jfricker.vokabeltrainer.ui.MainViewModel
@@ -47,13 +52,31 @@ class MainActivity : ComponentActivity() {
         }
     }
 
+    private val dialogueViewModel: DialogueViewModel by viewModels {
+        viewModelFactory {
+            initializer {
+                val app = application as VokabelApp
+                DialogueViewModel(app.dialogueStore, app.speaker, app.prefs)
+            }
+        }
+    }
+
+    private val compareViewModel: CompareViewModel by viewModels {
+        viewModelFactory {
+            initializer {
+                val app = application as VokabelApp
+                CompareViewModel(app.compareStore, app.speaker)
+            }
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
             VokabelTrainerTheme {
                 Surface(Modifier.fillMaxSize()) {
-                    AppContent(viewModel, videoViewModel)
+                    AppContent(viewModel, videoViewModel, dialogueViewModel, compareViewModel)
                 }
             }
         }
@@ -66,13 +89,17 @@ private const val TODAY = "today"
 private const val DIFFICULT = "difficult"
 
 @Composable
-fun AppContent(vm: MainViewModel, videoVm: VideoViewModel) {
+fun AppContent(vm: MainViewModel, videoVm: VideoViewModel, dialogueVm: DialogueViewModel, compareVm: CompareViewModel) {
     var selectedLesson by rememberSaveable { mutableStateOf<String?>(null) }
     var practiceTarget by rememberSaveable { mutableStateOf<String?>(null) }
     var showStats by rememberSaveable { mutableStateOf(false) }
     var showVideos by rememberSaveable { mutableStateOf(false) }
     var openPlaylist by rememberSaveable { mutableStateOf<String?>(null) }
     var playingVideo by rememberSaveable { mutableStateOf<String?>(null) }
+    var showDialogues by rememberSaveable { mutableStateOf(false) }
+    var showCompare by rememberSaveable { mutableStateOf(false) }
+    var openDialogue by rememberSaveable { mutableStateOf<String?>(null) }
+    val dialogueKey = openDialogue
     val playlistId = openPlaylist
     val videoId = playingVideo
     val lessonId = selectedLesson
@@ -102,6 +129,21 @@ fun AppContent(vm: MainViewModel, videoVm: VideoViewModel) {
             VideosScreen(videoVm, onBack = { showVideos = false }, onOpenPlaylist = { openPlaylist = it })
         }
 
+        dialogueKey != null -> {
+            BackHandler { openDialogue = null }
+            DialogueScreen(dialogueVm, dialogueKey, onBack = { openDialogue = null })
+        }
+
+        showCompare -> {
+            BackHandler { showCompare = false }
+            CompareScreen(compareVm, onBack = { showCompare = false })
+        }
+
+        showDialogues -> {
+            BackHandler { showDialogues = false }
+            DialogueListScreen(dialogueVm, onBack = { showDialogues = false }, onOpen = { openDialogue = it })
+        }
+
         showStats -> {
             BackHandler { showStats = false }
             StatsScreen(vm, onBack = { showStats = false }, onPracticeDifficult = { practiceTarget = DIFFICULT })
@@ -123,6 +165,8 @@ fun AppContent(vm: MainViewModel, videoVm: VideoViewModel) {
             onToday = { practiceTarget = TODAY },
             onStats = { showStats = true },
             onVideos = { showVideos = true },
+            onDialogues = { showDialogues = true },
+            onCompare = { showCompare = true },
         )
     }
 }
