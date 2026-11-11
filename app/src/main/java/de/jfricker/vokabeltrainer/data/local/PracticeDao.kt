@@ -103,6 +103,15 @@ interface PracticeDao {
     @Query("SELECT * FROM word")
     suspend fun allWords(): List<WordEntity>
 
+    // ------------------------------------------------ "Nur hören"
+
+    @Query("SELECT * FROM word WHERE language = :lang")
+    suspend fun wordsOfLanguage(lang: String): List<WordEntity>
+
+    /** Lernstand aller Eintraege einer Sprache (Woerter und Saetze), prefix = Language.keyPrefix */
+    @Query("SELECT * FROM progress WHERE wordKey LIKE :prefix")
+    suspend fun progressWithPrefix(prefix: String): List<ProgressEntity>
+
     @Query("SELECT * FROM sentence_word WHERE (:lessonId IS NULL OR lessonId = :lessonId)")
     suspend fun sentenceWords(lessonId: String?): List<SentenceWordEntity>
 

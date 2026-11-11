@@ -9,7 +9,6 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
@@ -39,6 +38,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import de.jfricker.vokabeltrainer.data.GrammarItem
@@ -64,27 +64,18 @@ fun LessonScreen(vm: MainViewModel, lessonId: String, onBack: () -> Unit, onPrac
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(lesson?.title ?: "") },
+                title = { Text(lesson?.title ?: "", maxLines = 1, overflow = TextOverflow.Ellipsis) },
                 navigationIcon = {
                     IconButton(onClick = onBack) { Text("←", style = MaterialTheme.typography.titleLarge) }
                 },
                 actions = {
                     FilterChip(selected = slow, onClick = { vm.setSlow(!slow) }, label = { Text("Langsam") })
                     Spacer(Modifier.width(8.dp))
+                    // Alle Bedienelemente oben (Wunsch des Nutzers, 11.11.2026: nicht teils oben, teils unten)
+                    Button(onClick = onPractice) { Text("🃏 Üben") }
+                    Spacer(Modifier.width(8.dp))
                 },
             )
-        },
-        bottomBar = {
-            Surface(tonalElevation = 3.dp) {
-                Button(
-                    onClick = onPractice,
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .navigationBarsPadding()
-                        .padding(horizontal = 16.dp, vertical = 8.dp)
-                        .height(52.dp),
-                ) { Text("🃏  Diese Lektion üben") }
-            }
         },
     ) { padding ->
         Column(Modifier.fillMaxSize().padding(padding)) {
@@ -248,7 +239,7 @@ private fun SpeakRow(
             Text(primary, style = MaterialTheme.typography.titleMedium)
             Text(secondary, style = MaterialTheme.typography.bodyMedium)
             note?.let {
-                ExplanationText(
+                Text(
                     it,
                     style = MaterialTheme.typography.bodySmall,
                     fontStyle = FontStyle.Italic,

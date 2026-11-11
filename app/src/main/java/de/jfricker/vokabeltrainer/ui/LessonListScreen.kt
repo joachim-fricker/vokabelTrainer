@@ -9,7 +9,10 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.material3.OutlinedButton
+import androidx.compose.foundation.layout.Box
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -22,6 +25,9 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.unit.dp
@@ -29,6 +35,9 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import de.jfricker.vokabeltrainer.data.TodaySummary
 import de.jfricker.vokabeltrainer.domain.Language
 import de.jfricker.vokabeltrainer.speech.SpeakerState
+import de.jfricker.vokabeltrainer.speech.ListenService
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.platform.LocalContext
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -41,7 +50,9 @@ fun LessonListScreen(
     onVideos: () -> Unit,
     onDialogues: () -> Unit,
     onCompare: () -> Unit,
+    onListen: () -> Unit,
 ) {
+    val listen by ListenService.state.collectAsStateWithLifecycle()
     val lessons by vm.lessons.collectAsStateWithLifecycle()
     val speakerState by vm.speakerState.collectAsStateWithLifecycle()
     val importMessage by vm.importMessage.collectAsStateWithLifecycle()
@@ -56,8 +67,17 @@ fun LessonListScreen(
             TopAppBar(
                 title = { Text("Vokabeltrainer") },
                 actions = {
-                    TextButton(onClick = onVideos) { Text("🎬 Videos") }
-                    TextButton(onClick = onStats) { Text("📊 Statistik") }
+                    // Alle Menuepunkte oben in einem Menue (Wunsch des Nutzers, 11.11.2026);
+                    // auf der Seite selbst nur noch "Heute lernen" und die Lektionen
+                    MainMenu(
+                        enabled = lessons.isNotEmpty(),
+                        onPracticeAll = onPracticeAll,
+                        onDialogues = onDialogues,
+                        onCompare = onCompare,
+                        onListen = onListen,
+                        onVideos = onVideos,
+                        onStats = onStats,
+                    )
                 },
             )
         },
@@ -77,22 +97,10 @@ fun LessonListScreen(
             if (lessons.isEmpty()) {
                 item { Text("Noch keine Lektionen für ${language.displayName} …") }
             } else {
+                if (listen.running) {
+                    item { ListenRunningCard(onOpen = onListen) }
+                }
                 item { TodayCard(today, onToday) }
-                item {
-                    OutlinedButton(onClick = onPracticeAll, modifier = Modifier.fillMaxWidth()) {
-                        Text("🃏  Alle Lektionen gezielt üben")
-                    }
-                }
-                item {
-                    OutlinedButton(onClick = onDialogues, modifier = Modifier.fillMaxWidth()) {
-                        Text("💬  Typische Dialoge")
-                    }
-                }
-                item {
-                    OutlinedButton(onClick = onCompare, modifier = Modifier.fillMaxWidth()) {
-                        Text("🔀  Portugiesisch ↔ Spanisch vergleichen")
-                    }
-                }
             }
             items(lessons, key = { it.lesson.id }) { summary ->
                 val lesson = summary.lesson
@@ -112,6 +120,58 @@ fun LessonListScreen(
                     }
                 }
             }
+        }
+    }
+}
+
+/** Menue oben rechts mit allen Bereichen ausser "Heute lernen" und den Lektionen */
+@Composable
+private fun MainMenu(
+    enabled: Boolean,
+    onPracticeAll: () -> Unit,
+    onDialogues: () -> Unit,
+    onCompare: () -> Unit,
+    onListen: () -> Unit,
+    onVideos: () -> Unit,
+    onStats: () -> Unit,
+) {
+    var open by remember { mutableStateOf(false) }
+    Box {
+        TextButton(onClick = { open = true }) { Text("☰  Menü", style = MaterialTheme.typography.titleMedium) }
+        DropdownMenu(expanded = open, onDismissRequest = { open = false }) {
+            // Text, braucht Lektionen, Aktion
+            val entries = listOf(
+                Triple("🃏  Alle Lektionen gezielt üben", true, onPracticeAll),
+                Triple("💬  Typische Dialoge", true, onDialogues),
+                Triple("🔀  Portugiesisch ↔ Spanisch vergleichen", true, onCompare),
+                Triple("🎧  Nur hören", true, onListen),
+                Triple("🎬  Videos", false, onVideos),
+                Triple("📊  Statistik", false, onStats),
+            )
+            entries.forEachIndexed { i, (label, needsLessons, action) ->
+                if (i == 4) HorizontalDivider()
+                DropdownMenuItem(
+                    text = { Text(label, style = MaterialTheme.typography.titleMedium) },
+                    enabled = enabled || !needsLessons,
+                    onClick = { open = false; action() },
+                )
+            }
+        }
+    }
+}
+
+/** Hinweis auf der Startseite, solange "Nur hören" im Hintergrund laeuft */
+@Composable
+private fun ListenRunningCard(onOpen: () -> Unit) {
+    val context = LocalContext.current
+    Card(
+        onClick = onOpen,
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.tertiaryContainer),
+        modifier = Modifier.fillMaxWidth(),
+    ) {
+        Row(Modifier.padding(start = 16.dp, end = 8.dp, top = 8.dp, bottom = 8.dp), verticalAlignment = Alignment.CenterVertically) {
+            Text("🎧  Nur hören läuft", style = MaterialTheme.typography.titleMedium, modifier = Modifier.weight(1f))
+            TextButton(onClick = { ListenService.send(context, ListenService.ACTION_STOP) }) { Text("⏹ Stopp") }
         }
     }
 }

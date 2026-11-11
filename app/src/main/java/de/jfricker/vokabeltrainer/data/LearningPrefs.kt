@@ -3,6 +3,7 @@ package de.jfricker.vokabeltrainer.data
 import android.content.Context
 import de.jfricker.vokabeltrainer.domain.DailyPlan
 import de.jfricker.vokabeltrainer.domain.Language
+import de.jfricker.vokabeltrainer.domain.ListenOrder
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -50,6 +51,23 @@ class LearningPrefs(context: Context) {
             prefs.edit().putBoolean(KEY_CONJ_TYPING, value).apply()
         }
 
+    // "Nur hören" (gilt fuer alle Sprachen)
+    var listenWords: Boolean
+        get() = prefs.getBoolean(KEY_LISTEN_WORDS, true)
+        set(value) { prefs.edit().putBoolean(KEY_LISTEN_WORDS, value).apply() }
+
+    var listenSentences: Boolean
+        get() = prefs.getBoolean(KEY_LISTEN_SENTENCES, true)
+        set(value) { prefs.edit().putBoolean(KEY_LISTEN_SENTENCES, value).apply() }
+
+    var listenOrder: ListenOrder
+        get() = ListenOrder.fromCode(prefs.getString(KEY_LISTEN_ORDER, null))
+        set(value) { prefs.edit().putString(KEY_LISTEN_ORDER, value.code).apply() }
+
+    var listenSlow: Boolean
+        get() = prefs.getBoolean(KEY_LISTEN_SLOW, false)
+        set(value) { prefs.edit().putBoolean(KEY_LISTEN_SLOW, value).apply() }
+
     /** Wie viele neue Woerter/Saetze heute in der aktuellen Sprache schon dazugekommen sind. */
     fun countToday(kind: String): Int {
         val today = LocalDate.now().toEpochDay()
@@ -75,5 +93,9 @@ class LearningPrefs(context: Context) {
         private const val KEY_NEW_PER_DAY = "newWordsPerDay"
         private const val KEY_YOUTUBE = "youtubeApiKey"
         private const val KEY_LANGUAGE = "language"
+        private const val KEY_LISTEN_WORDS = "listenWords"
+        private const val KEY_LISTEN_SENTENCES = "listenSentences"
+        private const val KEY_LISTEN_ORDER = "listenOrder"
+        private const val KEY_LISTEN_SLOW = "listenSlow"
     }
 }

@@ -17,6 +17,7 @@ import de.jfricker.vokabeltrainer.data.ExerciseStore
 import de.jfricker.vokabeltrainer.data.DialogueStore
 import de.jfricker.vokabeltrainer.data.CompareStore
 import de.jfricker.vokabeltrainer.data.StatsRepository
+import de.jfricker.vokabeltrainer.data.ListenSource
 import de.jfricker.vokabeltrainer.speech.Speaker
 
 class VokabelApp : Application() {
@@ -35,4 +36,5 @@ class VokabelApp : Application() {
     val speaker by lazy { Speaker(this, prefs.language) }
     val dialogueStore by lazy { DialogueStore(this) }
     val compareStore by lazy { CompareStore(this) }
+    val listenSource by lazy { ListenSource(database.practiceDao()) }
 }

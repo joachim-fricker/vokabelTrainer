@@ -195,7 +195,7 @@ private fun ModeCard(mode: PracticeMode, s: PracticeState.Setup, language: Langu
     ) {
         Column(Modifier.padding(16.dp)) {
             Text(mode.label(language), style = MaterialTheme.typography.titleMedium)
-            ExplanationText(mode.description(language), style = MaterialTheme.typography.bodySmall, title = mode.label(language))
+            Text(mode.description(language), style = MaterialTheme.typography.bodySmall)
             Text(
                 when {
                     due + new > 0 -> "$due fällig · $new neu"

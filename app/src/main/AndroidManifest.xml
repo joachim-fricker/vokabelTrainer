@@ -5,6 +5,12 @@
     <!-- Fuer YouTube-Playlists und den Video-Player -->
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <!-- "Nur hören": Vorlesen im Hintergrund, auch bei ausgeschaltetem Bildschirm -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
     <!-- Ab Android 11 noetig, damit die App die Sprachausgabe-Dienste sieht -->
     <queries>
         <intent>
@@ -35,6 +41,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".speech.ListenService"
+            android:exported="false"
+            android:foregroundServiceType="mediaPlayback" />
     </application>
 
 </manifest>
