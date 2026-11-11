@@ -24,6 +24,7 @@ import de.jfricker.vokabeltrainer.ui.DialogueViewModel
 import de.jfricker.vokabeltrainer.ui.LessonListScreen
 import de.jfricker.vokabeltrainer.ui.LessonScreen
 import de.jfricker.vokabeltrainer.ui.ListenScreen
+import de.jfricker.vokabeltrainer.ui.SearchScreen
 import de.jfricker.vokabeltrainer.ui.MainViewModel
 import de.jfricker.vokabeltrainer.ui.PracticeScreen
 import de.jfricker.vokabeltrainer.ui.StatsScreen
@@ -100,6 +101,7 @@ fun AppContent(vm: MainViewModel, videoVm: VideoViewModel, dialogueVm: DialogueV
     var showDialogues by rememberSaveable { mutableStateOf(false) }
     var showCompare by rememberSaveable { mutableStateOf(false) }
     var showListen by rememberSaveable { mutableStateOf(false) }
+    var showSearch by rememberSaveable { mutableStateOf(false) }
     var openDialogue by rememberSaveable { mutableStateOf<String?>(null) }
     val dialogueKey = openDialogue
     val playlistId = openPlaylist
@@ -134,6 +136,11 @@ fun AppContent(vm: MainViewModel, videoVm: VideoViewModel, dialogueVm: DialogueV
         dialogueKey != null -> {
             BackHandler { openDialogue = null }
             DialogueScreen(dialogueVm, dialogueKey, onBack = { openDialogue = null })
+        }
+
+        showSearch -> {
+            BackHandler { showSearch = false }
+            SearchScreen(onBack = { showSearch = false })
         }
 
         showListen -> {
@@ -175,6 +182,7 @@ fun AppContent(vm: MainViewModel, videoVm: VideoViewModel, dialogueVm: DialogueV
             onDialogues = { showDialogues = true },
             onCompare = { showCompare = true },
             onListen = { showListen = true },
+            onSearch = { showSearch = true },
         )
     }
 }

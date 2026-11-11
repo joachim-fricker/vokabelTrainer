@@ -103,6 +103,11 @@ interface PracticeDao {
     @Query("SELECT * FROM word")
     suspend fun allWords(): List<WordEntity>
 
+    // ------------------------------------------------ Suche
+
+    @Query("SELECT * FROM lesson")
+    suspend fun allLessons(): List<LessonEntity>
+
     // ------------------------------------------------ "Nur hören"
 
     @Query("SELECT * FROM word WHERE language = :lang")

@@ -18,6 +18,7 @@ import android.os.Looper
 import android.os.PowerManager
 import android.speech.tts.TextToSpeech
 import android.speech.tts.UtteranceProgressListener
+import android.speech.tts.Voice
 import de.jfricker.vokabeltrainer.MainActivity
 import de.jfricker.vokabeltrainer.R
 import de.jfricker.vokabeltrainer.VokabelApp
@@ -70,6 +71,8 @@ class ListenService : Service(), TextToSpeech.OnInitListener {
     private var slow = false
     private var targetLocale: Locale? = null
     private var germanLocale: Locale? = null
+    /** Gewaehlte bzw. maennliche deutsche Stimme; null = Standardstimme der Sprache */
+    private var germanVoice: Voice? = null
     /** Nummer des gerade gesprochenen Eintrags; Rueckmeldungen aelterer Eintraege werden ignoriert. */
     @Volatile private var generation = 0
     private var wakeLock: PowerManager.WakeLock? = null
@@ -123,6 +126,7 @@ class ListenService : Service(), TextToSpeech.OnInitListener {
             }
             targetLocale = localeFor(language.ttsLocales)
             germanLocale = localeFor(listOf("de-DE", "de-CH", "de-AT", "de"))
+            germanVoice = GermanVoices.pick(tts, (application as VokabelApp).prefs.listenGermanVoice)
             when {
                 targetLocale == null -> fail("Keine Stimme für ${language.variantName} installiert.")
                 germanLocale == null -> fail("Keine deutsche Stimme installiert (Android-Einstellungen → Sprachausgabe).")
@@ -171,7 +175,8 @@ class ListenService : Service(), TextToSpeech.OnInitListener {
         var first = true
 
         fun say(text: String, locale: Locale, pitch: Float, id: String) {
-            tts.setLanguage(locale)
+            val voice = germanVoice
+            if (locale == germanLocale && voice != null) tts.setVoice(voice) else tts.setLanguage(locale)
             tts.setPitch(pitch)
             tts.speak(clean(text), if (first) TextToSpeech.QUEUE_FLUSH else TextToSpeech.QUEUE_ADD, null, id)
             first = false

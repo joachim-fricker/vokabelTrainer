@@ -41,6 +41,7 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import de.jfricker.vokabeltrainer.VokabelApp
 import de.jfricker.vokabeltrainer.domain.ListenOrder
+import de.jfricker.vokabeltrainer.speech.GermanVoices
 import de.jfricker.vokabeltrainer.speech.ListenService
 import de.jfricker.vokabeltrainer.speech.ListenState
 
@@ -64,6 +65,8 @@ fun ListenScreen(onBack: () -> Unit) {
     fun selectedCount() = listOf(words, sentences, dialogues).count { it }
     var order by remember { mutableStateOf(prefs.listenOrder) }
     var slow by remember { mutableStateOf(prefs.listenSlow) }
+    var voiceName by remember { mutableStateOf(prefs.listenGermanVoice) }
+    val voices = remember { app.speaker.germanVoices() }
 
     fun start() = ListenService.send(context, ListenService.ACTION_START)
 
@@ -147,6 +150,29 @@ fun ListenScreen(onBack: () -> Unit) {
                     onClick = { slow = !slow; prefs.listenSlow = slow },
                     label = { Text("Langsam (auch längere Pausen)") },
                 )
+                if (voices.size > 1) {
+                    // Deutsche Stimme waehlen; Antippen spielt eine Hoerprobe
+                    val active = app.speaker.defaultGermanVoice(voiceName)?.name
+                    Text("Deutsche Stimme", style = MaterialTheme.typography.titleMedium)
+                    Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                        voices.forEachIndexed { i, v ->
+                            FilterChip(
+                                selected = v.name == active,
+                                onClick = {
+                                    voiceName = v.name
+                                    prefs.listenGermanVoice = v.name
+                                    app.speaker.previewVoice(v)
+                                },
+                                label = { Text(GermanVoices.label(v, i)) },
+                            )
+                        }
+                    }
+                    Text(
+                        "Antippen spielt eine Hörprobe. Ob eine Stimme männlich ist, erkennt die App nur am Namen – " +
+                            "im Zweifel einfach anhören.",
+                        style = MaterialTheme.typography.bodySmall,
+                    )
+                }
                 state.error?.let {
                     Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.errorContainer)) {
                         Text(it, color = MaterialTheme.colorScheme.onErrorContainer, modifier = Modifier.padding(16.dp))

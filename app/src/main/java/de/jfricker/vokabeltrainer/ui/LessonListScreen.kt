@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -51,6 +52,7 @@ fun LessonListScreen(
     onDialogues: () -> Unit,
     onCompare: () -> Unit,
     onListen: () -> Unit,
+    onSearch: () -> Unit,
 ) {
     val listen by ListenService.state.collectAsStateWithLifecycle()
     val lessons by vm.lessons.collectAsStateWithLifecycle()
@@ -67,6 +69,8 @@ fun LessonListScreen(
             TopAppBar(
                 title = { Text("Vokabeltrainer") },
                 actions = {
+                    // Suche ueber alle Sprachen
+                    IconButton(onClick = onSearch) { Text("🔍", style = MaterialTheme.typography.titleLarge) }
                     // Alle Menuepunkte oben in einem Menue (Wunsch des Nutzers, 11.11.2026);
                     // auf der Seite selbst nur noch "Heute lernen" und die Lektionen
                     MainMenu(

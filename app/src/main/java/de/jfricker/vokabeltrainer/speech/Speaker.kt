@@ -3,6 +3,7 @@ package de.jfricker.vokabeltrainer.speech
 import android.content.Context
 import android.speech.tts.TextToSpeech
 import android.speech.tts.UtteranceProgressListener
+import android.speech.tts.Voice
 import de.jfricker.vokabeltrainer.domain.Language
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -91,6 +92,23 @@ class Speaker(context: Context, language: Language) : TextToSpeech.OnInitListene
             tts.speak(cleanForSpeech(text), if (first) TextToSpeech.QUEUE_FLUSH else TextToSpeech.QUEUE_ADD, null, "in-$i-${text.hashCode()}")
             first = false
         }
+        applyLanguage()
+    }
+
+    /** Installierte deutsche Stimmen (fuer die Auswahl in "Nur hören"); leer, solange nicht bereit */
+    fun germanVoices(): List<Voice> = if (initialized) GermanVoices.list(tts) else emptyList()
+
+    /** Stimme, die "Nur hören" ohne eigene Wahl nehmen wuerde */
+    fun defaultGermanVoice(preferredName: String?): Voice? = if (initialized) GermanVoices.pick(tts, preferredName) else null
+
+    /** Kurze Hoerprobe einer deutschen Stimme; danach gilt wieder die Lernsprache. */
+    fun previewVoice(voice: Voice) {
+        finishSequence()
+        if (!initialized) return
+        tts.setSpeechRate(1.0f)
+        tts.setPitch(1.0f)
+        tts.setVoice(voice)
+        tts.speak("Hallo, so klinge ich beim Vorlesen.", TextToSpeech.QUEUE_FLUSH, null, "voice-preview")
         applyLanguage()
     }
 
