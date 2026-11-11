@@ -735,6 +735,24 @@
       }
     },
     {
+      "word": "crescer",
+      "forms": {
+        "pres": [
+          "cresço",
+          "cresce",
+          "crescemos",
+          "crescem"
+        ],
+        "past": [
+          "cresci",
+          "cresceu",
+          "crescemos",
+          "cresceram"
+        ]
+      },
+      "note": "eu cresço (ç vor o)"
+    },
+    {
       "word": "trabalhar",
       "forms": {
         "pres": [

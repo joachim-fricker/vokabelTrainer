@@ -13,6 +13,7 @@ suico|suíço|schweizerisch; der Schweizer|adj|Frau: suíça
 austriaco|austríaco|österreichisch; der Österreicher|adj|Frau: austríaca
 estrangeiro|estrangeiro|ausländisch; der Ausländer|adj|no estrangeiro = im Ausland
 morar|morar|wohnen|v
+crescer|crescer|aufwachsen; wachsen|v|eu cresço, eu cresci
 """),
 ("Familie & Freunde", """
 familia|a família|die Familie|n
@@ -32,6 +33,7 @@ avo_f|a avó|die Grossmutter|n|os avós = die Grosseltern
 amigo|o amigo|der Freund (Kumpel)|n|die Freundin: a amiga
 casado|casado|verheiratet|adj
 solteiro|solteiro|ledig|adj
+divorciado|divorciado|geschieden|adj
 """),
 ("Arbeit & Studium", """
 trabalho|o trabalho|die Arbeit|n
@@ -41,6 +43,7 @@ empresa|a empresa|die Firma|n
 engenheiro|o engenheiro|der Ingenieur|n|a engenheira
 professor|o professor|der Lehrer|n|a professora
 aposentado|aposentado|pensioniert|adj
+desenvolvedor|o desenvolvedor|der Entwickler|n|desenvolvedor de software = Softwareentwickler; Frau: a desenvolvedora
 estudar|estudar|studieren; lernen|v
 estudante|o estudante|der Student|n|Auch: a estudante
 """),
@@ -129,6 +132,10 @@ sentences = [
 ("Nós somos da Suíça.","Wir sind aus der Schweiz.","nos suica","ser_estar praep_artikel"),
 ("Eles são muito simpáticos.","Sie sind sehr sympathisch.","eles muito","ser_estar"),
 ("Elas estão cansadas.","Sie sind müde.","eles","ser_estar"),
+# Eigene Sätze des Nutzers (11.11.2026)
+("Sou aposentado; antes trabalhei como desenvolvedor de software.","Ich bin pensioniert, vorher habe ich als Softwareentwickler gearbeitet.","aposentado antes trabalhar como desenvolvedor","ser_estar"),
+("Fui casado com uma portuguesa, mas sou divorciado há sete anos.","Ich war mit einer Portugiesin verheiratet, bin aber seit sieben Jahren geschieden.","casado divorciado mas num_7 ano","ser_estar"),
+("Sou alemão, mas moro na Suíça, a só dez quilômetros de onde cresci.","Ich bin Deutscher, wohne aber in der Schweiz, nur 10 km von dem Ort, wo ich aufgewachsen bin.","alemao mas morar suica num_10 onde crescer","ser_estar praep_artikel"),
 ]
 grammar = [
  {"id":"ser_estar","title":"ser und estar – zweimal „sein“",

@@ -36,5 +36,5 @@ class VokabelApp : Application() {
     val speaker by lazy { Speaker(this, prefs.language) }
     val dialogueStore by lazy { DialogueStore(this) }
     val compareStore by lazy { CompareStore(this) }
-    val listenSource by lazy { ListenSource(database.practiceDao()) }
+    val listenSource by lazy { ListenSource(database.practiceDao(), dialogueStore) }
 }

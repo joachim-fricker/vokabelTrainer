@@ -12,6 +12,9 @@ ciudad|la ciudad|die Stadt|n
 pueblo|el pueblo|das Dorf, die Kleinstadt|n
 barrio|el barrio|das Stadtviertel|n
 vivir|vivir|wohnen, leben|v
+crecer|crecer|aufwachsen; wachsen|v|yo crezco, yo crecí
+suiza|Suiza|die Schweiz|n
+lugar|el lugar|der Ort, der Platz|n
 extranjero|extranjero|ausländisch; Ausländer|adj
 porteno|porteño|aus Buenos Aires|adj|So nennt man die Einwohner von Buenos Aires.
 """),
@@ -31,6 +34,7 @@ abuelo|el abuelo|der Grossvater|n
 nieto|el nieto|der Enkel|n
 casado|casado|verheiratet|adj
 soltero|soltero|ledig|adj
+divorciado|divorciado|geschieden|adj
 chicos|los chicos|die Kinder; die Jungs|n|In Argentinien auch: los nenes.
 """),
 ("Beruf & Studium", """
@@ -41,6 +45,7 @@ empresa|la empresa|die Firma|n
 ingeniero|el ingeniero|der Ingenieur|n
 profesor|el profesor|der Lehrer|n|Lehrerin: la profesora.
 jubilado|jubilado|in Rente; Rentner|adj
+desarrollador|el desarrollador|der Entwickler|n|desarrollador de software = Softwareentwickler; Frau: la desarrolladora
 estudiar|estudiar|studieren; lernen|v
 estudiante|el estudiante|der Student|n
 informatico|el informático|der Informatiker|n
@@ -126,6 +131,10 @@ sentences = [
 ("Su hijo habla muy bien español.","Ihr Sohn spricht sehr gut Spanisch.","su hijo","posesivos"),
 ("¿Dónde está tu hotel?","Wo ist dein Hotel?","tu hotel estar","ser_estar"),
 ("Mi esposa y yo estamos de viaje.","Meine Frau und ich sind auf Reisen.","esposo viaje mi"),
+# Eigene Sätze des Nutzers (11.11.2026)
+("Estoy jubilado; antes trabajaba como desarrollador de software.","Ich bin pensioniert, vorher habe ich als Softwareentwickler gearbeitet.","jubilado estar antes trabajar como desarrollador","ser_estar"),
+("Estuve casado con una portuguesa, pero hace siete años que estoy divorciado.","Ich war mit einer Portugiesin verheiratet, bin aber seit sieben Jahren geschieden.","casado divorciado siete ano estar","ser_estar"),
+("Soy alemán, pero vivo en Suiza, a solo diez kilómetros del lugar donde crecí.","Ich bin Deutscher, wohne aber in der Schweiz, nur 10 km von dem Ort, wo ich aufgewachsen bin.","aleman ser vivir suiza diez lugar crecer","ser_estar"),
 ]
 grammar = [
  {"id":"ser_estar","title":"ser oder estar?",

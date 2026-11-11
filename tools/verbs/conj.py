@@ -72,6 +72,7 @@ PT_NOTES = {
     "subir": "ele sobe, eles sobem",
     "conhecer": "eu conheço (ç vor o)",
     "descer": "eu desço (ç vor o)",
+    "crescer": "eu cresço (ç vor o)",
 }
 
 
@@ -135,6 +136,7 @@ ES_IRREGULAR = {
     "traer": (["traigo", "traés", "trae", "traemos", "traen"], ["traje", "trajiste", "trajo", "trajimos", "trajeron"]),
     "salir": (["salgo", "salís", "sale", "salimos", "salen"], None),
     "conocer": (["conozco", "conocés", "conoce", "conocemos", "conocen"], None),
+    "crecer": (["crezco", "crecés", "crece", "crecemos", "crecen"], None),
     "pedir": (["pido", "pedís", "pide", "pedimos", "piden"], ["pedí", "pediste", "pidió", "pedimos", "pidieron"]),
     "seguir": (["sigo", "seguís", "sigue", "seguimos", "siguen"], ["seguí", "seguiste", "siguió", "seguimos", "siguieron"]),
     "dormir": (["duermo", "dormís", "duerme", "dormimos", "duermen"], ["dormí", "dormiste", "durmió", "dormimos", "durmieron"]),
@@ -180,6 +182,7 @@ ES_NOTES = {
     "llegar": "yo llegué (g → gu vor e)",
     "cruzar": "yo crucé (z → c vor e)",
     "conocer": "yo conozco",
+    "crecer": "yo crezco",
     "salir": "yo salgo",
     "leer": "Vergangenheit leyó, leyeron",
 }

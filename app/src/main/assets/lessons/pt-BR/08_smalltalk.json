@@ -104,6 +104,14 @@
       "category": "Herkunft & Wohnort"
     },
     {
+      "id": "crescer",
+      "text": "crescer",
+      "de": "aufwachsen; wachsen",
+      "pos": "verb",
+      "note": "eu cresço, eu cresci",
+      "category": "Herkunft & Wohnort"
+    },
+    {
       "id": "familia",
       "text": "a família",
       "de": "die Familie",
@@ -243,6 +251,13 @@
       "category": "Familie & Freunde"
     },
     {
+      "id": "divorciado",
+      "text": "divorciado",
+      "de": "geschieden",
+      "pos": "adjective",
+      "category": "Familie & Freunde"
+    },
+    {
       "id": "trabalho",
       "text": "o trabalho",
       "de": "die Arbeit",
@@ -296,6 +311,15 @@
       "text": "aposentado",
       "de": "pensioniert",
       "pos": "adjective",
+      "category": "Arbeit & Studium"
+    },
+    {
+      "id": "desenvolvedor",
+      "text": "o desenvolvedor",
+      "de": "der Entwickler",
+      "pos": "noun",
+      "gender": "m",
+      "note": "desenvolvedor de software = Softwareentwickler; Frau: a desenvolvedora",
       "category": "Arbeit & Studium"
     },
     {
@@ -1139,6 +1163,54 @@
       ],
       "grammar": [
         "ser_estar"
+      ]
+    },
+    {
+      "id": "s57",
+      "text": "Sou aposentado; antes trabalhei como desenvolvedor de software.",
+      "de": "Ich bin pensioniert, vorher habe ich als Softwareentwickler gearbeitet.",
+      "words": [
+        "aposentado",
+        "antes",
+        "trabalhar",
+        "como",
+        "desenvolvedor"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s58",
+      "text": "Fui casado com uma portuguesa, mas sou divorciado há sete anos.",
+      "de": "Ich war mit einer Portugiesin verheiratet, bin aber seit sieben Jahren geschieden.",
+      "words": [
+        "casado",
+        "divorciado",
+        "mas",
+        "num_7",
+        "ano"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s59",
+      "text": "Sou alemão, mas moro na Suíça, a só dez quilômetros de onde cresci.",
+      "de": "Ich bin Deutscher, wohne aber in der Schweiz, nur 10 km von dem Ort, wo ich aufgewachsen bin.",
+      "words": [
+        "alemao",
+        "mas",
+        "morar",
+        "suica",
+        "num_10",
+        "onde",
+        "crescer"
+      ],
+      "grammar": [
+        "ser_estar",
+        "praep_artikel"
       ]
     }
   ],

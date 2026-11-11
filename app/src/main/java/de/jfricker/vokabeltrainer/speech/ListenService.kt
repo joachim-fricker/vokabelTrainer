@@ -21,6 +21,7 @@ import android.speech.tts.UtteranceProgressListener
 import de.jfricker.vokabeltrainer.MainActivity
 import de.jfricker.vokabeltrainer.R
 import de.jfricker.vokabeltrainer.VokabelApp
+import de.jfricker.vokabeltrainer.domain.Dialogues
 import de.jfricker.vokabeltrainer.domain.Language
 import de.jfricker.vokabeltrainer.domain.ListenItem
 import de.jfricker.vokabeltrainer.domain.ListenOrder
@@ -44,6 +45,8 @@ data class ListenState(
     val current: ListenItem? = null,
     /** Aktueller Eintrag in dieser Runde als "Nicht gewusst" markiert */
     val currentBoosted: Boolean = false,
+    /** Dialog: Index der gerade gesprochenen Zeile, sonst -1 */
+    val line: Int = -1,
     /** So viele Eintraege wurden in dieser Runde schon vorgelesen */
     val count: Int = 0,
     val total: Int = 0,
@@ -94,6 +97,7 @@ class ListenService : Service(), TextToSpeech.OnInitListener {
         slow = app.prefs.listenSlow
         val words = app.prefs.listenWords
         val sentences = app.prefs.listenSentences
+        val dialogues = app.prefs.listenDialogues
         app.speaker.stop()
 
         _state.value = ListenState(running = true, loading = true)
@@ -104,10 +108,10 @@ class ListenService : Service(), TextToSpeech.OnInitListener {
 
         tts = TextToSpeech(applicationContext, this)
         scope.launch {
-            val items = app.listenSource.load(language, words, sentences)
+            val items = app.listenSource.load(language, words, sentences, dialogues)
             picker = ListenPicker(items)
             _state.value = _state.value.copy(total = items.size)
-            if (items.isEmpty()) fail("Keine Wörter oder Sätze gefunden.") else maybeBegin()
+            if (items.isEmpty()) fail("Nichts zum Vorlesen gefunden.") else maybeBegin()
         }
     }
 
@@ -156,28 +160,59 @@ class ListenService : Service(), TextToSpeech.OnInitListener {
         val p = picker ?: return
         val item = p.next() ?: return
         val gen = ++generation
-        _state.value = s.copy(current = item, currentBoosted = p.isBoosted(item.key), count = s.count + 1)
+        _state.value = s.copy(current = item, currentBoosted = p.isBoosted(item.key), count = s.count + 1, line = -1)
         updateNotification(item)
 
         val factor = if (slow) 1.5 else 1.0
         // Satz braucht mehr Zeit zum Mitdenken als ein einzelnes Wort
         val think = ((if (order == ListenOrder.DE_FIRST) 1500 else 500) * factor * (if (item.sentence) 1.2 else 1.0)).toLong()
         val after = (2000 * factor).toLong()
-        val target = clean(item.text) to targetLocale!!
-        val german = clean(item.de) to germanLocale!!
-        val (first, second) = if (order == ListenOrder.DE_FIRST) german to target else target to german
-
         tts.setSpeechRate(if (slow) 0.6f else 0.9f)
-        tts.setLanguage(first.second)
-        tts.speak(first.first, TextToSpeech.QUEUE_FLUSH, null, "L:$gen:1")
-        tts.playSilentUtterance(think, TextToSpeech.QUEUE_ADD, "L:$gen:p")
-        tts.setLanguage(second.second)
-        tts.speak(second.first, TextToSpeech.QUEUE_ADD, null, "L:$gen:2")
+        var first = true
+
+        fun say(text: String, locale: Locale, pitch: Float, id: String) {
+            tts.setLanguage(locale)
+            tts.setPitch(pitch)
+            tts.speak(clean(text), if (first) TextToSpeech.QUEUE_FLUSH else TextToSpeech.QUEUE_ADD, null, id)
+            first = false
+        }
+
+        fun pair(text: String, de: String, pitch: Float, tag: String) {
+            if (order == ListenOrder.DE_FIRST) {
+                say(de, germanLocale!!, 1.0f, "L:$gen:${tag}1")
+                tts.playSilentUtterance(think, TextToSpeech.QUEUE_ADD, "L:$gen:${tag}p")
+                say(text, targetLocale!!, pitch, "L:$gen:${tag}2")
+            } else {
+                say(text, targetLocale!!, pitch, "L:$gen:${tag}1")
+                tts.playSilentUtterance(think, TextToSpeech.QUEUE_ADD, "L:$gen:${tag}p")
+                say(de, germanLocale!!, 1.0f, "L:$gen:${tag}2")
+            }
+        }
+
+        if (item.dialogue) {
+            // Dialoge immer nur in der Lernsprache, ohne Uebersetzung (Wunsch des Nutzers, 11.11.2026):
+            // Titel in der Lernsprache, dann Zeile fuer Zeile mit Rollen-Stimmhoehe; Kennung "d<zeile>-1"
+            say(item.text, targetLocale!!, 1.0f, "L:$gen:t")
+            tts.playSilentUtterance((1000 * factor).toLong(), TextToSpeech.QUEUE_ADD, "L:$gen:tp")
+            item.lines.forEachIndexed { i, line ->
+                if (i > 0) tts.playSilentUtterance(Dialogues.pauseMs(slow), TextToSpeech.QUEUE_ADD, "L:$gen:d$i-g")
+                say(line.text, targetLocale!!, line.pitch, "L:$gen:d$i-1")
+            }
+        } else {
+            pair(item.text, item.de, 1.0f, "")
+        }
+        tts.setPitch(1.0f)
         tts.playSilentUtterance(after, TextToSpeech.QUEUE_ADD, "L:$gen:end")
     }
 
     private val progressListener = object : UtteranceProgressListener() {
-        override fun onStart(utteranceId: String?) {}
+        override fun onStart(utteranceId: String?) {
+            // Dialog: gerade gesprochene Zeile anzeigen ("L:<gen>:d<zeile>-1")
+            val parts = utteranceId?.split(':') ?: return
+            if (parts.size != 3 || parts[0] != "L" || parts[1].toIntOrNull() != generation) return
+            val line = Regex("^d(\\d+)-[12]$").find(parts[2])?.groupValues?.get(1)?.toIntOrNull() ?: return
+            main.post { if (_state.value.line != line) _state.value = _state.value.copy(line = line) }
+        }
 
         override fun onDone(utteranceId: String?) {
             val parts = utteranceId?.split(':') ?: return
@@ -298,7 +333,9 @@ class ListenService : Service(), TextToSpeech.OnInitListener {
         return Notification.Builder(this, CHANNEL_ID)
             .setSmallIcon(R.drawable.ic_stat_listen)
             .setContentTitle("🎧 Nur hören · ${language.flag} ${language.displayName}")
-            .setContentText(item?.let { "${it.text} – ${it.de}" } ?: "Wird vorbereitet …")
+            .setContentText(
+                item?.let { if (it.dialogue) "💬 ${it.text}" else "${it.text} – ${it.de}" } ?: "Wird vorbereitet …"
+            )
             .setContentIntent(open)
             .setOngoing(true)
             .setOnlyAlertOnce(true)

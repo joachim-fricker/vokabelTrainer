@@ -59,6 +59,9 @@ fun ListenScreen(onBack: () -> Unit) {
 
     var words by remember { mutableStateOf(prefs.listenWords) }
     var sentences by remember { mutableStateOf(prefs.listenSentences) }
+    var dialogues by remember { mutableStateOf(prefs.listenDialogues) }
+    // Mindestens eines muss gewaehlt bleiben
+    fun selectedCount() = listOf(words, sentences, dialogues).count { it }
     var order by remember { mutableStateOf(prefs.listenOrder) }
     var slow by remember { mutableStateOf(prefs.listenSlow) }
 
@@ -98,14 +101,27 @@ fun ListenScreen(onBack: () -> Unit) {
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     FilterChip(
                         selected = words,
-                        // Mindestens eines muss gewaehlt bleiben
-                        onClick = { if (!words || sentences) { words = !words; prefs.listenWords = words } },
+                        onClick = { if (!words || selectedCount() > 1) { words = !words; prefs.listenWords = words } },
                         label = { Text("Wörter") },
                     )
                     FilterChip(
                         selected = sentences,
-                        onClick = { if (!sentences || words) { sentences = !sentences; prefs.listenSentences = sentences } },
+                        onClick = { if (!sentences || selectedCount() > 1) { sentences = !sentences; prefs.listenSentences = sentences } },
                         label = { Text("Sätze") },
+                    )
+                    FilterChip(
+                        selected = dialogues,
+                        onClick = { if (!dialogues || selectedCount() > 1) { dialogues = !dialogues; prefs.listenDialogues = dialogues } },
+                        label = { Text("Dialoge") },
+                    )
+                }
+                if (dialogues) {
+                    Text(
+                        "Dialoge werden ganz und nur auf ${language.displayName} abgespielt, ohne Übersetzung " +
+                            "(die steht hier auf dem Bildschirm). Dialoge, die du bei " +
+                            "„Rolle spielen“ schlecht oder noch nie gemacht hast, kommen öfter.",
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontStyle = FontStyle.Italic,
                     )
                 }
                 Text("Reihenfolge", style = MaterialTheme.typography.titleMedium)
@@ -164,6 +180,19 @@ private fun Playing(state: ListenState) {
         ) {
             when {
                 state.loading || item == null -> CircularProgressIndicator()
+                item.dialogue -> {
+                    Text("💬 ${item.text}", style = MaterialTheme.typography.titleMedium, textAlign = TextAlign.Center)
+                    Text(item.de, style = MaterialTheme.typography.bodySmall, textAlign = TextAlign.Center)
+                    item.lines.getOrNull(state.line)?.let { line ->
+                        Text(line.speaker, style = MaterialTheme.typography.labelLarge)
+                        Text(line.text, style = MaterialTheme.typography.headlineSmall, textAlign = TextAlign.Center)
+                        Text(line.de, style = MaterialTheme.typography.titleMedium, textAlign = TextAlign.Center)
+                    }
+                    Text(
+                        if (state.line >= 0) "Satz ${state.line + 1} von ${item.lines.size}" else "${item.lines.size} Sätze",
+                        style = MaterialTheme.typography.bodySmall,
+                    )
+                }
                 else -> {
                     Text(
                         item.text,

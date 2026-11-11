@@ -60,6 +60,10 @@ class LearningPrefs(context: Context) {
         get() = prefs.getBoolean(KEY_LISTEN_SENTENCES, true)
         set(value) { prefs.edit().putBoolean(KEY_LISTEN_SENTENCES, value).apply() }
 
+    var listenDialogues: Boolean
+        get() = prefs.getBoolean(KEY_LISTEN_DIALOGUES, false)
+        set(value) { prefs.edit().putBoolean(KEY_LISTEN_DIALOGUES, value).apply() }
+
     var listenOrder: ListenOrder
         get() = ListenOrder.fromCode(prefs.getString(KEY_LISTEN_ORDER, null))
         set(value) { prefs.edit().putString(KEY_LISTEN_ORDER, value.code).apply() }
@@ -97,5 +101,6 @@ class LearningPrefs(context: Context) {
         private const val KEY_LISTEN_SENTENCES = "listenSentences"
         private const val KEY_LISTEN_ORDER = "listenOrder"
         private const val KEY_LISTEN_SLOW = "listenSlow"
+        private const val KEY_LISTEN_DIALOGUES = "listenDialogues"
     }
 }

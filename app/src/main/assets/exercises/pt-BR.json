@@ -2083,6 +2083,60 @@
    "typeable": true
   },
   {
+   "id": "vf:pt-BR-08:s57",
+   "type": "verbform",
+   "lesson": "pt-BR-08",
+   "before": "Sou aposentado; antes ",
+   "after": " como desenvolvedor de software.",
+   "answer": "trabalhei",
+   "options": [
+    "trabalhou",
+    "trabalhamos",
+    "trabalharam",
+    "trabalhei"
+   ],
+   "hint": "(trabalhar)",
+   "de": "Ich bin pensioniert, vorher habe ich als Softwareentwickler gearbeitet.",
+   "speak": "Sou aposentado; antes trabalhei como desenvolvedor de software.",
+   "note": "trabalhar: Vergangenheit, eu",
+   "words": [
+    "aposentado",
+    "antes",
+    "trabalhar",
+    "como",
+    "desenvolvedor"
+   ],
+   "typeable": true
+  },
+  {
+   "id": "vf:pt-BR-08:s59",
+   "type": "verbform",
+   "lesson": "pt-BR-08",
+   "before": "Sou alemão, mas ",
+   "after": " na Suíça, a só dez quilômetros de onde cresci.",
+   "answer": "moro",
+   "options": [
+    "mora",
+    "moramos",
+    "moram",
+    "moro"
+   ],
+   "hint": "(morar)",
+   "de": "Ich bin Deutscher, wohne aber in der Schweiz, nur 10 km von dem Ort, wo ich aufgewachsen bin.",
+   "speak": "Sou alemão, mas moro na Suíça, a só dez quilômetros de onde cresci.",
+   "note": "morar: Präsens, eu",
+   "words": [
+    "alemao",
+    "mas",
+    "morar",
+    "suica",
+    "num_10",
+    "onde",
+    "crescer"
+   ],
+   "typeable": true
+  },
+  {
    "id": "vf:pt-BR-09:s04",
    "type": "verbform",
    "lesson": "pt-BR-09",
@@ -6104,6 +6158,80 @@
    "note": "estar",
    "words": [
     "eles"
+   ]
+  },
+  {
+   "id": "se:pt-BR-08:s57",
+   "type": "serestar",
+   "lesson": "pt-BR-08",
+   "before": "",
+   "after": " aposentado; antes trabalhei como desenvolvedor de software.",
+   "answer": "Sou",
+   "options": [
+    "Sou",
+    "Estou"
+   ],
+   "fixedOrder": true,
+   "hint": "",
+   "de": "Ich bin pensioniert, vorher habe ich als Softwareentwickler gearbeitet.",
+   "speak": "Sou aposentado; antes trabalhei como desenvolvedor de software.",
+   "note": "ser",
+   "words": [
+    "aposentado",
+    "antes",
+    "trabalhar",
+    "como",
+    "desenvolvedor"
+   ]
+  },
+  {
+   "id": "se:pt-BR-08:s58",
+   "type": "serestar",
+   "lesson": "pt-BR-08",
+   "before": "Fui casado com uma portuguesa, mas ",
+   "after": " divorciado há sete anos.",
+   "answer": "sou",
+   "options": [
+    "sou",
+    "estou"
+   ],
+   "fixedOrder": true,
+   "hint": "",
+   "de": "Ich war mit einer Portugiesin verheiratet, bin aber seit sieben Jahren geschieden.",
+   "speak": "Fui casado com uma portuguesa, mas sou divorciado há sete anos.",
+   "note": "ser",
+   "words": [
+    "casado",
+    "divorciado",
+    "mas",
+    "num_7",
+    "ano"
+   ]
+  },
+  {
+   "id": "se:pt-BR-08:s59",
+   "type": "serestar",
+   "lesson": "pt-BR-08",
+   "before": "",
+   "after": " alemão, mas moro na Suíça, a só dez quilômetros de onde cresci.",
+   "answer": "Sou",
+   "options": [
+    "Sou",
+    "Estou"
+   ],
+   "fixedOrder": true,
+   "hint": "",
+   "de": "Ich bin Deutscher, wohne aber in der Schweiz, nur 10 km von dem Ort, wo ich aufgewachsen bin.",
+   "speak": "Sou alemão, mas moro na Suíça, a só dez quilômetros de onde cresci.",
+   "note": "ser",
+   "words": [
+    "alemao",
+    "mas",
+    "morar",
+    "suica",
+    "num_10",
+    "onde",
+    "crescer"
    ]
   },
   {
@@ -12456,6 +12584,26 @@
    ]
   },
   {
+   "id": "art:desenvolvedor",
+   "type": "article",
+   "lesson": "pt-BR-08",
+   "before": "",
+   "after": " desenvolvedor",
+   "answer": "o",
+   "options": [
+    "o",
+    "a"
+   ],
+   "fixedOrder": true,
+   "hint": "",
+   "de": "der Entwickler",
+   "speak": "o desenvolvedor",
+   "note": "männlich · um desenvolvedor",
+   "words": [
+    "desenvolvedor"
+   ]
+  },
+  {
    "id": "art:estudante",
    "type": "article",
    "lesson": "pt-BR-08",
@@ -15352,6 +15500,33 @@
    ]
   },
   {
+   "id": "con:pt-BR-08:s59",
+   "type": "contraction",
+   "lesson": "pt-BR-08",
+   "before": "Sou alemão, mas moro ",
+   "after": " Suíça, a só dez quilômetros de onde cresci.",
+   "answer": "na",
+   "options": [
+    "em a",
+    "no",
+    "da",
+    "na"
+   ],
+   "hint": "(em + a)",
+   "de": "Ich bin Deutscher, wohne aber in der Schweiz, nur 10 km von dem Ort, wo ich aufgewachsen bin.",
+   "speak": "Sou alemão, mas moro na Suíça, a só dez quilômetros de onde cresci.",
+   "note": "em + a = na",
+   "words": [
+    "alemao",
+    "mas",
+    "morar",
+    "suica",
+    "num_10",
+    "onde",
+    "crescer"
+   ]
+  },
+  {
    "id": "con:pt-BR-09:s07",
    "type": "contraction",
    "lesson": "pt-BR-09",
@@ -17066,6 +17241,27 @@
    "note": "",
    "words": [
     "professor"
+   ],
+   "typeable": true
+  },
+  {
+   "id": "pl:desenvolvedor",
+   "type": "plural",
+   "lesson": "pt-BR-08",
+   "before": "o desenvolvedor → os ",
+   "after": "",
+   "answer": "desenvolvedores",
+   "options": [
+    "desenvolvedors",
+    "desenvolvedor",
+    "desenvolvedores"
+   ],
+   "hint": "",
+   "de": "der Entwickler",
+   "speak": "os desenvolvedores",
+   "note": "",
+   "words": [
+    "desenvolvedor"
    ],
    "typeable": true
   },

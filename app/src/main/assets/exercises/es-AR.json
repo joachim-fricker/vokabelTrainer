@@ -2080,6 +2080,87 @@
    "typeable": true
   },
   {
+   "id": "vf:es-AR-08:s57",
+   "type": "verbform",
+   "lesson": "es-AR-08",
+   "before": "",
+   "after": " jubilado; antes trabajaba como desarrollador de software.",
+   "answer": "Estoy",
+   "options": [
+    "Estás",
+    "Está",
+    "Estamos",
+    "Estoy"
+   ],
+   "hint": "(estar)",
+   "de": "Ich bin pensioniert, vorher habe ich als Softwareentwickler gearbeitet.",
+   "speak": "Estoy jubilado; antes trabajaba como desarrollador de software.",
+   "note": "estar: Präsens, yo",
+   "words": [
+    "jubilado",
+    "estar",
+    "antes",
+    "trabajar",
+    "como",
+    "desarrollador"
+   ],
+   "typeable": true
+  },
+  {
+   "id": "vf:es-AR-08:s58",
+   "type": "verbform",
+   "lesson": "es-AR-08",
+   "before": "",
+   "after": " casado con una portuguesa, pero hace siete años que estoy divorciado.",
+   "answer": "Estuve",
+   "options": [
+    "Estuviste",
+    "Estuvo",
+    "Estuvimos",
+    "Estuve"
+   ],
+   "hint": "(estar)",
+   "de": "Ich war mit einer Portugiesin verheiratet, bin aber seit sieben Jahren geschieden.",
+   "speak": "Estuve casado con una portuguesa, pero hace siete años que estoy divorciado.",
+   "note": "estar: Vergangenheit, yo",
+   "words": [
+    "casado",
+    "divorciado",
+    "siete",
+    "ano",
+    "estar"
+   ],
+   "typeable": true
+  },
+  {
+   "id": "vf:es-AR-08:s59",
+   "type": "verbform",
+   "lesson": "es-AR-08",
+   "before": "",
+   "after": " alemán, pero vivo en Suiza, a solo diez kilómetros del lugar donde crecí.",
+   "answer": "Soy",
+   "options": [
+    "Sos",
+    "Es",
+    "Somos",
+    "Soy"
+   ],
+   "hint": "(ser)",
+   "de": "Ich bin Deutscher, wohne aber in der Schweiz, nur 10 km von dem Ort, wo ich aufgewachsen bin.",
+   "speak": "Soy alemán, pero vivo en Suiza, a solo diez kilómetros del lugar donde crecí.",
+   "note": "ser: Präsens, yo",
+   "words": [
+    "aleman",
+    "ser",
+    "vivir",
+    "suiza",
+    "diez",
+    "lugar",
+    "crecer"
+   ],
+   "typeable": true
+  },
+  {
    "id": "vf:es-AR-09:s01",
    "type": "verbform",
    "lesson": "es-AR-09",
@@ -6104,6 +6185,81 @@
     "esposo",
     "viaje",
     "mi"
+   ]
+  },
+  {
+   "id": "se:es-AR-08:s57",
+   "type": "serestar",
+   "lesson": "es-AR-08",
+   "before": "",
+   "after": " jubilado; antes trabajaba como desarrollador de software.",
+   "answer": "Estoy",
+   "options": [
+    "Soy",
+    "Estoy"
+   ],
+   "fixedOrder": true,
+   "hint": "",
+   "de": "Ich bin pensioniert, vorher habe ich als Softwareentwickler gearbeitet.",
+   "speak": "Estoy jubilado; antes trabajaba como desarrollador de software.",
+   "note": "estar",
+   "words": [
+    "jubilado",
+    "estar",
+    "antes",
+    "trabajar",
+    "como",
+    "desarrollador"
+   ]
+  },
+  {
+   "id": "se:es-AR-08:s58",
+   "type": "serestar",
+   "lesson": "es-AR-08",
+   "before": "",
+   "after": " casado con una portuguesa, pero hace siete años que estoy divorciado.",
+   "answer": "Estuve",
+   "options": [
+    "Fui",
+    "Estuve"
+   ],
+   "fixedOrder": true,
+   "hint": "",
+   "de": "Ich war mit einer Portugiesin verheiratet, bin aber seit sieben Jahren geschieden.",
+   "speak": "Estuve casado con una portuguesa, pero hace siete años que estoy divorciado.",
+   "note": "estar",
+   "words": [
+    "casado",
+    "divorciado",
+    "siete",
+    "ano",
+    "estar"
+   ]
+  },
+  {
+   "id": "se:es-AR-08:s59",
+   "type": "serestar",
+   "lesson": "es-AR-08",
+   "before": "",
+   "after": " alemán, pero vivo en Suiza, a solo diez kilómetros del lugar donde crecí.",
+   "answer": "Soy",
+   "options": [
+    "Soy",
+    "Estoy"
+   ],
+   "fixedOrder": true,
+   "hint": "",
+   "de": "Ich bin Deutscher, wohne aber in der Schweiz, nur 10 km von dem Ort, wo ich aufgewachsen bin.",
+   "speak": "Soy alemán, pero vivo en Suiza, a solo diez kilómetros del lugar donde crecí.",
+   "note": "ser",
+   "words": [
+    "aleman",
+    "ser",
+    "vivir",
+    "suiza",
+    "diez",
+    "lugar",
+    "crecer"
    ]
   },
   {
@@ -11354,6 +11510,26 @@
    ]
   },
   {
+   "id": "art:lugar",
+   "type": "article",
+   "lesson": "es-AR-08",
+   "before": "",
+   "after": " lugar",
+   "answer": "el",
+   "options": [
+    "el",
+    "la"
+   ],
+   "fixedOrder": true,
+   "hint": "",
+   "de": "der Ort, der Platz",
+   "speak": "el lugar",
+   "note": "männlich · un lugar",
+   "words": [
+    "lugar"
+   ]
+  },
+  {
    "id": "art:familia",
    "type": "article",
    "lesson": "es-AR-08",
@@ -11731,6 +11907,26 @@
    "note": "männlich · un profesor",
    "words": [
     "profesor"
+   ]
+  },
+  {
+   "id": "art:desarrollador",
+   "type": "article",
+   "lesson": "es-AR-08",
+   "before": "",
+   "after": " desarrollador",
+   "answer": "el",
+   "options": [
+    "el",
+    "la"
+   ],
+   "fixedOrder": true,
+   "hint": "",
+   "de": "der Entwickler",
+   "speak": "el desarrollador",
+   "note": "männlich · un desarrollador",
+   "words": [
+    "desarrollador"
    ]
   },
   {
@@ -13238,6 +13434,32 @@
    ]
   },
   {
+   "id": "con:es-AR-08:s59",
+   "type": "contraction",
+   "lesson": "es-AR-08",
+   "before": "Soy alemán, pero vivo en Suiza, a solo diez kilómetros ",
+   "after": " lugar donde crecí.",
+   "answer": "del",
+   "options": [
+    "de el",
+    "al",
+    "del"
+   ],
+   "hint": "(de + el)",
+   "de": "Ich bin Deutscher, wohne aber in der Schweiz, nur 10 km von dem Ort, wo ich aufgewachsen bin.",
+   "speak": "Soy alemán, pero vivo en Suiza, a solo diez kilómetros del lugar donde crecí.",
+   "note": "de + el = del",
+   "words": [
+    "aleman",
+    "ser",
+    "vivir",
+    "suiza",
+    "diez",
+    "lugar",
+    "crecer"
+   ]
+  },
+  {
    "id": "con:es-AR-09:s36",
    "type": "contraction",
    "lesson": "es-AR-09",
@@ -13920,6 +14142,27 @@
    "typeable": true
   },
   {
+   "id": "pl:lugar",
+   "type": "plural",
+   "lesson": "es-AR-08",
+   "before": "el lugar → los ",
+   "after": "",
+   "answer": "lugares",
+   "options": [
+    "lugars",
+    "lugar",
+    "lugares"
+   ],
+   "hint": "",
+   "de": "der Ort, der Platz",
+   "speak": "los lugares",
+   "note": "",
+   "words": [
+    "lugar"
+   ],
+   "typeable": true
+  },
+  {
    "id": "pl:profesor",
    "type": "plural",
    "lesson": "es-AR-08",
@@ -13937,6 +14180,27 @@
    "note": "",
    "words": [
     "profesor"
+   ],
+   "typeable": true
+  },
+  {
+   "id": "pl:desarrollador",
+   "type": "plural",
+   "lesson": "es-AR-08",
+   "before": "el desarrollador → los ",
+   "after": "",
+   "answer": "desarrolladores",
+   "options": [
+    "desarrolladors",
+    "desarrollador",
+    "desarrolladores"
+   ],
+   "hint": "",
+   "de": "der Entwickler",
+   "speak": "los desarrolladores",
+   "note": "",
+   "words": [
+    "desarrollador"
    ],
    "typeable": true
   },

@@ -96,6 +96,29 @@
       "category": "Herkunft & Wohnort"
     },
     {
+      "id": "crecer",
+      "text": "crecer",
+      "de": "aufwachsen; wachsen",
+      "pos": "verb",
+      "note": "yo crezco, yo crecí",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "suiza",
+      "text": "Suiza",
+      "de": "die Schweiz",
+      "pos": "noun",
+      "category": "Herkunft & Wohnort"
+    },
+    {
+      "id": "lugar",
+      "text": "el lugar",
+      "de": "der Ort, der Platz",
+      "pos": "noun",
+      "gender": "m",
+      "category": "Herkunft & Wohnort"
+    },
+    {
       "id": "extranjero",
       "text": "extranjero",
       "de": "ausländisch; Ausländer",
@@ -235,6 +258,13 @@
       "category": "Familie"
     },
     {
+      "id": "divorciado",
+      "text": "divorciado",
+      "de": "geschieden",
+      "pos": "adjective",
+      "category": "Familie"
+    },
+    {
       "id": "chicos",
       "text": "los chicos",
       "de": "die Kinder; die Jungs",
@@ -297,6 +327,15 @@
       "text": "jubilado",
       "de": "in Rente; Rentner",
       "pos": "adjective",
+      "category": "Beruf & Studium"
+    },
+    {
+      "id": "desarrollador",
+      "text": "el desarrollador",
+      "de": "der Entwickler",
+      "pos": "noun",
+      "gender": "m",
+      "note": "desarrollador de software = Softwareentwickler; Frau: la desarrolladora",
       "category": "Beruf & Studium"
     },
     {
@@ -1124,6 +1163,54 @@
         "esposo",
         "viaje",
         "mi"
+      ]
+    },
+    {
+      "id": "s57",
+      "text": "Estoy jubilado; antes trabajaba como desarrollador de software.",
+      "de": "Ich bin pensioniert, vorher habe ich als Softwareentwickler gearbeitet.",
+      "words": [
+        "jubilado",
+        "estar",
+        "antes",
+        "trabajar",
+        "como",
+        "desarrollador"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s58",
+      "text": "Estuve casado con una portuguesa, pero hace siete años que estoy divorciado.",
+      "de": "Ich war mit einer Portugiesin verheiratet, bin aber seit sieben Jahren geschieden.",
+      "words": [
+        "casado",
+        "divorciado",
+        "siete",
+        "ano",
+        "estar"
+      ],
+      "grammar": [
+        "ser_estar"
+      ]
+    },
+    {
+      "id": "s59",
+      "text": "Soy alemán, pero vivo en Suiza, a solo diez kilómetros del lugar donde crecí.",
+      "de": "Ich bin Deutscher, wohne aber in der Schweiz, nur 10 km von dem Ort, wo ich aufgewachsen bin.",
+      "words": [
+        "aleman",
+        "ser",
+        "vivir",
+        "suiza",
+        "diez",
+        "lugar",
+        "crecer"
+      ],
+      "grammar": [
+        "ser_estar"
       ]
     }
   ],

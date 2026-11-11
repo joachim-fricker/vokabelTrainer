@@ -814,6 +814,27 @@
       }
     },
     {
+      "word": "crecer",
+      "forms": {
+        "pres": [
+          "crezco",
+          "crecés",
+          "crece",
+          "crecemos",
+          "crecen"
+        ],
+        "past": [
+          "crecí",
+          "creciste",
+          "creció",
+          "crecimos",
+          "crecieron"
+        ]
+      },
+      "irregular": true,
+      "note": "yo crezco"
+    },
+    {
       "word": "trabajar",
       "forms": {
         "pres": [

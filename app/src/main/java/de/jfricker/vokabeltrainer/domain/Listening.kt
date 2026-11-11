@@ -15,7 +15,14 @@ data class ListenItem(
     val sentence: Boolean,
     /** Wie oft im Verhaeltnis zu den anderen (1 = normal) */
     val weight: Double,
-)
+    /** Nur bei Dialogen: alle Zeilen, nacheinander vorgelesen (text/de sind dann die Titel) */
+    val lines: List<ListenLine> = emptyList(),
+) {
+    val dialogue: Boolean get() = lines.isNotEmpty()
+}
+
+/** Zeile eines Dialogs fuer "Nur hören"; pitch unterscheidet die beiden Rollen. */
+data class ListenLine(val speaker: String, val text: String, val de: String, val pitch: Float)
 
 /** Reihenfolge beim Vorlesen */
 enum class ListenOrder(val code: String, val label: String) {
@@ -37,6 +44,16 @@ object ListenWeights {
     const val KNOWN = 0.4
     /** In dieser Runde "Nicht gewusst" gedrueckt: so viel oefter */
     const val SESSION_BOOST = 3.0
+
+    /**
+     * Dialog: noch nie "Rolle spielen" gemacht -> NEW; zuletzt weniger als 80 % richtig -> 2 .. 5 je nach Ergebnis;
+     * sonst 1. correct/total vom letzten Rollenspiel.
+     */
+    fun dialogueWeight(correct: Int?, total: Int?): Double {
+        if (correct == null || total == null || total == 0) return NEW
+        val rate = correct.toDouble() / total
+        return if (rate < 0.8) 2.0 + 3.0 * (0.8 - rate) / 0.8 else 1.0
+    }
 
     /**
      * Gewicht aus dem Lernstand:

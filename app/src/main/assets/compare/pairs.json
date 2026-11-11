@@ -3656,6 +3656,17 @@
    "patterns": []
   },
   {
+   "pt": "suica",
+   "ptText": "a Suíça",
+   "ptLesson": "pt-BR-08",
+   "es": "suiza",
+   "esText": "Suiza",
+   "esLesson": "es-AR-08",
+   "de": "die Schweiz",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
    "pt": "estrangeiro",
    "ptText": "estrangeiro",
    "ptLesson": "pt-BR-08",
@@ -3677,6 +3688,17 @@
    "esLesson": "es-AR-08",
    "de": "wohnen",
    "kind": "different",
+   "patterns": []
+  },
+  {
+   "pt": "crescer",
+   "ptText": "crescer",
+   "ptLesson": "pt-BR-08",
+   "es": "crecer",
+   "esText": "crecer",
+   "esLesson": "es-AR-08",
+   "de": "aufwachsen; wachsen",
+   "kind": "similar",
    "patterns": []
   },
   {
@@ -3835,6 +3857,17 @@
    ]
   },
   {
+   "pt": "divorciado",
+   "ptText": "divorciado",
+   "ptLesson": "pt-BR-08",
+   "es": "divorciado",
+   "esText": "divorciado",
+   "esLesson": "es-AR-08",
+   "de": "geschieden",
+   "kind": "same",
+   "patterns": []
+  },
+  {
    "pt": "trabalho",
    "ptText": "o trabalho",
    "ptLesson": "pt-BR-08",
@@ -3893,6 +3926,17 @@
    "esText": "el profesor",
    "esLesson": "es-AR-08",
    "de": "der Lehrer",
+   "kind": "similar",
+   "patterns": []
+  },
+  {
+   "pt": "desenvolvedor",
+   "ptText": "o desenvolvedor",
+   "ptLesson": "pt-BR-08",
+   "es": "desarrollador",
+   "esText": "el desarrollador",
+   "esLesson": "es-AR-08",
+   "de": "der Entwickler",
    "kind": "similar",
    "patterns": []
   },
